@@ -205,9 +205,11 @@ Ser la plataforma líder en Peru en entrenamiento digital inteligente, integrand
 
 | Foto | Miembros del equipo | Código de Estudiante | Descripción |
 | :---: | :--- | :--- | :--- |
-|
-|![alt text](assets/pablophoto.png) | Pablo Antonio Geronimo Quispe | U202314304 |Soy Pablo, estudiante de Ingeniería de Software en el séptimo ciclo. Me caracterizo por ser una persona responsable, disciplinada y comprometida con cada actividad que asumo, manteniendo siempre un enfoque orientado a resultados y mejora continua. Asimismo, tengo interés y conocimientos en ciberseguridad, especialmente en el ámbito de redes móviles, lo que me permite comprender riesgos, aplicar buenas prácticas de seguridad y aportar en la protección de la información y los sistemas dentro de entornos digitales. |
-
+| ![alt text](assets/pablophoto.png) | Pablo Antonio Geronimo Quispe | U202314304 | Soy Pablo, estudiante de Ingeniería de Software en el 7mo ciclo. Me caracterizo por ser una persona responsable, disciplinada y comprometida con las actividades que asumo. Tengo experiencia en trabajo en equipo y conocimientos en bases de datos, lo cual aporta al desarrollo de proyectos. Además, cuento con conocimientos en Java y JavaScript, permitiéndome contribuir tanto en backend como frontend. |
+| ![alt text](assets/pierophoto.png) | Piero Francesco Tenorio Medina | U202318731 | Soy estudiante de Ingeniería de Software en la UPC. Me considero una persona comprometida, responsable y proactiva en el trabajo en equipo. Tengo experiencia en desarrollo de interfaces web con HTML, CSS y JavaScript, lo que me permite aportar en soluciones visuales y funcionales. Busco seguir aprendiendo y mejorar mis habilidades para contribuir al éxito del proyecto. |
+| ![alt text](assets/marciaphoto.png) | Marcia Victoria Melgarejo Gomez | U20231C505 | Soy Marcia Melgarejo, estudiante de Ingeniería de Software en cuarto ciclo. Me apasiona la tecnología y su impacto en la sociedad. Me caracterizo por ser curiosa, persistente y colaborativa. Mi objetivo es seguir desarrollando mis habilidades en programación para resolver problemas de manera eficiente. |
+| ![alt text](assets/everkoephoto.png) | Anyelo Bill Alejos Jesus | U20231D149 | Soy Anyelo Alejos, estudiante de Ingeniería de Software en séptimo ciclo. Tengo conocimientos en C++ y Python, lo que me permite desarrollar soluciones de manera eficiente. Me considero una persona responsable, comprometida y con iniciativa, enfocada en aportar al logro de los objetivos del equipo. |
+| ![alt text](assets/jorgephoto.png) | Jorge Enrique Guevara Tejada | U202316057 | Soy un estudiante responsable y comprometido con el trabajo en equipo. Me esfuerzo constantemente por mejorar mis habilidades y superar desafíos académicos. Busco no solo un buen rendimiento, sino también aportar de manera significativa al éxito del equipo en cada proyecto. |
 
 ### 1.2. Solution Profile
 BodyMatch AI es una aplicación móvil que ofrece un ecosistema integral de entrenamiento personalizado, conectando a usuarios con entrenadores especializados mediante una plataforma digital inteligente.
@@ -717,13 +719,13 @@ Para la creación de los User Persona de cada segmento, partimos de las entrevis
 **Segmento 1: Jóvenes Adultos interesados en el fitness**
 
 <p align="center" >
-  <img src="assets/usperon.png" alt="CarlosRamirezuser-persona" />
+  <img src="assets/usperson.png" alt="s" />
 </p>
 
 **Segmento 2: Entrenadores Personales (Coaches)**
 
 <p align="center">
-  <img src="assets/usperon2.png" alt="AndreaTorresuser-persona" width="500"/>
+  <img src="assets/usperson2.png" alt="d" />
 </p>
 
 
@@ -927,6 +929,8 @@ Su objetivo es **visualizar de manera clara y estructurada cómo cada acción co
 A continuación se presenta el Impact Map de **BodyMatch AI**:
 
 **Segmento Objetivo 1: Jóvenes adultos interesados en el fitness**
+
+
 <img src="assets/impact1.png" alt="as 2" />
 
 
