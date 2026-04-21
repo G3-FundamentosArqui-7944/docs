@@ -1009,24 +1009,40 @@ En esta sección nos centramos en los conceptos de diseño, los diferentes punto
 #### 4.1.1 Principles Statements
 Para el diseño del producto de arquitectura, como grupo debemos reconocer ciertos principios que nos ayuden a alcanzar nuestros objetivos:
 
-<b>Principios SOLID:</b>
-- <b>Single Responsibility Principle (SRP):</b>
-- <b>Open/Closed Principle (OCP):</b>
-- <b>Liskov Substitution Principle (LSP)</b>
-- <b>Interface Segregation Principle (ISP):</b>
-- <b>Dependency Inversion Principle (DIP):</b>
+- <b>Principios SOLID:</b> De estos aplicaremos cincos de los patrones de Diseño orientado a objetos para construir componentes y que sean fáciles de mantener a largo plazo dentro de cada microservicio.
 
-<b>Domain-Driven Design(DDD):</b>
+  - <b>Single Responsibility Principle (SRP):</b> Cada clase que se crea tiene una única responsabilidad y una sola razón para cambiar.
+
+  - <b>Open/Closed Principle (OCP):</b> Las clases creadas siempre tiene que estar abiertas a una extensión, pero ceradas a las modificaciones. Eso se refiere a que se puede añadir nuevas funcionalidades sin alterar el código.
+
+  - <b>Liskov Substitution Principle (LSP):</b> Se debe mantener una sincronía entre la superclase y la subclase, ya que al compartir métodos deben mantener concordancia con su funcionamiento. 
+
+  - <b>Interface Segregation Principle (ISP):</b> En el caso de que sea necesario, se deben crear interfaces para poder suplir las necesidades del código. Ya que al crear clases que dependen de una sola interfaz, no sabemos con certeza si esa clase pueda cumplir con todo lo implementado dentro de la interfaz. 
+
+  - <b>Dependency Inversion Principle (DIP):</b> Al tener clases de alto nivel como de bajo nivel, no pueden depender una de otras directamente. Es claro que las clases de alto nivel son las que manejan las clase de bajo nivel, pero en el caso de que la clase de bajo nivel se vea afectada la clase de alto nivel también lo hará. Para ello se crea una interfaz de alto nivel que maneje la clase de bajo nivel. 
+
+- <b>Domain-Driven Design(DDD):</b> Se adaptará los principios de DDD para alinear el diseño del proyecto a trabajar con el modelo del negocio: 
+  - <b>Modelado Basado en Dominio:</b> El diseño de los microservicios se centrará en la lógica establecida de negocio.
+
+  - <b>Límites de Contexto o Bounded Contexts:</b> Dentro del proyecto se definen límites explicitos para cada modelo de dominio, con esto se asegura la coherencia dentro de cada microservicio.
+
+  - <b>Lenguaje Ubicuo o Ubiquitous Language:</b> Dentro de cada contexto se utilizará un lenguaje común y preciso, con esto se espera evitar malentendidos y asegurar que se refleje el modelo de la manera más fiel.
 
 
 #### 4.1.2 Approaches Statements Architectural Styles & Patterns
 
 <b>Approaches Statements</b>
+- <b>Domain-Driven Design (DDD): </b> Se optara DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
+
+- <b>Attribute-Driven Design (ADD): </b> Se utilizarpa ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
 
 <b>Architectural Styles & Patterns</b>
 
+- <b> Estilo de la Arquitectura:</b> Para el desarrollo de nuestra aplicación usaremos de Arquitectura de Microservicios, donde nuestra aplicación se estructura como una colección de servicios organizados alrededor del negocio.
+
 #### 4.1.3 Context Diagrams
-#### 4.1.4 Approach driven ViewPoints Diagram
+
+#### 4.1.4 Approach Driven ViewPoints Diagram
 
 <b>Diagrama de contenedores</b>
 
@@ -1038,6 +1054,7 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 
 #### 4.1.5 Relational/Non Relational Database Diagram
+
 #### 4.1.6 Design Patterns
 
   Conclusiones
