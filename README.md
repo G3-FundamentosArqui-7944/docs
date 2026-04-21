@@ -1000,7 +1000,47 @@ A continuación se proporciona el link del Trello donde se puede visualizar de m
 [Product Backlog en Trello]
 
 
- Conclusiones
+## Capitulo IV: Requeriments Specification
+
+### 4.1 Design Concepts, ViewPoints & ER Diagrams
+
+En esta sección nos centramos en los conceptos de diseño, los diferentes puntos de vista que utilizaremos para poder comprender y comunicar la arquitectura. Con esto se espera diseñar los diagramas para modelar los datos de la aplicación.
+
+#### 4.1.1 Principles Statements
+Para el diseño del producto de arquitectura, como grupo debemos reconocer ciertos principios que nos ayuden a alcanzar nuestros objetivos:
+
+<b>Principios SOLID:</b>
+- <b>Single Responsibility Principle (SRP):</b>
+- <b>Open/Closed Principle (OCP):</b>
+- <b>Liskov Substitution Principle (LSP)</b>
+- <b>Interface Segregation Principle (ISP):</b>
+- <b>Dependency Inversion Principle (DIP):</b>
+
+<b>Domain-Driven Design(DDD):</b>
+
+
+#### 4.1.2 Approaches Statements Architectural Styles & Patterns
+
+<b>Approaches Statements</b>
+
+<b>Architectural Styles & Patterns</b>
+
+#### 4.1.3 Context Diagrams
+#### 4.1.4 Approach driven ViewPoints Diagram
+
+<b>Diagrama de contenedores</b>
+
+<b>Diagrama de Componentes</b> 
+
+<b>Activities Diagrams</b>
+
+<b>Diagramas de Estados</b>
+
+
+#### 4.1.5 Relational/Non Relational Database Diagram
+#### 4.1.6 Design Patterns
+
+  Conclusiones
 
 * La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
 
