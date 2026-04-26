@@ -77,6 +77,7 @@
 | TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de escenarios As Is - To Be, además del desarrollo del Product Backlog. |
 | TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
 | TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
+| Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
 
 
 
@@ -1032,13 +1033,14 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 #### 4.1.2 Approaches Statements Architectural Styles & Patterns
 
 <b>Approaches Statements</b>
-- <b>Domain-Driven Design (DDD): </b> Se optara DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
+- <b>Domain-Driven Design (DDD): </b> Se optará DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
 
-- <b>Attribute-Driven Design (ADD): </b> Se utilizarpa ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
+- <b>Attribute-Driven Design (ADD): </b> Se utilizará ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
 
 <b>Architectural Styles & Patterns</b>
 
 - <b> Estilo de la Arquitectura:</b> Para el desarrollo de nuestra aplicación usaremos de Arquitectura de Microservicios, donde nuestra aplicación se estructura como una colección de servicios organizados alrededor del negocio.
+
 
 #### 4.1.3 Context Diagrams
 
@@ -1052,6 +1054,9 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 <b>Diagramas de Estados</b>
 
+<b>Diagrama de Clases</b>
+
+<img src="assets/chapter4/DiagramClass.png" alt="">
 
 #### 4.1.5 Relational/Non Relational Database Diagram
 
