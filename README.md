@@ -78,7 +78,7 @@
 | TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
 | TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
 | Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
-
+|Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
 
 
 ## Contenido
@@ -1059,6 +1059,9 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 <img src="assets/chapter4/DiagramClass.png" alt="">
 
 #### 4.1.5 Relational/Non Relational Database Diagram
+
+<img src="assets/chapter4/Base de Datos-BodyMatch.jpg" alt="">
+
 
 #### 4.1.6 Design Patterns
 
