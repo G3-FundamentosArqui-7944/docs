@@ -79,6 +79,7 @@
 | TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
 | Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
 |Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
+|Avn2|18/04/2026| Piero Francesco Tenorio Medina | Primera versión de Diagrama de Componentes|
 
 
 ## Contenido
@@ -1049,6 +1050,30 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 <b>Diagrama de contenedores</b>
 
 <b>Diagrama de Componentes</b> 
+
+- IAM Bounded Context
+
+<img src="assets/chapter4/Components/IAMBC.png" alt ="">
+
+- Membership and Payments Bounded Context
+
+<img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+
+- Video Management Bounded Context
+
+<img src="assets/chapter4/Components/Video Management BC.png" alt ="">
+
+- Matchmaking with Users Bounded Context
+
+<img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+
+- Training Tracker Bouded Context
+
+<img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
+
+- Nutrition Bounded Context
+
+<img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
 
 <b>Activities Diagrams</b>
 
