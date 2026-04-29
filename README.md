@@ -77,7 +77,9 @@
 | TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de escenarios As Is - To Be, además del desarrollo del Product Backlog. |
 | TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
 | TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
-
+| Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
+|Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
+|Avn2|18/04/2026| Piero Francesco Tenorio Medina | Primera versión de Diagrama de Componentes|
 
 
 ## Contenido
@@ -1000,7 +1002,101 @@ A continuación se proporciona el link del Trello donde se puede visualizar de m
 [Product Backlog en Trello]
 
 
- Conclusiones
+## Capitulo IV: Requeriments Specification
+
+### 4.1 Design Concepts, ViewPoints & ER Diagrams
+
+En esta sección nos centramos en los conceptos de diseño, los diferentes puntos de vista que utilizaremos para poder comprender y comunicar la arquitectura. Con esto se espera diseñar los diagramas para modelar los datos de la aplicación.
+
+#### 4.1.1 Principles Statements
+Para el diseño del producto de arquitectura, como grupo debemos reconocer ciertos principios que nos ayuden a alcanzar nuestros objetivos:
+
+- <b>Principios SOLID:</b> De estos aplicaremos cincos de los patrones de Diseño orientado a objetos para construir componentes y que sean fáciles de mantener a largo plazo dentro de cada microservicio.
+
+  - <b>Single Responsibility Principle (SRP):</b> Cada clase que se crea tiene una única responsabilidad y una sola razón para cambiar.
+
+  - <b>Open/Closed Principle (OCP):</b> Las clases creadas siempre tiene que estar abiertas a una extensión, pero ceradas a las modificaciones. Eso se refiere a que se puede añadir nuevas funcionalidades sin alterar el código.
+
+  - <b>Liskov Substitution Principle (LSP):</b> Se debe mantener una sincronía entre la superclase y la subclase, ya que al compartir métodos deben mantener concordancia con su funcionamiento. 
+
+  - <b>Interface Segregation Principle (ISP):</b> En el caso de que sea necesario, se deben crear interfaces para poder suplir las necesidades del código. Ya que al crear clases que dependen de una sola interfaz, no sabemos con certeza si esa clase pueda cumplir con todo lo implementado dentro de la interfaz. 
+
+  - <b>Dependency Inversion Principle (DIP):</b> Al tener clases de alto nivel como de bajo nivel, no pueden depender una de otras directamente. Es claro que las clases de alto nivel son las que manejan las clase de bajo nivel, pero en el caso de que la clase de bajo nivel se vea afectada la clase de alto nivel también lo hará. Para ello se crea una interfaz de alto nivel que maneje la clase de bajo nivel. 
+
+- <b>Domain-Driven Design(DDD):</b> Se adaptará los principios de DDD para alinear el diseño del proyecto a trabajar con el modelo del negocio: 
+  - <b>Modelado Basado en Dominio:</b> El diseño de los microservicios se centrará en la lógica establecida de negocio.
+
+  - <b>Límites de Contexto o Bounded Contexts:</b> Dentro del proyecto se definen límites explicitos para cada modelo de dominio, con esto se asegura la coherencia dentro de cada microservicio.
+
+  - <b>Lenguaje Ubicuo o Ubiquitous Language:</b> Dentro de cada contexto se utilizará un lenguaje común y preciso, con esto se espera evitar malentendidos y asegurar que se refleje el modelo de la manera más fiel.
+
+
+#### 4.1.2 Approaches Statements Architectural Styles & Patterns
+
+<b>Approaches Statements</b>
+- <b>Domain-Driven Design (DDD): </b> Se optará DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
+
+- <b>Attribute-Driven Design (ADD): </b> Se utilizará ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
+
+<b>Architectural Styles & Patterns</b>
+
+- <b> Estilo de la Arquitectura:</b> Para el desarrollo de nuestra aplicación usaremos de Arquitectura de Microservicios, donde nuestra aplicación se estructura como una colección de servicios organizados alrededor del negocio.
+
+
+#### 4.1.3 Context Diagrams
+
+#### 4.1.4 Approach Driven ViewPoints Diagram
+
+<b>Diagrama de contenedores</b>
+
+<b>Diagrama de Componentes</b> 
+
+- IAM Bounded Context
+
+<img src="assets/chapter4/Components/IAMBC.png" alt ="">
+
+- Membership and Payments Bounded Context
+
+<img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+
+- Video Management Bounded Context
+
+<img src="assets/chapter4/Components/Video Management BC.png" alt ="">
+
+- Matchmaking with Users Bounded Context
+
+<img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+
+- Training Tracker Bouded Context
+
+<img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
+
+- Nutrition Bounded Context
+
+<img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
+
+<b>Activities Diagrams</b>
+
+<b>Diagramas de Estados</b>
+
+<b>Diagrama de Clases</b>
+
+<img src="assets/chapter4/DiagramClass.png" alt="">
+
+#### 4.1.5 Relational/Non Relational Database Diagram
+
+<img src="assets/chapter4/Base de Datos-BodyMatch.jpg" alt="">
+
+
+#### 4.1.6 Design Patterns
+
+- <b>Patron Strategy:</b> Con este patron de comportamiento, buscamos facilitar el acceso a distintos tipos de pagos sin la necesidad de hacer muchas clases para cada una de ellas. Con este patrón podremos cambiar entre proveedores sin llegar a tocar el código a profundidad.
+<img src="assets/chapter4/Strategy Method.png" alt="" />
+
+- <b>Patrón Factory:</b> Este patrón creacioal nos permite utilizar interfaces para poder crear objetos en una superclase, miengras que las subclases puedan modificar el tipo de objeto creado. Con este patrón buscamos tener una visión a futuro en caso de que se quieran agregar muchos más tipos de perfiles. Además con este patrón se cumple uno de los principios SOLID "Open/Closed Principle", permitiendonos agregar cuantas clases querramos sin alterar significativamente el código.
+<img src="assets/chapter4/Factory Method.png" alt=""/>
+
+## Conclusiones
 
 * La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
 
