@@ -77,7 +77,9 @@
 | TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de escenarios As Is - To Be, además del desarrollo del Product Backlog. |
 | TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
 | TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
-
+| Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
+|Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
+|Avn2|18/04/2026| Piero Francesco Tenorio Medina | Primera versión de Diagrama de Componentes|
 
 
 ## Contenido
@@ -887,6 +889,12 @@ Como usuario, quiero subir una foto de mis alimentos para obtener automáticamen
 | US32          | Notificaciones y recordatorios de registro   |
 
 
+| Epics ID | Título                           | Descripción                                                                                     |
+|----------|----------------------------------|-------------------------------------------------------------------------------------------------|
+| EP-LP    | Sitio web estático              | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar.|
+| EP-API   | API RESTful                     | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
+ 
+
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|--------------------------|----------------------------|
 | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | Escenario 1: Registro exitoso usuario<br>Dado que el usuario completa el formulario,<br>cuando selecciona “usuario”,<br>entonces el sistema lo redirige al dashboard.<br><br>Escenario 2: Registro exitoso coach<br>Dado que el usuario selecciona “coach”,<br>cuando completa el registro,<br>entonces se redirige a configuración profesional.<br><br>Escenario 3: Datos incompletos<br>Dado que faltan campos obligatorios,<br>cuando intenta registrarse,<br>entonces se muestra mensaje de error. | EP01 |
@@ -921,6 +929,11 @@ Como usuario, quiero subir una foto de mis alimentos para obtener automáticamen
 | US30 | Recomendaciones nutricionales | Como usuario quiero sugerencias personalizadas. | Escenario 1: Recomendación<br>Dado que analiza consumo,<br>cuando procesa,<br>entonces sugiere mejoras.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando procesa,<br>entonces muestra mensaje. | EP06 |
 | US31 | Integración fitness-nutrición | Como usuario quiero conectar dieta y entrenamiento. | Escenario 1: Integración<br>Dado que tiene objetivos,<br>cuando analiza datos,<br>entonces relaciona dieta y fitness.<br><br>Escenario 2: Falta de datos<br>Dado que no hay objetivos,<br>cuando entra,<br>entonces solicita configuración. | EP06 |
 | US32 | Notificaciones nutricionales | Como usuario quiero recordatorios de comidas. | Escenario 1: Notificación<br>Dado que activa recordatorios,<br>cuando llega hora,<br>entonces envía alerta.<br><br>Escenario 2: Desactivado<br>Dado que está apagado,<br>cuando llega hora,<br>entonces no envía nada. | EP06 |
+| US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | Escenario 1: Acceso a información<br>Dado que el visitante accede al sitio web,<br>cuando recorre la sección informativa,<br>entonces el sistema presenta descripciones claras de los servicios.<br><br>Escenario 2: Consulta de características<br>Dado que se requiere mayor detalle,<br>cuando se solicita información específica,<br>entonces el sistema entrega las características correspondientes. | EP-LP |
+| US34 | Solicitar demostración | Como visitante, quiero registrar interés en una demostración para conocer mejor el sistema. | Escenario 1: Registro exitoso<br>Dado que se ingresan datos válidos,<br>cuando se envía la solicitud,<br>entonces el sistema confirma la recepción y describe el siguiente paso.<br><br>Escenario 2: Registro inválido<br>Dado que se ingresan datos incompletos,<br>cuando se procesa la solicitud,<br>entonces el sistema informa los errores identificados. | EP-LP |
+| US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido. | EP-LP |
+| US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles. | EP-LP |
+| US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados. | EP-LP |
 
 ### 3.2. Impact Mapping.
 El **Impact Map** es una herramienta visual que permite relacionar los objetivos de negocio con las personas involucradas, los impactos esperados, los entregables y las historias de usuario asociadas.  
@@ -1000,7 +1013,383 @@ A continuación se proporciona el link del Trello donde se puede visualizar de m
 [Product Backlog en Trello]
 
 
- Conclusiones
+## Capitulo IV: Requeriments Specification
+
+### 4.1 Design Concepts, ViewPoints & ER Diagrams
+
+En esta sección nos centramos en los conceptos de diseño, los diferentes puntos de vista que utilizaremos para poder comprender y comunicar la arquitectura. Con esto se espera diseñar los diagramas para modelar los datos de la aplicación.
+
+#### 4.1.1 Principles Statements
+Para el diseño del producto de arquitectura, como grupo debemos reconocer ciertos principios que nos ayuden a alcanzar nuestros objetivos:
+
+- <b>Principios SOLID:</b> De estos aplicaremos cincos de los patrones de Diseño orientado a objetos para construir componentes y que sean fáciles de mantener a largo plazo dentro de cada microservicio.
+
+  - <b>Single Responsibility Principle (SRP):</b> Cada clase que se crea tiene una única responsabilidad y una sola razón para cambiar.
+
+  - <b>Open/Closed Principle (OCP):</b> Las clases creadas siempre tiene que estar abiertas a una extensión, pero ceradas a las modificaciones. Eso se refiere a que se puede añadir nuevas funcionalidades sin alterar el código.
+
+  - <b>Liskov Substitution Principle (LSP):</b> Se debe mantener una sincronía entre la superclase y la subclase, ya que al compartir métodos deben mantener concordancia con su funcionamiento. 
+
+  - <b>Interface Segregation Principle (ISP):</b> En el caso de que sea necesario, se deben crear interfaces para poder suplir las necesidades del código. Ya que al crear clases que dependen de una sola interfaz, no sabemos con certeza si esa clase pueda cumplir con todo lo implementado dentro de la interfaz. 
+
+  - <b>Dependency Inversion Principle (DIP):</b> Al tener clases de alto nivel como de bajo nivel, no pueden depender una de otras directamente. Es claro que las clases de alto nivel son las que manejan las clase de bajo nivel, pero en el caso de que la clase de bajo nivel se vea afectada la clase de alto nivel también lo hará. Para ello se crea una interfaz de alto nivel que maneje la clase de bajo nivel. 
+
+- <b>Domain-Driven Design(DDD):</b> Se adaptará los principios de DDD para alinear el diseño del proyecto a trabajar con el modelo del negocio: 
+  - <b>Modelado Basado en Dominio:</b> El diseño de los microservicios se centrará en la lógica establecida de negocio.
+
+  - <b>Límites de Contexto o Bounded Contexts:</b> Dentro del proyecto se definen límites explicitos para cada modelo de dominio, con esto se asegura la coherencia dentro de cada microservicio.
+
+  - <b>Lenguaje Ubicuo o Ubiquitous Language:</b> Dentro de cada contexto se utilizará un lenguaje común y preciso, con esto se espera evitar malentendidos y asegurar que se refleje el modelo de la manera más fiel.
+
+
+#### 4.1.2 Approaches Statements Architectural Styles & Patterns
+
+<b>Approaches Statements</b>
+- <b>Domain-Driven Design (DDD): </b> Se optará DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
+
+- <b>Attribute-Driven Design (ADD): </b> Se utilizará ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
+
+<b>Architectural Styles & Patterns</b>
+
+- <b> Estilo de la Arquitectura:</b> Para el desarrollo de nuestra aplicación usaremos de Arquitectura de Microservicios, donde nuestra aplicación se estructura como una colección de servicios organizados alrededor del negocio.
+
+
+#### 4.1.3 Context Diagrams
+
+#### 4.1.4 Approach Driven ViewPoints Diagram
+
+<b>Diagrama de contenedores</b>
+
+<b>Diagrama de Componentes</b> 
+
+- IAM Bounded Context
+
+<img src="assets/chapter4/Components/IAMBC.png" alt ="">
+
+- Membership and Payments Bounded Context
+
+<img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+
+- Video Management Bounded Context
+
+<img src="assets/chapter4/Components/Video Management BC.png" alt ="">
+
+- Matchmaking with Users Bounded Context
+
+<img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+
+- Training Tracker Bouded Context
+
+<img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
+
+- Nutrition Bounded Context
+
+<img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
+
+<b>Activities Diagrams</b>
+
+<b>Diagramas de Estados</b>
+
+<b>Diagrama de Clases</b>
+
+<img src="assets/chapter4/DiagramClass.png" alt="">
+
+#### 4.1.5 Relational/Non Relational Database Diagram
+
+<img src="assets/chapter4/Base de Datos-BodyMatch.jpg" alt="">
+
+
+#### 4.1.6 Design Patterns
+
+- <b>Patron Strategy:</b> Con este patron de comportamiento, buscamos facilitar el acceso a distintos tipos de pagos sin la necesidad de hacer muchas clases para cada una de ellas. Con este patrón podremos cambiar entre proveedores sin llegar a tocar el código a profundidad.
+<img src="assets/chapter4/Strategy Method.png" alt="" />
+
+- <b>Patrón Factory:</b> Este patrón creacioal nos permite utilizar interfaces para poder crear objetos en una superclase, miengras que las subclases puedan modificar el tipo de objeto creado. Con este patrón buscamos tener una visión a futuro en caso de que se quieran agregar muchos más tipos de perfiles. Además con este patrón se cumple uno de los principios SOLID "Open/Closed Principle", permitiendonos agregar cuantas clases querramos sin alterar significativamente el código.
+<img src="assets/chapter4/Factory Method.png" alt=""/>
+
+
+
+#### 4.1.7. Tactics
+
+Las tácticas arquitectónicas son decisiones de diseño concretas que permiten satisfacer los
+atributos de calidad requeridos por BodyMatch AI. A diferencia de los patrones de diseño, las
+tácticas actúan directamente sobre los estímulos del sistema para producir las respuestas
+esperadas en cada escenario de calidad. A continuación se organizan por atributo.
+
+---
+
+##### Tácticas de Rendimiento
+
+El sistema debe responder rápidamente, especialmente en funciones como la **búsqueda de coaches** y el **análisis de ejercicios**.
+
+
+
+ **Uso de caché para datos frecuentes**
+La información más consultada (como **perfiles de coaches** o **resultados de búsqueda**) se almacena temporalmente en caché para evitar consultas repetidas y mejorar la velocidad de respuesta.
+
+**Procesamiento en segundo plano**
+El análisis de videos no se realiza de forma inmediata. El usuario sube el video y el sistema lo procesa en segundo plano, notificando el resultado cuando esté disponible.
+
+ **Carga de datos por partes (paginación)**
+En listas grandes (como **coaches** o **historial**), se cargan solo algunos elementos a la vez para reducir tiempos de carga y mejorar la experiencia del usuario.
+
+ **Optimización de base de datos**
+Los datos se estructuran y organizan de manera eficiente para acelerar las **búsquedas** y **consultas**, reduciendo tiempos de respuesta.
+
+---
+
+##### Tácticas de Seguridad
+
+El sistema maneja datos personales, videos de ejercicio y transacciones de pago, por lo que
+la seguridad es un atributo crítico.
+
+- **Autenticación mediante JWT con rotación de tokens:** El módulo IAM emite tokens de acceso
+  de corta duración (15 minutos) y tokens de refresco de larga duración (7 días). La rotación
+  automática reduce la ventana de exposición en caso de intercepción.
+
+- **Control de acceso basado en roles (RBAC):** Spring Security aplica restricciones por rol en
+  cada endpoint. Los roles definidos son `ROLE_USER` y `ROLE_COACH`. Un usuario con rol
+  `ROLE_USER` no puede acceder a los endpoints de gestión de clientes del coach, y viceversa.
+
+- **Cifrado de datos en tránsito y en reposo:** Toda la comunicación entre el cliente y el
+  servidor se realiza sobre HTTPS/TLS. 
+
+- **Sanitización de entradas:** Todos los datos recibidos desde el cliente se validan mediante
+  Bean Validation (`@Valid`, `@NotBlank`, `@Size`) antes de ser procesados por la capa de
+  dominio, previniendo inyecciones y desbordamientos.
+
+
+---
+
+##### Tácticas de Mantenibilidad
+
+El equipo es de cinco integrantes con ciclos de desarrollo cortos, por lo que la capacidad de
+modificar y extender el sistema sin regresiones es fundamental.
+
+- **Separación por Bounded Contexts:** Cada contexto delimitado (IAM, Membership & Payments,
+  Video Management, Matchmaking, Training Tracker, Nutrition) tiene su propio paquete Java con
+  capas internas independientes. Los cambios dentro de un contexto no afectan a los demás.
+
+- **Pruebas automatizadas por capa:** Se implementan pruebas unitarias en la capa de dominio con JUnit y Mockito (aislando dependencias), pruebas de integración para los repositorios mediante Spring Boot Test y pruebas de contrato para los endpoints REST validando respuestas, estados HTTP y estructura del API.
+
+- **Documentación automática de APIs con SpringDoc/OpenAPI:** Todos los endpoints REST están
+  documentados con anotaciones OpenAPI. La especificación se genera automáticamente y se expone
+  en `/swagger-ui/index.html`, facilitando la integración con el frontend.
+
+---
+
+
+
+### 4.2. Architectural Drivers
+
+Los drivers arquitectónicos son el conjunto de requisitos, restricciones y preocupaciones que
+tienen el mayor impacto sobre la estructura del sistema. Su identificación explícita es el
+insumo principal del proceso ADD v3 aplicado en este proyecto.
+
+Los principales drivers arquitectónicos del sistema son:
+
+
+-**Análisis inteligente de ejercicios (IA)**
+Garantizar la capacidad de analizar videos de ejercicios y proporcionar retroalimentación precisa sobre la ejecución, siendo este el núcleo innovador del sistema.
+
+- **Interacción usuario–coach**
+Permitir una comunicación fluida entre usuarios y entrenadores mediante funcionalidades como mensajería, seguimiento y agendamiento de sesiones.
+
+- **Rendimiento en procesamiento de video**
+Asegurar que la carga y análisis de videos se realice de manera eficiente, sin afectar la experiencia del usuario.
+
+-**Escalabilidad del sistema**
+Soportar el crecimiento de usuarios, coaches y volumen de videos sin degradar el rendimiento de la plataforma.
+
+- **Disponibilidad del servicio**
+Garantizar que la aplicación esté accesible en todo momento, considerando que los usuarios pueden entrenar en diferentes horarios.
+
+-**Seguridad de datos personales y multimedia**
+Proteger la información sensible de los usuarios, incluyendo datos personales, videos de entrenamiento y comunicaciones.
+
+ -**Usabilidad de la aplicación**
+Ofrecer una interfaz simple e intuitiva para usuarios con distintos niveles de experiencia en tecnología.
+
+- **Seguimiento del progreso del usuario**
+Permitir registrar, visualizar y analizar la evolución del usuario a lo largo del tiempo.
+
+ -**Integración con servicios externos**
+Facilitar la conexión con herramientas externas como servicios de inteligencia artificial, almacenamiento de videos y notificaciones.
+
+-**Mantenibilidad del sistema**
+Permitir que el sistema pueda ser modificado, extendido y mantenido fácilmente mediante buenas prácticas de desarrollo y arquitectura.
+
+
+#### 4.1.8. Design Purpose
+
+El propósito del proceso de diseño arquitectónico de BodyMatch AI es establecer una estructura
+técnica coherente, mantenible y extensible que permita implementar las funcionalidades
+principales del producto de manera iterativa, respetando las restricciones de tiempo y equipo
+propias de un proyecto académico, y dejando las bases para una evolución futura hacia una
+arquitectura de microservicios en la nube.
+
+De forma específica, el diseño busca:
+
+- **Traducir el modelo de negocio en componentes técnicos verificables:** Las dos propuestas de
+  valor centrales de BodyMatch AI (conexión personalizada entre usuarios y coaches, y análisis
+  automatizado de ejercicios mediante inteligencia artificial) deben estar reflejadas
+  directamente en los bounded contexts y sus interfaces públicas, de modo que cada decisión
+  de código pueda rastrearse hasta un requisito de negocio.
+
+- **Satisfacer los atributos de calidad más críticos para el dominio:** En una plataforma de
+  salud y ejercicio, la seguridad de los datos personales, la disponibilidad del servicio
+  durante sesiones de entrenamiento y la corrección técnica del feedback de IA son atributos
+  que afectan directamente la confianza del usuario. El diseño los aborda desde la primera
+  iteración.
+
+- **Proteger la capacidad de evolución del sistema:** La fase inicial corresponde a un monolito
+  modular organizado por bounded contexts. Esta estructura permite una transición progresiva
+  hacia microservicios sin reescritura, ya que cada bounded context tiene ya sus propias
+  interfaces, modelos de dominio y reglas de negocio encapsuladas.
+
+- **Crear modelos y vistas arquitectónicas**: representar la solución en diagramas C4 (Contexto, Contenedor, Componente) y UML (Clases, ERD) como documentación guía para el desarrollo.  
+
+- **Construir sobre decisiones técnicas explícitas y trazables:** Cada decisión arquitectónica
+  relevante (stack tecnológico, mecanismo de autenticación, estrategia de almacenamiento,
+  integración con servicios externos) queda registrada con su justificación, permitiendo
+  evaluarla y revisarla en iteraciones posteriores.
+  
+
+#### 4.1.9. Primary Functionality (Primary User Stories)
+
+Las siguientes historias de usuario son las que tienen mayor impacto sobre la estructura
+arquitectónica del sistema. Su implementación requiere decisiones de diseño que afectan
+múltiples capas y componentes, razón por la cual se les denomina historias primarias.
+
+| User Story ID | Título | Justificación arquitectónica |
+|---|---|---|
+| US01 | Registro de usuario | Define el modelo central de identidad del sistema. Impacta el Bounded Context IAM, la estrategia de almacenamiento de credenciales y el flujo de emisión de tokens JWT. |
+| US02 | Inicio de sesión | Determina el mecanismo de autenticación de toda la plataforma. La elección de JWT con doble token (acceso + refresco) afecta todos los endpoints protegidos. |
+| US06 | Búsqueda de coaches | Requiere diseño de índices, estructura del perfil del coach y lógica de filtrado por múltiples atributos. Define el modelo de datos compartido entre Matchmaking y el perfil de usuario. |
+| US08 | Reserva de sesión | Introduce concurrencia: dos usuarios pueden intentar reservar el mismo horario simultáneamente. Requiere manejo de transacciones y bloqueo optimista en la base de datos. |
+| US09 | Chat con coach | Depende de la integración con una API externa de mensajería. Define los contratos de integración, el manejo de errores de terceros y el modelo de conversación almacenado localmente. |
+| US11 | Subir video del ejercicio | Determina la estrategia de almacenamiento de archivos binarios (Azure Blob Storage), el flujo asíncrono de procesamiento y el contrato entre Video Management y el servicio de IA. |
+| US12 | Feedback automático con IA | Define la integración con Gemini AI, el formato de los resultados del análisis y cómo se persisten y presentan las correcciones al usuario. Impacta Video Management y Training Tracker. |
+| US15 | Registro de métricas físicas | Define el modelo de datos de seguimiento físico. Su frecuencia de escritura alta impacta las decisiones de indexación y el diseño del historial en Training Tracker. |
+| US19 | Gestión de clientes (coach) | Expone la vista del coach sobre sus alumnos. Requiere que Matchmaking y Training Tracker compartan o expongan datos sin acoplar sus modelos internos. |
+| US22 | Monetización de servicios | Introduce el Bounded Context de Membership & Payments. Requiere integración con una pasarela de pago y manejo seguro de información de transacciones. |
+| US24 | Reconocimiento de alimentos con IA | Define la segunda integración con IA del sistema (Nutrition BC). Comparte el patrón asíncrono de Video Management pero opera sobre imágenes en lugar de video. |
+| TS01 | Autenticación API | Base de seguridad del sistema, protegiendo datos sensibles y cumpliendo con regulaciones de privacidad. |
+
+---
+
+#### 4.1.10. Quality Attribute Scenarios
+
+Los siguientes escenarios especifican de forma medible los atributos de calidad que la
+arquitectura debe garantizar. Cada escenario sigue la estructura de seis partes definida por
+el método ADD v3.
+
+##### QAS-01: Rendimiento — Procesamiento asíncrono de video
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Usuario que finaliza una sesión de ejercicio y sube un video para análisis |
+| **Estímulo** | Solicitud `POST /api/v1/videos` con un archivo de video de hasta 200 MB |
+| **Entorno** | Sistema en operación normal con hasta 50 solicitudes de análisis concurrentes |
+| **Artefacto** | Módulo Video Management + worker de análisis con Gemini AI |
+| **Respuesta** | El sistema acepta el video, responde con confirmación de recepción en menos de 10 segundos, encola la tarea de análisis y notifica al usuario cuando el resultado está disponible |
+| **Medida de respuesta** | Tiempo de respuesta de la solicitud HTTP < 10 segundos. Tiempo máximo de entrega del feedback de IA < 5 minutos en condiciones normales de carga |
+
+
+
+##### QAS-02: Seguridad — Control de acceso por rol
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Usuario autenticado con rol `ROLE_USER` intentando acceder a endpoints de gestión de clientes reservados para coaches |
+| **Estímulo** | Solicitud `GET /api/v1/coaches/me/clients` con token JWT válido pero rol incorrecto |
+| **Entorno** | Sistema en operación normal |
+| **Artefacto** | API Gateway + Spring Security RBAC + módulo IAM |
+| **Respuesta** | El sistema rechaza la solicitud con HTTP 403 Forbidden, registra el intento en el log de auditoría y no expone información del recurso solicitado |
+| **Medida de respuesta** | 100% de los intentos de acceso con rol incorrecto son rechazados. Tiempo de respuesta del rechazo < 200 ms |
+
+
+
+
+##### QAS-03: Rendimiento — Búsqueda de coaches bajo carga
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Múltiples usuarios realizando búsquedas de coaches simultáneamente durante hora pico |
+| **Estímulo** | 200 solicitudes concurrentes a `GET /api/v1/coaches` con distintos filtros (especialidad, precio, disponibilidad) |
+| **Entorno** | Sistema bajo carga alta en horario pico (18:00–21:00 hora peruana) |
+| **Artefacto** | Módulo Matchmaking + PostgreSQL con índices |
+| **Respuesta** | Las búsquedas con parámetros comunes se sirven desde caché. Las búsquedas únicas consultan directamente la base de datos con índices optimizados |
+| **Medida de respuesta** | Tiempo de respuesta del percentil 95 (P95) < 800 ms bajo carga de 200 usuarios concurrentes. Tasa de caché hit > 60% para búsquedas frecuentes |
+
+##### QAS-04: Seguridad — Protección de datos de video
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Usuario no propietario intenta acceder a un video de ejercicio de otro usuario |
+| **Estímulo** | Solicitud `GET /api/v1/videos/{videoId}` con token JWT de un usuario diferente al propietario del video |
+| **Entorno** | Sistema en operación normal |
+| **Artefacto** | Módulo Video Management + capa de autorización de dominio + Azure Blob Storage (URLs firmadas con tiempo de expiración) |
+| **Respuesta** | El sistema valida que el `userId` del token coincide con el propietario del video. En caso contrario, rechaza la solicitud con HTTP 403 y no expone la URL del recurso en Blob Storage |
+| **Medida de respuesta** | 0% de accesos no autorizados a videos de usuarios. Las URLs pre-firmadas de Blob Storage expiran en 15 minutos |
+
+
+
+##### QAS-05: Mantenibilidad — Incorporación de nuevo proveedor de pagos
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Decisión de negocio de agregar un segundo proveedor de pagos junto al existente |
+| **Estímulo** | Requerimiento de soporte para un nuevo gateway de pago sin modificar la lógica de negocio del Bounded Context Membership & Payments |
+| **Entorno** | Sistema en desarrollo activo, equipo de cinco personas |
+| **Artefacto** | Bounded Context Membership & Payments + Patrón Strategy para proveedores de pago |
+| **Respuesta** | El equipo implementa una nueva clase que implementa la interfaz `PaymentGatewayStrategy` sin modificar las clases existentes. El sistema puede seleccionar el proveedor mediante configuración |
+| **Medida de respuesta** | La incorporación del nuevo proveedor requiere menos de 8 horas de desarrollo y no introduce cambios en otros bounded contexts |
+
+
+#### 4.1.11. Constraints
+
+Las restricciones son condiciones impuestas externamente al equipo de diseño que limitan el
+espacio de soluciones arquitectónicas posibles. A diferencia de los atributos de calidad, las
+restricciones no son negociables dentro del contexto del proyecto.
+
+| ID | Restricción |
+|---|---|
+| CON-01 | El backend debe implementarse con Java 24 y Spring Boot 3.x, con autenticación JWT |
+| CON-02 | El proveedor de nube es exclusivamente Microsoft Azure |
+| CON-03 | La base de datos principal es PostgreSQL. El uso de bases de datos NoSQL está pendiente de evaluación y no puede asumirse en el diseño actual |
+| CON-04 | La primera fase del sistema corresponde a un monolito modular organizado por bounded contexts, no a microservicios independientes |
+| CON-05 | La funcionalidad de chat se implementa mediante una API externa de terceros. El sistema no desarrolla su propio protocolo de mensajería en tiempo real |
+| CON-06 | El proyecto debe cumplir con la Ley de Protección de Datos Personales del Perú (Ley N.° 29733) en lo que respecta al almacenamiento y tratamiento de datos de usuarios |
+| CON-07 | La aplicación cliente es móvil, con desarrollo orientado a la plataforma Android |
+| CON-08 | El presupuesto de infraestructura en la fase académica es limitado. Los servicios de Azure utilizados deben mantenerse dentro de los niveles gratuitos o de bajo costo (Free / Basic tier) en la medida de lo posible |
+| CON-09 | Limitaciones de dispositivos móviles de los usuarios (cámara, almacenamiento, rendimiento) para la grabación y envío de videos. |
+| CON-10 | Restricción en el tamaño y duración de los videos para evitar sobrecarga en el sistema.|
+---
+
+#### 4.1.12. Architectural Concerns
+
+Las preocupaciones arquitectónicas son riesgos, incertidumbres y desafíos propios del
+arquitecto de software que, de no ser atendidos, pueden comprometer la estabilidad, la
+seguridad o la evolución del sistema. No son requisitos funcionales ni restricciones
+externas: son alertas internas del proceso de diseño que deben gestionarse activamente.
+
+
+| ID | Preocupación | Impacto potencial | Estrategia de mitigación |
+|---|---|---|---|
+| AC-01 | El equipo no tiene experiencia previa en el diseño de sistemas distribuidos con cola de mensajes. La integración de Azure Service Bus para el procesamiento asíncrono de video puede introducir errores difíciles de depurar | Retrasos en la entrega y defectos en el flujo más crítico del sistema | Comenzar con una implementación síncrona del flujo de video en las primeras iteraciones y migrar al modelo asíncrono en una iteración posterior, cuando el equipo haya validado el contrato de integración |
+| AC-02 | La lógica de negocio compartida entre los bounded contexts Matchmaking y Training Tracker (por ejemplo, el progreso de un usuario asociado a un coach) puede generar acoplamiento implícito entre módulos | Dificultad para modificar un bounded context sin afectar al otro, violando el principio de separación | Definir explícitamente qué datos son propietad de cada bounded context y qué datos se comparten mediante contratos de interfaz (DTOs) sin exponer el modelo interno |
+| AC-03 | El almacenamiento de videos en Azure Blob Storage puede generar costos crecientes no anticipados a medida que aumenta el volumen de usuarios y videos almacenados | Superación del presupuesto de infraestructura | Implementar políticas de retención de videos (limitar el almacenamiento por usuario, establecer un período máximo de retención) y evaluar la compresión de videos antes del almacenamiento |
+| AC-04 | La dependencia de Gemini AI para el análisis de ejercicios introduce un riesgo de disponibilidad externo. Cambios en la API, límites de cuota o aumentos de precio no están bajo el control del equipo | Degradación de la funcionalidad principal diferenciadora del producto sin alternativa inmediata | Diseñar el módulo Video Management con una abstracción (interfaz `VideoAnalysisProvider`) que permita sustituir el proveedor de IA sin cambios en la lógica de negocio. Documentar claramente la dependencia como riesgo del producto |
+| AC-05 | La ausencia de pruebas automatizadas en las capas de infraestructura y de integración puede hacer que los errores de integración entre bounded contexts solo se detecten en etapas tardías del desarrollo | Regresiones frecuentes y tiempo de corrección elevado en las fases finales del proyecto | Establecer desde el primer sprint una suite mínima de pruebas de integración para los endpoints más críticos (autenticación, búsqueda de coaches, subida de video) usando Spring Boot Test y Testcontainers para PostgreSQL |
+| AC-06 | El modelo de datos de PostgreSQL puede volverse difícil de mantener si los bounded contexts comparten tablas o si las migraciones de Flyway no se coordinan correctamente entre los miembros del equipo | Conflictos de migración, datos corruptos y dificultad para escalar a microservicios en el futuro | Establecer la convención de que cada bounded context tiene su propio schema de PostgreSQL (o su propio prefijo de tablas) y que las migraciones se revisan en pull requests antes de fusionarse a la rama principal |
+| AC-07 | La experiencia de usuario en la aplicación móvil depende de la latencia de los endpoints del backend. Una arquitectura de monolito mal optimizada puede introducir tiempos de respuesta inaceptables desde dispositivos móviles en redes lentas (4G, zonas rurales del Perú) | Abandono de la aplicación por usuarios en condiciones de conectividad limitada | Aplicar desde el inicio las tácticas de rendimiento descritas en la sección 4.1.7 (caché, paginación, índices) y establecer un SLO de tiempo de respuesta máximo por endpoint durante las revisiones de sprint |
+| AC-08 | El manejo de datos de salud y ejercicio de usuarios requiere cuidado especial en cuanto a la política de privacidad y los términos de uso del servicio, especialmente en la recopilación de videos corporales de los usuarios | Riesgo legal y de reputación si los datos de los usuarios no se manejan con transparencia | Definir explícitamente en los términos y condiciones del servicio el propósito del almacenamiento de videos, el período de retención y el alcance del análisis automatizado. Implementar la funcionalidad de eliminación de cuenta y de videos a solicitud del usuario |
+| AC-09 | La integración con una API externa de chat crea una dependencia de terceros para una funcionalidad de alta visibilidad. Si el proveedor cambia sus condiciones de uso o discontinúa el servicio, la funcionalidad de comunicación directa entre usuarios y coaches queda comprometida | Pérdida de una funcionalidad crítica para la propuesta de valor del producto | Diseñar la integración detrás de una interfaz `ChatService` que permita sustituir el proveedor. Almacenar localmente los metadatos de las conversaciones (participantes, timestamps, número de mensajes) para mantener trazabilidad independientemente del proveedor |
+| AC-10 | La falta de observabilidad en el sistema (logs estructurados, métricas, alertas) puede hacer que los problemas en producción pasen desapercibidos o sean difíciles de diagnosticar | Tiempo de detección y resolución de incidentes elevado en producción | Configurar desde el primer despliegue el logging estructurado con Spring Boot + Azure Monitor. Establecer alertas básicas sobre tasas de error HTTP 5xx y tiempos de respuesta por encima del umbral definido |
+
+-----
+## Conclusiones
 
 * La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
 
