@@ -972,7 +972,7 @@ A continuación se presenta el Impact Map de **BodyMatch AI**:
 <img src="assets/impact1.png" alt="as 2" />
 
 
-**Segmento Objetivo 1: Entrenadores Personales (Coaches)**
+**Segmento Objetivo 2: Entrenadores Personales (Coaches)**
 
 <img src="assets/impact2.png" alt="as 2" />
 
