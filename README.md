@@ -1058,10 +1058,27 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 
 #### 4.1.3 Context Diagrams
+El diagrama de contexto de BodyMatch AI ilustra cómo la plataforma de entrenamiento asistida por inteligencia artificial interactúa con sus actores principales y el ecosistema de servicios externos necesarios para su funcionamiento. La plataforma actúa como el núcleo tecnológico que centraliza el procesamiento de datos biométricos y técnicos, conectando a tres tipos de usuarios con objetivos específicos
+
+Usuario Atleta: El actor principal que interactúa con la aplicación para subir videos de ejecución de ejercicios, recibir correcciones técnicas generadas por la IA y registrar su progreso nutricional y físico.
+
+Coach Profesional: Quien utiliza la plataforma como una herramienta de gestión para diseñar rutinas personalizadas, monitorear el desempeño de sus alumnos y brindar asesorías basadas en los datos recolectados por el sistema.
+
+Administrador: Responsable de la gestión operativa de la plataforma, el mantenimiento de los perfiles de usuario y la supervisión de la seguridad y disponibilidad del sistema.
+
+Para garantizar una arquitectura escalable y robusta, el sistema se integra con servicios externos críticos que delegan responsabilidades especializadas: Stripe como pasarela de pagos para el procesamiento seguro de transacciones y suscripciones; Microsoft Outlook para la gestión de comunicaciones transaccionales y notificaciones de confirmación; y servicios de Cloud Storage para el almacenamiento eficiente y recuperación de las evidencias en video de los entrenamientos. Esta configuración permite que BodyMatch AI se enfoque en su propuesta de valor central —la corrección técnica mediante visión computacional— mientras mantiene una conectividad fluida con proveedores de infraestructura de clase mundial.
+
+<img src="assets/chapter4/Components/SystemContext.png" alt ="">
+
+
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
 
 <b>Diagrama de contenedores</b>
+
+
+<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
+
 
 <b>Diagrama de Componentes</b> 
 
@@ -1091,7 +1108,28 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 <b>Activities Diagrams</b>
 
+<img src="assets/chapter4/Components/actividadai.png" alt ="">
+
+<img src="assets/chapter4/Components/actividadiam.png" alt ="">
+
+<img src="assets/chapter4/Components/actividadpayment.png" alt ="">
+
+<img src="assets/chapter4/Components/actividadtracking.png" alt ="">
+
 <b>Diagramas de Estados</b>
+
+
+<img src="assets/chapter4/Components/estadoaim.png" alt ="">
+
+
+
+<img src="assets/chapter4/Components/estadoai.png" alt ="">
+
+
+<img src="assets/chapter4/Components/estadopayment.png" alt ="">
+
+
+<img src="assets/chapter4/Components/estadotracking.png" alt ="">
 
 <b>Diagrama de Clases</b>
 
