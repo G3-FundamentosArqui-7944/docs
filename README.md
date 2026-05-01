@@ -83,6 +83,8 @@
 |  TB2 | 28/04/2026  | Pablo Antonio Geronimo Quispe |Avanze del Documento y tacticas y ADD |
 | TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Avanze del Capitulo 4.2  |
 | TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Finalizacion Del Capitulo 4.2|
+| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Finalizacion De los Diagramas de actividad y estado |
+| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Implementacion de Valores en startup profile  |
 
 ## Contenido
 
