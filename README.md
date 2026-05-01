@@ -199,11 +199,31 @@ BodyMatch  es una startup tecnológica enfocada en mejorar la calidad de vida de
 La solución responde a la creciente necesidad de contar con acompañamiento personalizado en el ámbito del fitness, ofreciendo un ecosistema donde los usuarios pueden encontrar coaches según sus objetivos, características y nivel de experiencia, facilitando así una experiencia adaptada y accesible.
 A través de la plataforma, los usuarios pueden explorar perfiles de entrenadores, agendar sesiones, comunicarse en tiempo real y recibir retroalimentación continua. Por otro lado, los coaches obtienen mayor visibilidad, herramientas digitales para gestionar sus servicios y la posibilidad de ampliar su alcance profesional.
 
-## Misión
+#### Misión
 Empoderar a las personas y a los entrenadores mediante una plataforma tecnológica accesible, inteligente y personalizada que facilite la conexión, el aprendizaje y la mejora continua en el ámbito del ejercicio físico.
 
-## Visión
+#### Visión
 Ser la plataforma líder en Peru en entrenamiento digital inteligente, integrando inteligencia artificial, profesionales del fitness y usuarios en un ecosistema que promueva el bienestar y el desarrollo físico de manera sostenible.
+
+#### Valores de BodyMatch AI
+
+Para complementar tu Misión y Visión, estos cinco pilares definen la cultura y el comportamiento de la plataforma:
+
+ 1. Innovación con Propósito
+No usamos tecnología solo por usarla. Integramos Inteligencia Artificial para resolver problemas reales de salud y técnica deportiva, transformando algoritmos en resultados tangibles para el usuario.
+
+ 2. Rigor y Seguridad Técnica
+La integridad física de nuestros usuarios es prioridad. Nos comprometemos a que nuestra retroalimentación técnica sea precisa, buscando siempre la prevención de lesiones y el movimiento seguro.
+
+ 3. Empoderamiento y Conectividad
+Creemos en el valor humano del coach. Nuestra plataforma no busca reemplazar al profesional, sino potenciar su alcance y fortalecer el vínculo de confianza con el atleta.
+
+ 4. Accesibilidad y Democratización
+Trabajamos para que el asesoramiento fitness de alta calidad no sea un lujo, sino una herramienta disponible para cualquier peruano que busque mejorar su salud, sin importar su nivel de experiencia.
+
+ 5. Transparencia de Datos
+Operamos bajo una ética de datos clara. La información de progreso y salud de nuestros usuarios es tratada con el máximo respeto y transparencia, asegurando que el atleta siempre sea dueño de su evolución.
+
 
 
 #### 1.1.2. Perfiles de integrantes del equipo
@@ -1058,10 +1078,27 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 
 #### 4.1.3 Context Diagrams
+El diagrama de contexto de BodyMatch AI ilustra cómo la plataforma de entrenamiento asistida por inteligencia artificial interactúa con sus actores principales y el ecosistema de servicios externos necesarios para su funcionamiento. La plataforma actúa como el núcleo tecnológico que centraliza el procesamiento de datos biométricos y técnicos, conectando a tres tipos de usuarios con objetivos específicos
+
+Usuario Atleta: El actor principal que interactúa con la aplicación para subir videos de ejecución de ejercicios, recibir correcciones técnicas generadas por la IA y registrar su progreso nutricional y físico.
+
+Coach Profesional: Quien utiliza la plataforma como una herramienta de gestión para diseñar rutinas personalizadas, monitorear el desempeño de sus alumnos y brindar asesorías basadas en los datos recolectados por el sistema.
+
+Administrador: Responsable de la gestión operativa de la plataforma, el mantenimiento de los perfiles de usuario y la supervisión de la seguridad y disponibilidad del sistema.
+
+Para garantizar una arquitectura escalable y robusta, el sistema se integra con servicios externos críticos que delegan responsabilidades especializadas: Stripe como pasarela de pagos para el procesamiento seguro de transacciones y suscripciones; Microsoft Outlook para la gestión de comunicaciones transaccionales y notificaciones de confirmación; y servicios de Cloud Storage para el almacenamiento eficiente y recuperación de las evidencias en video de los entrenamientos. Esta configuración permite que BodyMatch AI se enfoque en su propuesta de valor central —la corrección técnica mediante visión computacional— mientras mantiene una conectividad fluida con proveedores de infraestructura de clase mundial.
+
+<img src="assets/chapter4/Components/SystemContext.png" alt ="">
+
+
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
 
 <b>Diagrama de contenedores</b>
+
+
+<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
+
 
 <b>Diagrama de Componentes</b> 
 
@@ -1091,7 +1128,28 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 <b>Activities Diagrams</b>
 
+<img src="assets/chapter4/Components/actividadai.png" alt ="">
+
+<img src="assets/chapter4/Components/actividadiam.png" alt ="">
+
+<img src="assets/chapter4/Components/actividadpayment.png" alt ="">
+
+<img src="assets/chapter4/Components/actividadtracking.png" alt ="">
+
 <b>Diagramas de Estados</b>
+
+
+<img src="assets/chapter4/Components/estadoaim.png" alt ="">
+
+
+
+<img src="assets/chapter4/Components/estadoai.png" alt ="">
+
+
+<img src="assets/chapter4/Components/estadopayment.png" alt ="">
+
+
+<img src="assets/chapter4/Components/estadotracking.png" alt ="">
 
 <b>Diagrama de Clases</b>
 
