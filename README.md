@@ -1473,6 +1473,17 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 
 * Es fundamental implementar estrategias de seguridad robustas, incluyendo autenticación mediante JWT y control de acceso basado en roles (RBAC), para proteger la información de los usuarios y garantizar la privacidad de los datos.
 
+ Anexos
+
+ Diagramas de clase en LucidChart: https://lucid.app/lucidchart/01095f62-b902-4795-a561-f5e08d59b9e6/edit?viewport_loc=-4132%2C-1475%2C9285%2C4267%2C0_0&invitationId=inv_98f67f4a-d93a-433b-afde-2b53c20b0c84
+
+ Diagrama de Componentes : https://online.visual-paradigm.com/share.jsp?id=343538393634332d33
+
+ Enlace del Repositorio Grupal: https://github.com/G3-FundamentosArqui-7944
+
+ Enlace del la documentacion dentro del repositorio: https://github.com/G3-FundamentosArqui-7944/docs
+ 
+
 
  Referencias Bibliográficas
 
