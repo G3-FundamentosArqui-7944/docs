@@ -1452,6 +1452,166 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 | AC-10 | La falta de observabilidad en el sistema (logs estructurados, métricas, alertas) puede hacer que los problemas en producción pasen desapercibidos o sean difíciles de diagnosticar | Tiempo de detección y resolución de incidentes elevado en producción | Configurar desde el primer despliegue el logging estructurado con Spring Boot + Azure Monitor. Establecer alertas básicas sobre tasas de error HTTP 5xx y tiempos de respuesta por encima del umbral definido |
 
 -----
+
+### 4.3. ADD Iterations
+
+#### 4.3.1 Iteration 1: Análisis
+##### 4.3.1.1 Architectural Design Backlog 1
+
+Ciertos elementos clave de la arquitectura serán esenciales para asegurar la precisión técnica, la confianza del usuario y la escalabilidad del ecosistema **BodyMatch AI**.
+
+#### Seguridad y Privacidad
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-01 (Registro de usuario):** Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | - Implementar autenticación JWT con rotación de tokens.<br>- Configurar control de acceso basado en roles (`ROLE_USER`, `ROLE_COACH`).<br>- Cifrado de datos personales en reposo. | - Solo usuarios autenticados acceden a los planes.<br>- El sistema bloquea intentos de acceso a perfiles ajenos.<br>- Las contraseñas se almacenan mediante hashing robusto (BCrypt). |
+| **US-11 (Subir video del ejercicio):** Como usuario, quiero subir videos para recibir corrección técnica por IA. | - Implementar URLs pre-firmadas para Azure Blob Storage.<br>- Validar la propiedad del video antes de permitir el análisis. | - Los videos son privados y solo accesibles por el dueño y su coach.<br>- El sistema rechaza archivos que no cumplan con el formato de video permitido. |
+
+---
+
+#### Rendimiento y Disponibilidad
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-12 (Feedback automático con IA):** Como usuario, quiero corrección automática de mis ejercicios mediante visión computacional. | - Configurar procesamiento asíncrono de video mediante colas de mensajería.<br>- Implementar caché (Redis) para resultados de análisis frecuentes.<br>- Configurar balanceador de carga para el servicio de análisis. | - La subida de video no bloquea la interfaz del usuario.<br>- El sistema procesa videos de hasta 200MB en menos de 5 minutos bajo carga normal. |
+| **US-06 (Búsqueda de coaches):** Como usuario, quiero buscar coaches según objetivos y filtros específicos. | - Optimizar consultas en PostgreSQL mediante índices en especialidad y precio.<br>- Implementar paginación en el catálogo de coaches. | - Los resultados de búsqueda se muestran en menos de 800ms.<br>- El sistema soporta 200 usuarios concurrentes buscando coaches sin degradación. |
+
+---
+
+#### Usabilidad e Innovación
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-24 (Reconocimiento de alimentos mediante IA):** Como usuario, quiero que la IA identifique alimentos en fotos para macros. | - Integrar API de visión computacional para detección de alimentos.<br>- Interfaz simplificada de captura de foto rápida. | - Un usuario puede registrar una comida en menos de 30 segundos.<br>- La IA identifica correctamente al menos el 80% de alimentos comunes. |
+| **US-16 (Visualización de progreso):** Como usuario, quiero ver gráficos de mi evolución física (pesos, medidas, macros). | - Gráficos interactivos de carga y medidas corporales.<br>- Sincronización automática de datos entre nutrición y entrenamiento. | - Los gráficos cargan instantáneamente y permiten filtrar por rangos de tiempo (semana, mes, año). |
+
+##### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
+
+En esta iteración, seleccionaremos los **drivers clave** que servirán como base para definir metas que aseguren la precisión técnica y la seguridad de la plataforma **BodyMatch AI**.
+
+---
+
+##### Metas de la Iteración
+
+| Meta | Objetivo | Acciones Clave |
+|------|----------|----------------|
+| **Precisión Técnica en Feedback** | Garantizar que el análisis de IA sea confiable para prevenir lesiones durante el entrenamiento. | - Diseñar el flujo de integración con Gemini AI para análisis corporal.<br>- Implementar lógica de procesamiento asíncrono para no degradar el rendimiento. |
+| **Integridad y Privacidad Multimedia** | Proteger la privacidad de los usuarios al subir videos de su ejecución física y fotos de alimentos. | - Implementar almacenamiento seguro en Azure Blob Storage.<br>- Establecer políticas de acceso restringido a archivos multimedia. |
+| **Escalabilidad de Conexión Coach-Usuario** | Facilitar el matchmaking y la gestión de carteras de clientes para los entrenadores de forma fluida. | - Diseñar el Bounded Context de Matchmaking con búsqueda optimizada.<br>- Implementar el sistema de gestión de disponibilidad para coaches. |
+
+---
+
+##### Objetivo de la Iteración
+
+- **Precisión:** Establecer las bases técnicas para el análisis de video por IA y la corrección de postura mediante visión computacional.
+- **Seguridad:** Robustecer la protección de videos y datos biométricos sensibles bajo estándares de la Ley N° 29733 (Perú).
+- **Gestión:** Optimizar la infraestructura para soportar la comunicación, el seguimiento y la monetización entre coaches y atletas.
+
+---
+
+##### 4.3.1.3 Choose One or More Elements of the System to Refine
+
+Para avanzar en el desarrollo de **BodyMatch AI**, se han seleccionado los siguientes elementos del sistema para ser refinados:
+
+---
+
+| Área | Elemento a Refinar | Razón para el Refinamiento | Esperado |
+|------|---------------------|----------------------------|----------|
+| **Análisis de Video (IA)** | Módulo de Video Management y Worker de IA | Es el núcleo de la propuesta de valor. Requiere desacoplar la carga del video del procesamiento pesado. | Procesamiento asíncrono, feedback detallado de errores técnicos y almacenamiento cifrado. |
+| **Marketplace de Coaches** | Módulo de Matchmaking y Gestión de Sesiones | Los usuarios necesitan encontrar al profesional adecuado rápidamente para iniciar el servicio. | Búsquedas filtradas por objetivos, perfiles detallados y sistema de reservas sin conflictos de horario. |
+| **Seguridad de Accesos** | Módulo IAM (Identity & Access Management) | La plataforma maneja datos de salud y financieros que requieren máxima protección. | Autenticación JWT con rotación, RBAC estricto y protección de endpoints multimedia. |
+
+##### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+Se han identificado conceptos de diseño específicos que abordan los drivers de **precisión, seguridad y escalabilidad**:
+
+---
+
+##### Seguridad
+
+#### Modelo RBAC (Role-Based Access Control)
+- **Descripción:** Implementación de permisos diferenciados donde el Atleta accede a su progreso y el Coach a las herramientas de gestión de su cartera.
+- **Justificación:** Previene que un usuario acceda a datos de salud de terceros o a configuraciones de pago de los entrenadores.
+
+##### API Gateway Seguro (Spring Cloud Gateway)
+- **Descripción:** Centralizar la validación de tokens JWT y la sanitización de inputs antes de llegar a los microservicios de entrenamiento o nutrición.
+- **Justificación:** Protege el sistema contra inyecciones y asegura que solo el tráfico legítimo consuma recursos de la infraestructura.
+
+---
+
+##### Precisión y Rendimiento
+
+##### Procesamiento Asíncrono de Tareas (Worker Pattern)
+- **Descripción:** Uso de colas de mensajes (Azure Service Bus) para enviar los videos al servicio de IA sin mantener al usuario esperando en la pantalla de carga.
+- **Justificación:** Mejora drásticamente la usabilidad, permitiendo que el Atleta siga con su rutina mientras el video se analiza en segundo plano.
+
+---
+
+##### Escalabilidad
+
+##### Bounded Contexts Independientes (DDD)
+- **Descripción:** Separación física y lógica de los módulos de Nutrición, Entrenamiento y Pagos.
+- **Justificación:** Permite escalar solo el servicio de análisis de video (que consume más recursos) sin replicar innecesariamente otros módulos.
+
+---
+
+##### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+| Elemento | Responsabilidad | Interfaces |
+|----------|-----------------|------------|
+| **Módulo Video Management** | Gestionar la subida, almacenamiento y estados del análisis de video técnico. | API REST para upload; Interfaz con Azure Blob Storage. |
+| **Worker de Análisis IA** | Integración con Gemini AI para procesar el video y generar el feedback técnico. | Consumidor de colas; JSON de respuesta con métricas corporales. |
+| **Módulo Matchmaking** | Motor de búsqueda de coaches basado en objetivos, calificación y precio. | API REST de búsqueda filtrada; Integración con perfiles de Atleta. |
+| **API Gateway** | Punto de entrada seguro para la App Móvil; gestión de Cross-Cutting Concerns. | Exposición de endpoints `/api/v1/auth`, `/api/v1/training`; Validación de JWT. |
+| **Training Tracker** | Registro histórico de cargas, RPE y evolución física del usuario. | API de métricas; Dashboards interactivos para frontend. |
+| **Nutrition BC** | Análisis de imágenes de comida para conteo de calorías y macros. | API de visión computacional; Registro de historial nutricional. |
+
+---
+
+##### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
+
+**Sketch Views**
+
+- ***Diagrama C4 - Container Level***
+  
+
+- ***Diagrama UML - Modelo de Dominio***
+  
+
+**Decisiones de Diseño Registradas**
+
+| ID | Título | Estado | Contexto | Decisión | Consecuencias |
+|--------|---------------------------------------------|----------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------|
+| DD-001 | Monolito Modular orientado a Microservicios | Aceptada | Necesidad de rapidez inicial sin perder escalabilidad por Bounded Context. | Organizar el código por paquetes independientes dentro de un monolito modular (DDD). | - Despliegue simple inicial <br> - Fácil migración futura <br> - Aislamiento de lógica |
+| DD-002 | Procesamiento Asíncrono de Video | Aceptada | El análisis de IA es computacionalmente costoso para una respuesta síncrona. | Utilizar Azure Service Bus para encolar tareas de análisis y notificar vía Push. | - UI fluida <br> - Manejo de reintentos automático <br> - Complejidad en estados |
+| DD-003 | Almacenamiento en Azure Blob Storage | Aceptada | Videos corporales requieren seguridad y durabilidad masiva. | Usar Blob Storage con acceso restringido mediante URLs firmadas (SAS). | - Alta seguridad de archivos <br> - Escalabilidad infinita <br> - Dependencia de Azure |
+| DD-004 | PostgreSQL con Esquemas por Contexto | Aceptada | Múltiples módulos requieren persistencia relacional (entrenamientos, pagos). | Usar una sola instancia pero con esquemas separados para evitar acoplamiento. | - Integridad referencial fuerte <br> - Backups centralizados <br> - Aislamiento de tablas |
+| DD-005 | Redis para Gestión de Sesiones y Caché | Aceptada | Necesidad de baja latencia en dashboards de progreso y validación de tokens. | Implementar Redis para almacenar resultados analíticos y sesiones activas. | - Reducción de carga en DB <br> - Tiempos de respuesta mínimos <br> - Gestión de infra adicional |
+| DD-006 | Sistema de Seguridad RBAC + JWT | Aceptada | Driver crítico de protección de datos de salud y privacidad. | Implementar Spring Security con JWT (Access/Refresh tokens) y roles (User/Coach). | - Control granular <br> - Cumplimiento de Ley 29733 <br> - Auditabilidad completa |
+
+---
+
+##### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+**Análisis del Diseño Actual**
+
+Tras completar la Iteración 1 del método ADD v3, se ha establecido una arquitectura para **BodyMatch AI** que prioriza el flujo asíncrono y la seguridad. El análisis revela:
+
+- **Fortalezas del Diseño Actual**
+    - **Aislamiento de IA:** El desacoplamiento del análisis asegura que fallos en la API externa no afecten la navegación general de la app.
+    - **Escalabilidad Multimedia:** El uso de Azure Blob Storage garantiza que el crecimiento de videos grabados no sature el servidor de aplicaciones.
+    - **Protección de Datos:** La estructura RBAC protege la relación entre el Coach y el Atleta, asegurando la privacidad del progreso físico.
+
+- **Áreas de Mejora Identificadas**
+    - **Costo Operativo:** El uso de múltiples servicios en la nube (Service Bus, Redis, Storage) requiere un monitoreo estricto de costos en la fase académica.
+    - **Sincronización:** La integración de métricas de Nutrición y Entrenamiento debe ser auditada para evitar discrepancias en los reportes diarios.
+
+**Review Iteration Goal**
+
+Enlace del Tablero Kanban: 
+
+
+
 ## Conclusiones
 
 * La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
