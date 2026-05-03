@@ -1578,29 +1578,29 @@ https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a
 
 ### TB1: Validación de Negocio y Requerimientos
 *   La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches, orientando el diseño hacia una solución centrada en la experiencia del usuario.
-*   El uso de herramientas de investigación como User Personas y Empathy Maps facilitó la identificación de puntos de dolor críticos, como la falta de orientación técnica y la limitada visibilidad de los entrenadores[cite: 1].
-*   La definición del Solution Profile permitió estructurar una propuesta clara que integra el matching de usuarios y el análisis de ejercicios con IA como diferenciales clave frente a la competencia[cite: 1].
-*   Durante esta fase, el equipo demostró la capacidad de adquirir nuevos conocimientos en metodologías de diseño UX y análisis competitivo para fortalecer la base funcional del proyecto[cite: 1].
+*   El uso de herramientas de investigación como User Personas y Empathy Maps facilitó la identificación de puntos de dolor críticos, como la falta de orientación técnica y la limitada visibilidad de los entrenadores.
+*   La definición del Solution Profile permitió estructurar una propuesta clara que integra el matching de usuarios y el análisis de ejercicios con IA como diferenciales clave frente a la competencia.
+*   Durante esta fase, el equipo demostró la capacidad de adquirir nuevos conocimientos en metodologías de diseño UX y análisis competitivo para fortalecer la base funcional del proyecto.
 
 ### TB2: Arquitectura y Diseño Técnico
-*   La aplicación del método Attribute-Driven Design (ADD) permitió alinear las decisiones técnicas con los drivers del negocio, garantizando la resolución de atributos críticos como el rendimiento y la seguridad[cite: 1].
-*   La adopción de Domain-Driven Design (DDD) y principios SOLID estableció una arquitectura modular organizada por Bounded Contexts, asegurando la escalabilidad y mantenibilidad del sistema[cite: 1].
-*   El diseño de una arquitectura basada en microservicios y procesamiento asíncrono responde eficientemente a la carga computacional requerida por el análisis de video con inteligencia artificial[cite: 1].
-*   El equipo consolidó sus conocimientos técnicos al traducir requerimientos funcionales en decisiones arquitectónicas verificables mediante diagramas de contenedores y componentes[cite: 1].
+*   La aplicación del método Attribute-Driven Design (ADD) permitió alinear las decisiones técnicas con los drivers del negocio, garantizando la resolución de atributos críticos como el rendimiento y la seguridad.
+*   La adopción de Domain-Driven Design (DDD) y principios SOLID estableció una arquitectura modular organizada por Bounded Contexts, asegurando la escalabilidad y mantenibilidad del sistema.
+*   El diseño de una arquitectura basada en microservicios y procesamiento asíncrono responde eficientemente a la carga computacional requerida por el análisis de video con inteligencia artificial.
+*   El equipo consolidó sus conocimientos técnicos al traducir requerimientos funcionales en decisiones arquitectónicas verificables mediante diagramas de contenedores y componentes.
 
 ---
 
 ## Recomendaciones
 
 ### TB1: Gestión de Usuario y Producto
-*   Se recomienda continuar con un proceso de validación continua con usuarios reales para ajustar las funcionalidades de la interfaz móvil en cada iteración[cite: 1].
-*   Es importante implementar un plan piloto con un grupo reducido de atletas y coaches para obtener métricas reales sobre la efectividad del emparejamiento[cite: 1].
-*   Se sugiere priorizar en las primeras fases de desarrollo los módulos de mensajería y reserva de sesiones, debido a su alto impacto en la retención de usuarios[cite: 1].
+*   Se recomienda continuar con un proceso de validación continua con usuarios reales para ajustar las funcionalidades de la interfaz móvil en cada iteración.
+*   Es importante implementar un plan piloto con un grupo reducido de atletas y coaches para obtener métricas reales sobre la efectividad del emparejamiento.
+*   Se sugiere priorizar en las primeras fases de desarrollo los módulos de mensajería y reserva de sesiones, debido a su alto impacto en la retención de usuarios.
 
 ### TB2: Evolución Tecnológica y Seguridad
-*   Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento antes de evolucionar hacia la detección de errores biomecánicos complejos[cite: 1].
-*   Es fundamental implementar de forma estricta las estrategias de seguridad diseñadas, como la autenticación JWT y el control RBAC, para proteger la privacidad de los videos de los usuarios[cite: 1].
-*   Se sugiere monitorear los costos operativos de los servicios en la nube para asegurar que la infraestructura sea sostenible durante la expansión del sistema[cite: 1].
+*   Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento antes de evolucionar hacia la detección de errores biomecánicos complejos.
+*   Es fundamental implementar de forma estricta las estrategias de seguridad diseñadas, como la autenticación JWT y el control RBAC, para proteger la privacidad de los videos de los usuarios.
+*   Se sugiere monitorear los costos operativos de los servicios en la nube para asegurar que la infraestructura sea sostenible durante la expansión del sistema.
 
  Anexos
 
