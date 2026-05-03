@@ -965,9 +965,15 @@ A continuación se presenta el backlog completo con todas las User Stories defin
 | 30 | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 8 |
 | 31 | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 |
 | 32 | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 |
-| 33 | TS01 | Implementación de Middleware de Autenticación JWT | Configuración técnica de seguridad para proteger los recursos del API RESTful. | 3 |
-| 34 | TS02 | Exposición de Endpoints para Bounded Context Matchmaking | Desarrollo de los controladores necesarios para exponer la lógica de negocio de coaches. | 2 |
-| 35 | TS03 | Configuración de Endpoints para Video Management | Implementación técnica del canal de subida de video para procesamiento de IA. | 5 |
+| 33 | US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | 1 |
+| 34 | US34 | Solicitar demostración | Como visitante, quiero registrar mi interés en una demostración para conocer mejor el sistema. | 2 |
+| 35 | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | 1 |
+| 36 | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | 2 |
+| 37 | US37 | Consultar casos de éxito | Como visitante, quiero revisar experiencias reales con el sistema. | 2 |
+| 38 | TS01 | Implementación de Middleware JWT | Como sistema, se debe validar el token JWT en las cabeceras para asegurar la integridad de la API. | 3 |
+| 39 | TS02 | Exposición de Endpoints Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de coaches. | 3 |
+| 40 | TS03 | Configuración de Endpoints Video | Implementación técnica del canal de subida de video para el procesamiento de la IA. | 5 |
+
 
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
 
@@ -1026,8 +1032,11 @@ Administrador: Responsable de la gestión operativa de la plataforma, el manteni
 
 Para garantizar una arquitectura escalable y robusta, el sistema se integra con servicios externos críticos que delegan responsabilidades especializadas: Stripe como pasarela de pagos para el procesamiento seguro de transacciones y suscripciones; Microsoft Outlook para la gestión de comunicaciones transaccionales y notificaciones de confirmación; y servicios de Cloud Storage para el almacenamiento eficiente y recuperación de las evidencias en video de los entrenamientos. Esta configuración permite que BodyMatch AI se enfoque en su propuesta de valor central —la corrección técnica mediante visión computacional— mientras mantiene una conectividad fluida con proveedores de infraestructura de clase mundial.
 
+
+
 <img src="assets/chapter4/Components/SystemContext.png" alt ="">
 
+Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuarios (Atleta, Coach y Administrador) y con servicios externos esenciales como Stripe para pagos, Outlook para correos y Cloud Storage para el almacenamiento de videos. Define los límites del sistema y su conexión con el ecosistema tecnológico exterior.
 
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
@@ -1037,6 +1046,7 @@ Para garantizar una arquitectura escalable y robusta, el sistema se integra con 
 
 <img src="assets/chapter4/Components/Containers-dark.png" alt ="">
 
+Descripcion: Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados como Auth, Nutrition, AI Analysis y Payments. Cada contenedor gestiona su propia base de datos para asegurar la modularidad.
 
 <b>Diagrama de Componentes</b> 
 
@@ -1044,25 +1054,37 @@ Para garantizar una arquitectura escalable y robusta, el sistema se integra con 
 
 <img src="assets/chapter4/Components/IAMBC.png" alt ="">
 
+Descripcion: Detalla la estructura interna del módulo de identidad y acceso, utilizando Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
+
 - Membership and Payments Bounded Context
 
 <img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+
+Descripcion: Ilustra la gestión de suscripciones y transacciones financieras, separando la lógica de membresías de los pagos mediante servicios de comando y consulta. Se integra con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
 - Video Management Bounded Context
 
 <img src="assets/chapter4/Components/Video Management BC.png" alt ="">
 
+Descripcion: Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos. Utiliza CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario.
+
 - Matchmaking with Users Bounded Context
 
 <img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+
+Descripcion: Este componente gestiona el emparejamiento entre atletas y coaches, administrando tanto las solicitudes de conexión como la programación de sesiones de entrenamiento. Expone una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
 - Training Tracker Bouded Context
 
 <img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
 
+Descripcion: Enfocado en el seguimiento del rendimiento físico, este diagrama muestra cómo se registran y consultan los entrenamientos y métricas de performance. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
+
 - Nutrition Bounded Context
 
 <img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
+
+Descripcion: Este diagrama describe la estructura del Nutrition Bounded Context, el cual gestiona el análisis nutricional y planes alimenticios mediante el patrón CQRS. Se integra con la Gemini API para la detección automática de alimentos y macros a partir de imágenes, persistiendo los datos en la base de datos del sistema. Además, provee una fachada de contexto para permitir que otros módulos accedan a la información nutricional de forma desacoplada.
 
 <b>Activities Diagrams</b>
 
