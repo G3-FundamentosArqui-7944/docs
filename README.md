@@ -836,90 +836,16 @@ Cada historia está estructurada para facilitar desarrollo ágil y validación i
 
 **Epics**
 
-**EP01: Gestión de acceso y perfil**  
-Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia.
-
-| User Story ID | Título                              |
-|---------------|-------------------------------------|
-| US01          | Registro de usuario                 |
-| US02          | Inicio de sesión                    |
-| US03          | Recuperación de contraseña          |
-| US04          | Cierre de sesión                    |
-| US05          | Configuración de perfil y objetivos |
-
----
-
-**EP02: Conexión entre usuarios y coaches**  
-Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US06          | Búsqueda de coaches              |
-| US07          | Visualización de perfil de coach |
-| US08          | Reserva de sesión                |
-| US09          | Chat con coach                   |
-| US10          | Calificación del coach           |
-
----
-
-**EP03: Análisis de ejercicios con IA**  
-Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones.
-
-| User Story ID | Título                         |
-|---------------|--------------------------------|
-| US11          | Subir vídeo del ejercicio      |
-| US12          | Feedback automático con IA     |
-| US13          | Historial de correcciones      |
-| US14          | Recomendaciones de mejora      |
-
----
-
-**EP04: Seguimiento de progreso físico**  
-Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US15          | Registro de métricas físicas     |
-| US16          | Visualización de progreso        |
-| US17          | Historial de entrenamientos      |
-| US18          | Alertas de cumplimiento de rutina|
-
----
-
-**EP05: Gestión profesional para coaches**  
-Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo.
-
-| User Story ID | Título                          |
-|---------------|---------------------------------|
-| US19          | Gestión de clientes             |
-| US20          | Programación de disponibilidad  |
-| US21          | Seguimiento de progreso del cliente |
-| US22          | Monetización de servicios       |
-
----
-
-**EP06: Análisis nutricional inteligente mediante imagen**  
-Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico.
-
-| User Story ID | Título                                      |
-|---------------|----------------------------------------------|
-| US23          | Subida de imagen de alimentos                |
-| US24          | Reconocimiento de alimentos mediante IA      |
-| US25          | Cálculo de valores nutricionales             |
-| US26          | Visualización detallada de nutrientes        |
-| US27          | Edición manual de alimentos detectados       |
-| US28          | Registro en historial de comidas             |
-| US29          | Seguimiento diario de consumo nutricional    |
-| US30          | Recomendaciones nutricionales personalizadas |
-| US31          | Integración con objetivos fitness            |
-| US32          | Notificaciones y recordatorios de registro   |
-
-
-| Epics ID | Título                           | Descripción                                                                                     |
-|----------|----------------------------------|-------------------------------------------------------------------------------------------------|
-| EP-LP    | Sitio web estático              | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar.|
-| EP-API   | API RESTful                     | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
- 
+| Epics ID | Título | Descripción |
+|----------|--------|-------------|
+| EP01 | Gestión de acceso y perfil | Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia. |
+| EP02 | Conexión entre usuarios y coaches | Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado. |
+| EP03 | Análisis de ejercicios con IA | Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones. |
+| EP04 | Seguimiento de progreso físico | Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado. |
+| EP05 | Gestión profesional para coaches | Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo. |
+| EP06 | Análisis nutricional inteligente mediante imagen | Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico. |
+| EP-LP | Sitio web estático | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar. |
+| EP-API | API RESTful | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|--------------------------|----------------------------|
@@ -960,6 +886,9 @@ Como usuario, quiero subir una foto de mis alimentos para obtener automáticamen
 | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido. | EP-LP |
 | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles. | EP-LP |
 | US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados. | EP-LP |
+| US38 | Autenticación y Autorización API | Como desarrollador, quiero autenticar mis peticiones usando tokens JWT para acceder a los endpoints protegidos de forma segura. | Escenario 1: Token válido<br>Dado que el desarrollador envía una petición con un token JWT válido,<br>cuando el API Gateway la procesa,<br>entonces permite el acceso al recurso.<br><br>Escenario 2: Token inválido<br>Dado que el desarrollador envía un token expirado o inválido,<br>cuando el sistema lo valida,<br>entonces retorna un error HTTP 401 Unauthorized. | EP-API |
+| US39 | Consulta de catálogo de coaches vía API | Como desarrollador, quiero consumir un endpoint GET para listar los coaches disponibles y mostrarlos en una interfaz externa. | Escenario 1: Petición exitosa<br>Dado que el desarrollador hace un GET a /api/v1/coaches,<br>cuando el servidor procesa la solicitud,<br>entonces retorna una lista en formato JSON con los datos públicos de los coaches con status 200 OK. | EP-API |
+| US40 | Envío de video para análisis vía API | Como desarrollador, quiero enviar un archivo de video mediante un endpoint POST para que la IA lo procese y retorne el feedback técnico. | Escenario 1: Subida correcta<br>Dado que el desarrollador envía un video en el payload de la petición POST,<br>cuando el endpoint lo recibe,<br>entonces retorna un HTTP 202 Accepted indicando que el procesamiento asíncrono ha iniciado. | EP-API |
 
 ### 3.2. Impact Mapping.
 El **Impact Map** es una herramienta visual que permite relacionar los objetivos de negocio con las personas involucradas, los impactos esperados, los entregables y las historias de usuario asociadas.  
@@ -1034,6 +963,10 @@ A continuación se presenta el backlog completo con todas las User Stories defin
 | 30 | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 8 |
 | 31 | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 |
 | 32 | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 |
+| 33 | US38 | Autenticación y Autorización API | Como desarrollador, quiero autenticar mis peticiones usando tokens JWT para acceder a los endpoints protegidos. | 3 |
+| 34 | US39 | Consulta de catálogo de coaches vía API | Como desarrollador, quiero consumir un endpoint GET para listar los coaches disponibles. | 2 |
+| 35 | US40 | Envío de video para análisis vía API | Como desarrollador, quiero enviar un archivo de video mediante un endpoint POST para que la IA lo procese. | 5 |
+
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
 
 [Product Backlog en Trello]
