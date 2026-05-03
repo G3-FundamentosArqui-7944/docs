@@ -977,7 +977,7 @@ A continuación se presenta el backlog completo con todas las User Stories defin
 
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
 
-[Product Backlog en Trello]
+[Product Backlog en Trello](https://trello.com/invite/b/69f6c4d98f6f645b602f8b43/ATTI379fb6f66a33086d7a8b14a7348eb01936888531/bodymatch-ai-product-backlog)
 
 
 ## Capitulo IV: Requeriments Specification
