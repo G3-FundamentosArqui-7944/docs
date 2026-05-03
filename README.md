@@ -898,13 +898,15 @@ A continuación se presenta el Impact Map de **BodyMatch AI**:
 
 **Segmento Objetivo 1: Jóvenes adultos interesados en el fitness**
 
-
-<img src="assets/impact1.png" alt="as 2" />
-
+<p align="center">
+  <img src="assets/impact1.png" alt="Impact Map Atletas" width="80%" />
+</p>
 
 **Segmento Objetivo 2: Entrenadores Personales (Coaches)**
 
-<img src="assets/impact2.png" alt="as 2" />
+<p align="center">
+  <img src="assets/impact2.png" alt="Impact Map Coaches" width="80%" />
+</p>
 
 ### 3.3. Product Backlog.
 
