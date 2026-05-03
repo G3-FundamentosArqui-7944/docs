@@ -83,6 +83,10 @@
 |  TB2 | 28/04/2026  | Pablo Antonio Geronimo Quispe |Avanze del Documento y tacticas y ADD |
 | TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Avanze del Capitulo 4.2  |
 | TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Finalizacion Del Capitulo 4.2|
+| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Finalizacion De los Diagramas de actividad y estado |
+| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Implementacion de Valores en startup profile  |
+| TB2 |30/04/2026| Jorge Enrique Guevara Tejada |Avance ADD iteration 1  |
+| Avn2 | 01/05/2026 | Marcia Victoria Melgarejo Gomez | Avance del ADD Iterations tablero de kanban y redacción de Conclusiones |
 
 ## Contenido
 
@@ -184,8 +188,8 @@ ABET - EAC - Student Outcome 7 Criterio: La capacidad de adquirir y aplicar nuev
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |--------------------|---------------------|--------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles, centrándome en Scrum, para aplicarlas en la planificación del proyecto. Esto me permitió mejorar la organización del equipo y entender cómo adaptar estos marcos de trabajo a equipos pequeños y tareas técnicas dentro de un entorno real de desarrollo.<br><br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, disponibilidad, seguridad y mantenibilidad), drivers arquitectónicos, escenarios de atributos de calidad (QAS) y restricciones del sistema. Esto permitió estructurar una arquitectura basada en microservicios alineada al core de la solución (análisis de ejercicios con IA).<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para poder desarrollar lo establecido, se tuvo que hacer una investigación sobre las herramientas y las metodologías a utilizar. Esto permitió organizar de manera efectiva las prioridades del equipo a la hora de implementar las funcionalidades.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Para el desarrollo del Lean UX Process, investigué conceptos clave como Problem Statement, Assumptions, Hypothesis y Lean UX Canvas, lo que permitió estructurar correctamente la propuesta centrada en el usuario y mejorar la toma de decisiones basadas en validación.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Para el desarrollo completo del Capítulo II, investigué metodologías de Requirements Elicitation y análisis competitivo. Apliqué herramientas avanzadas de diseño UX como Uxpressia para la creación de User Personas, Empathy Maps y la User Task Matrix. Esto me permitió sintetizar los hallazgos de las entrevistas y el análisis de mercado en una estructura de requisitos técnica y funcional que sirve como base para el desarrollo de la solución BodyMatch AI.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Para el desarrollo del Requirements Specification, investigué y reforcé conceptos clave como User Stories, criterios de aceptación y estructura de requerimientos, lo que permitió definir de manera clara y organizada las funcionalidades del sistema.<br>| **TB1:** Durante esta fase, el equipo demostró su capacidad para adquirir nuevos conocimientos y aplicarlos en el desarrollo del proyecto, fortaleciendo competencias técnicas relevantes para una solución escalable y funcional.<br><br>**TB2:** El equipo consolidó conocimientos en arquitectura de software mediante la aplicación del método ADD, logrando definir tácticas, drivers, escenarios de calidad y restricciones que permiten una solución escalable, mantenible y alineada al uso de inteligencia artificial. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo para responder a las exigencias del proyecto, por lo que estudié liderazgo técnico, gestión de tiempos y coordinación en equipos ágiles.<br><br>**TB2:** Reforcé mi aprendizaje en arquitectura de software, especialmente en microservicios, atributos de calidad y diseño orientado a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables desde etapas tempranas.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para esta entrega se aceptó el hecho de que se debe seguir aprendiendo y reforzando conceptos ya vistos en la formación universitaria. Esto permite que se trabaje de manera efectiva en proyectos a futuro que requieran una ardua tarea de investigación.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías centradas en el usuario como Lean UX, reforzando mi capacidad de análisis y adaptación para contribuir de manera efectiva en proyectos de desarrollo de software.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí la importancia de la actualización constante al investigar las tendencias actuales en IA y la gestión de asesorías fitness. Este proceso de Needfinding y mapeo de escenarios me enseñó que para proponer software innovador es indispensable aprender sobre el dominio del problema de forma continua, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Durante la elaboración de las User Stories, identifiqué la importancia de seguir aprendiendo continuamente sobre técnicas de levantamiento de requerimientos y buenas prácticas en desarrollo de software, ya que esto contribuye a mejorar la calidad de las soluciones propuestas. | **TB1:** El equipo desarrolló una actitud profesional orientada al aprendizaje constante, adaptándose a nuevas herramientas y fortaleciendo competencias esenciales en desarrollo de software.<br><br>**TB2:** El equipo consolidó la importancia del aprendizaje permanente como base del desarrollo profesional, evidenciando crecimiento en conocimientos de arquitectura de software, inteligencia artificial y diseño de sistemas escalables. |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles, centrándome en Scrum, para aplicarlas en la planificación del proyecto. Esto me permitió mejorar la organización del equipo y entender cómo adaptar estos marcos de trabajo a equipos pequeños y tareas técnicas dentro de un entorno real de desarrollo.<br><br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, disponibilidad, seguridad y mantenibilidad), drivers arquitectónicos, escenarios de atributos de calidad (QAS) y restricciones del sistema. Esto permitió estructurar una arquitectura basada en microservicios alineada al core de la solución (análisis de ejercicios con IA).<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para poder desarrollar lo establecido, se tuvo que hacer una investigación sobre las herramientas y las metodologías a utilizar. Esto permitió organizar de manera efectiva las prioridades del equipo a la hora de implementar las funcionalidades.<br>**TB2** Para esta entrega se tuvo que realizar un trabajo de investigación y recapitulación de conceptos antes vistos en la carrera. Por ejmeplo, el desarrollo del diagrama de clases donse se requirió examinar los patrones a utilizar.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Para el desarrollo del Lean UX Process, investigué conceptos clave como Problem Statement, Assumptions, Hypothesis y Lean UX Canvas, lo que permitió estructurar correctamente la propuesta centrada en el usuario y mejorar la toma de decisiones basadas en validación.<br>**TB2:** Investigué y apliqué conceptos avanzados de diseño arquitectónico mediante la metodología Attribute-Driven Design (ADD). Me enfoqué en la instanciación de elementos arquitectónicos y la definición de interfaces para los Bounded Contexts de Matchmaking e IAM. Además, profundicé en conocimientos de procesamiento asíncrono y mensajería para asegurar que el flujo de video con IA no afecte la disponibilidad del sistema.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Para el desarrollo completo del Capítulo II, investigué metodologías de Requirements Elicitation y análisis competitivo. Apliqué herramientas avanzadas de diseño UX como Uxpressia para la creación de User Personas, Empathy Maps y la User Task Matrix. Esto me permitió sintetizar los hallazgos de las entrevistas y el análisis de mercado en una estructura de requisitos técnica y funcional que sirve como base para el desarrollo de la solución BodyMatch AI.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Para el desarrollo del Requirements Specification, investigué y reforcé conceptos clave como User Stories, criterios de aceptación y estructura de requerimientos, lo que permitió definir de manera clara y organizada las funcionalidades del sistema.<br><br>**TB2:**: Para el TB2, actualicé mis conocimientos aplicando la metodología Attribute-Driven Design (ADD). Traduje requerimientos técnicos en decisiones arquitectónicas y estructuré el flujo de trabajo creando un tablero Kanban, lo que me permitió organizar y visualizar eficientemente las tareas de la iteración para BodyMatch AI.| **TB1:** Durante esta fase, el equipo demostró su capacidad para adquirir nuevos conocimientos y aplicarlos en el desarrollo del proyecto, fortaleciendo competencias técnicas relevantes para una solución escalable y funcional.<br><br>**TB2:** El equipo consolidó conocimientos en arquitectura de software mediante la aplicación del método ADD, logrando definir tácticas, drivers, escenarios de calidad y restricciones que permiten una solución escalable, mantenible y alineada al uso de inteligencia artificial. |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo para responder a las exigencias del proyecto, por lo que estudié liderazgo técnico, gestión de tiempos y coordinación en equipos ágiles.<br><br>**TB2:** Reforcé mi aprendizaje en arquitectura de software, especialmente en microservicios, atributos de calidad y diseño orientado a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables desde etapas tempranas.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para esta entrega se aceptó el hecho de que se debe seguir aprendiendo y reforzando conceptos ya vistos en la formación universitaria. Esto permite que se trabaje de manera efectiva en proyectos a futuro que requieran una ardua tarea de investigación.<br>**TB2;** Para esta entrega se detecto la necesidad de ampliar mis conocimientos. Esto lugeo a l ver que los que tenian servian poco a compraración de lo requerido.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías centradas en el usuario como Lean UX, reforzando mi capacidad de análisis y adaptación para contribuir de manera efectiva en proyectos de desarrollo de software.<br>**TB2:** Identifiqué la necesidad de aprender sobre arquitecturas distribuidas y seguridad avanzada (JWT con rotación) para proteger los datos de salud de los usuarios. El proceso de definir escenarios de atributos de calidad (QAS) me demostró que el éxito de un proyecto de software depende de la actualización constante en tácticas de rendimiento y seguridad para mitigar riesgos técnicos desde el diseño.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí la importancia de la actualización constante al investigar las tendencias actuales en IA y la gestión de asesorías fitness. Este proceso de Needfinding y mapeo de escenarios me enseñó que para proponer software innovador es indispensable aprender sobre el dominio del problema de forma continua, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Durante la elaboración de las User Stories, identifiqué la importancia de seguir aprendiendo continuamente sobre técnicas de levantamiento de requerimientos y buenas prácticas en desarrollo de software, ya que esto contribuye a mejorar la calidad de las soluciones propuestas.<br><br>**TB2:** El diseño de BodyMatch AI demostró que la arquitectura exige aprendizaje continuo. Aprender a documentar iteraciones ADD y gestionar su ejecución técnica a través de un tablero Kanban me enseñó que dominar herramientas ágiles.| **TB1:** El equipo desarrolló una actitud profesional orientada al aprendizaje constante, adaptándose a nuevas herramientas y fortaleciendo competencias esenciales en desarrollo de software.<br><br>**TB2:** El equipo consolidó la importancia del aprendizaje permanente como base del desarrollo profesional, evidenciando crecimiento en conocimientos de arquitectura de software, inteligencia artificial y diseño de sistemas escalables. |
 
 ## Capítulo I: Introducción
 
@@ -266,7 +270,7 @@ En este contexto surge BodyMatch AI, una aplicación móvil que responde a ambas
 El problema principal radica en la dificultad que tienen muchas personas para realizar ejercicios de forma correcta y segura sin la guía adecuada, así como en la falta de plataformas especializadas que permitan a los entrenadores gestionar eficientemente su práctica profesional. Las soluciones actuales suelen ser genéricas, no personalizadas y carecen de herramientas que analicen la ejecución real del usuario, lo que limita el progreso y aumenta el riesgo de lesiones.
 
  **When:**
-Este problema se ha intensificado en los últimos años, especialmente en el contexto post-pandemia, donde se incrementó el interés por la salud y el ejercicio en casa. La digitalización de los servicios de entrenamiento ha crecido, pero muchas soluciones no han evolucionado lo suficiente para ofrecer experiencias personalizadas ni herramientas inteligentes de análisis, generando una brecha entre la demanda y la calidad de las soluciones disponibles.
+Este problema se ha intensificado en los últimos años, especialmente en el contexto post-pandemia, donde se incrementó el interés por la salud y el ejercicio en casa. La digitalización de los servicios de entrenamiento ha crecido, pero muchas soluciones no han evolucionado lo suficiente para ofrecer experiencias personalizadas ni herramientas inteligentes de análisis, generando una brecha entre la demanda y la calidad de las soluciones disponibles. Según  2playbook (2024, como se cita en omani, Ma. et.al, 2025 ), este panorama tecnológico emergente facilita una experiencia más a medida, eficiente y de fácil acceso para los usuarios.
 
 **Where:**
 La problemática afecta tanto a entornos urbanos como rurales. En zonas urbanas, los usuarios tienen acceso a múltiples opciones digitales pero enfrentan desinformación y falta de personalización. En zonas rurales, el acceso a entrenadores profesionales es limitado, lo que hace aún más relevante contar con soluciones digitales que conecten a usuarios con coaches de manera remota. Los entrenadores, independientemente de su ubicación, enfrentan dificultades similares para gestionar su práctica profesional.
@@ -295,7 +299,7 @@ En el Perú, existe una comunidad creciente de profesionales del fitness, con mi
 
 #### 1.2.3	Lean UX Process
 ##### 1.2.3.1. Lean UX Problem Statements
-El principal desafío para los usuarios radica en la dificultad de ejecutar correctamente los ejercicios físicos sin la supervisión de un profesional, lo que frecuentemente genera lesiones, bajo rendimiento y frustración al no alcanzar los resultados esperados. Muchas personas entrenan de manera autodidacta apoyándose en contenido genérico (videos o apps), pero sin un análisis real de su técnica, lo que limita su progreso y aumenta el riesgo de daño físico.
+El principal desafío para los usuarios radica en la dificultad de ejecutar correctamente los ejercicios físicos sin la supervisión de un profesional, lo que frecuentemente genera lesiones, bajo rendimiento y frustración al no alcanzar los resultados esperados. Muchas personas entrenan de manera autodidacta apoyándose en contenido genérico (videos o apps), pero sin un análisis real de su técnica, lo que limita su progreso y aumenta el riesgo de daño físico. Según Romani, Ma. et.al. (2025) los usuarios cada vez buscan soluciones que les permitan adaptar sus rutinas de ejericicio a objetivos específicos.
 
 Por otro lado, los entrenadores personales enfrentan limitaciones importantes en su práctica profesional, ya que dependen de redes sociales o herramientas poco especializadas para gestionar a sus clientes. Esto dificulta el seguimiento personalizado, la corrección técnica a distancia y la posibilidad de escalar su negocio o monetizar de forma estructurada sus servicios.
 
@@ -833,90 +837,16 @@ Cada historia está estructurada para facilitar desarrollo ágil y validación i
 
 **Epics**
 
-**EP01: Gestión de acceso y perfil**  
-Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia.
-
-| User Story ID | Título                              |
-|---------------|-------------------------------------|
-| US01          | Registro de usuario                 |
-| US02          | Inicio de sesión                    |
-| US03          | Recuperación de contraseña          |
-| US04          | Cierre de sesión                    |
-| US05          | Configuración de perfil y objetivos |
-
----
-
-**EP02: Conexión entre usuarios y coaches**  
-Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US06          | Búsqueda de coaches              |
-| US07          | Visualización de perfil de coach |
-| US08          | Reserva de sesión                |
-| US09          | Chat con coach                   |
-| US10          | Calificación del coach           |
-
----
-
-**EP03: Análisis de ejercicios con IA**  
-Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones.
-
-| User Story ID | Título                         |
-|---------------|--------------------------------|
-| US11          | Subir vídeo del ejercicio      |
-| US12          | Feedback automático con IA     |
-| US13          | Historial de correcciones      |
-| US14          | Recomendaciones de mejora      |
-
----
-
-**EP04: Seguimiento de progreso físico**  
-Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US15          | Registro de métricas físicas     |
-| US16          | Visualización de progreso        |
-| US17          | Historial de entrenamientos      |
-| US18          | Alertas de cumplimiento de rutina|
-
----
-
-**EP05: Gestión profesional para coaches**  
-Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo.
-
-| User Story ID | Título                          |
-|---------------|---------------------------------|
-| US19          | Gestión de clientes             |
-| US20          | Programación de disponibilidad  |
-| US21          | Seguimiento de progreso del cliente |
-| US22          | Monetización de servicios       |
-
----
-
-**EP06: Análisis nutricional inteligente mediante imagen**  
-Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico.
-
-| User Story ID | Título                                      |
-|---------------|----------------------------------------------|
-| US23          | Subida de imagen de alimentos                |
-| US24          | Reconocimiento de alimentos mediante IA      |
-| US25          | Cálculo de valores nutricionales             |
-| US26          | Visualización detallada de nutrientes        |
-| US27          | Edición manual de alimentos detectados       |
-| US28          | Registro en historial de comidas             |
-| US29          | Seguimiento diario de consumo nutricional    |
-| US30          | Recomendaciones nutricionales personalizadas |
-| US31          | Integración con objetivos fitness            |
-| US32          | Notificaciones y recordatorios de registro   |
-
-
-| Epics ID | Título                           | Descripción                                                                                     |
-|----------|----------------------------------|-------------------------------------------------------------------------------------------------|
-| EP-LP    | Sitio web estático              | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar.|
-| EP-API   | API RESTful                     | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
- 
+| Epics ID | Título | Descripción |
+|----------|--------|-------------|
+| EP01 | Gestión de acceso y perfil | Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia. |
+| EP02 | Conexión entre usuarios y coaches | Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado. |
+| EP03 | Análisis de ejercicios con IA | Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones. |
+| EP04 | Seguimiento de progreso físico | Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado. |
+| EP05 | Gestión profesional para coaches | Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo. |
+| EP06 | Análisis nutricional inteligente mediante imagen | Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico. |
+| EP-LP | Sitio web estático | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar. |
+| EP-API | API RESTful | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|--------------------------|----------------------------|
@@ -957,6 +887,9 @@ Como usuario, quiero subir una foto de mis alimentos para obtener automáticamen
 | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido. | EP-LP |
 | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles. | EP-LP |
 | US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados. | EP-LP |
+| TS01 | Implementación de Middleware de Autenticación JWT | Como sistema, se debe validar el token JWT en las cabeceras de cada petición para asegurar la integridad de los datos de la API. | Escenario 1: Validación de token exitosa<br>Dado que una aplicación externa envía un JWT válido,<br>cuando el middleware lo procesa,<br>entonces autoriza el acceso al endpoint solicitado.<br><br>Escenario 2: Token inexistente o corrupto<br>Dado que la petición no incluye cabecera de autorización,<br>cuando el sistema la intercepta,<br>entonces retorna un error 401 Unauthorized. | EP-API |
+| TS02 | Exposición de Endpoints para Bounded Context Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de perfiles de coaches certificados. | Escenario 1: Consulta de coaches<br>Dado que el cliente solicita el recurso /api/v1/coaches,<br>cuando el controlador responde,<br>entonces el sistema entrega un objeto JSON estructurado con la lista de coaches activos. | EP-API |
+| TS03 | Configuración de Endpoints para Video Management | Como sistema, se debe habilitar un endpoint para la recepción de flujos de video y su posterior procesamiento asíncrono en la nube. | Escenario 1: Recepción de video<br>Dado que se envía un archivo multimedia vía POST,<br>cuando el endpoint recibe el stream,<br>entonces el sistema retorna un status 202 Accepted y genera un ID de seguimiento. | EP-API |
 
 ### 3.2. Impact Mapping.
 El **Impact Map** es una herramienta visual que permite relacionar los objetivos de negocio con las personas involucradas, los impactos esperados, los entregables y las historias de usuario asociadas.  
@@ -966,13 +899,15 @@ A continuación se presenta el Impact Map de **BodyMatch AI**:
 
 **Segmento Objetivo 1: Jóvenes adultos interesados en el fitness**
 
+<p align="center">
+  <img src="assets/impact1.png" alt="Impact Map Atletas" width="80%" />
+</p>
 
-<img src="assets/impact1.png" alt="as 2" />
+**Segmento Objetivo 2: Entrenadores Personales (Coaches)**
 
-
-**Segmento Objetivo 1: Entrenadores Personales (Coaches)**
-
-<img src="assets/impact2.png" alt="as 2" />
+<p align="center">
+  <img src="assets/impact2.png" alt="Impact Map Coaches" width="80%" />
+</p>
 
 ### 3.3. Product Backlog.
 
@@ -1031,9 +966,19 @@ A continuación se presenta el backlog completo con todas las User Stories defin
 | 30 | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 8 |
 | 31 | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 |
 | 32 | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 |
+| 33 | US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | 1 |
+| 34 | US34 | Solicitar demostración | Como visitante, quiero registrar mi interés en una demostración para conocer mejor el sistema. | 2 |
+| 35 | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | 1 |
+| 36 | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | 2 |
+| 37 | US37 | Consultar casos de éxito | Como visitante, quiero revisar experiencias reales con el sistema. | 2 |
+| 38 | TS01 | Implementación de Middleware JWT | Como sistema, se debe validar el token JWT en las cabeceras para asegurar la integridad de la API. | 3 |
+| 39 | TS02 | Exposición de Endpoints Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de coaches. | 3 |
+| 40 | TS03 | Configuración de Endpoints Video | Implementación técnica del canal de subida de video para el procesamiento de la IA. | 5 |
+
+
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
 
-[Product Backlog en Trello]
+[Product Backlog en Trello](https://trello.com/invite/b/69f6c4d98f6f645b602f8b43/ATTI379fb6f66a33086d7a8b14a7348eb01936888531/bodymatch-ai-product-backlog)
 
 
 ## Capitulo IV: Requeriments Specification
@@ -1088,8 +1033,11 @@ Administrador: Responsable de la gestión operativa de la plataforma, el manteni
 
 Para garantizar una arquitectura escalable y robusta, el sistema se integra con servicios externos críticos que delegan responsabilidades especializadas: Stripe como pasarela de pagos para el procesamiento seguro de transacciones y suscripciones; Microsoft Outlook para la gestión de comunicaciones transaccionales y notificaciones de confirmación; y servicios de Cloud Storage para el almacenamiento eficiente y recuperación de las evidencias en video de los entrenamientos. Esta configuración permite que BodyMatch AI se enfoque en su propuesta de valor central —la corrección técnica mediante visión computacional— mientras mantiene una conectividad fluida con proveedores de infraestructura de clase mundial.
 
+
+
 <img src="assets/chapter4/Components/SystemContext.png" alt ="">
 
+Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuarios (Atleta, Coach y Administrador) y con servicios externos esenciales como Stripe para pagos, Outlook para correos y Cloud Storage para el almacenamiento de videos. Define los límites del sistema y su conexión con el ecosistema tecnológico exterior.
 
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
@@ -1099,6 +1047,7 @@ Para garantizar una arquitectura escalable y robusta, el sistema se integra con 
 
 <img src="assets/chapter4/Components/Containers-dark.png" alt ="">
 
+Descripcion: Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados como Auth, Nutrition, AI Analysis y Payments. Cada contenedor gestiona su propia base de datos para asegurar la modularidad.
 
 <b>Diagrama de Componentes</b> 
 
@@ -1106,25 +1055,37 @@ Para garantizar una arquitectura escalable y robusta, el sistema se integra con 
 
 <img src="assets/chapter4/Components/IAMBC.png" alt ="">
 
+Descripcion: Detalla la estructura interna del módulo de identidad y acceso, utilizando Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
+
 - Membership and Payments Bounded Context
 
 <img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+
+Descripcion: Ilustra la gestión de suscripciones y transacciones financieras, separando la lógica de membresías de los pagos mediante servicios de comando y consulta. Se integra con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
 - Video Management Bounded Context
 
 <img src="assets/chapter4/Components/Video Management BC.png" alt ="">
 
+Descripcion: Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos. Utiliza CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario.
+
 - Matchmaking with Users Bounded Context
 
 <img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+
+Descripcion: Este componente gestiona el emparejamiento entre atletas y coaches, administrando tanto las solicitudes de conexión como la programación de sesiones de entrenamiento. Expone una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
 - Training Tracker Bouded Context
 
 <img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
 
+Descripcion: Enfocado en el seguimiento del rendimiento físico, este diagrama muestra cómo se registran y consultan los entrenamientos y métricas de performance. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
+
 - Nutrition Bounded Context
 
 <img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
+
+Descripcion: Este diagrama describe la estructura del Nutrition Bounded Context, el cual gestiona el análisis nutricional y planes alimenticios mediante el patrón CQRS. Se integra con la Gemini API para la detección automática de alimentos y macros a partir de imágenes, persistiendo los datos en la base de datos del sistema. Además, provee una fachada de contexto para permitir que otros módulos accedan a la información nutricional de forma desacoplada.
 
 <b>Activities Diagrams</b>
 
@@ -1450,26 +1411,208 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 | AC-10 | La falta de observabilidad en el sistema (logs estructurados, métricas, alertas) puede hacer que los problemas en producción pasen desapercibidos o sean difíciles de diagnosticar | Tiempo de detección y resolución de incidentes elevado en producción | Configurar desde el primer despliegue el logging estructurado con Spring Boot + Azure Monitor. Establecer alertas básicas sobre tasas de error HTTP 5xx y tiempos de respuesta por encima del umbral definido |
 
 -----
+
+### 4.3. ADD Iterations
+
+#### 4.3.1 Iteration 1: Análisis
+##### 4.3.1.1 Architectural Design Backlog 1
+
+Ciertos elementos clave de la arquitectura serán esenciales para asegurar la precisión técnica, la confianza del usuario y la escalabilidad del ecosistema **BodyMatch AI**.
+
+#### Seguridad y Privacidad
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-01 (Registro de usuario):** Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | - Implementar autenticación JWT con rotación de tokens.<br>- Configurar control de acceso basado en roles (`ROLE_USER`, `ROLE_COACH`).<br>- Cifrado de datos personales en reposo. | - Solo usuarios autenticados acceden a los planes.<br>- El sistema bloquea intentos de acceso a perfiles ajenos.<br>- Las contraseñas se almacenan mediante hashing robusto (BCrypt). |
+| **US-11 (Subir video del ejercicio):** Como usuario, quiero subir videos para recibir corrección técnica por IA. | - Implementar URLs pre-firmadas para Azure Blob Storage.<br>- Validar la propiedad del video antes de permitir el análisis. | - Los videos son privados y solo accesibles por el dueño y su coach.<br>- El sistema rechaza archivos que no cumplan con el formato de video permitido. |
+
+---
+
+#### Rendimiento y Disponibilidad
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-12 (Feedback automático con IA):** Como usuario, quiero corrección automática de mis ejercicios mediante visión computacional. | - Configurar procesamiento asíncrono de video mediante colas de mensajería.<br>- Implementar caché (Redis) para resultados de análisis frecuentes.<br>- Configurar balanceador de carga para el servicio de análisis. | - La subida de video no bloquea la interfaz del usuario.<br>- El sistema procesa videos de hasta 200MB en menos de 5 minutos bajo carga normal. |
+| **US-06 (Búsqueda de coaches):** Como usuario, quiero buscar coaches según objetivos y filtros específicos. | - Optimizar consultas en PostgreSQL mediante índices en especialidad y precio.<br>- Implementar paginación en el catálogo de coaches. | - Los resultados de búsqueda se muestran en menos de 800ms.<br>- El sistema soporta 200 usuarios concurrentes buscando coaches sin degradación. |
+
+---
+
+#### Usabilidad e Innovación
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-24 (Reconocimiento de alimentos mediante IA):** Como usuario, quiero que la IA identifique alimentos en fotos para macros. | - Integrar API de visión computacional para detección de alimentos.<br>- Interfaz simplificada de captura de foto rápida. | - Un usuario puede registrar una comida en menos de 30 segundos.<br>- La IA identifica correctamente al menos el 80% de alimentos comunes. |
+| **US-16 (Visualización de progreso):** Como usuario, quiero ver gráficos de mi evolución física (pesos, medidas, macros). | - Gráficos interactivos de carga y medidas corporales.<br>- Sincronización automática de datos entre nutrición y entrenamiento. | - Los gráficos cargan instantáneamente y permiten filtrar por rangos de tiempo (semana, mes, año). |
+
+##### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
+
+En esta iteración, seleccionaremos los **drivers clave** que servirán como base para definir metas que aseguren la precisión técnica y la seguridad de la plataforma **BodyMatch AI**.
+
+---
+
+##### Metas de la Iteración
+
+| Meta | Objetivo | Acciones Clave |
+|------|----------|----------------|
+| **Precisión Técnica en Feedback** | Garantizar que el análisis de IA sea confiable para prevenir lesiones durante el entrenamiento. | - Diseñar el flujo de integración con Gemini AI para análisis corporal.<br>- Implementar lógica de procesamiento asíncrono para no degradar el rendimiento. |
+| **Integridad y Privacidad Multimedia** | Proteger la privacidad de los usuarios al subir videos de su ejecución física y fotos de alimentos. | - Implementar almacenamiento seguro en Azure Blob Storage.<br>- Establecer políticas de acceso restringido a archivos multimedia. |
+| **Escalabilidad de Conexión Coach-Usuario** | Facilitar el matchmaking y la gestión de carteras de clientes para los entrenadores de forma fluida. | - Diseñar el Bounded Context de Matchmaking con búsqueda optimizada.<br>- Implementar el sistema de gestión de disponibilidad para coaches. |
+
+---
+
+##### Objetivo de la Iteración
+
+- **Precisión:** Establecer las bases técnicas para el análisis de video por IA y la corrección de postura mediante visión computacional.
+- **Seguridad:** Robustecer la protección de videos y datos biométricos sensibles bajo estándares de la Ley N° 29733 (Perú).
+- **Gestión:** Optimizar la infraestructura para soportar la comunicación, el seguimiento y la monetización entre coaches y atletas.
+
+---
+
+##### 4.3.1.3 Choose One or More Elements of the System to Refine
+
+Para avanzar en el desarrollo de **BodyMatch AI**, se han seleccionado los siguientes elementos del sistema para ser refinados:
+
+---
+
+| Área | Elemento a Refinar | Razón para el Refinamiento | Esperado |
+|------|---------------------|----------------------------|----------|
+| **Análisis de Video (IA)** | Módulo de Video Management y Worker de IA | Es el núcleo de la propuesta de valor. Requiere desacoplar la carga del video del procesamiento pesado. | Procesamiento asíncrono, feedback detallado de errores técnicos y almacenamiento cifrado. |
+| **Marketplace de Coaches** | Módulo de Matchmaking y Gestión de Sesiones | Los usuarios necesitan encontrar al profesional adecuado rápidamente para iniciar el servicio. | Búsquedas filtradas por objetivos, perfiles detallados y sistema de reservas sin conflictos de horario. |
+| **Seguridad de Accesos** | Módulo IAM (Identity & Access Management) | La plataforma maneja datos de salud y financieros que requieren máxima protección. | Autenticación JWT con rotación, RBAC estricto y protección de endpoints multimedia. |
+
+##### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+Se han identificado conceptos de diseño específicos que abordan los drivers de **precisión, seguridad y escalabilidad**:
+
+---
+
+##### Seguridad
+
+#### Modelo RBAC (Role-Based Access Control)
+- **Descripción:** Implementación de permisos diferenciados donde el Atleta accede a su progreso y el Coach a las herramientas de gestión de su cartera.
+- **Justificación:** Previene que un usuario acceda a datos de salud de terceros o a configuraciones de pago de los entrenadores.
+
+##### API Gateway Seguro (Spring Cloud Gateway)
+- **Descripción:** Centralizar la validación de tokens JWT y la sanitización de inputs antes de llegar a los microservicios de entrenamiento o nutrición.
+- **Justificación:** Protege el sistema contra inyecciones y asegura que solo el tráfico legítimo consuma recursos de la infraestructura.
+
+---
+
+##### Precisión y Rendimiento
+
+##### Procesamiento Asíncrono de Tareas (Worker Pattern)
+- **Descripción:** Uso de colas de mensajes (Azure Service Bus) para enviar los videos al servicio de IA sin mantener al usuario esperando en la pantalla de carga.
+- **Justificación:** Mejora drásticamente la usabilidad, permitiendo que el Atleta siga con su rutina mientras el video se analiza en segundo plano.
+
+---
+
+##### Escalabilidad
+
+##### Bounded Contexts Independientes (DDD)
+- **Descripción:** Separación física y lógica de los módulos de Nutrición, Entrenamiento y Pagos.
+- **Justificación:** Permite escalar solo el servicio de análisis de video (que consume más recursos) sin replicar innecesariamente otros módulos.
+
+---
+
+##### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+| Elemento | Responsabilidad | Interfaces |
+|----------|-----------------|------------|
+| **Módulo Video Management** | Gestionar la subida, almacenamiento y estados del análisis de video técnico. | API REST para upload; Interfaz con Azure Blob Storage. |
+| **Worker de Análisis IA** | Integración con Gemini AI para procesar el video y generar el feedback técnico. | Consumidor de colas; JSON de respuesta con métricas corporales. |
+| **Módulo Matchmaking** | Motor de búsqueda de coaches basado en objetivos, calificación y precio. | API REST de búsqueda filtrada; Integración con perfiles de Atleta. |
+| **API Gateway** | Punto de entrada seguro para la App Móvil; gestión de Cross-Cutting Concerns. | Exposición de endpoints `/api/v1/auth`, `/api/v1/training`; Validación de JWT. |
+| **Training Tracker** | Registro histórico de cargas, RPE y evolución física del usuario. | API de métricas; Dashboards interactivos para frontend. |
+| **Nutrition BC** | Análisis de imágenes de comida para conteo de calorías y macros. | API de visión computacional; Registro de historial nutricional. |
+
+---
+
+##### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
+
+**Sketch Views**
+
+- ***Diagrama C4 - Container Level***
+<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
+
+
+- ***Diagrama UML - Modelo de Dominio***
+  <img src="assets/chapter4/DiagramClass.png" alt="">
+
+**Decisiones de Diseño Registradas**
+
+| ID | Título | Estado | Contexto | Decisión | Consecuencias |
+|--------|---------------------------------------------|----------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------|
+| DD-001 | Monolito Modular orientado a Microservicios | Aceptada | Necesidad de rapidez inicial sin perder escalabilidad por Bounded Context. | Organizar el código por paquetes independientes dentro de un monolito modular (DDD). | - Despliegue simple inicial <br> - Fácil migración futura <br> - Aislamiento de lógica |
+| DD-002 | Procesamiento Asíncrono de Video | Aceptada | El análisis de IA es computacionalmente costoso para una respuesta síncrona. | Utilizar Azure Service Bus para encolar tareas de análisis y notificar vía Push. | - UI fluida <br> - Manejo de reintentos automático <br> - Complejidad en estados |
+| DD-003 | Almacenamiento en Azure Blob Storage | Aceptada | Videos corporales requieren seguridad y durabilidad masiva. | Usar Blob Storage con acceso restringido mediante URLs firmadas (SAS). | - Alta seguridad de archivos <br> - Escalabilidad infinita <br> - Dependencia de Azure |
+| DD-004 | PostgreSQL con Esquemas por Contexto | Aceptada | Múltiples módulos requieren persistencia relacional (entrenamientos, pagos). | Usar una sola instancia pero con esquemas separados para evitar acoplamiento. | - Integridad referencial fuerte <br> - Backups centralizados <br> - Aislamiento de tablas |
+| DD-005 | Redis para Gestión de Sesiones y Caché | Aceptada | Necesidad de baja latencia en dashboards de progreso y validación de tokens. | Implementar Redis para almacenar resultados analíticos y sesiones activas. | - Reducción de carga en DB <br> - Tiempos de respuesta mínimos <br> - Gestión de infra adicional |
+| DD-006 | Sistema de Seguridad RBAC + JWT | Aceptada | Driver crítico de protección de datos de salud y privacidad. | Implementar Spring Security con JWT (Access/Refresh tokens) y roles (User/Coach). | - Control granular <br> - Cumplimiento de Ley 29733 <br> - Auditabilidad completa |
+
+---
+
+##### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+**Análisis del Diseño Actual**
+
+Tras completar la Iteración 1 del método ADD v3, se ha establecido una arquitectura para **BodyMatch AI** que prioriza el flujo asíncrono y la seguridad. El análisis revela:
+
+- **Fortalezas del Diseño Actual**
+    - **Aislamiento de IA:** El desacoplamiento del análisis asegura que fallos en la API externa no afecten la navegación general de la app.
+    - **Escalabilidad Multimedia:** El uso de Azure Blob Storage garantiza que el crecimiento de videos grabados no sature el servidor de aplicaciones.
+    - **Protección de Datos:** La estructura RBAC protege la relación entre el Coach y el Atleta, asegurando la privacidad del progreso físico.
+
+- **Áreas de Mejora Identificadas**
+    - **Costo Operativo:** El uso de múltiples servicios en la nube (Service Bus, Redis, Storage) requiere un monitoreo estricto de costos en la fase académica.
+    - **Sincronización:** La integración de métricas de Nutrición y Entrenamiento debe ser auditada para evitar discrepancias en los reportes diarios.
+
+**Review Iteration Goal**
+
+Enlace del Tablero Kanban: 
+
+<img src="assets/chapter4/Tablero-kanban.png" alt ="">
+
+
+https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai
+
 ## Conclusiones
 
-* La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
+### TB1: Validación de Negocio y Requerimientos
+*   La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches, orientando el diseño hacia una solución centrada en la experiencia del usuario.
+*   El uso de herramientas de investigación como User Personas y Empathy Maps facilitó la identificación de puntos de dolor críticos, como la falta de orientación técnica y la limitada visibilidad de los entrenadores.
+*   La definición del Solution Profile permitió estructurar una propuesta clara que integra el matching de usuarios y el análisis de ejercicios con IA como diferenciales clave frente a la competencia.
+*   Durante esta fase, el equipo demostró la capacidad de adquirir nuevos conocimientos en metodologías de diseño UX y análisis competitivo para fortalecer la base funcional del proyecto.
 
-* El uso de herramientas de investigación como User Personas, Empathy Maps y Scenario Mapping facilitó la identificación de los principales puntos de dolor, tales como la falta de orientación en la ejecución de ejercicios y la limitada visibilidad de los entrenadores, proporcionando una base sólida para el diseño de la solución.
+### TB2: Arquitectura y Diseño Técnico
+*   La aplicación del método Attribute-Driven Design (ADD) permitió alinear las decisiones técnicas con los drivers del negocio, garantizando la resolución de atributos críticos como el rendimiento y la seguridad.
+*   La adopción de Domain-Driven Design (DDD) y principios SOLID estableció una arquitectura modular organizada por Bounded Contexts, asegurando la escalabilidad y mantenibilidad del sistema.
+*   El diseño de una arquitectura basada en microservicios y procesamiento asíncrono responde eficientemente a la carga computacional requerida por el análisis de video con inteligencia artificial.
+*   El equipo consolidó sus conocimientos técnicos al traducir requerimientos funcionales en decisiones arquitectónicas verificables mediante diagramas de contenedores y componentes.
 
-* La definición del Solution Profile permitió estructurar una propuesta clara, integrando funcionalidades clave como el matching entre usuarios y coaches, la mensajería directa y el uso de inteligencia artificial para el análisis de ejercicios, lo que representa un diferencial significativo frente a soluciones tradicionales.
+---
 
+## Recomendaciones
 
- Recomendaciones
+### TB1: Gestión de Usuario y Producto
+*   Se recomienda continuar con un proceso de validación continua con usuarios reales para ajustar las funcionalidades de la interfaz móvil en cada iteración.
+*   Es importante implementar un plan piloto con un grupo reducido de atletas y coaches para obtener métricas reales sobre la efectividad del emparejamiento.
+*   Se sugiere priorizar en las primeras fases de desarrollo los módulos de mensajería y reserva de sesiones, debido a su alto impacto en la retención de usuarios.
 
-* Se recomienda continuar con un proceso de validación continua con usuarios reales (tanto usuarios finales como coaches), a fin de ajustar las funcionalidades y mejorar la experiencia en cada iteración del desarrollo.
+### TB2: Evolución Tecnológica y Seguridad
+*   Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento antes de evolucionar hacia la detección de errores biomecánicos complejos.
+*   Es fundamental implementar de forma estricta las estrategias de seguridad diseñadas, como la autenticación JWT y el control RBAC, para proteger la privacidad de los videos de los usuarios.
+*   Se sugiere monitorear los costos operativos de los servicios en la nube para asegurar que la infraestructura sea sostenible durante la expansión del sistema.
 
-* Es importante implementar un plan piloto con un grupo reducido de usuarios y entrenadores, lo que permitirá evaluar el desempeño de la plataforma en un entorno real y obtener métricas clave para su mejora.
+ Anexos
 
-* Se sugiere priorizar en las primeras fases de desarrollo el módulo de matching, mensajería y análisis de ejercicios con inteligencia artificial, debido a su alto impacto en la propuesta de valor del sistema.
+ Diagramas de clase en LucidChart: https://lucid.app/lucidchart/01095f62-b902-4795-a561-f5e08d59b9e6/edit?viewport_loc=-4132%2C-1475%2C9285%2C4267%2C0_0&invitationId=inv_98f67f4a-d93a-433b-afde-2b53c20b0c84
 
-* Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento y evolucionando hacia modelos más precisos que permitan detectar errores complejos en la ejecución de ejercicios.
+ Diagrama de Componentes : https://online.visual-paradigm.com/share.jsp?id=343538393634332d33
 
-* Es fundamental implementar estrategias de seguridad robustas, incluyendo autenticación mediante JWT y control de acceso basado en roles (RBAC), para proteger la información de los usuarios y garantizar la privacidad de los datos.
+ Enlace del Repositorio Grupal: https://github.com/G3-FundamentosArqui-7944
+
+ Enlace del la documentacion dentro del repositorio: https://github.com/G3-FundamentosArqui-7944/docs
+ 
 
 
  Referencias Bibliográficas
@@ -1483,3 +1626,6 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 * Centro Nacional de Planeamiento Estratégico. (s.f.). Observatorio nacional: Indicadores de salud y bienestar. Recuperado de: https://observatorio.ceplan.gob.pe/ficha/t14
 
 * Instituto Nacional de Estadística e Informática. (2017). Encuesta Demográfica y de Salud Familiar. Recuperado de: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2017/libro.pdf
+
+* Romaní Caycho, M. F., Valverde Palma, X., & Vivanco Ponce, F. (2025). Propuesta de plan de negocio para el desarrollo de una plataforma digital de entrenamientos deportivos personalizados con tecnología GPS en Lima Metropolitana [Tesis de licenciatura, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. 
+https://repositorioacademico.upc.edu.pe/bitstream/handle/10757/686092/Romani_CM.pdf?sequence=16
