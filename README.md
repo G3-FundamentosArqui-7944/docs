@@ -85,6 +85,7 @@
 | TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Finalizacion Del Capitulo 4.2|
 | TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Finalizacion De los Diagramas de actividad y estado |
 | TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Implementacion de Valores en startup profile  |
+| TB2 |30/04/2026| Jorge Enrique Guevara Tejada |Avance ADD iteration 1  |
 | Avn2 | 01/05/2026 | Marcia Victoria Melgarejo Gomez | Avance del ADD Iterations tablero de kanban y redacción de Conclusiones |
 | TB2 | 02/05/2026 | Anyelo Bill Alejos Jesus | Creación de Technical Stories (TS) y redacción de descripciones técnicas para diagramas de arquitectura. |
 | TB2 | 02/05/2026 | Anyelo Bill Alejos Jesus | Actualización del Student Outcome 7 para la entrega del TB2 |
