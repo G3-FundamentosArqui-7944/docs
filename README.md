@@ -1060,84 +1060,70 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
 
-<b>Diagrama de contenedores</b>
+**C4 Model - Nivel 2: Diagrama de Contenedores**
 
 
 <img src="assets/chapter4/Components/Containers-dark.png" alt ="">
 
-Descripcion: Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados como Auth, Nutrition, AI Analysis y Payments. Cada contenedor gestiona su propia base de datos para asegurar la modularidad.
+**Descripción:** Representa la arquitectura lógica distribuida. Se observa el uso de aplicaciones móviles y web conectadas a un API Gateway, el cual distribuye las peticiones hacia microservicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
 
-<b>Diagrama de Componentes</b> 
 
-- IAM Bounded Context
 
-<img src="assets/chapter4/Components/IAMBC.png" alt ="">
+**C4 Model - Nivel 3: Diagramas de Componentes (Bounded Contexts)**
 
-Descripcion: Detalla la estructura interna del módulo de identidad y acceso, utilizando Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
+* **IAM Bounded Context**
 
-- Membership and Payments Bounded Context
+<img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+*Descripción:* Detalla la estructura interna del módulo de identidad y acceso, utilizando Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
 
-<img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+* **Membership and Payments Bounded Context**
 
-Descripcion: Ilustra la gestión de suscripciones y transacciones financieras, separando la lógica de membresías de los pagos mediante servicios de comando y consulta. Se integra con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
+<img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+*Descripción:* Ilustra la gestión de suscripciones y transacciones financieras, separando la lógica de membresías de los pagos mediante servicios de comando y consulta. Se integra con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
-- Video Management Bounded Context
+* **Video Management Bounded Context**
 
-<img src="assets/chapter4/Components/Video Management BC.png" alt ="">
+<img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+*Descripción:* Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos. Utiliza CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario.
 
-Descripcion: Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos. Utiliza CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario.
+* **Matchmaking with Users Bounded Context**
 
-- Matchmaking with Users Bounded Context
+<img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+*Descripción:* Este componente gestiona el emparejamiento entre atletas y coaches, administrando tanto las solicitudes de conexión como la programación de sesiones de entrenamiento. Expone una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
-<img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+* **Training Tracker Bounded Context**
 
-Descripcion: Este componente gestiona el emparejamiento entre atletas y coaches, administrando tanto las solicitudes de conexión como la programación de sesiones de entrenamiento. Expone una fachada para compartir la información de las sesiones con otros módulos del sistema.
+<img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama muestra cómo se registran y consultan los entrenamientos y métricas de performance. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
 
-- Training Tracker Bouded Context
+* **Nutrition Bounded Context**
 
-<img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
+<img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+*Descripción:* Este diagrama describe la estructura del Nutrition Bounded Context, el cual gestiona el análisis nutricional y planes alimenticios mediante el patrón CQRS. Se integra con la Gemini API para la detección automática de alimentos y macros a partir de imágenes, persistiendo los datos en la base de datos del sistema. Además, provee una fachada de contexto para permitir que otros módulos accedan a la información nutricional de forma desacoplada.
 
-Descripcion: Enfocado en el seguimiento del rendimiento físico, este diagrama muestra cómo se registran y consultan los entrenamientos y métricas de performance. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
-
-- Nutrition Bounded Context
-
-<img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
-
-Descripcion: Este diagrama describe la estructura del Nutrition Bounded Context, el cual gestiona el análisis nutricional y planes alimenticios mediante el patrón CQRS. Se integra con la Gemini API para la detección automática de alimentos y macros a partir de imágenes, persistiendo los datos en la base de datos del sistema. Además, provee una fachada de contexto para permitir que otros módulos accedan a la información nutricional de forma desacoplada.
-
-<b>Activities Diagrams</b>
+**Diagramas de Actividades**
 
 <img src="assets/chapter4/Components/actividadai.png" alt ="">
-
 <img src="assets/chapter4/Components/actividadiam.png" alt ="">
-
 <img src="assets/chapter4/Components/actividadpayment.png" alt ="">
-
 <img src="assets/chapter4/Components/actividadtracking.png" alt ="">
 
-<b>Diagramas de Estados</b>
-
+**Diagramas de Estados**
 
 <img src="assets/chapter4/Components/estadoaim.png" alt ="">
-
-
-
 <img src="assets/chapter4/Components/estadoai.png" alt ="">
-
-
 <img src="assets/chapter4/Components/estadopayment.png" alt ="">
-
-
 <img src="assets/chapter4/Components/estadotracking.png" alt ="">
 
-<b>Diagrama de Clases</b>
+**Diagrama de Clases**
 
-<img src="assets/chapter4/DiagramClass.png" alt="">
+<img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como **Strategy** para la flexibilidad en pagos y **Factory** para la gestión de perfiles de usuario.
 
 #### 4.1.5 Relational/Non Relational Database Diagram
 
-<img src="assets/chapter4/Base de Datos-BodyMatch.jpg" alt="">
-
+<img src="./assets/chapter4/Base de Datos-BodyMatch.jpg" alt="Database Diagram BodyMatch AI"">
+**Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
 
 #### 4.1.6 Design Patterns
 
