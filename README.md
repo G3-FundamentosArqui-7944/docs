@@ -1062,62 +1062,148 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 
 **C4 Model - Nivel 2: Diagrama de Contenedores**
 
+<p align="center">
+  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <br>
+  <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
+</p>
 
-<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
-
-**Descripción:** Representa la arquitectura lógica distribuida. Se observa el uso de aplicaciones móviles y web conectadas a un API Gateway, el cual distribuye las peticiones hacia microservicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
-
-
+**Descripción:** Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
 
 **C4 Model - Nivel 3: Diagramas de Componentes (Bounded Contexts)**
 
 * **IAM Bounded Context**
 
-<img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+<p align="center">
+  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <br>
+  <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
+</p>
+
 *Descripción:* Detalla la estructura interna del módulo de identidad y acceso, utilizando Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
 
 * **Membership and Payments Bounded Context**
 
-<img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+<p align="center">
+  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <br>
+  <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
+</p>
+
 *Descripción:* Ilustra la gestión de suscripciones y transacciones financieras, separando la lógica de membresías de los pagos mediante servicios de comando y consulta. Se integra con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
 * **Video Management Bounded Context**
 
-<img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+<p align="center">
+  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <br>
+  <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
+</p>
+
 *Descripción:* Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos. Utiliza CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario.
 
 * **Matchmaking with Users Bounded Context**
 
-<img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+<p align="center">
+  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <br>
+  <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
+</p>
+
 *Descripción:* Este componente gestiona el emparejamiento entre atletas y coaches, administrando tanto las solicitudes de conexión como la programación de sesiones de entrenamiento. Expone una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
 * **Training Tracker Bounded Context**
 
-<img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+<p align="center">
+  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <br>
+  <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
+</p>
+
 *Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama muestra cómo se registran y consultan los entrenamientos y métricas de performance. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
 
 * **Nutrition Bounded Context**
 
-<img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+<p align="center">
+  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <br>
+  <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
+</p>
+
 *Descripción:* Este diagrama describe la estructura del Nutrition Bounded Context, el cual gestiona el análisis nutricional y planes alimenticios mediante el patrón CQRS. Se integra con la Gemini API para la detección automática de alimentos y macros a partir de imágenes, persistiendo los datos en la base de datos del sistema. Además, provee una fachada de contexto para permitir que otros módulos accedan a la información nutricional de forma desacoplada.
 
 **Diagramas de Actividades**
 
-<img src="assets/chapter4/Components/actividadai.png" alt ="">
-<img src="assets/chapter4/Components/actividadiam.png" alt ="">
-<img src="assets/chapter4/Components/actividadpayment.png" alt ="">
-<img src="assets/chapter4/Components/actividadtracking.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <br>
+  <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <br>
+  <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <br>
+  <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el <b>Patrón Strategy (ver sección 4.1.6)</b>.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <br>
+  <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <br>
+  <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
+</p>
 
 **Diagramas de Estados**
 
-<img src="assets/chapter4/Components/estadoaim.png" alt ="">
-<img src="assets/chapter4/Components/estadoai.png" alt ="">
-<img src="assets/chapter4/Components/estadopayment.png" alt ="">
-<img src="assets/chapter4/Components/estadotracking.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <br>
+  <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal <b>FALLIDO_PERMANENTE</b>).</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <br>
+  <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <br>
+  <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <br>
+  <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <br>
+  <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
+</p>
 
 **Diagrama de Clases**
 
-<img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+<p align="center">
+  <img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+  <br>
+  <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
+</p>
+
 **Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como **Strategy** para la flexibilidad en pagos y **Factory** para la gestión de perfiles de usuario.
 
 #### 4.1.5 Relational/Non Relational Database Diagram
