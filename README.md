@@ -1080,7 +1080,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
 </p>
 
-*Descripción:* Detalla la estructura interna del módulo de identidad y acceso, utilizando Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
+*Descripción:* Diseñado bajo los principios de Domain-Driven Design (DDD) y representado en este Diagrama de Componentes (C4 Nivel 3), detalla la estructura interna del módulo de identidad y acceso. Utiliza Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
 
 * **Membership and Payments Bounded Context**
 
@@ -1090,7 +1090,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
 </p>
 
-*Descripción:* Ilustra la gestión de suscripciones y transacciones financieras, separando la lógica de membresías de los pagos mediante servicios de comando y consulta. Se integra con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
+*Descripción:* Siguiendo el enfoque de DDD y la jerarquía del Modelo C4, este diagrama ilustra la gestión de suscripciones y transacciones financieras. Separa la lógica de membresías de los pagos mediante servicios de comando y consulta, integrándose con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
 * **Video Management Bounded Context**
 
@@ -1100,7 +1100,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
 </p>
 
-*Descripción:* Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos. Utiliza CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario.
+*Descripción:* Este componente de nivel C4 Nivel 3 aplica patrones de DDD como CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario. Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos.
 
 * **Matchmaking with Users Bounded Context**
 
@@ -1110,7 +1110,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
 </p>
 
-*Descripción:* Este componente gestiona el emparejamiento entre atletas y coaches, administrando tanto las solicitudes de conexión como la programación de sesiones de entrenamiento. Expone una fachada para compartir la información de las sesiones con otros módulos del sistema.
+*Descripción:* Aplicando tácticas de Domain-Driven Design (DDD), este componente gestiona el emparejamiento entre atletas y coaches. Administra tanto las solicitudes de conexión como la programación de sesiones de entrenamiento, exponiendo una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
 * **Training Tracker Bounded Context**
 
@@ -1120,7 +1120,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
 </p>
 
-*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama muestra cómo se registran y consultan los entrenamientos y métricas de performance. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
+*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama de C4 Model muestra cómo se registran y consultan los entrenamientos y métricas de performance bajo un modelo de dominio especializado. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
 
 * **Nutrition Bounded Context**
 
@@ -1130,7 +1130,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
 </p>
 
-*Descripción:* Este diagrama describe la estructura del Nutrition Bounded Context, el cual gestiona el análisis nutricional y planes alimenticios mediante el patrón CQRS. Se integra con la Gemini API para la detección automática de alimentos y macros a partir de imágenes, persistiendo los datos en la base de datos del sistema. Además, provee una fachada de contexto para permitir que otros módulos accedan a la información nutricional de forma desacoplada.
+*Descripción:* Este diagrama de nivel C4 Nivel 3 describe la estructura del contexto nutricional gestionado mediante el patrón CQRS. Siguiendo principios de DDD, se integra con la Gemini API para la detección automática de alimentos y macros, proveyendo una fachada de contexto para permitir que otros módulos accedan a la información de forma desacoplada.
 
 **Diagramas de Actividades**
 
@@ -1204,7 +1204,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
   <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
 </p>
 
-**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como **Strategy** para la flexibilidad en pagos y **Factory** para la gestión de perfiles de usuario.
+**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como Strategy para la flexibilidad en pagos y Factory para la gestión de perfiles de usuario, asegurando la trazabilidad con los patrones definidos en la sección 4.1.6.
 
 #### 4.1.5 Relational/Non Relational Database Diagram
 
