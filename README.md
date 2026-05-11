@@ -70,25 +70,25 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                          | Descripción                                                                 |
-|---------|------------|--------------------------------|------------------------------------------------------------------------------|
-| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
-| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de User Personas, Empathy Maps y User Task Matrix. |
-| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de escenarios As Is - To Be, además del desarrollo del Product Backlog. |
-| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
-| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
-| Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
-|Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
-|Avn2|28/04/2026| Piero Francesco Tenorio Medina | Primera versión de Diagrama de Componentes|
-|  TB2 | 28/04/2026  | Pablo Antonio Geronimo Quispe |Avanze del Documento y tacticas y ADD |
-| TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Avanze del Capitulo 4.2  |
-| TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Finalizacion Del Capitulo 4.2|
-| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Finalizacion De los Diagramas de actividad y estado |
-| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Implementacion de Valores en startup profile  |
-| TB2 |30/04/2026| Jorge Enrique Guevara Tejada |Avance ADD iteration 1  |
-| Avn2 | 01/05/2026 | Marcia Victoria Melgarejo Gomez | Avance del ADD Iterations tablero de kanban y redacción de Conclusiones |
-| TB2 | 02/05/2026 | Anyelo Bill Alejos Jesus | Creación de Technical Stories (TS) y redacción de descripciones técnicas para diagramas de arquitectura. |
-| TB2 | 02/05/2026 | Anyelo Bill Alejos Jesus | Actualización del Student Outcome 7 para la entrega del TB2 |
+| Versión | Fecha      | Autor                          | Descripción | Commit   |
+|---------|------------|--------------------------------|------------------------------------------------------------------------------|---|
+| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. | 466a8f3|
+| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de arquetipos de usuario y mapas de empatía.     | 62096ee  |
+| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de los escenarios actuales y futuros, además de la pila de producto.                              | 9be392b  |
+| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del proceso Lean UX, incluyendo enunciados de problemas, hipótesis y el lienzo Lean UX.           | f50943d  |
+| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las épicas e historias de usuario.                                                             | 0fc5d48  |
+| Avn2    | 25/04/2026 | Piero Francesco Tenorio Medina | Avance del diagrama de clases.                                                                               | 0bc5e96  |
+| Avn2    | 27/04/2026 | Piero Francesco Tenorio Medina | Avance de la primera versión del diagrama de clases.                                                         | 43b41b3  |
+| Avn2    | 28/04/2026 | Piero Francesco Tenorio Medina | Primera versión del diagrama de componentes.                                                                 | 1ddb81e  |
+| TB2     | 28/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del documento, tácticas y la metodología ADD.                                                         | 45a16c3  |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del capítulo 4.2.                                                                                     | 392249c  |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización del capítulo 4.2.                                                                               | 71c9ff3  |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización de los diagramas de actividad y estado.                                                         | 19d059f  |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Implementación de valores en el perfil de la startup.                                                        | 9fff960  |
+| TB2     | 30/04/2026 | Jorge Enrique Guevara Tejada   | Avance Capítulo 4.3 - Iteración ADD 1.                                                                                | ee9cdc9  |
+| Avn2    | 01/05/2026 | Marcia Victoria Melgarejo Gomez| Avance 4.3 iteración ADD 1, tablero kanban y redacción de conclusiones.                                   | b54b3f3  |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.                  | 5e23b4b  |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Actualización del student outcome 7 para la entrega del TB2.| 5537ea6|
 
 ## Contenido
 
@@ -190,8 +190,8 @@ ABET - EAC - Student Outcome 7 Criterio: La capacidad de adquirir y aplicar nuev
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |--------------------|---------------------|--------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles, centrándome en Scrum, para aplicarlas en la planificación del proyecto. Esto me permitió mejorar la organización del equipo y entender cómo adaptar estos marcos de trabajo a equipos pequeños y tareas técnicas dentro de un entorno real de desarrollo.<br><br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, disponibilidad, seguridad y mantenibilidad), drivers arquitectónicos, escenarios de atributos de calidad (QAS) y restricciones del sistema. Esto permitió estructurar una arquitectura basada en microservicios alineada al core de la solución (análisis de ejercicios con IA).<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para poder desarrollar lo establecido, se tuvo que hacer una investigación sobre las herramientas y las metodologías a utilizar. Esto permitió organizar de manera efectiva las prioridades del equipo a la hora de implementar las funcionalidades.<br>**TB2** Para esta entrega se tuvo que realizar un trabajo de investigación y recapitulación de conceptos antes vistos en la carrera. Por ejmeplo, el desarrollo del diagrama de clases donse se requirió examinar los patrones a utilizar.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Para el desarrollo del Lean UX Process, investigué conceptos clave como Problem Statement, Assumptions, Hypothesis y Lean UX Canvas, lo que permitió estructurar correctamente la propuesta centrada en el usuario y mejorar la toma de decisiones basadas en validación.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Para el desarrollo completo del Capítulo II, investigué metodologías de Requirements Elicitation y análisis competitivo. Apliqué herramientas avanzadas de diseño UX como Uxpressia para la creación de User Personas, Empathy Maps y la User Task Matrix. Esto me permitió sintetizar los hallazgos de las entrevistas y el análisis de mercado en una estructura de requisitos técnica y funcional que sirve como base para el desarrollo de la solución BodyMatch AI.<br> <br>TB2: Para el desarrollo de esta etapa, investigué y apliqué el concepto de Technical Stories (TS) para diferenciar los requerimientos de infraestructura y backend de las historias de usuario convencionales. Además, elaboré las descripciones técnicas detalladas para los diagramas de arquitectura (Contexto, Contenedores, Componentes, Actividades y Estados), lo que permitió documentar con precisión cómo cada componente del sistema BodyMatch AI responde a los atributos de calidad y drivers arquitectónicos definidos.<br> <br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Para el desarrollo del Requirements Specification, investigué y reforcé conceptos clave como User Stories, criterios de aceptación y estructura de requerimientos, lo que permitió definir de manera clara y organizada las funcionalidades del sistema.<br><br>**TB2:**: Para el TB2, actualicé mis conocimientos aplicando la metodología Attribute-Driven Design (ADD). Traduje requerimientos técnicos en decisiones arquitectónicas y estructuré el flujo de trabajo creando un tablero Kanban, lo que me permitió organizar y visualizar eficientemente las tareas de la iteración para BodyMatch AI.| **TB1:** Durante esta fase, el equipo demostró su capacidad para adquirir nuevos conocimientos y aplicarlos en el desarrollo del proyecto, fortaleciendo competencias técnicas relevantes para una solución escalable y funcional.<br><br>**TB2:** El equipo consolidó conocimientos en arquitectura de software mediante la aplicación del método ADD, logrando definir tácticas, drivers, escenarios de calidad y restricciones que permiten una solución escalable, mantenible y alineada al uso de inteligencia artificial. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo para responder a las exigencias del proyecto, por lo que estudié liderazgo técnico, gestión de tiempos y coordinación en equipos ágiles.<br><br>**TB2:** Reforcé mi aprendizaje en arquitectura de software, especialmente en microservicios, atributos de calidad y diseño orientado a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables desde etapas tempranas.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para esta entrega se aceptó el hecho de que se debe seguir aprendiendo y reforzando conceptos ya vistos en la formación universitaria. Esto permite que se trabaje de manera efectiva en proyectos a futuro que requieran una ardua tarea de investigación.<br>**TB2;** Para esta entrega se detecto la necesidad de ampliar mis conocimientos. Esto lugeo a l ver que los que tenian servian poco a compraración de lo requerido.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías centradas en el usuario como Lean UX, reforzando mi capacidad de análisis y adaptación para contribuir de manera efectiva en proyectos de desarrollo de software.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí la importancia de la actualización constante al investigar las tendencias actuales en IA y la gestión de asesorías fitness. Este proceso de Needfinding y mapeo de escenarios me enseñó que para proponer software innovador es indispensable aprender sobre el dominio del problema de forma continua, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br>TB2: Reconocí la importancia de utilizar herramientas de gestión visual para asegurar la trazabilidad técnica del proyecto. Implementé y configuré el tablero Trello, organizando el Product Backlog con la asignación de Story Points y priorización de tareas técnicas. Este proceso me enseñó que la actualización constante en herramientas de gestión ágil y documentación técnica es vital para coordinar el desarrollo de una arquitectura compleja basada en microservicios y asegurar su escalabilidad a futuro.<br> <br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Durante la elaboración de las User Stories, identifiqué la importancia de seguir aprendiendo continuamente sobre técnicas de levantamiento de requerimientos y buenas prácticas en desarrollo de software, ya que esto contribuye a mejorar la calidad de las soluciones propuestas.<br><br>**TB2:** El diseño de BodyMatch AI demostró que la arquitectura exige aprendizaje continuo. Aprender a documentar iteraciones ADD y gestionar su ejecución técnica a través de un tablero Kanban me enseñó que dominar herramientas ágiles.| **TB1:** El equipo desarrolló una actitud profesional orientada al aprendizaje constante, adaptándose a nuevas herramientas y fortaleciendo competencias esenciales en desarrollo de software.<br><br>**TB2:** El equipo consolidó la importancia del aprendizaje permanente como base del desarrollo profesional, evidenciando crecimiento en conocimientos de arquitectura de software, inteligencia artificial y diseño de sistemas escalables. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles (Scrum) para la planificación, mejorando la organización del equipo en tareas técnicas.<br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, seguridad) y drivers, estructurando una arquitectura basada en microservicios.<br>**TP1:** Investigué y apliqué la documentación interactiva con OpenAPI (Swagger) y participé en la separación técnica del Monolito y los Microservicios.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué herramientas de modelado y metodologías para organizar las prioridades en la implementación de funcionalidades.<br>**TB2:** Realicé un trabajo de investigación y recapitulación de conceptos de ingeniería de software para el desarrollo del diagrama de clases, requiriendo examinar los patrones de diseño a utilizar.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Investigué el proceso Lean UX y el Lean UX Canvas, permitiendo estructurar correctamente la propuesta centrada en el usuario y validar hipótesis.<br>**TB2:** Participé en el desarrollo y refinamiento de la primera iteración ADD.<br>**TP1:** Apliqué nuevos conocimientos en la validación de los endpoints y la integración de Postman para las pruebas de la API RESTful.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué metodologías de *Requirements Elicitation* y herramientas como Uxpressia para crear User Personas, sintetizando los hallazgos en una estructura técnica.<br>**TB2:** Investigué el concepto de *Technical Stories* (TS) y elaboré descripciones detalladas para los diagramas de arquitectura (C4), documentando la respuesta del sistema.<br>**TP1:** Profundicé en técnicas de despliegue web mediante GitHub Pages y en la estructuración de la matriz de trazabilidad de los microservicios.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Investigué la estructura de las *User Stories* y criterios de aceptación para organizar las funcionalidades de manera clara.<br>**TB2:** Actualicé mis conocimientos aplicando la metodología ADD, traduciendo requerimientos técnicos en decisiones arquitectónicas mediante un tablero Kanban.<br>**TP1:** Documenté el Sprint Backlog y las evidencias de ejecución, aprendiendo a integrar las vistas del frontend móvil con los servicios del backend híbrido. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos técnicos en el modelado inicial del proyecto.<br><br>**TB2:** Se consolidaron conocimientos en arquitectura de software mediante el método ADD, definiendo tácticas y escenarios de calidad.<br><br>**TP1:** Se aplicaron conocimientos prácticos de despliegue continuo y documentación de APIs (Swagger), logrando una evolución real hacia microservicios. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo, estudiando liderazgo técnico y gestión de tiempos para la coordinación ágil.<br>**TB2:** Reforcé mi aprendizaje en arquitectura de software orientada a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables.<br>**TP1:** Reconocí que el despliegue de microservicios exige una actualización constante en herramientas de integración y pruebas de software.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la importancia de reforzar conceptos teóricos para trabajar de manera efectiva en proyectos que requieran una ardua tarea de investigación.<br>**TB2:** Detecté la necesidad de ampliar mis conocimientos técnicos al contrastar la teoría académica con los requerimientos reales, comprendiendo que mis conocimientos previos debían actualizarse para cumplir con el estándar exigido.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías Lean UX para contribuir efectivamente en proyectos ágiles.<br>**TB2:** Reconocí que la arquitectura de software requiere un estudio profundo de los atributos de calidad.<br>**TP1:** Entendí que el testing de software y la validación de APIs son habilidades críticas que debo seguir perfeccionando.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que para innovar es indispensable el aprendizaje continuo del dominio del problema, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br>**TB2:** Implementé el tablero Trello. Comprendí que la actualización constante en herramientas de gestión ágil es vital para coordinar arquitecturas complejas.<br>**TP1:** Advertí que el ecosistema Cloud evoluciona rápidamente, por lo que dominar herramientas de automatización y Swagger es fundamental para mi carrera.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué la importancia de aprender continuamente sobre técnicas de levantamiento de requerimientos para mejorar la calidad de las soluciones.<br>**TB2:** El diseño de BodyMatch AI demostró que la arquitectura exige aprendizaje continuo. Aprender a documentar iteraciones ADD y gestionar su ejecución a través de Kanban me enseñó que dominar herramientas ágiles es vital para el éxito del proyecto.<br>**TP1:** Comprendí que la correcta documentación de un Sprint requiere rigor y actualización constante en prácticas de aseguramiento de calidad y metodologías de despliegue. | **TB1:** El equipo desarrolló una actitud orientada al aprendizaje constante y al dominio de nuevas metodologías de análisis.<br><br>**TB2:** El equipo consolidó el aprendizaje permanente como base del desarrollo profesional en arquitectura y diseño escalable.<br><br>**TP1:** La transición a microservicios evidenció que la adopción de nuevas tecnologías (Swagger, Cloud, GitHub Pages) es un requerimiento continuo para el ingeniero de software. |
 
 ## Capítulo I: Introducción
 
@@ -1666,6 +1666,268 @@ Enlace del Tablero Kanban:
 
 https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai
 
+
+
+# Capítulo V: Product Implementation, Validation & Deployment
+##  5.1	Testing Suites & General Patterns
+### 5.1.1	Backend Application Core Testing Suite 
+### 5.1.2	Pattern Based Backend Application(s)
+### 5.1.3	Pattern Based Custom Software Library
+### 5.1.4	Framework Pattern Driven Refactoring Report
+
+### 5.2	Software Configuration Management
+### 5.2.1	Software Development Environment Configuration
+### 5.2.2	 Source Code Management
+### 5.2.3	Source Code Style Guide & Conventions
+### 5.2.4	 Software Deployment Configuration
+
+## 5.3	Microservices Implementation
+### 5.2.1	Sprint 1
+##### 5.2.1.1	Sprint Backlog 1
+**Sprint Planning Background**
+
+| **Sprint 1** | **Sprint 1 BodyMatch AI** |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Date** | 04/05/2026     |
+| **Time** | 06:00 PM     |
+| **Location** | Servidor de Discord del Equipo    |
+| **Prepared By** |   Pablo Geronimo  |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara   |
+| **Sprint 1 Review Summary** | Se desarrolló y desplegó la Landing Page interactiva mostrando la propuesta de valor, servicios, casos de éxito y precios. Se implementó el frontend móvil para las vistas core (Autenticación y Subida/Análisis de Video). En el backend, se logró la arquitectura híbrida con el monolito core y los microservicios IAM y Videos desplegados y documentados. |
+| **Sprint 1 Retrospective Summary** | El equipo logró una excelente comunicación para sincronizar los contratos de la API entre el frontend móvil y el backend. Se destacó el éxito en la extracción inicial de los microservicios, aunque se debe afinar la estimación de tiempos de integración con IA para futuros sprints. |
+| **Sprint Goal & User Stories** | Construir el núcleo visible y funcional de BodyMatch AI: Landing Page pública, backend con arquitectura híbrida (Monolito + MS), y las pantallas core móviles para el registro, inicio de sesión y análisis de técnica con IA.                                       |
+| **Sprint 1 Goal** | Desplegar la Landing Page, asegurar el ecosistema backend (IAM, Videos y Monolito), mostrar las pantallas móviles core operativas y entregar la documentación técnica completa del Sprint 1.      |
+| **Sprint 1 Velocity** | 20 User Stories / Technical Stories completadas     |
+| **Sum of Story Points** | 45 Story Points
+
+**Sprint Backlog**
+
+El objetivo principal de este Sprint fue establecer la presencia digital del producto (Landing Page), sentar las bases de seguridad (IAM) y desarrollar el núcleo de valor: el análisis de videos mediante IA. 
+
+A continuación, se muestra el enlace al tablero de gestión:
+
+[Product Backlog en Trello](https://trello.com/b/Sn0UEEhS/bodymatch-ai-product-backlog)
+
+
+**Descomposición de Tareas del Sprint:**
+
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| **US33** | Consultar información de servicios | T01 | Sección de Servicios (Landing) | Maquetar la sección "Tecnología que entiende tu cuerpo" detallando el análisis IA y Marketplace. | 3h | Pablo Geronimo | Done |
+| **US34** | Solicitar demostración | T01 | Modal de Contacto/Demo | Implementar formulario interactivo "Solicita tu Demo" con validación de campos. | 4h | Anyelo Alejos | Done |
+| **US35** | Consultar planes y precios | T01 | Sección Pricing | Maquetar planes "Básico" y "Premium" con sus beneficios en la Landing Page. | 2h | Marcia Melgarejo | Done |
+| **US36** | Solicitar asistencia | T01 | Sección FAQ | Desarrollar sección interactiva de preguntas frecuentes en la landing. | 3h | Jorge Guevara | Done |
+| **US37** | Consultar casos de éxito | T01 | Galería de Éxito y Filtros | Desarrollar sección de testimonios con filtros dinámicos (Casa, Gimnasio, Coaches). | 4h | Pablo Geronimo | Done |
+| **US01** | Registro de usuario | T01 | UI de Registro Mobile | Crear pantallas de registro (Atleta/Coach) en la aplicación móvil. | 5h | Anyelo Alejos | Done |
+| | | T02 | API de Registro (IAM MS) | Implementar endpoints `POST /sign-up` en el microservicio IAM. | 6h | Marcia Melgarejo | Done |
+| **US02** | Inicio de sesión | T01 | UI de Login Mobile | Crear pantalla de inicio de sesión y gestión de tokens en el dispositivo. | 4h | Jorge Guevara | Done |
+| | | T02 | API de Login (IAM MS) | Implementar endpoint `POST /sign-in` devolviendo JWT. | 5h | Pablo Geronimo | Done |
+| **US04** | Cierre de sesión | T01 | Lógica de Logout Mobile | Limpiar tokens almacenados localmente y redirigir al Login. | 2h | Anyelo Alejos | Done |
+| | | T02 | API Revoke Token | Implementar endpoint `POST /sign-out` en el MS IAM para invalidar sesión. | 3h | Marcia Melgarejo | Done |
+| **US05** | Configuración de perfil | T01 | UI Formulario Perfil | Crear vista móvil para que el usuario ingrese sus datos biométricos y objetivos. | 4h | Jorge Guevara | Done |
+| | | T02 | API Perfil Atleta | Implementar endpoint `PUT /profile` en el Monolito Core. | 4h | Pablo Geronimo | Done |
+| **US06** | Búsqueda de coaches | T01 | UI Buscador y Filtros | Diseñar vista móvil con barra de búsqueda y filtros (precio, experiencia). | 6h | Anyelo Alejos | Done |
+| | | T02 | API Search Coaches | Desarrollar query dinámica en PostgreSQL para el endpoint de búsqueda. | 5h | Marcia Melgarejo | Done |
+| **US07** | Visualización de perfil coach | T01 | UI Detalle Coach | Maquetar pantalla móvil con la información, reseñas y tarifas del coach. | 5h | Jorge Guevara | Done |
+| | | T02 | API Get Coach | Implementar endpoint `GET /coaches/{id}`. | 3h | Pablo Geronimo | Done |
+| **US11** | Subir video del ejercicio | T01 | UI Cámara y Subida | Integrar cámara y selector de archivos nativo en la app móvil Android/iOS. | 6h | Anyelo Alejos | Done |
+| | | T02 | API Gestión de Video | Desarrollar endpoint de subida (multipart) en el microservicio de Videos. | 6h | Marcia Melgarejo | Done |
+| **US12** | Feedback automático con IA | T01 | UI Resultados IA | Maquetar pantalla de métricas, keypoints y feedback visual en la app móvil. | 8h | Jorge Guevara | Done |
+| | | T02 | Integración Gemini AI | Conectar el MS Videos con la API de Gemini para procesamiento de frames. | 8h | Pablo Geronimo | Done |
+| **US15** | Registro métricas físicas | T01 | UI Historial Métricas | Crear vista para registrar peso y medidas corporales a lo largo del tiempo. | 4h | Anyelo Alejos | Done |
+| | | T02 | API Post Metrics | Crear lógica y endpoint `POST /metrics` en el módulo de Training (Monolito). | 4h | Marcia Melgarejo | Done |
+| **TS01** | Middleware JWT | T01 | Seguridad Gateway | Implementar validación de JWT en cabeceras de Spring Security. | 5h | Jorge Guevara | Done |
+| **TS02** | Endpoints Matchmaking | T01 | Configuración Controladores | Estructurar y exponer la capa REST del Bounded Context de Matchmaking. | 4h | Pablo Geronimo | Done |
+| **TS03** | Endpoints Video | T01 | Almacenamiento Blob | Configurar persistencia de videos en Azure Blob Storage / File System local. | 5h | Anyelo Alejos | Done |
+| **TS04** | Endpoint Perfil Atleta | T01 | Integración CQRS | Configurar Command/Query handlers para recuperar datos del perfil del atleta. | 4h | Marcia Melgarejo | Done |
+
+##### 5.2.1.2	Development Evidence for Sprint Review
+
+
+
+##### 5.2.1.3	Testing Suite Evidence for Sprint Review
+
+
+
+##### 5.2.1.4	Execution Evidence for Sprint Review
+Para este primer Sprint de BodyMatch AI, el equipo ejecutó el desarrollo en tres frentes paralelos: la publicación de la Landing Page institucional, el desarrollo del Frontend Mobile para los usuarios, y la implementación de la arquitectura backend (híbrida).
+
+**1. Evidencia en Landing Page (Web)**
+
+A través de esta landing, los visitantes pueden visualizar claramente la propuesta de valor: entrenar con la precisión de la IA y la empatía de un coach. Las User Stories ejecutadas y su evidencia visual son:
+
+| ID | User Story | Evidencia en Landing Page |
+|---|---|---|
+| US33 | Consultar información de servicios | Sección "Servicios" con diseño en tarjetas explicando el análisis IA, Marketplace y Nutrición. |
+| US34 | Solicitar demostración | Modal interactivo "Solicita tu Demo" con formulario validado. |
+| US35 | Consultar planes y precios | Sección "Precios" detallando las diferencias entre el plan Gratis y Premium. |
+| US36 | Solicitar asistencia | Sección "FAQ" (Preguntas Frecuentes) resueltas de forma dinámica. |
+| US37 | Consultar casos de éxito | Sección "Galería de Éxito" con testimonios reales y filtros por categoría (Casa/Gym/Coach). |
+
+*Evidencia Visual Landing Page:*  
+
+<img src="assets/chapter5/swagger_prueba_landing.png" alt ="">
+
+**2. Evidencia en Frontend App (Mobile)**
+
+Se desarrollaron las pantallas núcleo de la aplicación móvil, garantizando una experiencia fluida para el Atleta al momento de interactuar con la IA y gestionar su perfil.
+
+<img src="assets/chapter5/evidence_deployment_mobile.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile2.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile3.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile4.jpg" alt ="">  
+<img src="assets/chapter5/evidence_deployment_mobile5.jpg" alt ="">    
+
+
+**3. Evidencia en Web Services (Backend Híbrido)**
+
+Durante este Sprint se inició la migración de nuestra arquitectura monolítica hacia un enfoque de microservicios. Para esta entrega, se han extraído e implementado exitosamente como microservicios independientes los Bounded Contexts de **IAM (Identity and Access Management)** y **Videos (Gestión y Análisis de Ejercicios)**, mientras que los módulos de Matchmaking, Training, Nutrition y Membership se mantienen operativos dentro del Monolito central.
+
+Para comprobar la correcta ejecución del backend, se realizaron pruebas de integración utilizando Postman y la interfaz interactiva de Swagger UI. 
+
+A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas comprobando la conexión y las respuestas de la base de datos:
+
+<img src="assets/chapter5/swagger1.jpg" alt ="">
+<img src="assets/chapter5/swagger2.jpg" alt ="">
+<img src="assets/chapter5/swagger3.jpg" alt ="">
+<img src="assets/chapter5/swagger4.jpg" alt ="">
+
+
+
+##### 5.2.1.5	Microservices Documentation Evidence for Sprint Review
+En esta sección se incluye la relación de Endpoints documentados con OpenAPI (Swagger). Se logró integrar exitosamente los Web Services de BodyMatch AI, estandarizando la comunicación entre el frontend móvil y el ecosistema híbrido (Microservicios + Monolito).
+
+**1. Matriz de Trazabilidad de Requerimientos**
+Esta tabla demuestra que los endpoints implementados cubren más del 50% del alcance funcional definido en las User Stories del Sprint:
+
+| US ID | Título de la User Story | Endpoint(s) Relacionado(s) | Estado |
+|---|---|---|---|
+| US01 | Registro de usuario | `POST /api/v1/authentication/sign-up/athlete` <br> `POST /api/v1/authentication/sign-up/coach` | Implementado |
+| US02 | Inicio de sesión | `POST /api/v1/authentication/sign-in` | Implementado |
+| US11 | Subir video del ejercicio | `POST /api/v1/exercise-videos` | Implementado |
+| US12 | Feedback automático con IA | `POST /api/v1/exercise-videos/{videoId}/analyze` | Implementado |
+| US16 | Eliminar video de ejercicio | `DELETE /api/v1/exercise-videos/{videoId}` | Implementado |
+| US17 | Consultar video de ejercicio | `GET /api/v1/exercise-videos/{videoId}` | Implementado |
+
+**2. Catálogo de Endpoints y Contratos de Interfaz**
+
+| Acción Implementada | Verbo | Endpoint | Parámetros | Ejemplo de Response | URL Documentación |
+|---|---|---|---|---|---|
+| Registrar Atleta | **POST** | `/api/v1/authentication/sign-up/athlete` | Body (JSON) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
+| Iniciar sesión | **POST** | `/api/v1/authentication/sign-in` | Body (JSON) | `200 OK` | `http://localhost:8091/swagger-ui.html` |
+| Consultar video | **GET** | `/api/v1/exercise-videos/{videoId}` | Path Param | `200 OK` / `404 Not Found` | `http://localhost:8091/swagger-ui.html` |
+| Subir video | **POST** | `/api/v1/exercise-videos` | Form-Data (Multipart) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
+| Eliminar video | **DELETE** | `/api/v1/exercise-videos/{videoId}` | Path Param | `204 No Content` | `http://localhost:8091/swagger-ui.html` |
+
+**3. Ejemplos de Request y Response (JSON)**
+Tal como se solicita en el criterio de evaluación, se presentan ejemplos completos y reales de las peticiones extraídas de la ejecución en Swagger para validar la estructura de datos en los diferentes métodos HTTP:
+
+**A. POST (Crear) - Registro de Atleta**
+* **Endpoint:** `POST /api/v1/authentication/sign-up/athlete`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+- Response (201 Created):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "active": true,
+  "emailVerified": false,
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+**B. POST (Login) - Inicio de Sesión**
+
+* **Endpoint:** `POST /api/v1/authentication/sign-in`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456"
+}
+```
+- Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "accessToken": "eyJhbGciOiJIUzM4NCJ9.eyJzd...",
+  "refreshToken": "7200a4ab-1168-40bf-b184-afa3953786bc",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+Adicionalmente, se presentan las capturas en imágenes de la interacción con la documentación elaborada en Swagger UI utilizando datos de muestra:
+
+**Registro de usuario**:   
+
+<img src="assets/chapter5/swagger_prueba1.png" alt ="">  
+<img src="assets/chapter5/swagger_prueba2.png" alt =""> 
+ <img src="assets/chapter5/swagger_prueba8.png" alt =""> 
+
+**Registro y análisis de video:**  
+
+<img src="assets/chapter5/swagger_prueba3.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba4.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba5.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba6.png" alt ="">
+<img src="assets/chapter5/swagger_prueba7.png" alt =""> 
+
+
+
+**Repositorio y Control de Versiones:**
+El código fuente se encuentra alojado en la organización del equipo.
+
+* **URL del repositorio de Web Services:**  
+  - `https://github.com/G3-FundamentosArqui-7944/bodymatch-backend` 
+  - `https://github.com/G3-FundamentosArqui-7944/microservices` 
+* **Commits relacionados con Documentación (OpenAPI/Swagger):**
+  * `f073594`: *docs: update architecture diagrams and descriptions for clarity and consistency*
+
+
+##### 5.2.1.6	Software Deployment Evidence for Sprint Review
+
+Durante este primer Sprint, las actividades de despliegue continuo (Deployment) se centraron en la publicación en producción de la Landing Page de BodyMatch AI. El objetivo principal fue hacer pública nuestra propuesta de valor de manera rápida, segura y escalable para comenzar a captar el interés de los usuarios y validaciones tempranas. 
+
+Dado que la Landing Page está construida con tecnologías web estáticas, se optó por utilizar **GitHub Pages** como proveedor de alojamiento en la nube (Cloud Hosting). 
+
+
+Capturas del Despliegue
+
+<img src="assets/chapter5/evidence_deployment_landing.jpg" alt =""> 
+
+<img src="assets/chapter5/evidence_deployment_landing2.jpg.png" alt =""> 
+
+
+##### 5.2.1.7	Team Collaboration Insights during Sprint
+
+
+
+##### 5.2.1.8	Kanban Board 
+
+
+
 ## Conclusiones
 
 ### TB1: Validación de Negocio y Requerimientos
@@ -1680,6 +1942,11 @@ https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a
 *   El diseño de una arquitectura basada en microservicios y procesamiento asíncrono responde eficientemente a la carga computacional requerida por el análisis de video con inteligencia artificial.
 *   El equipo consolidó sus conocimientos técnicos al traducir requerimientos funcionales en decisiones arquitectónicas verificables mediante diagramas de contenedores y componentes.
 
+### TP1: Consolidación y Despliegue
+* **Infraestructura y Despliegue:** Se logró el despliegue exitoso de la Landing Page institucional en GitHub Pages, logrando un tiempo de carga inferior a 2 segundos y disponibilidad global inmediata (ver evidencia de Deployment en sección 5.2.1.6).
+
+* **Mantenibilidad:** La aplicación de los principios SOLID y Domain-Driven Design (DDD) permitió definir 6 Bounded Contexts con fronteras explícitas, reduciendo la complejidad técnica y facilitando la integración de nuevos módulos de nutrición en futuros sprints.
+
 ---
 
 ## Recomendaciones
@@ -1693,6 +1960,10 @@ https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a
 *   Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento antes de evolucionar hacia la detección de errores biomecánicos complejos.
 *   Es fundamental implementar de forma estricta las estrategias de seguridad diseñadas, como la autenticación JWT y el control RBAC, para proteger la privacidad de los videos de los usuarios.
 *   Se sugiere monitorear los costos operativos de los servicios en la nube para asegurar que la infraestructura sea sostenible durante la expansión del sistema.
+
+### TP1: Despliegue y Arquitectura 
+* Se recomienda consolidar la migración progresiva hacia microservicios implementando un API Gateway robusto (ej. Spring Cloud Gateway) que centralice de forma eficiente el enrutamiento hacia los servicios de IAM, Videos y el Monolito Core.
+* Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
 
  Anexos
 
