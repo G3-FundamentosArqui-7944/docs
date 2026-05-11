@@ -1597,14 +1597,103 @@ https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a
 ## 5.3	Microservices Implementation
 ### 5.2.1	Sprint 1
 ##### 5.2.1.1	Sprint Backlog 1
+**Sprint Planning Background**
+
+| **Sprint 1** | **Sprint 1 BodyMatch AI** |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Date** | 04/05/2026     |
+| **Time** | 06:00 PM     |
+| **Location** | Servidor de Discord del Equipo    |
+| **Prepared By** |   Pablo Geronimo  |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara   |
+| **Sprint 1 Review Summary** | Se desarrolló y desplegó la Landing Page interactiva mostrando la propuesta de valor, servicios, casos de éxito y precios. Se implementó el frontend móvil para las vistas core (Autenticación y Subida/Análisis de Video). En el backend, se logró la arquitectura híbrida con el monolito core y los microservicios IAM y Videos desplegados y documentados. |
+| **Sprint 1 Retrospective Summary** | El equipo logró una excelente comunicación para sincronizar los contratos de la API entre el frontend móvil y el backend. Se destacó el éxito en la extracción inicial de los microservicios, aunque se debe afinar la estimación de tiempos de integración con IA para futuros sprints. |
+| **Sprint Goal & User Stories** | Construir el núcleo visible y funcional de BodyMatch AI: Landing Page pública, backend con arquitectura híbrida (Monolito + MS), y las pantallas core móviles para el registro, inicio de sesión y análisis de técnica con IA.                                       |
+| **Sprint 1 Goal** | Desplegar la Landing Page, asegurar el ecosistema backend (IAM, Videos y Monolito), mostrar las pantallas móviles core operativas y entregar la documentación técnica completa del Sprint 1.      |
+| **Sprint 1 Velocity** | 20 User Stories / Technical Stories completadas     |
+| **Sum of Story Points** | 45 Story Points
+
+**Sprint Backlog**
+
+El objetivo principal de este Sprint fue establecer la presencia digital del producto (Landing Page), sentar las bases de seguridad (IAM) y desarrollar el núcleo de valor: el análisis de videos mediante IA. 
+
+A continuación, se muestra el enlace al tablero de gestión:
+
+[Product Backlog en Trello](https://trello.com/b/Sn0UEEhS/bodymatch-ai-product-backlog)
+
+
+**Descomposición de Tareas del Sprint:**
+
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| **US33** | Consultar información de servicios | T01 | Sección de Servicios (Landing) | Maquetar la sección "Tecnología que entiende tu cuerpo" detallando el análisis IA y Marketplace. | 3h | Pablo Geronimo | Done |
+| **US34** | Solicitar demostración | T01 | Modal de Contacto/Demo | Implementar formulario interactivo "Solicita tu Demo" con validación de campos. | 4h | Anyelo Alejos | Done |
+| **US35** | Consultar planes y precios | T01 | Sección Pricing | Maquetar planes "Básico" y "Premium" con sus beneficios en la Landing Page. | 2h | Marcia Melgarejo | Done |
+| **US36** | Solicitar asistencia | T01 | Sección FAQ | Desarrollar sección interactiva de preguntas frecuentes en la landing. | 3h | Jorge Guevara | Done |
+| **US37** | Consultar casos de éxito | T01 | Galería de Éxito y Filtros | Desarrollar sección de testimonios con filtros dinámicos (Casa, Gimnasio, Coaches). | 4h | Pablo Geronimo | Done |
+| **US01** | Registro de usuario | T01 | UI de Registro Mobile | Crear pantallas de registro (Atleta/Coach) en la aplicación móvil. | 5h | Anyelo Alejos | Done |
+| | | T02 | API de Registro (IAM MS) | Implementar endpoints `POST /sign-up` en el microservicio IAM. | 6h | Marcia Melgarejo | Done |
+| **US02** | Inicio de sesión | T01 | UI de Login Mobile | Crear pantalla de inicio de sesión y gestión de tokens en el dispositivo. | 4h | Jorge Guevara | Done |
+| | | T02 | API de Login (IAM MS) | Implementar endpoint `POST /sign-in` devolviendo JWT. | 5h | Pablo Geronimo | Done |
+| **US04** | Cierre de sesión | T01 | Lógica de Logout Mobile | Limpiar tokens almacenados localmente y redirigir al Login. | 2h | Anyelo Alejos | Done |
+| | | T02 | API Revoke Token | Implementar endpoint `POST /sign-out` en el MS IAM para invalidar sesión. | 3h | Marcia Melgarejo | Done |
+| **US05** | Configuración de perfil | T01 | UI Formulario Perfil | Crear vista móvil para que el usuario ingrese sus datos biométricos y objetivos. | 4h | Jorge Guevara | Done |
+| | | T02 | API Perfil Atleta | Implementar endpoint `PUT /profile` en el Monolito Core. | 4h | Pablo Geronimo | Done |
+| **US06** | Búsqueda de coaches | T01 | UI Buscador y Filtros | Diseñar vista móvil con barra de búsqueda y filtros (precio, experiencia). | 6h | Anyelo Alejos | Done |
+| | | T02 | API Search Coaches | Desarrollar query dinámica en PostgreSQL para el endpoint de búsqueda. | 5h | Marcia Melgarejo | Done |
+| **US07** | Visualización de perfil coach | T01 | UI Detalle Coach | Maquetar pantalla móvil con la información, reseñas y tarifas del coach. | 5h | Jorge Guevara | Done |
+| | | T02 | API Get Coach | Implementar endpoint `GET /coaches/{id}`. | 3h | Pablo Geronimo | Done |
+| **US11** | Subir video del ejercicio | T01 | UI Cámara y Subida | Integrar cámara y selector de archivos nativo en la app móvil Android/iOS. | 6h | Anyelo Alejos | Done |
+| | | T02 | API Gestión de Video | Desarrollar endpoint de subida (multipart) en el microservicio de Videos. | 6h | Marcia Melgarejo | Done |
+| **US12** | Feedback automático con IA | T01 | UI Resultados IA | Maquetar pantalla de métricas, keypoints y feedback visual en la app móvil. | 8h | Jorge Guevara | Done |
+| | | T02 | Integración Gemini AI | Conectar el MS Videos con la API de Gemini para procesamiento de frames. | 8h | Pablo Geronimo | Done |
+| **US15** | Registro métricas físicas | T01 | UI Historial Métricas | Crear vista para registrar peso y medidas corporales a lo largo del tiempo. | 4h | Anyelo Alejos | Done |
+| | | T02 | API Post Metrics | Crear lógica y endpoint `POST /metrics` en el módulo de Training (Monolito). | 4h | Marcia Melgarejo | Done |
+| **TS01** | Middleware JWT | T01 | Seguridad Gateway | Implementar validación de JWT en cabeceras de Spring Security. | 5h | Jorge Guevara | Done |
+| **TS02** | Endpoints Matchmaking | T01 | Configuración Controladores | Estructurar y exponer la capa REST del Bounded Context de Matchmaking. | 4h | Pablo Geronimo | Done |
+| **TS03** | Endpoints Video | T01 | Almacenamiento Blob | Configurar persistencia de videos en Azure Blob Storage / File System local. | 5h | Anyelo Alejos | Done |
+| **TS04** | Endpoint Perfil Atleta | T01 | Integración CQRS | Configurar Command/Query handlers para recuperar datos del perfil del atleta. | 4h | Marcia Melgarejo | Done |
+
 ##### 5.2.1.2	Development Evidence for Sprint Review
+
+
+
 ##### 5.2.1.3	Testing Suite Evidence for Sprint Review
+
+
+
 ##### 5.2.1.4	Execution Evidence for Sprint Review
-Durante este Sprint se inicio de la migración de nuestra arquitectura monolítica hacia un enfoque de microservicios. Para esta entrega, se han extraído e implementado exitosamente como microservicios independientes los Bounded Contexts de **IAM (Identity and Access Management)** y **Videos (Gestión y Análisis de Ejercicios)**, mientras que los módulos de Matchmaking, Training, Nutrition y Membership se mantienen operativos dentro del Monolito central.
+Para este primer Sprint de BodyMatch AI, el equipo ejecutó el desarrollo en tres frentes paralelos: la publicación de la Landing Page institucional, el desarrollo del Frontend Mobile para los usuarios, y la implementación de la arquitectura backend (híbrida).
 
-Para comprobar la correcta ejecución del backend, se realizaron pruebas de integración utilizando Postman y la interfaz de Swagger UI. Estas herramientas permitieron validar tanto el enrutamiento hacia los nuevos microservicios como el procesamiento interno del monolito, asegurando que todos devuelvan los códigos HTTP esperados (200 OK, 201 Created).
+**1. Evidencia en Landing Page (Web)**
 
-A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas:
+A través de esta landing, los visitantes pueden visualizar claramente la propuesta de valor: entrenar con la precisión de la IA y la empatía de un coach. Las User Stories ejecutadas y su evidencia visual son:
+
+| ID | User Story | Evidencia en Landing Page |
+|---|---|---|
+| US33 | Consultar información de servicios | Sección "Servicios" con diseño en tarjetas explicando el análisis IA, Marketplace y Nutrición. |
+| US34 | Solicitar demostración | Modal interactivo "Solicita tu Demo" con formulario validado. |
+| US35 | Consultar planes y precios | Sección "Precios" detallando las diferencias entre el plan Gratis y Premium. |
+| US36 | Solicitar asistencia | Sección "FAQ" (Preguntas Frecuentes) resueltas de forma dinámica. |
+| US37 | Consultar casos de éxito | Sección "Galería de Éxito" con testimonios reales y filtros por categoría (Casa/Gym/Coach). |
+
+*Evidencia Visual Landing Page:*  
+
+<img src="assets/chapter5/swagger_prueba_landing.png" alt ="">
+
+**2. Evidencia en Frontend App (Mobile)**
+
+Se desarrollaron las pantallas núcleo de la aplicación móvil, garantizando una experiencia fluida para el Atleta al momento de interactuar con la IA y gestionar su perfil.
+
+
+
+**3. Evidencia en Web Services (Backend Híbrido)**
+
+Durante este Sprint se inició la migración de nuestra arquitectura monolítica hacia un enfoque de microservicios. Para esta entrega, se han extraído e implementado exitosamente como microservicios independientes los Bounded Contexts de **IAM (Identity and Access Management)** y **Videos (Gestión y Análisis de Ejercicios)**, mientras que los módulos de Matchmaking, Training, Nutrition y Membership se mantienen operativos dentro del Monolito central.
+
+Para comprobar la correcta ejecución del backend, se realizaron pruebas de integración utilizando Postman y la interfaz interactiva de Swagger UI. 
+
+A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas comprobando la conexión y las respuestas de la base de datos:
 
 <img src="assets/chapter5/swagger1.jpg" alt ="">
 <img src="assets/chapter5/swagger2.jpg" alt ="">
@@ -1652,23 +1741,66 @@ Tal como se solicita en el criterio de evaluación, se presentan ejemplos comple
   "lastName": "Fernandez",
   "phone": "923456123",
   "roles": [
-    "athlete"
+    "ROLE_ATHLETE"
   ]
-}```
+}
+```
+- Response (201 Created):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "active": true,
+  "emailVerified": false,
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+**B. POST (Login) - Inicio de Sesión**
+
+* **Endpoint:** `POST /api/v1/authentication/sign-in`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456"
+}
+```
+- Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "accessToken": "eyJhbGciOiJIUzM4NCJ9.eyJzd...",
+  "refreshToken": "7200a4ab-1168-40bf-b184-afa3953786bc",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
 
 Adicionalmente, se presentan las capturas en imágenes de la interacción con la documentación elaborada en Swagger UI utilizando datos de muestra:
 
 **Registro de usuario**:   
 
 <img src="assets/chapter5/swagger_prueba1.png" alt ="">  
-<img src="assets/chapter5/swagger_prueba2.png" alt ="">  
+<img src="assets/chapter5/swagger_prueba2.png" alt =""> 
+ <img src="assets/chapter5/swagger_prueba8.png" alt =""> 
 
 **Registro y análisis de video:**  
 
 <img src="assets/chapter5/swagger_prueba3.png" alt =""> 
 <img src="assets/chapter5/swagger_prueba4.png" alt =""> 
 <img src="assets/chapter5/swagger_prueba5.png" alt =""> 
-<img src="assets/chapter5/swagger_prueba6.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba6.png" alt ="">
+<img src="assets/chapter5/swagger_prueba7.png" alt =""> 
 
 
 
@@ -1683,7 +1815,23 @@ El código fuente se encuentra alojado en la organización del equipo.
 
 
 ##### 5.2.1.6	Software Deployment Evidence for Sprint Review
+
+Durante este primer Sprint, las actividades de despliegue continuo (Deployment) se centraron en la publicación en producción de la Landing Page de BodyMatch AI. El objetivo principal fue hacer pública nuestra propuesta de valor de manera rápida, segura y escalable para comenzar a captar el interés de los usuarios y validaciones tempranas. 
+
+Dado que la Landing Page está construida con tecnologías web estáticas, se optó por utilizar **GitHub Pages** como proveedor de alojamiento en la nube (Cloud Hosting). 
+
+
+Capturas del Despliegue
+
+<img src="assets/chapter5/evidence_deployment_landing.jpg" alt =""> 
+
+<img src="assets/chapter5/evidence_deployment_landing2.jpg.png" alt =""> 
+
+
 ##### 5.2.1.7	Team Collaboration Insights during Sprint
+
+
+
 ##### 5.2.1.8	Kanban Board 
 
 
