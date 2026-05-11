@@ -86,7 +86,7 @@
 | TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización de los diagramas de actividad y estado.                                                         | 19d059f  |
 | TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Implementación de valores en el perfil de la startup.                                                        | 9fff960  |
 | TB2     | 30/04/2026 | Jorge Enrique Guevara Tejada   | Avance Capítulo 4.3 - Iteración ADD 1.                                                                                | ee9cdc9  |
-| Avn2    | 01/05/2026 | Marcia Victoria Melgarejo Gomez| Avance iteración ADD 1, tablero kanban y redacción de conclusiones.                                   | b54b3f3  |
+| Avn2    | 01/05/2026 | Marcia Victoria Melgarejo Gomez| Avance 4.3 iteración ADD 1, tablero kanban y redacción de conclusiones.                                   | b54b3f3  |
 | TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.                  | 5e23b4b  |
 | TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Actualización del student outcome 7 para la entrega del TB2.| 5537ea6|
 
@@ -1578,6 +1578,115 @@ Enlace del Tablero Kanban:
 
 
 https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai
+
+
+
+# Capítulo V: Product Implementation, Validation & Deployment
+##  5.1	Testing Suites & General Patterns
+### 5.1.1	Backend Application Core Testing Suite 
+### 5.1.2	Pattern Based Backend Application(s)
+### 5.1.3	Pattern Based Custom Software Library
+### 5.1.4	Framework Pattern Driven Refactoring Report
+
+### 5.2	Software Configuration Management
+### 5.2.1	Software Development Environment Configuration
+### 5.2.2	 Source Code Management
+### 5.2.3	Source Code Style Guide & Conventions
+### 5.2.4	 Software Deployment Configuration
+
+## 5.3	Microservices Implementation
+### 5.2.1	Sprint 1
+##### 5.2.1.1	Sprint Backlog 1
+##### 5.2.1.2	Development Evidence for Sprint Review
+##### 5.2.1.3	Testing Suite Evidence for Sprint Review
+##### 5.2.1.4	Execution Evidence for Sprint Review
+Durante este Sprint se inicio de la migración de nuestra arquitectura monolítica hacia un enfoque de microservicios. Para esta entrega, se han extraído e implementado exitosamente como microservicios independientes los Bounded Contexts de **IAM (Identity and Access Management)** y **Videos (Gestión y Análisis de Ejercicios)**, mientras que los módulos de Matchmaking, Training, Nutrition y Membership se mantienen operativos dentro del Monolito central.
+
+Para comprobar la correcta ejecución del backend, se realizaron pruebas de integración utilizando Postman y la interfaz de Swagger UI. Estas herramientas permitieron validar tanto el enrutamiento hacia los nuevos microservicios como el procesamiento interno del monolito, asegurando que todos devuelvan los códigos HTTP esperados (200 OK, 201 Created).
+
+A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas:
+
+<img src="assets/chapter5/swagger1.jpg" alt ="">
+<img src="assets/chapter5/swagger2.jpg" alt ="">
+<img src="assets/chapter5/swagger3.jpg" alt ="">
+<img src="assets/chapter5/swagger4.jpg" alt ="">
+
+
+
+##### 5.2.1.5	Microservices Documentation Evidence for Sprint Review
+En esta sección se incluye la relación de Endpoints documentados con OpenAPI (Swagger). Se logró integrar exitosamente los Web Services de BodyMatch AI, estandarizando la comunicación entre el frontend móvil y el ecosistema híbrido (Microservicios + Monolito).
+
+**1. Matriz de Trazabilidad de Requerimientos**
+Esta tabla demuestra que los endpoints implementados cubren más del 50% del alcance funcional definido en las User Stories del Sprint:
+
+| US ID | Título de la User Story | Endpoint(s) Relacionado(s) | Estado |
+|---|---|---|---|
+| US01 | Registro de usuario | `POST /api/v1/authentication/sign-up/athlete` <br> `POST /api/v1/authentication/sign-up/coach` | Implementado |
+| US02 | Inicio de sesión | `POST /api/v1/authentication/sign-in` | Implementado |
+| US11 | Subir video del ejercicio | `POST /api/v1/exercise-videos` | Implementado |
+| US12 | Feedback automático con IA | `POST /api/v1/exercise-videos/{videoId}/analyze` | Implementado |
+| US16 | Eliminar video de ejercicio | `DELETE /api/v1/exercise-videos/{videoId}` | Implementado |
+| US17 | Consultar video de ejercicio | `GET /api/v1/exercise-videos/{videoId}` | Implementado |
+
+**2. Catálogo de Endpoints y Contratos de Interfaz**
+
+| Acción Implementada | Verbo | Endpoint | Parámetros | Ejemplo de Response | URL Documentación |
+|---|---|---|---|---|---|
+| Registrar Atleta | **POST** | `/api/v1/authentication/sign-up/athlete` | Body (JSON) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
+| Iniciar sesión | **POST** | `/api/v1/authentication/sign-in` | Body (JSON) | `200 OK` | `http://localhost:8091/swagger-ui.html` |
+| Consultar video | **GET** | `/api/v1/exercise-videos/{videoId}` | Path Param | `200 OK` / `404 Not Found` | `http://localhost:8091/swagger-ui.html` |
+| Subir video | **POST** | `/api/v1/exercise-videos` | Form-Data (Multipart) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
+| Eliminar video | **DELETE** | `/api/v1/exercise-videos/{videoId}` | Path Param | `204 No Content` | `http://localhost:8091/swagger-ui.html` |
+
+**3. Ejemplos de Request y Response (JSON)**
+Tal como se solicita en el criterio de evaluación, se presentan ejemplos completos y reales de las peticiones extraídas de la ejecución en Swagger para validar la estructura de datos en los diferentes métodos HTTP:
+
+**A. POST (Crear) - Registro de Atleta**
+* **Endpoint:** `POST /api/v1/authentication/sign-up/athlete`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "roles": [
+    "athlete"
+  ]
+}```
+
+Adicionalmente, se presentan las capturas en imágenes de la interacción con la documentación elaborada en Swagger UI utilizando datos de muestra:
+
+**Registro de usuario**:   
+
+<img src="assets/chapter5/swagger_prueba1.png" alt ="">  
+<img src="assets/chapter5/swagger_prueba2.png" alt ="">  
+
+**Registro y análisis de video:**  
+
+<img src="assets/chapter5/swagger_prueba3.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba4.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba5.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba6.png" alt =""> 
+
+
+
+**Repositorio y Control de Versiones:**
+El código fuente se encuentra alojado en la organización del equipo.
+
+* **URL del repositorio de Web Services:**  
+  - `https://github.com/G3-FundamentosArqui-7944/bodymatch-backend` 
+  - `https://github.com/G3-FundamentosArqui-7944/microservices` 
+* **Commits relacionados con Documentación (OpenAPI/Swagger):**
+  * `f073594`: *docs: update architecture diagrams and descriptions for clarity and consistency*
+
+
+##### 5.2.1.6	Software Deployment Evidence for Sprint Review
+##### 5.2.1.7	Team Collaboration Insights during Sprint
+##### 5.2.1.8	Kanban Board 
+
+
 
 ## Conclusiones
 
