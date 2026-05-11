@@ -1685,6 +1685,11 @@ A través de esta landing, los visitantes pueden visualizar claramente la propue
 
 Se desarrollaron las pantallas núcleo de la aplicación móvil, garantizando una experiencia fluida para el Atleta al momento de interactuar con la IA y gestionar su perfil.
 
+<img src="assets/chapter5/evidence_deployment_mobile.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile2.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile3.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile4.jpg" alt ="">  
+<img src="assets/chapter5/evidence_deployment_mobile5.jpg" alt ="">    
 
 
 **3. Evidencia en Web Services (Backend Híbrido)**
