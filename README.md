@@ -62,7 +62,7 @@
 
 <p align="center">
   <strong>Abril, 2026</strong> <br>
-  <strong>URL del proyecto:</strong>
+  <strong>URL del proyecto:https://github.com/G3-FundamentosArqui-7944/docs </strong>
 
 </p>
 
