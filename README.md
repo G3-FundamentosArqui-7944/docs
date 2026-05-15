@@ -1212,13 +1212,225 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 <img src="./assets/chapter4/Base de Datos-BodyMatch.jpg" alt="Database Diagram BodyMatch AI"">
 **Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
 
-#### 4.1.6 Design Patterns
+#### 4.1.6. Design Patterns
 
-- <b>Patron Strategy:</b> Con este patron de comportamiento, buscamos facilitar el acceso a distintos tipos de pagos sin la necesidad de hacer muchas clases para cada una de ellas. Con este patrón podremos cambiar entre proveedores sin llegar a tocar el código a profundidad.
-<img src="assets/chapter4/Strategy Method.png" alt="" />
+En esta sección se documentan los patrones de diseño adoptados en **BodyMatch AI**,
+tanto en el backend (Spring Boot) como en el cliente móvil (Flutter). Cada patrón se
+justifica con la clase concreta que lo implementa, el atributo de calidad que satisface
+y la referencia al Quality Attribute Scenario (QAS) correspondiente.
 
-- <b>Patrón Factory:</b> Este patrón creacioal nos permite utilizar interfaces para poder crear objetos en una superclase, miengras que las subclases puedan modificar el tipo de objeto creado. Con este patrón buscamos tener una visión a futuro en caso de que se quieran agregar muchos más tipos de perfiles. Además con este patrón se cumple uno de los principios SOLID "Open/Closed Principle", permitiendonos agregar cuantas clases querramos sin alterar significativamente el código.
-<img src="assets/chapter4/Factory Method.png" alt=""/>
+
+##### 4.1.6.1 Patrones de Creación
+
+Los patrones de creación encapsulan la lógica de instanciación, evitando que el resto
+del sistema dependa de constructores directos y previniendo la creación de objetos en
+estados inválidos.
+
+---
+
+**Factory Method**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando se necesita crear entidades de dominio garantizando que sus invariantes de negocio se cumplan desde el momento de la creación. |
+| **Beneficio** | Encapsula la lógica de construcción. El resto del sistema nunca instancia la entidad con `new` directamente, eliminando estados inconsistentes. |
+| **Clases en BodyMatch AI** | `User.create(String email, String passwordHash, Role role)` en el Bounded Context **IAM**; `ExerciseVideo.register(UUID athleteId, String blobUrl, String exerciseType)` en **Video Management**. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05 (incorporar nuevo proveedor de pagos sin modificar lógica existente). |
+
+[IMAGEN: Fragmento del método estático User.create() mostrando la validación de invariantes
+antes de devolver la instancia]
+
+---
+
+##### 4.1.6.2 Patrones de Comportamiento
+
+Los patrones de comportamiento definen cómo interactúan los objetos y cómo se distribuyen
+las responsabilidades en tiempo de ejecución.
+
+---
+
+**Strategy**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando existen múltiples algoritmos intercambiables para una misma operación y la elección debe poder cambiarse sin modificar el código cliente. |
+| **Beneficio** | El módulo de pagos puede cambiar de proveedor (Stripe → MercadoPago) o el módulo IAM puede cambiar el algoritmo de hashing sin afectar la lógica de negocio. |
+| **Interfaz** | `PaymentGatewayStrategy` con implementaciones `StripePaymentGateway` en **Membership & Payments**; `HashingService` con implementación `BCryptHashingService` en **IAM**; `TokenService` con implementación `JwtTokenService` en **IAM**. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05: la incorporación de un nuevo gateway requiere únicamente implementar la interfaz `PaymentGatewayStrategy`, sin tocar ninguna otra clase. |
+
+[IMAGEN: Diagrama UML de la interfaz PaymentGatewayStrategy con sus implementaciones
+concretas (StripePaymentGateway y la extensión futura)]
+
+---
+
+**Command**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando una operación del sistema debe representarse como un objeto para desacoplar quien solicita la acción de quien la ejecuta (patrón CQRS). |
+| **Beneficio** | Permite trazar, validar y encolar acciones antes de ejecutarlas, y es la base del patrón CQRS implementado en todos los bounded contexts. |
+| **Clases en BodyMatch AI** | `SignUpAthleteCommand`, `SignInCommand` en **IAM**; `UploadExerciseVideoCommand`, `RequestVideoAnalysisCommand` en **Video Management**; `ProcessFoodImageCommand` en **Nutrition**. |
+| **Atributo de calidad** | Mantenibilidad y Rendimiento — facilita el procesamiento asíncrono (QAS-01) al encolar comandos pesados sin bloquear el hilo principal. |
+
+---
+
+**Observer**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando un evento producido en un bounded context debe disparar reacciones en otros contextos sin crear dependencias directas entre ellos. |
+| **Beneficio** | Desacoplamiento entre bounded contexts. El contexto emisor no conoce a los suscriptores. |
+| **Implementación** | Eventos de dominio publicados con `ApplicationEventPublisher` de Spring y consumidos con `@EventListener`. Ejemplo: `VideoAnalysisCompletedEvent` publicado por **Video Management** y escuchado por **Training Tracker** para actualizar las métricas del atleta. |
+| **Atributo de calidad** | Mantenibilidad — permite agregar nuevos suscriptores sin modificar el contexto emisor. |
+
+---
+
+##### 4.1.6.3 Patrones de Estructura
+
+Los patrones estructurales organizan la composición de objetos para reducir el acoplamiento
+entre componentes del sistema.
+
+---
+
+**Facade**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando un bounded context necesita consumir datos de otro sin acceder a su modelo interno. |
+| **Beneficio** | Reduce el acoplamiento entre bounded contexts. Cada contexto expone únicamente la información que otros necesitan, protegiendo su modelo de dominio. |
+| **Clases en BodyMatch AI** | `IamContextFacade` — expone métodos como `getAthleteProfile(UUID userId)` que **Matchmaking** y **Training Tracker** consumen sin conocer las entidades internas de IAM; `MatchmakingContextFacade` — usada por **Training Tracker** para consultar sesiones programadas. |
+| **Atributo de calidad** | Mantenibilidad — los cambios internos en el IAM no afectan a los contextos que lo consumen a través de la fachada. |
+
+[IMAGEN: Diagrama de la interfaz IamContextFacade con los métodos que expone hacia otros
+bounded contexts]
+
+---
+
+##### 4.1.6.4 Patrones Empresariales
+
+Los patrones empresariales resuelven problemas comunes en aplicaciones de negocio: gestión
+de lógica de aplicación, persistencia, transferencia de datos y coordinación de
+transacciones.
+
+---
+
+**Service Layer (Command Service / Query Service)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para centralizar la lógica de aplicación, separándola del dominio y de la infraestructura. |
+| **Beneficio** | Cada bounded context tiene servicios de comando y consulta con responsabilidad única, lo que facilita las pruebas unitarias de forma aislada. |
+| **Clases en BodyMatch AI** | `UserCommandServiceImpl`, `UserQueryServiceImpl` en **IAM**; `VideoCommandServiceImpl`, `VideoQueryServiceImpl` en **Video Management**; `NutritionCommandServiceImpl` en **Nutrition**. |
+| **Atributo de calidad** | Mantenibilidad — el patrón CQRS (sección 4.1.5) se apoya directamente en esta separación. |
+
+---
+
+**Repository Pattern**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para abstraer el acceso a la base de datos del resto del dominio. |
+| **Beneficio** | El dominio interactúa con interfaces (`UserRepository`) sin conocer la implementación de persistencia. Facilita los tests con mocks. |
+| **Clases en BodyMatch AI** | `UserRepository`, `RoleRepository` en **IAM**; `ExerciseVideoRepository` en **Video Management**; `CoachProfileRepository`, `SessionRepository` en **Matchmaking**; `MetricRepository` en **Training Tracker**; `FoodLogRepository` en **Nutrition**. Todos extienden `JpaRepository` de Spring Data. |
+| **Atributo de calidad** | Mantenibilidad — el cambio de motor de base de datos solo requeriría modificar las implementaciones de repositorio. |
+
+---
+
+**Data Transfer Object (DTO) y Mapper / Assembler**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando se necesita transferir datos entre la capa de dominio y la capa de interfaz (REST controllers) sin exponer las entidades internas. |
+| **Beneficio** | El modelo de dominio queda protegido. Los cambios en la API REST no obligan a cambiar las entidades, y viceversa. |
+| **Clases en BodyMatch AI** | **Recursos (DTO de salida):** `UserResource`, `AuthenticatedUserResource`, `ExerciseVideoResource`, `CoachProfileResource`, `SessionResource`, `MetricResource`, `FoodLogResource`. **Comandos (DTO de entrada):** `SignUpAthleteResource`, `SignInResource`, `CreateMetricResource`. **Assemblers:** `UserResourceFromEntityAssembler`, `ExerciseVideoResourceFromEntityAssembler`, `SessionResourceFromEntityAssembler`. |
+| **Atributo de calidad** | Seguridad y Mantenibilidad — los datos sensibles de las entidades (como el hash de contraseña) nunca se exponen en los recursos de respuesta. |
+
+---
+
+**Unit of Work**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para coordinar múltiples operaciones de base de datos como una unidad atómica. |
+| **Beneficio** | Garantiza la consistencia de los datos: o todas las operaciones de un caso de uso se confirman, o ninguna. |
+| **Implementación** | Gestionado por JPA/Hibernate a través de la anotación `@Transactional` en los métodos de los Command Services. Ejemplo: `UserCommandServiceImpl.registerAthlete()` crea el usuario y asigna su rol en una única transacción. |
+| **Atributo de calidad** | Disponibilidad — QAS-03: garantiza que la consistencia no se comprometa bajo carga concurrente. |
+
+---
+
+**Gateway**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para encapsular la comunicación con servicios externos o con otros bounded contexts. |
+| **Beneficio** | El sistema no depende directamente de la API externa. Si el proveedor cambia, solo se modifica la clase Gateway. |
+| **Clases en BodyMatch AI** | `GeminiAIGateway` — encapsula las llamadas a la API de Gemini para el análisis de video y de imágenes de alimentos; `StripeGateway` — encapsula las llamadas a la API de Stripe para el procesamiento de pagos; `AzureBlobStorageGateway` — gestiona la subida y recuperación de videos. Adicionalmente, `IamContextFacade` actúa como Gateway interno para el acceso cross-context. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05 y AC-04: la abstracción detrás del Gateway permite sustituir Gemini AI sin afectar la lógica de Video Management. |
+
+[IMAGEN: Diagrama de la clase GeminiAIGateway mostrando el método analyzeVideo() y
+su integración con el VideoCommandService]
+
+---
+
+##### 4.1.6.5 Patrones Arquitectónicos
+
+Los patrones arquitectónicos establecen la organización de alto nivel del sistema, definiendo
+cómo se estructuran y comunican sus grandes componentes.
+
+---
+
+**CQRS (Command Query Responsibility Segregation)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para separar las operaciones de escritura (comandos) de las de lectura (consultas) dentro de cada bounded context. |
+| **Beneficio** | Mejora la claridad del código y sienta las bases para escalar la lectura y escritura de forma independiente en el futuro. |
+| **Implementación en BodyMatch AI** | Cada bounded context tiene dos interfaces de servicio diferenciadas: `XxxCommandService` (operaciones de escritura: crear, actualizar, eliminar) y `XxxQueryService` (operaciones de lectura: buscar, listar, obtener). Ejemplo en IAM: `UserCommandService.registerAthlete(SignUpAthleteCommand)` y `UserQueryService.getUserById(UUID id)`. |
+| **Atributo de calidad** | Mantenibilidad y Rendimiento — el equipo puede optimizar las consultas de lectura (añadir caché, índices) sin tocar la lógica de escritura. |
+
+---
+
+**Layered Architecture (Arquitectura por Capas)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para organizar el código en capas con responsabilidades bien definidas y dependencias que fluyen en una única dirección (hacia adentro). |
+| **Beneficio** | Ninguna capa externa conoce los detalles de una capa más interna. Los cambios en la infraestructura (base de datos, servicios externos) no afectan al dominio. |
+| **Estructura en BodyMatch AI** | Cada bounded context está organizado en cuatro capas: **`domain`** (entidades, value objects, interfaces de repositorio); **`application`** (command services, query services, comandos, eventos); **`infrastructure`** (implementaciones de repositorio JPA, gateways externos); **`interfaces`** (REST controllers, resources/DTOs, assemblers). |
+| **Atributo de calidad** | Mantenibilidad — AC-06: el esquema por bounded context en PostgreSQL y la separación por capas facilitan la migración futura a microservicios independientes. |
+
+[IMAGEN: Diagrama de la estructura de paquetes de un bounded context (ej. IAM)
+mostrando las cuatro capas: domain / application / infrastructure / interfaces]
+
+---
+
+**MVC en Flutter (Cliente Móvil)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para estructurar la capa de presentación de la aplicación móvil separando la vista, la lógica de presentación y el acceso a datos. |
+| **Beneficio** | Facilita el mantenimiento y las pruebas de la UI de forma independiente de la lógica de negocio. |
+| **Implementación en BodyMatch AI** | **Model:** clases Dart que representan las respuestas de la API (ej. `UserModel`, `ExerciseVideoModel`, `CoachProfileModel`). **View:** Widgets de Flutter que renderizan la UI (ej. `LoginScreen`, `VideoUploadScreen`, `AnalysisFeedbackScreen`). **Controller:** clases que coordinan la comunicación entre la vista y el repositorio de datos, gestionando el estado con Provider o Riverpod (ej. `AuthController`, `VideoController`). Los repositorios del cliente consumen los endpoints REST documentados en la sección 5.2.1.5. |
+| **Atributo de calidad** | Mantenibilidad y Usabilidad — los cambios en el diseño visual no afectan la lógica de consumo de la API, y viceversa. |
+
+[IMAGEN: Diagrama de la estructura de carpetas del proyecto Flutter mostrando la
+separación models / views / controllers para el módulo de Video Analysis]
+
+---
+
+> **Trazabilidad de patrones con Quality Attribute Scenarios:**
+>
+> | Patrón | QAS relacionado | Atributo satisfecho |
+> |---|---|---|
+> | Strategy (`PaymentGatewayStrategy`) | QAS-05 | Mantenibilidad |
+> | Strategy (`HashingService`, `TokenService`) | QAS-02 | Seguridad |
+> | Gateway (`GeminiAIGateway`) | QAS-01, AC-04 | Rendimiento, Mantenibilidad |
+> | Observer (`VideoAnalysisCompletedEvent`) | QAS-01 | Rendimiento |
+> | Repository + Unit of Work | QAS-03, QAS-04 | Disponibilidad, Seguridad |
+> | Facade (`IamContextFacade`) | QAS-05, AC-02 | Mantenibilidad |
+> | CQRS | QAS-01, QAS-03 | Rendimiento, Mantenibilidad |
+> | Layered Architecture | AC-06 | Mantenibilidad |
+> | MVC Flutter | — | Usabilidad, Mantenibilidad |
 
 
 
