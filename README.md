@@ -70,21 +70,25 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                          | Descripción                                                                 |
-|---------|------------|--------------------------------|------------------------------------------------------------------------------|
-| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
-| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de User Personas, Empathy Maps y User Task Matrix. |
-| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de escenarios As Is - To Be, además del desarrollo del Product Backlog. |
-| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
-| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
-| Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
-|Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
-|Avn2|28/04/2026| Piero Francesco Tenorio Medina | Primera versión de Diagrama de Componentes|
-|  TB2 | 28/04/2026  | Pablo Antonio Geronimo Quispe |Avanze del Documento y tacticas y ADD |
-| TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Avanze del Capitulo 4.2  |
-| TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Finalizacion Del Capitulo 4.2|
-| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Finalizacion De los Diagramas de actividad y estado |
-| TB2 |30/04/2026| Pablo Antonio Geronimo Quispe |Implementacion de Valores en startup profile  |
+| Versión | Fecha      | Autor                          | Descripción | Commit   |
+|---------|------------|--------------------------------|------------------------------------------------------------------------------|---|
+| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. | 466a8f3|
+| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de arquetipos de usuario y mapas de empatía.     | 62096ee  |
+| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de los escenarios actuales y futuros, además de la pila de producto.                              | 9be392b  |
+| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del proceso Lean UX, incluyendo enunciados de problemas, hipótesis y el lienzo Lean UX.           | f50943d  |
+| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las épicas e historias de usuario.                                                             | 0fc5d48  |
+| Avn2    | 25/04/2026 | Piero Francesco Tenorio Medina | Avance del diagrama de clases.                                                                               | 0bc5e96  |
+| Avn2    | 27/04/2026 | Piero Francesco Tenorio Medina | Avance de la primera versión del diagrama de clases.                                                         | 43b41b3  |
+| Avn2    | 28/04/2026 | Piero Francesco Tenorio Medina | Primera versión del diagrama de componentes.                                                                 | 1ddb81e  |
+| TB2     | 28/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del documento, tácticas y la metodología ADD.                                                         | 45a16c3  |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del capítulo 4.2.                                                                                     | 392249c  |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización del capítulo 4.2.                                                                               | 71c9ff3  |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización de los diagramas de actividad y estado.                                                         | 19d059f  |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Implementación de valores en el perfil de la startup.                                                        | 9fff960  |
+| TB2     | 30/04/2026 | Jorge Enrique Guevara Tejada   | Avance Capítulo 4.3 - Iteración ADD 1.                                                                                | ee9cdc9  |
+| Avn2    | 01/05/2026 | Marcia Victoria Melgarejo Gomez| Avance 4.3 iteración ADD 1, tablero kanban y redacción de conclusiones.                                   | b54b3f3  |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.                  | 5e23b4b  |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Actualización del student outcome 7 para la entrega del TB2.| 5537ea6|
 
 ## Contenido
 
@@ -186,8 +190,8 @@ ABET - EAC - Student Outcome 7 Criterio: La capacidad de adquirir y aplicar nuev
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |--------------------|---------------------|--------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles, centrándome en Scrum, para aplicarlas en la planificación del proyecto. Esto me permitió mejorar la organización del equipo y entender cómo adaptar estos marcos de trabajo a equipos pequeños y tareas técnicas dentro de un entorno real de desarrollo.<br><br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, disponibilidad, seguridad y mantenibilidad), drivers arquitectónicos, escenarios de atributos de calidad (QAS) y restricciones del sistema. Esto permitió estructurar una arquitectura basada en microservicios alineada al core de la solución (análisis de ejercicios con IA).<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para poder desarrollar lo establecido, se tuvo que hacer una investigación sobre las herramientas y las metodologías a utilizar. Esto permitió organizar de manera efectiva las prioridades del equipo a la hora de implementar las funcionalidades.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Para el desarrollo del Lean UX Process, investigué conceptos clave como Problem Statement, Assumptions, Hypothesis y Lean UX Canvas, lo que permitió estructurar correctamente la propuesta centrada en el usuario y mejorar la toma de decisiones basadas en validación.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Para el desarrollo completo del Capítulo II, investigué metodologías de Requirements Elicitation y análisis competitivo. Apliqué herramientas avanzadas de diseño UX como Uxpressia para la creación de User Personas, Empathy Maps y la User Task Matrix. Esto me permitió sintetizar los hallazgos de las entrevistas y el análisis de mercado en una estructura de requisitos técnica y funcional que sirve como base para el desarrollo de la solución BodyMatch AI.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Para el desarrollo del Requirements Specification, investigué y reforcé conceptos clave como User Stories, criterios de aceptación y estructura de requerimientos, lo que permitió definir de manera clara y organizada las funcionalidades del sistema.<br>| **TB1:** Durante esta fase, el equipo demostró su capacidad para adquirir nuevos conocimientos y aplicarlos en el desarrollo del proyecto, fortaleciendo competencias técnicas relevantes para una solución escalable y funcional.<br><br>**TB2:** El equipo consolidó conocimientos en arquitectura de software mediante la aplicación del método ADD, logrando definir tácticas, drivers, escenarios de calidad y restricciones que permiten una solución escalable, mantenible y alineada al uso de inteligencia artificial. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo para responder a las exigencias del proyecto, por lo que estudié liderazgo técnico, gestión de tiempos y coordinación en equipos ágiles.<br><br>**TB2:** Reforcé mi aprendizaje en arquitectura de software, especialmente en microservicios, atributos de calidad y diseño orientado a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables desde etapas tempranas.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para esta entrega se aceptó el hecho de que se debe seguir aprendiendo y reforzando conceptos ya vistos en la formación universitaria. Esto permite que se trabaje de manera efectiva en proyectos a futuro que requieran una ardua tarea de investigación.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías centradas en el usuario como Lean UX, reforzando mi capacidad de análisis y adaptación para contribuir de manera efectiva en proyectos de desarrollo de software.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí la importancia de la actualización constante al investigar las tendencias actuales en IA y la gestión de asesorías fitness. Este proceso de Needfinding y mapeo de escenarios me enseñó que para proponer software innovador es indispensable aprender sobre el dominio del problema de forma continua, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Durante la elaboración de las User Stories, identifiqué la importancia de seguir aprendiendo continuamente sobre técnicas de levantamiento de requerimientos y buenas prácticas en desarrollo de software, ya que esto contribuye a mejorar la calidad de las soluciones propuestas. | **TB1:** El equipo desarrolló una actitud profesional orientada al aprendizaje constante, adaptándose a nuevas herramientas y fortaleciendo competencias esenciales en desarrollo de software.<br><br>**TB2:** El equipo consolidó la importancia del aprendizaje permanente como base del desarrollo profesional, evidenciando crecimiento en conocimientos de arquitectura de software, inteligencia artificial y diseño de sistemas escalables. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles (Scrum) para la planificación, mejorando la organización del equipo en tareas técnicas.<br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, seguridad) y drivers, estructurando una arquitectura basada en microservicios.<br>**TP1:** Investigué y apliqué la documentación interactiva con OpenAPI (Swagger) y participé en la separación técnica del Monolito y los Microservicios.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué herramientas de modelado y metodologías para organizar las prioridades en la implementación de funcionalidades.<br>**TB2:** Realicé un trabajo de investigación y recapitulación de conceptos de ingeniería de software para el desarrollo del diagrama de clases, requiriendo examinar los patrones de diseño a utilizar.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Investigué el proceso Lean UX y el Lean UX Canvas, permitiendo estructurar correctamente la propuesta centrada en el usuario y validar hipótesis.<br>**TB2:** Participé en el desarrollo y refinamiento de la primera iteración ADD.<br>**TP1:** Apliqué nuevos conocimientos en la validación de los endpoints y la integración de Postman para las pruebas de la API RESTful.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué metodologías de *Requirements Elicitation* y herramientas como Uxpressia para crear User Personas, sintetizando los hallazgos en una estructura técnica.<br>**TB2:** Investigué el concepto de *Technical Stories* (TS) y elaboré descripciones detalladas para los diagramas de arquitectura (C4), documentando la respuesta del sistema.<br>**TP1:** Profundicé en técnicas de despliegue web mediante GitHub Pages y en la estructuración de la matriz de trazabilidad de los microservicios.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Investigué la estructura de las *User Stories* y criterios de aceptación para organizar las funcionalidades de manera clara.<br>**TB2:** Actualicé mis conocimientos aplicando la metodología ADD, traduciendo requerimientos técnicos en decisiones arquitectónicas mediante un tablero Kanban.<br>**TP1:** Documenté el Sprint Backlog y las evidencias de ejecución, aprendiendo a integrar las vistas del frontend móvil con los servicios del backend híbrido. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos técnicos en el modelado inicial del proyecto.<br><br>**TB2:** Se consolidaron conocimientos en arquitectura de software mediante el método ADD, definiendo tácticas y escenarios de calidad.<br><br>**TP1:** Se aplicaron conocimientos prácticos de despliegue continuo y documentación de APIs (Swagger), logrando una evolución real hacia microservicios. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo, estudiando liderazgo técnico y gestión de tiempos para la coordinación ágil.<br>**TB2:** Reforcé mi aprendizaje en arquitectura de software orientada a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables.<br>**TP1:** Reconocí que el despliegue de microservicios exige una actualización constante en herramientas de integración y pruebas de software.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la importancia de reforzar conceptos teóricos para trabajar de manera efectiva en proyectos que requieran una ardua tarea de investigación.<br>**TB2:** Detecté la necesidad de ampliar mis conocimientos técnicos al contrastar la teoría académica con los requerimientos reales, comprendiendo que mis conocimientos previos debían actualizarse para cumplir con el estándar exigido.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías Lean UX para contribuir efectivamente en proyectos ágiles.<br>**TB2:** Reconocí que la arquitectura de software requiere un estudio profundo de los atributos de calidad.<br>**TP1:** Entendí que el testing de software y la validación de APIs son habilidades críticas que debo seguir perfeccionando.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que para innovar es indispensable el aprendizaje continuo del dominio del problema, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br>**TB2:** Implementé el tablero Trello. Comprendí que la actualización constante en herramientas de gestión ágil es vital para coordinar arquitecturas complejas.<br>**TP1:** Advertí que el ecosistema Cloud evoluciona rápidamente, por lo que dominar herramientas de automatización y Swagger es fundamental para mi carrera.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué la importancia de aprender continuamente sobre técnicas de levantamiento de requerimientos para mejorar la calidad de las soluciones.<br>**TB2:** El diseño de BodyMatch AI demostró que la arquitectura exige aprendizaje continuo. Aprender a documentar iteraciones ADD y gestionar su ejecución a través de Kanban me enseñó que dominar herramientas ágiles es vital para el éxito del proyecto.<br>**TP1:** Comprendí que la correcta documentación de un Sprint requiere rigor y actualización constante en prácticas de aseguramiento de calidad y metodologías de despliegue. | **TB1:** El equipo desarrolló una actitud orientada al aprendizaje constante y al dominio de nuevas metodologías de análisis.<br><br>**TB2:** El equipo consolidó el aprendizaje permanente como base del desarrollo profesional en arquitectura y diseño escalable.<br><br>**TP1:** La transición a microservicios evidenció que la adopción de nuevas tecnologías (Swagger, Cloud, GitHub Pages) es un requerimiento continuo para el ingeniero de software. |
 
 ## Capítulo I: Introducción
 
@@ -268,7 +272,7 @@ En este contexto surge BodyMatch AI, una aplicación móvil que responde a ambas
 El problema principal radica en la dificultad que tienen muchas personas para realizar ejercicios de forma correcta y segura sin la guía adecuada, así como en la falta de plataformas especializadas que permitan a los entrenadores gestionar eficientemente su práctica profesional. Las soluciones actuales suelen ser genéricas, no personalizadas y carecen de herramientas que analicen la ejecución real del usuario, lo que limita el progreso y aumenta el riesgo de lesiones.
 
  **When:**
-Este problema se ha intensificado en los últimos años, especialmente en el contexto post-pandemia, donde se incrementó el interés por la salud y el ejercicio en casa. La digitalización de los servicios de entrenamiento ha crecido, pero muchas soluciones no han evolucionado lo suficiente para ofrecer experiencias personalizadas ni herramientas inteligentes de análisis, generando una brecha entre la demanda y la calidad de las soluciones disponibles.
+Este problema se ha intensificado en los últimos años, especialmente en el contexto post-pandemia, donde se incrementó el interés por la salud y el ejercicio en casa. La digitalización de los servicios de entrenamiento ha crecido, pero muchas soluciones no han evolucionado lo suficiente para ofrecer experiencias personalizadas ni herramientas inteligentes de análisis, generando una brecha entre la demanda y la calidad de las soluciones disponibles. Según  2playbook (2024, como se cita en omani, Ma. et.al, 2025 ), este panorama tecnológico emergente facilita una experiencia más a medida, eficiente y de fácil acceso para los usuarios.
 
 **Where:**
 La problemática afecta tanto a entornos urbanos como rurales. En zonas urbanas, los usuarios tienen acceso a múltiples opciones digitales pero enfrentan desinformación y falta de personalización. En zonas rurales, el acceso a entrenadores profesionales es limitado, lo que hace aún más relevante contar con soluciones digitales que conecten a usuarios con coaches de manera remota. Los entrenadores, independientemente de su ubicación, enfrentan dificultades similares para gestionar su práctica profesional.
@@ -297,7 +301,7 @@ En el Perú, existe una comunidad creciente de profesionales del fitness, con mi
 
 #### 1.2.3	Lean UX Process
 ##### 1.2.3.1. Lean UX Problem Statements
-El principal desafío para los usuarios radica en la dificultad de ejecutar correctamente los ejercicios físicos sin la supervisión de un profesional, lo que frecuentemente genera lesiones, bajo rendimiento y frustración al no alcanzar los resultados esperados. Muchas personas entrenan de manera autodidacta apoyándose en contenido genérico (videos o apps), pero sin un análisis real de su técnica, lo que limita su progreso y aumenta el riesgo de daño físico.
+El principal desafío para los usuarios radica en la dificultad de ejecutar correctamente los ejercicios físicos sin la supervisión de un profesional, lo que frecuentemente genera lesiones, bajo rendimiento y frustración al no alcanzar los resultados esperados. Muchas personas entrenan de manera autodidacta apoyándose en contenido genérico (videos o apps), pero sin un análisis real de su técnica, lo que limita su progreso y aumenta el riesgo de daño físico. Según Romani, Ma. et.al. (2025) los usuarios cada vez buscan soluciones que les permitan adaptar sus rutinas de ejericicio a objetivos específicos.
 
 Por otro lado, los entrenadores personales enfrentan limitaciones importantes en su práctica profesional, ya que dependen de redes sociales o herramientas poco especializadas para gestionar a sus clientes. Esto dificulta el seguimiento personalizado, la corrección técnica a distancia y la posibilidad de escalar su negocio o monetizar de forma estructurada sus servicios.
 
@@ -835,130 +839,62 @@ Cada historia está estructurada para facilitar desarrollo ágil y validación i
 
 **Epics**
 
-**EP01: Gestión de acceso y perfil**  
-Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia.
+| Epics ID | Título | Descripción |
+|----------|--------|-------------|
+| EP01 | Gestión de acceso y perfil | Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia. |
+| EP02 | Conexión entre usuarios y coaches | Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado. |
+| EP03 | Análisis de ejercicios con IA | Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones. |
+| EP04 | Seguimiento de progreso físico | Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado. |
+| EP05 | Gestión profesional para coaches | Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo. |
+| EP06 | Análisis nutricional inteligente mediante imagen | Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico. |
+| EP-LP | Sitio web estático | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar. |
+| EP-API | API RESTful | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
 
-| User Story ID | Título                              |
-|---------------|-------------------------------------|
-| US01          | Registro de usuario                 |
-| US02          | Inicio de sesión                    |
-| US03          | Recuperación de contraseña          |
-| US04          | Cierre de sesión                    |
-| US05          | Configuración de perfil y objetivos |
-
----
-
-**EP02: Conexión entre usuarios y coaches**  
-Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US06          | Búsqueda de coaches              |
-| US07          | Visualización de perfil de coach |
-| US08          | Reserva de sesión                |
-| US09          | Chat con coach                   |
-| US10          | Calificación del coach           |
-
----
-
-**EP03: Análisis de ejercicios con IA**  
-Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones.
-
-| User Story ID | Título                         |
-|---------------|--------------------------------|
-| US11          | Subir vídeo del ejercicio      |
-| US12          | Feedback automático con IA     |
-| US13          | Historial de correcciones      |
-| US14          | Recomendaciones de mejora      |
-
----
-
-**EP04: Seguimiento de progreso físico**  
-Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US15          | Registro de métricas físicas     |
-| US16          | Visualización de progreso        |
-| US17          | Historial de entrenamientos      |
-| US18          | Alertas de cumplimiento de rutina|
-
----
-
-**EP05: Gestión profesional para coaches**  
-Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo.
-
-| User Story ID | Título                          |
-|---------------|---------------------------------|
-| US19          | Gestión de clientes             |
-| US20          | Programación de disponibilidad  |
-| US21          | Seguimiento de progreso del cliente |
-| US22          | Monetización de servicios       |
-
----
-
-**EP06: Análisis nutricional inteligente mediante imagen**  
-Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico.
-
-| User Story ID | Título                                      |
-|---------------|----------------------------------------------|
-| US23          | Subida de imagen de alimentos                |
-| US24          | Reconocimiento de alimentos mediante IA      |
-| US25          | Cálculo de valores nutricionales             |
-| US26          | Visualización detallada de nutrientes        |
-| US27          | Edición manual de alimentos detectados       |
-| US28          | Registro en historial de comidas             |
-| US29          | Seguimiento diario de consumo nutricional    |
-| US30          | Recomendaciones nutricionales personalizadas |
-| US31          | Integración con objetivos fitness            |
-| US32          | Notificaciones y recordatorios de registro   |
-
-
-| Epics ID | Título                           | Descripción                                                                                     |
-|----------|----------------------------------|-------------------------------------------------------------------------------------------------|
-| EP-LP    | Sitio web estático              | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar.|
-| EP-API   | API RESTful                     | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
- 
-
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|-----------------|--------|-------------|--------------------------|----------------------------|
-| US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | Escenario 1: Registro exitoso usuario<br>Dado que el usuario completa el formulario,<br>cuando selecciona “usuario”,<br>entonces el sistema lo redirige al dashboard.<br><br>Escenario 2: Registro exitoso coach<br>Dado que el usuario selecciona “coach”,<br>cuando completa el registro,<br>entonces se redirige a configuración profesional.<br><br>Escenario 3: Datos incompletos<br>Dado que faltan campos obligatorios,<br>cuando intenta registrarse,<br>entonces se muestra mensaje de error. | EP01 |
-| US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta. | Escenario 1: Acceso exitoso<br>Dado que ingresa credenciales correctas,<br>cuando inicia sesión,<br>entonces accede al sistema.<br><br>Escenario 2: Error de login<br>Dado que los datos son incorrectos,<br>cuando intenta ingresar,<br>entonces se muestra error. | EP01 |
-| US03 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña en caso de olvido. | Escenario 1: Solicitud de recuperación<br>Dado que el usuario solicita recuperación,<br>cuando ingresa su correo,<br>entonces recibe enlace o código.<br><br>Escenario 2: Restablecimiento exitoso<br>Dado que recibe el enlace,<br>cuando cambia contraseña,<br>entonces se actualiza correctamente. | EP01 |
-| US04 | Cierre de sesión | Como usuario, quiero cerrar sesión para proteger mi cuenta. | Escenario 1: Logout exitoso<br>Dado que el usuario está en sesión,<br>cuando selecciona cerrar sesión,<br>entonces se cierra sesión.<br><br>Escenario 2: Acceso bloqueado<br>Dado que cerró sesión,<br>cuando intenta entrar,<br>entonces se solicita login. | EP01 |
-| US05 | Configuración de perfil | Como usuario, quiero definir mis objetivos físicos. | Escenario 1: Guardado inicial<br>Dado que el usuario ingresa datos,<br>cuando guarda perfil,<br>entonces se almacenan objetivos.<br><br>Escenario 2: Actualización<br>Dado que modifica datos,<br>cuando guarda cambios,<br>entonces se actualiza perfil. | EP01 |
-| US06 | Búsqueda de coaches | Como usuario quiero buscar coaches según objetivos. | Escenario 1: Búsqueda por filtro<br>Dado que usa filtros,<br>cuando busca coaches,<br>entonces se muestran resultados.<br><br>Escenario 2: Búsqueda por nombre<br>Dado que ingresa nombre,<br>cuando busca,<br>entonces aparecen coincidencias.<br><br>Escenario 3: Sin resultados<br>Dado que no hay coincidencias,<br>cuando busca,<br>entonces se muestra mensaje. | EP02 |
-| US07 | Perfil de coach | Como usuario quiero ver información del coach. | Escenario 1: Visualización completa<br>Dado que selecciona un coach,<br>cuando entra al perfil,<br>entonces ve experiencia, tarifas y reseñas. | EP02 |
-| US08 | Reserva de sesión | Como usuario quiero reservar sesiones con coach. | Escenario 1: Reserva exitosa<br>Dado que hay disponibilidad,<br>cuando selecciona horario,<br>entonces la sesión queda agendada. | EP02 |
-| US09 | Chat con coach | Como usuario quiero comunicarme con mi coach. | Escenario 1: Envío de mensaje<br>Dado que abre chat,<br>cuando envía mensaje,<br>entonces se entrega al coach.<br><br>Escenario 2: Respuesta<br>Dado que el coach responde,<br>cuando usuario abre chat,<br>entonces ve mensaje.<br><br>Escenario 3: Historial<br>Dado que existen mensajes,<br>cuando entra al chat,<br>entonces ve conversación completa. | EP02 |
-| US10 | Calificación del coach | Como usuario quiero calificar al coach. | Escenario 1: Registro de reseña<br>Dado que termina sesión,<br>cuando califica,<br>entonces se guarda reseña.<br><br>Escenario 2: Restricción<br>Dado que no tuvo sesión,<br>cuando intenta calificar,<br>entonces se bloquea acción. | EP02 |
-| US11 | Subir video | Como usuario quiero subir videos de ejercicios. | Escenario 1: Subida correcta<br>Dado que selecciona video,<br>cuando lo sube,<br>entonces se carga archivo.<br><br>Escenario 2: Error formato<br>Dado que archivo no es válido,<br>cuando sube,<br>entonces muestra error. | EP03 |
-| US12 | Feedback IA | Como usuario quiero corrección automática de ejercicios. | Escenario 1: Análisis exitoso<br>Dado que sube video,<br>cuando IA procesa,<br>entonces muestra errores técnicos.<br><br>Escenario 2: Recomendaciones claras<br>Dado que termina análisis,<br>cuando ve resultados,<br>entonces recibe sugerencias. | EP03 |
-| US13 | Historial correcciones | Como usuario quiero ver análisis anteriores. | Escenario 1: Lista historial<br>Dado que tiene análisis previos,<br>cuando entra a historial,<br>entonces ve registros.<br><br>Escenario 2: Detalle<br>Dado que selecciona registro,<br>cuando abre,<br>entonces ve video y feedback. | EP03 |
-| US14 | Recomendaciones IA | Como usuario quiero mejoras personalizadas. | Escenario 1: Recomendaciones<br>Dado que analiza ejercicio,<br>cuando termina IA,<br>entonces muestra mejoras.<br><br>Escenario 2: Seguimiento<br>Dado que repite análisis,<br>cuando hay progreso,<br>entonces compara evolución. | EP03 |
-| US15 | Registro métricas | Como usuario quiero registrar medidas físicas. | Escenario 1: Guardado<br>Dado que ingresa datos,<br>cuando guarda,<br>entonces se registra información.<br><br>Escenario 2: Historial<br>Dado que ya existen registros,<br>cuando añade nuevos,<br>entonces no se elimina historial. | EP04 |
-| US16 | Progreso físico | Como usuario quiero ver gráficos de evolución. | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra a progreso,<br>entonces ve gráficos.<br><br>Escenario 2: Comparación<br>Dado que selecciona fechas,<br>cuando filtra,<br>entonces ve evolución. | EP04 |
-| US17 | Historial entrenamientos | Como usuario quiero ver mis entrenamientos. | Escenario 1: Lista<br>Dado que entrenó antes,<br>cuando entra historial,<br>entonces ve sesiones.<br><br>Escenario 2: Detalle<br>Dado que selecciona sesión,<br>cuando abre,<br>entonces ve información. | EP04 |
-| US18 | Alertas rutina | Como usuario quiero recordatorios de entrenamiento. | Escenario 1: Notificación<br>Dado que tiene rutina,<br>cuando llega hora,<br>entonces recibe alerta.<br><br>Escenario 2: Incumplimiento<br>Dado que no entrena,<br>cuando pasa tiempo,<br>entonces recibe aviso. | EP04 |
-| US19 | Gestión clientes | Como coach quiero administrar clientes. | Escenario 1: Lista clientes<br>Dado que tiene alumnos,<br>cuando entra módulo,<br>entonces ve lista.<br><br>Escenario 2: Perfil cliente<br>Dado que selecciona alumno,<br>cuando abre perfil,<br>entonces ve progreso. | EP05 |
-| US20 | Disponibilidad | Como coach quiero definir horarios. | Escenario 1: Registro<br>Dado que configura agenda,<br>cuando guarda,<br>entonces se publica disponibilidad.<br><br>Escenario 2: Edición<br>Dado que modifica horarios,<br>cuando actualiza,<br>entonces cambia agenda. | EP05 |
-| US21 | Seguimiento cliente | Como coach quiero ver progreso de clientes. | Escenario 1: Visualización<br>Dado que selecciona cliente,<br>cuando entra,<br>entonces ve métricas.<br><br>Escenario 2: Comparación<br>Dado que hay historial,<br>cuando filtra fechas,<br>entonces ve evolución. | EP05 |
-| US22 | Monetización | Como coach quiero definir precios. | Escenario 1: Registro tarifa<br>Dado que crea plan,<br>cuando guarda,<br>entonces se publica.<br><br>Escenario 2: Actualización<br>Dado que cambia precio,<br>cuando edita,<br>entonces se actualiza. | EP05 |
-| US23 | Subir imagen comida | Como usuario quiero subir fotos de comida. | Escenario 1: Subida correcta<br>Dado que selecciona imagen,<br>cuando carga,<br>entonces se procesa.<br><br>Escenario 2: Error<br>Dado que falla archivo,<br>cuando sube,<br>entonces muestra error. | EP06 |
-| US24 | Reconocimiento IA | Como usuario quiero detección de alimentos. | Escenario 1: Identificación<br>Dado que sube imagen,<br>cuando IA procesa,<br>entonces detecta alimentos.<br><br>Escenario 2: Error reconocimiento<br>Dado que imagen no es clara,<br>cuando analiza,<br>entonces falla. | EP06 |
-| US25 | Cálculo nutricional | Como usuario quiero macros y calorías. | Escenario 1: Cálculo correcto<br>Dado que detecta alimentos,<br>cuando procesa,<br>entonces muestra valores.<br><br>Escenario 2: Error cálculo<br>Dado que falla sistema,<br>cuando procesa,<br>entonces muestra error. | EP06 |
-| US26 | Visualización nutrientes | Como usuario quiero gráficos nutricionales. | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra,<br>entonces ve gráficos.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando entra,<br>entonces muestra aviso. | EP06 |
-| US27 | Edición alimentos | Como usuario quiero corregir alimentos detectados. | Escenario 1: Edición correcta<br>Dado que IA detecta alimentos,<br>cuando edita,<br>entonces actualiza datos.<br><br>Escenario 2: Error<br>Dado que falla guardado,<br>cuando edita,<br>entonces muestra error. | EP06 |
-| US28 | Historial comidas | Como usuario quiero guardar comidas. | Escenario 1: Registro automático<br>Dado que analiza comida,<br>cuando termina,<br>entonces guarda historial.<br><br>Escenario 2: Error guardado<br>Dado que falla sistema,<br>cuando guarda,<br>entonces muestra error. | EP06 |
-| US29 | Consumo diario | Como usuario quiero ver consumo diario. | Escenario 1: Resumen diario<br>Dado que hay registros,<br>cuando entra,<br>entonces ve calorías.<br><br>Escenario 2: Sin datos<br>Dado que no hay registros,<br>cuando entra,<br>entonces muestra aviso. | EP06 |
-| US30 | Recomendaciones nutricionales | Como usuario quiero sugerencias personalizadas. | Escenario 1: Recomendación<br>Dado que analiza consumo,<br>cuando procesa,<br>entonces sugiere mejoras.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando procesa,<br>entonces muestra mensaje. | EP06 |
-| US31 | Integración fitness-nutrición | Como usuario quiero conectar dieta y entrenamiento. | Escenario 1: Integración<br>Dado que tiene objetivos,<br>cuando analiza datos,<br>entonces relaciona dieta y fitness.<br><br>Escenario 2: Falta de datos<br>Dado que no hay objetivos,<br>cuando entra,<br>entonces solicita configuración. | EP06 |
-| US32 | Notificaciones nutricionales | Como usuario quiero recordatorios de comidas. | Escenario 1: Notificación<br>Dado que activa recordatorios,<br>cuando llega hora,<br>entonces envía alerta.<br><br>Escenario 2: Desactivado<br>Dado que está apagado,<br>cuando llega hora,<br>entonces no envía nada. | EP06 |
-| US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | Escenario 1: Acceso a información<br>Dado que el visitante accede al sitio web,<br>cuando recorre la sección informativa,<br>entonces el sistema presenta descripciones claras de los servicios.<br><br>Escenario 2: Consulta de características<br>Dado que se requiere mayor detalle,<br>cuando se solicita información específica,<br>entonces el sistema entrega las características correspondientes. | EP-LP |
-| US34 | Solicitar demostración | Como visitante, quiero registrar interés en una demostración para conocer mejor el sistema. | Escenario 1: Registro exitoso<br>Dado que se ingresan datos válidos,<br>cuando se envía la solicitud,<br>entonces el sistema confirma la recepción y describe el siguiente paso.<br><br>Escenario 2: Registro inválido<br>Dado que se ingresan datos incompletos,<br>cuando se procesa la solicitud,<br>entonces el sistema informa los errores identificados. | EP-LP |
-| US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido. | EP-LP |
-| US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles. | EP-LP |
-| US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados. | EP-LP |
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Story Points | Relacionado con (Epic ID) |
+|-----------------|--------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------|
+| US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | Escenario 1: Registro exitoso usuario<br>Dado que el usuario completa el formulario,<br>cuando selecciona “usuario”,<br>entonces el sistema lo redirige al dashboard.<br><br>Escenario 2: Registro exitoso coach<br>Dado que el usuario selecciona “coach”,<br>cuando completa el registro,<br>entonces se redirige a configuración profesional.<br><br>Escenario 3: Dado que el usuario deja campos obligatorios vacíos, cuando hace clic en 'Registrarse', entonces el sistema resalta los campos en rojo y muestra: 'Error: Todos los campos marcados con * son obligatorios' | 1            | EP01 |
+| US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta. | Escenario 1: Acceso exitoso<br>Dado que ingresa credenciales correctas,<br>cuando inicia sesión,<br>entonces accede al sistema.<br><br>Escenario 2: Error de login<br>Dado que los datos son incorrectos,<br>cuando intenta ingresar,<br>entonces se muestra error.                                                                                                                                                                                                                                                                                                              | 1            | EP01 |
+| US03 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña en caso de olvido para no perder acceso a mis datos. | Escenario 1: Solicitud de recuperación<br>Dado que el usuario solicita recuperación,<br>cuando ingresa su correo,<br>entonces recibe enlace o código.<br><br>Escenario 2: Restablecimiento exitoso<br>Dado que recibe el enlace,<br>cuando cambia contraseña,<br>entonces se actualiza correctamente.                                                                                                                                                                                                                                                                            | 3            | EP01 |
+| US04 | Cierre de sesión | Como usuario, quiero cerrar sesión para proteger mi cuenta. | Escenario 1: Logout exitoso<br>Dado que el usuario está en sesión,<br>cuando selecciona cerrar sesión,<br>entonces se cierra sesión.<br><br>Escenario 2: Acceso bloqueado<br>Dado que cerró sesión,<br>cuando intenta entrar,<br>entonces se solicita login.                                                                                                                                                                                                                                                                                                                     | 1            | EP01 |
+| US05 | Configuración de perfil | Como usuario, quiero definir mis objetivos físicos para recibir un plan de entrenamiento adaptado. | Escenario 1: Guardado inicial<br>Dado que el usuario ingresa datos,<br>cuando guarda perfil,<br>entonces se almacenan objetivos.<br><br>Escenario 2: Actualización<br>Dado que modifica datos,<br>cuando guarda cambios,<br>entonces se actualiza perfil.                                                                                                                                                                                                                                                                                                                        | 2            | EP01 |
+| US06 | Búsqueda de coaches | Como usuario quiero buscar coaches según objetivos para encontrar al profesional que mejor se ajuste a mis necesidades. | Escenario 1: Búsqueda por filtro<br>Dado que usa filtros,<br>cuando busca coaches,<br>entonces se muestran resultados.<br><br>Escenario 2: Búsqueda por nombre<br>Dado que ingresa nombre,<br>cuando busca,<br>entonces aparecen coincidencias.<br><br>Escenario 3: Sin resultados<br>Dado que no hay coincidencias,<br>cuando busca,<br>entonces se muestra mensaje.                                                                                                                                                                                                            | 3            | EP02 |
+| US07 | Perfil de coach | Como usuario quiero ver información del coach para evaluar su experiencia y decidir si contratarlo. | Escenario 1: Visualización completa<br>Dado que selecciona un coach,<br>cuando entra al perfil,<br>entonces ve experiencia, tarifas y reseñas.                                                                                                                                                                                                                                                                                                                                                                                                                                   | 1            | EP02 |
+| US08 | Reserva de sesión | Como usuario quiero reservar sesiones con coach para asegurar un horario de entrenamiento personalizado. | Escenario 1: Reserva exitosa<br>Dado que hay disponibilidad,<br>cuando selecciona horario,<br>entonces la sesión queda agendada.                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 2            | EP02 |
+| US09 | Chat con coach | Como usuario quiero comunicarme con mi coach para resolver dudas sobre mi rutina en tiempo real. | Escenario 1: Envío de mensaje<br>Dado que abre chat,<br>cuando envía mensaje,<br>entonces se entrega al coach.<br><br>Escenario 2: Respuesta<br>Dado que el coach responde,<br>cuando usuario abre chat,<br>entonces ve mensaje.<br><br>Escenario 3: Historial<br>Dado que existen mensajes,<br>cuando entra al chat,<br>entonces ve conversación completa.                                                                                                                                                                                                                      | 5            | EP02 |
+| US10 | Calificación del coach | Como usuario quiero calificar al coach para ayudar a otros usuarios a elegir basándose en mi experiencia | Escenario 1: Registro de reseña<br>Dado que termina sesión,<br>cuando califica,<br>entonces se guarda reseña.<br><br>Escenario 2: Restricción<br>Dado que no tuvo sesión,<br>cuando intenta calificar,<br>entonces se bloquea acción.                                                                                                                                                                                                                                                                                                                                            | 1            | EP02 |
+| US11 | Subir video | Como usuario registrado, quiero subir un video de mi ejercicio, para recibir retroalimentación automática de la IA y mejorar mi técnica. | Escenario 1: Subida correcta<br>Dado que selecciona video,<br>cuando lo sube,<br>entonces se carga archivo.<br><br>Escenario 2: Error formato<br>Dado que archivo no es válido,<br>cuando sube,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                       | 3            | EP03 |
+| US12 | Feedback IA | Como usuario quiero corrección automática de ejercicios para evitar lesiones y optimizar mi rendimiento. | Escenario 1: Dado que el video ha sido procesado con éxito, cuando el usuario abre el resultado, entonces el sistema muestra el video con skeleton overlay y una lista de máximo 3 errores técnicos.<br><br>Escenario 2: Recomendaciones claras<br>Dado que termina análisis,<br>cuando ve resultados,<br>entonces recibe sugerencias.                                                                                                                                                                                                                                           | 13           | EP03 |
+| US13 | Historial correcciones | Como usuario quiero ver mis análisis anteriores para visualizar mi mejora técnica a través del tiempo. | Escenario 1: Lista historial<br>Dado que tiene análisis previos,<br>cuando entra a historial,<br>entonces ve registros.<br><br>Escenario 2: Detalle<br>Dado que selecciona registro,<br>cuando abre,<br>entonces ve video y feedback.                                                                                                                                                                                                                                                                                                                                            | 2            | EP03 |
+| US14 | Recomendaciones IA | Como usuario quiero mejoras personalizadas basadas en mis errores frecuentes para entrenar con mayor precisión. | Escenario 1: Recomendaciones<br>Dado que analiza ejercicio,<br>cuando termina IA,<br>entonces muestra mejoras.<br><br>Escenario 2: Seguimiento<br>Dado que repite análisis,<br>cuando hay progreso,<br>entonces compara evolución.                                                                                                                                                                                                                                                                                                                                               | 5            | EP03 |
+| US15 | Registro métricas | Como usuario quiero registrar medidas físicas para cuantificar mis cambios estéticos y de salud. | Escenario 1: Guardado<br>Dado que ingresa datos,<br>cuando guarda,<br>entonces se registra información.<br><br>Escenario 2: Historial<br>Dado que ya existen registros,<br>cuando añade nuevos,<br>entonces no se elimina historial.                                                                                                                                                                                                                                                                                                                                             | 1            | EP04 |
+| US16 | Progreso físico | Como usuario quiero ver gráficos de evolución para mantenerme motivado al ver mis resultados visualmente. | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra a progreso,<br>entonces ve gráficos.<br><br>Escenario 2: Comparación<br>Dado que selecciona fechas,<br>cuando filtra,<br>entonces ve evolución.                                                                                                                                                                                                                                                                                                                                                                | 3            | EP04 |
+| US17 | Historial entrenamientos | Como usuario quiero ver mis entrenamientos pasados para llevar un control estricto de mi constancia. | Escenario 1: Lista<br>Dado que entrenó antes,<br>cuando entra historial,<br>entonces ve sesiones.<br><br>Escenario 2: Detalle<br>Dado que selecciona sesión,<br>cuando abre,<br>entonces ve información.                                                                                                                                                                                                                                                                                                                                                                         | 2            | EP04 |
+| US18 | Alertas rutina | Como usuario quiero recordatorios de entrenamiento para evitar el sedentarismo y cumplir mi plan. | Escenario 1: Notificación<br>Dado que tiene rutina,<br>cuando llega hora,<br>entonces recibe alerta.<br><br>Escenario 2: Incumplimiento<br>Dado que no entrena,<br>cuando pasa tiempo,<br>entonces recibe aviso.                                                                                                                                                                                                                                                                                                                                                                 | 3            | EP04 |
+| US19 | Gestión clientes | Como coach quiero administrar a mis clientes para organizar mejor mis asesorías y tiempos. | Escenario 1: Lista clientes<br>Dado que tiene alumnos,<br>cuando entra módulo,<br>entonces ve lista.<br><br>Escenario 2: Perfil cliente<br>Dado que selecciona alumno,<br>cuando abre perfil,<br>entonces ve progreso.                                                                                                                                                                                                                                                                                                                                                           | 3            | EP05 |
+| US20 | Disponibilidad | Como coach quiero definir mis horarios para que mis alumnos reserven sesiones sin conflictos de agenda. | Escenario 1: Registro<br>Dado que configura agenda,<br>cuando guarda,<br>entonces se publica disponibilidad.<br><br>Escenario 2: Edición<br>Dado que modifica horarios,<br>cuando actualiza,<br>entonces cambia agenda.                                                                                                                                                                                                                                                                                                                                                          | 2            | EP05 |
+| US21 | Seguimiento cliente | Como coach quiero ver el progreso detallado de mis clientes para ajustar sus rutinas de forma profesional. | Escenario 1: Visualización<br>Dado que selecciona cliente,<br>cuando entra,<br>entonces ve métricas.<br><br>Escenario 2: Comparación<br>Dado que hay historial,<br>cuando filtra fechas,<br>entonces ve evolución.                                                                                                                                                                                                                                                                                                                                                               | 3            | EP05 |
+| US22 | Monetización | Como coach quiero definir precios para mis servicios para profesionalizar y rentabilizar mi trabajo. | Escenario 1: Registro tarifa<br>Dado que crea plan,<br>cuando guarda,<br>entonces se publica.<br><br>Escenario 2: Actualización<br>Dado que cambia precio,<br>cuando edita,<br>entonces se actualiza.                                                                                                                                                                                                                                                                                                                                                                            | 2            | EP05 |
+| US23 | Subir imagen comida | Como usuario quiero subir fotos de mi comida para que el sistema identifique los nutrientes automáticamente. | Escenario 1: Subida correcta<br>Dado que selecciona imagen,<br>cuando carga,<br>entonces se procesa.<br><br>Escenario 2: Error<br>Dado que falla archivo,<br>cuando sube,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                                             | 2            | EP06 |
+| US24 | Reconocimiento IA | Como usuario quiero detección de alimentos mediante IA para no tener que ingresar cada ingrediente manualmente | Escenario 1: Dado que la foto es nítida, cuando la IA procesa la imagen, entonces identifica 'Pollo a la plancha' y 'Ensalada mixta'..<br><br>Escenario 2: Imagen borrosa. Dado que no hay nitidez, entonces muestra: "No pudimos identificar los alimentos. Por favor, suba una imagen con mejor iluminación".                                                                                                                                                                                                                                                                                                                                                                                          | 8            | EP06 |
+| US25 | Cálculo nutricional | Como usuario quiero conocer macros y calorías para balancear mi dieta según mi plan de entrenamiento. | Escenario 1: Cálculo correcto<br>Dado que detecta alimentos,<br>cuando procesa,<br>entonces muestra valores.<br><br>Escenario 2: Error cálculo<br>Dado que falla sistema,<br>cuando procesa,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                          | 3            | EP06 |
+| US26 | Visualización nutrientes | Como usuario quiero gráficos nutricionales para entender si estoy cumpliendo mis requerimientos diarios | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra,<br>entonces ve gráficos.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando entra,<br>entonces muestra aviso.                                                                                                                                                                                                                                                                                                                                                                                   | 3            | EP06 |
+| US27 | Edición alimentos | Como usuario quiero corregir alimentos detectados para asegurar que mi registro diario sea 100% exacto. | Escenario 1: Edición correcta<br>Dado que IA detecta alimentos,<br>cuando edita,<br>entonces actualiza datos.<br><br>Escenario 2: Error<br>Dado que falla guardado,<br>cuando edita,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                                  | 1            | EP06 |
+| US28 | Historial comidas | Como usuario quiero guardar mis comidas diarias para analizar mis hábitos alimenticios a largo plazo. | Escenario 1: Registro automático<br>Dado que analiza comida,<br>cuando termina,<br>entonces guarda historial.<br><br>Escenario 2: Error guardado<br>Dado que falla sistema,<br>cuando guarda,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                         | 2            | EP06 |
+| US29 | Consumo diario | Como usuario quiero ver un resumen de mi consumo diario para no exceder mi límite calórico. | Escenario 1: Resumen diario<br>Dado que hay registros,<br>cuando entra,<br>entonces ve calorías.<br><br>Escenario 2: Sin datos<br>Dado que no hay registros,<br>cuando entra,<br>entonces muestra aviso.                                                                                                                                                                                                                                                                                                                                                                         | 2            | EP06 |
+| US30 | Recomendaciones nutricionales | Como usuario quiero sugerencias según mis metas para optimizar mi nutrición junto a mi entrenamiento. | Escenario 1: Recomendación<br>Dado que analiza consumo,<br>cuando procesa,<br>entonces sugiere mejoras.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando procesa,<br>entonces muestra mensaje.                                                                                                                                                                                                                                                                                                                                                                   | 5            | EP06 |
+| US31 | Integración fitness-nutrición | Como usuario quiero conectar mi dieta y entrenamiento para ver cómo mi alimentación influye en mi fuerza. | Escenario 1: Entonces el sistema redirige al usuario a la sección de "Metas" y muestra el mensaje: "Para calcular tu balance, primero define tu objetivo de peso o masa muscular.<br><br>Escenario 2: Falta de datos<br>Dado que no hay objetivos,<br>cuando entra,<br>entonces solicita configuración.                                                                                                                                                                                                                                                                          | 5            | EP06 |
+| US32 | Notificaciones nutricionales | Como usuario quiero recordatorios de comidas para mantener mi metabolismo activo y organizado. | Escenario 1: Notificación<br>Dado que activa recordatorios,<br>cuando llega hora,<br>entonces envía alerta.<br><br>Escenario 2: Desactivado<br>Dado que está apagado,<br>cuando llega hora,<br>entonces no envía nada.                                                                                                                                                                                                                                                                                                                                                           | 3            | EP06 |
+| US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | Escenario 1: Acceso a información<br>Dado que el visitante accede al sitio web,<br>cuando recorre la sección informativa,<br>entonces el sistema presenta descripciones claras de los servicios.<br><br>Escenario 2: Consulta de características<br>Dado que se requiere mayor detalle,<br>cuando se solicita información específica,<br>entonces el sistema entrega las características correspondientes.                                                                                                                                                                       | 1            | EP-LP |
+| US34 | Solicitar demostración | Como visitante, quiero registrar interés en una demostración para conocer mejor el sistema. | Escenario 1: Registro exitoso<br>Dado que se ingresan datos válidos,<br>cuando se envía la solicitud,<br>entonces el sistema confirma la recepción y describe el siguiente paso.<br><br>Escenario 2: Registro inválido<br>Dado que se ingresan datos incompletos,<br>cuando se procesa la solicitud,<br>entonces el sistema informa los errores identificados.                                                                                                                                                                                                                   | 2            | EP-LP |
+| US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido.                                                                                                                                                                                               | 1            | EP-LP |
+| US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles.                                                                                                                                                           | 2            | EP-LP |
+| US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados.                                                                                                                                                                                               | 1            | EP-LP |
+| US38 | Sección "Cómo funciona" | Como visitante, quiero ver una guía paso a paso para entender cómo la IA analiza mis ejercicios. | Escenario 1: Infografía interactiva. Dado que baja en la landing, entonces ve 3 pasos animados del escaneo de video.<br><br>Escenario 2: Salto de guía. Dado que ya conoce el sistema, puede cerrar la guía con el botón 'X' en cualquier momento.                                                                                                                                                                                                                                                                                                                               | 1            | EP-LP |
+| US39 | Registro rápido | Como visitante, quiero un botón de registro visible para crear mi cuenta rápidamente desde el inicio. | Escenario 1: Botón Header. Dado que hace clic en "Empezar Gratis", entonces salta directamente al flujo US01.<br><br>Escenario 2: Persistencia. Dado que ya inició sesión antes, cuando hace clic, el sistema lo reconoce y lo lleva al dashboard.                                                                                                                                                                                                                                                                                                                               | 1            | EP-LP |
+| TS01 | Implementación de Middleware de Autenticación JWT | Como sistema, se debe validar el token JWT en las cabeceras de cada petición para asegurar la integridad de los datos de la API. | Escenario 1: Validación de token exitosa<br>Dado que una aplicación externa envía un JWT válido,<br>cuando el middleware lo procesa,<br>entonces autoriza el acceso al endpoint solicitado.<br><br>Escenario 2: Token inexistente o corrupto<br>Dado que la petición no incluye cabecera de autorización,<br>cuando el sistema la intercepta,<br>entonces retorna un error 401 Unauthorized.                                                                                                                                                                                     | 3            | EP-API |
+| TS02 | Exposición de Endpoints para Bounded Context Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de perfiles de coaches certificados. | Escenario 1: Respuesta JSON. Dado un GET a /api/v1/coaches, entonces retorna la lista con status 200 OK.<br><br>Escenario 2: Base caída. Dado que la DB no responde, entonces el endpoint retorna un error 503 Service Unavailable.                                                                                                                                                                                                                                                                                                                                              | 3            | EP-API |
+| TS03 | Configuración de Endpoints para Video Management | Como sistema, se debe habilitar un endpoint para la recepción de flujos de video y su posterior procesamiento asíncrono en la nube. | Escenario 1: Encolado exitoso. Dado un POST de video, entonces retorna ID de seguimiento y estatus 202.<br><br> Escenario 2: Archivo corrupto. Dado un stream interrumpido, entonces el sistema descarta el archivo y pide reintento.                                                                                                                                                                                                                                                                                                                                            | 5            | EP-API |
+| TS04 | Endpoint de Perfil de Atleta | Como sistema, se debe exponer un endpoint GET para que la App móvil recupere métricas físicas de forma rápida. | Escenario 1: Recuperación de datos. Dado un ID válido, entonces el sistema entrega un objeto JSON con peso, talla y grasa.<br><br> Escenario 2: ID inexistente. Dado un ID inválido, entonces el sistema responde con un error 404 Not Found.                                                                                                                                                                                                                                                                                                                                    | 3            | EP-API |
 
 ### 3.2. Impact Mapping.
 El **Impact Map** es una herramienta visual que permite relacionar los objetivos de negocio con las personas involucradas, los impactos esperados, los entregables y las historias de usuario asociadas.  
@@ -968,13 +904,15 @@ A continuación se presenta el Impact Map de **BodyMatch AI**:
 
 **Segmento Objetivo 1: Jóvenes adultos interesados en el fitness**
 
+<p align="center">
+  <img src="assets/impact1.png" alt="Impact Map Atletas" width="80%" />
+</p>
 
-<img src="assets/impact1.png" alt="as 2" />
+**Segmento Objetivo 2: Entrenadores Personales (Coaches)**
 
-
-**Segmento Objetivo 1: Entrenadores Personales (Coaches)**
-
-<img src="assets/impact2.png" alt="as 2" />
+<p align="center">
+  <img src="assets/impact2.png" alt="Impact Map Coaches" width="80%" />
+</p>
 
 ### 3.3. Product Backlog.
 
@@ -1000,42 +938,66 @@ A continuación se presenta el backlog completo con todas las User Stories defin
 
 
 | Orden | User Story Id | Título | Descripción | Story Points |
-|------|--------------|--------|-------------|--------------|
-| 1 | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | 1 |
-| 2 | US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con correo y contraseña para acceder a mi cuenta. | 1 |
-| 3 | US07 | Visualización de perfil de coach | Como usuario, quiero ver la experiencia y reseñas del coach para tomar una decisión. | 1 |
-| 4 | US10 | Calificación del coach | Como usuario, quiero calificar al coach para compartir mi experiencia. | 1 |
-| 5 | US15 | Registro de métricas físicas | Como usuario, quiero registrar mis medidas corporales para controlar mi evolución. | 1 |
-| 6 | US23 | Subida de imagen de alimentos | Como usuario, quiero subir fotos de comida para análisis nutricional. | 1 |
-| 7 | US27 | Edición manual de alimentos detectados | Como usuario, quiero corregir alimentos detectados por IA para mayor precisión. | 1 |
-| 8 | US04 | Cierre de sesión | Como usuario o coach, quiero cerrar sesión para proteger mi cuenta. | 2 |
-| 9 | US05 | Configuración de perfil y objetivos | Como usuario, quiero definir mis objetivos para recibir recomendaciones personalizadas. | 2 |
-| 10 | US08 | Reserva de sesión | Como usuario, quiero reservar sesiones con un coach. | 2 |
-| 11 | US13 | Historial de correcciones | Como usuario, quiero ver análisis anteriores para comparar progreso. | 2 |
-| 12 | US16 | Visualización de progreso | Como usuario, quiero ver gráficos de progreso físico. | 2 |
-| 13 | US17 | Historial de entrenamientos | Como usuario, quiero revisar mis entrenamientos para evaluar constancia. | 2 |
-| 14 | US22 | Monetización de servicios | Como coach, quiero definir tarifas para monetizar mis servicios. | 2 |
-| 15 | US28 | Registro en historial de comidas | Como usuario, quiero guardar automáticamente mis comidas. | 2 |
-| 16 | US06 | Búsqueda de coaches | Como usuario, quiero buscar coaches según objetivos y filtros. | 3 |
-| 17 | US11 | Subir video del ejercicio | Como usuario, quiero subir videos para análisis de técnica. | 3 |
-| 18 | US18 | Alertas de cumplimiento de rutina | Como usuario, quiero recibir recordatorios de entrenamiento. | 3 |
-| 19 | US21 | Seguimiento de progreso del cliente | Como coach, quiero ver el progreso de mis clientes. | 3 |
-| 20 | US03 | Recuperación de contraseña | Como usuario o coach, quiero recuperar mi contraseña. | 3 |
-| 21 | US19 | Gestión de clientes | Como coach, quiero administrar mis clientes. | 3 |
-| 22 | US25 | Cálculo de valores nutricionales | Como usuario, quiero ver calorías y macronutrientes de mis comidas. | 3 |
-| 23 | US31 | Integración con objetivos fitness | Como usuario, quiero relacionar nutrición con mis objetivos físicos. | 3 |
-| 24 | US09 | Chat con coach | Como usuario, quiero comunicarme con mi coach en tiempo real. | 5 |
-| 25 | US14 | Recomendaciones de mejora | Como usuario, quiero recibir recomendaciones personalizadas. | 5 |
-| 26 | US20 | Programación de disponibilidad | Como coach, quiero definir mis horarios disponibles. | 5 |
-| 27 | US26 | Visualización detallada de nutrientes | Como usuario, quiero ver gráficos nutricionales detallados. | 5 |
-| 28 | US30 | Recomendaciones nutricionales personalizadas | Como usuario, quiero sugerencias según mis objetivos. | 5 |
-| 29 | US32 | Notificaciones y recordatorios de registro | Como usuario, quiero recordatorios para registrar comidas. | 5 |
-| 30 | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 8 |
-| 31 | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 |
-| 32 | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 |
+|-------|--------------|--------|-------------|--------------|
+| 1     | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | 1            |
+| 2     | US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con correo y contraseña para acceder a mi cuenta. | 1            |
+| 3     | US07 | Visualización de perfil de coach | Como usuario, quiero ver la experiencia y reseñas del coach para tomar una decisión. | 1            |
+| 4     | US10 | Calificación del coach | Como usuario, quiero calificar al coach para compartir mi experiencia. | 1            |
+| 5     | US15 | Registro de métricas físicas | Como usuario, quiero registrar mis medidas corporales para controlar mi evolución. | 1            |
+| 6     | US23 | Subida de imagen de alimentos | Como usuario, quiero subir fotos de comida para análisis nutricional. | 2            |
+| 7     | US27 | Edición manual de alimentos detectados | Como usuario, quiero corregir alimentos detectados por IA para mayor precisión. | 1            |
+| 8     | US04 | Cierre de sesión | Como usuario o coach, quiero cerrar sesión para proteger mi cuenta. | 2            |
+| 9     | US05 | Configuración de perfil y objetivos | Como usuario, quiero definir mis objetivos para recibir recomendaciones personalizadas. | 2            |
+| 10    | US08 | Reserva de sesión | Como usuario, quiero reservar sesiones con un coach. | 2            |
+| 11    | US13 | Historial de correcciones | Como usuario, quiero ver análisis anteriores para comparar progreso. | 2            |
+| 12    | US16 | Visualización de progreso | Como usuario, quiero ver gráficos de progreso físico. | 2            |
+| 13    | US17 | Historial de entrenamientos | Como usuario, quiero revisar mis entrenamientos para evaluar constancia. | 2            |
+| 14    | US22 | Monetización de servicios | Como coach, quiero definir tarifas para monetizar mis servicios. | 2            |
+| 15    | US28 | Registro en historial de comidas | Como usuario, quiero guardar automáticamente mis comidas. | 2            |
+| 16    | US06 | Búsqueda de coaches | Como usuario, quiero buscar coaches según objetivos y filtros. | 3            |
+| 17    | US11 | Subir video del ejercicio | Como usuario, quiero subir videos para análisis de técnica. | 3            |
+| 18    | US18 | Alertas de cumplimiento de rutina | Como usuario, quiero recibir recordatorios de entrenamiento. | 3            |
+| 19    | US21 | Seguimiento de progreso del cliente | Como coach, quiero ver el progreso de mis clientes. | 3            |
+| 20    | US03 | Recuperación de contraseña | Como usuario o coach, quiero recuperar mi contraseña. | 3            |
+| 21    | US19 | Gestión de clientes | Como coach, quiero administrar mis clientes. | 3            |
+| 22    | US25 | Cálculo de valores nutricionales | Como usuario, quiero ver calorías y macronutrientes de mis comidas. | 3            |
+| 23    | US31 | Integración con objetivos fitness | Como usuario, quiero relacionar nutrición con mis objetivos físicos. | 3            |
+| 24    | US09 | Chat con coach | Como usuario, quiero comunicarme con mi coach en tiempo real. | 5            |
+| 25    | US14 | Recomendaciones de mejora | Como usuario, quiero recibir recomendaciones personalizadas. | 5            |
+| 26    | US20 | Programación de disponibilidad | Como coach, quiero definir mis horarios disponibles. | 5            |
+| 27    | US26 | Visualización detallada de nutrientes | Como usuario, quiero ver gráficos nutricionales detallados. | 5            |
+| 28    | US30 | Recomendaciones nutricionales personalizadas | Como usuario, quiero sugerencias según mis objetivos. | 5            |
+| 29    | US32 | Notificaciones y recordatorios de registro | Como usuario, quiero recordatorios para registrar comidas. | 5            |
+| 30    | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 13           |
+| 31    | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8            |
+| 32    | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8            |
+| 33    | US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | 1            |
+| 34    | US34 | Solicitar demostración | Como visitante, quiero registrar mi interés en una demostración para conocer mejor el sistema. | 2            |
+| 35    | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | 1            |
+| 36    | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | 2            |
+| 37    | US37 | Consultar casos de éxito | Como visitante, quiero revisar experiencias reales con el sistema. | 2            |
+| 38    | TS01 | Implementación de Middleware JWT | Como sistema, se debe validar el token JWT en las cabeceras para asegurar la integridad de la API. | 3            |
+| 39    | TS02 | Exposición de Endpoints Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de coaches. | 3            |
+| 40    | TS03 | Configuración de Endpoints Video | Implementación técnica del canal de subida de video para el procesamiento de la IA. | 5            |
+| 41    | TS04 | Endpoint Perfil Atleta | Endpoint GET para recuperar métricas físicas. | 3            |
+
+
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
 
-[Product Backlog en Trello]
+[Product Backlog en Trello](https://trello.com/invite/b/69f6c4d98f6f645b602f8b43/ATTI379fb6f66a33086d7a8b14a7348eb01936888531/bodymatch-ai-product-backlog)
+
+### 3.4. Sprint 2 Backlog
+
+En esta sección se descomponen las User Stories del Sprint activo en tareas técnicas específicas, con una estimación máxima de 8 horas por tarea.
+
+| Task ID | US ID | Descripción de la Tarea Técnica | Estimación (h) | Responsable | Estado |
+|---------|-------|---------------------------------|----------------|-------------|--------|
+| T01 | US12 | Implementar endpoint POST /videos/analyze en Spring Boot. | 6h | ________ | Done |
+| T02 | US12 | Integrar API de gemini para procesamiento de frames de video. | 8h | _______ | In Progress |
+| T03 | US01 | Configurar esquema de base de datos para perfiles de usuario en PostgreSQL. | 4h | ________ | Done |
+| T04 | US11 | Desarrollar componente de subida de archivos con barra de progreso en Flutter. | 6h | _______ | Done |
+| T05 | TS01 | Implementar lógica de validación de JWT en el API Gateway. | 5h | _________ | Done |
+| T06 | US24 | Desarrollar algoritmo de pre-procesamiento de imágenes (brillo/contraste). | 4h | _________ | Done |
 
 
 ## Capitulo IV: Requeriments Specification
@@ -1090,85 +1052,385 @@ Administrador: Responsable de la gestión operativa de la plataforma, el manteni
 
 Para garantizar una arquitectura escalable y robusta, el sistema se integra con servicios externos críticos que delegan responsabilidades especializadas: Stripe como pasarela de pagos para el procesamiento seguro de transacciones y suscripciones; Microsoft Outlook para la gestión de comunicaciones transaccionales y notificaciones de confirmación; y servicios de Cloud Storage para el almacenamiento eficiente y recuperación de las evidencias en video de los entrenamientos. Esta configuración permite que BodyMatch AI se enfoque en su propuesta de valor central —la corrección técnica mediante visión computacional— mientras mantiene una conectividad fluida con proveedores de infraestructura de clase mundial.
 
+
+
 <img src="assets/chapter4/Components/SystemContext.png" alt ="">
 
+Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuarios (Atleta, Coach y Administrador) y con servicios externos esenciales como Stripe para pagos, Outlook para correos y Cloud Storage para el almacenamiento de videos. Define los límites del sistema y su conexión con el ecosistema tecnológico exterior.
 
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
 
-<b>Diagrama de contenedores</b>
+**C4 Model - Nivel 2: Diagrama de Contenedores**
 
+<p align="center">
+  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <br>
+  <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
+</p>
 
-<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
+**Descripción:** Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
 
+**C4 Model - Nivel 3: Diagramas de Componentes (Bounded Contexts)**
 
-<b>Diagrama de Componentes</b> 
+* **IAM Bounded Context**
 
-- IAM Bounded Context
+<p align="center">
+  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <br>
+  <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
+</p>
 
-<img src="assets/chapter4/Components/IAMBC.png" alt ="">
+*Descripción:* Diseñado bajo los principios de Domain-Driven Design (DDD) y representado en este Diagrama de Componentes (C4 Nivel 3), detalla la estructura interna del módulo de identidad y acceso. Utiliza Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
 
-- Membership and Payments Bounded Context
+* **Membership and Payments Bounded Context**
 
-<img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+<p align="center">
+  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <br>
+  <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
+</p>
 
-- Video Management Bounded Context
+*Descripción:* Siguiendo el enfoque de DDD y la jerarquía del Modelo C4, este diagrama ilustra la gestión de suscripciones y transacciones financieras. Separa la lógica de membresías de los pagos mediante servicios de comando y consulta, integrándose con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
-<img src="assets/chapter4/Components/Video Management BC.png" alt ="">
+* **Video Management Bounded Context**
 
-- Matchmaking with Users Bounded Context
+<p align="center">
+  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <br>
+  <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
+</p>
 
-<img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+*Descripción:* Este componente de nivel C4 Nivel 3 aplica patrones de DDD como CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario. Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos.
 
-- Training Tracker Bouded Context
+* **Matchmaking with Users Bounded Context**
 
-<img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
+<p align="center">
+  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <br>
+  <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
+</p>
 
-- Nutrition Bounded Context
+*Descripción:* Aplicando tácticas de Domain-Driven Design (DDD), este componente gestiona el emparejamiento entre atletas y coaches. Administra tanto las solicitudes de conexión como la programación de sesiones de entrenamiento, exponiendo una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
-<img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
+* **Training Tracker Bounded Context**
 
-<b>Activities Diagrams</b>
+<p align="center">
+  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <br>
+  <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
+</p>
 
-<img src="assets/chapter4/Components/actividadai.png" alt ="">
+*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama de C4 Model muestra cómo se registran y consultan los entrenamientos y métricas de performance bajo un modelo de dominio especializado. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
 
-<img src="assets/chapter4/Components/actividadiam.png" alt ="">
+* **Nutrition Bounded Context**
 
-<img src="assets/chapter4/Components/actividadpayment.png" alt ="">
+<p align="center">
+  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <br>
+  <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
+</p>
 
-<img src="assets/chapter4/Components/actividadtracking.png" alt ="">
+*Descripción:* Este diagrama de nivel C4 Nivel 3 describe la estructura del contexto nutricional gestionado mediante el patrón CQRS. Siguiendo principios de DDD, se integra con la Gemini API para la detección automática de alimentos y macros, proveyendo una fachada de contexto para permitir que otros módulos accedan a la información de forma desacoplada.
 
-<b>Diagramas de Estados</b>
+**Diagramas de Actividades**
 
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <br>
+  <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
+</p>
 
-<img src="assets/chapter4/Components/estadoaim.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <br>
+  <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
+</p>
 
+<p align="center">
+  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <br>
+  <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el <b>Patrón Strategy (ver sección 4.1.6)</b>.</em>
+</p>
 
+<p align="center">
+  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <br>
+  <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
+</p>
 
-<img src="assets/chapter4/Components/estadoai.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <br>
+  <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
+</p>
 
+**Diagramas de Estados**
 
-<img src="assets/chapter4/Components/estadopayment.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <br>
+  <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal <b>FALLIDO_PERMANENTE</b>).</em>
+</p>
 
+<p align="center">
+  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <br>
+  <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
+</p>
 
-<img src="assets/chapter4/Components/estadotracking.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <br>
+  <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
+</p>
 
-<b>Diagrama de Clases</b>
+<p align="center">
+  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <br>
+  <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
+</p>
 
-<img src="assets/chapter4/DiagramClass.png" alt="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <br>
+  <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
+</p>
+
+**Diagrama de Clases**
+
+<p align="center">
+  <img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+  <br>
+  <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
+</p>
+
+**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como Strategy para la flexibilidad en pagos y Factory para la gestión de perfiles de usuario, asegurando la trazabilidad con los patrones definidos en la sección 4.1.6.
 
 #### 4.1.5 Relational/Non Relational Database Diagram
 
-<img src="assets/chapter4/Base de Datos-BodyMatch.jpg" alt="">
+<img src="./assets/chapter4/Base de Datos-BodyMatch.jpg" alt="Database Diagram BodyMatch AI"">
+**Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
+
+#### 4.1.6. Design Patterns
+
+En esta sección se documentan los patrones de diseño adoptados en **BodyMatch AI**,
+tanto en el backend (Spring Boot) como en el cliente móvil (Flutter). Cada patrón se
+justifica con la clase concreta que lo implementa, el atributo de calidad que satisface
+y la referencia al Quality Attribute Scenario (QAS) correspondiente.
 
 
-#### 4.1.6 Design Patterns
+##### 4.1.6.1 Patrones de Creación
 
-- <b>Patron Strategy:</b> Con este patron de comportamiento, buscamos facilitar el acceso a distintos tipos de pagos sin la necesidad de hacer muchas clases para cada una de ellas. Con este patrón podremos cambiar entre proveedores sin llegar a tocar el código a profundidad.
-<img src="assets/chapter4/Strategy Method.png" alt="" />
+Los patrones de creación encapsulan la lógica de instanciación, evitando que el resto
+del sistema dependa de constructores directos y previniendo la creación de objetos en
+estados inválidos.
 
-- <b>Patrón Factory:</b> Este patrón creacioal nos permite utilizar interfaces para poder crear objetos en una superclase, miengras que las subclases puedan modificar el tipo de objeto creado. Con este patrón buscamos tener una visión a futuro en caso de que se quieran agregar muchos más tipos de perfiles. Además con este patrón se cumple uno de los principios SOLID "Open/Closed Principle", permitiendonos agregar cuantas clases querramos sin alterar significativamente el código.
-<img src="assets/chapter4/Factory Method.png" alt=""/>
+---
+
+**Factory Method**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando se necesita crear entidades de dominio garantizando que sus invariantes de negocio se cumplan desde el momento de la creación. |
+| **Beneficio** | Encapsula la lógica de construcción. El resto del sistema nunca instancia la entidad con `new` directamente, eliminando estados inconsistentes. |
+| **Clases en BodyMatch AI** | `User.create(String email, String passwordHash, Role role)` en el Bounded Context **IAM**; `ExerciseVideo.register(UUID athleteId, String blobUrl, String exerciseType)` en **Video Management**. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05 (incorporar nuevo proveedor de pagos sin modificar lógica existente). |
+
+[IMAGEN: Fragmento del método estático User.create() mostrando la validación de invariantes
+antes de devolver la instancia]
+
+---
+
+##### 4.1.6.2 Patrones de Comportamiento
+
+Los patrones de comportamiento definen cómo interactúan los objetos y cómo se distribuyen
+las responsabilidades en tiempo de ejecución.
+
+---
+
+**Strategy**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando existen múltiples algoritmos intercambiables para una misma operación y la elección debe poder cambiarse sin modificar el código cliente. |
+| **Beneficio** | El módulo de pagos puede cambiar de proveedor (Stripe → MercadoPago) o el módulo IAM puede cambiar el algoritmo de hashing sin afectar la lógica de negocio. |
+| **Interfaz** | `PaymentGatewayStrategy` con implementaciones `StripePaymentGateway` en **Membership & Payments**; `HashingService` con implementación `BCryptHashingService` en **IAM**; `TokenService` con implementación `JwtTokenService` en **IAM**. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05: la incorporación de un nuevo gateway requiere únicamente implementar la interfaz `PaymentGatewayStrategy`, sin tocar ninguna otra clase. |
+
+[IMAGEN: Diagrama UML de la interfaz PaymentGatewayStrategy con sus implementaciones
+concretas (StripePaymentGateway y la extensión futura)]
+
+---
+
+**Command**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando una operación del sistema debe representarse como un objeto para desacoplar quien solicita la acción de quien la ejecuta (patrón CQRS). |
+| **Beneficio** | Permite trazar, validar y encolar acciones antes de ejecutarlas, y es la base del patrón CQRS implementado en todos los bounded contexts. |
+| **Clases en BodyMatch AI** | `SignUpAthleteCommand`, `SignInCommand` en **IAM**; `UploadExerciseVideoCommand`, `RequestVideoAnalysisCommand` en **Video Management**; `ProcessFoodImageCommand` en **Nutrition**. |
+| **Atributo de calidad** | Mantenibilidad y Rendimiento — facilita el procesamiento asíncrono (QAS-01) al encolar comandos pesados sin bloquear el hilo principal. |
+
+---
+
+**Observer**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando un evento producido en un bounded context debe disparar reacciones en otros contextos sin crear dependencias directas entre ellos. |
+| **Beneficio** | Desacoplamiento entre bounded contexts. El contexto emisor no conoce a los suscriptores. |
+| **Implementación** | Eventos de dominio publicados con `ApplicationEventPublisher` de Spring y consumidos con `@EventListener`. Ejemplo: `VideoAnalysisCompletedEvent` publicado por **Video Management** y escuchado por **Training Tracker** para actualizar las métricas del atleta. |
+| **Atributo de calidad** | Mantenibilidad — permite agregar nuevos suscriptores sin modificar el contexto emisor. |
+
+---
+
+##### 4.1.6.3 Patrones de Estructura
+
+Los patrones estructurales organizan la composición de objetos para reducir el acoplamiento
+entre componentes del sistema.
+
+---
+
+**Facade**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando un bounded context necesita consumir datos de otro sin acceder a su modelo interno. |
+| **Beneficio** | Reduce el acoplamiento entre bounded contexts. Cada contexto expone únicamente la información que otros necesitan, protegiendo su modelo de dominio. |
+| **Clases en BodyMatch AI** | `IamContextFacade` — expone métodos como `getAthleteProfile(UUID userId)` que **Matchmaking** y **Training Tracker** consumen sin conocer las entidades internas de IAM; `MatchmakingContextFacade` — usada por **Training Tracker** para consultar sesiones programadas. |
+| **Atributo de calidad** | Mantenibilidad — los cambios internos en el IAM no afectan a los contextos que lo consumen a través de la fachada. |
+
+[IMAGEN: Diagrama de la interfaz IamContextFacade con los métodos que expone hacia otros
+bounded contexts]
+
+---
+
+##### 4.1.6.4 Patrones Empresariales
+
+Los patrones empresariales resuelven problemas comunes en aplicaciones de negocio: gestión
+de lógica de aplicación, persistencia, transferencia de datos y coordinación de
+transacciones.
+
+---
+
+**Service Layer (Command Service / Query Service)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para centralizar la lógica de aplicación, separándola del dominio y de la infraestructura. |
+| **Beneficio** | Cada bounded context tiene servicios de comando y consulta con responsabilidad única, lo que facilita las pruebas unitarias de forma aislada. |
+| **Clases en BodyMatch AI** | `UserCommandServiceImpl`, `UserQueryServiceImpl` en **IAM**; `VideoCommandServiceImpl`, `VideoQueryServiceImpl` en **Video Management**; `NutritionCommandServiceImpl` en **Nutrition**. |
+| **Atributo de calidad** | Mantenibilidad — el patrón CQRS (sección 4.1.5) se apoya directamente en esta separación. |
+
+---
+
+**Repository Pattern**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para abstraer el acceso a la base de datos del resto del dominio. |
+| **Beneficio** | El dominio interactúa con interfaces (`UserRepository`) sin conocer la implementación de persistencia. Facilita los tests con mocks. |
+| **Clases en BodyMatch AI** | `UserRepository`, `RoleRepository` en **IAM**; `ExerciseVideoRepository` en **Video Management**; `CoachProfileRepository`, `SessionRepository` en **Matchmaking**; `MetricRepository` en **Training Tracker**; `FoodLogRepository` en **Nutrition**. Todos extienden `JpaRepository` de Spring Data. |
+| **Atributo de calidad** | Mantenibilidad — el cambio de motor de base de datos solo requeriría modificar las implementaciones de repositorio. |
+
+---
+
+**Data Transfer Object (DTO) y Mapper / Assembler**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando se necesita transferir datos entre la capa de dominio y la capa de interfaz (REST controllers) sin exponer las entidades internas. |
+| **Beneficio** | El modelo de dominio queda protegido. Los cambios en la API REST no obligan a cambiar las entidades, y viceversa. |
+| **Clases en BodyMatch AI** | **Recursos (DTO de salida):** `UserResource`, `AuthenticatedUserResource`, `ExerciseVideoResource`, `CoachProfileResource`, `SessionResource`, `MetricResource`, `FoodLogResource`. **Comandos (DTO de entrada):** `SignUpAthleteResource`, `SignInResource`, `CreateMetricResource`. **Assemblers:** `UserResourceFromEntityAssembler`, `ExerciseVideoResourceFromEntityAssembler`, `SessionResourceFromEntityAssembler`. |
+| **Atributo de calidad** | Seguridad y Mantenibilidad — los datos sensibles de las entidades (como el hash de contraseña) nunca se exponen en los recursos de respuesta. |
+
+---
+
+**Unit of Work**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para coordinar múltiples operaciones de base de datos como una unidad atómica. |
+| **Beneficio** | Garantiza la consistencia de los datos: o todas las operaciones de un caso de uso se confirman, o ninguna. |
+| **Implementación** | Gestionado por JPA/Hibernate a través de la anotación `@Transactional` en los métodos de los Command Services. Ejemplo: `UserCommandServiceImpl.registerAthlete()` crea el usuario y asigna su rol en una única transacción. |
+| **Atributo de calidad** | Disponibilidad — QAS-03: garantiza que la consistencia no se comprometa bajo carga concurrente. |
+
+---
+
+**Gateway**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para encapsular la comunicación con servicios externos o con otros bounded contexts. |
+| **Beneficio** | El sistema no depende directamente de la API externa. Si el proveedor cambia, solo se modifica la clase Gateway. |
+| **Clases en BodyMatch AI** | `GeminiAIGateway` — encapsula las llamadas a la API de Gemini para el análisis de video y de imágenes de alimentos; `StripeGateway` — encapsula las llamadas a la API de Stripe para el procesamiento de pagos; `AzureBlobStorageGateway` — gestiona la subida y recuperación de videos. Adicionalmente, `IamContextFacade` actúa como Gateway interno para el acceso cross-context. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05 y AC-04: la abstracción detrás del Gateway permite sustituir Gemini AI sin afectar la lógica de Video Management. |
+
+[IMAGEN: Diagrama de la clase GeminiAIGateway mostrando el método analyzeVideo() y
+su integración con el VideoCommandService]
+
+---
+
+##### 4.1.6.5 Patrones Arquitectónicos
+
+Los patrones arquitectónicos establecen la organización de alto nivel del sistema, definiendo
+cómo se estructuran y comunican sus grandes componentes.
+
+---
+
+**CQRS (Command Query Responsibility Segregation)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para separar las operaciones de escritura (comandos) de las de lectura (consultas) dentro de cada bounded context. |
+| **Beneficio** | Mejora la claridad del código y sienta las bases para escalar la lectura y escritura de forma independiente en el futuro. |
+| **Implementación en BodyMatch AI** | Cada bounded context tiene dos interfaces de servicio diferenciadas: `XxxCommandService` (operaciones de escritura: crear, actualizar, eliminar) y `XxxQueryService` (operaciones de lectura: buscar, listar, obtener). Ejemplo en IAM: `UserCommandService.registerAthlete(SignUpAthleteCommand)` y `UserQueryService.getUserById(UUID id)`. |
+| **Atributo de calidad** | Mantenibilidad y Rendimiento — el equipo puede optimizar las consultas de lectura (añadir caché, índices) sin tocar la lógica de escritura. |
+
+---
+
+**Layered Architecture (Arquitectura por Capas)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para organizar el código en capas con responsabilidades bien definidas y dependencias que fluyen en una única dirección (hacia adentro). |
+| **Beneficio** | Ninguna capa externa conoce los detalles de una capa más interna. Los cambios en la infraestructura (base de datos, servicios externos) no afectan al dominio. |
+| **Estructura en BodyMatch AI** | Cada bounded context está organizado en cuatro capas: **`domain`** (entidades, value objects, interfaces de repositorio); **`application`** (command services, query services, comandos, eventos); **`infrastructure`** (implementaciones de repositorio JPA, gateways externos); **`interfaces`** (REST controllers, resources/DTOs, assemblers). |
+| **Atributo de calidad** | Mantenibilidad — AC-06: el esquema por bounded context en PostgreSQL y la separación por capas facilitan la migración futura a microservicios independientes. |
+
+[IMAGEN: Diagrama de la estructura de paquetes de un bounded context (ej. IAM)
+mostrando las cuatro capas: domain / application / infrastructure / interfaces]
+
+---
+
+**MVC en Flutter (Cliente Móvil)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para estructurar la capa de presentación de la aplicación móvil separando la vista, la lógica de presentación y el acceso a datos. |
+| **Beneficio** | Facilita el mantenimiento y las pruebas de la UI de forma independiente de la lógica de negocio. |
+| **Implementación en BodyMatch AI** | **Model:** clases Dart que representan las respuestas de la API (ej. `UserModel`, `ExerciseVideoModel`, `CoachProfileModel`). **View:** Widgets de Flutter que renderizan la UI (ej. `LoginScreen`, `VideoUploadScreen`, `AnalysisFeedbackScreen`). **Controller:** clases que coordinan la comunicación entre la vista y el repositorio de datos, gestionando el estado con Provider o Riverpod (ej. `AuthController`, `VideoController`). Los repositorios del cliente consumen los endpoints REST documentados en la sección 5.2.1.5. |
+| **Atributo de calidad** | Mantenibilidad y Usabilidad — los cambios en el diseño visual no afectan la lógica de consumo de la API, y viceversa. |
+
+[IMAGEN: Diagrama de la estructura de carpetas del proyecto Flutter mostrando la
+separación models / views / controllers para el módulo de Video Analysis]
+
+---
+
+> **Trazabilidad de patrones con Quality Attribute Scenarios:**
+>
+> | Patrón | QAS relacionado | Atributo satisfecho |
+> |---|---|---|
+> | Strategy (`PaymentGatewayStrategy`) | QAS-05 | Mantenibilidad |
+> | Strategy (`HashingService`, `TokenService`) | QAS-02 | Seguridad |
+> | Gateway (`GeminiAIGateway`) | QAS-01, AC-04 | Rendimiento, Mantenibilidad |
+> | Observer (`VideoAnalysisCompletedEvent`) | QAS-01 | Rendimiento |
+> | Repository + Unit of Work | QAS-03, QAS-04 | Disponibilidad, Seguridad |
+> | Facade (`IamContextFacade`) | QAS-05, AC-02 | Mantenibilidad |
+> | CQRS | QAS-01, QAS-03 | Rendimiento, Mantenibilidad |
+> | Layered Architecture | AC-06 | Mantenibilidad |
+> | MVC Flutter | — | Usabilidad, Mantenibilidad |
 
 
 
@@ -1452,26 +1714,479 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 | AC-10 | La falta de observabilidad en el sistema (logs estructurados, métricas, alertas) puede hacer que los problemas en producción pasen desapercibidos o sean difíciles de diagnosticar | Tiempo de detección y resolución de incidentes elevado en producción | Configurar desde el primer despliegue el logging estructurado con Spring Boot + Azure Monitor. Establecer alertas básicas sobre tasas de error HTTP 5xx y tiempos de respuesta por encima del umbral definido |
 
 -----
+
+### 4.3. ADD Iterations
+
+#### 4.3.1 Iteration 1: Análisis
+##### 4.3.1.1 Architectural Design Backlog 1
+
+Ciertos elementos clave de la arquitectura serán esenciales para asegurar la precisión técnica, la confianza del usuario y la escalabilidad del ecosistema **BodyMatch AI**.
+
+#### Seguridad y Privacidad
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-01 (Registro de usuario):** Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | - Implementar autenticación JWT con rotación de tokens.<br>- Configurar control de acceso basado en roles (`ROLE_USER`, `ROLE_COACH`).<br>- Cifrado de datos personales en reposo. | - Solo usuarios autenticados acceden a los planes.<br>- El sistema bloquea intentos de acceso a perfiles ajenos.<br>- Las contraseñas se almacenan mediante hashing robusto (BCrypt). |
+| **US-11 (Subir video del ejercicio):** Como usuario, quiero subir videos para recibir corrección técnica por IA. | - Implementar URLs pre-firmadas para Azure Blob Storage.<br>- Validar la propiedad del video antes de permitir el análisis. | - Los videos son privados y solo accesibles por el dueño y su coach.<br>- El sistema rechaza archivos que no cumplan con el formato de video permitido. |
+
+---
+
+#### Rendimiento y Disponibilidad
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-12 (Feedback automático con IA):** Como usuario, quiero corrección automática de mis ejercicios mediante visión computacional. | - Configurar procesamiento asíncrono de video mediante colas de mensajería.<br>- Implementar caché (Redis) para resultados de análisis frecuentes.<br>- Configurar balanceador de carga para el servicio de análisis. | - La subida de video no bloquea la interfaz del usuario.<br>- El sistema procesa videos de hasta 200MB en menos de 5 minutos bajo carga normal. |
+| **US-06 (Búsqueda de coaches):** Como usuario, quiero buscar coaches según objetivos y filtros específicos. | - Optimizar consultas en PostgreSQL mediante índices en especialidad y precio.<br>- Implementar paginación en el catálogo de coaches. | - Los resultados de búsqueda se muestran en menos de 800ms.<br>- El sistema soporta 200 usuarios concurrentes buscando coaches sin degradación. |
+
+---
+
+#### Usabilidad e Innovación
+
+| Historia de Usuario | Tareas | Criterios de Aceptación |
+|----------------------|--------|--------------------------|
+| **US-24 (Reconocimiento de alimentos mediante IA):** Como usuario, quiero que la IA identifique alimentos en fotos para macros. | - Integrar API de visión computacional para detección de alimentos.<br>- Interfaz simplificada de captura de foto rápida. | - Un usuario puede registrar una comida en menos de 30 segundos.<br>- La IA identifica correctamente al menos el 80% de alimentos comunes. |
+| **US-16 (Visualización de progreso):** Como usuario, quiero ver gráficos de mi evolución física (pesos, medidas, macros). | - Gráficos interactivos de carga y medidas corporales.<br>- Sincronización automática de datos entre nutrición y entrenamiento. | - Los gráficos cargan instantáneamente y permiten filtrar por rangos de tiempo (semana, mes, año). |
+
+##### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
+
+En esta iteración, seleccionaremos los **drivers clave** que servirán como base para definir metas que aseguren la precisión técnica y la seguridad de la plataforma **BodyMatch AI**.
+
+---
+
+##### Metas de la Iteración
+
+| Meta | Objetivo | Acciones Clave |
+|------|----------|----------------|
+| **Precisión Técnica en Feedback** | Garantizar que el análisis de IA sea confiable para prevenir lesiones durante el entrenamiento. | - Diseñar el flujo de integración con Gemini AI para análisis corporal.<br>- Implementar lógica de procesamiento asíncrono para no degradar el rendimiento. |
+| **Integridad y Privacidad Multimedia** | Proteger la privacidad de los usuarios al subir videos de su ejecución física y fotos de alimentos. | - Implementar almacenamiento seguro en Azure Blob Storage.<br>- Establecer políticas de acceso restringido a archivos multimedia. |
+| **Escalabilidad de Conexión Coach-Usuario** | Facilitar el matchmaking y la gestión de carteras de clientes para los entrenadores de forma fluida. | - Diseñar el Bounded Context de Matchmaking con búsqueda optimizada.<br>- Implementar el sistema de gestión de disponibilidad para coaches. |
+
+---
+
+##### Objetivo de la Iteración
+
+- **Precisión:** Establecer las bases técnicas para el análisis de video por IA y la corrección de postura mediante visión computacional.
+- **Seguridad:** Robustecer la protección de videos y datos biométricos sensibles bajo estándares de la Ley N° 29733 (Perú).
+- **Gestión:** Optimizar la infraestructura para soportar la comunicación, el seguimiento y la monetización entre coaches y atletas.
+
+---
+
+##### 4.3.1.3 Choose One or More Elements of the System to Refine
+
+Para avanzar en el desarrollo de **BodyMatch AI**, se han seleccionado los siguientes elementos del sistema para ser refinados:
+
+---
+
+| Área | Elemento a Refinar | Razón para el Refinamiento | Esperado |
+|------|---------------------|----------------------------|----------|
+| **Análisis de Video (IA)** | Módulo de Video Management y Worker de IA | Es el núcleo de la propuesta de valor. Requiere desacoplar la carga del video del procesamiento pesado. | Procesamiento asíncrono, feedback detallado de errores técnicos y almacenamiento cifrado. |
+| **Marketplace de Coaches** | Módulo de Matchmaking y Gestión de Sesiones | Los usuarios necesitan encontrar al profesional adecuado rápidamente para iniciar el servicio. | Búsquedas filtradas por objetivos, perfiles detallados y sistema de reservas sin conflictos de horario. |
+| **Seguridad de Accesos** | Módulo IAM (Identity & Access Management) | La plataforma maneja datos de salud y financieros que requieren máxima protección. | Autenticación JWT con rotación, RBAC estricto y protección de endpoints multimedia. |
+
+##### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+Se han identificado conceptos de diseño específicos que abordan los drivers de **precisión, seguridad y escalabilidad**:
+
+---
+
+##### Seguridad
+
+#### Modelo RBAC (Role-Based Access Control)
+- **Descripción:** Implementación de permisos diferenciados donde el Atleta accede a su progreso y el Coach a las herramientas de gestión de su cartera.
+- **Justificación:** Previene que un usuario acceda a datos de salud de terceros o a configuraciones de pago de los entrenadores.
+
+##### API Gateway Seguro (Spring Cloud Gateway)
+- **Descripción:** Centralizar la validación de tokens JWT y la sanitización de inputs antes de llegar a los microservicios de entrenamiento o nutrición.
+- **Justificación:** Protege el sistema contra inyecciones y asegura que solo el tráfico legítimo consuma recursos de la infraestructura.
+
+---
+
+##### Precisión y Rendimiento
+
+##### Procesamiento Asíncrono de Tareas (Worker Pattern)
+- **Descripción:** Uso de colas de mensajes (Azure Service Bus) para enviar los videos al servicio de IA sin mantener al usuario esperando en la pantalla de carga.
+- **Justificación:** Mejora drásticamente la usabilidad, permitiendo que el Atleta siga con su rutina mientras el video se analiza en segundo plano.
+
+---
+
+##### Escalabilidad
+
+##### Bounded Contexts Independientes (DDD)
+- **Descripción:** Separación física y lógica de los módulos de Nutrición, Entrenamiento y Pagos.
+- **Justificación:** Permite escalar solo el servicio de análisis de video (que consume más recursos) sin replicar innecesariamente otros módulos.
+
+---
+
+##### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+| Elemento | Responsabilidad | Interfaces |
+|----------|-----------------|------------|
+| **Módulo Video Management** | Gestionar la subida, almacenamiento y estados del análisis de video técnico. | API REST para upload; Interfaz con Azure Blob Storage. |
+| **Worker de Análisis IA** | Integración con Gemini AI para procesar el video y generar el feedback técnico. | Consumidor de colas; JSON de respuesta con métricas corporales. |
+| **Módulo Matchmaking** | Motor de búsqueda de coaches basado en objetivos, calificación y precio. | API REST de búsqueda filtrada; Integración con perfiles de Atleta. |
+| **API Gateway** | Punto de entrada seguro para la App Móvil; gestión de Cross-Cutting Concerns. | Exposición de endpoints `/api/v1/auth`, `/api/v1/training`; Validación de JWT. |
+| **Training Tracker** | Registro histórico de cargas, RPE y evolución física del usuario. | API de métricas; Dashboards interactivos para frontend. |
+| **Nutrition BC** | Análisis de imágenes de comida para conteo de calorías y macros. | API de visión computacional; Registro de historial nutricional. |
+
+---
+
+##### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
+
+**Sketch Views**
+
+- ***Diagrama C4 - Container Level***
+<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
+
+
+- ***Diagrama UML - Modelo de Dominio***
+  <img src="assets/chapter4/DiagramClass.png" alt="">
+
+**Decisiones de Diseño Registradas**
+
+| ID | Título | Estado | Contexto | Decisión | Consecuencias |
+|--------|---------------------------------------------|----------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------|
+| DD-001 | Monolito Modular orientado a Microservicios | Aceptada | Necesidad de rapidez inicial sin perder escalabilidad por Bounded Context. | Organizar el código por paquetes independientes dentro de un monolito modular (DDD). | - Despliegue simple inicial <br> - Fácil migración futura <br> - Aislamiento de lógica |
+| DD-002 | Procesamiento Asíncrono de Video | Aceptada | El análisis de IA es computacionalmente costoso para una respuesta síncrona. | Utilizar Azure Service Bus para encolar tareas de análisis y notificar vía Push. | - UI fluida <br> - Manejo de reintentos automático <br> - Complejidad en estados |
+| DD-003 | Almacenamiento en Azure Blob Storage | Aceptada | Videos corporales requieren seguridad y durabilidad masiva. | Usar Blob Storage con acceso restringido mediante URLs firmadas (SAS). | - Alta seguridad de archivos <br> - Escalabilidad infinita <br> - Dependencia de Azure |
+| DD-004 | PostgreSQL con Esquemas por Contexto | Aceptada | Múltiples módulos requieren persistencia relacional (entrenamientos, pagos). | Usar una sola instancia pero con esquemas separados para evitar acoplamiento. | - Integridad referencial fuerte <br> - Backups centralizados <br> - Aislamiento de tablas |
+| DD-005 | Redis para Gestión de Sesiones y Caché | Aceptada | Necesidad de baja latencia en dashboards de progreso y validación de tokens. | Implementar Redis para almacenar resultados analíticos y sesiones activas. | - Reducción de carga en DB <br> - Tiempos de respuesta mínimos <br> - Gestión de infra adicional |
+| DD-006 | Sistema de Seguridad RBAC + JWT | Aceptada | Driver crítico de protección de datos de salud y privacidad. | Implementar Spring Security con JWT (Access/Refresh tokens) y roles (User/Coach). | - Control granular <br> - Cumplimiento de Ley 29733 <br> - Auditabilidad completa |
+
+---
+
+##### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+**Análisis del Diseño Actual**
+
+Tras completar la Iteración 1 del método ADD v3, se ha establecido una arquitectura para **BodyMatch AI** que prioriza el flujo asíncrono y la seguridad. El análisis revela:
+
+- **Fortalezas del Diseño Actual**
+    - **Aislamiento de IA:** El desacoplamiento del análisis asegura que fallos en la API externa no afecten la navegación general de la app.
+    - **Escalabilidad Multimedia:** El uso de Azure Blob Storage garantiza que el crecimiento de videos grabados no sature el servidor de aplicaciones.
+    - **Protección de Datos:** La estructura RBAC protege la relación entre el Coach y el Atleta, asegurando la privacidad del progreso físico.
+
+- **Áreas de Mejora Identificadas**
+    - **Costo Operativo:** El uso de múltiples servicios en la nube (Service Bus, Redis, Storage) requiere un monitoreo estricto de costos en la fase académica.
+    - **Sincronización:** La integración de métricas de Nutrición y Entrenamiento debe ser auditada para evitar discrepancias en los reportes diarios.
+
+**Review Iteration Goal**
+
+Enlace del Tablero Kanban: 
+
+<img src="assets/chapter4/Tablero-kanban.png" alt ="">
+
+
+https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai
+
+
+
+# Capítulo V: Product Implementation, Validation & Deployment
+##  5.1	Testing Suites & General Patterns
+### 5.1.1	Backend Application Core Testing Suite 
+### 5.1.2	Pattern Based Backend Application(s)
+### 5.1.3	Pattern Based Custom Software Library
+### 5.1.4	Framework Pattern Driven Refactoring Report
+
+### 5.2	Software Configuration Management
+### 5.2.1	Software Development Environment Configuration
+### 5.2.2	 Source Code Management
+### 5.2.3	Source Code Style Guide & Conventions
+### 5.2.4	 Software Deployment Configuration
+
+## 5.3	Microservices Implementation
+### 5.2.1	Sprint 1
+##### 5.2.1.1	Sprint Backlog 1
+**Sprint Planning Background**
+
+| **Sprint 1** | **Sprint 1 BodyMatch AI** |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Date** | 04/05/2026     |
+| **Time** | 06:00 PM     |
+| **Location** | Servidor de Discord del Equipo    |
+| **Prepared By** |   Pablo Geronimo  |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara   |
+| **Sprint 1 Review Summary** | Se desarrolló y desplegó la Landing Page interactiva mostrando la propuesta de valor, servicios, casos de éxito y precios. Se implementó el frontend móvil para las vistas core (Autenticación y Subida/Análisis de Video). En el backend, se logró la arquitectura híbrida con el monolito core y los microservicios IAM y Videos desplegados y documentados. |
+| **Sprint 1 Retrospective Summary** | El equipo logró una excelente comunicación para sincronizar los contratos de la API entre el frontend móvil y el backend. Se destacó el éxito en la extracción inicial de los microservicios, aunque se debe afinar la estimación de tiempos de integración con IA para futuros sprints. |
+| **Sprint Goal & User Stories** | Construir el núcleo visible y funcional de BodyMatch AI: Landing Page pública, backend con arquitectura híbrida (Monolito + MS), y las pantallas core móviles para el registro, inicio de sesión y análisis de técnica con IA.                                       |
+| **Sprint 1 Goal** | Desplegar la Landing Page, asegurar el ecosistema backend (IAM, Videos y Monolito), mostrar las pantallas móviles core operativas y entregar la documentación técnica completa del Sprint 1.      |
+| **Sprint 1 Velocity** | 20 User Stories / Technical Stories completadas     |
+| **Sum of Story Points** | 45 Story Points
+
+**Sprint Backlog**
+
+El objetivo principal de este Sprint fue establecer la presencia digital del producto (Landing Page), sentar las bases de seguridad (IAM) y desarrollar el núcleo de valor: el análisis de videos mediante IA. 
+
+A continuación, se muestra el enlace al tablero de gestión:
+
+[Product Backlog en Trello](https://trello.com/b/Sn0UEEhS/bodymatch-ai-product-backlog)
+
+
+**Descomposición de Tareas del Sprint:**
+
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| **US33** | Consultar información de servicios | T01 | Sección de Servicios (Landing) | Maquetar la sección "Tecnología que entiende tu cuerpo" detallando el análisis IA y Marketplace. | 3h | Pablo Geronimo | Done |
+| **US34** | Solicitar demostración | T01 | Modal de Contacto/Demo | Implementar formulario interactivo "Solicita tu Demo" con validación de campos. | 4h | Anyelo Alejos | Done |
+| **US35** | Consultar planes y precios | T01 | Sección Pricing | Maquetar planes "Básico" y "Premium" con sus beneficios en la Landing Page. | 2h | Marcia Melgarejo | Done |
+| **US36** | Solicitar asistencia | T01 | Sección FAQ | Desarrollar sección interactiva de preguntas frecuentes en la landing. | 3h | Jorge Guevara | Done |
+| **US37** | Consultar casos de éxito | T01 | Galería de Éxito y Filtros | Desarrollar sección de testimonios con filtros dinámicos (Casa, Gimnasio, Coaches). | 4h | Pablo Geronimo | Done |
+| **US01** | Registro de usuario | T01 | UI de Registro Mobile | Crear pantallas de registro (Atleta/Coach) en la aplicación móvil. | 5h | Anyelo Alejos | Done |
+| | | T02 | API de Registro (IAM MS) | Implementar endpoints `POST /sign-up` en el microservicio IAM. | 6h | Marcia Melgarejo | Done |
+| **US02** | Inicio de sesión | T01 | UI de Login Mobile | Crear pantalla de inicio de sesión y gestión de tokens en el dispositivo. | 4h | Jorge Guevara | Done |
+| | | T02 | API de Login (IAM MS) | Implementar endpoint `POST /sign-in` devolviendo JWT. | 5h | Pablo Geronimo | Done |
+| **US04** | Cierre de sesión | T01 | Lógica de Logout Mobile | Limpiar tokens almacenados localmente y redirigir al Login. | 2h | Anyelo Alejos | Done |
+| | | T02 | API Revoke Token | Implementar endpoint `POST /sign-out` en el MS IAM para invalidar sesión. | 3h | Marcia Melgarejo | Done |
+| **US05** | Configuración de perfil | T01 | UI Formulario Perfil | Crear vista móvil para que el usuario ingrese sus datos biométricos y objetivos. | 4h | Jorge Guevara | Done |
+| | | T02 | API Perfil Atleta | Implementar endpoint `PUT /profile` en el Monolito Core. | 4h | Pablo Geronimo | Done |
+| **US06** | Búsqueda de coaches | T01 | UI Buscador y Filtros | Diseñar vista móvil con barra de búsqueda y filtros (precio, experiencia). | 6h | Anyelo Alejos | Done |
+| | | T02 | API Search Coaches | Desarrollar query dinámica en PostgreSQL para el endpoint de búsqueda. | 5h | Marcia Melgarejo | Done |
+| **US07** | Visualización de perfil coach | T01 | UI Detalle Coach | Maquetar pantalla móvil con la información, reseñas y tarifas del coach. | 5h | Jorge Guevara | Done |
+| | | T02 | API Get Coach | Implementar endpoint `GET /coaches/{id}`. | 3h | Pablo Geronimo | Done |
+| **US11** | Subir video del ejercicio | T01 | UI Cámara y Subida | Integrar cámara y selector de archivos nativo en la app móvil Android/iOS. | 6h | Anyelo Alejos | Done |
+| | | T02 | API Gestión de Video | Desarrollar endpoint de subida (multipart) en el microservicio de Videos. | 6h | Marcia Melgarejo | Done |
+| **US12** | Feedback automático con IA | T01 | UI Resultados IA | Maquetar pantalla de métricas, keypoints y feedback visual en la app móvil. | 8h | Jorge Guevara | Done |
+| | | T02 | Integración Gemini AI | Conectar el MS Videos con la API de Gemini para procesamiento de frames. | 8h | Pablo Geronimo | Done |
+| **US15** | Registro métricas físicas | T01 | UI Historial Métricas | Crear vista para registrar peso y medidas corporales a lo largo del tiempo. | 4h | Anyelo Alejos | Done |
+| | | T02 | API Post Metrics | Crear lógica y endpoint `POST /metrics` en el módulo de Training (Monolito). | 4h | Marcia Melgarejo | Done |
+| **TS01** | Middleware JWT | T01 | Seguridad Gateway | Implementar validación de JWT en cabeceras de Spring Security. | 5h | Jorge Guevara | Done |
+| **TS02** | Endpoints Matchmaking | T01 | Configuración Controladores | Estructurar y exponer la capa REST del Bounded Context de Matchmaking. | 4h | Pablo Geronimo | Done |
+| **TS03** | Endpoints Video | T01 | Almacenamiento Blob | Configurar persistencia de videos en Azure Blob Storage / File System local. | 5h | Anyelo Alejos | Done |
+| **TS04** | Endpoint Perfil Atleta | T01 | Integración CQRS | Configurar Command/Query handlers para recuperar datos del perfil del atleta. | 4h | Marcia Melgarejo | Done |
+
+##### 5.2.1.2	Development Evidence for Sprint Review
+
+
+
+##### 5.2.1.3	Testing Suite Evidence for Sprint Review
+
+
+
+##### 5.2.1.4	Execution Evidence for Sprint Review
+Para este primer Sprint de BodyMatch AI, el equipo ejecutó el desarrollo en tres frentes paralelos: la publicación de la Landing Page institucional, el desarrollo del Frontend Mobile para los usuarios, y la implementación de la arquitectura backend (híbrida).
+
+**1. Evidencia en Landing Page (Web)**
+
+A través de esta landing, los visitantes pueden visualizar claramente la propuesta de valor: entrenar con la precisión de la IA y la empatía de un coach. Las User Stories ejecutadas y su evidencia visual son:
+
+| ID | User Story | Evidencia en Landing Page |
+|---|---|---|
+| US33 | Consultar información de servicios | Sección "Servicios" con diseño en tarjetas explicando el análisis IA, Marketplace y Nutrición. |
+| US34 | Solicitar demostración | Modal interactivo "Solicita tu Demo" con formulario validado. |
+| US35 | Consultar planes y precios | Sección "Precios" detallando las diferencias entre el plan Gratis y Premium. |
+| US36 | Solicitar asistencia | Sección "FAQ" (Preguntas Frecuentes) resueltas de forma dinámica. |
+| US37 | Consultar casos de éxito | Sección "Galería de Éxito" con testimonios reales y filtros por categoría (Casa/Gym/Coach). |
+
+*Evidencia Visual Landing Page:*  
+
+<img src="assets/chapter5/swagger_prueba_landing.png" alt ="">
+
+**2. Evidencia en Frontend App (Mobile)**
+
+Se desarrollaron las pantallas núcleo de la aplicación móvil, garantizando una experiencia fluida para el Atleta al momento de interactuar con la IA y gestionar su perfil.
+
+<img src="assets/chapter5/evidence_deployment_mobile.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile2.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile3.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile4.jpg" alt ="">  
+<img src="assets/chapter5/evidence_deployment_mobile5.jpg" alt ="">    
+
+
+**3. Evidencia en Web Services (Backend Híbrido)**
+
+Durante este Sprint se inició la migración de nuestra arquitectura monolítica hacia un enfoque de microservicios. Para esta entrega, se han extraído e implementado exitosamente como microservicios independientes los Bounded Contexts de **IAM (Identity and Access Management)** y **Videos (Gestión y Análisis de Ejercicios)**, mientras que los módulos de Matchmaking, Training, Nutrition y Membership se mantienen operativos dentro del Monolito central.
+
+Para comprobar la correcta ejecución del backend, se realizaron pruebas de integración utilizando Postman y la interfaz interactiva de Swagger UI. 
+
+A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas comprobando la conexión y las respuestas de la base de datos:
+
+<img src="assets/chapter5/swagger1.jpg" alt ="">
+<img src="assets/chapter5/swagger2.jpg" alt ="">
+<img src="assets/chapter5/swagger3.jpg" alt ="">
+<img src="assets/chapter5/swagger4.jpg" alt ="">
+
+
+
+##### 5.2.1.5	Microservices Documentation Evidence for Sprint Review
+En esta sección se incluye la relación de Endpoints documentados con OpenAPI (Swagger). Se logró integrar exitosamente los Web Services de BodyMatch AI, estandarizando la comunicación entre el frontend móvil y el ecosistema híbrido (Microservicios + Monolito).
+
+**1. Matriz de Trazabilidad de Requerimientos**
+Esta tabla demuestra que los endpoints implementados cubren más del 50% del alcance funcional definido en las User Stories del Sprint:
+
+| US ID | Título de la User Story | Endpoint(s) Relacionado(s) | Estado |
+|---|---|---|---|
+| US01 | Registro de usuario | `POST /api/v1/authentication/sign-up/athlete` <br> `POST /api/v1/authentication/sign-up/coach` | Implementado |
+| US02 | Inicio de sesión | `POST /api/v1/authentication/sign-in` | Implementado |
+| US11 | Subir video del ejercicio | `POST /api/v1/exercise-videos` | Implementado |
+| US12 | Feedback automático con IA | `POST /api/v1/exercise-videos/{videoId}/analyze` | Implementado |
+| US16 | Eliminar video de ejercicio | `DELETE /api/v1/exercise-videos/{videoId}` | Implementado |
+| US17 | Consultar video de ejercicio | `GET /api/v1/exercise-videos/{videoId}` | Implementado |
+
+**2. Catálogo de Endpoints y Contratos de Interfaz**
+
+| Acción Implementada | Verbo | Endpoint | Parámetros | Ejemplo de Response | URL Documentación |
+|---|---|---|---|---|---|
+| Registrar Atleta | **POST** | `/api/v1/authentication/sign-up/athlete` | Body (JSON) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
+| Iniciar sesión | **POST** | `/api/v1/authentication/sign-in` | Body (JSON) | `200 OK` | `http://localhost:8091/swagger-ui.html` |
+| Consultar video | **GET** | `/api/v1/exercise-videos/{videoId}` | Path Param | `200 OK` / `404 Not Found` | `http://localhost:8091/swagger-ui.html` |
+| Subir video | **POST** | `/api/v1/exercise-videos` | Form-Data (Multipart) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
+| Eliminar video | **DELETE** | `/api/v1/exercise-videos/{videoId}` | Path Param | `204 No Content` | `http://localhost:8091/swagger-ui.html` |
+
+**3. Ejemplos de Request y Response (JSON)**
+Tal como se solicita en el criterio de evaluación, se presentan ejemplos completos y reales de las peticiones extraídas de la ejecución en Swagger para validar la estructura de datos en los diferentes métodos HTTP:
+
+**A. POST (Crear) - Registro de Atleta**
+* **Endpoint:** `POST /api/v1/authentication/sign-up/athlete`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+- Response (201 Created):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "active": true,
+  "emailVerified": false,
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+**B. POST (Login) - Inicio de Sesión**
+
+* **Endpoint:** `POST /api/v1/authentication/sign-in`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456"
+}
+```
+- Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "accessToken": "eyJhbGciOiJIUzM4NCJ9.eyJzd...",
+  "refreshToken": "7200a4ab-1168-40bf-b184-afa3953786bc",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+Adicionalmente, se presentan las capturas en imágenes de la interacción con la documentación elaborada en Swagger UI utilizando datos de muestra:
+
+**Registro de usuario**:   
+
+<img src="assets/chapter5/swagger_prueba1.png" alt ="">  
+<img src="assets/chapter5/swagger_prueba2.png" alt =""> 
+ <img src="assets/chapter5/swagger_prueba8.png" alt =""> 
+
+**Registro y análisis de video:**  
+
+<img src="assets/chapter5/swagger_prueba3.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba4.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba5.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba6.png" alt ="">
+<img src="assets/chapter5/swagger_prueba7.png" alt =""> 
+
+
+
+**Repositorio y Control de Versiones:**
+El código fuente se encuentra alojado en la organización del equipo.
+
+* **URL del repositorio de Web Services:**  
+  - `https://github.com/G3-FundamentosArqui-7944/bodymatch-backend` 
+  - `https://github.com/G3-FundamentosArqui-7944/microservices` 
+* **Commits relacionados con Documentación (OpenAPI/Swagger):**
+  * `f073594`: *docs: update architecture diagrams and descriptions for clarity and consistency*
+
+
+##### 5.2.1.6	Software Deployment Evidence for Sprint Review
+
+Durante este primer Sprint, las actividades de despliegue continuo (Deployment) se centraron en la publicación en producción de la Landing Page de BodyMatch AI. El objetivo principal fue hacer pública nuestra propuesta de valor de manera rápida, segura y escalable para comenzar a captar el interés de los usuarios y validaciones tempranas. 
+
+Dado que la Landing Page está construida con tecnologías web estáticas, se optó por utilizar **GitHub Pages** como proveedor de alojamiento en la nube (Cloud Hosting). 
+
+
+Capturas del Despliegue
+
+<img src="assets/chapter5/evidence_deployment_landing.jpg" alt =""> 
+
+<img src="assets/chapter5/evidence_deployment_landing2.jpg.png" alt =""> 
+
+
+##### 5.2.1.7	Team Collaboration Insights during Sprint
+
+
+
+##### 5.2.1.8	Kanban Board 
+
+
+
 ## Conclusiones
 
-* La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
+### TB1: Validación de Negocio y Requerimientos
+*   La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches, orientando el diseño hacia una solución centrada en la experiencia del usuario.
+*   El uso de herramientas de investigación como User Personas y Empathy Maps facilitó la identificación de puntos de dolor críticos, como la falta de orientación técnica y la limitada visibilidad de los entrenadores.
+*   La definición del Solution Profile permitió estructurar una propuesta clara que integra el matching de usuarios y el análisis de ejercicios con IA como diferenciales clave frente a la competencia.
+*   Durante esta fase, el equipo demostró la capacidad de adquirir nuevos conocimientos en metodologías de diseño UX y análisis competitivo para fortalecer la base funcional del proyecto.
 
-* El uso de herramientas de investigación como User Personas, Empathy Maps y Scenario Mapping facilitó la identificación de los principales puntos de dolor, tales como la falta de orientación en la ejecución de ejercicios y la limitada visibilidad de los entrenadores, proporcionando una base sólida para el diseño de la solución.
+### TB2: Arquitectura y Diseño Técnico
+*   La aplicación del método Attribute-Driven Design (ADD) permitió alinear las decisiones técnicas con los drivers del negocio, garantizando la resolución de atributos críticos como el rendimiento y la seguridad.
+*   La adopción de Domain-Driven Design (DDD) y principios SOLID estableció una arquitectura modular organizada por Bounded Contexts, asegurando la escalabilidad y mantenibilidad del sistema.
+*   El diseño de una arquitectura basada en microservicios y procesamiento asíncrono responde eficientemente a la carga computacional requerida por el análisis de video con inteligencia artificial.
+*   El equipo consolidó sus conocimientos técnicos al traducir requerimientos funcionales en decisiones arquitectónicas verificables mediante diagramas de contenedores y componentes.
 
-* La definición del Solution Profile permitió estructurar una propuesta clara, integrando funcionalidades clave como el matching entre usuarios y coaches, la mensajería directa y el uso de inteligencia artificial para el análisis de ejercicios, lo que representa un diferencial significativo frente a soluciones tradicionales.
+### TP1: Consolidación y Despliegue
+* **Infraestructura y Despliegue:** Se logró el despliegue exitoso de la Landing Page institucional en GitHub Pages, logrando un tiempo de carga inferior a 2 segundos y disponibilidad global inmediata (ver evidencia de Deployment en sección 5.2.1.6).
 
+* **Mantenibilidad:** La aplicación de los principios SOLID y Domain-Driven Design (DDD) permitió definir 6 Bounded Contexts con fronteras explícitas, reduciendo la complejidad técnica y facilitando la integración de nuevos módulos de nutrición en futuros sprints.
 
- Recomendaciones
+---
 
-* Se recomienda continuar con un proceso de validación continua con usuarios reales (tanto usuarios finales como coaches), a fin de ajustar las funcionalidades y mejorar la experiencia en cada iteración del desarrollo.
+## Recomendaciones
 
-* Es importante implementar un plan piloto con un grupo reducido de usuarios y entrenadores, lo que permitirá evaluar el desempeño de la plataforma en un entorno real y obtener métricas clave para su mejora.
+### TB1: Gestión de Usuario y Producto
+*   Se recomienda continuar con un proceso de validación continua con usuarios reales para ajustar las funcionalidades de la interfaz móvil en cada iteración.
+*   Es importante implementar un plan piloto con un grupo reducido de atletas y coaches para obtener métricas reales sobre la efectividad del emparejamiento.
+*   Se sugiere priorizar en las primeras fases de desarrollo los módulos de mensajería y reserva de sesiones, debido a su alto impacto en la retención de usuarios.
 
-* Se sugiere priorizar en las primeras fases de desarrollo el módulo de matching, mensajería y análisis de ejercicios con inteligencia artificial, debido a su alto impacto en la propuesta de valor del sistema.
+### TB2: Evolución Tecnológica y Seguridad
+*   Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento antes de evolucionar hacia la detección de errores biomecánicos complejos.
+*   Es fundamental implementar de forma estricta las estrategias de seguridad diseñadas, como la autenticación JWT y el control RBAC, para proteger la privacidad de los videos de los usuarios.
+*   Se sugiere monitorear los costos operativos de los servicios en la nube para asegurar que la infraestructura sea sostenible durante la expansión del sistema.
 
-* Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento y evolucionando hacia modelos más precisos que permitan detectar errores complejos en la ejecución de ejercicios.
+### TP1: Despliegue y Arquitectura 
+* Se recomienda consolidar la migración progresiva hacia microservicios implementando un API Gateway robusto (ej. Spring Cloud Gateway) que centralice de forma eficiente el enrutamiento hacia los servicios de IAM, Videos y el Monolito Core.
+* Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
 
-* Es fundamental implementar estrategias de seguridad robustas, incluyendo autenticación mediante JWT y control de acceso basado en roles (RBAC), para proteger la información de los usuarios y garantizar la privacidad de los datos.
+ Anexos
+
+ Diagramas de clase en LucidChart: https://lucid.app/lucidchart/01095f62-b902-4795-a561-f5e08d59b9e6/edit?viewport_loc=-4132%2C-1475%2C9285%2C4267%2C0_0&invitationId=inv_98f67f4a-d93a-433b-afde-2b53c20b0c84
+
+ Diagrama de Componentes : https://online.visual-paradigm.com/share.jsp?id=343538393634332d33
+
+ Enlace del Repositorio Grupal: https://github.com/G3-FundamentosArqui-7944
+
+ Enlace del la documentacion dentro del repositorio: https://github.com/G3-FundamentosArqui-7944/docs
+ 
 
 
  Referencias Bibliográficas
@@ -1485,3 +2200,6 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 * Centro Nacional de Planeamiento Estratégico. (s.f.). Observatorio nacional: Indicadores de salud y bienestar. Recuperado de: https://observatorio.ceplan.gob.pe/ficha/t14
 
 * Instituto Nacional de Estadística e Informática. (2017). Encuesta Demográfica y de Salud Familiar. Recuperado de: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2017/libro.pdf
+
+* Romaní Caycho, M. F., Valverde Palma, X., & Vivanco Ponce, F. (2025). Propuesta de plan de negocio para el desarrollo de una plataforma digital de entrenamientos deportivos personalizados con tecnología GPS en Lima Metropolitana [Tesis de licenciatura, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. 
+https://repositorioacademico.upc.edu.pe/bitstream/handle/10757/686092/Romani_CM.pdf?sequence=16
