@@ -1366,7 +1366,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagrama de Clases**
 
 <p align="center">
-  <img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+  <img src="./assets/chapter5/BodyMatch_AI_Class_Diagram.svg" alt="Class Diagram BodyMatch AI">
   <br>
   <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
 </p>
@@ -1375,7 +1375,11 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 
 #### 4.1.5 Relational/Non Relational Database Diagram
 
-![Base_de_Datos_BodyMatch.jpg](assets/chapter4/Base_de_Datos_BodyMatch.jpg)
+
+<p align="center">
+  <img src="./assets/chapter4/Base_de_Datos_BodyMatch.jpg" alt="data base diagram BodyMatch AI">
+</p>
+
 **Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
 
 #### 4.1.6. Design Patterns
@@ -1466,7 +1470,6 @@ entre componentes del sistema.
 | **Atributo de calidad** | Mantenibilidad — los cambios internos en el IAM no afectan a los contextos que lo consumen a través de la fachada. |
 
 <img src="assets/chapter4/context.png" alt="context">
-![user.png](assets/chapter4/user.png)
 ---
 
 ##### 4.1.6.4 Patrones Empresariales
@@ -1928,10 +1931,10 @@ Los diagramas producidos se presentan en la sección 4.1.4 (Figuras 4.1–4.19).
 - Redis como proveedor de caché para búsqueda de coaches
 - Estrategia de observabilidad con logging estructurado y alertas en Azure Monitor
 
-[IMAGEN: assets/chapter4/Tablero-kanban.png]
 
+<img src="assets/chapter4/Tablero-kanban.png" alt="talbero">
 
-https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai
+[Trello](https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai)
 
 
 
@@ -2779,15 +2782,14 @@ Capturas del Despliegue
 * Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
 
  Anexos
-
- Diagramas de clase en LucidChart: https://lucid.app/lucidchart/01095f62-b902-4795-a561-f5e08d59b9e6/edit?viewport_loc=-4132%2C-1475%2C9285%2C4267%2C0_0&invitationId=inv_98f67f4a-d93a-433b-afde-2b53c20b0c84
-
- Diagrama de Componentes : https://online.visual-paradigm.com/share.jsp?id=343538393634332d33
-
- Enlace del Repositorio Grupal: https://github.com/G3-FundamentosArqui-7944
-
- Enlace del la documentacion dentro del repositorio: https://github.com/G3-FundamentosArqui-7944/docs
  
+Diagramas de clase en LucidChart: [Clases](https://drive.google.com/drive/folders/18gKosPLKw5JEdsYvDsNrNM94UUt8h8Jq?usp=sharing)
+
+Diagrama de Componentes: [Componentes](https://online.visual-paradigm.com/share.jsp?id=343538393634332d33)
+
+Enlace del Repositorio Grupal: [Repositorio](https://github.com/G3-FundamentosArqui-7944)
+
+Enlace de la documentación dentro del repositorio: [Documentacion](https://github.com/G3-FundamentosArqui-7944/docs)
 
 
  Referencias Bibliográficas
