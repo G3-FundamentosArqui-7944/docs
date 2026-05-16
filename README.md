@@ -2,6 +2,8 @@
   <strong>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</strong>
 </p>
 
+</p>
+
 <p align="center">
   <img src="./assets/upclogo.png" alt="UPC Logo" width="200"/>
 </p>
@@ -1221,9 +1223,157 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 
 **Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como Strategy para la flexibilidad en pagos y Factory para la gestión de perfiles de usuario, asegurando la trazabilidad con los patrones definidos en la sección 4.1.6.
 
+#### 4.1.4 Approach Driven ViewPoints Diagram
+
+**C4 Model - Nivel 2: Diagrama de Contenedores**
+
+<p align="center">
+  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <br>
+  <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
+</p>
+
+**Descripción:** Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
+
+**C4 Model - Nivel 3: Diagramas de Componentes (Bounded Contexts)**
+
+* **IAM Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <br>
+  <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
+</p>
+
+*Descripción:* Diseñado bajo los principios de Domain-Driven Design (DDD) y representado en este Diagrama de Componentes (C4 Nivel 3), detalla la estructura interna del módulo de identidad y acceso. Utiliza Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
+
+* **Membership and Payments Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <br>
+  <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
+</p>
+
+*Descripción:* Siguiendo el enfoque de DDD y la jerarquía del Modelo C4, este diagrama ilustra la gestión de suscripciones y transacciones financieras. Separa la lógica de membresías de los pagos mediante servicios de comando y consulta, integrándose con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
+
+* **Video Management Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <br>
+  <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
+</p>
+
+*Descripción:* Este componente de nivel C4 Nivel 3 aplica patrones de DDD como CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario. Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos.
+
+* **Matchmaking with Users Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <br>
+  <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
+</p>
+
+*Descripción:* Aplicando tácticas de Domain-Driven Design (DDD), este componente gestiona el emparejamiento entre atletas y coaches. Administra tanto las solicitudes de conexión como la programación de sesiones de entrenamiento, exponiendo una fachada para compartir la información de las sesiones con otros módulos del sistema.
+
+* **Training Tracker Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <br>
+  <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
+</p>
+
+*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama de C4 Model muestra cómo se registran y consultan los entrenamientos y métricas de performance bajo un modelo de dominio especializado. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
+
+* **Nutrition Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <br>
+  <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
+</p>
+
+*Descripción:* Este diagrama de nivel C4 Nivel 3 describe la estructura del contexto nutricional gestionado mediante el patrón CQRS. Siguiendo principios de DDD, se integra con la Gemini API para la detección automática de alimentos y macros, proveyendo una fachada de contexto para permitir que otros módulos accedan a la información de forma desacoplada.
+
+**Diagramas de Actividades**
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <br>
+  <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <br>
+  <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <br>
+  <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el <b>Patrón Strategy (ver sección 4.1.6)</b>.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <br>
+  <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <br>
+  <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
+</p>
+
+**Diagramas de Estados**
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <br>
+  <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal <b>FALLIDO_PERMANENTE</b>).</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <br>
+  <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <br>
+  <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <br>
+  <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <br>
+  <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
+</p>
+
+**Diagrama de Clases**
+
+<p align="center">
+  <img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+  <br>
+  <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
+</p>
+
+**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como Strategy para la flexibilidad en pagos y Factory para la gestión de perfiles de usuario, asegurando la trazabilidad con los patrones definidos en la sección 4.1.6.
+
 #### 4.1.5 Relational/Non Relational Database Diagram
 
-<img src="./assets/chapter4/Base de Datos-BodyMatch.jpg" alt="Database Diagram BodyMatch AI"">
+![Base_de_Datos_BodyMatch.jpg](assets/chapter4/Base_de_Datos_BodyMatch.jpg)
 **Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
 
 #### 4.1.6. Design Patterns
@@ -1251,8 +1401,7 @@ estados inválidos.
 | **Clases en BodyMatch AI** | `User.create(String email, String passwordHash, Role role)` en el Bounded Context **IAM**; `ExerciseVideo.register(UUID athleteId, String blobUrl, String exerciseType)` en **Video Management**. |
 | **Atributo de calidad** | Mantenibilidad — QAS-05 (incorporar nuevo proveedor de pagos sin modificar lógica existente). |
 
-[IMAGEN: Fragmento del método estático User.create() mostrando la validación de invariantes
-antes de devolver la instancia]
+<img src="assets/chapter4/user.png" alt="user">
 
 ---
 
@@ -1315,9 +1464,8 @@ entre componentes del sistema.
 | **Clases en BodyMatch AI** | `IamContextFacade` — expone métodos como `getAthleteProfile(UUID userId)` que **Matchmaking** y **Training Tracker** consumen sin conocer las entidades internas de IAM; `MatchmakingContextFacade` — usada por **Training Tracker** para consultar sesiones programadas. |
 | **Atributo de calidad** | Mantenibilidad — los cambios internos en el IAM no afectan a los contextos que lo consumen a través de la fachada. |
 
-[IMAGEN: Diagrama de la interfaz IamContextFacade con los métodos que expone hacia otros
-bounded contexts]
-
+<img src="assets/chapter4/context.png" alt="context">
+![user.png](assets/chapter4/user.png)
 ---
 
 ##### 4.1.6.4 Patrones Empresariales
@@ -1381,8 +1529,7 @@ transacciones.
 | **Clases en BodyMatch AI** | `GeminiAIGateway` — encapsula las llamadas a la API de Gemini para el análisis de video y de imágenes de alimentos; `StripeGateway` — encapsula las llamadas a la API de Stripe para el procesamiento de pagos; `AzureBlobStorageGateway` — gestiona la subida y recuperación de videos. Adicionalmente, `IamContextFacade` actúa como Gateway interno para el acceso cross-context. |
 | **Atributo de calidad** | Mantenibilidad — QAS-05 y AC-04: la abstracción detrás del Gateway permite sustituir Gemini AI sin afectar la lógica de Video Management. |
 
-[IMAGEN: Diagrama de la clase GeminiAIGateway mostrando el método analyzeVideo() y
-su integración con el VideoCommandService]
+<img src="assets/chapter4/gemini.png" alt="iam">
 
 ---
 
@@ -1413,8 +1560,7 @@ cómo se estructuran y comunican sus grandes componentes.
 | **Estructura en BodyMatch AI** | Cada bounded context está organizado en cuatro capas: **`domain`** (entidades, value objects, interfaces de repositorio); **`application`** (command services, query services, comandos, eventos); **`infrastructure`** (implementaciones de repositorio JPA, gateways externos); **`interfaces`** (REST controllers, resources/DTOs, assemblers). |
 | **Atributo de calidad** | Mantenibilidad — AC-06: el esquema por bounded context en PostgreSQL y la separación por capas facilitan la migración futura a microservicios independientes. |
 
-[IMAGEN: Diagrama de la estructura de paquetes de un bounded context (ej. IAM)
-mostrando las cuatro capas: domain / application / infrastructure / interfaces]
+<img src="assets/chapter4/D_iam.png" alt="iam">
 
 ---
 
@@ -1427,8 +1573,7 @@ mostrando las cuatro capas: domain / application / infrastructure / interfaces]
 | **Implementación en BodyMatch AI** | **Model:** clases Dart que representan las respuestas de la API (ej. `UserModel`, `ExerciseVideoModel`, `CoachProfileModel`). **View:** Widgets de Flutter que renderizan la UI (ej. `LoginScreen`, `VideoUploadScreen`, `AnalysisFeedbackScreen`). **Controller:** clases que coordinan la comunicación entre la vista y el repositorio de datos, gestionando el estado con Provider o Riverpod (ej. `AuthController`, `VideoController`). Los repositorios del cliente consumen los endpoints REST documentados en la sección 5.2.1.5. |
 | **Atributo de calidad** | Mantenibilidad y Usabilidad — los cambios en el diseño visual no afectan la lógica de consumo de la API, y viceversa. |
 
-[IMAGEN: Diagrama de la estructura de carpetas del proyecto Flutter mostrando la
-separación models / views / controllers para el módulo de Video Analysis]
+<img src="assets/chapter4/MVC.png" alt="MVC">
 
 ---
 
