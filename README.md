@@ -70,6 +70,13 @@
 
 ---
 
+
+
+
+<img src="assets/chapter5/insights.png" alt ="">
+
+
+
 ## Registro de Versiones del Informe
 
 | Versión | Fecha      | Autor                          | Descripción | Commit   |
@@ -2736,7 +2743,7 @@ Capturas del Despliegue
 
 ##### 5.2.1.7	Team Collaboration Insights during Sprint
 
-
+<img src="assets/chapter5/insights.png" alt ="">
 
 ##### 5.2.1.8	Kanban Board 
 
