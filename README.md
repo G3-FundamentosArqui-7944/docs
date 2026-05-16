@@ -926,7 +926,7 @@ Este backlog permite al equipo de desarrollo:
 - **Planificar sprints ágiles**, asignando tareas según prioridad y complejidad.  
 - Mantener un registro del **estado de cada User Story** (Por Hacer, En Progreso, Hecho).  
 
-**Columnas del Product Backlog:**
+**Columnas del Product Backlog:** 
 
 - **#Orden:** Número secuencial para organización de las historias.  
 - **User Story ID:** Identificador único de la historia de usuario.  
