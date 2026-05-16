@@ -2,6 +2,8 @@
   <strong>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</strong>
 </p>
 
+</p>
+
 <p align="center">
   <img src="./assets/upclogo.png" alt="UPC Logo" width="200"/>
 </p>
@@ -62,7 +64,7 @@
 
 <p align="center">
   <strong>Abril, 2026</strong> <br>
-  <strong>URL del proyecto:</strong>
+  <strong>URL del proyecto:https://github.com/G3-FundamentosArqui-7944/docs </strong>
 
 </p>
 
@@ -70,19 +72,25 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                          | Descripción                                                                 |
-|---------|------------|--------------------------------|------------------------------------------------------------------------------|
-| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. |
-| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de User Personas, Empathy Maps y User Task Matrix. |
-| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de escenarios As Is - To Be, además del desarrollo del Product Backlog. |
-| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del Lean UX Process, incluyendo la elaboración del Problem Statement, Assumptions, Hypothesis y Lean UX Canvas. |
-| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las Épicas y User Stories. |    
-| Avn2 | 25/04/2026  | Piero Francesco Tenorio Medina | Avance del Diagrama de Clases |
-|Avn2|27/04/2026| Piero Francesco Tenorio Medina | Avance de la Primera Versión del Diagrama de Clases  |
-|Avn2|28/04/2026| Piero Francesco Tenorio Medina | Primera versión de Diagrama de Componentes|
-|  TB2 | 28/04/2026  | Pablo Antonio Geronimo Quispe |Avanze del Documento y tacticas y ADD |
-| TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Avanze del Capitulo 4.2  |
-| TB2 |29/04/2026| Pablo Antonio Geronimo Quispe | Finalizacion Del Capitulo 4.2|
+| Versión | Fecha      | Autor                          | Descripción | Commit   |
+|---------|------------|--------------------------------|------------------------------------------------------------------------------|---|
+| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. | 466a8f3|
+| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de arquetipos de usuario y mapas de empatía.     | 62096ee  |
+| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de los escenarios actuales y futuros, además de la pila de producto.                              | 9be392b  |
+| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del proceso Lean UX, incluyendo enunciados de problemas, hipótesis y el lienzo Lean UX.           | f50943d  |
+| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las épicas e historias de usuario.                                                             | 0fc5d48  |
+| Avn2    | 25/04/2026 | Piero Francesco Tenorio Medina | Avance del diagrama de clases.                                                                               | 0bc5e96  |
+| Avn2    | 27/04/2026 | Piero Francesco Tenorio Medina | Avance de la primera versión del diagrama de clases.                                                         | 43b41b3  |
+| Avn2    | 28/04/2026 | Piero Francesco Tenorio Medina | Primera versión del diagrama de componentes.                                                                 | 1ddb81e  |
+| TB2     | 28/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del documento, tácticas y la metodología ADD.                                                         | 45a16c3  |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del capítulo 4.2.                                                                                     | 392249c  |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización del capítulo 4.2.                                                                               | 71c9ff3  |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización de los diagramas de actividad y estado.                                                         | 19d059f  |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Implementación de valores en el perfil de la startup.                                                        | 9fff960  |
+| TB2     | 30/04/2026 | Jorge Enrique Guevara Tejada   | Avance Capítulo 4.3 - Iteración ADD 1.                                                                                | ee9cdc9  |
+| Avn2    | 01/05/2026 | Marcia Victoria Melgarejo Gomez| Avance 4.3 iteración ADD 1, tablero kanban y redacción de conclusiones.                                   | b54b3f3  |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.                  | 5e23b4b  |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Actualización del student outcome 7 para la entrega del TB2.| 5537ea6|
 
 ## Contenido
 
@@ -184,8 +192,8 @@ ABET - EAC - Student Outcome 7 Criterio: La capacidad de adquirir y aplicar nuev
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |--------------------|---------------------|--------------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles, centrándome en Scrum, para aplicarlas en la planificación del proyecto. Esto me permitió mejorar la organización del equipo y entender cómo adaptar estos marcos de trabajo a equipos pequeños y tareas técnicas dentro de un entorno real de desarrollo.<br><br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, disponibilidad, seguridad y mantenibilidad), drivers arquitectónicos, escenarios de atributos de calidad (QAS) y restricciones del sistema. Esto permitió estructurar una arquitectura basada en microservicios alineada al core de la solución (análisis de ejercicios con IA).<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para poder desarrollar lo establecido, se tuvo que hacer una investigación sobre las herramientas y las metodologías a utilizar. Esto permitió organizar de manera efectiva las prioridades del equipo a la hora de implementar las funcionalidades.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Para el desarrollo del Lean UX Process, investigué conceptos clave como Problem Statement, Assumptions, Hypothesis y Lean UX Canvas, lo que permitió estructurar correctamente la propuesta centrada en el usuario y mejorar la toma de decisiones basadas en validación.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Para el desarrollo completo del Capítulo II, investigué metodologías de Requirements Elicitation y análisis competitivo. Apliqué herramientas avanzadas de diseño UX como Uxpressia para la creación de User Personas, Empathy Maps y la User Task Matrix. Esto me permitió sintetizar los hallazgos de las entrevistas y el análisis de mercado en una estructura de requisitos técnica y funcional que sirve como base para el desarrollo de la solución BodyMatch AI.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Para el desarrollo del Requirements Specification, investigué y reforcé conceptos clave como User Stories, criterios de aceptación y estructura de requerimientos, lo que permitió definir de manera clara y organizada las funcionalidades del sistema.<br>| **TB1:** Durante esta fase, el equipo demostró su capacidad para adquirir nuevos conocimientos y aplicarlos en el desarrollo del proyecto, fortaleciendo competencias técnicas relevantes para una solución escalable y funcional.<br><br>**TB2:** El equipo consolidó conocimientos en arquitectura de software mediante la aplicación del método ADD, logrando definir tácticas, drivers, escenarios de calidad y restricciones que permiten una solución escalable, mantenible y alineada al uso de inteligencia artificial. |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software | <br>**Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo para responder a las exigencias del proyecto, por lo que estudié liderazgo técnico, gestión de tiempos y coordinación en equipos ágiles.<br><br>**TB2:** Reforcé mi aprendizaje en arquitectura de software, especialmente en microservicios, atributos de calidad y diseño orientado a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables desde etapas tempranas.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Para esta entrega se aceptó el hecho de que se debe seguir aprendiendo y reforzando conceptos ya vistos en la formación universitaria. Esto permite que se trabaje de manera efectiva en proyectos a futuro que requieran una ardua tarea de investigación.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías centradas en el usuario como Lean UX, reforzando mi capacidad de análisis y adaptación para contribuir de manera efectiva en proyectos de desarrollo de software.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí la importancia de la actualización constante al investigar las tendencias actuales en IA y la gestión de asesorías fitness. Este proceso de Needfinding y mapeo de escenarios me enseñó que para proponer software innovador es indispensable aprender sobre el dominio del problema de forma continua, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Durante la elaboración de las User Stories, identifiqué la importancia de seguir aprendiendo continuamente sobre técnicas de levantamiento de requerimientos y buenas prácticas en desarrollo de software, ya que esto contribuye a mejorar la calidad de las soluciones propuestas. | **TB1:** El equipo desarrolló una actitud profesional orientada al aprendizaje constante, adaptándose a nuevas herramientas y fortaleciendo competencias esenciales en desarrollo de software.<br><br>**TB2:** El equipo consolidó la importancia del aprendizaje permanente como base del desarrollo profesional, evidenciando crecimiento en conocimientos de arquitectura de software, inteligencia artificial y diseño de sistemas escalables. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles (Scrum) para la planificación, mejorando la organización del equipo en tareas técnicas.<br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, seguridad) y drivers, estructurando una arquitectura basada en microservicios.<br>**TP1:** Investigué y apliqué la documentación interactiva con OpenAPI (Swagger) y participé en la separación técnica del Monolito y los Microservicios.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué herramientas de modelado y metodologías para organizar las prioridades en la implementación de funcionalidades.<br>**TB2:** Realicé un trabajo de investigación y recapitulación de conceptos de ingeniería de software para el desarrollo del diagrama de clases, requiriendo examinar los patrones de diseño a utilizar.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Investigué el proceso Lean UX y el Lean UX Canvas, permitiendo estructurar correctamente la propuesta centrada en el usuario y validar hipótesis.<br>**TB2:** Participé en el desarrollo y refinamiento de la primera iteración ADD.<br>**TP1:** Apliqué nuevos conocimientos en la validación de los endpoints y la integración de Postman para las pruebas de la API RESTful.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué metodologías de *Requirements Elicitation* y herramientas como Uxpressia para crear User Personas, sintetizando los hallazgos en una estructura técnica.<br>**TB2:** Investigué el concepto de *Technical Stories* (TS) y elaboré descripciones detalladas para los diagramas de arquitectura (C4), documentando la respuesta del sistema.<br>**TP1:** Profundicé en técnicas de despliegue web mediante GitHub Pages y en la estructuración de la matriz de trazabilidad de los microservicios.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Investigué la estructura de las *User Stories* y criterios de aceptación para organizar las funcionalidades de manera clara.<br>**TB2:** Actualicé mis conocimientos aplicando la metodología ADD, traduciendo requerimientos técnicos en decisiones arquitectónicas mediante un tablero Kanban.<br>**TP1:** Documenté el Sprint Backlog y las evidencias de ejecución, aprendiendo a integrar las vistas del frontend móvil con los servicios del backend híbrido. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos técnicos en el modelado inicial del proyecto.<br><br>**TB2:** Se consolidaron conocimientos en arquitectura de software mediante el método ADD, definiendo tácticas y escenarios de calidad.<br><br>**TP1:** Se aplicaron conocimientos prácticos de despliegue continuo y documentación de APIs (Swagger), logrando una evolución real hacia microservicios. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo, estudiando liderazgo técnico y gestión de tiempos para la coordinación ágil.<br>**TB2:** Reforcé mi aprendizaje en arquitectura de software orientada a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables.<br>**TP1:** Reconocí que el despliegue de microservicios exige una actualización constante en herramientas de integración y pruebas de software.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la importancia de reforzar conceptos teóricos para trabajar de manera efectiva en proyectos que requieran una ardua tarea de investigación.<br>**TB2:** Detecté la necesidad de ampliar mis conocimientos técnicos al contrastar la teoría académica con los requerimientos reales, comprendiendo que mis conocimientos previos debían actualizarse para cumplir con el estándar exigido.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías Lean UX para contribuir efectivamente en proyectos ágiles.<br>**TB2:** Reconocí que la arquitectura de software requiere un estudio profundo de los atributos de calidad.<br>**TP1:** Entendí que el testing de software y la validación de APIs son habilidades críticas que debo seguir perfeccionando.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que para innovar es indispensable el aprendizaje continuo del dominio del problema, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br>**TB2:** Implementé el tablero Trello. Comprendí que la actualización constante en herramientas de gestión ágil es vital para coordinar arquitecturas complejas.<br>**TP1:** Advertí que el ecosistema Cloud evoluciona rápidamente, por lo que dominar herramientas de automatización y Swagger es fundamental para mi carrera.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué la importancia de aprender continuamente sobre técnicas de levantamiento de requerimientos para mejorar la calidad de las soluciones.<br>**TB2:** El diseño de BodyMatch AI demostró que la arquitectura exige aprendizaje continuo. Aprender a documentar iteraciones ADD y gestionar su ejecución a través de Kanban me enseñó que dominar herramientas ágiles es vital para el éxito del proyecto.<br>**TP1:** Comprendí que la correcta documentación de un Sprint requiere rigor y actualización constante en prácticas de aseguramiento de calidad y metodologías de despliegue. | **TB1:** El equipo desarrolló una actitud orientada al aprendizaje constante y al dominio de nuevas metodologías de análisis.<br><br>**TB2:** El equipo consolidó el aprendizaje permanente como base del desarrollo profesional en arquitectura y diseño escalable.<br><br>**TP1:** La transición a microservicios evidenció que la adopción de nuevas tecnologías (Swagger, Cloud, GitHub Pages) es un requerimiento continuo para el ingeniero de software. |
 
 ## Capítulo I: Introducción
 
@@ -266,7 +274,7 @@ En este contexto surge BodyMatch AI, una aplicación móvil que responde a ambas
 El problema principal radica en la dificultad que tienen muchas personas para realizar ejercicios de forma correcta y segura sin la guía adecuada, así como en la falta de plataformas especializadas que permitan a los entrenadores gestionar eficientemente su práctica profesional. Las soluciones actuales suelen ser genéricas, no personalizadas y carecen de herramientas que analicen la ejecución real del usuario, lo que limita el progreso y aumenta el riesgo de lesiones.
 
  **When:**
-Este problema se ha intensificado en los últimos años, especialmente en el contexto post-pandemia, donde se incrementó el interés por la salud y el ejercicio en casa. La digitalización de los servicios de entrenamiento ha crecido, pero muchas soluciones no han evolucionado lo suficiente para ofrecer experiencias personalizadas ni herramientas inteligentes de análisis, generando una brecha entre la demanda y la calidad de las soluciones disponibles.
+Este problema se ha intensificado en los últimos años, especialmente en el contexto post-pandemia, donde se incrementó el interés por la salud y el ejercicio en casa. La digitalización de los servicios de entrenamiento ha crecido, pero muchas soluciones no han evolucionado lo suficiente para ofrecer experiencias personalizadas ni herramientas inteligentes de análisis, generando una brecha entre la demanda y la calidad de las soluciones disponibles. Según  2playbook (2024, como se cita en omani, Ma. et.al, 2025 ), este panorama tecnológico emergente facilita una experiencia más a medida, eficiente y de fácil acceso para los usuarios.
 
 **Where:**
 La problemática afecta tanto a entornos urbanos como rurales. En zonas urbanas, los usuarios tienen acceso a múltiples opciones digitales pero enfrentan desinformación y falta de personalización. En zonas rurales, el acceso a entrenadores profesionales es limitado, lo que hace aún más relevante contar con soluciones digitales que conecten a usuarios con coaches de manera remota. Los entrenadores, independientemente de su ubicación, enfrentan dificultades similares para gestionar su práctica profesional.
@@ -295,7 +303,7 @@ En el Perú, existe una comunidad creciente de profesionales del fitness, con mi
 
 #### 1.2.3	Lean UX Process
 ##### 1.2.3.1. Lean UX Problem Statements
-El principal desafío para los usuarios radica en la dificultad de ejecutar correctamente los ejercicios físicos sin la supervisión de un profesional, lo que frecuentemente genera lesiones, bajo rendimiento y frustración al no alcanzar los resultados esperados. Muchas personas entrenan de manera autodidacta apoyándose en contenido genérico (videos o apps), pero sin un análisis real de su técnica, lo que limita su progreso y aumenta el riesgo de daño físico.
+El principal desafío para los usuarios radica en la dificultad de ejecutar correctamente los ejercicios físicos sin la supervisión de un profesional, lo que frecuentemente genera lesiones, bajo rendimiento y frustración al no alcanzar los resultados esperados. Muchas personas entrenan de manera autodidacta apoyándose en contenido genérico (videos o apps), pero sin un análisis real de su técnica, lo que limita su progreso y aumenta el riesgo de daño físico. Según Romani, Ma. et.al. (2025) los usuarios cada vez buscan soluciones que les permitan adaptar sus rutinas de ejericicio a objetivos específicos.
 
 Por otro lado, los entrenadores personales enfrentan limitaciones importantes en su práctica profesional, ya que dependen de redes sociales o herramientas poco especializadas para gestionar a sus clientes. Esto dificulta el seguimiento personalizado, la corrección técnica a distancia y la posibilidad de escalar su negocio o monetizar de forma estructurada sus servicios.
 
@@ -833,130 +841,62 @@ Cada historia está estructurada para facilitar desarrollo ágil y validación i
 
 **Epics**
 
-**EP01: Gestión de acceso y perfil**  
-Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia.
+| Epics ID | Título | Descripción |
+|----------|--------|-------------|
+| EP01 | Gestión de acceso y perfil | Como usuario o coach, quiero registrarme, iniciar sesión y administrar mi perfil, para acceder de forma segura a la plataforma y personalizar mi experiencia. |
+| EP02 | Conexión entre usuarios y coaches | Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado. |
+| EP03 | Análisis de ejercicios con IA | Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones. |
+| EP04 | Seguimiento de progreso físico | Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado. |
+| EP05 | Gestión profesional para coaches | Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo. |
+| EP06 | Análisis nutricional inteligente mediante imagen | Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico. |
+| EP-LP | Sitio web estático | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar. |
+| EP-API | API RESTful | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
 
-| User Story ID | Título                              |
-|---------------|-------------------------------------|
-| US01          | Registro de usuario                 |
-| US02          | Inicio de sesión                    |
-| US03          | Recuperación de contraseña          |
-| US04          | Cierre de sesión                    |
-| US05          | Configuración de perfil y objetivos |
-
----
-
-**EP02: Conexión entre usuarios y coaches**  
-Como usuario, quiero encontrar coaches según mis objetivos físicos, para recibir entrenamiento personalizado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US06          | Búsqueda de coaches              |
-| US07          | Visualización de perfil de coach |
-| US08          | Reserva de sesión                |
-| US09          | Chat con coach                   |
-| US10          | Calificación del coach           |
-
----
-
-**EP03: Análisis de ejercicios con IA**  
-Como usuario, quiero recibir retroalimentación automática sobre mi técnica, para mejorar mis ejercicios y evitar lesiones.
-
-| User Story ID | Título                         |
-|---------------|--------------------------------|
-| US11          | Subir vídeo del ejercicio      |
-| US12          | Feedback automático con IA     |
-| US13          | Historial de correcciones      |
-| US14          | Recomendaciones de mejora      |
-
----
-
-**EP04: Seguimiento de progreso físico**  
-Como usuario, quiero visualizar mi progreso físico, para medir mis resultados y mantenerme motivado.
-
-| User Story ID | Título                           |
-|---------------|----------------------------------|
-| US15          | Registro de métricas físicas     |
-| US16          | Visualización de progreso        |
-| US17          | Historial de entrenamientos      |
-| US18          | Alertas de cumplimiento de rutina|
-
----
-
-**EP05: Gestión profesional para coaches**  
-Como coach, quiero gestionar mis clientes y sesiones, para brindar un mejor servicio y organizar mi trabajo.
-
-| User Story ID | Título                          |
-|---------------|---------------------------------|
-| US19          | Gestión de clientes             |
-| US20          | Programación de disponibilidad  |
-| US21          | Seguimiento de progreso del cliente |
-| US22          | Monetización de servicios       |
-
----
-
-**EP06: Análisis nutricional inteligente mediante imagen**  
-Como usuario, quiero subir una foto de mis alimentos para obtener automáticamente información nutricional (calorías, proteínas, carbohidratos, grasas, etc.), para poder llevar un mejor control de mi alimentación y complementar mi entrenamiento físico.
-
-| User Story ID | Título                                      |
-|---------------|----------------------------------------------|
-| US23          | Subida de imagen de alimentos                |
-| US24          | Reconocimiento de alimentos mediante IA      |
-| US25          | Cálculo de valores nutricionales             |
-| US26          | Visualización detallada de nutrientes        |
-| US27          | Edición manual de alimentos detectados       |
-| US28          | Registro en historial de comidas             |
-| US29          | Seguimiento diario de consumo nutricional    |
-| US30          | Recomendaciones nutricionales personalizadas |
-| US31          | Integración con objetivos fitness            |
-| US32          | Notificaciones y recordatorios de registro   |
-
-
-| Epics ID | Título                           | Descripción                                                                                     |
-|----------|----------------------------------|-------------------------------------------------------------------------------------------------|
-| EP-LP    | Sitio web estático              | Como visitante quiero conocer los servicios y características de la plataforma para decidir si contratar.|
-| EP-API   | API RESTful                     | Como desarrollador quiero acceder a los servicios mediante endpoints para integrarlos con otras aplicaciones. |
- 
-
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|-----------------|--------|-------------|--------------------------|----------------------------|
-| US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | Escenario 1: Registro exitoso usuario<br>Dado que el usuario completa el formulario,<br>cuando selecciona “usuario”,<br>entonces el sistema lo redirige al dashboard.<br><br>Escenario 2: Registro exitoso coach<br>Dado que el usuario selecciona “coach”,<br>cuando completa el registro,<br>entonces se redirige a configuración profesional.<br><br>Escenario 3: Datos incompletos<br>Dado que faltan campos obligatorios,<br>cuando intenta registrarse,<br>entonces se muestra mensaje de error. | EP01 |
-| US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta. | Escenario 1: Acceso exitoso<br>Dado que ingresa credenciales correctas,<br>cuando inicia sesión,<br>entonces accede al sistema.<br><br>Escenario 2: Error de login<br>Dado que los datos son incorrectos,<br>cuando intenta ingresar,<br>entonces se muestra error. | EP01 |
-| US03 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña en caso de olvido. | Escenario 1: Solicitud de recuperación<br>Dado que el usuario solicita recuperación,<br>cuando ingresa su correo,<br>entonces recibe enlace o código.<br><br>Escenario 2: Restablecimiento exitoso<br>Dado que recibe el enlace,<br>cuando cambia contraseña,<br>entonces se actualiza correctamente. | EP01 |
-| US04 | Cierre de sesión | Como usuario, quiero cerrar sesión para proteger mi cuenta. | Escenario 1: Logout exitoso<br>Dado que el usuario está en sesión,<br>cuando selecciona cerrar sesión,<br>entonces se cierra sesión.<br><br>Escenario 2: Acceso bloqueado<br>Dado que cerró sesión,<br>cuando intenta entrar,<br>entonces se solicita login. | EP01 |
-| US05 | Configuración de perfil | Como usuario, quiero definir mis objetivos físicos. | Escenario 1: Guardado inicial<br>Dado que el usuario ingresa datos,<br>cuando guarda perfil,<br>entonces se almacenan objetivos.<br><br>Escenario 2: Actualización<br>Dado que modifica datos,<br>cuando guarda cambios,<br>entonces se actualiza perfil. | EP01 |
-| US06 | Búsqueda de coaches | Como usuario quiero buscar coaches según objetivos. | Escenario 1: Búsqueda por filtro<br>Dado que usa filtros,<br>cuando busca coaches,<br>entonces se muestran resultados.<br><br>Escenario 2: Búsqueda por nombre<br>Dado que ingresa nombre,<br>cuando busca,<br>entonces aparecen coincidencias.<br><br>Escenario 3: Sin resultados<br>Dado que no hay coincidencias,<br>cuando busca,<br>entonces se muestra mensaje. | EP02 |
-| US07 | Perfil de coach | Como usuario quiero ver información del coach. | Escenario 1: Visualización completa<br>Dado que selecciona un coach,<br>cuando entra al perfil,<br>entonces ve experiencia, tarifas y reseñas. | EP02 |
-| US08 | Reserva de sesión | Como usuario quiero reservar sesiones con coach. | Escenario 1: Reserva exitosa<br>Dado que hay disponibilidad,<br>cuando selecciona horario,<br>entonces la sesión queda agendada. | EP02 |
-| US09 | Chat con coach | Como usuario quiero comunicarme con mi coach. | Escenario 1: Envío de mensaje<br>Dado que abre chat,<br>cuando envía mensaje,<br>entonces se entrega al coach.<br><br>Escenario 2: Respuesta<br>Dado que el coach responde,<br>cuando usuario abre chat,<br>entonces ve mensaje.<br><br>Escenario 3: Historial<br>Dado que existen mensajes,<br>cuando entra al chat,<br>entonces ve conversación completa. | EP02 |
-| US10 | Calificación del coach | Como usuario quiero calificar al coach. | Escenario 1: Registro de reseña<br>Dado que termina sesión,<br>cuando califica,<br>entonces se guarda reseña.<br><br>Escenario 2: Restricción<br>Dado que no tuvo sesión,<br>cuando intenta calificar,<br>entonces se bloquea acción. | EP02 |
-| US11 | Subir video | Como usuario quiero subir videos de ejercicios. | Escenario 1: Subida correcta<br>Dado que selecciona video,<br>cuando lo sube,<br>entonces se carga archivo.<br><br>Escenario 2: Error formato<br>Dado que archivo no es válido,<br>cuando sube,<br>entonces muestra error. | EP03 |
-| US12 | Feedback IA | Como usuario quiero corrección automática de ejercicios. | Escenario 1: Análisis exitoso<br>Dado que sube video,<br>cuando IA procesa,<br>entonces muestra errores técnicos.<br><br>Escenario 2: Recomendaciones claras<br>Dado que termina análisis,<br>cuando ve resultados,<br>entonces recibe sugerencias. | EP03 |
-| US13 | Historial correcciones | Como usuario quiero ver análisis anteriores. | Escenario 1: Lista historial<br>Dado que tiene análisis previos,<br>cuando entra a historial,<br>entonces ve registros.<br><br>Escenario 2: Detalle<br>Dado que selecciona registro,<br>cuando abre,<br>entonces ve video y feedback. | EP03 |
-| US14 | Recomendaciones IA | Como usuario quiero mejoras personalizadas. | Escenario 1: Recomendaciones<br>Dado que analiza ejercicio,<br>cuando termina IA,<br>entonces muestra mejoras.<br><br>Escenario 2: Seguimiento<br>Dado que repite análisis,<br>cuando hay progreso,<br>entonces compara evolución. | EP03 |
-| US15 | Registro métricas | Como usuario quiero registrar medidas físicas. | Escenario 1: Guardado<br>Dado que ingresa datos,<br>cuando guarda,<br>entonces se registra información.<br><br>Escenario 2: Historial<br>Dado que ya existen registros,<br>cuando añade nuevos,<br>entonces no se elimina historial. | EP04 |
-| US16 | Progreso físico | Como usuario quiero ver gráficos de evolución. | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra a progreso,<br>entonces ve gráficos.<br><br>Escenario 2: Comparación<br>Dado que selecciona fechas,<br>cuando filtra,<br>entonces ve evolución. | EP04 |
-| US17 | Historial entrenamientos | Como usuario quiero ver mis entrenamientos. | Escenario 1: Lista<br>Dado que entrenó antes,<br>cuando entra historial,<br>entonces ve sesiones.<br><br>Escenario 2: Detalle<br>Dado que selecciona sesión,<br>cuando abre,<br>entonces ve información. | EP04 |
-| US18 | Alertas rutina | Como usuario quiero recordatorios de entrenamiento. | Escenario 1: Notificación<br>Dado que tiene rutina,<br>cuando llega hora,<br>entonces recibe alerta.<br><br>Escenario 2: Incumplimiento<br>Dado que no entrena,<br>cuando pasa tiempo,<br>entonces recibe aviso. | EP04 |
-| US19 | Gestión clientes | Como coach quiero administrar clientes. | Escenario 1: Lista clientes<br>Dado que tiene alumnos,<br>cuando entra módulo,<br>entonces ve lista.<br><br>Escenario 2: Perfil cliente<br>Dado que selecciona alumno,<br>cuando abre perfil,<br>entonces ve progreso. | EP05 |
-| US20 | Disponibilidad | Como coach quiero definir horarios. | Escenario 1: Registro<br>Dado que configura agenda,<br>cuando guarda,<br>entonces se publica disponibilidad.<br><br>Escenario 2: Edición<br>Dado que modifica horarios,<br>cuando actualiza,<br>entonces cambia agenda. | EP05 |
-| US21 | Seguimiento cliente | Como coach quiero ver progreso de clientes. | Escenario 1: Visualización<br>Dado que selecciona cliente,<br>cuando entra,<br>entonces ve métricas.<br><br>Escenario 2: Comparación<br>Dado que hay historial,<br>cuando filtra fechas,<br>entonces ve evolución. | EP05 |
-| US22 | Monetización | Como coach quiero definir precios. | Escenario 1: Registro tarifa<br>Dado que crea plan,<br>cuando guarda,<br>entonces se publica.<br><br>Escenario 2: Actualización<br>Dado que cambia precio,<br>cuando edita,<br>entonces se actualiza. | EP05 |
-| US23 | Subir imagen comida | Como usuario quiero subir fotos de comida. | Escenario 1: Subida correcta<br>Dado que selecciona imagen,<br>cuando carga,<br>entonces se procesa.<br><br>Escenario 2: Error<br>Dado que falla archivo,<br>cuando sube,<br>entonces muestra error. | EP06 |
-| US24 | Reconocimiento IA | Como usuario quiero detección de alimentos. | Escenario 1: Identificación<br>Dado que sube imagen,<br>cuando IA procesa,<br>entonces detecta alimentos.<br><br>Escenario 2: Error reconocimiento<br>Dado que imagen no es clara,<br>cuando analiza,<br>entonces falla. | EP06 |
-| US25 | Cálculo nutricional | Como usuario quiero macros y calorías. | Escenario 1: Cálculo correcto<br>Dado que detecta alimentos,<br>cuando procesa,<br>entonces muestra valores.<br><br>Escenario 2: Error cálculo<br>Dado que falla sistema,<br>cuando procesa,<br>entonces muestra error. | EP06 |
-| US26 | Visualización nutrientes | Como usuario quiero gráficos nutricionales. | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra,<br>entonces ve gráficos.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando entra,<br>entonces muestra aviso. | EP06 |
-| US27 | Edición alimentos | Como usuario quiero corregir alimentos detectados. | Escenario 1: Edición correcta<br>Dado que IA detecta alimentos,<br>cuando edita,<br>entonces actualiza datos.<br><br>Escenario 2: Error<br>Dado que falla guardado,<br>cuando edita,<br>entonces muestra error. | EP06 |
-| US28 | Historial comidas | Como usuario quiero guardar comidas. | Escenario 1: Registro automático<br>Dado que analiza comida,<br>cuando termina,<br>entonces guarda historial.<br><br>Escenario 2: Error guardado<br>Dado que falla sistema,<br>cuando guarda,<br>entonces muestra error. | EP06 |
-| US29 | Consumo diario | Como usuario quiero ver consumo diario. | Escenario 1: Resumen diario<br>Dado que hay registros,<br>cuando entra,<br>entonces ve calorías.<br><br>Escenario 2: Sin datos<br>Dado que no hay registros,<br>cuando entra,<br>entonces muestra aviso. | EP06 |
-| US30 | Recomendaciones nutricionales | Como usuario quiero sugerencias personalizadas. | Escenario 1: Recomendación<br>Dado que analiza consumo,<br>cuando procesa,<br>entonces sugiere mejoras.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando procesa,<br>entonces muestra mensaje. | EP06 |
-| US31 | Integración fitness-nutrición | Como usuario quiero conectar dieta y entrenamiento. | Escenario 1: Integración<br>Dado que tiene objetivos,<br>cuando analiza datos,<br>entonces relaciona dieta y fitness.<br><br>Escenario 2: Falta de datos<br>Dado que no hay objetivos,<br>cuando entra,<br>entonces solicita configuración. | EP06 |
-| US32 | Notificaciones nutricionales | Como usuario quiero recordatorios de comidas. | Escenario 1: Notificación<br>Dado que activa recordatorios,<br>cuando llega hora,<br>entonces envía alerta.<br><br>Escenario 2: Desactivado<br>Dado que está apagado,<br>cuando llega hora,<br>entonces no envía nada. | EP06 |
-| US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | Escenario 1: Acceso a información<br>Dado que el visitante accede al sitio web,<br>cuando recorre la sección informativa,<br>entonces el sistema presenta descripciones claras de los servicios.<br><br>Escenario 2: Consulta de características<br>Dado que se requiere mayor detalle,<br>cuando se solicita información específica,<br>entonces el sistema entrega las características correspondientes. | EP-LP |
-| US34 | Solicitar demostración | Como visitante, quiero registrar interés en una demostración para conocer mejor el sistema. | Escenario 1: Registro exitoso<br>Dado que se ingresan datos válidos,<br>cuando se envía la solicitud,<br>entonces el sistema confirma la recepción y describe el siguiente paso.<br><br>Escenario 2: Registro inválido<br>Dado que se ingresan datos incompletos,<br>cuando se procesa la solicitud,<br>entonces el sistema informa los errores identificados. | EP-LP |
-| US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido. | EP-LP |
-| US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles. | EP-LP |
-| US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados. | EP-LP |
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Story Points | Relacionado con (Epic ID) |
+|-----------------|--------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------|
+| US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | Escenario 1: Registro exitoso usuario<br>Dado que el usuario completa el formulario,<br>cuando selecciona “usuario”,<br>entonces el sistema lo redirige al dashboard.<br><br>Escenario 2: Registro exitoso coach<br>Dado que el usuario selecciona “coach”,<br>cuando completa el registro,<br>entonces se redirige a configuración profesional.<br><br>Escenario 3: Dado que el usuario deja campos obligatorios vacíos, cuando hace clic en 'Registrarse', entonces el sistema resalta los campos en rojo y muestra: 'Error: Todos los campos marcados con * son obligatorios' | 1            | EP01 |
+| US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión para acceder a mi cuenta. | Escenario 1: Acceso exitoso<br>Dado que ingresa credenciales correctas,<br>cuando inicia sesión,<br>entonces accede al sistema.<br><br>Escenario 2: Error de login<br>Dado que los datos son incorrectos,<br>cuando intenta ingresar,<br>entonces se muestra error.                                                                                                                                                                                                                                                                                                              | 1            | EP01 |
+| US03 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña en caso de olvido para no perder acceso a mis datos. | Escenario 1: Solicitud de recuperación<br>Dado que el usuario solicita recuperación,<br>cuando ingresa su correo,<br>entonces recibe enlace o código.<br><br>Escenario 2: Restablecimiento exitoso<br>Dado que recibe el enlace,<br>cuando cambia contraseña,<br>entonces se actualiza correctamente.                                                                                                                                                                                                                                                                            | 3            | EP01 |
+| US04 | Cierre de sesión | Como usuario, quiero cerrar sesión para proteger mi cuenta. | Escenario 1: Logout exitoso<br>Dado que el usuario está en sesión,<br>cuando selecciona cerrar sesión,<br>entonces se cierra sesión.<br><br>Escenario 2: Acceso bloqueado<br>Dado que cerró sesión,<br>cuando intenta entrar,<br>entonces se solicita login.                                                                                                                                                                                                                                                                                                                     | 1            | EP01 |
+| US05 | Configuración de perfil | Como usuario, quiero definir mis objetivos físicos para recibir un plan de entrenamiento adaptado. | Escenario 1: Guardado inicial<br>Dado que el usuario ingresa datos,<br>cuando guarda perfil,<br>entonces se almacenan objetivos.<br><br>Escenario 2: Actualización<br>Dado que modifica datos,<br>cuando guarda cambios,<br>entonces se actualiza perfil.                                                                                                                                                                                                                                                                                                                        | 2            | EP01 |
+| US06 | Búsqueda de coaches | Como usuario quiero buscar coaches según objetivos para encontrar al profesional que mejor se ajuste a mis necesidades. | Escenario 1: Búsqueda por filtro<br>Dado que usa filtros,<br>cuando busca coaches,<br>entonces se muestran resultados.<br><br>Escenario 2: Búsqueda por nombre<br>Dado que ingresa nombre,<br>cuando busca,<br>entonces aparecen coincidencias.<br><br>Escenario 3: Sin resultados<br>Dado que no hay coincidencias,<br>cuando busca,<br>entonces se muestra mensaje.                                                                                                                                                                                                            | 3            | EP02 |
+| US07 | Perfil de coach | Como usuario quiero ver información del coach para evaluar su experiencia y decidir si contratarlo. | Escenario 1: Visualización completa<br>Dado que selecciona un coach,<br>cuando entra al perfil,<br>entonces ve experiencia, tarifas y reseñas.                                                                                                                                                                                                                                                                                                                                                                                                                                   | 1            | EP02 |
+| US08 | Reserva de sesión | Como usuario quiero reservar sesiones con coach para asegurar un horario de entrenamiento personalizado. | Escenario 1: Reserva exitosa<br>Dado que hay disponibilidad,<br>cuando selecciona horario,<br>entonces la sesión queda agendada.                                                                                                                                                                                                                                                                                                                                                                                                                                                 | 2            | EP02 |
+| US09 | Chat con coach | Como usuario quiero comunicarme con mi coach para resolver dudas sobre mi rutina en tiempo real. | Escenario 1: Envío de mensaje<br>Dado que abre chat,<br>cuando envía mensaje,<br>entonces se entrega al coach.<br><br>Escenario 2: Respuesta<br>Dado que el coach responde,<br>cuando usuario abre chat,<br>entonces ve mensaje.<br><br>Escenario 3: Historial<br>Dado que existen mensajes,<br>cuando entra al chat,<br>entonces ve conversación completa.                                                                                                                                                                                                                      | 5            | EP02 |
+| US10 | Calificación del coach | Como usuario quiero calificar al coach para ayudar a otros usuarios a elegir basándose en mi experiencia | Escenario 1: Registro de reseña<br>Dado que termina sesión,<br>cuando califica,<br>entonces se guarda reseña.<br><br>Escenario 2: Restricción<br>Dado que no tuvo sesión,<br>cuando intenta calificar,<br>entonces se bloquea acción.                                                                                                                                                                                                                                                                                                                                            | 1            | EP02 |
+| US11 | Subir video | Como usuario registrado, quiero subir un video de mi ejercicio, para recibir retroalimentación automática de la IA y mejorar mi técnica. | Escenario 1: Subida correcta<br>Dado que selecciona video,<br>cuando lo sube,<br>entonces se carga archivo.<br><br>Escenario 2: Error formato<br>Dado que archivo no es válido,<br>cuando sube,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                       | 3            | EP03 |
+| US12 | Feedback IA | Como usuario quiero corrección automática de ejercicios para evitar lesiones y optimizar mi rendimiento. | Escenario 1: Dado que el video ha sido procesado con éxito, cuando el usuario abre el resultado, entonces el sistema muestra el video con skeleton overlay y una lista de máximo 3 errores técnicos.<br><br>Escenario 2: Recomendaciones claras<br>Dado que termina análisis,<br>cuando ve resultados,<br>entonces recibe sugerencias.                                                                                                                                                                                                                                           | 13           | EP03 |
+| US13 | Historial correcciones | Como usuario quiero ver mis análisis anteriores para visualizar mi mejora técnica a través del tiempo. | Escenario 1: Lista historial<br>Dado que tiene análisis previos,<br>cuando entra a historial,<br>entonces ve registros.<br><br>Escenario 2: Detalle<br>Dado que selecciona registro,<br>cuando abre,<br>entonces ve video y feedback.                                                                                                                                                                                                                                                                                                                                            | 2            | EP03 |
+| US14 | Recomendaciones IA | Como usuario quiero mejoras personalizadas basadas en mis errores frecuentes para entrenar con mayor precisión. | Escenario 1: Recomendaciones<br>Dado que analiza ejercicio,<br>cuando termina IA,<br>entonces muestra mejoras.<br><br>Escenario 2: Seguimiento<br>Dado que repite análisis,<br>cuando hay progreso,<br>entonces compara evolución.                                                                                                                                                                                                                                                                                                                                               | 5            | EP03 |
+| US15 | Registro métricas | Como usuario quiero registrar medidas físicas para cuantificar mis cambios estéticos y de salud. | Escenario 1: Guardado<br>Dado que ingresa datos,<br>cuando guarda,<br>entonces se registra información.<br><br>Escenario 2: Historial<br>Dado que ya existen registros,<br>cuando añade nuevos,<br>entonces no se elimina historial.                                                                                                                                                                                                                                                                                                                                             | 1            | EP04 |
+| US16 | Progreso físico | Como usuario quiero ver gráficos de evolución para mantenerme motivado al ver mis resultados visualmente. | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra a progreso,<br>entonces ve gráficos.<br><br>Escenario 2: Comparación<br>Dado que selecciona fechas,<br>cuando filtra,<br>entonces ve evolución.                                                                                                                                                                                                                                                                                                                                                                | 3            | EP04 |
+| US17 | Historial entrenamientos | Como usuario quiero ver mis entrenamientos pasados para llevar un control estricto de mi constancia. | Escenario 1: Lista<br>Dado que entrenó antes,<br>cuando entra historial,<br>entonces ve sesiones.<br><br>Escenario 2: Detalle<br>Dado que selecciona sesión,<br>cuando abre,<br>entonces ve información.                                                                                                                                                                                                                                                                                                                                                                         | 2            | EP04 |
+| US18 | Alertas rutina | Como usuario quiero recordatorios de entrenamiento para evitar el sedentarismo y cumplir mi plan. | Escenario 1: Notificación<br>Dado que tiene rutina,<br>cuando llega hora,<br>entonces recibe alerta.<br><br>Escenario 2: Incumplimiento<br>Dado que no entrena,<br>cuando pasa tiempo,<br>entonces recibe aviso.                                                                                                                                                                                                                                                                                                                                                                 | 3            | EP04 |
+| US19 | Gestión clientes | Como coach quiero administrar a mis clientes para organizar mejor mis asesorías y tiempos. | Escenario 1: Lista clientes<br>Dado que tiene alumnos,<br>cuando entra módulo,<br>entonces ve lista.<br><br>Escenario 2: Perfil cliente<br>Dado que selecciona alumno,<br>cuando abre perfil,<br>entonces ve progreso.                                                                                                                                                                                                                                                                                                                                                           | 3            | EP05 |
+| US20 | Disponibilidad | Como coach quiero definir mis horarios para que mis alumnos reserven sesiones sin conflictos de agenda. | Escenario 1: Registro<br>Dado que configura agenda,<br>cuando guarda,<br>entonces se publica disponibilidad.<br><br>Escenario 2: Edición<br>Dado que modifica horarios,<br>cuando actualiza,<br>entonces cambia agenda.                                                                                                                                                                                                                                                                                                                                                          | 2            | EP05 |
+| US21 | Seguimiento cliente | Como coach quiero ver el progreso detallado de mis clientes para ajustar sus rutinas de forma profesional. | Escenario 1: Visualización<br>Dado que selecciona cliente,<br>cuando entra,<br>entonces ve métricas.<br><br>Escenario 2: Comparación<br>Dado que hay historial,<br>cuando filtra fechas,<br>entonces ve evolución.                                                                                                                                                                                                                                                                                                                                                               | 3            | EP05 |
+| US22 | Monetización | Como coach quiero definir precios para mis servicios para profesionalizar y rentabilizar mi trabajo. | Escenario 1: Registro tarifa<br>Dado que crea plan,<br>cuando guarda,<br>entonces se publica.<br><br>Escenario 2: Actualización<br>Dado que cambia precio,<br>cuando edita,<br>entonces se actualiza.                                                                                                                                                                                                                                                                                                                                                                            | 2            | EP05 |
+| US23 | Subir imagen comida | Como usuario quiero subir fotos de mi comida para que el sistema identifique los nutrientes automáticamente. | Escenario 1: Subida correcta<br>Dado que selecciona imagen,<br>cuando carga,<br>entonces se procesa.<br><br>Escenario 2: Error<br>Dado que falla archivo,<br>cuando sube,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                                             | 2            | EP06 |
+| US24 | Reconocimiento IA | Como usuario quiero detección de alimentos mediante IA para no tener que ingresar cada ingrediente manualmente | Escenario 1: Dado que la foto es nítida, cuando la IA procesa la imagen, entonces identifica 'Pollo a la plancha' y 'Ensalada mixta'..<br><br>Escenario 2: Imagen borrosa. Dado que no hay nitidez, entonces muestra: "No pudimos identificar los alimentos. Por favor, suba una imagen con mejor iluminación".                                                                                                                                                                                                                                                                                                                                                                                          | 8            | EP06 |
+| US25 | Cálculo nutricional | Como usuario quiero conocer macros y calorías para balancear mi dieta según mi plan de entrenamiento. | Escenario 1: Cálculo correcto<br>Dado que detecta alimentos,<br>cuando procesa,<br>entonces muestra valores.<br><br>Escenario 2: Error cálculo<br>Dado que falla sistema,<br>cuando procesa,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                          | 3            | EP06 |
+| US26 | Visualización nutrientes | Como usuario quiero gráficos nutricionales para entender si estoy cumpliendo mis requerimientos diarios | Escenario 1: Visualización<br>Dado que hay datos,<br>cuando entra,<br>entonces ve gráficos.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando entra,<br>entonces muestra aviso.                                                                                                                                                                                                                                                                                                                                                                                   | 3            | EP06 |
+| US27 | Edición alimentos | Como usuario quiero corregir alimentos detectados para asegurar que mi registro diario sea 100% exacto. | Escenario 1: Edición correcta<br>Dado que IA detecta alimentos,<br>cuando edita,<br>entonces actualiza datos.<br><br>Escenario 2: Error<br>Dado que falla guardado,<br>cuando edita,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                                  | 1            | EP06 |
+| US28 | Historial comidas | Como usuario quiero guardar mis comidas diarias para analizar mis hábitos alimenticios a largo plazo. | Escenario 1: Registro automático<br>Dado que analiza comida,<br>cuando termina,<br>entonces guarda historial.<br><br>Escenario 2: Error guardado<br>Dado que falla sistema,<br>cuando guarda,<br>entonces muestra error.                                                                                                                                                                                                                                                                                                                                                         | 2            | EP06 |
+| US29 | Consumo diario | Como usuario quiero ver un resumen de mi consumo diario para no exceder mi límite calórico. | Escenario 1: Resumen diario<br>Dado que hay registros,<br>cuando entra,<br>entonces ve calorías.<br><br>Escenario 2: Sin datos<br>Dado que no hay registros,<br>cuando entra,<br>entonces muestra aviso.                                                                                                                                                                                                                                                                                                                                                                         | 2            | EP06 |
+| US30 | Recomendaciones nutricionales | Como usuario quiero sugerencias según mis metas para optimizar mi nutrición junto a mi entrenamiento. | Escenario 1: Recomendación<br>Dado que analiza consumo,<br>cuando procesa,<br>entonces sugiere mejoras.<br><br>Escenario 2: Sin datos<br>Dado que no hay info,<br>cuando procesa,<br>entonces muestra mensaje.                                                                                                                                                                                                                                                                                                                                                                   | 5            | EP06 |
+| US31 | Integración fitness-nutrición | Como usuario quiero conectar mi dieta y entrenamiento para ver cómo mi alimentación influye en mi fuerza. | Escenario 1: Entonces el sistema redirige al usuario a la sección de "Metas" y muestra el mensaje: "Para calcular tu balance, primero define tu objetivo de peso o masa muscular.<br><br>Escenario 2: Falta de datos<br>Dado que no hay objetivos,<br>cuando entra,<br>entonces solicita configuración.                                                                                                                                                                                                                                                                          | 5            | EP06 |
+| US32 | Notificaciones nutricionales | Como usuario quiero recordatorios de comidas para mantener mi metabolismo activo y organizado. | Escenario 1: Notificación<br>Dado que activa recordatorios,<br>cuando llega hora,<br>entonces envía alerta.<br><br>Escenario 2: Desactivado<br>Dado que está apagado,<br>cuando llega hora,<br>entonces no envía nada.                                                                                                                                                                                                                                                                                                                                                           | 3            | EP06 |
+| US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | Escenario 1: Acceso a información<br>Dado que el visitante accede al sitio web,<br>cuando recorre la sección informativa,<br>entonces el sistema presenta descripciones claras de los servicios.<br><br>Escenario 2: Consulta de características<br>Dado que se requiere mayor detalle,<br>cuando se solicita información específica,<br>entonces el sistema entrega las características correspondientes.                                                                                                                                                                       | 1            | EP-LP |
+| US34 | Solicitar demostración | Como visitante, quiero registrar interés en una demostración para conocer mejor el sistema. | Escenario 1: Registro exitoso<br>Dado que se ingresan datos válidos,<br>cuando se envía la solicitud,<br>entonces el sistema confirma la recepción y describe el siguiente paso.<br><br>Escenario 2: Registro inválido<br>Dado que se ingresan datos incompletos,<br>cuando se procesa la solicitud,<br>entonces el sistema informa los errores identificados.                                                                                                                                                                                                                   | 2            | EP-LP |
+| US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | Escenario 1: Comparación de planes<br>Dado que se accede a la sección de precios,<br>cuando se consulta la información,<br>entonces el sistema presenta detalles y precios de cada plan.<br><br>Escenario 2: Elección de plan<br>Dado que se elige un plan,<br>cuando se solicita continuar,<br>entonces el sistema redirige a la sección correspondiente con el plan predefinido.                                                                                                                                                                                               | 1            | EP-LP |
+| US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | Escenario 1: Envío de consulta<br>Dado que se redacta un mensaje de contacto,<br>cuando se envía la solicitud,<br>entonces el sistema registra la consulta y comunica un tiempo estimado de respuesta.<br><br>Escenario 2: Acceso a preguntas frecuentes<br>Dado que se buscan respuestas previas,<br>cuando se accede a la sección informativa,<br>entonces el sistema presenta las preguntas frecuentes disponibles.                                                                                                                                                           | 2            | EP-LP |
+| US37 | Consultar casos de éxito | Como visitante, quiero revisar casos de éxito para conocer experiencias reales con el sistema. | Escenario 1: Revisión de testimonios<br>Dado que se accede a la sección de experiencias,<br>cuando se selecciona un caso,<br>entonces el sistema presenta el contenido completo con resultados.<br><br>Escenario 2: Filtrado de casos<br>Dado que se requiere una vista segmentada,<br>cuando se filtra por industria,<br>entonces el sistema muestra solo los casos relacionados.                                                                                                                                                                                               | 1            | EP-LP |
+| US38 | Sección "Cómo funciona" | Como visitante, quiero ver una guía paso a paso para entender cómo la IA analiza mis ejercicios. | Escenario 1: Infografía interactiva. Dado que baja en la landing, entonces ve 3 pasos animados del escaneo de video.<br><br>Escenario 2: Salto de guía. Dado que ya conoce el sistema, puede cerrar la guía con el botón 'X' en cualquier momento.                                                                                                                                                                                                                                                                                                                               | 1            | EP-LP |
+| US39 | Registro rápido | Como visitante, quiero un botón de registro visible para crear mi cuenta rápidamente desde el inicio. | Escenario 1: Botón Header. Dado que hace clic en "Empezar Gratis", entonces salta directamente al flujo US01.<br><br>Escenario 2: Persistencia. Dado que ya inició sesión antes, cuando hace clic, el sistema lo reconoce y lo lleva al dashboard.                                                                                                                                                                                                                                                                                                                               | 1            | EP-LP |
+| TS01 | Implementación de Middleware de Autenticación JWT | Como sistema, se debe validar el token JWT en las cabeceras de cada petición para asegurar la integridad de los datos de la API. | Escenario 1: Validación de token exitosa<br>Dado que una aplicación externa envía un JWT válido,<br>cuando el middleware lo procesa,<br>entonces autoriza el acceso al endpoint solicitado.<br><br>Escenario 2: Token inexistente o corrupto<br>Dado que la petición no incluye cabecera de autorización,<br>cuando el sistema la intercepta,<br>entonces retorna un error 401 Unauthorized.                                                                                                                                                                                     | 3            | EP-API |
+| TS02 | Exposición de Endpoints para Bounded Context Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de perfiles de coaches certificados. | Escenario 1: Respuesta JSON. Dado un GET a /api/v1/coaches, entonces retorna la lista con status 200 OK.<br><br>Escenario 2: Base caída. Dado que la DB no responde, entonces el endpoint retorna un error 503 Service Unavailable.                                                                                                                                                                                                                                                                                                                                              | 3            | EP-API |
+| TS03 | Configuración de Endpoints para Video Management | Como sistema, se debe habilitar un endpoint para la recepción de flujos de video y su posterior procesamiento asíncrono en la nube. | Escenario 1: Encolado exitoso. Dado un POST de video, entonces retorna ID de seguimiento y estatus 202.<br><br> Escenario 2: Archivo corrupto. Dado un stream interrumpido, entonces el sistema descarta el archivo y pide reintento.                                                                                                                                                                                                                                                                                                                                            | 5            | EP-API |
+| TS04 | Endpoint de Perfil de Atleta | Como sistema, se debe exponer un endpoint GET para que la App móvil recupere métricas físicas de forma rápida. | Escenario 1: Recuperación de datos. Dado un ID válido, entonces el sistema entrega un objeto JSON con peso, talla y grasa.<br><br> Escenario 2: ID inexistente. Dado un ID inválido, entonces el sistema responde con un error 404 Not Found.                                                                                                                                                                                                                                                                                                                                    | 3            | EP-API |
 
 ### 3.2. Impact Mapping.
 El **Impact Map** es una herramienta visual que permite relacionar los objetivos de negocio con las personas involucradas, los impactos esperados, los entregables y las historias de usuario asociadas.  
@@ -966,13 +906,15 @@ A continuación se presenta el Impact Map de **BodyMatch AI**:
 
 **Segmento Objetivo 1: Jóvenes adultos interesados en el fitness**
 
+<p align="center">
+  <img src="assets/impact1.png" alt="Impact Map Atletas" width="80%" />
+</p>
 
-<img src="assets/impact1.png" alt="as 2" />
+**Segmento Objetivo 2: Entrenadores Personales (Coaches)**
 
-
-**Segmento Objetivo 1: Entrenadores Personales (Coaches)**
-
-<img src="assets/impact2.png" alt="as 2" />
+<p align="center">
+  <img src="assets/impact2.png" alt="Impact Map Coaches" width="80%" />
+</p>
 
 ### 3.3. Product Backlog.
 
@@ -984,7 +926,7 @@ Este backlog permite al equipo de desarrollo:
 - **Planificar sprints ágiles**, asignando tareas según prioridad y complejidad.  
 - Mantener un registro del **estado de cada User Story** (Por Hacer, En Progreso, Hecho).  
 
-**Columnas del Product Backlog:**
+**Columnas del Product Backlog:** 
 
 - **#Orden:** Número secuencial para organización de las historias.  
 - **User Story ID:** Identificador único de la historia de usuario.  
@@ -996,44 +938,70 @@ Este backlog permite al equipo de desarrollo:
 
 A continuación se presenta el backlog completo con todas las User Stories definidas hasta el momento:
 
+**Leyenda de Prioridad:** `Alta` = Crítica para MVP | `Media` = Importante para release | `Baja` = Mejora futura o deseable  
+**Leyenda de Estado:** `Por Hacer` = Sin iniciar | `En Progreso` = En desarrollo | `Hecho` = Completado
 
-| Orden | User Story Id | Título | Descripción | Story Points |
-|------|--------------|--------|-------------|--------------|
-| 1 | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | 1 |
-| 2 | US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con correo y contraseña para acceder a mi cuenta. | 1 |
-| 3 | US07 | Visualización de perfil de coach | Como usuario, quiero ver la experiencia y reseñas del coach para tomar una decisión. | 1 |
-| 4 | US10 | Calificación del coach | Como usuario, quiero calificar al coach para compartir mi experiencia. | 1 |
-| 5 | US15 | Registro de métricas físicas | Como usuario, quiero registrar mis medidas corporales para controlar mi evolución. | 1 |
-| 6 | US23 | Subida de imagen de alimentos | Como usuario, quiero subir fotos de comida para análisis nutricional. | 1 |
-| 7 | US27 | Edición manual de alimentos detectados | Como usuario, quiero corregir alimentos detectados por IA para mayor precisión. | 1 |
-| 8 | US04 | Cierre de sesión | Como usuario o coach, quiero cerrar sesión para proteger mi cuenta. | 2 |
-| 9 | US05 | Configuración de perfil y objetivos | Como usuario, quiero definir mis objetivos para recibir recomendaciones personalizadas. | 2 |
-| 10 | US08 | Reserva de sesión | Como usuario, quiero reservar sesiones con un coach. | 2 |
-| 11 | US13 | Historial de correcciones | Como usuario, quiero ver análisis anteriores para comparar progreso. | 2 |
-| 12 | US16 | Visualización de progreso | Como usuario, quiero ver gráficos de progreso físico. | 2 |
-| 13 | US17 | Historial de entrenamientos | Como usuario, quiero revisar mis entrenamientos para evaluar constancia. | 2 |
-| 14 | US22 | Monetización de servicios | Como coach, quiero definir tarifas para monetizar mis servicios. | 2 |
-| 15 | US28 | Registro en historial de comidas | Como usuario, quiero guardar automáticamente mis comidas. | 2 |
-| 16 | US06 | Búsqueda de coaches | Como usuario, quiero buscar coaches según objetivos y filtros. | 3 |
-| 17 | US11 | Subir video del ejercicio | Como usuario, quiero subir videos para análisis de técnica. | 3 |
-| 18 | US18 | Alertas de cumplimiento de rutina | Como usuario, quiero recibir recordatorios de entrenamiento. | 3 |
-| 19 | US21 | Seguimiento de progreso del cliente | Como coach, quiero ver el progreso de mis clientes. | 3 |
-| 20 | US03 | Recuperación de contraseña | Como usuario o coach, quiero recuperar mi contraseña. | 3 |
-| 21 | US19 | Gestión de clientes | Como coach, quiero administrar mis clientes. | 3 |
-| 22 | US25 | Cálculo de valores nutricionales | Como usuario, quiero ver calorías y macronutrientes de mis comidas. | 3 |
-| 23 | US31 | Integración con objetivos fitness | Como usuario, quiero relacionar nutrición con mis objetivos físicos. | 3 |
-| 24 | US09 | Chat con coach | Como usuario, quiero comunicarme con mi coach en tiempo real. | 5 |
-| 25 | US14 | Recomendaciones de mejora | Como usuario, quiero recibir recomendaciones personalizadas. | 5 |
-| 26 | US20 | Programación de disponibilidad | Como coach, quiero definir mis horarios disponibles. | 5 |
-| 27 | US26 | Visualización detallada de nutrientes | Como usuario, quiero ver gráficos nutricionales detallados. | 5 |
-| 28 | US30 | Recomendaciones nutricionales personalizadas | Como usuario, quiero sugerencias según mis objetivos. | 5 |
-| 29 | US32 | Notificaciones y recordatorios de registro | Como usuario, quiero recordatorios para registrar comidas. | 5 |
-| 30 | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 8 |
-| 31 | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 |
-| 32 | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 |
+| Orden | US ID | Título | Descripción | Story Points | Prioridad | Estado |
+|-------|-------|--------|-------------|--------------|-----------|--------|
+| 1     | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | 1 | **Alta** | Hecho |
+| 2     | US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con correo y contraseña para acceder a mi cuenta. | 1 | **Alta** | Hecho |
+| 3     | US04 | Cierre de sesión | Como usuario o coach, quiero cerrar sesión para proteger mi cuenta. | 2 | **Alta** | Hecho |
+| 4     | US05 | Configuración de perfil y objetivos | Como usuario, quiero definir mis objetivos para recibir recomendaciones personalizadas. | 2 | **Alta** | Por Hacer |
+| 5     | US03 | Recuperación de contraseña | Como usuario o coach, quiero recuperar mi contraseña. | 3 | Media | Por Hacer |
+| 6     | US15 | Registro de métricas físicas | Como usuario, quiero registrar mis medidas corporales para controlar mi evolución. | 1 | Media | Por Hacer |
+| 7     | US06 | Búsqueda de coaches | Como usuario, quiero buscar coaches según objetivos y filtros. | 3 | **Alta** | Por Hacer |
+| 8     | US07 | Visualización de perfil de coach | Como usuario, quiero ver la experiencia y reseñas del coach para tomar una decisión. | 1 | Media | Por Hacer |
+| 9     | US08 | Reserva de sesión | Como usuario, quiero reservar sesiones con un coach. | 2 | **Alta** | Por Hacer |
+| 10    | US10 | Calificación del coach | Como usuario, quiero calificar al coach para compartir mi experiencia. | 1 | Media | Por Hacer |
+| 11    | US11 | Subir video del ejercicio | Como usuario, quiero subir videos para análisis de técnica. | 3 | **Alta** | Por Hacer |
+| 12    | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 13 | **Alta** | En Progreso |
+| 13    | US13 | Historial de correcciones | Como usuario, quiero ver análisis anteriores para comparar progreso. | 2 | Media | Por Hacer |
+| 14    | US14 | Recomendaciones de mejora | Como usuario, quiero recibir recomendaciones personalizadas. | 5 | Media | Por Hacer |
+| 15    | US16 | Visualización de progreso | Como usuario, quiero ver gráficos de progreso físico. | 2 | Media | Por Hacer |
+| 16    | US17 | Historial de entrenamientos | Como usuario, quiero revisar mis entrenamientos para evaluar constancia. | 2 | Media | Por Hacer |
+| 17    | US18 | Alertas de cumplimiento de rutina | Como usuario, quiero recibir recordatorios de entrenamiento. | 3 | Media | Por Hacer |
+| 18    | US09 | Chat con coach | Como usuario, quiero comunicarme con mi coach en tiempo real. | 5 | Media | Por Hacer |
+| 19    | US19 | Gestión de clientes | Como coach, quiero administrar mis clientes. | 3 | **Alta** | Por Hacer |
+| 20    | US20 | Programación de disponibilidad | Como coach, quiero definir mis horarios disponibles. | 5 | **Alta** | Por Hacer |
+| 21    | US21 | Seguimiento de progreso del cliente | Como coach, quiero ver el progreso de mis clientes. | 3 | **Alta** | Por Hacer |
+| 22    | US22 | Monetización de servicios | Como coach, quiero definir tarifas para monetizar mis servicios. | 2 | Media | Por Hacer |
+| 23    | US23 | Subida de imagen de alimentos | Como usuario, quiero subir fotos de comida para análisis nutricional. | 2 | Media | Por Hacer |
+| 24    | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 | Media | Hecho |
+| 25    | US25 | Cálculo de valores nutricionales | Como usuario, quiero ver calorías y macronutrientes de mis comidas. | 3 | Media | Por Hacer |
+| 26    | US26 | Visualización detallada de nutrientes | Como usuario, quiero ver gráficos nutricionales detallados. | 5 | Baja | Por Hacer |
+| 27    | US27 | Edición manual de alimentos detectados | Como usuario, quiero corregir alimentos detectados por IA para mayor precisión. | 1 | Media | Por Hacer |
+| 28    | US28 | Registro en historial de comidas | Como usuario, quiero guardar automáticamente mis comidas. | 2 | Media | Por Hacer |
+| 29    | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 | Media | Por Hacer |
+| 30    | US30 | Recomendaciones nutricionales personalizadas | Como usuario, quiero sugerencias según mis objetivos. | 5 | Baja | Por Hacer |
+| 31    | US31 | Integración con objetivos fitness | Como usuario, quiero relacionar nutrición con mis objetivos físicos. | 3 | Media | Por Hacer |
+| 32    | US32 | Notificaciones y recordatorios de registro | Como usuario, quiero recordatorios para registrar comidas. | 5 | Baja | Por Hacer |
+| 33    | US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | 1 | Media | Por Hacer |
+| 34    | US34 | Solicitar demostración | Como visitante, quiero registrar mi interés en una demostración para conocer mejor el sistema. | 2 | Media | Por Hacer |
+| 35    | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | 1 | Media | Por Hacer |
+| 36    | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | 2 | Media | Por Hacer |
+| 37    | US37 | Consultar casos de éxito | Como visitante, quiero revisar experiencias reales con el sistema. | 2 | Baja | Por Hacer |
+| 38    | TS01 | Implementación de Middleware JWT | Como sistema, se debe validar el token JWT en las cabeceras para asegurar la integridad de la API. | 3 | **Alta** | Hecho |
+| 39    | TS02 | Exposición de Endpoints Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de coaches. | 3 | **Alta** | Por Hacer |
+| 40    | TS03 | Configuración de Endpoints Video | Implementación técnica del canal de subida de video para el procesamiento de la IA. | 5 | **Alta** | Por Hacer |
+| 41    | TS04 | Endpoint Perfil Atleta | Endpoint GET para recuperar métricas físicas. | 3 | **Alta** | Por Hacer |
+
+
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
 
-[Product Backlog en Trello]
+[Product Backlog en Trello](https://trello.com/invite/b/69f6c4d98f6f645b602f8b43/ATTI379fb6f66a33086d7a8b14a7348eb01936888531/bodymatch-ai-product-backlog)
+
+### 3.4. Sprint 2 Backlog
+
+En esta sección se descomponen las User Stories del Sprint activo en tareas técnicas específicas, con una estimación máxima de 8 horas por tarea.
+
+| Task ID | US ID | Descripción de la Tarea Técnica | Estimación (h) | Responsable | Estado |
+|---------|-------|---------------------------------|----------------|-------------|--------|
+| T01 | US12 | Implementar endpoint POST /videos/analyze en Spring Boot. | 6h | ________ | Done |
+| T02 | US12 | Integrar API de gemini para procesamiento de frames de video. | 8h | _______ | In Progress |
+| T03 | US01 | Configurar esquema de base de datos para perfiles de usuario en PostgreSQL. | 4h | ________ | Done |
+| T04 | US11 | Desarrollar componente de subida de archivos con barra de progreso en Flutter. | 6h | _______ | Done |
+| T05 | TS01 | Implementar lógica de validación de JWT en el API Gateway. | 5h | _________ | Done |
+| T06 | US24 | Desarrollar algoritmo de pre-procesamiento de imágenes (brillo/contraste). | 4h | _________ | Done |
 
 
 ## Capitulo IV: Requeriments Specification
@@ -1067,14 +1035,28 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 #### 4.1.2 Approaches Statements Architectural Styles & Patterns
 
-<b>Approaches Statements</b>
-- <b>Domain-Driven Design (DDD): </b> Se optará DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
+**Enfoques de diseño adoptados**
 
-- <b>Attribute-Driven Design (ADD): </b> Se utilizará ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
+| Enfoque | Descripción | Justificación para BodyMatch AI |
+|---|---|---|
+| **Domain-Driven Design (DDD)** | Alinea el diseño técnico con el modelo de negocio mediante bounded contexts y lenguaje ubicuo. | BodyMatch AI opera en seis subdominios diferenciados. DDD garantiza que cada uno evolucione de forma independiente. |
+| **Attribute-Driven Design (ADD) v3** | Proceso iterativo de diseño guiado por atributos de calidad y restricciones. | Permite priorizar decisiones según el impacto en los drivers críticos antes de escribir código. |
 
-<b>Architectural Styles & Patterns</b>
+**Estilo arquitectónico principal y patrones seleccionados**
 
-- <b> Estilo de la Arquitectura:</b> Para el desarrollo de nuestra aplicación usaremos de Arquitectura de Microservicios, donde nuestra aplicación se estructura como una colección de servicios organizados alrededor del negocio.
+BodyMatch AI implementa una **Arquitectura de Monolito Modular orientada a Microservicios**
+organizada mediante DDD. En la fase académica actual los bounded contexts coexisten en un
+único proceso desplegable con fronteras de módulo estrictas que preparan la transición
+futura a microservicios independientes.
+
+| Elemento | Decisión | Justificación |
+|---|---|---|
+| **Estilo principal** | Monolito Modular → Microservicios (migración progresiva) | Reduce la complejidad operativa inicial manteniendo separación lógica por bounded context. |
+| **Patrón de integración** | API Gateway + Fachadas de contexto (`IamContextFacade`) | Centraliza la autenticación y desacopla los bounded contexts mediante interfaces. |
+| **Patrón de datos** | Database per Service (esquemas separados en PostgreSQL) | Cada bounded context gestiona su propio esquema, preparando la migración a bases de datos independientes. |
+| **Patrón de comunicación** | Síncrono (REST) + Asíncrono (eventos de dominio con `@EventListener`) | REST para CRUD simple; eventos para reacciones cross-context sin respuesta inmediata. |
+| **Cliente móvil** | MVC con Flutter | Separa la presentación (Widgets), la lógica (Controllers) y el acceso a datos (Models/Repositories) en Android. |
+
 
 
 #### 4.1.3 Context Diagrams
@@ -1088,154 +1070,564 @@ Administrador: Responsable de la gestión operativa de la plataforma, el manteni
 
 Para garantizar una arquitectura escalable y robusta, el sistema se integra con servicios externos críticos que delegan responsabilidades especializadas: Stripe como pasarela de pagos para el procesamiento seguro de transacciones y suscripciones; Microsoft Outlook para la gestión de comunicaciones transaccionales y notificaciones de confirmación; y servicios de Cloud Storage para el almacenamiento eficiente y recuperación de las evidencias en video de los entrenamientos. Esta configuración permite que BodyMatch AI se enfoque en su propuesta de valor central —la corrección técnica mediante visión computacional— mientras mantiene una conectividad fluida con proveedores de infraestructura de clase mundial.
 
+
+
 <img src="assets/chapter4/Components/SystemContext.png" alt ="">
 
+Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuarios (Atleta, Coach y Administrador) y con servicios externos esenciales como Stripe para pagos, Outlook para correos y Cloud Storage para el almacenamiento de videos. Define los límites del sistema y su conexión con el ecosistema tecnológico exterior.
 
 
 #### 4.1.4 Approach Driven ViewPoints Diagram
 
-<b>Diagrama de contenedores</b>
+**C4 Model - Nivel 2: Diagrama de Contenedores**
 
+<p align="center">
+  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <br>
+  <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
+</p>
 
-<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
+**Descripción:** Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
 
+**C4 Model - Nivel 3: Diagramas de Componentes (Bounded Contexts)**
 
-<b>Diagrama de Componentes</b> 
+* **IAM Bounded Context**
 
-- IAM Bounded Context
+<p align="center">
+  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <br>
+  <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
+</p>
 
-<img src="assets/chapter4/Components/IAMBC.png" alt ="">
+*Descripción:* Diseñado bajo los principios de Domain-Driven Design (DDD) y representado en este Diagrama de Componentes (C4 Nivel 3), detalla la estructura interna del módulo de identidad y acceso. Utiliza Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
 
-- Membership and Payments Bounded Context
+* **Membership and Payments Bounded Context**
 
-<img src="assets/chapter4/Components/Membership and Payments BC.png" alt ="">
+<p align="center">
+  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <br>
+  <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
+</p>
 
-- Video Management Bounded Context
+*Descripción:* Siguiendo el enfoque de DDD y la jerarquía del Modelo C4, este diagrama ilustra la gestión de suscripciones y transacciones financieras. Separa la lógica de membresías de los pagos mediante servicios de comando y consulta, integrándose con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
 
-<img src="assets/chapter4/Components/Video Management BC.png" alt ="">
+* **Video Management Bounded Context**
 
-- Matchmaking with Users Bounded Context
+<p align="center">
+  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <br>
+  <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
+</p>
 
-<img src="assets/chapter4/Components/Matchmaking with Users.png" alt ="">
+*Descripción:* Este componente de nivel C4 Nivel 3 aplica patrones de DDD como CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario. Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos.
 
-- Training Tracker Bouded Context
+* **Matchmaking with Users Bounded Context**
 
-<img src="assets/chapter4/Components/TrainingTracker BC.png" alt ="">
+<p align="center">
+  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <br>
+  <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
+</p>
 
-- Nutrition Bounded Context
+*Descripción:* Aplicando tácticas de Domain-Driven Design (DDD), este componente gestiona el emparejamiento entre atletas y coaches. Administra tanto las solicitudes de conexión como la programación de sesiones de entrenamiento, exponiendo una fachada para compartir la información de las sesiones con otros módulos del sistema.
 
-<img src="assets/chapter4/Components/Nutrition BC.png" alt ="">
+* **Training Tracker Bounded Context**
 
-<b>Activities Diagrams</b>
+<p align="center">
+  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <br>
+  <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
+</p>
 
-<img src="assets/chapter4/Components/actividadai.png" alt ="">
+*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama de C4 Model muestra cómo se registran y consultan los entrenamientos y métricas de performance bajo un modelo de dominio especializado. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
 
-<img src="assets/chapter4/Components/actividadiam.png" alt ="">
+* **Nutrition Bounded Context**
 
-<img src="assets/chapter4/Components/actividadpayment.png" alt ="">
+<p align="center">
+  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <br>
+  <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
+</p>
 
-<img src="assets/chapter4/Components/actividadtracking.png" alt ="">
+*Descripción:* Este diagrama de nivel C4 Nivel 3 describe la estructura del contexto nutricional gestionado mediante el patrón CQRS. Siguiendo principios de DDD, se integra con la Gemini API para la detección automática de alimentos y macros, proveyendo una fachada de contexto para permitir que otros módulos accedan a la información de forma desacoplada.
 
-<b>Diagramas de Estados</b>
+**Diagramas de Actividades**
 
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <br>
+  <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
+</p>
 
-<img src="assets/chapter4/Components/estadoaim.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <br>
+  <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
+</p>
 
+<p align="center">
+  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <br>
+  <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el <b>Patrón Strategy (ver sección 4.1.6)</b>.</em>
+</p>
 
+<p align="center">
+  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <br>
+  <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
+</p>
 
-<img src="assets/chapter4/Components/estadoai.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <br>
+  <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
+</p>
 
+**Diagramas de Estados**
 
-<img src="assets/chapter4/Components/estadopayment.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <br>
+  <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal <b>FALLIDO_PERMANENTE</b>).</em>
+</p>
 
+<p align="center">
+  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <br>
+  <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
+</p>
 
-<img src="assets/chapter4/Components/estadotracking.png" alt ="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <br>
+  <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
+</p>
 
-<b>Diagrama de Clases</b>
+<p align="center">
+  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <br>
+  <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
+</p>
 
-<img src="assets/chapter4/DiagramClass.png" alt="">
+<p align="center">
+  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <br>
+  <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
+</p>
+
+**Diagrama de Clases**
+
+<p align="center">
+  <img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+  <br>
+  <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
+</p>
+
+**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como Strategy para la flexibilidad en pagos y Factory para la gestión de perfiles de usuario, asegurando la trazabilidad con los patrones definidos en la sección 4.1.6.
+
+#### 4.1.4 Approach Driven ViewPoints Diagram
+
+**C4 Model - Nivel 2: Diagrama de Contenedores**
+
+<p align="center">
+  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <br>
+  <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
+</p>
+
+**Descripción:** Representa la arquitectura lógica dividida en microservicios, donde se observa el uso de una aplicación móvil, una landing page y un API Gateway que distribuye las peticiones hacia servicios especializados (Auth, Nutrition, AI Analysis, Payments), cada uno con su propia persistencia.
+
+**C4 Model - Nivel 3: Diagramas de Componentes (Bounded Contexts)**
+
+* **IAM Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <br>
+  <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
+</p>
+
+*Descripción:* Diseñado bajo los principios de Domain-Driven Design (DDD) y representado en este Diagrama de Componentes (C4 Nivel 3), detalla la estructura interna del módulo de identidad y acceso. Utiliza Spring Boot y el patrón CQRS para separar las operaciones de comando y consulta de perfiles. Incluye repositorios para la persistencia en MySQL y una fachada para validar accesos desde otros contextos.
+
+* **Membership and Payments Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <br>
+  <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
+</p>
+
+*Descripción:* Siguiendo el enfoque de DDD y la jerarquía del Modelo C4, este diagrama ilustra la gestión de suscripciones y transacciones financieras. Separa la lógica de membresías de los pagos mediante servicios de comando y consulta, integrándose con la API de Stripe a través de una fachada externa para procesar cobros de forma segura.
+
+* **Video Management Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <br>
+  <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
+</p>
+
+*Descripción:* Este componente de nivel C4 Nivel 3 aplica patrones de DDD como CQRS para organizar el procesamiento de grabaciones y la entrega de resultados al usuario. Describe el flujo de gestión de videos y generación de feedback técnico, conectando el backend con la API de Gemini para el análisis de movimientos.
+
+* **Matchmaking with Users Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <br>
+  <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
+</p>
+
+*Descripción:* Aplicando tácticas de Domain-Driven Design (DDD), este componente gestiona el emparejamiento entre atletas y coaches. Administra tanto las solicitudes de conexión como la programación de sesiones de entrenamiento, exponiendo una fachada para compartir la información de las sesiones con otros módulos del sistema.
+
+* **Training Tracker Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <br>
+  <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
+</p>
+
+*Descripción:* Enfocado en el seguimiento del rendimiento físico, este diagrama de C4 Model muestra cómo se registran y consultan los entrenamientos y métricas de performance bajo un modelo de dominio especializado. Permite que otros contextos accedan a la evolución del usuario mediante una fachada de integración dedicada.
+
+* **Nutrition Bounded Context**
+
+<p align="center">
+  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <br>
+  <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
+</p>
+
+*Descripción:* Este diagrama de nivel C4 Nivel 3 describe la estructura del contexto nutricional gestionado mediante el patrón CQRS. Siguiendo principios de DDD, se integra con la Gemini API para la detección automática de alimentos y macros, proveyendo una fachada de contexto para permitir que otros módulos accedan a la información de forma desacoplada.
+
+**Diagramas de Actividades**
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <br>
+  <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <br>
+  <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <br>
+  <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el <b>Patrón Strategy (ver sección 4.1.6)</b>.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <br>
+  <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <br>
+  <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
+</p>
+
+**Diagramas de Estados**
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <br>
+  <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal <b>FALLIDO_PERMANENTE</b>).</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <br>
+  <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <br>
+  <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <br>
+  <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
+</p>
+
+<p align="center">
+  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <br>
+  <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
+</p>
+
+**Diagrama de Clases**
+
+<p align="center">
+  <img src="./assets/chapter5/BodyMatch_AI_Class_Diagram.svg" alt="Class Diagram BodyMatch AI">
+  <br>
+  <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
+</p>
+
+**Descripción:** Este diagrama representa la estructura estática de la solución, detallando las entidades clave de cada Bounded Context y sus asociaciones. Se implementan patrones como Strategy para la flexibilidad en pagos y Factory para la gestión de perfiles de usuario, asegurando la trazabilidad con los patrones definidos en la sección 4.1.6.
 
 #### 4.1.5 Relational/Non Relational Database Diagram
 
-<img src="assets/chapter4/Base de Datos-BodyMatch.jpg" alt="">
+
+<p align="center">
+  <img src="./assets/chapter4/Base_de_Datos_BodyMatch.jpg" alt="data base diagram BodyMatch AI">
+</p>
+
+**Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
+
+#### 4.1.6. Design Patterns
+
+En esta sección se documentan los patrones de diseño adoptados en **BodyMatch AI**,
+tanto en el backend (Spring Boot) como en el cliente móvil (Flutter). Cada patrón se
+justifica con la clase concreta que lo implementa, el atributo de calidad que satisface
+y la referencia al Quality Attribute Scenario (QAS) correspondiente.
 
 
-#### 4.1.6 Design Patterns
+##### 4.1.6.1 Patrones de Creación
 
-- <b>Patron Strategy:</b> Con este patron de comportamiento, buscamos facilitar el acceso a distintos tipos de pagos sin la necesidad de hacer muchas clases para cada una de ellas. Con este patrón podremos cambiar entre proveedores sin llegar a tocar el código a profundidad.
-<img src="assets/chapter4/Strategy Method.png" alt="" />
+Los patrones de creación encapsulan la lógica de instanciación, evitando que el resto
+del sistema dependa de constructores directos y previniendo la creación de objetos en
+estados inválidos.
 
-- <b>Patrón Factory:</b> Este patrón creacioal nos permite utilizar interfaces para poder crear objetos en una superclase, miengras que las subclases puedan modificar el tipo de objeto creado. Con este patrón buscamos tener una visión a futuro en caso de que se quieran agregar muchos más tipos de perfiles. Además con este patrón se cumple uno de los principios SOLID "Open/Closed Principle", permitiendonos agregar cuantas clases querramos sin alterar significativamente el código.
-<img src="assets/chapter4/Factory Method.png" alt=""/>
+---
+
+**Factory Method**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando se necesita crear entidades de dominio garantizando que sus invariantes de negocio se cumplan desde el momento de la creación. |
+| **Beneficio** | Encapsula la lógica de construcción. El resto del sistema nunca instancia la entidad con `new` directamente, eliminando estados inconsistentes. |
+| **Clases en BodyMatch AI** | `User.create(String email, String passwordHash, Role role)` en el Bounded Context **IAM**; `ExerciseVideo.register(UUID athleteId, String blobUrl, String exerciseType)` en **Video Management**. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05 (incorporar nuevo proveedor de pagos sin modificar lógica existente). |
+
+<img src="assets/chapter4/user.png" alt="user">
+
+---
+
+##### 4.1.6.2 Patrones de Comportamiento
+
+Los patrones de comportamiento definen cómo interactúan los objetos y cómo se distribuyen
+las responsabilidades en tiempo de ejecución.
+
+---
+
+**Strategy**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando existen múltiples algoritmos intercambiables para una misma operación y la elección debe poder cambiarse sin modificar el código cliente. |
+| **Beneficio** | El módulo de pagos puede cambiar de proveedor (Stripe → MercadoPago) o el módulo IAM puede cambiar el algoritmo de hashing sin afectar la lógica de negocio. |
+| **Interfaz** | `PaymentGatewayStrategy` con implementaciones `StripePaymentGateway` en **Membership & Payments**; `HashingService` con implementación `BCryptHashingService` en **IAM**; `TokenService` con implementación `JwtTokenService` en **IAM**. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05: la incorporación de un nuevo gateway requiere únicamente implementar la interfaz `PaymentGatewayStrategy`, sin tocar ninguna otra clase. |
+
+![Menbership.jpeg](assets/chapter4/Menbership.jpeg)
+
+---
+
+**Command**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando una operación del sistema debe representarse como un objeto para desacoplar quien solicita la acción de quien la ejecuta (patrón CQRS). |
+| **Beneficio** | Permite trazar, validar y encolar acciones antes de ejecutarlas, y es la base del patrón CQRS implementado en todos los bounded contexts. |
+| **Clases en BodyMatch AI** | `SignUpAthleteCommand`, `SignInCommand` en **IAM**; `UploadExerciseVideoCommand`, `RequestVideoAnalysisCommand` en **Video Management**; `ProcessFoodImageCommand` en **Nutrition**. |
+| **Atributo de calidad** | Mantenibilidad y Rendimiento — facilita el procesamiento asíncrono (QAS-01) al encolar comandos pesados sin bloquear el hilo principal. |
+
+---
+
+**Observer**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando un evento producido en un bounded context debe disparar reacciones en otros contextos sin crear dependencias directas entre ellos. |
+| **Beneficio** | Desacoplamiento entre bounded contexts. El contexto emisor no conoce a los suscriptores. |
+| **Implementación** | Eventos de dominio publicados con `ApplicationEventPublisher` de Spring y consumidos con `@EventListener`. Ejemplo: `VideoAnalysisCompletedEvent` publicado por **Video Management** y escuchado por **Training Tracker** para actualizar las métricas del atleta. |
+| **Atributo de calidad** | Mantenibilidad — permite agregar nuevos suscriptores sin modificar el contexto emisor. |
+
+---
+
+##### 4.1.6.3 Patrones de Estructura
+
+Los patrones estructurales organizan la composición de objetos para reducir el acoplamiento
+entre componentes del sistema.
+
+---
+
+**Facade**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando un bounded context necesita consumir datos de otro sin acceder a su modelo interno. |
+| **Beneficio** | Reduce el acoplamiento entre bounded contexts. Cada contexto expone únicamente la información que otros necesitan, protegiendo su modelo de dominio. |
+| **Clases en BodyMatch AI** | `IamContextFacade` — expone métodos como `getAthleteProfile(UUID userId)` que **Matchmaking** y **Training Tracker** consumen sin conocer las entidades internas de IAM; `MatchmakingContextFacade` — usada por **Training Tracker** para consultar sesiones programadas. |
+| **Atributo de calidad** | Mantenibilidad — los cambios internos en el IAM no afectan a los contextos que lo consumen a través de la fachada. |
+
+<img src="assets/chapter4/context.png" alt="context">
+---
+
+##### 4.1.6.4 Patrones Empresariales
+
+Los patrones empresariales resuelven problemas comunes en aplicaciones de negocio: gestión
+de lógica de aplicación, persistencia, transferencia de datos y coordinación de
+transacciones.
+
+---
+
+**Service Layer (Command Service / Query Service)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para centralizar la lógica de aplicación, separándola del dominio y de la infraestructura. |
+| **Beneficio** | Cada bounded context tiene servicios de comando y consulta con responsabilidad única, lo que facilita las pruebas unitarias de forma aislada. |
+| **Clases en BodyMatch AI** | `UserCommandServiceImpl`, `UserQueryServiceImpl` en **IAM**; `VideoCommandServiceImpl`, `VideoQueryServiceImpl` en **Video Management**; `NutritionCommandServiceImpl` en **Nutrition**. |
+| **Atributo de calidad** | Mantenibilidad — el patrón CQRS (sección 4.1.5) se apoya directamente en esta separación. |
+
+---
+
+**Repository Pattern**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para abstraer el acceso a la base de datos del resto del dominio. |
+| **Beneficio** | El dominio interactúa con interfaces (`UserRepository`) sin conocer la implementación de persistencia. Facilita los tests con mocks. |
+| **Clases en BodyMatch AI** | `UserRepository`, `RoleRepository` en **IAM**; `ExerciseVideoRepository` en **Video Management**; `CoachProfileRepository`, `SessionRepository` en **Matchmaking**; `MetricRepository` en **Training Tracker**; `FoodLogRepository` en **Nutrition**. Todos extienden `JpaRepository` de Spring Data. |
+| **Atributo de calidad** | Mantenibilidad — el cambio de motor de base de datos solo requeriría modificar las implementaciones de repositorio. |
+
+---
+
+**Data Transfer Object (DTO) y Mapper / Assembler**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Cuando se necesita transferir datos entre la capa de dominio y la capa de interfaz (REST controllers) sin exponer las entidades internas. |
+| **Beneficio** | El modelo de dominio queda protegido. Los cambios en la API REST no obligan a cambiar las entidades, y viceversa. |
+| **Clases en BodyMatch AI** | **Recursos (DTO de salida):** `UserResource`, `AuthenticatedUserResource`, `ExerciseVideoResource`, `CoachProfileResource`, `SessionResource`, `MetricResource`, `FoodLogResource`. **Comandos (DTO de entrada):** `SignUpAthleteResource`, `SignInResource`, `CreateMetricResource`. **Assemblers:** `UserResourceFromEntityAssembler`, `ExerciseVideoResourceFromEntityAssembler`, `SessionResourceFromEntityAssembler`. |
+| **Atributo de calidad** | Seguridad y Mantenibilidad — los datos sensibles de las entidades (como el hash de contraseña) nunca se exponen en los recursos de respuesta. |
+
+---
+
+**Unit of Work**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para coordinar múltiples operaciones de base de datos como una unidad atómica. |
+| **Beneficio** | Garantiza la consistencia de los datos: o todas las operaciones de un caso de uso se confirman, o ninguna. |
+| **Implementación** | Gestionado por JPA/Hibernate a través de la anotación `@Transactional` en los métodos de los Command Services. Ejemplo: `UserCommandServiceImpl.registerAthlete()` crea el usuario y asigna su rol en una única transacción. |
+| **Atributo de calidad** | Disponibilidad — QAS-03: garantiza que la consistencia no se comprometa bajo carga concurrente. |
+
+---
+
+**Gateway**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para encapsular la comunicación con servicios externos o con otros bounded contexts. |
+| **Beneficio** | El sistema no depende directamente de la API externa. Si el proveedor cambia, solo se modifica la clase Gateway. |
+| **Clases en BodyMatch AI** | `GeminiAIGateway` — encapsula las llamadas a la API de Gemini para el análisis de video y de imágenes de alimentos; `StripeGateway` — encapsula las llamadas a la API de Stripe para el procesamiento de pagos; `AzureBlobStorageGateway` — gestiona la subida y recuperación de videos. Adicionalmente, `IamContextFacade` actúa como Gateway interno para el acceso cross-context. |
+| **Atributo de calidad** | Mantenibilidad — QAS-05 y AC-04: la abstracción detrás del Gateway permite sustituir Gemini AI sin afectar la lógica de Video Management. |
+
+<img src="assets/chapter4/gemini.png" alt="iam">
+
+---
+
+##### 4.1.6.5 Patrones Arquitectónicos
+
+Los patrones arquitectónicos establecen la organización de alto nivel del sistema, definiendo
+cómo se estructuran y comunican sus grandes componentes.
+
+---
+
+**CQRS (Command Query Responsibility Segregation)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para separar las operaciones de escritura (comandos) de las de lectura (consultas) dentro de cada bounded context. |
+| **Beneficio** | Mejora la claridad del código y sienta las bases para escalar la lectura y escritura de forma independiente en el futuro. |
+| **Implementación en BodyMatch AI** | Cada bounded context tiene dos interfaces de servicio diferenciadas: `XxxCommandService` (operaciones de escritura: crear, actualizar, eliminar) y `XxxQueryService` (operaciones de lectura: buscar, listar, obtener). Ejemplo en IAM: `UserCommandService.registerAthlete(SignUpAthleteCommand)` y `UserQueryService.getUserById(UUID id)`. |
+| **Atributo de calidad** | Mantenibilidad y Rendimiento — el equipo puede optimizar las consultas de lectura (añadir caché, índices) sin tocar la lógica de escritura. |
+
+---
+
+**Layered Architecture (Arquitectura por Capas)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para organizar el código en capas con responsabilidades bien definidas y dependencias que fluyen en una única dirección (hacia adentro). |
+| **Beneficio** | Ninguna capa externa conoce los detalles de una capa más interna. Los cambios en la infraestructura (base de datos, servicios externos) no afectan al dominio. |
+| **Estructura en BodyMatch AI** | Cada bounded context está organizado en cuatro capas: **`domain`** (entidades, value objects, interfaces de repositorio); **`application`** (command services, query services, comandos, eventos); **`infrastructure`** (implementaciones de repositorio JPA, gateways externos); **`interfaces`** (REST controllers, resources/DTOs, assemblers). |
+| **Atributo de calidad** | Mantenibilidad — AC-06: el esquema por bounded context en PostgreSQL y la separación por capas facilitan la migración futura a microservicios independientes. |
+
+<img src="assets/chapter4/D_iam.png" alt="iam">
+
+---
+
+**MVC en Flutter (Cliente Móvil)**
+
+| Componente | Detalle |
+|---|---|
+| **Cuándo se aplica** | Para estructurar la capa de presentación de la aplicación móvil separando la vista, la lógica de presentación y el acceso a datos. |
+| **Beneficio** | Facilita el mantenimiento y las pruebas de la UI de forma independiente de la lógica de negocio. |
+| **Implementación en BodyMatch AI** | **Model:** clases Dart que representan las respuestas de la API (ej. `UserModel`, `ExerciseVideoModel`, `CoachProfileModel`). **View:** Widgets de Flutter que renderizan la UI (ej. `LoginScreen`, `VideoUploadScreen`, `AnalysisFeedbackScreen`). **Controller:** clases que coordinan la comunicación entre la vista y el repositorio de datos, gestionando el estado con Provider o Riverpod (ej. `AuthController`, `VideoController`). Los repositorios del cliente consumen los endpoints REST documentados en la sección 5.2.1.5. |
+| **Atributo de calidad** | Mantenibilidad y Usabilidad — los cambios en el diseño visual no afectan la lógica de consumo de la API, y viceversa. |
+
+<img src="assets/chapter4/MVC.png" alt="MVC">
+
+---
+
+> **Trazabilidad de patrones con Quality Attribute Scenarios:**
+>
+> | Patrón | QAS relacionado | Atributo satisfecho |
+> |---|---|---|
+> | Strategy (`PaymentGatewayStrategy`) | QAS-05 | Mantenibilidad |
+> | Strategy (`HashingService`, `TokenService`) | QAS-02 | Seguridad |
+> | Gateway (`GeminiAIGateway`) | QAS-01, AC-04 | Rendimiento, Mantenibilidad |
+> | Observer (`VideoAnalysisCompletedEvent`) | QAS-01 | Rendimiento |
+> | Repository + Unit of Work | QAS-03, QAS-04 | Disponibilidad, Seguridad |
+> | Facade (`IamContextFacade`) | QAS-05, AC-02 | Mantenibilidad |
+> | CQRS | QAS-01, QAS-03 | Rendimiento, Mantenibilidad |
+> | Layered Architecture | AC-06 | Mantenibilidad |
+> | MVC Flutter | — | Usabilidad, Mantenibilidad |
 
 
 
 #### 4.1.7. Tactics
 
-Las tácticas arquitectónicas son decisiones de diseño concretas que permiten satisfacer los
-atributos de calidad requeridos por BodyMatch AI. A diferencia de los patrones de diseño, las
-tácticas actúan directamente sobre los estímulos del sistema para producir las respuestas
-esperadas en cada escenario de calidad. A continuación se organizan por atributo.
-
----
+Las tácticas arquitectónicas son decisiones de diseño concretas que permiten satisfacer
+los atributos de calidad. Cada táctica incluye un umbral medible (SLO) que permite
+verificar su efectividad durante las revisiones de sprint.
 
 ##### Tácticas de Rendimiento
 
-El sistema debe responder rápidamente, especialmente en funciones como la **búsqueda de coaches** y el **análisis de ejercicios**.
-
-
-
- **Uso de caché para datos frecuentes**
-La información más consultada (como **perfiles de coaches** o **resultados de búsqueda**) se almacena temporalmente en caché para evitar consultas repetidas y mejorar la velocidad de respuesta.
-
-**Procesamiento en segundo plano**
-El análisis de videos no se realiza de forma inmediata. El usuario sube el video y el sistema lo procesa en segundo plano, notificando el resultado cuando esté disponible.
-
- **Carga de datos por partes (paginación)**
-En listas grandes (como **coaches** o **historial**), se cargan solo algunos elementos a la vez para reducir tiempos de carga y mejorar la experiencia del usuario.
-
- **Optimización de base de datos**
-Los datos se estructuran y organizan de manera eficiente para acelerar las **búsquedas** y **consultas**, reduciendo tiempos de respuesta.
-
----
+| Táctica | Implementación concreta | SLO verificable |
+|---|---|---|
+| **Procesamiento asíncrono de video** | `VideoCommandServiceImpl` publica `VideoAnalysisRequestedEvent`; un `@EventListener` procesa la tarea en segundo plano sin bloquear el hilo HTTP. | Tiempo de respuesta HTTP de subida: < 10 s. Entrega del feedback de IA: < 5 min bajo 50 solicitudes concurrentes (QAS-01). |
+| **Caché para búsqueda de coaches** | Anotación `@Cacheable` sobre `CoachSearchQueryServiceImpl.searchCoaches()`. Proveedor: caché en memoria (fase académica) / Redis (producción). | Latencia P95 de búsqueda: < 800 ms bajo 200 usuarios concurrentes. Tasa de caché hit: > 60% para parámetros repetidos (QAS-03). |
+| **Paginación de resultados** | Uso de `Pageable` de Spring Data en todos los endpoints de listado. Tamaño de página por defecto: 20 elementos. | Tiempo de respuesta de la primera página de cualquier listado: < 300 ms. |
+| **Índices en PostgreSQL** | Índices en: `coach_profiles.specialty`, `coach_profiles.hourly_rate`, `sessions.scheduled_at`, `exercise_videos.athlete_id`. Gestionados con migraciones Flyway. | Tiempo de consulta de búsqueda con filtros: < 100 ms con menos de 10.000 coaches registrados. |
 
 ##### Tácticas de Seguridad
 
-El sistema maneja datos personales, videos de ejercicio y transacciones de pago, por lo que
-la seguridad es un atributo crítico.
-
-- **Autenticación mediante JWT con rotación de tokens:** El módulo IAM emite tokens de acceso
-  de corta duración (15 minutos) y tokens de refresco de larga duración (7 días). La rotación
-  automática reduce la ventana de exposición en caso de intercepción.
-
-- **Control de acceso basado en roles (RBAC):** Spring Security aplica restricciones por rol en
-  cada endpoint. Los roles definidos son `ROLE_USER` y `ROLE_COACH`. Un usuario con rol
-  `ROLE_USER` no puede acceder a los endpoints de gestión de clientes del coach, y viceversa.
-
-- **Cifrado de datos en tránsito y en reposo:** Toda la comunicación entre el cliente y el
-  servidor se realiza sobre HTTPS/TLS. 
-
-- **Sanitización de entradas:** Todos los datos recibidos desde el cliente se validan mediante
-  Bean Validation (`@Valid`, `@NotBlank`, `@Size`) antes de ser procesados por la capa de
-  dominio, previniendo inyecciones y desbordamientos.
-
-
----
+| Táctica | Implementación concreta | SLO verificable |
+|---|---|---|
+| **Autenticación JWT con rotación de tokens** | `JwtTokenService` emite access tokens (expiración: 15 min) y refresh tokens (expiración: 7 días). El refresh token se invalida en BD al hacer logout. | 100% de endpoints protegidos rechazan peticiones sin token válido con HTTP 401. Tiempo de validación: < 5 ms (QAS-02). |
+| **Control de acceso por roles (RBAC)** | `@PreAuthorize("hasRole('ROLE_ATHLETE')")` y `@PreAuthorize("hasRole('ROLE_COACH')")` en los métodos de los controladores REST mediante Spring Security. | 100% de intentos con rol incorrecto rechazados con HTTP 403 en < 200 ms (QAS-02). |
+| **URLs pre-firmadas para archivos multimedia** | `AzureBlobStorageGateway.generateSasUrl(blobName, durationMinutes)` genera URLs con firma HMAC que expiran en 15 min. Los videos en Blob Storage no son accesibles públicamente. | 0% de accesos directos a Blob Storage sin URL firmada. URLs con expiración exacta de 15 min (QAS-04). |
+| **Validación de entradas** | Anotaciones `@Valid`, `@NotBlank`, `@Size`, `@Email` en todos los recursos de entrada (DTOs). Los errores devuelven HTTP 400 con detalle del campo fallido. | 0% de solicitudes con datos inválidos alcanzan la capa de dominio. Respuesta de error de validación: < 50 ms. |
 
 ##### Tácticas de Mantenibilidad
 
-El equipo es de cinco integrantes con ciclos de desarrollo cortos, por lo que la capacidad de
-modificar y extender el sistema sin regresiones es fundamental.
-
-- **Separación por Bounded Contexts:** Cada contexto delimitado (IAM, Membership & Payments,
-  Video Management, Matchmaking, Training Tracker, Nutrition) tiene su propio paquete Java con
-  capas internas independientes. Los cambios dentro de un contexto no afectan a los demás.
-
-- **Pruebas automatizadas por capa:** Se implementan pruebas unitarias en la capa de dominio con JUnit y Mockito (aislando dependencias), pruebas de integración para los repositorios mediante Spring Boot Test y pruebas de contrato para los endpoints REST validando respuestas, estados HTTP y estructura del API.
-
-- **Documentación automática de APIs con SpringDoc/OpenAPI:** Todos los endpoints REST están
-  documentados con anotaciones OpenAPI. La especificación se genera automáticamente y se expone
-  en `/swagger-ui/index.html`, facilitando la integración con el frontend.
+| Táctica | Implementación concreta | SLO verificable |
+|---|---|---|
+| **Separación por Bounded Contexts** | Estructura de paquetes: `com.bodymatch.{contexto}.{domain/application/infrastructure/interfaces}`. Sin importaciones cruzadas entre paquetes de bounded contexts distintos (solo via fachadas). | Un cambio interno en un bounded context no requiere modificaciones en ningún otro. |
+| **Documentación automática de API** | SpringDoc OpenAPI 3.0 con `@Operation`, `@ApiResponse`, `@Tag` en todos los controladores. Accesible en `/swagger-ui/index.html`. | 100% de endpoints implementados documentados en Swagger UI. |
+| **Migraciones versionadas** | Flyway con convención `V{version}__{contexto}_{descripcion}.sql`. Scripts organizados por bounded context. | 0% de conflictos de migración al ejecutar el proyecto desde cero en entorno limpio. |
 
 ---
 
@@ -1250,185 +1642,184 @@ insumo principal del proceso ADD v3 aplicado en este proyecto.
 Los principales drivers arquitectónicos del sistema son:
 
 
--**Análisis inteligente de ejercicios (IA)**
-Garantizar la capacidad de analizar videos de ejercicios y proporcionar retroalimentación precisa sobre la ejecución, siendo este el núcleo innovador del sistema.
+| ID | Driver | Categoría | Prioridad | Decisión arquitectónica relacionada |
+|---|---|---|---|---|
+| DR-01 | Análisis inteligente de ejercicios mediante IA | Requisito funcional primario | Alta | Integración asíncrona con Gemini AI; patrón Gateway (`GeminiAIGateway`); eventos de dominio. |
+| DR-02 | Seguridad de datos personales y multimedia | Atributo de calidad (Seguridad) | Alta | JWT con rotación; RBAC con Spring Security; URLs SAS para Blob Storage; Ley N° 29733. |
+| DR-03 | Rendimiento en procesamiento de video | Atributo de calidad (Rendimiento) | Alta | Procesamiento asíncrono con eventos de dominio; caché para búsquedas. |
+| DR-04 | Escalabilidad del sistema | Atributo de calidad (Escalabilidad) | Media | Monolito modular con bounded contexts independientes; esquemas separados en PostgreSQL. |
+| DR-05 | Mantenibilidad del sistema | Atributo de calidad (Mantenibilidad) | Alta | SOLID + DDD; patrones Strategy, Factory, Gateway; Layered Architecture; CQRS. |
+| DR-06 | Disponibilidad del servicio | Atributo de calidad (Disponibilidad) | Media | Reintentos automáticos con estado `FALLIDO_PERMANENTE`; bloqueo optimista en sesiones. |
+| DR-07 | Usabilidad de la aplicación móvil | Atributo de calidad (Usabilidad) | Media | MVC con Flutter; respuesta asíncrona con indicadores de carga; paginación. |
+| DR-08 | Integración con servicios externos (Stripe, Gemini, Azure) | Restricción técnica | Alta | Patrón Gateway para encapsular dependencias externas; interfaces abstractas para sustitución. |
+| DR-09 | Cumplimiento Ley N° 29733 (Perú) | Restricción legal | Alta | Funcionalidad de eliminación de cuenta; cifrado en reposo; política de retención de videos. |
+| DR-10 | Presupuesto de infraestructura limitado (fase académica) | Restricción de negocio | Media | Tiers gratuitos de Azure; GitHub Pages para landing; monolito en lugar de microservicios independientes. |
 
-- **Interacción usuario–coach**
-Permitir una comunicación fluida entre usuarios y entrenadores mediante funcionalidades como mensajería, seguimiento y agendamiento de sesiones.
+#### 4.2.1. Design Purpose
 
-- **Rendimiento en procesamiento de video**
-Asegurar que la carga y análisis de videos se realice de manera eficiente, sin afectar la experiencia del usuario.
-
--**Escalabilidad del sistema**
-Soportar el crecimiento de usuarios, coaches y volumen de videos sin degradar el rendimiento de la plataforma.
-
-- **Disponibilidad del servicio**
-Garantizar que la aplicación esté accesible en todo momento, considerando que los usuarios pueden entrenar en diferentes horarios.
-
--**Seguridad de datos personales y multimedia**
-Proteger la información sensible de los usuarios, incluyendo datos personales, videos de entrenamiento y comunicaciones.
-
- -**Usabilidad de la aplicación**
-Ofrecer una interfaz simple e intuitiva para usuarios con distintos niveles de experiencia en tecnología.
-
-- **Seguimiento del progreso del usuario**
-Permitir registrar, visualizar y analizar la evolución del usuario a lo largo del tiempo.
-
- -**Integración con servicios externos**
-Facilitar la conexión con herramientas externas como servicios de inteligencia artificial, almacenamiento de videos y notificaciones.
-
--**Mantenibilidad del sistema**
-Permitir que el sistema pueda ser modificado, extendido y mantenido fácilmente mediante buenas prácticas de desarrollo y arquitectura.
-
-
-#### 4.1.8. Design Purpose
-
-El propósito del proceso de diseño arquitectónico de BodyMatch AI es establecer una estructura
-técnica coherente, mantenible y extensible que permita implementar las funcionalidades
-principales del producto de manera iterativa, respetando las restricciones de tiempo y equipo
-propias de un proyecto académico, y dejando las bases para una evolución futura hacia una
-arquitectura de microservicios en la nube.
+El propósito del proceso de diseño arquitectónico de BodyMatch AI es establecer una
+estructura técnica coherente, mantenible y extensible que permita implementar las
+funcionalidades principales del producto de manera iterativa, respetando las restricciones
+de tiempo y equipo propias de un proyecto académico, y dejando las bases para una
+evolución futura hacia una arquitectura de microservicios en la nube.
 
 De forma específica, el diseño busca:
 
-- **Traducir el modelo de negocio en componentes técnicos verificables:** Las dos propuestas de
-  valor centrales de BodyMatch AI (conexión personalizada entre usuarios y coaches, y análisis
-  automatizado de ejercicios mediante inteligencia artificial) deben estar reflejadas
-  directamente en los bounded contexts y sus interfaces públicas, de modo que cada decisión
-  de código pueda rastrearse hasta un requisito de negocio.
+**1. Traducir el modelo de negocio en componentes técnicos verificables**
 
-- **Satisfacer los atributos de calidad más críticos para el dominio:** En una plataforma de
-  salud y ejercicio, la seguridad de los datos personales, la disponibilidad del servicio
-  durante sesiones de entrenamiento y la corrección técnica del feedback de IA son atributos
-  que afectan directamente la confianza del usuario. El diseño los aborda desde la primera
-  iteración.
+Las dos propuestas de valor centrales de BodyMatch AI — la conexión personalizada entre
+usuarios y coaches y el análisis automatizado de ejercicios mediante inteligencia artificial
+— están reflejadas directamente en los bounded contexts y sus interfaces públicas, de modo
+que cada decisión de código pueda rastrearse hasta un requisito de negocio: el
+Matchmaking BC soporta la conexión usuario-coach, y el Video Management BC soporta
+el análisis de IA.
 
-- **Proteger la capacidad de evolución del sistema:** La fase inicial corresponde a un monolito
-  modular organizado por bounded contexts. Esta estructura permite una transición progresiva
-  hacia microservicios sin reescritura, ya que cada bounded context tiene ya sus propias
-  interfaces, modelos de dominio y reglas de negocio encapsuladas.
+**2. Satisfacer los atributos de calidad más críticos para el dominio**
 
-- **Crear modelos y vistas arquitectónicas**: representar la solución en diagramas C4 (Contexto, Contenedor, Componente) y UML (Clases, ERD) como documentación guía para el desarrollo.  
+En una plataforma de salud y ejercicio, la seguridad de los datos personales (QAS-02,
+QAS-04), la disponibilidad del servicio durante sesiones de entrenamiento (QAS-03) y la
+corrección técnica del feedback de IA (QAS-01) son atributos que afectan directamente la
+confianza del usuario. El diseño los aborda desde la primera iteración mediante tácticas
+concretas y medibles (ver sección 4.1.7).
 
-- **Construir sobre decisiones técnicas explícitas y trazables:** Cada decisión arquitectónica
-  relevante (stack tecnológico, mecanismo de autenticación, estrategia de almacenamiento,
-  integración con servicios externos) queda registrada con su justificación, permitiendo
-  evaluarla y revisarla en iteraciones posteriores.
+**3. Proteger la capacidad de evolución del sistema**
+
+La fase inicial corresponde a un monolito modular organizado por seis bounded contexts.
+Esta estructura permite una transición progresiva hacia microservicios sin reescritura,
+ya que cada bounded context tiene sus propias interfaces, modelos de dominio y reglas de
+negocio encapsuladas, con esquemas de base de datos independientes gestionados por Flyway.
+
+**4. Construir sobre decisiones técnicas explícitas y trazables**
+
+Cada decisión arquitectónica relevante — stack tecnológico (Java 24 + Spring Boot 3.x),
+mecanismo de autenticación (JWT stateless con rotación de tokens), estrategia de
+almacenamiento de video (Azure Blob Storage con URLs SAS), integración con servicios
+externos (patrón Gateway) — queda registrada en el Architectural Design Backlog de cada
+iteración ADD con su justificación, permitiendo evaluarla y revisarla en iteraciones
+posteriores.
+
+**5. Crear modelos y vistas arquitectónicas verificables**
+
+La solución se representa mediante diagramas C4 (Contexto en Figura 4.1, Contenedores en
+Figura 4.2, Componentes en Figuras 4.3–4.8), diagramas UML de actividades
+(Figuras 4.9–4.13) y estados (Figuras 4.14–4.18), diagrama de clases (Figura 4.19) y
+diagrama ER (Figura 4.20).
+
   
 
-#### 4.1.9. Primary Functionality (Primary User Stories)
+#### 4.2.2. Primary Functionality (Primary User Stories)
 
 Las siguientes historias de usuario son las que tienen mayor impacto sobre la estructura
 arquitectónica del sistema. Su implementación requiere decisiones de diseño que afectan
 múltiples capas y componentes, razón por la cual se les denomina historias primarias.
 
-| User Story ID | Título | Justificación arquitectónica |
-|---|---|---|
-| US01 | Registro de usuario | Define el modelo central de identidad del sistema. Impacta el Bounded Context IAM, la estrategia de almacenamiento de credenciales y el flujo de emisión de tokens JWT. |
-| US02 | Inicio de sesión | Determina el mecanismo de autenticación de toda la plataforma. La elección de JWT con doble token (acceso + refresco) afecta todos los endpoints protegidos. |
-| US06 | Búsqueda de coaches | Requiere diseño de índices, estructura del perfil del coach y lógica de filtrado por múltiples atributos. Define el modelo de datos compartido entre Matchmaking y el perfil de usuario. |
-| US08 | Reserva de sesión | Introduce concurrencia: dos usuarios pueden intentar reservar el mismo horario simultáneamente. Requiere manejo de transacciones y bloqueo optimista en la base de datos. |
-| US09 | Chat con coach | Depende de la integración con una API externa de mensajería. Define los contratos de integración, el manejo de errores de terceros y el modelo de conversación almacenado localmente. |
-| US11 | Subir video del ejercicio | Determina la estrategia de almacenamiento de archivos binarios (Azure Blob Storage), el flujo asíncrono de procesamiento y el contrato entre Video Management y el servicio de IA. |
-| US12 | Feedback automático con IA | Define la integración con Gemini AI, el formato de los resultados del análisis y cómo se persisten y presentan las correcciones al usuario. Impacta Video Management y Training Tracker. |
-| US15 | Registro de métricas físicas | Define el modelo de datos de seguimiento físico. Su frecuencia de escritura alta impacta las decisiones de indexación y el diseño del historial en Training Tracker. |
-| US19 | Gestión de clientes (coach) | Expone la vista del coach sobre sus alumnos. Requiere que Matchmaking y Training Tracker compartan o expongan datos sin acoplar sus modelos internos. |
-| US22 | Monetización de servicios | Introduce el Bounded Context de Membership & Payments. Requiere integración con una pasarela de pago y manejo seguro de información de transacciones. |
-| US24 | Reconocimiento de alimentos con IA | Define la segunda integración con IA del sistema (Nutrition BC). Comparte el patrón asíncrono de Video Management pero opera sobre imágenes en lugar de video. |
-| TS01 | Autenticación API | Base de seguridad del sistema, protegiendo datos sensibles y cumpliendo con regulaciones de privacidad. |
+| User Story ID | Título | Justificación arquitectónica | Bounded Context(s) impactado(s) |
+|---|---|---|---|
+| US01 | Registro de usuario | Define el modelo central de identidad. Aplica Factory Method (`User.create()`) para garantizar invariantes desde la creación. | IAM |
+| US02 | Inicio de sesión | Determina el mecanismo de autenticación de toda la plataforma. Aplica Strategy (`JwtTokenService`, `BCryptHashingService`). | IAM |
+| US06 | Búsqueda de coaches | Requiere diseño de índices y filtrado por múltiples atributos. Define el modelo del perfil del coach con búsqueda optimizada mediante caché. | Matchmaking, IAM |
+| US08 | Reserva de sesión | Introduce concurrencia: dos usuarios pueden intentar reservar el mismo horario. Requiere bloqueo optimista (`@Version` en `Session`). | Matchmaking |
+| US09 | Chat con coach | Depende de una API externa de mensajería. Integración encapsulada mediante el patrón Gateway. | Matchmaking |
+| US11 | Subir video del ejercicio | Determina la estrategia de almacenamiento binario (Azure Blob Storage) y el flujo asíncrono. Aplica Factory Method (`ExerciseVideo.register()`). | Video Management |
+| US12 | Feedback automático con IA | Define la integración con Gemini AI vía `GeminiAIGateway`. El análisis asíncrono es el núcleo diferenciador del sistema. | Video Management, Training Tracker |
+| US15 | Registro de métricas físicas | Define el modelo de datos de seguimiento físico con alta frecuencia de escritura. | Training Tracker |
+| US19 | Gestión de clientes (coach) | Requiere que Matchmaking y Training Tracker compartan datos del atleta sin acoplar sus modelos internos (vía fachadas). | Matchmaking, Training Tracker, IAM |
+| US22 | Monetización de servicios | Introduce el BC de Membership & Payments con integración a Stripe vía Strategy (`PaymentGatewayStrategy`). | Membership & Payments |
+| US24 | Reconocimiento de alimentos con IA | Segunda integración con Gemini AI. Comparte el patrón Gateway con Video Management pero opera sobre imágenes. | Nutrition |
+| TS01 | Middleware JWT | El API Gateway valida el token antes de enrutar cualquier petición. Base de seguridad transversal. | IAM, API Gateway |
 
----
 
-#### 4.1.10. Quality Attribute Scenarios
+#### 4.2.3. Quality Attribute Scenarios
 
 Los siguientes escenarios especifican de forma medible los atributos de calidad que la
 arquitectura debe garantizar. Cada escenario sigue la estructura de seis partes definida por
 el método ADD v3.
 
-##### QAS-01: Rendimiento — Procesamiento asíncrono de video
+**QAS-01: Rendimiento — Procesamiento asíncrono de video**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Usuario que finaliza una sesión de ejercicio y sube un video para análisis |
-| **Estímulo** | Solicitud `POST /api/v1/videos` con un archivo de video de hasta 200 MB |
+| **Fuente de estímulo** | Atleta que sube un video de ejercicio tras finalizar su sesión |
+| **Estímulo** | `POST /api/v1/exercise-videos` con archivo de hasta 200 MB |
 | **Entorno** | Sistema en operación normal con hasta 50 solicitudes de análisis concurrentes |
-| **Artefacto** | Módulo Video Management + worker de análisis con Gemini AI |
-| **Respuesta** | El sistema acepta el video, responde con confirmación de recepción en menos de 10 segundos, encola la tarea de análisis y notifica al usuario cuando el resultado está disponible |
-| **Medida de respuesta** | Tiempo de respuesta de la solicitud HTTP < 10 segundos. Tiempo máximo de entrega del feedback de IA < 5 minutos en condiciones normales de carga |
+| **Artefacto** | `VideoCommandServiceImpl` + worker de análisis + `GeminiAIGateway` |
+| **Respuesta** | El sistema acepta el video con HTTP 202 Accepted en < 10 s. El análisis se procesa en segundo plano y se notifica al atleta cuando el resultado está disponible. |
+| **Medida de respuesta** | Tiempo de respuesta HTTP: < 10 s. Entrega del feedback de IA: < 5 min bajo carga normal. |
 
 
 
-##### QAS-02: Seguridad — Control de acceso por rol
+**QAS-02: Seguridad — Control de acceso por rol**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Usuario autenticado con rol `ROLE_USER` intentando acceder a endpoints de gestión de clientes reservados para coaches |
-| **Estímulo** | Solicitud `GET /api/v1/coaches/me/clients` con token JWT válido pero rol incorrecto |
+| **Fuente de estímulo** | Usuario con rol `ROLE_ATHLETE` intentando acceder a endpoints reservados para coaches |
+| **Estímulo** | `GET /api/v1/coaches/me/clients` con token JWT válido pero con rol incorrecto |
 | **Entorno** | Sistema en operación normal |
-| **Artefacto** | API Gateway + Spring Security RBAC + módulo IAM |
-| **Respuesta** | El sistema rechaza la solicitud con HTTP 403 Forbidden, registra el intento en el log de auditoría y no expone información del recurso solicitado |
-| **Medida de respuesta** | 100% de los intentos de acceso con rol incorrecto son rechazados. Tiempo de respuesta del rechazo < 200 ms |
+| **Artefacto** | API Gateway + Spring Security (`@PreAuthorize`) + módulo IAM |
+| **Respuesta** | HTTP 403 Forbidden. El intento se registra en el log de auditoría. No se expone información del recurso. |
+| **Medida de respuesta** | 100% de intentos con rol incorrecto rechazados. Tiempo de rechazo: < 200 ms. |
 
 
 
-
-##### QAS-03: Rendimiento — Búsqueda de coaches bajo carga
-
-| Componente | Descripción |
-|---|---|
-| **Fuente de estímulo** | Múltiples usuarios realizando búsquedas de coaches simultáneamente durante hora pico |
-| **Estímulo** | 200 solicitudes concurrentes a `GET /api/v1/coaches` con distintos filtros (especialidad, precio, disponibilidad) |
-| **Entorno** | Sistema bajo carga alta en horario pico (18:00–21:00 hora peruana) |
-| **Artefacto** | Módulo Matchmaking + PostgreSQL con índices |
-| **Respuesta** | Las búsquedas con parámetros comunes se sirven desde caché. Las búsquedas únicas consultan directamente la base de datos con índices optimizados |
-| **Medida de respuesta** | Tiempo de respuesta del percentil 95 (P95) < 800 ms bajo carga de 200 usuarios concurrentes. Tasa de caché hit > 60% para búsquedas frecuentes |
-
-##### QAS-04: Seguridad — Protección de datos de video
+**QAS-03: Rendimiento — Búsqueda de coaches bajo carga**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Usuario no propietario intenta acceder a un video de ejercicio de otro usuario |
-| **Estímulo** | Solicitud `GET /api/v1/videos/{videoId}` con token JWT de un usuario diferente al propietario del video |
+| **Fuente de estímulo** | Múltiples atletas realizando búsquedas simultáneamente en horario pico |
+| **Estímulo** | 200 solicitudes concurrentes a `GET /api/v1/coaches` con distintos filtros |
+| **Entorno** | Sistema bajo carga alta (18:00–21:00 hora peruana) |
+| **Artefacto** | `CoachSearchQueryServiceImpl` + PostgreSQL con índices + caché |
+| **Respuesta** | Búsquedas frecuentes servidas desde caché. Búsquedas únicas consultan PostgreSQL con índices. |
+| **Medida de respuesta** | Latencia P95: < 800 ms bajo 200 usuarios concurrentes. Tasa de caché hit: > 60%. |
+
+
+**QAS-04: Seguridad — Protección de videos de entrenamiento**
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Usuario no propietario intentando acceder al video de otro usuario |
+| **Estímulo** | `GET /api/v1/exercise-videos/{videoId}` con token JWT de un usuario diferente al propietario |
 | **Entorno** | Sistema en operación normal |
-| **Artefacto** | Módulo Video Management + capa de autorización de dominio + Azure Blob Storage (URLs firmadas con tiempo de expiración) |
-| **Respuesta** | El sistema valida que el `userId` del token coincide con el propietario del video. En caso contrario, rechaza la solicitud con HTTP 403 y no expone la URL del recurso en Blob Storage |
-| **Medida de respuesta** | 0% de accesos no autorizados a videos de usuarios. Las URLs pre-firmadas de Blob Storage expiran en 15 minutos |
+| **Artefacto** | `VideoQueryServiceImpl` + autorización de dominio + `AzureBlobStorageGateway` (URLs SAS) |
+| **Respuesta** | HTTP 403. No se genera ni expone la URL pre-firmada del Blob Storage. |
+| **Medida de respuesta** | 0% de accesos no autorizados a videos. URLs SAS con expiración de 15 min. |
 
 
 
-##### QAS-05: Mantenibilidad — Incorporación de nuevo proveedor de pagos
+**QAS-05: Mantenibilidad — Incorporación de nuevo proveedor de pagos**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Decisión de negocio de agregar un segundo proveedor de pagos junto al existente |
-| **Estímulo** | Requerimiento de soporte para un nuevo gateway de pago sin modificar la lógica de negocio del Bounded Context Membership & Payments |
+| **Fuente de estímulo** | Decisión de negocio de agregar MercadoPago como segundo proveedor de pagos |
+| **Estímulo** | Requerimiento de soporte para nuevo gateway sin modificar la lógica existente |
 | **Entorno** | Sistema en desarrollo activo, equipo de cinco personas |
-| **Artefacto** | Bounded Context Membership & Payments + Patrón Strategy para proveedores de pago |
-| **Respuesta** | El equipo implementa una nueva clase que implementa la interfaz `PaymentGatewayStrategy` sin modificar las clases existentes. El sistema puede seleccionar el proveedor mediante configuración |
-| **Medida de respuesta** | La incorporación del nuevo proveedor requiere menos de 8 horas de desarrollo y no introduce cambios en otros bounded contexts |
+| **Artefacto** | `MembershipCommandServiceImpl` + interfaz `PaymentGatewayStrategy` |
+| **Respuesta** | Se implementa `MercadoPagoPaymentGateway` con la interfaz `PaymentGatewayStrategy`. La selección se configura como `@Bean` de Spring sin tocar otras clases. |
+| **Medida de respuesta** | Incorporación del nuevo proveedor: < 8 h de desarrollo. 0 cambios en otros bounded contexts. |
 
 
-#### 4.1.11. Constraints
+#### 4.2.4. Constraints
 
 Las restricciones son condiciones impuestas externamente al equipo de diseño que limitan el
 espacio de soluciones arquitectónicas posibles. A diferencia de los atributos de calidad, las
 restricciones no son negociables dentro del contexto del proyecto.
 
-| ID | Restricción |
-|---|---|
-| CON-01 | El backend debe implementarse con Java 24 y Spring Boot 3.x, con autenticación JWT |
-| CON-02 | El proveedor de nube es exclusivamente Microsoft Azure |
-| CON-03 | La base de datos principal es PostgreSQL. El uso de bases de datos NoSQL está pendiente de evaluación y no puede asumirse en el diseño actual |
-| CON-04 | La primera fase del sistema corresponde a un monolito modular organizado por bounded contexts, no a microservicios independientes |
-| CON-05 | La funcionalidad de chat se implementa mediante una API externa de terceros. El sistema no desarrolla su propio protocolo de mensajería en tiempo real |
-| CON-06 | El proyecto debe cumplir con la Ley de Protección de Datos Personales del Perú (Ley N.° 29733) en lo que respecta al almacenamiento y tratamiento de datos de usuarios |
-| CON-07 | La aplicación cliente es móvil, con desarrollo orientado a la plataforma Android |
-| CON-08 | El presupuesto de infraestructura en la fase académica es limitado. Los servicios de Azure utilizados deben mantenerse dentro de los niveles gratuitos o de bajo costo (Free / Basic tier) en la medida de lo posible |
-| CON-09 | Limitaciones de dispositivos móviles de los usuarios (cámara, almacenamiento, rendimiento) para la grabación y envío de videos. |
-| CON-10 | Restricción en el tamaño y duración de los videos para evitar sobrecarga en el sistema.|
----
+| ID | Restricción | Impacto en el diseño |
+|---|---|---|
+| CON-01 | Backend con Java 24 y Spring Boot 3.x | Define el stack, las dependencias disponibles y los patrones de integración. |
+| CON-02 | Proveedor de nube exclusivamente Microsoft Azure | Almacenamiento en Azure Blob Storage; monitoreo en Azure Monitor; despliegue en Azure App Service. |
+| CON-03 | Base de datos principal PostgreSQL | No se usa NoSQL en la fase actual. La separación de esquemas reemplaza el patrón Database per Service con instancias independientes. |
+| CON-04 | Primera fase: monolito modular (no microservicios independientes) | La separación es lógica (paquetes Java) y de datos (esquemas PostgreSQL), no de despliegue. |
+| CON-05 | Chat implementado mediante API externa de terceros | No se desarrolla protocolo propio. La integración se encapsula en un Gateway para permitir sustitución. |
+| CON-06 | Cumplimiento Ley de Protección de Datos Personales del Perú (N° 29733) | Datos cifrados en reposo; funcionalidad de eliminación de cuenta y videos; política de retención definida. |
+| CON-07 | Aplicación cliente: Android (Flutter) | La API REST debe ser consumible desde Flutter mediante HTTP. |
+| CON-08 | Presupuesto de infraestructura limitado (fase académica) | Uso preferente de tiers gratuitos o Basic de Azure. Landing page en GitHub Pages. |
+| CON-09 | Limitaciones de dispositivos móviles para grabación | Los videos se comprimen en el cliente antes de la subida. El sistema acepta archivos de hasta 200 MB. |
+| CON-10 | Tamaño máximo: 200 MB; duración máxima: 3 min por video | Validación en el endpoint de subida antes de iniciar el procesamiento. |
 
-#### 4.1.12. Architectural Concerns
+
+
+#### 4.2.5. Architectural Concerns
 
 Las preocupaciones arquitectónicas son riesgos, incertidumbres y desafíos propios del
 arquitecto de software que, de no ser atendidos, pueden comprometer la estabilidad, la
@@ -1438,38 +1829,967 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 
 | ID | Preocupación | Impacto potencial | Estrategia de mitigación |
 |---|---|---|---|
-| AC-01 | El equipo no tiene experiencia previa en el diseño de sistemas distribuidos con cola de mensajes. La integración de Azure Service Bus para el procesamiento asíncrono de video puede introducir errores difíciles de depurar | Retrasos en la entrega y defectos en el flujo más crítico del sistema | Comenzar con una implementación síncrona del flujo de video en las primeras iteraciones y migrar al modelo asíncrono en una iteración posterior, cuando el equipo haya validado el contrato de integración |
-| AC-02 | La lógica de negocio compartida entre los bounded contexts Matchmaking y Training Tracker (por ejemplo, el progreso de un usuario asociado a un coach) puede generar acoplamiento implícito entre módulos | Dificultad para modificar un bounded context sin afectar al otro, violando el principio de separación | Definir explícitamente qué datos son propietad de cada bounded context y qué datos se comparten mediante contratos de interfaz (DTOs) sin exponer el modelo interno |
-| AC-03 | El almacenamiento de videos en Azure Blob Storage puede generar costos crecientes no anticipados a medida que aumenta el volumen de usuarios y videos almacenados | Superación del presupuesto de infraestructura | Implementar políticas de retención de videos (limitar el almacenamiento por usuario, establecer un período máximo de retención) y evaluar la compresión de videos antes del almacenamiento |
-| AC-04 | La dependencia de Gemini AI para el análisis de ejercicios introduce un riesgo de disponibilidad externo. Cambios en la API, límites de cuota o aumentos de precio no están bajo el control del equipo | Degradación de la funcionalidad principal diferenciadora del producto sin alternativa inmediata | Diseñar el módulo Video Management con una abstracción (interfaz `VideoAnalysisProvider`) que permita sustituir el proveedor de IA sin cambios en la lógica de negocio. Documentar claramente la dependencia como riesgo del producto |
-| AC-05 | La ausencia de pruebas automatizadas en las capas de infraestructura y de integración puede hacer que los errores de integración entre bounded contexts solo se detecten en etapas tardías del desarrollo | Regresiones frecuentes y tiempo de corrección elevado en las fases finales del proyecto | Establecer desde el primer sprint una suite mínima de pruebas de integración para los endpoints más críticos (autenticación, búsqueda de coaches, subida de video) usando Spring Boot Test y Testcontainers para PostgreSQL |
-| AC-06 | El modelo de datos de PostgreSQL puede volverse difícil de mantener si los bounded contexts comparten tablas o si las migraciones de Flyway no se coordinan correctamente entre los miembros del equipo | Conflictos de migración, datos corruptos y dificultad para escalar a microservicios en el futuro | Establecer la convención de que cada bounded context tiene su propio schema de PostgreSQL (o su propio prefijo de tablas) y que las migraciones se revisan en pull requests antes de fusionarse a la rama principal |
-| AC-07 | La experiencia de usuario en la aplicación móvil depende de la latencia de los endpoints del backend. Una arquitectura de monolito mal optimizada puede introducir tiempos de respuesta inaceptables desde dispositivos móviles en redes lentas (4G, zonas rurales del Perú) | Abandono de la aplicación por usuarios en condiciones de conectividad limitada | Aplicar desde el inicio las tácticas de rendimiento descritas en la sección 4.1.7 (caché, paginación, índices) y establecer un SLO de tiempo de respuesta máximo por endpoint durante las revisiones de sprint |
-| AC-08 | El manejo de datos de salud y ejercicio de usuarios requiere cuidado especial en cuanto a la política de privacidad y los términos de uso del servicio, especialmente en la recopilación de videos corporales de los usuarios | Riesgo legal y de reputación si los datos de los usuarios no se manejan con transparencia | Definir explícitamente en los términos y condiciones del servicio el propósito del almacenamiento de videos, el período de retención y el alcance del análisis automatizado. Implementar la funcionalidad de eliminación de cuenta y de videos a solicitud del usuario |
-| AC-09 | La integración con una API externa de chat crea una dependencia de terceros para una funcionalidad de alta visibilidad. Si el proveedor cambia sus condiciones de uso o discontinúa el servicio, la funcionalidad de comunicación directa entre usuarios y coaches queda comprometida | Pérdida de una funcionalidad crítica para la propuesta de valor del producto | Diseñar la integración detrás de una interfaz `ChatService` que permita sustituir el proveedor. Almacenar localmente los metadatos de las conversaciones (participantes, timestamps, número de mensajes) para mantener trazabilidad independientemente del proveedor |
-| AC-10 | La falta de observabilidad en el sistema (logs estructurados, métricas, alertas) puede hacer que los problemas en producción pasen desapercibidos o sean difíciles de diagnosticar | Tiempo de detección y resolución de incidentes elevado en producción | Configurar desde el primer despliegue el logging estructurado con Spring Boot + Azure Monitor. Establecer alertas básicas sobre tasas de error HTTP 5xx y tiempos de respuesta por encima del umbral definido |
+| AC-01 | Curva de aprendizaje en integración asíncrona | Retrasos y defectos difíciles de depurar en el flujo crítico | Implementar flujo síncrono en primeras iteraciones; migrar a `@EventListener` antes de adoptar Azure Service Bus |
+| AC-02 | Acoplamiento implícito entre Matchmaking y Training Tracker | Modificaciones en uno afectan al otro | Contratos explícitos vía `MatchmakingContextFacade` y `TrainingContextFacade`; ningún BC importa clases de dominio de otro |
+| AC-03 | Costos crecientes de Azure Blob Storage | Superación del presupuesto académico | Retención máxima de 90 días de videos por usuario; compresión en cliente; alertas de uso en Azure Monitor |
+| AC-04 | Dependencia de Gemini AI (disponibilidad, cuota, precio) | Degradación de la funcionalidad diferenciadora | `GeminiAIGateway` implementa `VideoAnalysisProvider`; sustitución requiere solo una nueva implementación de la interfaz |
+| AC-05 | Ausencia de pruebas automatizadas entre bounded contexts | Regresiones tardías | Suite de pruebas de integración con Spring Boot Test y Testcontainers desde Sprint 1 (ver sección 5.1.1) |
+| AC-06 | Conflictos de migración en trabajo paralelo | Datos corruptos y conflictos de merge | Prefijo por bounded context en archivos Flyway (`V1__iam_*.sql`); revisión de migraciones en Pull Requests |
+| AC-07 | Latencia en dispositivos con conectividad limitada (4G, zonas rurales) | Abandono de la aplicación | Paginación de 20 registros, compresión gzip, indicadores de carga en UI Flutter para operaciones asíncronas |
+| AC-08 | Privacidad de videos corporales de los usuarios | Riesgo legal y de reputación | Términos y condiciones con propósito y período de retención; funcionalidad de eliminación de videos a solicitud |
+| AC-09 | Dependencia de API de chat de terceros | Pérdida de funcionalidad crítica | Interfaz `ChatService` que encapsula el proveedor; metadatos de conversaciones almacenados localmente |
+| AC-10 | Falta de observabilidad en producción | Incidentes no detectados | Logging estructurado con Spring Boot + Azure Monitor; alertas sobre tasas de error HTTP 5xx y tiempos fuera de SLO |
 
------
+
+
+### 4.3. ADD Iterations
+
+
+#### 4.3.1. Iteration 1: Establecimiento de la Estructura Global del Sistema
+
+##### 4.3.1.1. Architectural Design Backlog — Iteración 1
+
+| ID | Driver | Tipo | Prioridad | Estado |
+|---|---|---|---|---|
+| DR-01 | Análisis inteligente de ejercicios mediante IA | Requisito funcional primario | Alta | Resuelto |
+| DR-02 | Seguridad de datos personales y multimedia | Atributo de calidad | Alta | Resuelto |
+| DR-03 | Rendimiento en procesamiento de video | Atributo de calidad | Alta | Resuelto parcialmente |
+| DR-05 | Mantenibilidad del sistema | Atributo de calidad | Alta | Resuelto |
+| DR-08 | Integración con servicios externos | Restricción técnica | Alta | Resuelto |
+| CON-01 | Stack: Java 24 + Spring Boot 3.x | Restricción de tecnología | Alta | Resuelto |
+| CON-04 | Monolito modular como primera fase | Restricción de despliegue | Alta | Resuelto |
+
+##### 4.3.1.2. Establish Iteration Goal by Selecting Drivers
+
+**Objetivo:** Establecer la estructura global del sistema definiendo la descomposición en
+bounded contexts, los mecanismos de comunicación entre ellos, el stack tecnológico base
+y los elementos de seguridad transversales.
+
+**Drivers seleccionados:**
+- DR-01 — determina la necesidad del Video Management BC y la integración asíncrona con Gemini
+- DR-02 — determina el IAM BC, el mecanismo JWT + RBAC y la protección de archivos
+- DR-05 — determina la adopción de DDD, SOLID y la arquitectura por capas
+- CON-04 — determina la estrategia de despliegue inicial como monolito modular
+
+##### 4.3.1.3. Choose One or More Elements of the System to Refine
+
+| Elemento | Tipo | Justificación |
+|---|---|---|
+| Sistema completo (BodyMatch AI) | Caja negra | Primera iteración: se parte desde cero para definir la estructura de alto nivel |
+| Mecanismo de autenticación | Elemento de infraestructura transversal | Afecta todos los bounded contexts; debe decidirse antes que cualquier funcionalidad |
+| Estrategia de integración con Gemini AI y Azure | Elemento de infraestructura | Dependencias críticas de la funcionalidad principal y del almacenamiento |
+
+##### 4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
+
+| Driver | Concepto seleccionado | Alternativa descartada | Justificación |
+|---|---|---|---|
+| DR-01 (IA) | Procesamiento asíncrono con eventos + `GeminiAIGateway` | Llamada síncrona a Gemini | El análisis puede tomar minutos; una llamada síncrona bloquearía el hilo HTTP y degradaría la UX |
+| DR-02 (Seguridad) | JWT con access token (15 min) + refresh token (7 días) + RBAC | Sesiones stateful en servidor | JWT es stateless, escala horizontalmente y es nativo en la app móvil Flutter |
+| DR-05 (Mantenibilidad) | DDD con 6 bounded contexts + Layered Architecture + CQRS | Monolito sin separación de capas | DDD aísla los cambios; CQRS simplifica la evolución de lecturas y escrituras por separado |
+| CON-04 (Monolito modular) | Paquetes Java separados + esquemas PostgreSQL por contexto | Microservicios desplegados independientemente | Reduce complejidad operativa en fase académica; permite migración sin reescritura |
+
+##### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
+
+| Elemento arquitectónico | Responsabilidad | Interfaz pública |
+|---|---|---|
+| **API Gateway** | Punto de entrada único; validación JWT; enrutamiento | Endpoints `/api/v1/**`; Header: `Authorization: Bearer {token}` |
+| **IAM BC** | Registro, autenticación, autorización y perfiles | `POST /api/v1/authentication/sign-up/athlete`, `POST /api/v1/authentication/sign-in`; Fachada: `IamContextFacade` |
+| **Video Management BC** | Subida, análisis asíncrono y feedback de videos | `POST /api/v1/exercise-videos`, `GET /api/v1/exercise-videos/{id}`; Evento: `VideoAnalysisCompletedEvent` |
+| **Matchmaking BC** | Búsqueda de coaches, reservas, reseñas | `GET /api/v1/coaches`, `POST /api/v1/sessions`; Fachada: `MatchmakingContextFacade` |
+| **Training Tracker BC** | Registro y consulta de métricas físicas | `POST /api/v1/metrics`, `GET /api/v1/metrics/{athleteId}`; Fachada: `TrainingContextFacade` |
+| **Nutrition BC** | Análisis de imágenes de alimentos y registro nutricional | `POST /api/v1/food-logs`, `GET /api/v1/food-logs/daily-summary` |
+| **Membership & Payments BC** | Planes de suscripción y procesamiento de pagos | `POST /api/v1/memberships`, `POST /api/v1/payments`; Interfaz: `PaymentGatewayStrategy` |
+| **GeminiAIGateway** | Encapsular integración con Gemini AI | Implementa `VideoAnalysisProvider.analyzeVideo()` y `FoodAnalysisProvider.analyzeFood()` |
+| **AzureBlobStorageGateway** | Gestionar subida y recuperación de archivos multimedia | `uploadBlob(MultipartFile)`, `generateSasUrl(String blobName, int minutes)` |
+
+##### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
+
+Los diagramas producidos se presentan en la sección 4.1.4 (Figuras 4.1–4.19).
+
+| ID | Decisión | Estado | Consecuencias |
+|---|---|---|---|
+| DD-001 | Monolito Modular con bounded contexts como paquetes Java independientes | Aceptada | Despliegue simple; fácil migración futura; riesgo de acoplamiento accidental controlado con reglas de paquete |
+| DD-002 | Procesamiento asíncrono de análisis de video con eventos de dominio | Aceptada | UI fluida (HTTP 202 inmediato); reintentos automáticos; complejidad adicional en gestión de estados |
+| DD-003 | Azure Blob Storage con URLs SAS para archivos multimedia | Aceptada | Alta seguridad; escalabilidad; costo variable; dependencia de Azure |
+| DD-004 | Esquemas PostgreSQL separados por bounded context | Aceptada | Integridad cross-context gestionada en aplicación; backups centralizados; preparación para microservicios |
+| DD-005 | JWT stateless con access token (15 min) y refresh token (7 días) | Aceptada | Escalabilidad horizontal; ventana de exposición reducida; requiere lógica de renovación en Flutter |
+| DD-006 | Patrón Strategy para `PaymentGatewayStrategy`, `HashingService` y `TokenService` | Aceptada | Alta extensibilidad; cumple OCP; capa de abstracción documentada en sección 4.1.6 |
+| DD-007 | Patrón Gateway para integraciones externas (Gemini, Stripe, Azure) | Aceptada | Sustitución sin impacto en bounded contexts; centralización de manejo de errores externos |
+
+##### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
+
+| Driver | Estado de resolución | Evidencia |
+|---|---|---|
+| DR-01 (Análisis IA) | Resuelto | Video Management BC con `GeminiAIGateway` y flujo asíncrono (DD-002, DD-007) |
+| DR-02 (Seguridad) | Resuelto | IAM BC con JWT (DD-005), RBAC y URLs SAS (DD-003) |
+| DR-03 (Rendimiento) | Resuelto parcialmente | Flujo asíncrono definido (DD-002); métricas de SLO a validar en Sprint 2 |
+| DR-05 (Mantenibilidad) | Resuelto | 6 bounded contexts con DDD, CQRS y patrones Strategy/Gateway/Factory (DD-006, DD-007) |
+| DR-08 (Integraciones) | Resuelto | Patrón Gateway aplicado a Gemini, Stripe y Azure Blob Storage (DD-007) |
+
+**Pendiente para iteraciones futuras:**
+- Azure Service Bus para escalar el procesamiento asíncrono bajo alta carga
+- Redis como proveedor de caché para búsqueda de coaches
+- Estrategia de observabilidad con logging estructurado y alertas en Azure Monitor
+
+
+<img src="assets/chapter4/Tablero-kanban.png" alt="talbero">
+
+[Trello](https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai)
+
+
+
+# Capítulo V: Product Implementation, Validation & Deployment
+##  5.1	Testing Suites & General Patterns  
+
+Para el desarrollo de BodyMatch AI, la fase de validación se fundamenta en la automatización de pruebas de integración y aceptación bajo la metodología **Behavior-Driven Development (BDD)**. El propósito central de este enfoque es cerrar la brecha de comunicación entre las definiciones de negocio (User Stories) y la implementación técnica del software, garantizando que cada incremento entregable funcione exactamente como fue especificado.
+
+Las pruebas se redactan en lenguaje **Gherkin**, un lenguaje específico de dominio estructurado con la semántica intuitiva *Given-When-Then* (Dado-Cuando-Entonces). Esta estructura permite documentar de forma viva los requisitos del sistema y convertirlos en scripts ejecutables que auditan los contratos de las APIs (códigos de estado HTTP, payloads de respuesta, persistencia en base de datos y flujos excepcionales de seguridad) de manera continua en el pipeline de Integración Continua (CI).
+
+### 5.1.1	Backend Application Core Testing Suite 
+
+Esta suite agrupa los escenarios de prueba funcionales, unitarios y de integración automatizados destinados a validar la lógica de negocio pura y las operaciones fundamentales del núcleo de BodyMatch AI. Estas pruebas garantizan que los servicios e hilos transaccionales principales funcionen de manera óptima bajo los criterios de aceptación técnicos, antes de su empaquetado y despliegue en los entornos de Staging y Producción.
+
+**Frameworks y Herramientas Utilizadas:** Se utiliza **Cucumber** como motor de ejecución BDD para interpretar los archivos `.feature`, **Spring Boot Test** con **MockMvc** para la orquestación de peticiones HTTP dirigidas a los endpoints sin levantar el servidor de forma física, y **AssertJ / JUnit 5** como bibliotecas de aserciones para validar las estructuras de las respuestas JSON.
+
+
+**Cobertura e Impacto de las Pruebas Core:**
+
+- **Gestión de Identidad y Acceso (IAM):** Validación de flujos de registro de usuarios bajo los roles Atleta (`ROLE_ATHLETE`) y Coach (`ROLE_COACH`), control de unicidad de correos electrónicos y robustez de credenciales.
+- **Autenticación y Ciclo de Sesión:** Verificación de inicio de sesión (*Sign-In*), persistencia de tokens JWT, y revocación segura en el proceso de cierre de sesión (*Sign-Out*).
+- **Gestión de Perfiles (Matchmaking):** Pruebas de integración sobre la creación y actualización de perfiles de atletas y coaches, incluyendo la validación de especialidades, tarifas horarias y disponibilidad semanal.
+- **Análisis de Video (Videos Service):** Pruebas sobre el flujo de subida de archivos multimedia, la transición de estados del ciclo de vida del video (`UPLOADED → PROCESSING → ANALYZED / FAILED`) y la estructura del feedback técnico generado por la IA.
+
+#### Relación de Tests Diseñados por User Story
+
+| Código del Test | Nombre del Archivo .feature | Componente / Microservicio | User Story Relacionada (ID) |
+|:---|:---|:---|:---|
+| **TS-IAM-01** | `auth_register_athlete.feature` | IAM Microservice | US01: Registro de usuario |
+| **TS-IAM-02** | `auth_register_coach.feature` | IAM Microservice | US01: Registro de usuario (rol Coach) |
+| **TS-IAM-03** | `auth_login.feature` | IAM Microservice | US02: Inicio de sesión |
+| **TS-IAM-04** | `auth_logout.feature` | IAM Microservice | US04: Cierre de sesión |
+| **TS-IAM-05** | `auth_password_recovery.feature` | IAM Microservice | US03: Recuperación de contraseña |
+| **TS-MM-06** | `athlete_profile_creation.feature` | Matchmaking Monolith | US05: Configuración de perfil |
+| **TS-MM-07** | `coach_profile_search.feature` | Matchmaking Monolith | US06: Búsqueda de coaches |
+| **TS-MM-08** | `session_booking.feature` | Matchmaking Monolith | US08: Reserva de sesión |
+| **TS-VID-09** | `video_upload.feature` | Videos Microservice | US11: Subir video del ejercicio |
+| **TS-VID-10** | `video_ai_feedback.feature` | Videos Microservice | US12: Feedback automático con IA |
+
+
+### 5.1.2	Pattern Based Backend Application(s)  
+
+
+El backend de BodyMatch AI ha sido desarrollado aplicando patrones de diseño de software y patrones arquitectónicos avanzados basados en **Domain-Driven Design (DDD)** y **Clean Architecture**. La validación mediante pruebas automatizadas en esta sección se estructura bajo estos patrones para garantizar la escalabilidad, la mantenibilidad y el aislamiento de fallas en el ecosistema:
+
+- **Repository Pattern (Patrón Repositorio):** Se implementa para encapsular por completo la lógica de acceso, consulta y persistencia de datos (utilizando **Spring Data JPA** con **Flyway** para migraciones) en interfaces especializadas. Esto desacopla la base de datos relacional (PostgreSQL) de la lógica de negocio pura de los casos de uso. Las pruebas de integración aseguran que las consultas se ejecuten correctamente sin comprometer la integridad referencial.
+
+- **Data Transfer Object — DTO:** Patrón utilizado de manera obligatoria en las capas de entrada para moldear, filtrar y estandarizar los payloads que viajan a través de la red. Los validadores de los DTOs (mediante `@Valid`, `@NotBlank`, `@Min`, `@Size` de Jakarta Validation) rechazan estructuras maliciosas o incompletas con códigos HTTP 400, y las suites de prueba auditan estos rechazos explícitamente.
+
+- **Strategy Pattern (Patrón Estrategia):** Utilizado en el módulo de **Videos Service** para encapsular el proveedor de análisis de IA (`GeminiAIGateway`) detrás de la interfaz `ExerciseVideoAiAnalyzer`. Esto permite sustituir el motor de IA (ej. Gemini → GPT-4 Vision) sin modificar la lógica de negocio del servicio. Las pruebas validan la intercambiabilidad mediante implementaciones stub en entornos de test.
+
+- **API Gateway Pattern:** Actúa como punto único de entrada para el cliente móvil Flutter. Las pruebas orientadas a este patrón validan el correcto enrutamiento perimetral, la gestión de Cross-Origin Resource Sharing (CORS), el limite de tamaño de body para uploads de video (configurado en 256 MB) y la autenticación centralizada vía JWT antes de propagar las peticiones a los microservicios internos.
+
+- **Observer / Event-Driven Pattern:** Implementado mediante `Spring ApplicationEventPublisher` para la comunicación desacoplada entre Bounded Contexts. Las suites validan que eventos de dominio como `VideoAnalysisCompletedEvent` sean correctamente publicados y procesados por los listeners del módulo de Training Tracker.
+
+
+### 5.1.3	Pattern Based Custom Software Library  
+
+Para resolver necesidades transversales dentro del ecosistema de BodyMatch AI (*Cross-Cutting Concerns*) y evitar la duplicidad de código (*DRY — Don't Repeat Yourself*), el equipo diseñó y aisló componentes de software reutilizables internos. Estos componentes se rigen por los principios **SOLID** y cuentan con especificaciones de prueba aisladas:
+
+- **JWT Security Component (`com.bodymatch.iam.infrastructure.tokens`):** Módulo personalizado encargado de la generación, firma y validación criptográfica de tokens JSON Web Tokens (JWT) utilizando **HMAC SHA-384**. Las pruebas en este componente aseguran la correcta decodificación de *claims* de usuario (ID, email, rol) y la detección inmediata de firmas expiradas o alteradas con respuesta HTTP 401.
+
+- **BCrypt Hashing Service (`com.bodymatch.iam.infrastructure.hashing`):** Componente dedicado a la seguridad de datos sensibles mediante el algoritmo BCrypt. Se utiliza para el cifrado seguro (*salting* y *hashing*) de contraseñas durante el registro, impidiendo el almacenamiento de texto plano en la base de datos PostgreSQL. Sus pruebas validan que el hash no sea reversible y que la verificación sea consistente.
+
+- **Local Cloud Storage Service (`com.bodymatch.videos.storage`):** Componente que abstrae la persistencia de archivos multimedia detrás de la interfaz `CloudStorageService`. En entornos de producción se configura hacia Azure Blob Storage; en entornos de testing, hacia el filesystem local. Las pruebas de aceptación validan el ciclo completo de upload, download y delete, así como el rechazo de archivos vacíos con `IllegalArgumentException`.
+
+- **Gemini AI Gateway (`com.bodymatch.videos.ai`):** Componente de integración que encapsula la comunicación con la API externa de Google Gemini para el análisis biomecánico de ejercicios. En modo de prueba (sin `GEMINI_API_KEY` configurada), el componente devuelve automáticamente una respuesta de stub predefinida, garantizando que los tests de integración no dependan de conectividad externa y sean idempotentes.
+
+- **Snake Case Naming Strategy (`SnakeCaseWithPluralizedTablePhysicalNamingStrategy`):** Librería de nomenclatura personalizada para la capa de persistencia JPA, que convierte automáticamente los nombres de entidades Java a `snake_case_pluralizado` en la base de datos PostgreSQL. Sus pruebas de unidad validan la correcta transformación de casos compuestos y nombres irregulares.
+
+
+### 5.1.4	Framework Pattern Driven Refactoring Report    
+
+Durante el desarrollo de BodyMatch AI se realizó un proceso de refactorización progresiva orientado por patrones arquitectónicos y buenas prácticas de diseño de software. El objetivo principal fue evolucionar desde una arquitectura monolítica inicial hacia una arquitectura híbrida basada en microservicios, permitiendo una mayor escalabilidad, mantenibilidad y desacoplamiento de funcionalidades críticas.
+
+La estrategia de refactorización se enfocó principalmente en los Bounded Contexts de autenticación y gestión de videos, debido a que representan componentes core del negocio y poseen necesidades particulares de escalabilidad, seguridad y procesamiento independiente.
+
+---
+
+### Objetivos de la Refactorización
+
+Los principales objetivos perseguidos durante el proceso de refactorización fueron:
+
+- Separar responsabilidades funcionales críticas del monolito principal.
+- Reducir el acoplamiento entre módulos del sistema.
+- Mejorar la escalabilidad horizontal de componentes independientes.
+- Facilitar el mantenimiento y despliegue continuo de servicios.
+- Implementar patrones modernos de arquitectura distribuida.
+- Permitir integración independiente con servicios de IA.
+- Mejorar la seguridad mediante un servicio centralizado de autenticación.
+
+---
+
+### Patrones Arquitectónicos Aplicados
+
+Durante la refactorización se adoptaron distintos patrones y frameworks arquitectónicos para soportar la transición hacia microservicios.
+
+| Patrón / Framework | Aplicación en BodyMatch AI | Beneficio Obtenido |
+|---|---|---|
+| Microservices Architecture | Separación de IAM y Videos como servicios independientes | Escalabilidad y despliegue independiente |
+| API Gateway Pattern | Centralización de acceso mediante API Gateway | Seguridad y routing unificado |
+| Service Discovery Pattern | Registro dinámico de servicios con Discovery Server | Comunicación desacoplada entre microservicios |
+| Bounded Context (DDD) | Separación por dominios funcionales | Organización clara del negocio |
+| JWT Authentication Pattern | Seguridad basada en tokens JWT | Autenticación stateless |
+| CQRS Pattern | Separación de comandos y consultas en algunos módulos | Mejor organización lógica |
+| RESTful API Pattern | Comunicación HTTP entre frontend y backend | Interoperabilidad estándar |
+| Layered Architecture | Separación Controller-Service-Repository | Mantenibilidad y claridad |
+| External AI Integration Pattern | Integración desacoplada con Gemini AI | Flexibilidad para procesamiento IA |
+
+---
+
+### Refactorización de la Arquitectura
+
+Inicialmente, el sistema fue diseñado bajo una arquitectura monolítica tradicional donde todos los módulos compartían la misma base de código y despliegue.
+
+Posteriormente, se identificaron componentes con alta independencia funcional y necesidades específicas de escalabilidad, iniciándose así la extracción de microservicios.
+
+Los módulos desacoplados fueron:
+
+- IAM (Identity and Access Management)
+- Videos (Gestión y análisis de ejercicios)
+
+Mientras tanto, los siguientes módulos permanecieron temporalmente dentro del monolito:
+
+- Matchmaking
+- Training
+- Nutrition
+- Membership
+
+Esta decisión permitió reducir la complejidad inicial de migración y asegurar una transición progresiva hacia una arquitectura completamente distribuida.
+
+---
+
+### Refactorización del Microservicio IAM
+
+El módulo de autenticación originalmente formaba parte del monolito principal. Durante la refactorización se extrajo como un microservicio independiente encargado exclusivamente de:
+
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Generación de JWT.
+- Gestión de roles.
+- Seguridad de autenticación.
+
+#### Mejoras obtenidas
+
+- Centralización de seguridad.
+- Independencia del ciclo de despliegue.
+- Mayor reutilización por otros servicios.
+- Escalabilidad independiente.
+- Reducción del acoplamiento.
+
+---
+
+### Refactorización del Microservicio Videos
+
+El procesamiento de videos y análisis con IA requería una carga computacional diferente al resto del sistema. Debido a ello, se decidió desacoplar completamente esta funcionalidad como un microservicio independiente.
+
+Las responsabilidades del servicio incluyen:
+
+- Recepción de videos.
+- Almacenamiento de archivos.
+- Procesamiento multimedia.
+- Integración con Gemini AI.
+- Generación de feedback automático.
+
+#### Mejoras obtenidas
+
+- Procesamiento independiente del backend principal.
+- Mejor manejo de operaciones pesadas.
+- Escalabilidad específica para IA.
+- Flexibilidad para futuras integraciones de Machine Learning.
+
+---
+
+### Tecnologías y Frameworks Utilizados
+
+| Tecnología / Framework | Propósito |
+|---|---|
+| Spring Boot | Desarrollo de microservicios |
+| Spring Security | Seguridad y autenticación |
+| Spring Cloud Gateway | API Gateway |
+| Eureka Server | Service Discovery |
+| PostgreSQL | Persistencia de datos |
+| JWT | Autenticación stateless |
+| Swagger / OpenAPI | Documentación de APIs |
+| Docker | Contenerización |
+| Gemini AI API | Procesamiento inteligente de ejercicios |
+| GitHub | Control de versiones |
+| Trello | Gestión ágil del proyecto |
+
+---
+
+### Impacto de la Refactorización
+
+La aplicación de patrones arquitectónicos y refactorización orientada a microservicios permitió mejorar significativamente la estructura del sistema.
+
+Entre los principales resultados obtenidos destacan:
+
+- Arquitectura más modular y mantenible.
+- Mejor separación de responsabilidades.
+- Mayor facilidad para pruebas y despliegues.
+- Preparación para escalabilidad futura.
+- Integración desacoplada con inteligencia artificial.
+- Mejor organización de bounded contexts.
+- Reducción del riesgo de cambios globales en el sistema.
+
+### 5.2	Software Configuration Management
+### 5.2.1	Software Development Environment Configuration  
+
+#### Project Requirements Management
+
+**Jira:**
+Herramienta de gestión de proyectos ágil diseñada para que los equipos de software organicen y den seguimiento a sus tareas. Es fundamental para la planificación de sprints, la gestión del Product Backlog y la supervisión del flujo de trabajo en tiempo real. En BodyMatch AI se utiliza para organizar las historias de usuario, las tareas técnicas (Technical Stories) y el tablero Kanban de cada sprint.
+
+**Link de referencia:** [https://www.atlassian.com/es/software/jira](https://www.atlassian.com/es/software/jira)
+
+---
+
+#### Product UX/UI Design
+
+**Figma:**
+Herramienta de diseño gráfico y de prototipado basada en la nube, utilizada principalmente para crear interfaces de usuario (UI) y experiencias de usuario (UX) para sitios web y aplicaciones móviles. En BodyMatch AI es la herramienta principal para los diseños de las pantallas del cliente móvil Flutter.
+
+**Link de referencia:** [https://www.figma.com](https://www.figma.com)
+
+**LucidChart:**
+Plataforma de diagramación online utilizada para la elaboración de los diagramas de componentes C4, diagramas de actividades, diagramas de estados y el diagrama entidad-relación (ERD) de BodyMatch AI.
+
+**Link de referencia:** [https://www.lucidchart.com](https://www.lucidchart.com)
+
+**Structurizr:**
+Herramienta especializada en la creación de diagramas de arquitectura software bajo el modelo C4 (Context, Container, Component, Code). Se utilizó para representar la arquitectura de microservicios de BodyMatch AI en sus distintos niveles de abstracción.
+
+**Link de referencia:** [https://structurizr.com](https://structurizr.com)
+
+---
+
+#### Software Development
+
+**IntelliJ IDEA:**
+Entorno de desarrollo integrado (IDE) principal para el desarrollo del backend en **Java 21** con **Spring Boot 3.4.x**. Utilizado por todo el equipo para los microservicios IAM, Videos, y el monolito central de BodyMatch AI, aprovechando sus herramientas de refactorización, análisis de código estático y soporte nativo para Maven y Docker.
+
+**Link de referencia:** [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea)
+
+**Visual Studio Code:**
+Editor de código fuente gratuito, de código abierto y multiplataforma. Utilizado como IDE secundario para el desarrollo del cliente móvil en **Flutter/Dart**, la edición de archivos de configuración YAML y los scripts de Docker Compose.
+
+**Link de referencia:** [https://code.visualstudio.com](https://code.visualstudio.com)
+
+**Flutter SDK:**
+Framework de código abierto de Google para la construcción de aplicaciones nativas multiplataforma desde una única base de código. BodyMatch AI utiliza Flutter (con soporte mínimo para Android API 24 e iOS 13) para desarrollar el cliente móvil que consume los microservicios del backend a través del API Gateway.
+
+**Link de referencia:** [https://flutter.dev](https://flutter.dev)
+
+**Docker / Docker Compose:**
+Plataforma de contenedores utilizada para el empaquetado y despliegue reproducible de cada microservicio. El archivo `docker-compose.yml` en la raíz del proyecto de infraestructura orquesta el inicio coordinado de PostgreSQL, el Discovery Server (Eureka), el API Gateway y los seis microservicios de BodyMatch AI con sus respectivas variables de entorno.
+
+**Link de referencia:** [https://www.docker.com](https://www.docker.com)
+
+---
+
+#### Software Testing
+
+**Postman:**
+Plataforma de software utilizada para la construcción, prueba, documentación y modificación de APIs REST. En BodyMatch AI es la herramienta principal para la validación manual de los endpoints expuestos por el API Gateway, la verificación de respuestas JSON y la prueba del flujo completo de análisis de video mediante peticiones multipart.
+
+**Link de referencia:** [https://www.postman.com](https://www.postman.com)
+
+---
+
+#### Software Deployment
+
+**Eureka (Spring Cloud Netflix):**
+Servidor de descubrimiento de servicios utilizado para el registro dinámico y la localización de los microservicios en el ecosistema de BodyMatch AI. El API Gateway consulta a Eureka para enrutar las peticiones hacia las instancias disponibles de cada servicio mediante balanceo de carga (`lb://service-name`).
+
+**Link de referencia:** [https://spring.io/projects/spring-cloud-netflix](https://spring.io/projects/spring-cloud-netflix)
+
+**Spring Cloud Gateway:**
+Componente de enrutamiento que actúa como punto único de entrada para el cliente móvil Flutter. Define las rutas hacia cada microservicio (IAM, Matchmaking, Membership, Nutrition, Training, Videos), gestiona los timeouts de respuesta (configurados hasta 300 segundos para el streaming de video) y aplica las políticas CORS centralizadas.
+
+**Link de referencia:** [https://spring.io/projects/spring-cloud-gateway](https://spring.io/projects/spring-cloud-gateway)
+
+**Git:**
+Sistema de control de versiones distribuido, de código abierto, utilizado para rastrear los cambios en el código fuente durante el desarrollo de BodyMatch AI. Facilita el registro de versiones, la colaboración entre los integrantes del equipo y la integración con el flujo de trabajo GitFlow.
+
+**Link de referencia:** [https://git-scm.com](https://git-scm.com)
+
+---
+
+#### Software Documentation and Project Management
+
+**GitHub:**
+Plataforma en la nube para el desarrollo colaborativo de software, donde se alojan los repositorios del monolito, los microservicios, el cliente Flutter y la documentación del proyecto BodyMatch AI. Es la plataforma central para la revisión de código mediante Pull Requests y el seguimiento del historial de commits por integrante.
+
+**Link de referencia:** [https://github.com](https://github.com)
+
+**Swagger / SpringDoc OpenAPI:**
+Herramienta de documentación interactiva de APIs REST basada en el estándar OpenAPI 3.0. Cada microservicio de BodyMatch AI expone su especificación en `/v3/api-docs`, y el API Gateway los agrega en una interfaz consolidada accesible en `http://localhost:8080/swagger-ui.html`, con un menú desplegable para seleccionar entre los seis servicios (IAM, Matchmaking, Membership, Nutrition, Training, Videos).
+
+**Link de referencia:** [https://springdoc.org](https://springdoc.org)
+
+### 5.2.2	 Source Code Management  
+
+#### Repositorios de GitHub
+
+El código fuente de BodyMatch AI está distribuido en repositorios dentro de la organización del equipo:
+
+- **Repositorio de Infraestructura (Docker Compose):** Contiene el archivo `docker-compose.yml`, la configuración inicial de la base de datos PostgreSQL (`postgres-init/`) y el README con las instrucciones de despliegue local.
+- **Repositorio del API Gateway:** Proyecto Spring Cloud Gateway con la configuración de rutas, CORS y la agregación de la documentación Swagger.
+- **Repositorio del Discovery Server:** Servidor Eureka para el registro y descubrimiento de microservicios.
+- **Repositorio del IAM Service:** Microservicio de autenticación y autorización con JWT.
+- **Repositorio del Matchmaking Service:** Módulo para la gestión de perfiles de atletas y coaches, solicitudes de conexión y sesiones de entrenamiento.
+- **Repositorio del Membership Service:** Módulo de planes de membresía, suscripciones e integración con Stripe.
+- **Repositorio del Nutrition Service:** Módulo de análisis de imágenes de alimentos mediante Gemini AI.
+- **Repositorio del Training Service:** Módulo de sesiones de entrenamiento, métricas de rendimiento y seguimiento de progreso.
+- **Repositorio del Videos Service:** Microservicio para la subida, almacenamiento y análisis biomecánico de videos de ejercicio mediante Gemini AI.
+- **Repositorio del Cliente Móvil (Flutter):** Aplicación móvil para Android e iOS que consume los endpoints del API Gateway.
+
+#### Flujo de Trabajo GitFlow
+
+BodyMatch AI adopta el modelo **GitFlow** como estrategia de ramificación, lo que permite organizar el trabajo colaborativo de forma estructurada y garantizar la estabilidad de las ramas principales.
+
+- **Rama `main`:** Rama principal que contiene las versiones estables, operativas y listas para desplegar de cada repositorio. Todas las versiones se etiquetan con **Semantic Versioning** (`v1.0.0`, `v1.1.0`, etc.) para facilitar el seguimiento del historial de releases.
+
+- **Rama `develop`:** Rama de integración continua que concentra el trabajo completado de cada sprint. Contiene la versión en desarrollo con todas las características finalizadas hasta el momento del sprint, pendientes de pruebas finales antes de su promoción a `main`.
+
+- **Ramas `feature/`:** Cada historia de usuario o tarea técnica se desarrolla en una rama independiente siguiendo la convención `feature/nombre-descriptivo-del-contexto`. Ejemplos: `feature/iam-jwt-token-rotation`, `feature/videos-gemini-integration`, `feature/matchmaking-coach-search`. Estas ramas se integran a `develop` mediante Pull Requests que requieren revisión de al menos un miembro del equipo.
+
+- **Ramas `hotfix/`:** Utilizadas para correcciones urgentes sobre la rama `main` en producción. Se fusionan tanto en `main` como en `develop` para mantener la coherencia del historial.
+
+**Convenciones de Commits (Conventional Commits):**
+Todos los mensajes de commit siguen el estándar Conventional Commits para mantener un historial claro y facilitar la generación automatizada de changelogs:
+
+- `feat:` — Nueva funcionalidad (ej. `feat: add JWT refresh token rotation in IAM service`)
+- `fix:` — Corrección de un error (ej. `fix: resolve NullPointerException in VideoAnalysisService`)
+- `docs:` — Cambios en documentación (ej. `docs: update OpenAPI spec for Videos endpoint`)
+- `test:` — Adición o modificación de pruebas (ej. `test: add Gherkin scenarios for coach search`)
+- `refactor:` — Refactorización sin cambio de comportamiento
+- `chore:` — Tareas de mantenimiento (ej. `chore: update spring-boot to 3.4.0`)
+
+### 5.2.3	Source Code Style Guide & Conventions  
+
+#### Frontend Code Style Guide (Flutter / Dart)
+
+Para el cliente móvil, se sigue la guía de estilo oficial de Dart y las convenciones del framework Flutter:
+
+- **Nomenclatura de archivos:** Se utiliza `snake_case` para todos los archivos Dart. Ejemplo: `sign_in_view.dart`, `exercise_video_service.dart`, `api_client.dart`.
+- **Nomenclatura de clases:** Se utiliza `PascalCase`. Ejemplo: `AuthBloc`, `ExerciseVideoRepository`, `MembershipView`.
+- **Nomenclatura de variables y funciones:** Se utiliza `camelCase`. Ejemplo: `accessToken`, `buildTheme()`, `onRetry`.
+- **Constantes:** Se utiliza `camelCase` con el prefijo `k` si son constantes de widget o `SCREAMING_SNAKE_CASE` para constantes globales. Ejemplo: `kAllSpecialties`, `AppConfig.defaultTimeout`.
+- **Organización de carpetas:** El proyecto se organiza en capas separadas: `bloc/` (gestión de estado con BLoC), `config/` (configuración de entornos), `constants/` (colores, tipografías), `data/` (modelos, repositorios, cliente HTTP, almacenamiento), `providers/` (inyección de dependencias con Provider) y `views/` (pantallas organizadas por dominio: `auth/`, `coach/`, `matchmaking/`, `nutrition/`, `videos/`).
+- **Gestión de estado:** Se utiliza el patrón BLoC (`flutter_bloc`) para la gestión de estado compleja (autenticación, navegación global) y `Provider` para la inyección de dependencias de repositorios en el árbol de widgets.
+- **Cliente HTTP:** Todas las peticiones HTTP se encapsulan en la clase `ApiClient`, que implementa lógica de reintento mediante refresh de token JWT (con `onSessionExpired` callback), manejo de errores tipados (`ApiException`, `NetworkException`, `SessionExpiredException`) y soporte para uploads multipart con detección automática de MIME type.
+
+#### Backend Code Style Guide (Java / Spring Boot)
+
+Para los microservicios y el monolito de BodyMatch AI, se siguen las convenciones de Java junto con los principios de **Clean Architecture** y **Domain-Driven Design (DDD)**:
+
+**1. Arquitectura por Bounded Contexts y Capas**
+
+Cada Bounded Context se organiza internamente en cuatro capas con dependencias unidireccionales (de afuera hacia adentro):
+
+- **`interfaces`:** Controladores REST (`@RestController`), recursos (DTOs de salida), assemblers (mapeadores DTO ↔ Entidad). Ninguna entidad de dominio se expone directamente al exterior.
+- **`application`:** Command Services, Query Services, comandos (`*Command`), eventos de dominio. Orquestan la lógica de negocio sin contener lógica propia.
+- **`domain`:** Entidades, Value Objects, interfaces de repositorios (`*Repository`), reglas de negocio. Sin dependencias externas de frameworks.
+- **`infrastructure`:** Implementaciones de repositorios JPA (`*RepositoryImpl`), gateways hacia servicios externos (`GeminiHttpClient`, `LocalCloudStorageService`), configuraciones de persistencia.
+
+**2. Convenciones de Nomenclatura**
+
+| Tipo de Clase | Convención | Ejemplo |
+|:---|:---|:---|
+| Controladores REST | `PascalCase` + sufijo `Controller` | `ExerciseVideoController` |
+| Servicios de Comando | `PascalCase` + sufijo `CommandService` | `ExerciseVideoCommandService` |
+| Servicios de Consulta | `PascalCase` + sufijo `QueryService` | `UserQueryService` |
+| Repositorios (interfaz) | `PascalCase` + sufijo `Repository` | `ExerciseVideoRepository` |
+| DTOs de entrada | Descriptivo + sufijo `Resource` o `Command` | `SignUpAthleteResource`, `CreateWorkoutCommand` |
+| DTOs de salida | Descriptivo + sufijo `Response` o `Resource` | `ExerciseVideoResponse`, `UserResource` |
+| Assemblers (mappers) | `PascalCase` + `FromEntityAssembler` | `UserResourceFromEntityAssembler` |
+| Gateways externos | `PascalCase` + sufijo `Client` o `Gateway` | `GeminiHttpClient`, `IamGateway` |
+| Archivos fuente | `PascalCase.java` | `ExerciseVideo.java` |
+
+**3. Estándares de Codificación**
+
+- **SOLID:** Se promueve la separación de responsabilidades, la inversión de dependencias y el diseño orientado a interfaces en toda la base de código.
+- **CQRS:** Cada Bounded Context separa explícitamente las operaciones de escritura (`CommandService`) de las de lectura (`QueryService`), siguiendo el patrón *Command Query Responsibility Segregation*.
+- **Manejo de errores:** Los errores de dominio se representan como excepciones específicas (`IllegalArgumentException`, `IllegalStateException`) que son interceptadas y transformadas en respuestas HTTP estructuradas por el `GlobalExceptionHandler` anotado con `@RestControllerAdvice`.
+- **Inyección de dependencias:** Se favorece la inyección por constructor en todos los componentes, facilitando las pruebas unitarias con mocks y garantizando la inmutabilidad de las dependencias.
+- **Transaccionalidad:** Los métodos de escritura en los Command Services están anotados con `@Transactional` para garantizar la consistencia de la base de datos (Unit of Work pattern).
+- **Documentación de APIs:** Todos los controladores REST están anotados con `@Tag` y sus métodos con `@Operation` de SpringDoc OpenAPI para la generación automática de la especificación Swagger.
+- **Migraciones de base de datos:** Se utiliza **Flyway** para la gestión versionada de los esquemas de base de datos, con scripts nombrados bajo la convención `V{número}__{descripción}.sql`.
+- **Nomenclatura de tablas:** Se utiliza la clase `SnakeCaseWithPluralizedTablePhysicalNamingStrategy` para convertir automáticamente los nombres de entidades JPA a `snake_case` pluralizado en PostgreSQL.
+
+**4. Configuración y Variables de Entorno**
+
+Las configuraciones sensibles (claves API, cadenas de conexión a base de datos) se externalizan mediante variables de entorno y nunca se incluyen en el código fuente. El archivo `.env.example` en la raíz del proyecto documenta todas las variables requeridas:
+
+```
+STRIPE_API_KEY=sk_test_changeme
+STRIPE_WEBHOOK_SECRET=whsec_changeme
+GEMINI_API_KEY=changeme
+```
+
+La configuración específica de cada microservicio se gestiona en `application.properties`, con perfiles de Spring (`dev`, `prod`) para diferenciar entornos.
+
+
+### 5.2.4	 Software Deployment Configuration
+
+La configuración de despliegue de BodyMatch AI está basada en **Docker** y orquestada con **Docker Compose**, lo que garantiza entornos reproducibles tanto en desarrollo local como en el servidor de despliegue. A continuación se describe la configuración de los principales componentes:
+
+**Infraestructura Base (docker-compose.yml):**
+El archivo `docker-compose.yml` del repositorio de infraestructura define la red privada `bodymatch-net` y los volúmenes persistentes para PostgreSQL. Orquesta el arranque secuencial de los servicios utilizando `healthcheck` y la condición `service_healthy` para garantizar que la base de datos esté disponible antes de que los microservicios intenten conectarse.
+
+**Base de Datos PostgreSQL:**
+Se levanta una instancia de PostgreSQL 15 en el contenedor `bodymatch-postgres` (puerto externo `5433`) con un usuario dedicado (`bodymatch`). El script de inicialización `postgres-init/01-create-databases.sql` crea automáticamente seis bases de datos independientes al primer arranque del contenedor:
+
+```sql
+CREATE DATABASE iam_db;
+CREATE DATABASE matchmaking_db;
+CREATE DATABASE membership_db;
+CREATE DATABASE nutrition_db;
+CREATE DATABASE training_db;
+CREATE DATABASE videos_db;
+```
+
+Cada microservicio se conecta exclusivamente a su base de datos, siguiendo el patrón **Database per Service** que garantiza el aislamiento de datos entre Bounded Contexts.
+
+**Discovery Server (Eureka):**
+Disponible en el puerto `8761`. Los microservicios se registran automáticamente al arrancar mediante la propiedad `eureka.client.service-url.defaultZone`. El API Gateway utiliza el prefijo `lb://` (load balanced) para resolver las URLs de los servicios a través de Eureka en tiempo de ejecución.
+
+**API Gateway (Spring Cloud Gateway):**
+Disponible en el puerto `8080` como punto único de entrada para el cliente móvil Flutter. Define once rutas de enrutamiento (`routes[0]` a `routes[11]`), incluyendo seis rutas funcionales hacia los microservicios y cinco rutas adicionales para la agregación de la documentación OpenAPI de cada servicio en la interfaz Swagger consolidada.
+
+**Configuración de Timeouts para Video Upload:**
+Dado que el análisis de video mediante Gemini AI puede tomar hasta 60 segundos, el API Gateway está configurado con timeouts extendidos:
+
+```properties
+spring.cloud.gateway.httpclient.response-timeout=300s
+spring.cloud.gateway.httpclient.connect-timeout=10000
+spring.codec.max-in-memory-size=256MB
+```
+
+**Proceso de Despliegue Local:**
+
+Para levantar el ecosistema completo de BodyMatch AI en un entorno local, se siguen los pasos:
+
+1. Copiar el archivo `.env.example` a `.env` y completar las API keys reales (Stripe, Gemini).
+2. Asegurar que los repositorios de los nueve servicios (`discovery-server`, `api-gateway`, `iam-service`, `matchmaking-service`, `membership-service`, `nutrition-service`, `training-service`, `videos-service`) estén clonados como carpetas hermanas al repositorio de infraestructura.
+3. Ejecutar el comando `docker compose up --build` desde la raíz del repositorio de infraestructura.
+4. Verificar el estado de todos los contenedores en la consola de Eureka: `http://localhost:8761`.
+5. Acceder a la documentación consolidada de la API REST: `http://localhost:8080/swagger-ui.html`.
+
+**Diagrama de Deployment (C4 Model):**
+El diagrama de despliegue muestra la topología de contenedores Docker dentro del host de desarrollo, con las conexiones de red entre el cliente Flutter, el API Gateway, el Discovery Server, los seis microservicios y la base de datos PostgreSQL centralizada con seis esquemas lógicos independientes.
+
+## 5.3	Microservices Implementation
+### 5.2.1	Sprint 1
+##### 5.2.1.1	Sprint Backlog 1
+**Sprint Planning Background**
+
+| **Sprint 1** | **Sprint 1 BodyMatch AI** |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Date** | 04/05/2026     |
+| **Time** | 06:00 PM     |
+| **Location** | Servidor de Discord del Equipo    |
+| **Prepared By** |   Pablo Geronimo  |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara   |
+| **Sprint 1 Review Summary** | Se desarrolló y desplegó la Landing Page interactiva mostrando la propuesta de valor, servicios, casos de éxito y precios. Se implementó el frontend móvil para las vistas core (Autenticación y Subida/Análisis de Video). En el backend, se logró la arquitectura híbrida con el monolito core y los microservicios IAM y Videos desplegados y documentados. |
+| **Sprint 1 Retrospective Summary** | El equipo logró una excelente comunicación para sincronizar los contratos de la API entre el frontend móvil y el backend. Se destacó el éxito en la extracción inicial de los microservicios, aunque se debe afinar la estimación de tiempos de integración con IA para futuros sprints. |
+| **Sprint Goal & User Stories** | Construir el núcleo visible y funcional de BodyMatch AI: Landing Page pública, backend con arquitectura híbrida (Monolito + MS), y las pantallas core móviles para el registro, inicio de sesión y análisis de técnica con IA.                                       |
+| **Sprint 1 Goal** | Desplegar la Landing Page, asegurar el ecosistema backend (IAM, Videos y Monolito), mostrar las pantallas móviles core operativas y entregar la documentación técnica completa del Sprint 1.      |
+| **Sprint 1 Velocity** | 20 User Stories / Technical Stories completadas     |
+| **Sum of Story Points** | 45 Story Points
+
+**Sprint Backlog**
+
+El objetivo principal de este Sprint fue establecer la presencia digital del producto (Landing Page), sentar las bases de seguridad (IAM) y desarrollar el núcleo de valor: el análisis de videos mediante IA. 
+
+A continuación, se muestra el enlace al tablero de gestión:
+
+[Product Backlog en Trello](https://trello.com/b/Sn0UEEhS/bodymatch-ai-product-backlog)
+
+
+**Descomposición de Tareas del Sprint:**
+
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| **US33** | Consultar información de servicios | T01 | Sección de Servicios (Landing) | Maquetar la sección "Tecnología que entiende tu cuerpo" detallando el análisis IA y Marketplace. | 3h | Pablo Geronimo | Done |
+| **US34** | Solicitar demostración | T01 | Modal de Contacto/Demo | Implementar formulario interactivo "Solicita tu Demo" con validación de campos. | 4h | Anyelo Alejos | Done |
+| **US35** | Consultar planes y precios | T01 | Sección Pricing | Maquetar planes "Básico" y "Premium" con sus beneficios en la Landing Page. | 2h | Marcia Melgarejo | Done |
+| **US36** | Solicitar asistencia | T01 | Sección FAQ | Desarrollar sección interactiva de preguntas frecuentes en la landing. | 3h | Jorge Guevara | Done |
+| **US37** | Consultar casos de éxito | T01 | Galería de Éxito y Filtros | Desarrollar sección de testimonios con filtros dinámicos (Casa, Gimnasio, Coaches). | 4h | Pablo Geronimo | Done |
+| **US01** | Registro de usuario | T01 | UI de Registro Mobile | Crear pantallas de registro (Atleta/Coach) en la aplicación móvil. | 5h | Anyelo Alejos | Done |
+| | | T02 | API de Registro (IAM MS) | Implementar endpoints `POST /sign-up` en el microservicio IAM. | 6h | Marcia Melgarejo | Done |
+| **US02** | Inicio de sesión | T01 | UI de Login Mobile | Crear pantalla de inicio de sesión y gestión de tokens en el dispositivo. | 4h | Jorge Guevara | Done |
+| | | T02 | API de Login (IAM MS) | Implementar endpoint `POST /sign-in` devolviendo JWT. | 5h | Pablo Geronimo | Done |
+| **US04** | Cierre de sesión | T01 | Lógica de Logout Mobile | Limpiar tokens almacenados localmente y redirigir al Login. | 2h | Anyelo Alejos | Done |
+| | | T02 | API Revoke Token | Implementar endpoint `POST /sign-out` en el MS IAM para invalidar sesión. | 3h | Marcia Melgarejo | Done |
+| **US05** | Configuración de perfil | T01 | UI Formulario Perfil | Crear vista móvil para que el usuario ingrese sus datos biométricos y objetivos. | 4h | Jorge Guevara | Done |
+| | | T02 | API Perfil Atleta | Implementar endpoint `PUT /profile` en el Monolito Core. | 4h | Pablo Geronimo | Done |
+| **US06** | Búsqueda de coaches | T01 | UI Buscador y Filtros | Diseñar vista móvil con barra de búsqueda y filtros (precio, experiencia). | 6h | Anyelo Alejos | Done |
+| | | T02 | API Search Coaches | Desarrollar query dinámica en PostgreSQL para el endpoint de búsqueda. | 5h | Marcia Melgarejo | Done |
+| **US07** | Visualización de perfil coach | T01 | UI Detalle Coach | Maquetar pantalla móvil con la información, reseñas y tarifas del coach. | 5h | Jorge Guevara | Done |
+| | | T02 | API Get Coach | Implementar endpoint `GET /coaches/{id}`. | 3h | Pablo Geronimo | Done |
+| **US11** | Subir video del ejercicio | T01 | UI Cámara y Subida | Integrar cámara y selector de archivos nativo en la app móvil Android/iOS. | 6h | Anyelo Alejos | Done |
+| | | T02 | API Gestión de Video | Desarrollar endpoint de subida (multipart) en el microservicio de Videos. | 6h | Marcia Melgarejo | Done |
+| **US12** | Feedback automático con IA | T01 | UI Resultados IA | Maquetar pantalla de métricas, keypoints y feedback visual en la app móvil. | 8h | Jorge Guevara | Done |
+| | | T02 | Integración Gemini AI | Conectar el MS Videos con la API de Gemini para procesamiento de frames. | 8h | Pablo Geronimo | Done |
+| **US15** | Registro métricas físicas | T01 | UI Historial Métricas | Crear vista para registrar peso y medidas corporales a lo largo del tiempo. | 4h | Anyelo Alejos | Done |
+| | | T02 | API Post Metrics | Crear lógica y endpoint `POST /metrics` en el módulo de Training (Monolito). | 4h | Marcia Melgarejo | Done |
+| **TS01** | Middleware JWT | T01 | Seguridad Gateway | Implementar validación de JWT en cabeceras de Spring Security. | 5h | Jorge Guevara | Done |
+| **TS02** | Endpoints Matchmaking | T01 | Configuración Controladores | Estructurar y exponer la capa REST del Bounded Context de Matchmaking. | 4h | Pablo Geronimo | Done |
+| **TS03** | Endpoints Video | T01 | Almacenamiento Blob | Configurar persistencia de videos en Azure Blob Storage / File System local. | 5h | Anyelo Alejos | Done |
+| **TS04** | Endpoint Perfil Atleta | T01 | Integración CQRS | Configurar Command/Query handlers para recuperar datos del perfil del atleta. | 4h | Marcia Melgarejo | Done |
+
+##### 5.2.1.2	Development Evidence for Sprint Review
+
+Durante el Sprint 1 de BodyMatch AI, el equipo desarrolló los componentes principales necesarios para validar el núcleo funcional de la solución. La implementación se realizó en tres frentes paralelos:
+
+- Landing Page institucional.
+- Frontend Mobile.
+- Arquitectura backend híbrida basada en Monolito + Microservicios.
+
+A nivel de microservicios, durante este Sprint se implementaron completamente los siguientes Bounded Contexts independientes:
+
+- **IAM (Identity and Access Management)**
+- **Video Analysis and Management**
+
+Estos microservicios permitieron cubrir funcionalidades críticas relacionadas con:
+
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Seguridad mediante JWT.
+- Subida de videos.
+- Procesamiento y análisis automático de ejercicios mediante IA.
+
+Los demás módulos funcionales (Matchmaking, Training, Nutrition y Membership) permanecen temporalmente dentro del backend monolítico y serán desacoplados progresivamente en los siguientes Sprints.
+
+Asimismo, se desarrollaron las interfaces móviles necesarias para consumir los servicios implementados y la Landing Page institucional para presentar la propuesta de valor del producto.
+
+---
+
+### Evidencia de Desarrollo por Repositorio
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/iam-service` | `feature/authentication-endpoints` | ---- | `feat: implement authentication endpoints` | Desarrollo de endpoints de registro, login y logout utilizando JWT y Spring Security. | ---- |
+| `G3-FundamentosArqui-7944/videos-service` | `feature/video-upload` | ---- | `feat: implement video upload service` | Implementación de carga multipart de videos y persistencia inicial del archivo. | ---- |
+| `G3-FundamentosArqui-7944/videos-service` | `feature/video-analysis-ai` | ---- | `feat: integrate AI video analysis` | Integración inicial del procesamiento automático de ejercicios mediante IA. | ---- |
+| `G3-FundamentosArqui-7944/api-gateway` | `feature/gateway-security` | ---- | `feat: configure gateway routing and jwt validation` | Configuración del API Gateway y validación centralizada de JWT. | ---- |
+| `G3-FundamentosArqui-7944/discovery-server` | `feature/eureka-server-config` | ---- | `feat: configure discovery server` | Configuración inicial del servidor de descubrimiento de servicios. | ---- |
+| `G3-FundamentosArqui-7944/backend-monolito` | `feature/training-module` | ---- | `feat: implement training profile endpoints` | Desarrollo de endpoints relacionados con métricas y perfil del atleta. | ---- |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/mobile-auth-ui` | ---- | `feat: develop authentication mobile views` | Implementación de vistas móviles para registro e inicio de sesión. | ---- |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/mobile-video-ui` | ---- | `feat: implement video upload interface` | Integración de cámara y selector de archivos para subida de videos. | ---- |
+| `G3-FundamentosArqui-7944/Landing-Page` | `feature/landing-main-sections` | ---- | `feat: create landing page sections` | Desarrollo de secciones de servicios, precios, FAQ y testimonios. | ---- |
+
+---
+
+### Repositorios Utilizados Durante el Sprint
+
+| Componente | Repositorio |
+|---|---|
+| IAM Microservice | `https://github.com/G3-FundamentosArqui-7944/iam-service` |
+| Videos Microservice | `https://github.com/G3-FundamentosArqui-7944/videos-service` |
+| API Gateway | `https://github.com/G3-FundamentosArqui-7944/api-gateway` |
+| Discovery Server | `https://github.com/G3-FundamentosArqui-7944/discovery-server` |
+| Backend Monolito | `https://github.com/G3-FundamentosArqui-7944/backend-monolito` |
+| Mobile Frontend | `https://github.com/G3-FundamentosArqui-7944/mobileapp-frontend` |
+| Landing Page | `https://github.com/G3-FundamentosArqui-7944/Landing-Page` |
+
+---
+
+### Tecnologías Utilizadas
+
+| Componente | Tecnologías |
+|---|---|
+| Microservicios | Spring Boot, Spring Security, JWT |
+| Service Discovery | Eureka Server |
+| API Gateway | Spring Cloud Gateway |
+| Persistencia | PostgreSQL |
+| IA de análisis | Gemini AI |
+| Frontend Mobile | Kotlin / Android |
+| Landing Page | HTML, CSS, JavaScript |
+| Documentación API | Swagger / OpenAPI |
+| Versionamiento | Git + GitHub |
+
+##### 5.2.1.3	Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 1 se desarrolló una aproximación inicial de pruebas de integración y aceptación para los microservicios implementados en BodyMatch AI.
+
+El enfoque utilizado fue **BDD (Behavior Driven Development)** mediante archivos `.feature` escritos en lenguaje Gherkin. Estas pruebas permitieron validar el comportamiento esperado de los endpoints críticos implementados en los microservicios IAM y Videos.
+
+Las pruebas diseñadas se enfocaron principalmente en:
+
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Validación de autenticación JWT.
+- Subida de videos.
+- Procesamiento automático mediante IA.
+
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | 
+bfe1a9d | `test: add BDD feature for user registration` | Implementación del archivo `US01-Registro de usuario.feature` para validar el registro exitoso de atletas y coaches en el microservicio IAM. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for sign-in authentication` | Implementación del archivo `US02 - Inicio de sesión.feature` para validar autenticación y generación de JWT. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for sign-out process` | Implementación del archivo `US04-Cierre de sesión.feature` para validar revocación de tokens y cierre de sesión. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for exercise video upload` | Implementación del archivo `US11-Subir video del ejercicio.feature` para validar carga de videos mediante multipart/form-data. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for AI feedback processing` | Implementación del archivo `US12-Feedback automático con IA.feature` para validar el análisis automático de ejercicios mediante IA. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for JWT middleware validation` | Implementación del archivo `TS01-Middleware JWT.feature` para validar autorización y protección de endpoints mediante JWT. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for video endpoints availability` | Implementación del archivo `TS03-Endpoints Video.feature` para validar disponibilidad y funcionamiento del microservicio de videos. | 15/05/2026 |
+
+
+##### 5.2.1.4	Execution Evidence for Sprint Review
+Para este primer Sprint de BodyMatch AI, el equipo ejecutó el desarrollo en tres frentes paralelos: la publicación de la Landing Page institucional, el desarrollo del Frontend Mobile para los usuarios, y la implementación de la arquitectura backend (híbrida).
+
+**1. Evidencia en Landing Page (Web)**
+
+A través de esta landing, los visitantes pueden visualizar claramente la propuesta de valor: entrenar con la precisión de la IA y la empatía de un coach. Las User Stories ejecutadas y su evidencia visual son:
+
+| ID | User Story | Evidencia en Landing Page |
+|---|---|---|
+| US33 | Consultar información de servicios | Sección "Servicios" con diseño en tarjetas explicando el análisis IA, Marketplace y Nutrición. |
+| US34 | Solicitar demostración | Modal interactivo "Solicita tu Demo" con formulario validado. |
+| US35 | Consultar planes y precios | Sección "Precios" detallando las diferencias entre el plan Gratis y Premium. |
+| US36 | Solicitar asistencia | Sección "FAQ" (Preguntas Frecuentes) resueltas de forma dinámica. |
+| US37 | Consultar casos de éxito | Sección "Galería de Éxito" con testimonios reales y filtros por categoría (Casa/Gym/Coach). |
+
+*Evidencia Visual Landing Page:*  
+
+<img src="assets/chapter5/swagger_prueba_landing.png" alt ="">
+
+**2. Evidencia en Frontend App (Mobile)**
+
+Se desarrollaron las pantallas núcleo de la aplicación móvil, garantizando una experiencia fluida para el Atleta al momento de interactuar con la IA y gestionar su perfil.
+
+<img src="assets/chapter5/evidence_deployment_mobile.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile2.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile3.jpg" alt ="">
+<img src="assets/chapter5/evidence_deployment_mobile4.jpg" alt ="">  
+<img src="assets/chapter5/evidence_deployment_mobile5.jpg" alt ="">    
+
+
+**3. Evidencia en Web Services (Backend Híbrido)**
+
+Durante este Sprint se inició la migración de nuestra arquitectura monolítica hacia un enfoque de microservicios. Para esta entrega, se han extraído e implementado exitosamente como microservicios independientes los Bounded Contexts de **IAM (Identity and Access Management)** y **Videos (Gestión y Análisis de Ejercicios)**, mientras que los módulos de Matchmaking, Training, Nutrition y Membership se mantienen operativos dentro del Monolito central.
+
+Para comprobar la correcta ejecución del backend, se realizaron pruebas de integración utilizando Postman y la interfaz interactiva de Swagger UI. 
+
+A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas comprobando la conexión y las respuestas de la base de datos:
+
+<img src="assets/chapter5/swagger1.jpg" alt ="">
+<img src="assets/chapter5/swagger2.jpg" alt ="">
+<img src="assets/chapter5/swagger3.jpg" alt ="">
+<img src="assets/chapter5/swagger4.jpg" alt ="">
+
+
+
+##### 5.2.1.5	Microservices Documentation Evidence for Sprint Review
+En esta sección se incluye la relación de endpoints documentados con OpenAPI (Swagger), correspondientes a los microservicios implementados durante el Sprint 1 de BodyMatch AI.  
+
+Durante este Sprint se inició la transición hacia una arquitectura basada en microservicios. Para esta primera entrega, los Bounded Contexts implementados completamente como microservicios independientes fueron:
+
+- **IAM (Identity and Access Management)**  
+- **Video Analysis and Management**
+
+Estos microservicios permitieron cubrir las funcionalidades críticas relacionadas con autenticación, registro de usuarios, subida de videos y análisis automático con IA.
+
+Los demás módulos funcionales del sistema permanecen temporalmente dentro del monolito principal y serán desacoplados progresivamente en los siguientes Sprints.
+
+---
+
+### 1. Matriz de Trazabilidad de Requerimientos
+
+La siguiente tabla relaciona las User Stories y Technical Stories implementadas en los microservicios desarrollados durante el Sprint 1:
+
+| ID | Título | Endpoint(s) Relacionado(s) | Microservice / BC | Estado |
+|---|---|---|---|---|
+| US01 | Registro de usuario | `POST /api/v1/authentication/sign-up/athlete` <br> `POST /api/v1/authentication/sign-up/coach` | IAM | Implementado |
+| US02 | Inicio de sesión | `POST /api/v1/authentication/sign-in` | IAM | Implementado |
+| US04 | Cierre de sesión | `POST /api/v1/authentication/sign-out` | IAM | Implementado |
+| US11 | Subir video | `POST /api/v1/exercise-videos` | Video Management | Implementado |
+| US12 | Feedback IA | `POST /api/v1/exercise-videos/{videoId}/analyze` | Video Analysis | Implementado |
+| TS01 | Implementación de Middleware JWT | Middleware JWT / Spring Security | IAM | Implementado |
+| TS03 | Configuración de Endpoints Video | `POST /api/v1/exercise-videos` | Video Management | Implementado |
+
+---
+
+### 2. Catálogo de Endpoints y Contratos de Interfaz
+
+| Acción Implementada | Verbo HTTP | Endpoint | Parámetros | Response Esperado | Microservice |
+|---|---|---|---|---|---|
+| Registro de atleta | POST | `/api/v1/authentication/sign-up/athlete` | Body (JSON) | `201 Created` | IAM |
+| Registro de coach | POST | `/api/v1/authentication/sign-up/coach` | Body (JSON) | `201 Created` | IAM |
+| Inicio de sesión | POST | `/api/v1/authentication/sign-in` | Body (JSON) | `200 OK` | IAM |
+| Cierre de sesión | POST | `/api/v1/authentication/sign-out` | Header JWT | `200 OK` | IAM |
+| Subida de video | POST | `/api/v1/exercise-videos` | Multipart/Form-Data | `201 Created` | Video Management |
+| Análisis de video con IA | POST | `/api/v1/exercise-videos/{videoId}/analyze` | Path Param | `200 OK` | Video Analysis |
+
+**3. Ejemplos de Request y Response (JSON)**
+Tal como se solicita en el criterio de evaluación, se presentan ejemplos completos y reales de las peticiones extraídas de la ejecución en Swagger para validar la estructura de datos en los diferentes métodos HTTP:
+
+**A. POST (Crear) - Registro de Atleta**
+* **Endpoint:** `POST /api/v1/authentication/sign-up/athlete`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+- Response (201 Created):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "phone": "923456123",
+  "active": true,
+  "emailVerified": false,
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+**B. POST (Login) - Inicio de Sesión**
+
+* **Endpoint:** `POST /api/v1/authentication/sign-in`
+* **Request (Body):**
+```json
+{
+  "email": "atleta@gmail.com",
+  "password": "123456"
+}
+```
+- Response (200 OK):
+```json
+{
+  "id": 1,
+  "email": "atleta@gmail.com",
+  "firstName": "Alonso",
+  "lastName": "Fernandez",
+  "accessToken": "eyJhbGciOiJIUzM4NCJ9.eyJzd...",
+  "refreshToken": "7200a4ab-1168-40bf-b184-afa3953786bc",
+  "roles": [
+    "ROLE_ATHLETE"
+  ]
+}
+```
+
+Adicionalmente, se presentan las capturas en imágenes de la interacción con la documentación elaborada en Swagger UI utilizando datos de muestra:
+
+**Registro de usuario**:   
+
+<img src="assets/chapter5/swagger_prueba1.png" alt ="">  
+<img src="assets/chapter5/swagger_prueba2.png" alt =""> 
+ <img src="assets/chapter5/swagger_prueba8.png" alt =""> 
+
+**Registro y análisis de video:**  
+
+<img src="assets/chapter5/swagger_prueba3.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba4.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba5.png" alt =""> 
+<img src="assets/chapter5/swagger_prueba6.png" alt ="">
+<img src="assets/chapter5/swagger_prueba7.png" alt =""> 
+
+
+
+**Repositorio y Control de Versiones:**
+El código fuente se encuentra alojado en la organización del equipo.
+
+* **URL del repositorio de Web Services:**  
+  - `https://github.com/G3-FundamentosArqui-7944/bodymatch-backend` 
+  - `https://github.com/G3-FundamentosArqui-7944/microservices` 
+* **Commits relacionados con Documentación (OpenAPI/Swagger):**
+  * `f073594`: *docs: update architecture diagrams and descriptions for clarity and consistency*
+
+
+##### 5.2.1.6	Software Deployment Evidence for Sprint Review
+
+Durante este primer Sprint, las actividades de despliegue continuo (Deployment) se centraron en la publicación en producción de la Landing Page de BodyMatch AI. El objetivo principal fue hacer pública nuestra propuesta de valor de manera rápida, segura y escalable para comenzar a captar el interés de los usuarios y validaciones tempranas. 
+
+Dado que la Landing Page está construida con tecnologías web estáticas, se optó por utilizar **GitHub Pages** como proveedor de alojamiento en la nube (Cloud Hosting). 
+
+
+Capturas del Despliegue
+
+<img src="assets/chapter5/evidence_deployment_landing.jpg" alt =""> 
+
+<img src="assets/chapter5/evidence_deployment_landing2.jpg.png" alt =""> 
+
+
+##### 5.2.1.7	Team Collaboration Insights during Sprint
+
+
+
+##### 5.2.1.8	Kanban Board 
+
+<img src="assets/chapter5/kanban-sprint1.png" alt =""> 
+ 
+ Link: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
+
 ## Conclusiones
 
-* La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches dentro del ámbito del fitness digital, orientando el diseño hacia una solución centrada en la experiencia del usuario y en la mejora de su calidad de vida mediante el ejercicio físico.
+### TB1: Validación de Negocio y Requerimientos
+*   La aplicación del enfoque Lean UX permitió validar de manera efectiva las necesidades reales de los usuarios y coaches, orientando el diseño hacia una solución centrada en la experiencia del usuario.
+*   El uso de herramientas de investigación como User Personas y Empathy Maps facilitó la identificación de puntos de dolor críticos, como la falta de orientación técnica y la limitada visibilidad de los entrenadores.
+*   La definición del Solution Profile permitió estructurar una propuesta clara que integra el matching de usuarios y el análisis de ejercicios con IA como diferenciales clave frente a la competencia.
+*   Durante esta fase, el equipo demostró la capacidad de adquirir nuevos conocimientos en metodologías de diseño UX y análisis competitivo para fortalecer la base funcional del proyecto.
 
-* El uso de herramientas de investigación como User Personas, Empathy Maps y Scenario Mapping facilitó la identificación de los principales puntos de dolor, tales como la falta de orientación en la ejecución de ejercicios y la limitada visibilidad de los entrenadores, proporcionando una base sólida para el diseño de la solución.
+### TB2: Arquitectura y Diseño Técnico
+*   La aplicación del método Attribute-Driven Design (ADD) permitió alinear las decisiones técnicas con los drivers del negocio, garantizando la resolución de atributos críticos como el rendimiento y la seguridad.
+*   La adopción de Domain-Driven Design (DDD) y principios SOLID estableció una arquitectura modular organizada por Bounded Contexts, asegurando la escalabilidad y mantenibilidad del sistema.
+*   El diseño de una arquitectura basada en microservicios y procesamiento asíncrono responde eficientemente a la carga computacional requerida por el análisis de video con inteligencia artificial.
+*   El equipo consolidó sus conocimientos técnicos al traducir requerimientos funcionales en decisiones arquitectónicas verificables mediante diagramas de contenedores y componentes.
 
-* La definición del Solution Profile permitió estructurar una propuesta clara, integrando funcionalidades clave como el matching entre usuarios y coaches, la mensajería directa y el uso de inteligencia artificial para el análisis de ejercicios, lo que representa un diferencial significativo frente a soluciones tradicionales.
+### TP1: Consolidación y Despliegue
+* **Infraestructura y Despliegue:** Se logró el despliegue exitoso de la Landing Page institucional en GitHub Pages, logrando un tiempo de carga inferior a 2 segundos y disponibilidad global inmediata (ver evidencia de Deployment en sección 5.2.1.6).
 
+* **Mantenibilidad:** La aplicación de los principios SOLID y Domain-Driven Design (DDD) permitió definir 6 Bounded Contexts con fronteras explícitas, reduciendo la complejidad técnica y facilitando la integración de nuevos módulos de nutrición en futuros sprints.
 
- Recomendaciones
+---
 
-* Se recomienda continuar con un proceso de validación continua con usuarios reales (tanto usuarios finales como coaches), a fin de ajustar las funcionalidades y mejorar la experiencia en cada iteración del desarrollo.
+## Recomendaciones
 
-* Es importante implementar un plan piloto con un grupo reducido de usuarios y entrenadores, lo que permitirá evaluar el desempeño de la plataforma en un entorno real y obtener métricas clave para su mejora.
+### TB1: Gestión de Usuario y Producto
+*   Se recomienda continuar con un proceso de validación continua con usuarios reales para ajustar las funcionalidades de la interfaz móvil en cada iteración.
+*   Es importante implementar un plan piloto con un grupo reducido de atletas y coaches para obtener métricas reales sobre la efectividad del emparejamiento.
+*   Se sugiere priorizar en las primeras fases de desarrollo los módulos de mensajería y reserva de sesiones, debido a su alto impacto en la retención de usuarios.
 
-* Se sugiere priorizar en las primeras fases de desarrollo el módulo de matching, mensajería y análisis de ejercicios con inteligencia artificial, debido a su alto impacto en la propuesta de valor del sistema.
+### TB2: Evolución Tecnológica y Seguridad
+*   Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento antes de evolucionar hacia la detección de errores biomecánicos complejos.
+*   Es fundamental implementar de forma estricta las estrategias de seguridad diseñadas, como la autenticación JWT y el control RBAC, para proteger la privacidad de los videos de los usuarios.
+*   Se sugiere monitorear los costos operativos de los servicios en la nube para asegurar que la infraestructura sea sostenible durante la expansión del sistema.
 
-* Se recomienda mejorar progresivamente el módulo de inteligencia artificial, iniciando con análisis básicos de movimiento y evolucionando hacia modelos más precisos que permitan detectar errores complejos en la ejecución de ejercicios.
+### TP1: Despliegue y Arquitectura 
+* Se recomienda consolidar la migración progresiva hacia microservicios implementando un API Gateway robusto (ej. Spring Cloud Gateway) que centralice de forma eficiente el enrutamiento hacia los servicios de IAM, Videos y el Monolito Core.
+* Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
 
-* Es fundamental implementar estrategias de seguridad robustas, incluyendo autenticación mediante JWT y control de acceso basado en roles (RBAC), para proteger la información de los usuarios y garantizar la privacidad de los datos.
+ Anexos
+ 
+Diagramas de clase en LucidChart: [Clases](https://drive.google.com/drive/folders/18gKosPLKw5JEdsYvDsNrNM94UUt8h8Jq?usp=sharing)
+
+Diagrama de Componentes: [Componentes](https://online.visual-paradigm.com/share.jsp?id=343538393634332d33)
+
+Enlace del Repositorio Grupal: [Repositorio](https://github.com/G3-FundamentosArqui-7944)
+
+Enlace de la documentación dentro del repositorio: [Documentacion](https://github.com/G3-FundamentosArqui-7944/docs)
 
 
  Referencias Bibliográficas
@@ -1483,3 +2803,6 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 * Centro Nacional de Planeamiento Estratégico. (s.f.). Observatorio nacional: Indicadores de salud y bienestar. Recuperado de: https://observatorio.ceplan.gob.pe/ficha/t14
 
 * Instituto Nacional de Estadística e Informática. (2017). Encuesta Demográfica y de Salud Familiar. Recuperado de: https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib2017/libro.pdf
+
+* Romaní Caycho, M. F., Valverde Palma, X., & Vivanco Ponce, F. (2025). Propuesta de plan de negocio para el desarrollo de una plataforma digital de entrenamientos deportivos personalizados con tecnología GPS en Lima Metropolitana [Tesis de licenciatura, Universidad Peruana de Ciencias Aplicadas]. Repositorio Académico UPC. 
+https://repositorioacademico.upc.edu.pe/bitstream/handle/10757/686092/Romani_CM.pdf?sequence=16
