@@ -1421,8 +1421,7 @@ las responsabilidades en tiempo de ejecución.
 | **Interfaz** | `PaymentGatewayStrategy` con implementaciones `StripePaymentGateway` en **Membership & Payments**; `HashingService` con implementación `BCryptHashingService` en **IAM**; `TokenService` con implementación `JwtTokenService` en **IAM**. |
 | **Atributo de calidad** | Mantenibilidad — QAS-05: la incorporación de un nuevo gateway requiere únicamente implementar la interfaz `PaymentGatewayStrategy`, sin tocar ninguna otra clase. |
 
-[IMAGEN: Diagrama UML de la interfaz PaymentGatewayStrategy con sus implementaciones
-concretas (StripePaymentGateway y la extensión futura)]
+![Menbership.jpeg](assets/chapter4/Menbership.jpeg)
 
 ---
 
