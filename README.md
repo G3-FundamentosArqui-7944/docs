@@ -62,7 +62,7 @@
 
 <p align="center">
   <strong>Abril, 2026</strong> <br>
-  <strong>URL del proyecto:</strong>
+  <strong>URL del proyecto:https://github.com/G3-FundamentosArqui-7944/docs </strong>
 
 </p>
 
@@ -1031,14 +1031,28 @@ Para el diseño del producto de arquitectura, como grupo debemos reconocer ciert
 
 #### 4.1.2 Approaches Statements Architectural Styles & Patterns
 
-<b>Approaches Statements</b>
-- <b>Domain-Driven Design (DDD): </b> Se optará DDD como un enfoque principal para poder asegurar que la arquitectura de nuestra aplicación refleje fielmente el modelo del negocio.
+**Enfoques de diseño adoptados**
 
-- <b>Attribute-Driven Design (ADD): </b> Se utilizará ADD como una técnica para descomponer y planificar el diseño de la arquitectura de la aplicación. Se centra en identificar los atributos de calidad (quality attributes) crpticos para el exito del sistema.
+| Enfoque | Descripción | Justificación para BodyMatch AI |
+|---|---|---|
+| **Domain-Driven Design (DDD)** | Alinea el diseño técnico con el modelo de negocio mediante bounded contexts y lenguaje ubicuo. | BodyMatch AI opera en seis subdominios diferenciados. DDD garantiza que cada uno evolucione de forma independiente. |
+| **Attribute-Driven Design (ADD) v3** | Proceso iterativo de diseño guiado por atributos de calidad y restricciones. | Permite priorizar decisiones según el impacto en los drivers críticos antes de escribir código. |
 
-<b>Architectural Styles & Patterns</b>
+**Estilo arquitectónico principal y patrones seleccionados**
 
-- <b> Estilo de la Arquitectura:</b> Para el desarrollo de nuestra aplicación usaremos de Arquitectura de Microservicios, donde nuestra aplicación se estructura como una colección de servicios organizados alrededor del negocio.
+BodyMatch AI implementa una **Arquitectura de Monolito Modular orientada a Microservicios**
+organizada mediante DDD. En la fase académica actual los bounded contexts coexisten en un
+único proceso desplegable con fronteras de módulo estrictas que preparan la transición
+futura a microservicios independientes.
+
+| Elemento | Decisión | Justificación |
+|---|---|---|
+| **Estilo principal** | Monolito Modular → Microservicios (migración progresiva) | Reduce la complejidad operativa inicial manteniendo separación lógica por bounded context. |
+| **Patrón de integración** | API Gateway + Fachadas de contexto (`IamContextFacade`) | Centraliza la autenticación y desacopla los bounded contexts mediante interfaces. |
+| **Patrón de datos** | Database per Service (esquemas separados en PostgreSQL) | Cada bounded context gestiona su propio esquema, preparando la migración a bases de datos independientes. |
+| **Patrón de comunicación** | Síncrono (REST) + Asíncrono (eventos de dominio con `@EventListener`) | REST para CRUD simple; eventos para reacciones cross-context sin respuesta inmediata. |
+| **Cliente móvil** | MVC con Flutter | Separa la presentación (Widgets), la lógica (Controllers) y el acceso a datos (Models/Repositories) en Android. |
+
 
 
 #### 4.1.3 Context Diagrams
@@ -1436,70 +1450,35 @@ separación models / views / controllers para el módulo de Video Analysis]
 
 #### 4.1.7. Tactics
 
-Las tácticas arquitectónicas son decisiones de diseño concretas que permiten satisfacer los
-atributos de calidad requeridos por BodyMatch AI. A diferencia de los patrones de diseño, las
-tácticas actúan directamente sobre los estímulos del sistema para producir las respuestas
-esperadas en cada escenario de calidad. A continuación se organizan por atributo.
-
----
+Las tácticas arquitectónicas son decisiones de diseño concretas que permiten satisfacer
+los atributos de calidad. Cada táctica incluye un umbral medible (SLO) que permite
+verificar su efectividad durante las revisiones de sprint.
 
 ##### Tácticas de Rendimiento
 
-El sistema debe responder rápidamente, especialmente en funciones como la **búsqueda de coaches** y el **análisis de ejercicios**.
-
-
-
- **Uso de caché para datos frecuentes**
-La información más consultada (como **perfiles de coaches** o **resultados de búsqueda**) se almacena temporalmente en caché para evitar consultas repetidas y mejorar la velocidad de respuesta.
-
-**Procesamiento en segundo plano**
-El análisis de videos no se realiza de forma inmediata. El usuario sube el video y el sistema lo procesa en segundo plano, notificando el resultado cuando esté disponible.
-
- **Carga de datos por partes (paginación)**
-En listas grandes (como **coaches** o **historial**), se cargan solo algunos elementos a la vez para reducir tiempos de carga y mejorar la experiencia del usuario.
-
- **Optimización de base de datos**
-Los datos se estructuran y organizan de manera eficiente para acelerar las **búsquedas** y **consultas**, reduciendo tiempos de respuesta.
-
----
+| Táctica | Implementación concreta | SLO verificable |
+|---|---|---|
+| **Procesamiento asíncrono de video** | `VideoCommandServiceImpl` publica `VideoAnalysisRequestedEvent`; un `@EventListener` procesa la tarea en segundo plano sin bloquear el hilo HTTP. | Tiempo de respuesta HTTP de subida: < 10 s. Entrega del feedback de IA: < 5 min bajo 50 solicitudes concurrentes (QAS-01). |
+| **Caché para búsqueda de coaches** | Anotación `@Cacheable` sobre `CoachSearchQueryServiceImpl.searchCoaches()`. Proveedor: caché en memoria (fase académica) / Redis (producción). | Latencia P95 de búsqueda: < 800 ms bajo 200 usuarios concurrentes. Tasa de caché hit: > 60% para parámetros repetidos (QAS-03). |
+| **Paginación de resultados** | Uso de `Pageable` de Spring Data en todos los endpoints de listado. Tamaño de página por defecto: 20 elementos. | Tiempo de respuesta de la primera página de cualquier listado: < 300 ms. |
+| **Índices en PostgreSQL** | Índices en: `coach_profiles.specialty`, `coach_profiles.hourly_rate`, `sessions.scheduled_at`, `exercise_videos.athlete_id`. Gestionados con migraciones Flyway. | Tiempo de consulta de búsqueda con filtros: < 100 ms con menos de 10.000 coaches registrados. |
 
 ##### Tácticas de Seguridad
 
-El sistema maneja datos personales, videos de ejercicio y transacciones de pago, por lo que
-la seguridad es un atributo crítico.
-
-- **Autenticación mediante JWT con rotación de tokens:** El módulo IAM emite tokens de acceso
-  de corta duración (15 minutos) y tokens de refresco de larga duración (7 días). La rotación
-  automática reduce la ventana de exposición en caso de intercepción.
-
-- **Control de acceso basado en roles (RBAC):** Spring Security aplica restricciones por rol en
-  cada endpoint. Los roles definidos son `ROLE_USER` y `ROLE_COACH`. Un usuario con rol
-  `ROLE_USER` no puede acceder a los endpoints de gestión de clientes del coach, y viceversa.
-
-- **Cifrado de datos en tránsito y en reposo:** Toda la comunicación entre el cliente y el
-  servidor se realiza sobre HTTPS/TLS. 
-
-- **Sanitización de entradas:** Todos los datos recibidos desde el cliente se validan mediante
-  Bean Validation (`@Valid`, `@NotBlank`, `@Size`) antes de ser procesados por la capa de
-  dominio, previniendo inyecciones y desbordamientos.
-
-
----
+| Táctica | Implementación concreta | SLO verificable |
+|---|---|---|
+| **Autenticación JWT con rotación de tokens** | `JwtTokenService` emite access tokens (expiración: 15 min) y refresh tokens (expiración: 7 días). El refresh token se invalida en BD al hacer logout. | 100% de endpoints protegidos rechazan peticiones sin token válido con HTTP 401. Tiempo de validación: < 5 ms (QAS-02). |
+| **Control de acceso por roles (RBAC)** | `@PreAuthorize("hasRole('ROLE_ATHLETE')")` y `@PreAuthorize("hasRole('ROLE_COACH')")` en los métodos de los controladores REST mediante Spring Security. | 100% de intentos con rol incorrecto rechazados con HTTP 403 en < 200 ms (QAS-02). |
+| **URLs pre-firmadas para archivos multimedia** | `AzureBlobStorageGateway.generateSasUrl(blobName, durationMinutes)` genera URLs con firma HMAC que expiran en 15 min. Los videos en Blob Storage no son accesibles públicamente. | 0% de accesos directos a Blob Storage sin URL firmada. URLs con expiración exacta de 15 min (QAS-04). |
+| **Validación de entradas** | Anotaciones `@Valid`, `@NotBlank`, `@Size`, `@Email` en todos los recursos de entrada (DTOs). Los errores devuelven HTTP 400 con detalle del campo fallido. | 0% de solicitudes con datos inválidos alcanzan la capa de dominio. Respuesta de error de validación: < 50 ms. |
 
 ##### Tácticas de Mantenibilidad
 
-El equipo es de cinco integrantes con ciclos de desarrollo cortos, por lo que la capacidad de
-modificar y extender el sistema sin regresiones es fundamental.
-
-- **Separación por Bounded Contexts:** Cada contexto delimitado (IAM, Membership & Payments,
-  Video Management, Matchmaking, Training Tracker, Nutrition) tiene su propio paquete Java con
-  capas internas independientes. Los cambios dentro de un contexto no afectan a los demás.
-
-- **Pruebas automatizadas por capa:** Se implementan pruebas unitarias en la capa de dominio con JUnit y Mockito (aislando dependencias), pruebas de integración para los repositorios mediante Spring Boot Test y pruebas de contrato para los endpoints REST validando respuestas, estados HTTP y estructura del API.
-
-- **Documentación automática de APIs con SpringDoc/OpenAPI:** Todos los endpoints REST están
-  documentados con anotaciones OpenAPI. La especificación se genera automáticamente y se expone
-  en `/swagger-ui/index.html`, facilitando la integración con el frontend.
+| Táctica | Implementación concreta | SLO verificable |
+|---|---|---|
+| **Separación por Bounded Contexts** | Estructura de paquetes: `com.bodymatch.{contexto}.{domain/application/infrastructure/interfaces}`. Sin importaciones cruzadas entre paquetes de bounded contexts distintos (solo via fachadas). | Un cambio interno en un bounded context no requiere modificaciones en ningún otro. |
+| **Documentación automática de API** | SpringDoc OpenAPI 3.0 con `@Operation`, `@ApiResponse`, `@Tag` en todos los controladores. Accesible en `/swagger-ui/index.html`. | 100% de endpoints implementados documentados en Swagger UI. |
+| **Migraciones versionadas** | Flyway con convención `V{version}__{contexto}_{descripcion}.sql`. Scripts organizados por bounded context. | 0% de conflictos de migración al ejecutar el proyecto desde cero en entorno limpio. |
 
 ---
 
@@ -1514,185 +1493,184 @@ insumo principal del proceso ADD v3 aplicado en este proyecto.
 Los principales drivers arquitectónicos del sistema son:
 
 
--**Análisis inteligente de ejercicios (IA)**
-Garantizar la capacidad de analizar videos de ejercicios y proporcionar retroalimentación precisa sobre la ejecución, siendo este el núcleo innovador del sistema.
+| ID | Driver | Categoría | Prioridad | Decisión arquitectónica relacionada |
+|---|---|---|---|---|
+| DR-01 | Análisis inteligente de ejercicios mediante IA | Requisito funcional primario | Alta | Integración asíncrona con Gemini AI; patrón Gateway (`GeminiAIGateway`); eventos de dominio. |
+| DR-02 | Seguridad de datos personales y multimedia | Atributo de calidad (Seguridad) | Alta | JWT con rotación; RBAC con Spring Security; URLs SAS para Blob Storage; Ley N° 29733. |
+| DR-03 | Rendimiento en procesamiento de video | Atributo de calidad (Rendimiento) | Alta | Procesamiento asíncrono con eventos de dominio; caché para búsquedas. |
+| DR-04 | Escalabilidad del sistema | Atributo de calidad (Escalabilidad) | Media | Monolito modular con bounded contexts independientes; esquemas separados en PostgreSQL. |
+| DR-05 | Mantenibilidad del sistema | Atributo de calidad (Mantenibilidad) | Alta | SOLID + DDD; patrones Strategy, Factory, Gateway; Layered Architecture; CQRS. |
+| DR-06 | Disponibilidad del servicio | Atributo de calidad (Disponibilidad) | Media | Reintentos automáticos con estado `FALLIDO_PERMANENTE`; bloqueo optimista en sesiones. |
+| DR-07 | Usabilidad de la aplicación móvil | Atributo de calidad (Usabilidad) | Media | MVC con Flutter; respuesta asíncrona con indicadores de carga; paginación. |
+| DR-08 | Integración con servicios externos (Stripe, Gemini, Azure) | Restricción técnica | Alta | Patrón Gateway para encapsular dependencias externas; interfaces abstractas para sustitución. |
+| DR-09 | Cumplimiento Ley N° 29733 (Perú) | Restricción legal | Alta | Funcionalidad de eliminación de cuenta; cifrado en reposo; política de retención de videos. |
+| DR-10 | Presupuesto de infraestructura limitado (fase académica) | Restricción de negocio | Media | Tiers gratuitos de Azure; GitHub Pages para landing; monolito en lugar de microservicios independientes. |
 
-- **Interacción usuario–coach**
-Permitir una comunicación fluida entre usuarios y entrenadores mediante funcionalidades como mensajería, seguimiento y agendamiento de sesiones.
+#### 4.2.1. Design Purpose
 
-- **Rendimiento en procesamiento de video**
-Asegurar que la carga y análisis de videos se realice de manera eficiente, sin afectar la experiencia del usuario.
-
--**Escalabilidad del sistema**
-Soportar el crecimiento de usuarios, coaches y volumen de videos sin degradar el rendimiento de la plataforma.
-
-- **Disponibilidad del servicio**
-Garantizar que la aplicación esté accesible en todo momento, considerando que los usuarios pueden entrenar en diferentes horarios.
-
--**Seguridad de datos personales y multimedia**
-Proteger la información sensible de los usuarios, incluyendo datos personales, videos de entrenamiento y comunicaciones.
-
- -**Usabilidad de la aplicación**
-Ofrecer una interfaz simple e intuitiva para usuarios con distintos niveles de experiencia en tecnología.
-
-- **Seguimiento del progreso del usuario**
-Permitir registrar, visualizar y analizar la evolución del usuario a lo largo del tiempo.
-
- -**Integración con servicios externos**
-Facilitar la conexión con herramientas externas como servicios de inteligencia artificial, almacenamiento de videos y notificaciones.
-
--**Mantenibilidad del sistema**
-Permitir que el sistema pueda ser modificado, extendido y mantenido fácilmente mediante buenas prácticas de desarrollo y arquitectura.
-
-
-#### 4.1.8. Design Purpose
-
-El propósito del proceso de diseño arquitectónico de BodyMatch AI es establecer una estructura
-técnica coherente, mantenible y extensible que permita implementar las funcionalidades
-principales del producto de manera iterativa, respetando las restricciones de tiempo y equipo
-propias de un proyecto académico, y dejando las bases para una evolución futura hacia una
-arquitectura de microservicios en la nube.
+El propósito del proceso de diseño arquitectónico de BodyMatch AI es establecer una
+estructura técnica coherente, mantenible y extensible que permita implementar las
+funcionalidades principales del producto de manera iterativa, respetando las restricciones
+de tiempo y equipo propias de un proyecto académico, y dejando las bases para una
+evolución futura hacia una arquitectura de microservicios en la nube.
 
 De forma específica, el diseño busca:
 
-- **Traducir el modelo de negocio en componentes técnicos verificables:** Las dos propuestas de
-  valor centrales de BodyMatch AI (conexión personalizada entre usuarios y coaches, y análisis
-  automatizado de ejercicios mediante inteligencia artificial) deben estar reflejadas
-  directamente en los bounded contexts y sus interfaces públicas, de modo que cada decisión
-  de código pueda rastrearse hasta un requisito de negocio.
+**1. Traducir el modelo de negocio en componentes técnicos verificables**
 
-- **Satisfacer los atributos de calidad más críticos para el dominio:** En una plataforma de
-  salud y ejercicio, la seguridad de los datos personales, la disponibilidad del servicio
-  durante sesiones de entrenamiento y la corrección técnica del feedback de IA son atributos
-  que afectan directamente la confianza del usuario. El diseño los aborda desde la primera
-  iteración.
+Las dos propuestas de valor centrales de BodyMatch AI — la conexión personalizada entre
+usuarios y coaches y el análisis automatizado de ejercicios mediante inteligencia artificial
+— están reflejadas directamente en los bounded contexts y sus interfaces públicas, de modo
+que cada decisión de código pueda rastrearse hasta un requisito de negocio: el
+Matchmaking BC soporta la conexión usuario-coach, y el Video Management BC soporta
+el análisis de IA.
 
-- **Proteger la capacidad de evolución del sistema:** La fase inicial corresponde a un monolito
-  modular organizado por bounded contexts. Esta estructura permite una transición progresiva
-  hacia microservicios sin reescritura, ya que cada bounded context tiene ya sus propias
-  interfaces, modelos de dominio y reglas de negocio encapsuladas.
+**2. Satisfacer los atributos de calidad más críticos para el dominio**
 
-- **Crear modelos y vistas arquitectónicas**: representar la solución en diagramas C4 (Contexto, Contenedor, Componente) y UML (Clases, ERD) como documentación guía para el desarrollo.  
+En una plataforma de salud y ejercicio, la seguridad de los datos personales (QAS-02,
+QAS-04), la disponibilidad del servicio durante sesiones de entrenamiento (QAS-03) y la
+corrección técnica del feedback de IA (QAS-01) son atributos que afectan directamente la
+confianza del usuario. El diseño los aborda desde la primera iteración mediante tácticas
+concretas y medibles (ver sección 4.1.7).
 
-- **Construir sobre decisiones técnicas explícitas y trazables:** Cada decisión arquitectónica
-  relevante (stack tecnológico, mecanismo de autenticación, estrategia de almacenamiento,
-  integración con servicios externos) queda registrada con su justificación, permitiendo
-  evaluarla y revisarla en iteraciones posteriores.
+**3. Proteger la capacidad de evolución del sistema**
+
+La fase inicial corresponde a un monolito modular organizado por seis bounded contexts.
+Esta estructura permite una transición progresiva hacia microservicios sin reescritura,
+ya que cada bounded context tiene sus propias interfaces, modelos de dominio y reglas de
+negocio encapsuladas, con esquemas de base de datos independientes gestionados por Flyway.
+
+**4. Construir sobre decisiones técnicas explícitas y trazables**
+
+Cada decisión arquitectónica relevante — stack tecnológico (Java 24 + Spring Boot 3.x),
+mecanismo de autenticación (JWT stateless con rotación de tokens), estrategia de
+almacenamiento de video (Azure Blob Storage con URLs SAS), integración con servicios
+externos (patrón Gateway) — queda registrada en el Architectural Design Backlog de cada
+iteración ADD con su justificación, permitiendo evaluarla y revisarla en iteraciones
+posteriores.
+
+**5. Crear modelos y vistas arquitectónicas verificables**
+
+La solución se representa mediante diagramas C4 (Contexto en Figura 4.1, Contenedores en
+Figura 4.2, Componentes en Figuras 4.3–4.8), diagramas UML de actividades
+(Figuras 4.9–4.13) y estados (Figuras 4.14–4.18), diagrama de clases (Figura 4.19) y
+diagrama ER (Figura 4.20).
+
   
 
-#### 4.1.9. Primary Functionality (Primary User Stories)
+#### 4.2.2. Primary Functionality (Primary User Stories)
 
 Las siguientes historias de usuario son las que tienen mayor impacto sobre la estructura
 arquitectónica del sistema. Su implementación requiere decisiones de diseño que afectan
 múltiples capas y componentes, razón por la cual se les denomina historias primarias.
 
-| User Story ID | Título | Justificación arquitectónica |
-|---|---|---|
-| US01 | Registro de usuario | Define el modelo central de identidad del sistema. Impacta el Bounded Context IAM, la estrategia de almacenamiento de credenciales y el flujo de emisión de tokens JWT. |
-| US02 | Inicio de sesión | Determina el mecanismo de autenticación de toda la plataforma. La elección de JWT con doble token (acceso + refresco) afecta todos los endpoints protegidos. |
-| US06 | Búsqueda de coaches | Requiere diseño de índices, estructura del perfil del coach y lógica de filtrado por múltiples atributos. Define el modelo de datos compartido entre Matchmaking y el perfil de usuario. |
-| US08 | Reserva de sesión | Introduce concurrencia: dos usuarios pueden intentar reservar el mismo horario simultáneamente. Requiere manejo de transacciones y bloqueo optimista en la base de datos. |
-| US09 | Chat con coach | Depende de la integración con una API externa de mensajería. Define los contratos de integración, el manejo de errores de terceros y el modelo de conversación almacenado localmente. |
-| US11 | Subir video del ejercicio | Determina la estrategia de almacenamiento de archivos binarios (Azure Blob Storage), el flujo asíncrono de procesamiento y el contrato entre Video Management y el servicio de IA. |
-| US12 | Feedback automático con IA | Define la integración con Gemini AI, el formato de los resultados del análisis y cómo se persisten y presentan las correcciones al usuario. Impacta Video Management y Training Tracker. |
-| US15 | Registro de métricas físicas | Define el modelo de datos de seguimiento físico. Su frecuencia de escritura alta impacta las decisiones de indexación y el diseño del historial en Training Tracker. |
-| US19 | Gestión de clientes (coach) | Expone la vista del coach sobre sus alumnos. Requiere que Matchmaking y Training Tracker compartan o expongan datos sin acoplar sus modelos internos. |
-| US22 | Monetización de servicios | Introduce el Bounded Context de Membership & Payments. Requiere integración con una pasarela de pago y manejo seguro de información de transacciones. |
-| US24 | Reconocimiento de alimentos con IA | Define la segunda integración con IA del sistema (Nutrition BC). Comparte el patrón asíncrono de Video Management pero opera sobre imágenes en lugar de video. |
-| TS01 | Autenticación API | Base de seguridad del sistema, protegiendo datos sensibles y cumpliendo con regulaciones de privacidad. |
+| User Story ID | Título | Justificación arquitectónica | Bounded Context(s) impactado(s) |
+|---|---|---|---|
+| US01 | Registro de usuario | Define el modelo central de identidad. Aplica Factory Method (`User.create()`) para garantizar invariantes desde la creación. | IAM |
+| US02 | Inicio de sesión | Determina el mecanismo de autenticación de toda la plataforma. Aplica Strategy (`JwtTokenService`, `BCryptHashingService`). | IAM |
+| US06 | Búsqueda de coaches | Requiere diseño de índices y filtrado por múltiples atributos. Define el modelo del perfil del coach con búsqueda optimizada mediante caché. | Matchmaking, IAM |
+| US08 | Reserva de sesión | Introduce concurrencia: dos usuarios pueden intentar reservar el mismo horario. Requiere bloqueo optimista (`@Version` en `Session`). | Matchmaking |
+| US09 | Chat con coach | Depende de una API externa de mensajería. Integración encapsulada mediante el patrón Gateway. | Matchmaking |
+| US11 | Subir video del ejercicio | Determina la estrategia de almacenamiento binario (Azure Blob Storage) y el flujo asíncrono. Aplica Factory Method (`ExerciseVideo.register()`). | Video Management |
+| US12 | Feedback automático con IA | Define la integración con Gemini AI vía `GeminiAIGateway`. El análisis asíncrono es el núcleo diferenciador del sistema. | Video Management, Training Tracker |
+| US15 | Registro de métricas físicas | Define el modelo de datos de seguimiento físico con alta frecuencia de escritura. | Training Tracker |
+| US19 | Gestión de clientes (coach) | Requiere que Matchmaking y Training Tracker compartan datos del atleta sin acoplar sus modelos internos (vía fachadas). | Matchmaking, Training Tracker, IAM |
+| US22 | Monetización de servicios | Introduce el BC de Membership & Payments con integración a Stripe vía Strategy (`PaymentGatewayStrategy`). | Membership & Payments |
+| US24 | Reconocimiento de alimentos con IA | Segunda integración con Gemini AI. Comparte el patrón Gateway con Video Management pero opera sobre imágenes. | Nutrition |
+| TS01 | Middleware JWT | El API Gateway valida el token antes de enrutar cualquier petición. Base de seguridad transversal. | IAM, API Gateway |
 
----
 
-#### 4.1.10. Quality Attribute Scenarios
+#### 4.2.3. Quality Attribute Scenarios
 
 Los siguientes escenarios especifican de forma medible los atributos de calidad que la
 arquitectura debe garantizar. Cada escenario sigue la estructura de seis partes definida por
 el método ADD v3.
 
-##### QAS-01: Rendimiento — Procesamiento asíncrono de video
+**QAS-01: Rendimiento — Procesamiento asíncrono de video**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Usuario que finaliza una sesión de ejercicio y sube un video para análisis |
-| **Estímulo** | Solicitud `POST /api/v1/videos` con un archivo de video de hasta 200 MB |
+| **Fuente de estímulo** | Atleta que sube un video de ejercicio tras finalizar su sesión |
+| **Estímulo** | `POST /api/v1/exercise-videos` con archivo de hasta 200 MB |
 | **Entorno** | Sistema en operación normal con hasta 50 solicitudes de análisis concurrentes |
-| **Artefacto** | Módulo Video Management + worker de análisis con Gemini AI |
-| **Respuesta** | El sistema acepta el video, responde con confirmación de recepción en menos de 10 segundos, encola la tarea de análisis y notifica al usuario cuando el resultado está disponible |
-| **Medida de respuesta** | Tiempo de respuesta de la solicitud HTTP < 10 segundos. Tiempo máximo de entrega del feedback de IA < 5 minutos en condiciones normales de carga |
+| **Artefacto** | `VideoCommandServiceImpl` + worker de análisis + `GeminiAIGateway` |
+| **Respuesta** | El sistema acepta el video con HTTP 202 Accepted en < 10 s. El análisis se procesa en segundo plano y se notifica al atleta cuando el resultado está disponible. |
+| **Medida de respuesta** | Tiempo de respuesta HTTP: < 10 s. Entrega del feedback de IA: < 5 min bajo carga normal. |
 
 
 
-##### QAS-02: Seguridad — Control de acceso por rol
+**QAS-02: Seguridad — Control de acceso por rol**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Usuario autenticado con rol `ROLE_USER` intentando acceder a endpoints de gestión de clientes reservados para coaches |
-| **Estímulo** | Solicitud `GET /api/v1/coaches/me/clients` con token JWT válido pero rol incorrecto |
+| **Fuente de estímulo** | Usuario con rol `ROLE_ATHLETE` intentando acceder a endpoints reservados para coaches |
+| **Estímulo** | `GET /api/v1/coaches/me/clients` con token JWT válido pero con rol incorrecto |
 | **Entorno** | Sistema en operación normal |
-| **Artefacto** | API Gateway + Spring Security RBAC + módulo IAM |
-| **Respuesta** | El sistema rechaza la solicitud con HTTP 403 Forbidden, registra el intento en el log de auditoría y no expone información del recurso solicitado |
-| **Medida de respuesta** | 100% de los intentos de acceso con rol incorrecto son rechazados. Tiempo de respuesta del rechazo < 200 ms |
+| **Artefacto** | API Gateway + Spring Security (`@PreAuthorize`) + módulo IAM |
+| **Respuesta** | HTTP 403 Forbidden. El intento se registra en el log de auditoría. No se expone información del recurso. |
+| **Medida de respuesta** | 100% de intentos con rol incorrecto rechazados. Tiempo de rechazo: < 200 ms. |
 
 
 
-
-##### QAS-03: Rendimiento — Búsqueda de coaches bajo carga
-
-| Componente | Descripción |
-|---|---|
-| **Fuente de estímulo** | Múltiples usuarios realizando búsquedas de coaches simultáneamente durante hora pico |
-| **Estímulo** | 200 solicitudes concurrentes a `GET /api/v1/coaches` con distintos filtros (especialidad, precio, disponibilidad) |
-| **Entorno** | Sistema bajo carga alta en horario pico (18:00–21:00 hora peruana) |
-| **Artefacto** | Módulo Matchmaking + PostgreSQL con índices |
-| **Respuesta** | Las búsquedas con parámetros comunes se sirven desde caché. Las búsquedas únicas consultan directamente la base de datos con índices optimizados |
-| **Medida de respuesta** | Tiempo de respuesta del percentil 95 (P95) < 800 ms bajo carga de 200 usuarios concurrentes. Tasa de caché hit > 60% para búsquedas frecuentes |
-
-##### QAS-04: Seguridad — Protección de datos de video
+**QAS-03: Rendimiento — Búsqueda de coaches bajo carga**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Usuario no propietario intenta acceder a un video de ejercicio de otro usuario |
-| **Estímulo** | Solicitud `GET /api/v1/videos/{videoId}` con token JWT de un usuario diferente al propietario del video |
+| **Fuente de estímulo** | Múltiples atletas realizando búsquedas simultáneamente en horario pico |
+| **Estímulo** | 200 solicitudes concurrentes a `GET /api/v1/coaches` con distintos filtros |
+| **Entorno** | Sistema bajo carga alta (18:00–21:00 hora peruana) |
+| **Artefacto** | `CoachSearchQueryServiceImpl` + PostgreSQL con índices + caché |
+| **Respuesta** | Búsquedas frecuentes servidas desde caché. Búsquedas únicas consultan PostgreSQL con índices. |
+| **Medida de respuesta** | Latencia P95: < 800 ms bajo 200 usuarios concurrentes. Tasa de caché hit: > 60%. |
+
+
+**QAS-04: Seguridad — Protección de videos de entrenamiento**
+
+| Componente | Descripción |
+|---|---|
+| **Fuente de estímulo** | Usuario no propietario intentando acceder al video de otro usuario |
+| **Estímulo** | `GET /api/v1/exercise-videos/{videoId}` con token JWT de un usuario diferente al propietario |
 | **Entorno** | Sistema en operación normal |
-| **Artefacto** | Módulo Video Management + capa de autorización de dominio + Azure Blob Storage (URLs firmadas con tiempo de expiración) |
-| **Respuesta** | El sistema valida que el `userId` del token coincide con el propietario del video. En caso contrario, rechaza la solicitud con HTTP 403 y no expone la URL del recurso en Blob Storage |
-| **Medida de respuesta** | 0% de accesos no autorizados a videos de usuarios. Las URLs pre-firmadas de Blob Storage expiran en 15 minutos |
+| **Artefacto** | `VideoQueryServiceImpl` + autorización de dominio + `AzureBlobStorageGateway` (URLs SAS) |
+| **Respuesta** | HTTP 403. No se genera ni expone la URL pre-firmada del Blob Storage. |
+| **Medida de respuesta** | 0% de accesos no autorizados a videos. URLs SAS con expiración de 15 min. |
 
 
 
-##### QAS-05: Mantenibilidad — Incorporación de nuevo proveedor de pagos
+**QAS-05: Mantenibilidad — Incorporación de nuevo proveedor de pagos**
 
 | Componente | Descripción |
 |---|---|
-| **Fuente de estímulo** | Decisión de negocio de agregar un segundo proveedor de pagos junto al existente |
-| **Estímulo** | Requerimiento de soporte para un nuevo gateway de pago sin modificar la lógica de negocio del Bounded Context Membership & Payments |
+| **Fuente de estímulo** | Decisión de negocio de agregar MercadoPago como segundo proveedor de pagos |
+| **Estímulo** | Requerimiento de soporte para nuevo gateway sin modificar la lógica existente |
 | **Entorno** | Sistema en desarrollo activo, equipo de cinco personas |
-| **Artefacto** | Bounded Context Membership & Payments + Patrón Strategy para proveedores de pago |
-| **Respuesta** | El equipo implementa una nueva clase que implementa la interfaz `PaymentGatewayStrategy` sin modificar las clases existentes. El sistema puede seleccionar el proveedor mediante configuración |
-| **Medida de respuesta** | La incorporación del nuevo proveedor requiere menos de 8 horas de desarrollo y no introduce cambios en otros bounded contexts |
+| **Artefacto** | `MembershipCommandServiceImpl` + interfaz `PaymentGatewayStrategy` |
+| **Respuesta** | Se implementa `MercadoPagoPaymentGateway` con la interfaz `PaymentGatewayStrategy`. La selección se configura como `@Bean` de Spring sin tocar otras clases. |
+| **Medida de respuesta** | Incorporación del nuevo proveedor: < 8 h de desarrollo. 0 cambios en otros bounded contexts. |
 
 
-#### 4.1.11. Constraints
+#### 4.2.4. Constraints
 
 Las restricciones son condiciones impuestas externamente al equipo de diseño que limitan el
 espacio de soluciones arquitectónicas posibles. A diferencia de los atributos de calidad, las
 restricciones no son negociables dentro del contexto del proyecto.
 
-| ID | Restricción |
-|---|---|
-| CON-01 | El backend debe implementarse con Java 24 y Spring Boot 3.x, con autenticación JWT |
-| CON-02 | El proveedor de nube es exclusivamente Microsoft Azure |
-| CON-03 | La base de datos principal es PostgreSQL. El uso de bases de datos NoSQL está pendiente de evaluación y no puede asumirse en el diseño actual |
-| CON-04 | La primera fase del sistema corresponde a un monolito modular organizado por bounded contexts, no a microservicios independientes |
-| CON-05 | La funcionalidad de chat se implementa mediante una API externa de terceros. El sistema no desarrolla su propio protocolo de mensajería en tiempo real |
-| CON-06 | El proyecto debe cumplir con la Ley de Protección de Datos Personales del Perú (Ley N.° 29733) en lo que respecta al almacenamiento y tratamiento de datos de usuarios |
-| CON-07 | La aplicación cliente es móvil, con desarrollo orientado a la plataforma Android |
-| CON-08 | El presupuesto de infraestructura en la fase académica es limitado. Los servicios de Azure utilizados deben mantenerse dentro de los niveles gratuitos o de bajo costo (Free / Basic tier) en la medida de lo posible |
-| CON-09 | Limitaciones de dispositivos móviles de los usuarios (cámara, almacenamiento, rendimiento) para la grabación y envío de videos. |
-| CON-10 | Restricción en el tamaño y duración de los videos para evitar sobrecarga en el sistema.|
----
+| ID | Restricción | Impacto en el diseño |
+|---|---|---|
+| CON-01 | Backend con Java 24 y Spring Boot 3.x | Define el stack, las dependencias disponibles y los patrones de integración. |
+| CON-02 | Proveedor de nube exclusivamente Microsoft Azure | Almacenamiento en Azure Blob Storage; monitoreo en Azure Monitor; despliegue en Azure App Service. |
+| CON-03 | Base de datos principal PostgreSQL | No se usa NoSQL en la fase actual. La separación de esquemas reemplaza el patrón Database per Service con instancias independientes. |
+| CON-04 | Primera fase: monolito modular (no microservicios independientes) | La separación es lógica (paquetes Java) y de datos (esquemas PostgreSQL), no de despliegue. |
+| CON-05 | Chat implementado mediante API externa de terceros | No se desarrolla protocolo propio. La integración se encapsula en un Gateway para permitir sustitución. |
+| CON-06 | Cumplimiento Ley de Protección de Datos Personales del Perú (N° 29733) | Datos cifrados en reposo; funcionalidad de eliminación de cuenta y videos; política de retención definida. |
+| CON-07 | Aplicación cliente: Android (Flutter) | La API REST debe ser consumible desde Flutter mediante HTTP. |
+| CON-08 | Presupuesto de infraestructura limitado (fase académica) | Uso preferente de tiers gratuitos o Basic de Azure. Landing page en GitHub Pages. |
+| CON-09 | Limitaciones de dispositivos móviles para grabación | Los videos se comprimen en el cliente antes de la subida. El sistema acepta archivos de hasta 200 MB. |
+| CON-10 | Tamaño máximo: 200 MB; duración máxima: 3 min por video | Validación en el endpoint de subida antes de iniciar el procesamiento. |
 
-#### 4.1.12. Architectural Concerns
+
+
+#### 4.2.5. Architectural Concerns
 
 Las preocupaciones arquitectónicas son riesgos, incertidumbres y desafíos propios del
 arquitecto de software que, de no ser atendidos, pueden comprometer la estabilidad, la
@@ -1702,178 +1680,109 @@ externas: son alertas internas del proceso de diseño que deben gestionarse acti
 
 | ID | Preocupación | Impacto potencial | Estrategia de mitigación |
 |---|---|---|---|
-| AC-01 | El equipo no tiene experiencia previa en el diseño de sistemas distribuidos con cola de mensajes. La integración de Azure Service Bus para el procesamiento asíncrono de video puede introducir errores difíciles de depurar | Retrasos en la entrega y defectos en el flujo más crítico del sistema | Comenzar con una implementación síncrona del flujo de video en las primeras iteraciones y migrar al modelo asíncrono en una iteración posterior, cuando el equipo haya validado el contrato de integración |
-| AC-02 | La lógica de negocio compartida entre los bounded contexts Matchmaking y Training Tracker (por ejemplo, el progreso de un usuario asociado a un coach) puede generar acoplamiento implícito entre módulos | Dificultad para modificar un bounded context sin afectar al otro, violando el principio de separación | Definir explícitamente qué datos son propietad de cada bounded context y qué datos se comparten mediante contratos de interfaz (DTOs) sin exponer el modelo interno |
-| AC-03 | El almacenamiento de videos en Azure Blob Storage puede generar costos crecientes no anticipados a medida que aumenta el volumen de usuarios y videos almacenados | Superación del presupuesto de infraestructura | Implementar políticas de retención de videos (limitar el almacenamiento por usuario, establecer un período máximo de retención) y evaluar la compresión de videos antes del almacenamiento |
-| AC-04 | La dependencia de Gemini AI para el análisis de ejercicios introduce un riesgo de disponibilidad externo. Cambios en la API, límites de cuota o aumentos de precio no están bajo el control del equipo | Degradación de la funcionalidad principal diferenciadora del producto sin alternativa inmediata | Diseñar el módulo Video Management con una abstracción (interfaz `VideoAnalysisProvider`) que permita sustituir el proveedor de IA sin cambios en la lógica de negocio. Documentar claramente la dependencia como riesgo del producto |
-| AC-05 | La ausencia de pruebas automatizadas en las capas de infraestructura y de integración puede hacer que los errores de integración entre bounded contexts solo se detecten en etapas tardías del desarrollo | Regresiones frecuentes y tiempo de corrección elevado en las fases finales del proyecto | Establecer desde el primer sprint una suite mínima de pruebas de integración para los endpoints más críticos (autenticación, búsqueda de coaches, subida de video) usando Spring Boot Test y Testcontainers para PostgreSQL |
-| AC-06 | El modelo de datos de PostgreSQL puede volverse difícil de mantener si los bounded contexts comparten tablas o si las migraciones de Flyway no se coordinan correctamente entre los miembros del equipo | Conflictos de migración, datos corruptos y dificultad para escalar a microservicios en el futuro | Establecer la convención de que cada bounded context tiene su propio schema de PostgreSQL (o su propio prefijo de tablas) y que las migraciones se revisan en pull requests antes de fusionarse a la rama principal |
-| AC-07 | La experiencia de usuario en la aplicación móvil depende de la latencia de los endpoints del backend. Una arquitectura de monolito mal optimizada puede introducir tiempos de respuesta inaceptables desde dispositivos móviles en redes lentas (4G, zonas rurales del Perú) | Abandono de la aplicación por usuarios en condiciones de conectividad limitada | Aplicar desde el inicio las tácticas de rendimiento descritas en la sección 4.1.7 (caché, paginación, índices) y establecer un SLO de tiempo de respuesta máximo por endpoint durante las revisiones de sprint |
-| AC-08 | El manejo de datos de salud y ejercicio de usuarios requiere cuidado especial en cuanto a la política de privacidad y los términos de uso del servicio, especialmente en la recopilación de videos corporales de los usuarios | Riesgo legal y de reputación si los datos de los usuarios no se manejan con transparencia | Definir explícitamente en los términos y condiciones del servicio el propósito del almacenamiento de videos, el período de retención y el alcance del análisis automatizado. Implementar la funcionalidad de eliminación de cuenta y de videos a solicitud del usuario |
-| AC-09 | La integración con una API externa de chat crea una dependencia de terceros para una funcionalidad de alta visibilidad. Si el proveedor cambia sus condiciones de uso o discontinúa el servicio, la funcionalidad de comunicación directa entre usuarios y coaches queda comprometida | Pérdida de una funcionalidad crítica para la propuesta de valor del producto | Diseñar la integración detrás de una interfaz `ChatService` que permita sustituir el proveedor. Almacenar localmente los metadatos de las conversaciones (participantes, timestamps, número de mensajes) para mantener trazabilidad independientemente del proveedor |
-| AC-10 | La falta de observabilidad en el sistema (logs estructurados, métricas, alertas) puede hacer que los problemas en producción pasen desapercibidos o sean difíciles de diagnosticar | Tiempo de detección y resolución de incidentes elevado en producción | Configurar desde el primer despliegue el logging estructurado con Spring Boot + Azure Monitor. Establecer alertas básicas sobre tasas de error HTTP 5xx y tiempos de respuesta por encima del umbral definido |
+| AC-01 | Curva de aprendizaje en integración asíncrona | Retrasos y defectos difíciles de depurar en el flujo crítico | Implementar flujo síncrono en primeras iteraciones; migrar a `@EventListener` antes de adoptar Azure Service Bus |
+| AC-02 | Acoplamiento implícito entre Matchmaking y Training Tracker | Modificaciones en uno afectan al otro | Contratos explícitos vía `MatchmakingContextFacade` y `TrainingContextFacade`; ningún BC importa clases de dominio de otro |
+| AC-03 | Costos crecientes de Azure Blob Storage | Superación del presupuesto académico | Retención máxima de 90 días de videos por usuario; compresión en cliente; alertas de uso en Azure Monitor |
+| AC-04 | Dependencia de Gemini AI (disponibilidad, cuota, precio) | Degradación de la funcionalidad diferenciadora | `GeminiAIGateway` implementa `VideoAnalysisProvider`; sustitución requiere solo una nueva implementación de la interfaz |
+| AC-05 | Ausencia de pruebas automatizadas entre bounded contexts | Regresiones tardías | Suite de pruebas de integración con Spring Boot Test y Testcontainers desde Sprint 1 (ver sección 5.1.1) |
+| AC-06 | Conflictos de migración en trabajo paralelo | Datos corruptos y conflictos de merge | Prefijo por bounded context en archivos Flyway (`V1__iam_*.sql`); revisión de migraciones en Pull Requests |
+| AC-07 | Latencia en dispositivos con conectividad limitada (4G, zonas rurales) | Abandono de la aplicación | Paginación de 20 registros, compresión gzip, indicadores de carga en UI Flutter para operaciones asíncronas |
+| AC-08 | Privacidad de videos corporales de los usuarios | Riesgo legal y de reputación | Términos y condiciones con propósito y período de retención; funcionalidad de eliminación de videos a solicitud |
+| AC-09 | Dependencia de API de chat de terceros | Pérdida de funcionalidad crítica | Interfaz `ChatService` que encapsula el proveedor; metadatos de conversaciones almacenados localmente |
+| AC-10 | Falta de observabilidad en producción | Incidentes no detectados | Logging estructurado con Spring Boot + Azure Monitor; alertas sobre tasas de error HTTP 5xx y tiempos fuera de SLO |
 
------
+
 
 ### 4.3. ADD Iterations
 
-#### 4.3.1 Iteration 1: Análisis
-##### 4.3.1.1 Architectural Design Backlog 1
 
-Ciertos elementos clave de la arquitectura serán esenciales para asegurar la precisión técnica, la confianza del usuario y la escalabilidad del ecosistema **BodyMatch AI**.
+#### 4.3.1. Iteration 1: Establecimiento de la Estructura Global del Sistema
 
-#### Seguridad y Privacidad
+##### 4.3.1.1. Architectural Design Backlog — Iteración 1
 
-| Historia de Usuario | Tareas | Criterios de Aceptación |
-|----------------------|--------|--------------------------|
-| **US-01 (Registro de usuario):** Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | - Implementar autenticación JWT con rotación de tokens.<br>- Configurar control de acceso basado en roles (`ROLE_USER`, `ROLE_COACH`).<br>- Cifrado de datos personales en reposo. | - Solo usuarios autenticados acceden a los planes.<br>- El sistema bloquea intentos de acceso a perfiles ajenos.<br>- Las contraseñas se almacenan mediante hashing robusto (BCrypt). |
-| **US-11 (Subir video del ejercicio):** Como usuario, quiero subir videos para recibir corrección técnica por IA. | - Implementar URLs pre-firmadas para Azure Blob Storage.<br>- Validar la propiedad del video antes de permitir el análisis. | - Los videos son privados y solo accesibles por el dueño y su coach.<br>- El sistema rechaza archivos que no cumplan con el formato de video permitido. |
+| ID | Driver | Tipo | Prioridad | Estado |
+|---|---|---|---|---|
+| DR-01 | Análisis inteligente de ejercicios mediante IA | Requisito funcional primario | Alta | Resuelto |
+| DR-02 | Seguridad de datos personales y multimedia | Atributo de calidad | Alta | Resuelto |
+| DR-03 | Rendimiento en procesamiento de video | Atributo de calidad | Alta | Resuelto parcialmente |
+| DR-05 | Mantenibilidad del sistema | Atributo de calidad | Alta | Resuelto |
+| DR-08 | Integración con servicios externos | Restricción técnica | Alta | Resuelto |
+| CON-01 | Stack: Java 24 + Spring Boot 3.x | Restricción de tecnología | Alta | Resuelto |
+| CON-04 | Monolito modular como primera fase | Restricción de despliegue | Alta | Resuelto |
 
----
+##### 4.3.1.2. Establish Iteration Goal by Selecting Drivers
 
-#### Rendimiento y Disponibilidad
+**Objetivo:** Establecer la estructura global del sistema definiendo la descomposición en
+bounded contexts, los mecanismos de comunicación entre ellos, el stack tecnológico base
+y los elementos de seguridad transversales.
 
-| Historia de Usuario | Tareas | Criterios de Aceptación |
-|----------------------|--------|--------------------------|
-| **US-12 (Feedback automático con IA):** Como usuario, quiero corrección automática de mis ejercicios mediante visión computacional. | - Configurar procesamiento asíncrono de video mediante colas de mensajería.<br>- Implementar caché (Redis) para resultados de análisis frecuentes.<br>- Configurar balanceador de carga para el servicio de análisis. | - La subida de video no bloquea la interfaz del usuario.<br>- El sistema procesa videos de hasta 200MB en menos de 5 minutos bajo carga normal. |
-| **US-06 (Búsqueda de coaches):** Como usuario, quiero buscar coaches según objetivos y filtros específicos. | - Optimizar consultas en PostgreSQL mediante índices en especialidad y precio.<br>- Implementar paginación en el catálogo de coaches. | - Los resultados de búsqueda se muestran en menos de 800ms.<br>- El sistema soporta 200 usuarios concurrentes buscando coaches sin degradación. |
+**Drivers seleccionados:**
+- DR-01 — determina la necesidad del Video Management BC y la integración asíncrona con Gemini
+- DR-02 — determina el IAM BC, el mecanismo JWT + RBAC y la protección de archivos
+- DR-05 — determina la adopción de DDD, SOLID y la arquitectura por capas
+- CON-04 — determina la estrategia de despliegue inicial como monolito modular
 
----
+##### 4.3.1.3. Choose One or More Elements of the System to Refine
 
-#### Usabilidad e Innovación
+| Elemento | Tipo | Justificación |
+|---|---|---|
+| Sistema completo (BodyMatch AI) | Caja negra | Primera iteración: se parte desde cero para definir la estructura de alto nivel |
+| Mecanismo de autenticación | Elemento de infraestructura transversal | Afecta todos los bounded contexts; debe decidirse antes que cualquier funcionalidad |
+| Estrategia de integración con Gemini AI y Azure | Elemento de infraestructura | Dependencias críticas de la funcionalidad principal y del almacenamiento |
 
-| Historia de Usuario | Tareas | Criterios de Aceptación |
-|----------------------|--------|--------------------------|
-| **US-24 (Reconocimiento de alimentos mediante IA):** Como usuario, quiero que la IA identifique alimentos en fotos para macros. | - Integrar API de visión computacional para detección de alimentos.<br>- Interfaz simplificada de captura de foto rápida. | - Un usuario puede registrar una comida en menos de 30 segundos.<br>- La IA identifica correctamente al menos el 80% de alimentos comunes. |
-| **US-16 (Visualización de progreso):** Como usuario, quiero ver gráficos de mi evolución física (pesos, medidas, macros). | - Gráficos interactivos de carga y medidas corporales.<br>- Sincronización automática de datos entre nutrición y entrenamiento. | - Los gráficos cargan instantáneamente y permiten filtrar por rangos de tiempo (semana, mes, año). |
+##### 4.3.1.4. Choose One or More Design Concepts That Satisfy the Selected Drivers
 
-##### 4.3.1.2 Establish Iteration Goal by Selecting Drivers
+| Driver | Concepto seleccionado | Alternativa descartada | Justificación |
+|---|---|---|---|
+| DR-01 (IA) | Procesamiento asíncrono con eventos + `GeminiAIGateway` | Llamada síncrona a Gemini | El análisis puede tomar minutos; una llamada síncrona bloquearía el hilo HTTP y degradaría la UX |
+| DR-02 (Seguridad) | JWT con access token (15 min) + refresh token (7 días) + RBAC | Sesiones stateful en servidor | JWT es stateless, escala horizontalmente y es nativo en la app móvil Flutter |
+| DR-05 (Mantenibilidad) | DDD con 6 bounded contexts + Layered Architecture + CQRS | Monolito sin separación de capas | DDD aísla los cambios; CQRS simplifica la evolución de lecturas y escrituras por separado |
+| CON-04 (Monolito modular) | Paquetes Java separados + esquemas PostgreSQL por contexto | Microservicios desplegados independientemente | Reduce complejidad operativa en fase académica; permite migración sin reescritura |
 
-En esta iteración, seleccionaremos los **drivers clave** que servirán como base para definir metas que aseguren la precisión técnica y la seguridad de la plataforma **BodyMatch AI**.
+##### 4.3.1.5. Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
 
----
-
-##### Metas de la Iteración
-
-| Meta | Objetivo | Acciones Clave |
-|------|----------|----------------|
-| **Precisión Técnica en Feedback** | Garantizar que el análisis de IA sea confiable para prevenir lesiones durante el entrenamiento. | - Diseñar el flujo de integración con Gemini AI para análisis corporal.<br>- Implementar lógica de procesamiento asíncrono para no degradar el rendimiento. |
-| **Integridad y Privacidad Multimedia** | Proteger la privacidad de los usuarios al subir videos de su ejecución física y fotos de alimentos. | - Implementar almacenamiento seguro en Azure Blob Storage.<br>- Establecer políticas de acceso restringido a archivos multimedia. |
-| **Escalabilidad de Conexión Coach-Usuario** | Facilitar el matchmaking y la gestión de carteras de clientes para los entrenadores de forma fluida. | - Diseñar el Bounded Context de Matchmaking con búsqueda optimizada.<br>- Implementar el sistema de gestión de disponibilidad para coaches. |
-
----
-
-##### Objetivo de la Iteración
-
-- **Precisión:** Establecer las bases técnicas para el análisis de video por IA y la corrección de postura mediante visión computacional.
-- **Seguridad:** Robustecer la protección de videos y datos biométricos sensibles bajo estándares de la Ley N° 29733 (Perú).
-- **Gestión:** Optimizar la infraestructura para soportar la comunicación, el seguimiento y la monetización entre coaches y atletas.
-
----
-
-##### 4.3.1.3 Choose One or More Elements of the System to Refine
-
-Para avanzar en el desarrollo de **BodyMatch AI**, se han seleccionado los siguientes elementos del sistema para ser refinados:
-
----
-
-| Área | Elemento a Refinar | Razón para el Refinamiento | Esperado |
-|------|---------------------|----------------------------|----------|
-| **Análisis de Video (IA)** | Módulo de Video Management y Worker de IA | Es el núcleo de la propuesta de valor. Requiere desacoplar la carga del video del procesamiento pesado. | Procesamiento asíncrono, feedback detallado de errores técnicos y almacenamiento cifrado. |
-| **Marketplace de Coaches** | Módulo de Matchmaking y Gestión de Sesiones | Los usuarios necesitan encontrar al profesional adecuado rápidamente para iniciar el servicio. | Búsquedas filtradas por objetivos, perfiles detallados y sistema de reservas sin conflictos de horario. |
-| **Seguridad de Accesos** | Módulo IAM (Identity & Access Management) | La plataforma maneja datos de salud y financieros que requieren máxima protección. | Autenticación JWT con rotación, RBAC estricto y protección de endpoints multimedia. |
-
-##### 4.3.1.4 Choose One or More Design Concepts That Satisfy the Selected Drivers
-
-Se han identificado conceptos de diseño específicos que abordan los drivers de **precisión, seguridad y escalabilidad**:
-
----
-
-##### Seguridad
-
-#### Modelo RBAC (Role-Based Access Control)
-- **Descripción:** Implementación de permisos diferenciados donde el Atleta accede a su progreso y el Coach a las herramientas de gestión de su cartera.
-- **Justificación:** Previene que un usuario acceda a datos de salud de terceros o a configuraciones de pago de los entrenadores.
-
-##### API Gateway Seguro (Spring Cloud Gateway)
-- **Descripción:** Centralizar la validación de tokens JWT y la sanitización de inputs antes de llegar a los microservicios de entrenamiento o nutrición.
-- **Justificación:** Protege el sistema contra inyecciones y asegura que solo el tráfico legítimo consuma recursos de la infraestructura.
-
----
-
-##### Precisión y Rendimiento
-
-##### Procesamiento Asíncrono de Tareas (Worker Pattern)
-- **Descripción:** Uso de colas de mensajes (Azure Service Bus) para enviar los videos al servicio de IA sin mantener al usuario esperando en la pantalla de carga.
-- **Justificación:** Mejora drásticamente la usabilidad, permitiendo que el Atleta siga con su rutina mientras el video se analiza en segundo plano.
-
----
-
-##### Escalabilidad
-
-##### Bounded Contexts Independientes (DDD)
-- **Descripción:** Separación física y lógica de los módulos de Nutrición, Entrenamiento y Pagos.
-- **Justificación:** Permite escalar solo el servicio de análisis de video (que consume más recursos) sin replicar innecesariamente otros módulos.
-
----
-
-##### 4.3.1.5 Instantiate Architectural Elements, Allocate Responsibilities, and Define Interfaces
-
-| Elemento | Responsabilidad | Interfaces |
-|----------|-----------------|------------|
-| **Módulo Video Management** | Gestionar la subida, almacenamiento y estados del análisis de video técnico. | API REST para upload; Interfaz con Azure Blob Storage. |
-| **Worker de Análisis IA** | Integración con Gemini AI para procesar el video y generar el feedback técnico. | Consumidor de colas; JSON de respuesta con métricas corporales. |
-| **Módulo Matchmaking** | Motor de búsqueda de coaches basado en objetivos, calificación y precio. | API REST de búsqueda filtrada; Integración con perfiles de Atleta. |
-| **API Gateway** | Punto de entrada seguro para la App Móvil; gestión de Cross-Cutting Concerns. | Exposición de endpoints `/api/v1/auth`, `/api/v1/training`; Validación de JWT. |
-| **Training Tracker** | Registro histórico de cargas, RPE y evolución física del usuario. | API de métricas; Dashboards interactivos para frontend. |
-| **Nutrition BC** | Análisis de imágenes de comida para conteo de calorías y macros. | API de visión computacional; Registro de historial nutricional. |
-
----
+| Elemento arquitectónico | Responsabilidad | Interfaz pública |
+|---|---|---|
+| **API Gateway** | Punto de entrada único; validación JWT; enrutamiento | Endpoints `/api/v1/**`; Header: `Authorization: Bearer {token}` |
+| **IAM BC** | Registro, autenticación, autorización y perfiles | `POST /api/v1/authentication/sign-up/athlete`, `POST /api/v1/authentication/sign-in`; Fachada: `IamContextFacade` |
+| **Video Management BC** | Subida, análisis asíncrono y feedback de videos | `POST /api/v1/exercise-videos`, `GET /api/v1/exercise-videos/{id}`; Evento: `VideoAnalysisCompletedEvent` |
+| **Matchmaking BC** | Búsqueda de coaches, reservas, reseñas | `GET /api/v1/coaches`, `POST /api/v1/sessions`; Fachada: `MatchmakingContextFacade` |
+| **Training Tracker BC** | Registro y consulta de métricas físicas | `POST /api/v1/metrics`, `GET /api/v1/metrics/{athleteId}`; Fachada: `TrainingContextFacade` |
+| **Nutrition BC** | Análisis de imágenes de alimentos y registro nutricional | `POST /api/v1/food-logs`, `GET /api/v1/food-logs/daily-summary` |
+| **Membership & Payments BC** | Planes de suscripción y procesamiento de pagos | `POST /api/v1/memberships`, `POST /api/v1/payments`; Interfaz: `PaymentGatewayStrategy` |
+| **GeminiAIGateway** | Encapsular integración con Gemini AI | Implementa `VideoAnalysisProvider.analyzeVideo()` y `FoodAnalysisProvider.analyzeFood()` |
+| **AzureBlobStorageGateway** | Gestionar subida y recuperación de archivos multimedia | `uploadBlob(MultipartFile)`, `generateSasUrl(String blobName, int minutes)` |
 
 ##### 4.3.1.6. Sketch Views (C4 & UML) and Record Design Decisions
 
-**Sketch Views**
+Los diagramas producidos se presentan en la sección 4.1.4 (Figuras 4.1–4.19).
 
-- ***Diagrama C4 - Container Level***
-<img src="assets/chapter4/Components/Containers-dark.png" alt ="">
-
-
-- ***Diagrama UML - Modelo de Dominio***
-  <img src="assets/chapter4/DiagramClass.png" alt="">
-
-**Decisiones de Diseño Registradas**
-
-| ID | Título | Estado | Contexto | Decisión | Consecuencias |
-|--------|---------------------------------------------|----------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|---------------|
-| DD-001 | Monolito Modular orientado a Microservicios | Aceptada | Necesidad de rapidez inicial sin perder escalabilidad por Bounded Context. | Organizar el código por paquetes independientes dentro de un monolito modular (DDD). | - Despliegue simple inicial <br> - Fácil migración futura <br> - Aislamiento de lógica |
-| DD-002 | Procesamiento Asíncrono de Video | Aceptada | El análisis de IA es computacionalmente costoso para una respuesta síncrona. | Utilizar Azure Service Bus para encolar tareas de análisis y notificar vía Push. | - UI fluida <br> - Manejo de reintentos automático <br> - Complejidad en estados |
-| DD-003 | Almacenamiento en Azure Blob Storage | Aceptada | Videos corporales requieren seguridad y durabilidad masiva. | Usar Blob Storage con acceso restringido mediante URLs firmadas (SAS). | - Alta seguridad de archivos <br> - Escalabilidad infinita <br> - Dependencia de Azure |
-| DD-004 | PostgreSQL con Esquemas por Contexto | Aceptada | Múltiples módulos requieren persistencia relacional (entrenamientos, pagos). | Usar una sola instancia pero con esquemas separados para evitar acoplamiento. | - Integridad referencial fuerte <br> - Backups centralizados <br> - Aislamiento de tablas |
-| DD-005 | Redis para Gestión de Sesiones y Caché | Aceptada | Necesidad de baja latencia en dashboards de progreso y validación de tokens. | Implementar Redis para almacenar resultados analíticos y sesiones activas. | - Reducción de carga en DB <br> - Tiempos de respuesta mínimos <br> - Gestión de infra adicional |
-| DD-006 | Sistema de Seguridad RBAC + JWT | Aceptada | Driver crítico de protección de datos de salud y privacidad. | Implementar Spring Security con JWT (Access/Refresh tokens) y roles (User/Coach). | - Control granular <br> - Cumplimiento de Ley 29733 <br> - Auditabilidad completa |
-
----
+| ID | Decisión | Estado | Consecuencias |
+|---|---|---|---|
+| DD-001 | Monolito Modular con bounded contexts como paquetes Java independientes | Aceptada | Despliegue simple; fácil migración futura; riesgo de acoplamiento accidental controlado con reglas de paquete |
+| DD-002 | Procesamiento asíncrono de análisis de video con eventos de dominio | Aceptada | UI fluida (HTTP 202 inmediato); reintentos automáticos; complejidad adicional en gestión de estados |
+| DD-003 | Azure Blob Storage con URLs SAS para archivos multimedia | Aceptada | Alta seguridad; escalabilidad; costo variable; dependencia de Azure |
+| DD-004 | Esquemas PostgreSQL separados por bounded context | Aceptada | Integridad cross-context gestionada en aplicación; backups centralizados; preparación para microservicios |
+| DD-005 | JWT stateless con access token (15 min) y refresh token (7 días) | Aceptada | Escalabilidad horizontal; ventana de exposición reducida; requiere lógica de renovación en Flutter |
+| DD-006 | Patrón Strategy para `PaymentGatewayStrategy`, `HashingService` y `TokenService` | Aceptada | Alta extensibilidad; cumple OCP; capa de abstracción documentada en sección 4.1.6 |
+| DD-007 | Patrón Gateway para integraciones externas (Gemini, Stripe, Azure) | Aceptada | Sustitución sin impacto en bounded contexts; centralización de manejo de errores externos |
 
 ##### 4.3.1.7. Analysis of Current Design and Review Iteration Goal (Kanban Board)
 
-**Análisis del Diseño Actual**
+| Driver | Estado de resolución | Evidencia |
+|---|---|---|
+| DR-01 (Análisis IA) | Resuelto | Video Management BC con `GeminiAIGateway` y flujo asíncrono (DD-002, DD-007) |
+| DR-02 (Seguridad) | Resuelto | IAM BC con JWT (DD-005), RBAC y URLs SAS (DD-003) |
+| DR-03 (Rendimiento) | Resuelto parcialmente | Flujo asíncrono definido (DD-002); métricas de SLO a validar en Sprint 2 |
+| DR-05 (Mantenibilidad) | Resuelto | 6 bounded contexts con DDD, CQRS y patrones Strategy/Gateway/Factory (DD-006, DD-007) |
+| DR-08 (Integraciones) | Resuelto | Patrón Gateway aplicado a Gemini, Stripe y Azure Blob Storage (DD-007) |
 
-Tras completar la Iteración 1 del método ADD v3, se ha establecido una arquitectura para **BodyMatch AI** que prioriza el flujo asíncrono y la seguridad. El análisis revela:
+**Pendiente para iteraciones futuras:**
+- Azure Service Bus para escalar el procesamiento asíncrono bajo alta carga
+- Redis como proveedor de caché para búsqueda de coaches
+- Estrategia de observabilidad con logging estructurado y alertas en Azure Monitor
 
-- **Fortalezas del Diseño Actual**
-    - **Aislamiento de IA:** El desacoplamiento del análisis asegura que fallos en la API externa no afecten la navegación general de la app.
-    - **Escalabilidad Multimedia:** El uso de Azure Blob Storage garantiza que el crecimiento de videos grabados no sature el servidor de aplicaciones.
-    - **Protección de Datos:** La estructura RBAC protege la relación entre el Coach y el Atleta, asegurando la privacidad del progreso físico.
-
-- **Áreas de Mejora Identificadas**
-    - **Costo Operativo:** El uso de múltiples servicios en la nube (Service Bus, Redis, Storage) requiere un monitoreo estricto de costos en la fase académica.
-    - **Sincronización:** La integración de métricas de Nutrición y Entrenamiento debe ser auditada para evitar discrepancias en los reportes diarios.
-
-**Review Iteration Goal**
-
-Enlace del Tablero Kanban: 
-
-<img src="assets/chapter4/Tablero-kanban.png" alt ="">
+[IMAGEN: assets/chapter4/Tablero-kanban.png]
 
 
 https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai
