@@ -938,50 +938,52 @@ Este backlog permite al equipo de desarrollo:
 
 A continuación se presenta el backlog completo con todas las User Stories definidas hasta el momento:
 
+**Leyenda de Prioridad:** `Alta` = Crítica para MVP | `Media` = Importante para release | `Baja` = Mejora futura o deseable  
+**Leyenda de Estado:** `Por Hacer` = Sin iniciar | `En Progreso` = En desarrollo | `Hecho` = Completado
 
-| Orden | User Story Id | Título | Descripción | Story Points |
-|-------|--------------|--------|-------------|--------------|
-| 1     | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | 1            |
-| 2     | US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con correo y contraseña para acceder a mi cuenta. | 1            |
-| 3     | US07 | Visualización de perfil de coach | Como usuario, quiero ver la experiencia y reseñas del coach para tomar una decisión. | 1            |
-| 4     | US10 | Calificación del coach | Como usuario, quiero calificar al coach para compartir mi experiencia. | 1            |
-| 5     | US15 | Registro de métricas físicas | Como usuario, quiero registrar mis medidas corporales para controlar mi evolución. | 1            |
-| 6     | US23 | Subida de imagen de alimentos | Como usuario, quiero subir fotos de comida para análisis nutricional. | 2            |
-| 7     | US27 | Edición manual de alimentos detectados | Como usuario, quiero corregir alimentos detectados por IA para mayor precisión. | 1            |
-| 8     | US04 | Cierre de sesión | Como usuario o coach, quiero cerrar sesión para proteger mi cuenta. | 2            |
-| 9     | US05 | Configuración de perfil y objetivos | Como usuario, quiero definir mis objetivos para recibir recomendaciones personalizadas. | 2            |
-| 10    | US08 | Reserva de sesión | Como usuario, quiero reservar sesiones con un coach. | 2            |
-| 11    | US13 | Historial de correcciones | Como usuario, quiero ver análisis anteriores para comparar progreso. | 2            |
-| 12    | US16 | Visualización de progreso | Como usuario, quiero ver gráficos de progreso físico. | 2            |
-| 13    | US17 | Historial de entrenamientos | Como usuario, quiero revisar mis entrenamientos para evaluar constancia. | 2            |
-| 14    | US22 | Monetización de servicios | Como coach, quiero definir tarifas para monetizar mis servicios. | 2            |
-| 15    | US28 | Registro en historial de comidas | Como usuario, quiero guardar automáticamente mis comidas. | 2            |
-| 16    | US06 | Búsqueda de coaches | Como usuario, quiero buscar coaches según objetivos y filtros. | 3            |
-| 17    | US11 | Subir video del ejercicio | Como usuario, quiero subir videos para análisis de técnica. | 3            |
-| 18    | US18 | Alertas de cumplimiento de rutina | Como usuario, quiero recibir recordatorios de entrenamiento. | 3            |
-| 19    | US21 | Seguimiento de progreso del cliente | Como coach, quiero ver el progreso de mis clientes. | 3            |
-| 20    | US03 | Recuperación de contraseña | Como usuario o coach, quiero recuperar mi contraseña. | 3            |
-| 21    | US19 | Gestión de clientes | Como coach, quiero administrar mis clientes. | 3            |
-| 22    | US25 | Cálculo de valores nutricionales | Como usuario, quiero ver calorías y macronutrientes de mis comidas. | 3            |
-| 23    | US31 | Integración con objetivos fitness | Como usuario, quiero relacionar nutrición con mis objetivos físicos. | 3            |
-| 24    | US09 | Chat con coach | Como usuario, quiero comunicarme con mi coach en tiempo real. | 5            |
-| 25    | US14 | Recomendaciones de mejora | Como usuario, quiero recibir recomendaciones personalizadas. | 5            |
-| 26    | US20 | Programación de disponibilidad | Como coach, quiero definir mis horarios disponibles. | 5            |
-| 27    | US26 | Visualización detallada de nutrientes | Como usuario, quiero ver gráficos nutricionales detallados. | 5            |
-| 28    | US30 | Recomendaciones nutricionales personalizadas | Como usuario, quiero sugerencias según mis objetivos. | 5            |
-| 29    | US32 | Notificaciones y recordatorios de registro | Como usuario, quiero recordatorios para registrar comidas. | 5            |
-| 30    | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 13           |
-| 31    | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8            |
-| 32    | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8            |
-| 33    | US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | 1            |
-| 34    | US34 | Solicitar demostración | Como visitante, quiero registrar mi interés en una demostración para conocer mejor el sistema. | 2            |
-| 35    | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | 1            |
-| 36    | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | 2            |
-| 37    | US37 | Consultar casos de éxito | Como visitante, quiero revisar experiencias reales con el sistema. | 2            |
-| 38    | TS01 | Implementación de Middleware JWT | Como sistema, se debe validar el token JWT en las cabeceras para asegurar la integridad de la API. | 3            |
-| 39    | TS02 | Exposición de Endpoints Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de coaches. | 3            |
-| 40    | TS03 | Configuración de Endpoints Video | Implementación técnica del canal de subida de video para el procesamiento de la IA. | 5            |
-| 41    | TS04 | Endpoint Perfil Atleta | Endpoint GET para recuperar métricas físicas. | 3            |
+| Orden | US ID | Título | Descripción | Story Points | Prioridad | Estado |
+|-------|-------|--------|-------------|--------------|-----------|--------|
+| 1     | US01 | Registro de usuario | Como nuevo usuario o coach, quiero registrarme con mis datos personales para acceder a la plataforma. | 1 | **Alta** | Hecho |
+| 2     | US02 | Inicio de sesión | Como usuario registrado, quiero iniciar sesión con correo y contraseña para acceder a mi cuenta. | 1 | **Alta** | Hecho |
+| 3     | US04 | Cierre de sesión | Como usuario o coach, quiero cerrar sesión para proteger mi cuenta. | 2 | **Alta** | Hecho |
+| 4     | US05 | Configuración de perfil y objetivos | Como usuario, quiero definir mis objetivos para recibir recomendaciones personalizadas. | 2 | **Alta** | Por Hacer |
+| 5     | US03 | Recuperación de contraseña | Como usuario o coach, quiero recuperar mi contraseña. | 3 | Media | Por Hacer |
+| 6     | US15 | Registro de métricas físicas | Como usuario, quiero registrar mis medidas corporales para controlar mi evolución. | 1 | Media | Por Hacer |
+| 7     | US06 | Búsqueda de coaches | Como usuario, quiero buscar coaches según objetivos y filtros. | 3 | **Alta** | Por Hacer |
+| 8     | US07 | Visualización de perfil de coach | Como usuario, quiero ver la experiencia y reseñas del coach para tomar una decisión. | 1 | Media | Por Hacer |
+| 9     | US08 | Reserva de sesión | Como usuario, quiero reservar sesiones con un coach. | 2 | **Alta** | Por Hacer |
+| 10    | US10 | Calificación del coach | Como usuario, quiero calificar al coach para compartir mi experiencia. | 1 | Media | Por Hacer |
+| 11    | US11 | Subir video del ejercicio | Como usuario, quiero subir videos para análisis de técnica. | 3 | **Alta** | Por Hacer |
+| 12    | US12 | Feedback automático con IA | Como usuario, quiero corrección automática de mis ejercicios. | 13 | **Alta** | En Progreso |
+| 13    | US13 | Historial de correcciones | Como usuario, quiero ver análisis anteriores para comparar progreso. | 2 | Media | Por Hacer |
+| 14    | US14 | Recomendaciones de mejora | Como usuario, quiero recibir recomendaciones personalizadas. | 5 | Media | Por Hacer |
+| 15    | US16 | Visualización de progreso | Como usuario, quiero ver gráficos de progreso físico. | 2 | Media | Por Hacer |
+| 16    | US17 | Historial de entrenamientos | Como usuario, quiero revisar mis entrenamientos para evaluar constancia. | 2 | Media | Por Hacer |
+| 17    | US18 | Alertas de cumplimiento de rutina | Como usuario, quiero recibir recordatorios de entrenamiento. | 3 | Media | Por Hacer |
+| 18    | US09 | Chat con coach | Como usuario, quiero comunicarme con mi coach en tiempo real. | 5 | Media | Por Hacer |
+| 19    | US19 | Gestión de clientes | Como coach, quiero administrar mis clientes. | 3 | **Alta** | Por Hacer |
+| 20    | US20 | Programación de disponibilidad | Como coach, quiero definir mis horarios disponibles. | 5 | **Alta** | Por Hacer |
+| 21    | US21 | Seguimiento de progreso del cliente | Como coach, quiero ver el progreso de mis clientes. | 3 | **Alta** | Por Hacer |
+| 22    | US22 | Monetización de servicios | Como coach, quiero definir tarifas para monetizar mis servicios. | 2 | Media | Por Hacer |
+| 23    | US23 | Subida de imagen de alimentos | Como usuario, quiero subir fotos de comida para análisis nutricional. | 2 | Media | Por Hacer |
+| 24    | US24 | Reconocimiento de alimentos mediante IA | Como usuario, quiero que la IA identifique alimentos en imágenes. | 8 | Media | Hecho |
+| 25    | US25 | Cálculo de valores nutricionales | Como usuario, quiero ver calorías y macronutrientes de mis comidas. | 3 | Media | Por Hacer |
+| 26    | US26 | Visualización detallada de nutrientes | Como usuario, quiero ver gráficos nutricionales detallados. | 5 | Baja | Por Hacer |
+| 27    | US27 | Edición manual de alimentos detectados | Como usuario, quiero corregir alimentos detectados por IA para mayor precisión. | 1 | Media | Por Hacer |
+| 28    | US28 | Registro en historial de comidas | Como usuario, quiero guardar automáticamente mis comidas. | 2 | Media | Por Hacer |
+| 29    | US29 | Seguimiento diario de consumo nutricional | Como usuario, quiero ver mi consumo diario de calorías y macros. | 8 | Media | Por Hacer |
+| 30    | US30 | Recomendaciones nutricionales personalizadas | Como usuario, quiero sugerencias según mis objetivos. | 5 | Baja | Por Hacer |
+| 31    | US31 | Integración con objetivos fitness | Como usuario, quiero relacionar nutrición con mis objetivos físicos. | 3 | Media | Por Hacer |
+| 32    | US32 | Notificaciones y recordatorios de registro | Como usuario, quiero recordatorios para registrar comidas. | 5 | Baja | Por Hacer |
+| 33    | US33 | Consultar información de servicios | Como visitante, quiero conocer los servicios disponibles para evaluar si se adecuan a mis necesidades. | 1 | Media | Por Hacer |
+| 34    | US34 | Solicitar demostración | Como visitante, quiero registrar mi interés en una demostración para conocer mejor el sistema. | 2 | Media | Por Hacer |
+| 35    | US35 | Consultar planes y precios | Como visitante, quiero comparar los planes disponibles para elegir el que mejor se adapta. | 1 | Media | Por Hacer |
+| 36    | US36 | Solicitar asistencia | Como visitante, quiero contactar con el soporte para resolver dudas sobre el servicio. | 2 | Media | Por Hacer |
+| 37    | US37 | Consultar casos de éxito | Como visitante, quiero revisar experiencias reales con el sistema. | 2 | Baja | Por Hacer |
+| 38    | TS01 | Implementación de Middleware JWT | Como sistema, se debe validar el token JWT en las cabeceras para asegurar la integridad de la API. | 3 | **Alta** | Hecho |
+| 39    | TS02 | Exposición de Endpoints Matchmaking | Como sistema, se deben exponer endpoints REST para permitir la consulta externa de coaches. | 3 | **Alta** | Por Hacer |
+| 40    | TS03 | Configuración de Endpoints Video | Implementación técnica del canal de subida de video para el procesamiento de la IA. | 5 | **Alta** | Por Hacer |
+| 41    | TS04 | Endpoint Perfil Atleta | Endpoint GET para recuperar métricas físicas. | 3 | **Alta** | Por Hacer |
 
 
 A continuación se proporciona el link del Trello donde se puede visualizar de mejor forma el Product Backlog:
