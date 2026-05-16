@@ -1955,11 +1955,100 @@ A continuación, se muestra el enlace al tablero de gestión:
 
 ##### 5.2.1.2	Development Evidence for Sprint Review
 
+Durante el Sprint 1 de BodyMatch AI, el equipo desarrolló los componentes principales necesarios para validar el núcleo funcional de la solución. La implementación se realizó en tres frentes paralelos:
 
+- Landing Page institucional.
+- Frontend Mobile.
+- Arquitectura backend híbrida basada en Monolito + Microservicios.
+
+A nivel de microservicios, durante este Sprint se implementaron completamente los siguientes Bounded Contexts independientes:
+
+- **IAM (Identity and Access Management)**
+- **Video Analysis and Management**
+
+Estos microservicios permitieron cubrir funcionalidades críticas relacionadas con:
+
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Seguridad mediante JWT.
+- Subida de videos.
+- Procesamiento y análisis automático de ejercicios mediante IA.
+
+Los demás módulos funcionales (Matchmaking, Training, Nutrition y Membership) permanecen temporalmente dentro del backend monolítico y serán desacoplados progresivamente en los siguientes Sprints.
+
+Asimismo, se desarrollaron las interfaces móviles necesarias para consumir los servicios implementados y la Landing Page institucional para presentar la propuesta de valor del producto.
+
+---
+
+### Evidencia de Desarrollo por Repositorio
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/iam-service` | `feature/authentication-endpoints` | ---- | `feat: implement authentication endpoints` | Desarrollo de endpoints de registro, login y logout utilizando JWT y Spring Security. | ---- |
+| `G3-FundamentosArqui-7944/videos-service` | `feature/video-upload` | ---- | `feat: implement video upload service` | Implementación de carga multipart de videos y persistencia inicial del archivo. | ---- |
+| `G3-FundamentosArqui-7944/videos-service` | `feature/video-analysis-ai` | ---- | `feat: integrate AI video analysis` | Integración inicial del procesamiento automático de ejercicios mediante IA. | ---- |
+| `G3-FundamentosArqui-7944/api-gateway` | `feature/gateway-security` | ---- | `feat: configure gateway routing and jwt validation` | Configuración del API Gateway y validación centralizada de JWT. | ---- |
+| `G3-FundamentosArqui-7944/discovery-server` | `feature/eureka-server-config` | ---- | `feat: configure discovery server` | Configuración inicial del servidor de descubrimiento de servicios. | ---- |
+| `G3-FundamentosArqui-7944/backend-monolito` | `feature/training-module` | ---- | `feat: implement training profile endpoints` | Desarrollo de endpoints relacionados con métricas y perfil del atleta. | ---- |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/mobile-auth-ui` | ---- | `feat: develop authentication mobile views` | Implementación de vistas móviles para registro e inicio de sesión. | ---- |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/mobile-video-ui` | ---- | `feat: implement video upload interface` | Integración de cámara y selector de archivos para subida de videos. | ---- |
+| `G3-FundamentosArqui-7944/Landing-Page` | `feature/landing-main-sections` | ---- | `feat: create landing page sections` | Desarrollo de secciones de servicios, precios, FAQ y testimonios. | ---- |
+
+---
+
+### Repositorios Utilizados Durante el Sprint
+
+| Componente | Repositorio |
+|---|---|
+| IAM Microservice | `https://github.com/G3-FundamentosArqui-7944/iam-service` |
+| Videos Microservice | `https://github.com/G3-FundamentosArqui-7944/videos-service` |
+| API Gateway | `https://github.com/G3-FundamentosArqui-7944/api-gateway` |
+| Discovery Server | `https://github.com/G3-FundamentosArqui-7944/discovery-server` |
+| Backend Monolito | `https://github.com/G3-FundamentosArqui-7944/backend-monolito` |
+| Mobile Frontend | `https://github.com/G3-FundamentosArqui-7944/mobileapp-frontend` |
+| Landing Page | `https://github.com/G3-FundamentosArqui-7944/Landing-Page` |
+
+---
+
+### Tecnologías Utilizadas
+
+| Componente | Tecnologías |
+|---|---|
+| Microservicios | Spring Boot, Spring Security, JWT |
+| Service Discovery | Eureka Server |
+| API Gateway | Spring Cloud Gateway |
+| Persistencia | PostgreSQL |
+| IA de análisis | Gemini AI |
+| Frontend Mobile | Kotlin / Android |
+| Landing Page | HTML, CSS, JavaScript |
+| Documentación API | Swagger / OpenAPI |
+| Versionamiento | Git + GitHub |
 
 ##### 5.2.1.3	Testing Suite Evidence for Sprint Review
 
+Durante el Sprint 1 se desarrolló una aproximación inicial de pruebas de integración y aceptación para los microservicios implementados en BodyMatch AI.
 
+El enfoque utilizado fue **BDD (Behavior Driven Development)** mediante archivos `.feature` escritos en lenguaje Gherkin. Estas pruebas permitieron validar el comportamiento esperado de los endpoints críticos implementados en los microservicios IAM y Videos.
+
+Las pruebas diseñadas se enfocaron principalmente en:
+
+- Registro de usuarios.
+- Inicio y cierre de sesión.
+- Validación de autenticación JWT.
+- Subida de videos.
+- Procesamiento automático mediante IA.
+
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | 
+bfe1a9d | `test: add BDD feature for user registration` | Implementación del archivo `US01-Registro de usuario.feature` para validar el registro exitoso de atletas y coaches en el microservicio IAM. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for sign-in authentication` | Implementación del archivo `US02 - Inicio de sesión.feature` para validar autenticación y generación de JWT. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for sign-out process` | Implementación del archivo `US04-Cierre de sesión.feature` para validar revocación de tokens y cierre de sesión. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for exercise video upload` | Implementación del archivo `US11-Subir video del ejercicio.feature` para validar carga de videos mediante multipart/form-data. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for AI feedback processing` | Implementación del archivo `US12-Feedback automático con IA.feature` para validar el análisis automático de ejercicios mediante IA. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for JWT middleware validation` | Implementación del archivo `TS01-Middleware JWT.feature` para validar autorización y protección de endpoints mediante JWT. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for video endpoints availability` | Implementación del archivo `TS03-Endpoints Video.feature` para validar disponibilidad y funcionamiento del microservicio de videos. | 15/05/2026 |
 
 ##### 5.2.1.4	Execution Evidence for Sprint Review
 Para este primer Sprint de BodyMatch AI, el equipo ejecutó el desarrollo en tres frentes paralelos: la publicación de la Landing Page institucional, el desarrollo del Frontend Mobile para los usuarios, y la implementación de la arquitectura backend (híbrida).
@@ -2007,29 +2096,45 @@ A continuación, se presentan las capturas de pantalla de las principales intera
 
 
 ##### 5.2.1.5	Microservices Documentation Evidence for Sprint Review
-En esta sección se incluye la relación de Endpoints documentados con OpenAPI (Swagger). Se logró integrar exitosamente los Web Services de BodyMatch AI, estandarizando la comunicación entre el frontend móvil y el ecosistema híbrido (Microservicios + Monolito).
+En esta sección se incluye la relación de endpoints documentados con OpenAPI (Swagger), correspondientes a los microservicios implementados durante el Sprint 1 de BodyMatch AI.  
 
-**1. Matriz de Trazabilidad de Requerimientos**
-Esta tabla demuestra que los endpoints implementados cubren más del 50% del alcance funcional definido en las User Stories del Sprint:
+Durante este Sprint se inició la transición hacia una arquitectura basada en microservicios. Para esta primera entrega, los Bounded Contexts implementados completamente como microservicios independientes fueron:
 
-| US ID | Título de la User Story | Endpoint(s) Relacionado(s) | Estado |
-|---|---|---|---|
-| US01 | Registro de usuario | `POST /api/v1/authentication/sign-up/athlete` <br> `POST /api/v1/authentication/sign-up/coach` | Implementado |
-| US02 | Inicio de sesión | `POST /api/v1/authentication/sign-in` | Implementado |
-| US11 | Subir video del ejercicio | `POST /api/v1/exercise-videos` | Implementado |
-| US12 | Feedback automático con IA | `POST /api/v1/exercise-videos/{videoId}/analyze` | Implementado |
-| US16 | Eliminar video de ejercicio | `DELETE /api/v1/exercise-videos/{videoId}` | Implementado |
-| US17 | Consultar video de ejercicio | `GET /api/v1/exercise-videos/{videoId}` | Implementado |
+- **IAM (Identity and Access Management)**  
+- **Video Analysis and Management**
 
-**2. Catálogo de Endpoints y Contratos de Interfaz**
+Estos microservicios permitieron cubrir las funcionalidades críticas relacionadas con autenticación, registro de usuarios, subida de videos y análisis automático con IA.
 
-| Acción Implementada | Verbo | Endpoint | Parámetros | Ejemplo de Response | URL Documentación |
+Los demás módulos funcionales del sistema permanecen temporalmente dentro del monolito principal y serán desacoplados progresivamente en los siguientes Sprints.
+
+---
+
+### 1. Matriz de Trazabilidad de Requerimientos
+
+La siguiente tabla relaciona las User Stories y Technical Stories implementadas en los microservicios desarrollados durante el Sprint 1:
+
+| ID | Título | Endpoint(s) Relacionado(s) | Microservice / BC | Estado |
+|---|---|---|---|---|
+| US01 | Registro de usuario | `POST /api/v1/authentication/sign-up/athlete` <br> `POST /api/v1/authentication/sign-up/coach` | IAM | Implementado |
+| US02 | Inicio de sesión | `POST /api/v1/authentication/sign-in` | IAM | Implementado |
+| US04 | Cierre de sesión | `POST /api/v1/authentication/sign-out` | IAM | Implementado |
+| US11 | Subir video | `POST /api/v1/exercise-videos` | Video Management | Implementado |
+| US12 | Feedback IA | `POST /api/v1/exercise-videos/{videoId}/analyze` | Video Analysis | Implementado |
+| TS01 | Implementación de Middleware JWT | Middleware JWT / Spring Security | IAM | Implementado |
+| TS03 | Configuración de Endpoints Video | `POST /api/v1/exercise-videos` | Video Management | Implementado |
+
+---
+
+### 2. Catálogo de Endpoints y Contratos de Interfaz
+
+| Acción Implementada | Verbo HTTP | Endpoint | Parámetros | Response Esperado | Microservice |
 |---|---|---|---|---|---|
-| Registrar Atleta | **POST** | `/api/v1/authentication/sign-up/athlete` | Body (JSON) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
-| Iniciar sesión | **POST** | `/api/v1/authentication/sign-in` | Body (JSON) | `200 OK` | `http://localhost:8091/swagger-ui.html` |
-| Consultar video | **GET** | `/api/v1/exercise-videos/{videoId}` | Path Param | `200 OK` / `404 Not Found` | `http://localhost:8091/swagger-ui.html` |
-| Subir video | **POST** | `/api/v1/exercise-videos` | Form-Data (Multipart) | `201 Created` | `http://localhost:8091/swagger-ui.html` |
-| Eliminar video | **DELETE** | `/api/v1/exercise-videos/{videoId}` | Path Param | `204 No Content` | `http://localhost:8091/swagger-ui.html` |
+| Registro de atleta | POST | `/api/v1/authentication/sign-up/athlete` | Body (JSON) | `201 Created` | IAM |
+| Registro de coach | POST | `/api/v1/authentication/sign-up/coach` | Body (JSON) | `201 Created` | IAM |
+| Inicio de sesión | POST | `/api/v1/authentication/sign-in` | Body (JSON) | `200 OK` | IAM |
+| Cierre de sesión | POST | `/api/v1/authentication/sign-out` | Header JWT | `200 OK` | IAM |
+| Subida de video | POST | `/api/v1/exercise-videos` | Multipart/Form-Data | `201 Created` | Video Management |
+| Análisis de video con IA | POST | `/api/v1/exercise-videos/{videoId}/analyze` | Path Param | `200 OK` | Video Analysis |
 
 **3. Ejemplos de Request y Response (JSON)**
 Tal como se solicita en el criterio de evaluación, se presentan ejemplos completos y reales de las peticiones extraídas de la ejecución en Swagger para validar la estructura de datos en los diferentes métodos HTTP:
@@ -2138,7 +2243,9 @@ Capturas del Despliegue
 
 ##### 5.2.1.8	Kanban Board 
 
-
+<img src="assets/chapter5/kanban-sprint1.png" alt =""> 
+ 
+ Link: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 
 ## Conclusiones
 
