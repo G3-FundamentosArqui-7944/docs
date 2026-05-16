@@ -1740,17 +1740,16 @@ Las pruebas diseñadas se enfocaron principalmente en:
 - Procesamiento automático mediante IA.
 
 
-### Relación de Tests Diseñados
-
-| Test ID | User Story / Technical Story Relacionada | Tipo de Test | Descripción |
-|---|---|---|---|
-| TS-US01 | US01 - Registro de usuario | Acceptance Test | Validar registro exitoso de atletas y coaches |
-| TS-US02 | US02 - Inicio de sesión | Integration Test | Validar autenticación y generación de JWT |
-| TS-US04 | US04 - Cierre de sesión | Integration Test | Validar cierre de sesión y revocación de token |
-| TS-US11 | US11 - Subir video del ejercicio | Integration Test | Validar carga de videos mediante multipart/form-data |
-| TS-US12 | US12 - Feedback automático con IA | Acceptance Test | Validar procesamiento y análisis automático del ejercicio |
-| TS-TS01 | TS01 - Middleware JWT | Integration Test | Validar autorización mediante JWT |
-| TS-TS03 | TS03 - Endpoints Video | Integration Test | Validar disponibilidad y funcionamiento del endpoint de videos |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | 
+bfe1a9d | `test: add BDD feature for user registration` | Implementación del archivo `US01-Registro de usuario.feature` para validar el registro exitoso de atletas y coaches en el microservicio IAM. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for sign-in authentication` | Implementación del archivo `US02 - Inicio de sesión.feature` para validar autenticación y generación de JWT. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for sign-out process` | Implementación del archivo `US04-Cierre de sesión.feature` para validar revocación de tokens y cierre de sesión. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for exercise video upload` | Implementación del archivo `US11-Subir video del ejercicio.feature` para validar carga de videos mediante multipart/form-data. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for AI feedback processing` | Implementación del archivo `US12-Feedback automático con IA.feature` para validar el análisis automático de ejercicios mediante IA. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for JWT middleware validation` | Implementación del archivo `TS01-Middleware JWT.feature` para validar autorización y protección de endpoints mediante JWT. | 15/05/2026 |
+| G3-FundamentosArqui-7944/docs | feature/testing-suite-sprint-1 | bfe1a9d | `test: add BDD feature for video endpoints availability` | Implementación del archivo `TS03-Endpoints Video.feature` para validar disponibilidad y funcionamiento del microservicio de videos. | 15/05/2026 |
 
 ##### 5.2.1.4	Execution Evidence for Sprint Review
 Para este primer Sprint de BodyMatch AI, el equipo ejecutó el desarrollo en tres frentes paralelos: la publicación de la Landing Page institucional, el desarrollo del Frontend Mobile para los usuarios, y la implementación de la arquitectura backend (híbrida).
@@ -1945,7 +1944,9 @@ Capturas del Despliegue
 
 ##### 5.2.1.8	Kanban Board 
 
-
+<img src="assets/chapter5/kanban-sprint1.png" alt =""> 
+ 
+ Link: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 
 ## Conclusiones
 
