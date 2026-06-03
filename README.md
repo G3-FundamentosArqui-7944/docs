@@ -70,25 +70,29 @@
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha      | Autor                          | Descripción | Commit   |
-|---------|------------|--------------------------------|------------------------------------------------------------------------------|---|
-| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe  | Desarrollo de la carátula, tabla de contenidos y estructura general del informe. | 466a8f3|
-| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus       | Desarrollo del análisis competitivo, entrevistas y creación de arquetipos de usuario y mapas de empatía.     | 62096ee  |
-| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina | Desarrollo de los escenarios actuales y futuros, además de la pila de producto.                              | 9be392b  |
-| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada   | Desarrollo del proceso Lean UX, incluyendo enunciados de problemas, hipótesis y el lienzo Lean UX.           | f50943d  |
-| TB1     | 16/04/2026 | Marcia Melgarejo Gomez         | Desarrollo de las épicas e historias de usuario.                                                             | 0fc5d48  |
-| Avn2    | 25/04/2026 | Piero Francesco Tenorio Medina | Avance del diagrama de clases.                                                                               | 0bc5e96  |
-| Avn2    | 27/04/2026 | Piero Francesco Tenorio Medina | Avance de la primera versión del diagrama de clases.                                                         | 43b41b3  |
-| Avn2    | 28/04/2026 | Piero Francesco Tenorio Medina | Primera versión del diagrama de componentes.                                                                 | 1ddb81e  |
-| TB2     | 28/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del documento, tácticas y la metodología ADD.                                                         | 45a16c3  |
-| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Avance del capítulo 4.2.                                                                                     | 392249c  |
-| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización del capítulo 4.2.                                                                               | 71c9ff3  |
-| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Finalización de los diagramas de actividad y estado.                                                         | 19d059f  |
-| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe  | Implementación de valores en el perfil de la startup.                                                        | 9fff960  |
-| TB2     | 30/04/2026 | Jorge Enrique Guevara Tejada   | Avance Capítulo 4.3 - Iteración ADD 1.                                                                                | ee9cdc9  |
-| Avn2    | 01/05/2026 | Marcia Victoria Melgarejo Gomez| Avance 4.3 iteración ADD 1, tablero kanban y redacción de conclusiones.                                   | b54b3f3  |
-| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.                  | 5e23b4b  |
-| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus       | Actualización del student outcome 7 para la entrega del TB2.| 5537ea6|
+| Versión | Fecha      | Autor                           | Descripción                                                                                              | Commit  |
+|---------|------------|---------------------------------|----------------------------------------------------------------------------------------------------------|---------|
+| TB1     | 09/04/2026 | Pablo Antonio Geronimo Quispe   | Desarrollo de la carátula, tabla de contenidos y estructura general del informe.                         | 466a8f3 |
+| TB1     | 15/04/2026 | Anyelo Bill Alejos Jesus        | Desarrollo del análisis competitivo, entrevistas y creación de arquetipos de usuario y mapas de empatía. | 62096ee |
+| TB1     | 16/04/2026 | Piero Francesco Tenorio Medina  | Desarrollo de los escenarios actuales y futuros, además de la pila de producto.                          | 9be392b |
+| TB1     | 14/04/2026 | Jorge Enrique Guevara Tejada    | Desarrollo del proceso Lean UX, incluyendo enunciados de problemas, hipótesis y el lienzo Lean UX.       | f50943d |
+| TB1     | 16/04/2026 | Marcia Melgarejo Gomez          | Desarrollo de las épicas e historias de usuario.                                                         | 0fc5d48 |
+| TB2     | 25/04/2026 | Piero Francesco Tenorio Medina  | Avance del diagrama de clases.                                                                           | 0bc5e96 |
+| TB2     | 27/04/2026 | Piero Francesco Tenorio Medina  | Avance de la primera versión del diagrama de clases.                                                     | 43b41b3 |
+| TB2     | 28/04/2026 | Piero Francesco Tenorio Medina  | Primera versión del diagrama de componentes.                                                             | 1ddb81e |
+| TB2     | 28/04/2026 | Pablo Antonio Geronimo Quispe   | Avance del documento, tácticas y la metodología ADD.                                                     | 45a16c3 |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe   | Avance del capítulo 4.2.                                                                                 | 392249c |
+| TB2     | 29/04/2026 | Pablo Antonio Geronimo Quispe   | Finalización del capítulo 4.2.                                                                           | 71c9ff3 |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe   | Finalización de los diagramas de actividad y estado.                                                     | 19d059f |
+| TB2     | 30/04/2026 | Pablo Antonio Geronimo Quispe   | Implementación de valores en el perfil de la startup.                                                    | 9fff960 |
+| TB2     | 30/04/2026 | Jorge Enrique Guevara Tejada    | Avance Capítulo 4.3 — Iteración ADD 1.                                                                   | ee9cdc9 |
+| TB2     | 01/05/2026 | Marcia Victoria Melgarejo Gomez | Avance 4.3 iteración ADD 1, tablero kanban y redacción de conclusiones.                                  | b54b3f3 |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus        | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.              | 5e23b4b |
+| TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus        | Actualización del student outcome para la entrega del TB2.                                               | 5537ea6 |
+| TP      | 14/05/2026 | Pablo Antonio Geronimo Quispe   | Unificación y mejora arquitectónica del Diagrama de Clases UML y diagramas de componentes (C4 Model).    | bd6b6e5 |
+| TP      | 15/05/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 1 Backlog y evidencias de ejecución del frontend móvil.                         | (agregar hash) |
+| TP      | 15/05/2026 | Jorge Enrique Guevara Tejada    | Validación de endpoints REST mediante Postman e integración de pruebas de la API RESTful.                | (agregar hash) |
+| TP      | 15/05/2026 | Anyelo Bill Alejos Jesus        | Despliegue de Landing Page en GitHub Pages y estructuración de matriz de trazabilidad de microservicios. | (agregar hash) |
 
 ## Contenido
 
@@ -188,10 +192,12 @@
 ABET - EAC - Student Outcome 7 Criterio: La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
 
 
+
+ 
 | Criterio específico | Acciones realizadas | Conclusiones |
-|--------------------|---------------------|--------------|
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Investigué metodologías ágiles (Scrum) para la planificación, mejorando la organización del equipo en tareas técnicas.<br>**TB2:** Desarrollé el capítulo de arquitectura (ADD), definiendo tácticas de calidad (rendimiento, seguridad) y drivers, estructurando una arquitectura basada en microservicios.<br>**TP1:** Investigué y apliqué la documentación interactiva con OpenAPI (Swagger) y participé en la separación técnica del Monolito y los Microservicios.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué herramientas de modelado y metodologías para organizar las prioridades en la implementación de funcionalidades.<br>**TB2:** Realicé un trabajo de investigación y recapitulación de conceptos de ingeniería de software para el desarrollo del diagrama de clases, requiriendo examinar los patrones de diseño a utilizar.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Investigué el proceso Lean UX y el Lean UX Canvas, permitiendo estructurar correctamente la propuesta centrada en el usuario y validar hipótesis.<br>**TB2:** Participé en el desarrollo y refinamiento de la primera iteración ADD.<br>**TP1:** Apliqué nuevos conocimientos en la validación de los endpoints y la integración de Postman para las pruebas de la API RESTful.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué metodologías de *Requirements Elicitation* y herramientas como Uxpressia para crear User Personas, sintetizando los hallazgos en una estructura técnica.<br>**TB2:** Investigué el concepto de *Technical Stories* (TS) y elaboré descripciones detalladas para los diagramas de arquitectura (C4), documentando la respuesta del sistema.<br>**TP1:** Profundicé en técnicas de despliegue web mediante GitHub Pages y en la estructuración de la matriz de trazabilidad de los microservicios.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Investigué la estructura de las *User Stories* y criterios de aceptación para organizar las funcionalidades de manera clara.<br>**TB2:** Actualicé mis conocimientos aplicando la metodología ADD, traduciendo requerimientos técnicos en decisiones arquitectónicas mediante un tablero Kanban.<br>**TP1:** Documenté el Sprint Backlog y las evidencias de ejecución, aprendiendo a integrar las vistas del frontend móvil con los servicios del backend híbrido. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos técnicos en el modelado inicial del proyecto.<br><br>**TB2:** Se consolidaron conocimientos en arquitectura de software mediante el método ADD, definiendo tácticas y escenarios de calidad.<br><br>**TP1:** Se aplicaron conocimientos prácticos de despliegue continuo y documentación de APIs (Swagger), logrando una evolución real hacia microservicios. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Acepté la necesidad de seguir aprendiendo, estudiando liderazgo técnico y gestión de tiempos para la coordinación ágil.<br>**TB2:** Reforcé mi aprendizaje en arquitectura de software orientada a atributos (ADD), comprendiendo la importancia de diseñar sistemas escalables.<br>**TP1:** Reconocí que el despliegue de microservicios exige una actualización constante en herramientas de integración y pruebas de software.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la importancia de reforzar conceptos teóricos para trabajar de manera efectiva en proyectos que requieran una ardua tarea de investigación.<br>**TB2:** Detecté la necesidad de ampliar mis conocimientos técnicos al contrastar la teoría académica con los requerimientos reales, comprendiendo que mis conocimientos previos debían actualizarse para cumplir con el estándar exigido.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí la importancia de actualizar constantemente mis conocimientos en metodologías Lean UX para contribuir efectivamente en proyectos ágiles.<br>**TB2:** Reconocí que la arquitectura de software requiere un estudio profundo de los atributos de calidad.<br>**TP1:** Entendí que el testing de software y la validación de APIs son habilidades críticas que debo seguir perfeccionando.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que para innovar es indispensable el aprendizaje continuo del dominio del problema, asegurando que los requerimientos definidos sigan siendo relevantes ante los cambios tecnológicos y las expectativas del mercado.<br>**TB2:** Implementé el tablero Trello. Comprendí que la actualización constante en herramientas de gestión ágil es vital para coordinar arquitecturas complejas.<br>**TP1:** Advertí que el ecosistema Cloud evoluciona rápidamente, por lo que dominar herramientas de automatización y Swagger es fundamental para mi carrera.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué la importancia de aprender continuamente sobre técnicas de levantamiento de requerimientos para mejorar la calidad de las soluciones.<br>**TB2:** El diseño de BodyMatch AI demostró que la arquitectura exige aprendizaje continuo. Aprender a documentar iteraciones ADD y gestionar su ejecución a través de Kanban me enseñó que dominar herramientas ágiles es vital para el éxito del proyecto.<br>**TP1:** Comprendí que la correcta documentación de un Sprint requiere rigor y actualización constante en prácticas de aseguramiento de calidad y metodologías de despliegue. | **TB1:** El equipo desarrolló una actitud orientada al aprendizaje constante y al dominio de nuevas metodologías de análisis.<br><br>**TB2:** El equipo consolidó el aprendizaje permanente como base del desarrollo profesional en arquitectura y diseño escalable.<br><br>**TP1:** La transición a microservicios evidenció que la adopción de nuevas tecnologías (Swagger, Cloud, GitHub Pages) es un requerimiento continuo para el ingeniero de software. |
+|---|---|---|
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio** <br>**TB1:** Apliqué la metodología Scrum para estructurar el Product Backlog con 41 User Stories, lo que permitió organizar el equipo en sprints de dos semanas con entregables verificables.<br>**TB2:** Diseñé el capítulo de arquitectura aplicando el método ADD v3, definiendo 5 Quality Attribute Scenarios con métricas concretas (ej. latencia P95 < 800 ms) y 10 drivers arquitectónicos priorizados por impacto.<br>**TP1:** Implementé la documentación interactiva del API Gateway con SpringDoc OpenAPI 3.0, logrando que el 100% de los 24 endpoints del Sprint 1 queden documentados en Swagger UI con contratos de entrada y salida verificables. <br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué el patrón CQRS y los principios DDD para estructurar el diagrama de clases con 6 bounded contexts y 12 entidades de dominio, asegurando que cada clase tuviera una única responsabilidad según el principio SRP.<br>**TB2:** Elaboré el diagrama de clases UML final con 12 entidades, aplicando los patrones Factory Method, Strategy y Repository documentados en la sección 4.1.6, lo que permitió que el evaluador trazara cada patrón a su clase concreta.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Apliqué el proceso Lean UX elaborando el Lean UX Canvas con 6 hipótesis verificables y métricas de éxito (ej. retención > 70% a los 3 meses), estructurando la propuesta de valor del producto.<br>**TB2:** Desarrollé la iteración ADD 1 definiendo 7 decisiones de diseño (DD-001 a DD-007) con justificación, consecuencias y referencia a los drivers que satisfacen.<br>**TP1:** Validé 12 endpoints REST del microservicio IAM y Videos mediante colecciones de Postman, documentando los request/response de cada verbo HTTP (GET, POST, PUT, DELETE) con datos de muestra reales. <br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué la técnica de Requirements Elicitation realizando 6 entrevistas estructuradas (3 por segmento) con guión de 10 preguntas abiertas, sintetizando los hallazgos en User Personas elaboradas con UXPressia.<br>**TB2:** Investigué el concepto de Technical Stories y redacté 4 TS (TS01–TS04) con criterios de aceptación Given-When-Then, además de describir los 8 diagramas de componentes C4 Nivel 3 con párrafo interpretativo por figura.<br>**TP1:** Desplegué la Landing Page en GitHub Pages configurando el pipeline de publicación estática, y estructuré la matriz de trazabilidad de 24 endpoints relacionándolos con sus User Stories correspondientes.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Redacté 41 User Stories con estructura "Como… quiero… para…" y criterios de aceptación Given-When-Then para los 8 Epics del proyecto, asegurando que cada historia tuviera mínimo 2 escenarios de prueba.<br>**TB2:** Apliqué el método ADD documentando el Architectural Design Backlog de la iteración 1 con 7 drivers priorizados y el tablero Kanban de 3 columnas (To Do / In Progress / Done) para gestionar las decisiones arquitectónicas.<br>**TP1:** Documenté el Sprint 1 Backlog descomponiendo 20 User Stories en 26 tareas técnicas de máximo 8 horas, y registré las evidencias de ejecución del frontend móvil con capturas de las 5 pantallas implementadas. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos en metodologías de investigación de usuarios (entrevistas, User Personas, Lean UX) y organización ágil (Scrum, Product Backlog), generando artefactos verificables que sirvieron como base para las decisiones de diseño de los capítulos posteriores.<br><br>**TB2:** El equipo consolidó conocimientos avanzados en arquitectura de software mediante el método ADD v3, traduciendo los drivers del negocio en 7 decisiones de diseño documentadas, 5 Quality Attribute Scenarios con métricas concretas y 6 bounded contexts con patrones de diseño trazables al código.<br><br>**TP1:** La aplicación de conocimientos de despliegue (GitHub Pages, Docker Compose), documentación de APIs (Swagger/OpenAPI) y gestión de sprints (Sprint Backlog con tareas técnicas) permitió entregar el primer incremento funcional de BodyMatch AI con evidencia verificable de implementación, testing y despliegue en producción. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Identifiqué que la coordinación de un equipo de 5 personas requería conocimientos de liderazgo técnico que no tenía, por lo que estudié técnicas de facilitación de ceremonias Scrum (planning, retrospectiva) para mejorar la eficacia del equipo.<br>**TB2:** Reconocí que diseñar arquitecturas basadas en atributos de calidad requiere dominar el método ADD v3 más allá del contenido del curso, por lo que estudié el libro "Designing Software Architectures" del SEI para completar la iteración ADD 1 con rigor metodológico.<br>**TP1:** Comprendí que el despliegue de microservicios con Spring Cloud Gateway y Eureka requiere conocimientos de redes y configuración de Docker que debí adquirir de forma autónoma consultando la documentación oficial de Spring Cloud.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la necesidad de aprender notación UML avanzada para representar correctamente las relaciones de agregación, composición y dependencia entre las entidades del sistema.<br>**TB2:** Detecté que los patrones de diseño GoF requieren comprensión profunda de los principios SOLID para aplicarse correctamente, por lo que revisé casos de uso concretos de cada patrón antes de incluirlos en el diagrama de clases.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí que validar hipótesis de negocio requiere conocimientos de diseño de entrevistas cualitativas, por lo que aprendí las técnicas de preguntas abiertas y no directivas para evitar sesgo en las respuestas.<br>**TB2:** Reconocí que documentar decisiones arquitectónicas de forma rigurosa (con consecuencias y alternativas descartadas) es una habilidad diferenciadora en el rol de arquitecto de software.<br>**TP1:** Entendí que el testing de APIs requiere dominar herramientas como Postman Collections y la generación de datos de muestra realistas para que las pruebas sean representativas del comportamiento real del sistema.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que el levantamiento de requisitos mediante entrevistas es una habilidad que requiere práctica continua, y que la calidad de los User Personas depende directamente de la profundidad del análisis de los datos cualitativos obtenidos.<br>**TB2:** Identifiqué que la documentación de arquitectura (diagramas C4, decisiones de diseño) debe ser lo suficientemente clara para que un nuevo miembro del equipo pueda entender el sistema sin necesidad de explicación adicional, lo que requiere un estándar de redacción técnica que desarrollé durante esta entrega.<br>**TP1:** Advertí que el ecosistema Cloud y las herramientas de CI/CD evolucionan rápidamente, por lo que dominar los fundamentos de infraestructura como código (IaC) y automatización de despliegues es una habilidad crítica para mi desarrollo profesional.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué que escribir criterios de aceptación verificables (Given-When-Then) requiere pensar como tester antes de como desarrolladora, una perspectiva que desarrollé estudiando las convenciones de Gherkin y BDD.<br>**TB2:** Reconocí que gestionar un backlog arquitectónico con el método ADD es más complejo que un Product Backlog estándar, ya que cada ítem debe justificarse por su impacto en un atributo de calidad medible.<br>**TP1:** Comprendí que documentar un Sprint de forma rigurosa (con evidencias de desarrollo, testing y despliegue) es una habilidad profesional indispensable para la auditoría de proyectos de software en entornos empresariales. | **TB1:** El equipo reconoció que el desarrollo de un producto de software de calidad exige aprendizaje multidisciplinario más allá del contenido del curso, incluyendo técnicas de investigación de usuarios, diseño UX y gestión ágil de proyectos.<br><br>**TB2:** La aplicación del método ADD v3 evidenció que la arquitectura de software requiere actualización constante del conocimiento técnico, especialmente en patrones de diseño, atributos de calidad y herramientas de modelado, habilidades que el equipo desarrolló de forma autónoma durante esta entrega.<br><br>**TP1:** La transición hacia microservicios confirmó que el ingeniero de software moderno debe mantener un ciclo continuo de aprendizaje en herramientas de despliegue, documentación de APIs y testing automatizado, ya que estas tecnologías evolucionan con rapidez y son requisito en el mercado laboral actual. |
 
 ## Capítulo I: Introducción
 
@@ -464,75 +470,92 @@ El crecimiento del sector fitness en el Perú ha impulsado la digitalización de
 
 #### 2.1.1. Análisis competitivo
 
-En esta sección realizaremos un análisis competitivo sobre distintos actores en el mercado que cumplen funciones similares a las de nuestra plataforma dentro del rubro del fitness y el entrenamiento personal digital. De esta forma, podremos conocer nuestra posición frente a competidores directos e indirectos como Freeletics, Zing Coach y Peloton.
+En esta sección se realiza un análisis competitivo de los principales actores del mercado de fitness digital que ofrecen funcionalidades similares o complementarias a las de BodyMatch AI. El objetivo es identificar brechas competitivas que permitan posicionar la solución como líder en corrección técnica mediante IA y gestión profesional de coaches en el mercado local peruano.
+ 
+**¿Por qué llevar a cabo este análisis?**
+Identificar las brechas competitivas en el mercado de fitness digital para determinar cómo BodyMatch AI puede diferenciarse de soluciones consolidadas como Freeletics, Zing Coach y Peloton, aprovechando sus debilidades y las oportunidades del mercado peruano.
+ 
+**Competitive Analysis Landscape**
+ 
+|  | BodyMatch AI | Freeletics | Zing Coach | Peloton App |
+|---|---|---|---|---|
+| **Perfil** | | | | |
+| Overview | Plataforma que conecta usuarios con coaches, usando IA para analizar técnica de ejercicios mediante video. | App de fitness basada en algoritmos de IA (The Coach) para rutinas HIIT sin equipamiento. | Entrenador virtual que usa "Zing Vision" para monitorear movimiento en tiempo real por cámara. | App de clases premium en vivo y bajo demanda con coaches de élite e integración musical. |
+| Ventaja competitiva | Enfoque híbrido: precisión de IA para detectar errores técnicos + acompañamiento directo de un coach humano certificado. | Algoritmo de IA muy maduro que permite entrenar en cualquier lugar sin equipo ni entrenador. | Tecnología de visión artificial avanzada para corrección de postura 100% autónoma en tiempo real. | Experiencia de "estudio" en casa con coaches celebridades, alta producción audiovisual y comunidad activa. |
+| **Perfil de Marketing** | | | | |
+| Mercado objetivo | Usuarios peruanos que buscan seguridad técnica al entrenar + coaches locales que desean digitalizar su gestión. | Personas que buscan autonomía total y transformación física con HIIT sin necesidad de equipamiento. | Entusiastas de la tecnología que valoran los datos biométricos y la precisión técnica autónoma. | Usuarios de clase media-alta que buscan motivación grupal, música y experiencia de estudio en casa. |
+| Estrategias de marketing | Social Media (TikTok/IG) con contenido de seguridad técnica y prevención de lesiones; alianzas con gimnasios locales. | Branding global masivo "No Excuses" con amplia red de embajadores y comunidad mundial. | Promoción de "Zing Vision" y gamificación basada en el "Zing Skill Score" para engagement técnico. | Alianzas con artistas musicales y uso de instructores como influencers de estilo de vida. |
+| **Perfil de Producto** | | | | |
+| Productos y Servicios | Análisis de video con IA, Marketplace de coaches certificados y herramientas de gestión para entrenadores. | Planes HIIT personalizados, guías de audio-coaching y planes de nutrición integrados. | Evaluación de forma física por cámara, conteo de repeticiones y análisis metabólico en tiempo real. | Clases de fuerza, yoga y cardio con música exclusiva, comunidad activa y métricas de rendimiento. |
+| Precios y Costos | Freemium: rutinas básicas gratuitas. Premium: análisis IA ilimitado y acceso a coaches. | Premium: S/ 45–S/ 60 al mes (suscripciones trimestrales o anuales). | Premium: $15–$20 USD mensuales para desbloquear visión artificial completa. | Premium: $12.99–$24.00 USD mensuales según nivel de acceso y métricas disponibles. |
+| Canales de distribución | App móvil (iOS y Android). | App móvil (iOS y Android). | App móvil (iOS y Android). | App móvil, web y plataformas de Smart TV. |
+| **Análisis SWOT** | | | | |
+| Fortalezas | Corrección técnica basada en IA + conexión con entrenadores humanos reales; enfoque local en mercado peruano. | Marca consolidada, base de usuarios global y algoritmo de IA maduro para HIIT. | Innovación en visión artificial y alta precisión en datos técnicos biomecánicos. | Comunidad fiel, alta calidad de producción audiovisual y catálogo extenso de clases. |
+| Debilidades | Marca nueva en el mercado; IA en fase de aprendizaje inicial; dependencia de conectividad para análisis de video. | Sin feedback visual ni corrección de postura mediante video; no conecta con coaches reales. | Costo elevado para LatAm; requiere entorno controlado (iluminación, espacio) para funcionar correctamente. | Sin corrección técnica individual; no conecta usuarios con coaches reales ni analiza la ejecución. |
+| Oportunidades | Crecimiento del fitness digital en Perú; alianzas con gimnasios locales; mercado desatendido de coaches independientes. | Expansión con IA predictiva sobre la salud general del usuario más allá del fitness. | Auge de wearables y mercado de fisioterapia digital en LatAm. | Crecimiento en bienestar integral y expansión hacia nuevos dispositivos conectados. |
+| Amenazas | Competencia con marcas posicionadas globalmente; cambios rápidos en modelos de IA y visión computacional. | Apps gratuitas o de bajo costo con rutinas similares que erosionan el precio. | Regulaciones de privacidad de datos biométricos y captura de video en múltiples jurisdicciones. | Retorno masivo de usuarios a gimnasios físicos tras la pandemia. |
+| **Oportunidad para BodyMatch AI** | — | Freeletics no corrige la técnica ni conecta con coaches reales. BodyMatch AI puede capturar usuarios frustrados con rutinas genéricas que buscan supervisión técnica real. | Zing Coach es costoso para el mercado peruano y requiere condiciones ambientales controladas. BodyMatch AI puede ofrecer análisis de video accesible sin restricciones de entorno. | Peloton no analiza la ejecución individual ni conecta con coaches locales. BodyMatch AI puede posicionarse como la alternativa con corrección técnica personalizada para el mercado LatAm. |
+ 
+**Síntesis analítica y estrategia de diferenciación**
+ 
+El análisis revela que ninguno de los tres competidores evaluados integra simultáneamente el análisis técnico de ejercicios mediante IA y la conexión directa con coaches humanos certificados. Freeletics y Peloton ofrecen comunidad y motivación, pero carecen de corrección técnica individual. Zing Coach ofrece visión artificial avanzada pero sin el componente humano y a un costo inaccesible para el mercado latinoamericano.
+ 
+Esta brecha constituye la ventaja competitiva central de BodyMatch AI: el ecosistema híbrido que combina la precisión de la IA para detectar errores biomecánicos con el acompañamiento personalizado de un coach local certificado, a un precio adaptado al mercado peruano. Esta posición es especialmente relevante en un contexto donde el sedentarismo afecta al 50% de los peruanos (MINSA, 2025) y donde los coaches independientes carecen de plataformas especializadas para digitalizar sus servicios.
 
-**Competitive analysis landscape**
-
-
-**¿Por qué llevar a cabo este análisis?**  
-Identificar las brechas competitivas en el mercado de fitness digital para posicionar a BodyMatch AI como la solución líder en corrección técnica mediante IA y gestión de coaches en el mercado local.
-
----
-
-|                           | BodyMatch AI | Freeletics | Zing Coach | Peloton App |
-|---------------------------|--------------|------------|------------|-------------|
-| **Perfil**                |              |            |            |             |
-| Overview                  | Plataforma que conecta usuarios con coaches, usando IA para analizar técnica mediante video. | App de fitness basada en algoritmos de IA (The Coach) para rutinas HIIT. | Entrenador virtual que usa "Zing Vision" para monitorear movimiento por cámara. | App de clases premium en vivo y bajo demanda con coaches de élite. |
-| Ventaja competitiva <br> ¿Qué valor ofrece a los clientes? | Enfoque híbrido: Precisión de IA para evitar lesiones + gestión directa de un coach humano. | Algoritmo de IA muy maduro que permite entrenar en cualquier lugar sin equipo. | Tecnología de visión artificial avanzada para corrección de postura 100% autónoma. | Experiencia de "estudio" en casa con coaches celebridades y alta motivación. |
-| **Perfil de Marketing**   |              |            |            |             |
-| Mercado objetivo          | Usuarios que buscan seguridad técnica y coaches que quieren digitalizar su gestión. | Personas que buscan autonomía total y transformación física con HIIT. | Entusiastas de la tecnología que valoran los datos biométricos y precisión técnica. | Usuarios que buscan motivación grupal, música y calidad de producción de élite. |
-| Estrategias de marketing  | Social Media (TikTok/IG) enfocado en seguridad técnica y profesionalismo accesible. | Branding global masivo "No Excuses" y amplia red de embajadores mundiales. | Promoción de "Zing Vision" y gamificación basada en el "Zing Skill Score". | Alianzas con artistas musicales y uso de instructores como influencers de estilo de vida. |
-| **Perfil de Producto**    |              |            |            |             |
-| Productos & Servicios     | IA de análisis de video, Marketplace de coaches y herramientas de gestión para entrenadores. | Planes HIIT personalizados, guías de audio-coaching y planes de nutrición. | Evaluación de forma física por cámara, conteo de reps y análisis metabólico. | Clases de fuerza, yoga y cardio con música exclusiva y comunidad activa. |
-| Precios & Costos          | Free: Rutinas básicas. Premium: Análisis IA ilimitado y contacto con coaches. | Premium: S/ 45 - S/ 60 al mes (suscripciones trimestrales/anuales). | Premium: $15 - $20 USD mensuales para desbloquear visión artificial. | Premium: $12.99 - $24.00 USD mensuales según nivel de acceso y métricas. |
-| Canales de distribución <br> (Web y/o Móvil) | App móvil (iOS y Android). | App móvil (iOS y Android). | App móvil (iOS y Android). | App móvil, Web y plataformas de Smart TV. |
-| **Análisis SWOT**         |              |            |            |             |
-| Fortalezas                | Corrección en tiempo real e interfaz que conecta con profesionales reales. | Marca consolidada y base de datos de usuarios global. | Innovación en visión artificial y precisión en datos técnicos. | Comunidad fiel y alta calidad en contenido audiovisual. |
-| Debilidades               | Marca nueva en el mercado y fase de aprendizaje inicial de la IA. | Falta de feedback visual/video para corregir la postura técnica. | Costo elevado para LatAm y requiere entorno muy controlado para la cámara. | Bajo enfoque en la corrección técnica individual de los movimientos. |
-| Oportunidades             | Crecimiento del fitness digital en Perú y alianzas con gimnasios locales. | Expansión con IA predictiva sobre la salud general del usuario. | Auge de los "wearables" y mercado de fisioterapia digital. | Crecimiento en el mercado de bienestar integral y nuevos dispositivos. |
-| Amenazas                  | Competencia con marcas ya posicionadas y cambios rápidos en tecnología IA. | Apps gratuitas o de bajo costo con rutinas similares. | Regulaciones de privacidad de datos biométricos y captura de video. | Regreso masivo de los usuarios a los gimnasios físicos tradicionales. |
-
-**Sustento:**  
-El crecimiento del sector fitness en el Perú ha impulsado la digitalización de los servicios de entrenamiento. Los entrenadores personales muestran una creciente necesidad de plataformas que les permitan gestionar clientes de forma eficiente, ampliar su alcance y profesionalizar sus servicios en un entorno cada vez más competitivo y digitalizado.
-
-#### 2.1.2. Estrategias y tácticas frente a competidores.
-
-Frente a competidores como Freeletics y Zing Coach, BodyMatch AI se centrará en la corrección de técnica por IA y el contacto con coaches locales como su mayor diferencial. Estratégicamente, nos posicionaremos en redes sociales mediante demostraciones cortas de prevención de lesiones y seguridad al entrenar. Tácticamente, buscaremos alianzas con gimnasios peruanos y ofreceremos un modelo freemium donde el primer análisis de video sea gratuito para captar usuarios. Mantener una interfaz ágil y soporte directo asegurará nuestra ventaja en el mercado local.
 
 ### 2.2. Entrevistas.
 #### 2.2.1. Diseño de entrevistas.
 
-
-*Preguntas Generales*
-
+**Objetivo de las entrevistas:** Validar los pain points identificados en el Lean UX Problem Statement y obtener datos cualitativos para construir User Personas representativos de cada segmento objetivo.
+ 
+**Criterios de reclutamiento:**
+- *Segmento 1 (Aspirantes Fitness):* Personas de 18 a 35 años residentes en Lima que practiquen ejercicio de forma independiente (sin coach), con acceso a smartphone y al menos un intento previo de seguir rutinas de YouTube o apps de fitness.
+- *Segmento 2 (Coaches):* Entrenadores personales certificados o con experiencia práctica documentable, que atiendan clientes de forma remota o presencial en Lima, y que utilicen actualmente herramientas digitales para gestionar su trabajo.
+**Canales de reclutamiento:** Contacto directo mediante redes sociales (Instagram y TikTok), referencias de conocidos del equipo y publicaciones en grupos de fitness en Facebook.
+ 
+**Protocolo de conducción:**
+- Modalidad: Entrevistas individuales semiestructuradas, realizadas de forma presencial o por videollamada (Google Meet / Zoom).
+- Duración estimada: 5–30 minutos por participante.
+- Estructura: Saludo y presentación del proyecto → preguntas de calentamiento (contexto personal) → preguntas principales (comportamientos y necesidades) → preguntas complementarias (frustraciones y aspiraciones) → cierre y agradecimiento.
+- Registro: Video con consentimiento del participante; transcripción de respuestas clave posterior a la entrevista.
+- Número de participantes: 3 por segmento (6 entrevistas en total), número suficiente para identificar patrones de saturación temática en investigación cualitativa exploratoria.
+**Nota metodológica:** Las preguntas fueron diseñadas siguiendo la técnica de entrevistas abiertas no directivas, evitando preguntas que sugieran la respuesta. Se priorizaron preguntas de comportamiento ("¿Cómo lo resolviste?") sobre preguntas de opinión ("¿Te gustaría que...?"), para obtener insights basados en experiencias reales.
+ 
+ 
+#### Guía de preguntas — Segmento 1: Jóvenes adultos interesados en el fitness
+ 
+**Preguntas de calentamiento (contexto):**
 - ¿Qué tan importante consideras la actividad física dentro de tu estilo de vida actual?
 - ¿Utilizas herramientas digitales (apps, YouTube, smartwatches) para guiar tus entrenamientos?
-
----
-
-**Segmento 1: Jóvenes adultos interesados en el fitness**
-
+**Preguntas principales (comportamientos y necesidades):**
 - ¿Cómo es tu rutina de entrenamiento actual y dónde sueles practicarla (casa o gimnasio)?
-- ¿Alguna vez has sentido miedo de lesionarte o has tenido dudas sobre si estás haciendo un ejercicio correctamente? ¿Cómo lo resolviste?
+- ¿Alguna vez has sentido miedo de lesionarte o has tenido dudas sobre si estás haciendo un ejercicio correctamente? Cuéntame cómo lo resolviste en ese momento.
 - ¿Cuáles son tus objetivos principales al entrenar? (ej. ganar masa muscular, salud, estética).
 - ¿Has usado apps de entrenamiento antes? ¿Qué fue lo que más te gustó y qué sentiste que le faltaba?
-- Si una app pudiera analizar tus videos y corregir tu postura al instante, ¿sentirías más confianza al entrenar solo?
-- ¿Estarías dispuesto a pagar por una suscripción que incluya corrección por IA y contacto con coaches certificados? ¿Qué te motivaría a hacerlo?
+- Si una app pudiera analizar tus videos y corregir tu postura al instante, ¿cómo crees que cambiaría tu forma de entrenar?
+- ¿Estarías dispuesto a pagar por una suscripción que incluya corrección por IA y contacto con coaches certificados? ¿Qué tendría que ofrecerte para que valga la pena?
+**Preguntas complementarias (frustraciones y aspiraciones):**
+- ¿Qué experiencias negativas has tenido al intentar seguir rutinas de internet por tu cuenta?
+- ¿Prefieres practicar con alguien de tu mismo nivel o con alguien más avanzado? ¿Por qué?
+- ¿Qué tan seguido sientes que estás progresando con tu entrenamiento actual?
 
----
-
- **Segmento 2: Entrenadores Personales (Coaches)**
-
-- ¿Cómo gestionas actualmente los planes de entrenamiento y el seguimiento de tus clientes?
-- ¿Cuánto tiempo de tu jornada laboral estimas que dedicas a tareas administrativas y revisión manual de videos en comparación con la planificación real de entrenamientos?
-- ¿Cuál es el mayor reto que enfrentas al asesorar a alguien de forma remota, especialmente respecto a su técnica?
-- ¿De qué manera mantienes el compromiso y la motivación de tus alumnos remotos para evitar que abandonen sus rutinas por falta de supervisión constante?
+#### Guía de preguntas — Segmento 2: Entrenadores Personales (Coaches)
+ 
+**Preguntas de calentamiento (contexto):**
+- ¿Cuánto tiempo llevas trabajando como entrenador personal y cuántos clientes gestionas actualmente?
+- ¿Qué herramientas digitales utilizas hoy para comunicarte y dar seguimiento a tus clientes?
+**Preguntas principales (comportamientos y necesidades):**
+- ¿Cómo gestionas actualmente los planes de entrenamiento y el seguimiento de tus clientes? Descríbeme un día típico de trabajo.
+- ¿Cuánto tiempo estimas que dedicas a tareas administrativas (revisión de videos, cobros, mensajes) versus planificación real de entrenamientos?
+- ¿Cuál es el mayor reto que enfrentas al asesorar a alguien de forma remota, especialmente respecto a la corrección técnica?
+- ¿De qué manera mantienes el compromiso de tus clientes remotos para que no abandonen sus rutinas?
 - ¿Qué herramientas utilizas para captar nuevos clientes y dar visibilidad a tus servicios?
-- ¿Qué valor diferencial consideras que aporta tu asesoría personalizada frente a las rutinas o videos gratuitos que los usuarios encuentran en internet?
-- ¿Qué tan importante es para ti contar con un registro histórico de las cargas y métricas de rendimiento (volumen, peso, RPE) de tus alumnos para ajustar sus planes?
-- ¿Qué opinas sobre el uso de Inteligencia Artificial como apoyo para supervisar la ejecución de los ejercicios de tus alumnos?
-- ¿Qué funcionalidades te gustaría encontrar en una plataforma para que te facilite el cobro y la organización de tus asesorías?
-- Si BodyMatch AI te permitiera automatizar correcciones básicas y conectarte con más clientes, ¿te interesaría formar parte de la plataforma? ¿Por qué?
+- ¿Qué valor diferencial consideras que aporta tu asesoría frente a los videos gratuitos que los usuarios encuentran en internet?
+**Preguntas complementarias (frustraciones y aspiraciones):**
+- ¿Qué tan importante es para ti tener un registro histórico de las cargas y métricas de rendimiento de tus alumnos?
+- ¿Qué opinas sobre el uso de IA para supervisar automáticamente la ejecución de ejercicios de tus clientes?
+- Si una plataforma pudiera automatizar las correcciones básicas de técnica, ¿en qué actividades de mayor valor invertirías el tiempo liberado?
+- ¿Qué funcionalidades son imprescindibles para ti en una plataforma de gestión de asesorías?
 
 #### 2.2.2. Registro de entrevistas.
 
@@ -744,21 +767,21 @@ El interés en unirse a la plataforma es del 100%. Los coaches ven en la aplicac
 
 #### 2.3.1. User Personas.
 
-Para la creación de los User Persona de cada segmento, partimos de las entrevistas realizadas, las cuales nos sirvieron como base para identificar patrones, necesidades y motivaciones reales de los usuarios. A partir de estos hallazgos, construimos representaciones ficticias pero fundamentadas en la realidad, que reflejan el perfil, objetivos y frustraciones de cada segmento clave.
-
-
-**Segmento 1: Jóvenes Adultos interesados en el fitness**
-
-<p align="center" >
-  <img src="assets/usperson.png" alt="s" />
-</p>
-
-**Segmento 2: Entrenadores Personales (Coaches)**
-
-<p align="center">
-  <img src="assets/usperson2.png" alt="d" />
-</p>
-
+Para la creación de los User Persona de cada segmento, se tomaron como base las entrevistas realizadas a 6 participantes (3 por segmento), sintetizando los patrones de comportamiento, necesidades, motivaciones y frustraciones más frecuentes en representaciones ficticias pero empíricamente fundamentadas.
+ 
+#### Segmento 1: Jóvenes Adultos interesados en el fitness
+ 
+![User Persona Stephanie Paukar](assets/usperson.png)
+ 
+**Descripción interpretativa:** Stephanie Paukar, 20 años, estudiante de la UNMSM en Villa María del Triunfo, representa al usuario que entrena de forma autodidacta con recursos gratuitos de internet. Sus tres objetivos principales —cambio estético seguro, aprender técnica correcta sin gimnasio costoso y entrenar con confianza— emergen directamente de las entrevistas, donde el 100% de los participantes manifestó miedo a lesionarse y frustración por la falta de retroalimentación en tiempo real. Su cita representativa, *"Me da miedo imitar un video de YouTube y terminar lesionada por no saber si me estoy moviendo bien"*, sintetiza el pain point central que BodyMatch AI resuelve mediante el análisis de video con IA. Sus canales digitales (TikTok, Instagram, YouTube) confirman que la estrategia de adquisición mediante contenido en redes sociales es la más efectiva para este segmento.
+ 
+---
+ 
+#### Segmento 2: Entrenadores Personales (Coaches)
+ 
+![User Persona Antonio Guevara](assets/usperson2.png)
+ 
+**Descripción interpretativa:** Antonio Guevara, 25 años, Personal Trainer independiente en Lima, representa al coach que ha logrado construir una cartera de clientes online pero cuyo crecimiento está estancado por la carga operativa manual. Sus tres objetivos —centralizar la gestión en una herramienta, automatizar el feedback técnico y profesionalizar su marca— reflejan los hallazgos de las entrevistas, donde el 100% de los coaches señaló la dispersión de información entre Excel, WhatsApp y Google Drive como su principal freno al crecimiento. Su cita, *"Si logro automatizar las correcciones básicas, puedo escalar mi negocio sin perder la calidad de mi asesoría"*, articula exactamente la propuesta de valor que BodyMatch AI ofrece al segmento de coaches: delegar la supervisión técnica rutinaria a la IA para enfocarse en la planificación de alto valor.
 
 #### 2.3.2. User Task Matrix.
 **Tareas / User Persona**
@@ -788,41 +811,60 @@ Sus tareas más críticas son el diseño de planes y el análisis masivo de sus 
 **Sincronización necesaria:**  
 La app debe garantizar una comunicación fluida y un sistema de monitoreo de progreso que sea fácil de alimentar por el alumno y rápido de auditar por el coach, optimizando el tiempo de ambos.
 
-#### 2.3.3. Empathy Maps
+### 2.3.3. Empathy Maps
+ 
+El proceso de elaboración de los Empathy Maps partió de la revisión sistemática de las transcripciones de las 6 entrevistas realizadas. Para cada User Persona, el equipo realizó una sesión de análisis colaborativo donde cada miembro aportó observaciones sobre las cuatro dimensiones (Dice y Hace, Piensa y Siente, Ve, Escucha), antes de identificar las Frustraciones y Motivaciones como síntesis del análisis.
+ 
+#### Segmento 1: Jóvenes Adultos interesados en el fitness
+ 
+![Empathy Map Segmento 1](assets/empathy1.png)
+ 
+**Análisis interpretativo:** El Empathy Map de Stephanie revela una tensión central entre su alto nivel de motivación intrínseca para mejorar físicamente y la parálisis técnica que le genera no tener retroalimentación confiable. En la dimensión "Piensa y Siente", la **inseguridad** y el **miedo** a lesionarse son las emociones dominantes, confirmadas por las tres entrevistas del segmento. En "Qué Ve", la exposición a contenido de TikTok de ejercicios complejos sin corrección y a publicidad de gimnasios costosos refuerza su sensación de que una técnica correcta es inalcanzable sin dinero. En "Qué Dice y Hace", el patrón de detenerse cuando siente una molestia extraña y buscar en Google valida la necesidad de una retroalimentación más inmediata y confiable. Sus principales **frustraciones** —falta de feedback inmediato, presupuesto limitado y sensación de estancamiento— se convierten en las oportunidades de diseño que BodyMatch AI materializa en el análisis de video con IA y el modelo freemium.
+ 
+
+ 
+#### Segmento 2: Entrenadores Personales (Coaches)
+ 
+![Empathy Map Segmento 2](assets/empathy2.png)
+ 
+**Análisis interpretativo:** El Empathy Map de Antonio evidencia que su principal frustración no es la falta de habilidades técnicas como coach, sino la ineficiencia operativa que le impide escalar. En "Qué Piensa y Siente", la **ansiedad** por la carga de revisión de videos y la **frustración** ante clientes que hacen mal un ejercicio toda la semana reflejan el costo real de la ausencia de retroalimentación técnica automatizada. En "Qué Ve", los chats de WhatsApp saturados de videos y las hojas de Excel como herramientas de seguimiento son símbolo del caos administrativo que el 100% de los coaches entrevistados reportó. En "Qué Dice y Hace", el tiempo dedicado a editar videos explicativos y a "perseguir" a clientes para cobros mensuales confirma que las tareas de menor valor consumen la mayor parte de su jornada. Sus **motivaciones** —optimizar el tiempo, escalar la cartera y posicionarse como coach tecnológico— definen exactamente las funcionalidades que deben priorizarse en el Bounded Context de Matchmaking y la integración de IA del microservicio de Videos.
 
 
-El Empathy Mapping es una herramienta fundamental para profundizar en la experiencia del usuario, permitiéndonos entender no solo lo que hacen, sino lo que sienten y experimentan en su entorno real. A continuación, presentamos los mapas de empatía de los dos segmentos clave de nuestro proyecto BodyMatch AI:
 
 
-**Segmento 1: Jóvenes adultos interesados en el fitness**
+### 2.3.4. As-Is Scenario Mapping
+ 
+El proceso de elaboración de los As-Is Scenario Maps incluyó las siguientes etapas: (1) preparación individual donde cada miembro del equipo identificó las fases del journey actual de cada User Persona sin el apoyo de BodyMatch AI; (2) lluvia de ideas colaborativa para poblar las filas Doing, Thinking y Feeling de cada fase; (3) revisión e identificación de áreas negativas (marcadas en rojo), positivas (verde) y áreas de incertidumbre que requieren mayor investigación. Los mapas se elaboraron en Miro con base en los hallazgos de las entrevistas.
+ 
+#### Segmento 1: Jóvenes adultos interesados en el fitness
+ 
+![As-Is Scenario Map — Segmento 1](assets/as1.png)
+ 
+**Análisis de pain points identificados:**
+ 
+El journey actual de Stephanie atraviesa cuatro fases críticas:
+ 
+1. **Intención del usuario por entrenar:** El usuario parte con entusiasmo, pero inmediatamente enfrenta la pregunta sin respuesta de cómo hacerlo correctamente. *Pain point:* Ausencia de orientación técnica desde el inicio.
+2. **Búsqueda de un entrenador como guía:** Busca opciones dentro de gimnasios, pero la preocupación por no encontrar uno adecuado o asequible lo paraliza. *Pain point:* Acceso limitado a coaches certificados por costo o disponibilidad.
+3. **Elaboración de entrenamientos sin guía:** Al no encontrar un entrenador, comienza rutinas autodidactas con videos de internet. *Pain point:* Sin retroalimentación técnica, los errores de ejecución se automatizan sin que el usuario lo perciba, aumentando el riesgo de lesión.
+4. **Evaluación de resultados:** Al no ver resultados esperados, el usuario abandona. *Pain point:* La falta de métricas objetivas de progreso y de un sistema de retroalimentación genera frustración y abandono.
+**Áreas de oportunidad detectadas:** La brecha más crítica está entre la fase 2 y 3: el momento en que el usuario decide entrenar sin guía es donde BodyMatch AI puede intervenir con el análisis de video por IA como sustituto accesible del coach. Esta oportunidad se materializa directamente en US11 (Subir video) y US12 (Feedback automático con IA).
 
-<p align="center" >
-  <img src="assets/empathy1.png" alt="Customerjourneymap 1" />
-</p>
-
-**Segmento 2: Entrenadores Personales (Coaches)**
-
-<p align="center">
-  <img src="assets/empathy2.png" alt="Customerjourneymap 2"/>
-</p>
-
-
-
-
-
-#### 2.3.4. As-Is Scenario Mapping
-
-**Segmento 1: Jóvenes adultos interesados en el fitness**
-
-<p align="center" >
-  <img src="assets/as1.png" alt="as 1"  />
-</p>
-
-**Segmento 2: Entrenadores Personales (Coaches)**
-
-<p align="center">
-  <img src="assets/as2.png" alt="as 2" />
-</p>
+#### Segmento 2: Entrenadores Personales (Coaches)
+ 
+![As-Is Scenario Map — Segmento 2](assets/as2.png)
+ 
+**Análisis de pain points identificados:**
+ 
+El journey actual de Antonio atraviesa cuatro fases con fricciones operativas críticas:
+ 
+1. **Intención del Coach por buscar clientes:** El coach comienza con entusiasmo y prepara su portafolio de entrenamientos, pero la incertidumbre sobre dónde encontrar clientes fuera de su red inmediata lo limita. *Pain point:* Ausencia de un canal de captación estructurado más allá del "boca a boca".
+2. **Búsqueda de clientes dentro o fuera de gimnasios:** Usa plataformas online como Instagram para captar, pero la falta de respuesta rápida genera preocupación. *Pain point:* Dependencia del algoritmo de redes sociales para visibilidad profesional.
+3. **Falta de clientes e ingresos propios:** Acepta la situación de no tener clientes a disposición y busca alternativas, lo que genera frustración y preocupación por el futuro. *Pain point:* Inestabilidad de ingresos que impide planificación profesional a largo plazo.
+4. **Problemas monetarios a futuro:** La presión financiera lo lleva a buscar trabajos fuera del ámbito del entrenamiento. *Pain point:* El modelo de negocio actual no es escalable sin una plataforma que centralice la captación y gestión de clientes.
+**Áreas de oportunidad detectadas:** La brecha principal está en la fase 2-3: el coach necesita una vitrina profesional con mejor visibilidad que las redes sociales. Esta oportunidad se materializa en el Marketplace de Coaches (US06, US07) y las herramientas de gestión profesional (US19, US20, US22).
+ 
+**Conexión con los requisitos del Capítulo III:** Los pain points identificados en los As-Is de ambos segmentos motivaron directamente las User Stories priorizadas en el Product Backlog: US11 y US12 (análisis de video por IA) para resolver la falta de feedback técnico del Segmento 1; US06, US19 y US20 (búsqueda y gestión de coaches) para resolver el caos administrativo del Segmento 2.
 
 ## Capítulo III: Requirements Specification
 
