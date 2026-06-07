@@ -3121,34 +3121,39 @@ El despliegue del Sprint 2 cumplió satisfactoriamente con los criterios técnic
 
 ##### 5.2.2.7 Team Collaboration Insights during Sprint
 
-Durante el Sprint 2, la colaboración del equipo se centró en la transición hacia la arquitectura de microservicios y la integración con la aplicación móvil. La comunicación fue constante mediante sesiones diarias de sincronización (*Daily Standups*) y el uso de herramientas de gestión de proyectos, permitiendo la asignación eficiente de tareas entre los desarrolladores de los distintos Bounded Contexts.
+Durante el Sprint 2, la colaboración del equipo se centró en la transición hacia la arquitectura de microservicios y la integración con la aplicación móvil. La comunicación fue constante mediante sesiones diarias de sincronización y el uso de herramientas de gestión de proyectos, permitiendo la asignación eficiente de tareas entre los desarrolladores de los distintos Bounded Contexts.
 
 La colaboración efectiva fue clave para asegurar el cumplimiento de las historias de usuario y garantizar que el desacoplamiento de servicios (Matchmaking, Training, Membership, etc.) mantuviera la integridad de nuestra lógica de negocio.
 
-- **Evidencias de colaboración y gestión:**
+Las actividades realizadas durante el Sprint incluyeron:
 
-  - **Planificación y Seguimiento (GitHub Projects / Jira):**
-    Utilizamos tableros Kanban para gestionar el flujo de trabajo del Sprint, priorizando las tareas técnicas críticas como la configuración del `API Gateway` y la orquestación con `Docker Compose`.
+- Desarrollo paralelo de microservicios independientes.
+- Implementación y revisión de contratos OpenAPI.
+- Integración continua mediante Pull Requests.
+- Validación funcional utilizando Postman y Swagger.
+- Elaboración de pruebas BDD mediante archivos `.feature`.
+- Sincronización entre API Gateway y servicios registrados.
+
+Todos los integrantes participaron activamente en tareas de implementación y validación de Web Services según el alcance definido para el Sprint.
+
+### Distribución de participación del equipo
+
+| Integrante | Principales contribuciones |
+|---|---|
+| Pablo Geronimo | Implementación de Matchmaking Service, reservas, disponibilidad e integración distribuida. |
+| Marcia Melgarejo | Implementación de Training Service, registro de métricas y migración de endpoints. |
+| Jorge Guevara | Implementación de comunicación entre usuario y coach, sistema de alertas y pruebas funcionales. |
+| Anyelo Alejos | Integración móvil, visualización de progreso y soporte de interfaces conectadas a servicios. |
+
+- **Evidencias de colaboración y gestión:**
 
     <div align="center">
       <img src="./assets/chapter5/sprint2_team_kanban.png" alt="Evidencias de colaboración - Gestión de tareas en tablero">
     </div>
-
-  - **Integración de Código y Revisiones (GitHub Pull Requests):**
-    La colaboración se materializó en la revisión constante de *Pull Requests*. Cada integrante del equipo validó los cambios de los demás, asegurando que los contratos de API y las pruebas unitarias cumplieran con los estándares de calidad del proyecto.
-
-    <div align="center">
-      <img src="./assets/chapter5/sprint2_github_collaboration.png" alt="Evidencias de colaboración - Code Review en GitHub">
-    </div>
-
-  - **Documentación Técnica Colaborativa:**
-    El mantenimiento del informe técnico se realizó de forma paralela al desarrollo, asegurando que cada nuevo microservicio estuviera correctamente documentado en el `README.md` del repositorio de documentación.
-
-    <div align="center">
-      <img src="./assets/chapter5/sprint2_docs_update.png" alt="Evidencias de colaboración - Actualización del informe técnico">
-    </div>
   
 ##### 5.2.2.8 Kanban Board
+
+
 
 ## Conclusiones
 
@@ -3169,6 +3174,13 @@ La colaboración efectiva fue clave para asegurar el cumplimiento de las histori
 
 * **Mantenibilidad:** La aplicación de los principios SOLID y Domain-Driven Design (DDD) permitió definir 6 Bounded Contexts con fronteras explícitas, reduciendo la complejidad técnica y facilitando la integración de nuevos módulos de nutrición en futuros sprints.
 
+
+### Avance 4: Implementación, Integración y Validación del Ecosistema de Microservicios
+* La transición hacia una arquitectura basada en microservicios se completó exitosamente mediante la extracción de los Bounded Contexts restantes y su integración dentro de un ecosistema distribuido. Esta evolución permitió mejorar la escalabilidad, independencia de despliegue y mantenibilidad de BodyMatch AI.
+* La incorporación de componentes como API Gateway, Service Discovery (Eureka) y bases de datos independientes por servicio permitió consolidar una arquitectura desacoplada, facilitando la comunicación entre servicios y reduciendo dependencias directas entre módulos.
+* La implementación y validación de contratos OpenAPI, junto con el uso de herramientas como Swagger y Postman, contribuyó a garantizar consistencia funcional entre los servicios desarrollados y mejorar el proceso de integración continua.
+* La aplicación del enfoque BDD mediante archivos `.feature` permitió verificar el cumplimiento de criterios de aceptación asociados a las User Stories del Sprint, fortaleciendo la calidad del software y asegurando que el comportamiento del sistema responda a los requerimientos definidos.
+
 ---
 
 ## Recomendaciones
@@ -3186,6 +3198,12 @@ La colaboración efectiva fue clave para asegurar el cumplimiento de las histori
 ### TP1: Despliegue y Arquitectura 
 * Se recomienda consolidar la migración progresiva hacia microservicios implementando un API Gateway robusto (ej. Spring Cloud Gateway) que centralice de forma eficiente el enrutamiento hacia los servicios de IAM, Videos y el Monolito Core.
 * Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
+
+### Avance 4: Evolución Arquitectónica y Consolidación Técnica
+
+* Se recomienda incorporar un proceso formal de monitoreo y observabilidad distribuida mediante herramientas como métricas centralizadas, trazabilidad y monitoreo de servicios para facilitar la detección temprana de fallos dentro del ecosistema de microservicios.
+* Se sugiere fortalecer las estrategias de resiliencia entre servicios mediante mecanismos como tolerancia a fallos, reintentos controlados y circuit breakers para mejorar la disponibilidad del sistema ante interrupciones parciales.
+* Se recomienda mantener la organización por Bounded Contexts y continuar aplicando principios de Domain-Driven Design (DDD) para facilitar futuras extensiones funcionales del sistema sin afectar la estabilidad de los servicios existentes.
 
  Anexos
  
