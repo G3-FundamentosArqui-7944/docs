@@ -3099,11 +3099,21 @@ Este comando automatizó:
 - La construcción de las imágenes Docker mediante los Dockerfiles individuales.
 - El levantamiento en segundo plano de todos los servicios, respetando el orden de dependencias.
 
+<div align="center">
+  <img src="./assets/chapter5/sprint2_terminal_build.png" alt="" width="75%">
+  <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
+</div>
+
 ### **3. Validación del Despliegue y Service Discovery**
 Una vez finalizado el despliegue de los contenedores, se procedió a validar la integridad de la arquitectura distribuida:
 
 - Se accedió al panel de control de Spring Eureka (http://localhost:8761), confirmando que todas las instancias se registraron exitosamente y adquirieron el estado UP.
 - Se validó el API Gateway (http://localhost:8080), comprobando la unificación de contratos a través de Swagger UI y verificando que el enrutamiento de tráfico hacia los microservicios operara de manera correcta.
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_eureka_dashboard.png" alt="" width="75%">
+  <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
+</div>
 
 ### **4. Resultado Final**
 El despliegue del Sprint 2 cumplió satisfactoriamente con los criterios técnicos requerides. El ecosistema contenerizado demostró ser funcional y cohesivo, permitiendo a la aplicación móvil en Flutter interactuar con el backend sin problemas, consolidando así el desacoplamiento de la plataforma BodyMatch AI.
