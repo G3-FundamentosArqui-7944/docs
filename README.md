@@ -2848,6 +2848,122 @@ Capturas del Despliegue
  
  Link: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 
+### 5.2.2	Sprint 2
+##### 5.2.2.1	Sprint Backlog 2
+
+### Sprint Planning Background
+
+| **Sprint 2** | **Sprint 2 BodyMatch AI** |
+|---|---|
+| **Date** | 28/05/2026 |
+| **Time** | 06:00 PM |
+| **Location** | Servidor de Discord del Equipo |
+| **Prepared By** | Pablo Geronimo |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara |
+| **Sprint 2 Review Summary** | Durante este Sprint se completó la transición total hacia una arquitectura basada en microservicios. Se desacoplaron e implementaron los Bounded Contexts restantes: Matchmaking, Training y Membership. Asimismo, se integraron los servicios mediante API Gateway y Service Discovery garantizando comunicación distribuida y despliegue independiente. |
+| **Sprint 2 Retrospective Summary** | El equipo mejoró la coordinación entre desarrollo backend y frontend móvil. Se redujeron dependencias entre módulos mediante contratos OpenAPI y se identificó como mejora futura fortalecer observabilidad y monitoreo distribuido. |
+| **Sprint Goal & User Stories** | Completar la migración del backend a microservicios y habilitar funcionalidades avanzadas para entrenamiento, reservas y seguimiento del progreso físico. |
+| **Sprint 2 Goal** | Implementar y desplegar todos los bounded contexts como microservicios independientes e integrar completamente la aplicación móvil con el nuevo ecosistema distribuido. |
+| **Sprint 2 Velocity** | 9 User Stories / Technical Stories completadas |
+| **Sum of Story Points** | 44 Story Points |
+
+### Sprint Backlog
+
+En este Sprint se completó la evolución arquitectónica de BodyMatch AI hacia un ecosistema totalmente desacoplado basado en microservicios.
+
+Se implementaron los siguientes Bounded Contexts:
+
+- Matchmaking Service
+- Training Service
+- Membership Service
+
+Además, se fortaleció la integración con:
+
+- API Gateway
+- Service Discovery
+- Bases de datos independientes por servicio
+- Documentación OpenAPI
+
+---
+
+### Descomposición de Tareas del Sprint
+
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| US08 | Reserva de sesión | T01 | UI Reserva de Sesión | Diseñar la pantalla móvil para selección de coach, fecha y horario. | 4h | Pablo Geronimo | Done |
+| | | T02 | API Session Booking | Implementar endpoint para creación y gestión de reservas. | 5h | Pablo Geronimo | Done |
+| | | T03 | Validación de Disponibilidad | Implementar control de conflictos y bloqueo de horarios. | 3h | Pablo Geronimo | Done |
+| US09 | Chat con coach | T01 | UI Chat Tiempo Real | Desarrollar interfaz de conversación entre usuario y coach. | 3h | Jorge Guevara | Done |
+| | | T02 | Servicio de Mensajería | Implementar comunicación en tiempo real mediante WebSocket. | 5h | Jorge Guevara | Done |
+| | | T03 | Persistencia de Conversaciones | Guardar historial de mensajes por sesión. | 3h | Jorge Guevara | Done |
+| US15 | Registro métricas | T01 | UI Registro de Métricas | Crear formulario para captura de métricas físicas. | 2h | Marcia Melgarejo | Done |
+| | | T02 | Migración Training Service | Extraer lógica del monolito hacia microservicio Training. | 4h | Marcia Melgarejo | Done |
+| | | T03 | Endpoint Registro Métricas | Implementar endpoint POST para almacenamiento histórico. | 3h | Marcia Melgarejo | Done |
+| US16 | Visualización progreso | T01 | Diseño Dashboard Progreso | Crear interfaz de gráficos evolutivos. | 2h | Anyelo Alejos | Done |
+| | | T02 | Integración de Datos Históricos | Conectar gráficos con Training Service. | 3h | Anyelo Alejos | Done |
+| | | T03 | Filtros Temporales | Implementar visualización por períodos. | 2h | Anyelo Alejos | Done |
+| US18 | Alertas rutina | T01 | Configuración Notificaciones | Crear preferencias de recordatorios. | 2h | Jorge Guevara | Done |
+| | | T02 | Motor de Alertas | Implementar envío automático de notificaciones. | 4h | Jorge Guevara | Done |
+| | | T03 | Integración Mobile Push | Configurar recepción en aplicación móvil. | 3h | Jorge Guevara | Done |
+| US19 | Gestión clientes | T01 | Dashboard Coach | Implementar listado de clientes registrados. | 3h | Pablo Geronimo | Done |
+| | | T02 | Vista Detalle Cliente | Mostrar progreso y sesiones del atleta. | 3h | Pablo Geronimo | Done |
+| | | T03 | Integración Matchmaking | Consumir datos desde Matchmaking Service. | 2h | Pablo Geronimo | Done |
+| US20 | Disponibilidad | T01 | Configuración Agenda | Crear interfaz de horarios del coach. | 3h | Marcia Melgarejo | Done |
+| | | T02 | Endpoint Disponibilidad | Implementar API para publicación de horarios. | 3h | Marcia Melgarejo | Done |
+| | | T03 | Validación Reservas | Sincronizar horarios con reservas existentes. | 2h | Marcia Melgarejo | Done |
+| TS02 | Endpoints Matchmaking | T01 | Diseño Contratos REST | Definir endpoints y modelos de intercambio. | 2h | Pablo Geronimo | Done |
+| | | T02 | Implementación Controladores | Crear APIs del microservicio Matchmaking. | 4h | Pablo Geronimo | Done |
+| | | T03 | Integración Gateway | Registrar rutas y balanceo de solicitudes. | 3h | Pablo Geronimo | Done |
+| TS04 | Endpoint Perfil Atleta | T01 | Migración Perfil Training | Extraer endpoint del monolito. | 3h | Marcia Melgarejo | Done |
+| | | T02 | Implementación Query Endpoint | Crear recuperación de métricas por atleta. | 2h | Marcia Melgarejo | Done |
+| | | T03 | Documentación OpenAPI | Generar documentación Swagger del servicio. | 2h | Marcia Melgarejo | Done |
+
+
+
+##### 5.2.2.2 Development Evidence for Sprint Review
+
+Durante el Sprint 2 de BodyMatch AI, el equipo de desarrollo enfocó sus esfuerzos técnicos en consolidar la arquitectura distribuida, completando la extracción total de los Bounded Contexts restantes que aún residían en el monolito inicial. Esta transición permitió aislar completamente las reglas de negocio y garantizar la escalabilidad independiente de cada módulo.
+
+Los principales avances en la implementación orientada a microservicios durante este Sprint incluyen:
+- **Implementación  de Matchmaking:** Extracción completa como microservicio independiente para gestionar perfiles de coaches, búsquedas filtradas y reserva de sesiones.
+- **Implementación de Training Service:** Desarrollo del microservicio encargado de registrar métricas físicas, el historial de entrenamientos y visualizar el progreso del usuario.
+- **Implementación de Membership Service:** Creación del servicio para la gestión de suscripciones, planes y control de acceso a características Premium.
+- **Configuración del API Gateway:** Actualización del enrutador principal para orquestar y dirigir el tráfico de manera segura hacia los nuevos microservicios desplegados.
+
+A continuación, se presenta la evidencia del desarrollo mediante el registro de los commits más representativos en los repositorios de los microservicios implementados:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/matchmaking-service` | `feature/coach-search-booking` | `e737927` | `feat: implement coach search and booking endpoints` | Desarrollo de endpoints REST para la búsqueda filtrada de entrenadores y el motor de reserva de sesiones sin conflictos de agenda. | 27/05/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/metrics-tracking` | `3ff7d70` | `feat: implement progress chart endpoints` | Creación de endpoints para la consulta de evolución física e historial de entrenamientos por rangos de fecha. | 30/05/2026 |
+| `G3-FundamentosArqui-7944/membership-service` | `feature/subscription-plans` | `99d54e7` | `feat: implement subscription plans management` | Desarrollo de la gestión de planes básico y premium, incluyendo asignación de límites de funcionalidad por rol. | 01/06/2026 |
+| `G3-FundamentosArqui-7944/membership-service` | `feature/subscription-plans` | `99d54e7` | `feat: integrate payment validation webhook` | Integración de endpoints para recibir y procesar webhooks de confirmación de pagos de servicios externos. | 02/06/2026 |
+| `G3-FundamentosArqui-7944/api-gateway` | `feature/sprint2-routing` | `ace8998` | `feat: configure routing for new microservices` | Actualización de rutas en Spring Cloud Gateway para enrutar tráfico hacia matchmaking, training y membership services. | 03/06/2026 |
+
+
+##### 5.2.2.3 Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 2 se extendió la estrategia de pruebas utilizando BDD para validar la comunicación entre microservicios y el cumplimiento funcional.
+
+Se implementaron pruebas para:
+
+- Reserva de sesiones.
+- Gestión de disponibilidad.
+- Registro de métricas.
+- Procesamiento nutricional.
+- Recomendaciones automáticas.
+- Integración Gateway → Microservice.
+
+| Repository | Branch | Commit Message |
+|---|---|---|
+| docs | feature/testing-sprint-2 | test: add session booking scenarios |
+| docs | feature/testing-sprint-2 | test: add nutrition recognition tests |
+| docs | feature/testing-sprint-2 | test: validate training endpoints |
+| docs | feature/testing-sprint-2 | test: validate gateway routing |
+
+
+
+
 ## Conclusiones
 
 ### TB1: Validación de Negocio y Requerimientos
