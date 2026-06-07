@@ -2970,7 +2970,44 @@ A continuación, se presenta la tabla de evidencia con los commits relacionados 
 | `G3-FundamentosArqui-7944/testing` | `main` | `da628ef` | `Docs: add feature sprint 2` | Creación y actualización de archivos `.feature` para US08, US09, US15, US16, US18 y US19, correspondientes a las pruebas BDD del Sprint 2. | 06/06/2026 |
 
 
+##### 5.3.2.4 Execution Evidence for Sprint Review
 
+Durante el Sprint 2, la ejecución se centró en probar el correcto funcionamiento de los nuevos microservicios desacoplados (Matchmaking, Training y Membership), garantizando su orquestación en el backend y su consumo efectivo a través de la aplicación móvil (Frontend).
+
+**1. Evidencia de Ejecución en Backend y Contenedores**
+En primer lugar, se configuró y levantó la infraestructura utilizando Docker Compose. Esto garantizó que el ecosistema distribuido estuviera operativo, con cada base de datos PostgreSQL y su respectivo microservicio en ejecución.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_docker_running.png" alt="Contenedores Docker de BodyMatch en ejecución">
+</div>
+
+Posteriormente, se validó el patrón de **Service Discovery**. Todos los microservicios lograron registrarse exitosamente en el servidor de Spring Eureka, permitiendo que el API Gateway enrute las peticiones dinámicamente.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_eureka_dashboard.png" alt="Dashboard de Eureka con servicios registrados">
+</div>
+
+Finalmente, validamos las reglas de negocio y la conexión a las bases de datos simulando peticiones HTTP centralizadas mediante Swagger UI. Se ejecutaron pruebas sobre los Bounded Contexts de Matchmaking (búsqueda de coaches) y Training (obtención de métricas), obteniendo respuestas exitosas (`200 OK`) con la estructura JSON esperada.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_postman_matchmaking.png" alt="Ejecución de búsqueda de Coaches en Swagger/Gateway">
+    <br><br>
+    <img src="./assets/chapter5/sprint2_swagger_training.png" alt="Ejecución de consulta de métricas en Swagger">
+</div>
+
+**2. Evidencia de Integración en Frontend (Mobile)**
+Una vez verificado el ecosistema backend, se procedió a validar que la aplicación móvil desarrollada en Flutter consumiera correctamente estos nuevos endpoints. La interfaz logró renderizar exitosamente los datos provenientes del API Gateway para las historias de usuario del Sprint 2.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_mobile_search.png" alt="Vista móvil: Explorador de Coaches" width="30%">
+    <img src="./assets/chapter5/sprint2_mobile_booking.png" alt="Vista móvil: Reserva de Sesión" width="30%">
+    <img src="./assets/chapter5/sprint2_mobile_metrics.png" alt="Vista móvil: Gráficos de Progreso" width="30%">
+</div>
+
+##### 5.2.2.5 Microservices Documentation Evidence for Sprint Review 
+##### 5.2.2.6 Software Deployment Evidence for Sprint Review
+##### 5.2.2.7 Team Collaboration Insights during Sprint
+##### 5.2.2.8 Kanban Board
 
 ## Conclusiones
 
