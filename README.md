@@ -3117,9 +3117,37 @@ Una vez finalizado el despliegue de los contenedores, se procedió a validar la 
 
 ### **4. Resultado Final**
 El despliegue del Sprint 2 cumplió satisfactoriamente con los criterios técnicos requerides. El ecosistema contenerizado demostró ser funcional y cohesivo, permitiendo a la aplicación móvil en Flutter interactuar con el backend sin problemas, consolidando así el desacoplamiento de la plataforma BodyMatch AI.
- 
+
 
 ##### 5.2.2.7 Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, la colaboración del equipo se centró en la transición hacia la arquitectura de microservicios y la integración con la aplicación móvil. La comunicación fue constante mediante sesiones diarias de sincronización (*Daily Standups*) y el uso de herramientas de gestión de proyectos, permitiendo la asignación eficiente de tareas entre los desarrolladores de los distintos Bounded Contexts.
+
+La colaboración efectiva fue clave para asegurar el cumplimiento de las historias de usuario y garantizar que el desacoplamiento de servicios (Matchmaking, Training, Membership, etc.) mantuviera la integridad de nuestra lógica de negocio.
+
+- **Evidencias de colaboración y gestión:**
+
+  - **Planificación y Seguimiento (GitHub Projects / Jira):**
+    Utilizamos tableros Kanban para gestionar el flujo de trabajo del Sprint, priorizando las tareas técnicas críticas como la configuración del `API Gateway` y la orquestación con `Docker Compose`.
+
+    <div align="center">
+      <img src="./assets/chapter5/sprint2_team_kanban.png" alt="Evidencias de colaboración - Gestión de tareas en tablero">
+    </div>
+
+  - **Integración de Código y Revisiones (GitHub Pull Requests):**
+    La colaboración se materializó en la revisión constante de *Pull Requests*. Cada integrante del equipo validó los cambios de los demás, asegurando que los contratos de API y las pruebas unitarias cumplieran con los estándares de calidad del proyecto.
+
+    <div align="center">
+      <img src="./assets/chapter5/sprint2_github_collaboration.png" alt="Evidencias de colaboración - Code Review en GitHub">
+    </div>
+
+  - **Documentación Técnica Colaborativa:**
+    El mantenimiento del informe técnico se realizó de forma paralela al desarrollo, asegurando que cada nuevo microservicio estuviera correctamente documentado en el `README.md` del repositorio de documentación.
+
+    <div align="center">
+      <img src="./assets/chapter5/sprint2_docs_update.png" alt="Evidencias de colaboración - Actualización del informe técnico">
+    </div>
+  
 ##### 5.2.2.8 Kanban Board
 
 ## Conclusiones
