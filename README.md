@@ -3150,9 +3150,17 @@ Todos los integrantes participaron activamente en tareas de implementación y va
     <div align="center">
       <img src="./assets/chapter5/sprint2_team_kanban.png" alt="Evidencias de colaboración - Gestión de tareas en tablero">
     </div>
-  
+
 ##### 5.2.2.8 Kanban Board
 
+Para la gestión eficiente del Sprint 2, el equipo utilizó un tablero Kanban en **Trello**. Esta herramienta visual nos permitió gestionar el ciclo de vida del desarrollo de software (SDLC) de cada uno de los microservicios, asegurando que la transición del monolito hacia una arquitectura desacoplada se realizara bajo un control estricto de calidad.
+
+El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se controló desde la asignación inicial (*To Do*) hasta la validación de despliegue local y orquestación con Docker (*Done*).
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 2 - BodyMatch AI">
+  <p><em>Estado final del tablero Kanban al cierre del Sprint 2: Implementación de Microservicios, API Gateway y vistas móviles.</em></p>
+</div>
 
 
 ## Conclusiones
