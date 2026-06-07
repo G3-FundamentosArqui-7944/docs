@@ -2,7 +2,6 @@
   <strong>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</strong>
 </p>
 
-</p>
 
 <p align="center">
   <img src="./assets/upclogo.png" alt="UPC Logo" width="200"/>
@@ -2970,7 +2969,7 @@ A continuación, se presenta la tabla de evidencia con los commits relacionados 
 | `G3-FundamentosArqui-7944/testing` | `main` | `da628ef` | `Docs: add feature sprint 2` | Creación y actualización de archivos `.feature` para US08, US09, US15, US16, US18 y US19, correspondientes a las pruebas BDD del Sprint 2. | 06/06/2026 |
 
 
-##### 5.3.2.4 Execution Evidence for Sprint Review
+##### 5.2.2.4 Execution Evidence for Sprint Review
 
 Durante el Sprint 2, la ejecución se centró en probar el correcto funcionamiento de los nuevos microservicios desacoplados (Matchmaking, Training y Membership), garantizando su orquestación en el backend y su consumo efectivo a través de la aplicación móvil (Frontend).
 
@@ -3004,7 +3003,67 @@ Una vez verificado el ecosistema backend, se procedió a validar que la aplicaci
     <img src="./assets/chapter5/sprint2_mobile_metrics.png" alt="Vista móvil: Gráficos de Progreso" width="30%">
 </div>
 
-##### 5.2.2.5 Microservices Documentation Evidence for Sprint Review 
+##### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
+
+El sistema **BodyMatch AI** fue diseñado bajo una **arquitectura de microservicios**, siguiendo los principios de **Domain-Driven Design (DDD)** y la metodología **Attribute-Driven Design (ADD)**.  
+Este enfoque nos permitió estructurar la arquitectura en función de los **atributos de calidad** críticos definidos para nuestra plataforma: **escalabilidad, mantenibilidad, disponibilidad y seguridad**.
+
+Además, se implementaron componentes clave del ecosistema **Spring Cloud**, como **Eureka Server** y **Spring Cloud Gateway**, los cuales garantizan el descubrimiento dinámico de los servicios y el enrutamiento centralizado de las solicitudes HTTP que provienen de nuestra aplicación móvil en Flutter.
+
+---
+
+### Aplicación de la metodología ADD
+
+Durante el proceso de diseño y transición hacia microservicios en el Sprint 2, se siguieron las etapas propuestas por la metodología **ADD**:
+
+#### **1. Definición de los objetivos de calidad**
+- Se identificaron los atributos críticos: **escalabilidad** (para soportar múltiples atletas buscando coaches simultáneamente), **independencia de despliegue**, **resiliencia** y **seguridad**.
+- Estos atributos guiaron las principales decisiones arquitectónicas, influyendo directamente en la extracción de los contextos del monolito y la adopción de **Eureka** y **Spring Cloud Gateway** para lograr un entorno distribuido estable.
+
+#### **2. Identificación de drivers arquitectónicos**
+- Se analizaron los **requisitos funcionales principales** (emparejamiento de coaches y atletas, gestión de métricas físicas, análisis de video) y los **requisitos no funcionales** (rendimiento en búsquedas, disponibilidad del sistema de reservas, consistencia de datos).
+- Se priorizaron decisiones que fomentaran la **modularidad**, la **autonomía de despliegue** y la **comunicación desacoplada** entre los microservicios, evitando cuellos de botella.
+
+#### **3. Descomposición en módulos y asignación de responsabilidades**
+- Se definieron **Bounded Contexts** según DDD, donde cada microservicio (Matchmaking, Training, IAM, etc.) representa un dominio independiente con su propio esquema de base de datos en PostgreSQL, su API REST y su propia lógica de negocio.
+- La **alta cohesión** dentro de cada módulo y el **bajo acoplamiento** entre ellos se lograron delegando el registro y descubrimiento a **Eureka** y utilizando el **Gateway** como único punto de entrada público.
+
+#### **4. Evaluación y refinamiento iterativo**
+- Se validó la arquitectura mediante la ejecución orquestada conectando todos los microservicios a través de **Eureka Server**.
+- Se configuró **Spring Cloud Gateway** (`application.yml`) para enrutar las solicitudes externas hacia los servicios internos mediante balanceo de carga (`lb://nombre-servicio`), garantizando la protección de los endpoints.
+- Se refinaron las configuraciones de **Docker Compose** para asegurar el correcto aprovisionamiento de la infraestructura, inicializando automáticamente las bases de datos de cada dominio.
+
+---
+
+### Microservicios implementados
+
+| **Microservicio** | **Descripción** | **Responsabilidad Principal** |
+|--------------------|-----------------|-------------------------------|
+| **IAM Service** | Autenticación y autorización basada en JWT. | Gestión de credenciales, roles (Atleta/Coach) y validación de tokens. |
+| **Matchmaking Service** | Motor de emparejamiento y reservas. | Búsqueda de coaches por filtros, gestión de disponibilidad y reserva de sesiones. |
+| **Training Service** | Seguimiento del progreso físico. | Registro de métricas, peso, porcentaje de grasa y evolución del atleta. |
+| **Membership Service** | Gestión de suscripciones. | Control de planes activos, validación de pagos y estado de membresías. |
+| **Videos Service** | Gestión de análisis biomecánico. | Almacenamiento y procesamiento de videos de rutinas para feedback. |
+| **Discovery Server (Eureka)** | Descubrimiento de servicios. | Registro dinámico y localización automática de las instancias de microservicios. |
+| **API Gateway** | Puerta de enlace API centralizada. | Enrutamiento, balanceo de carga, control de acceso (CORS) y gestión del tráfico entrante desde la app móvil. |
+
+---
+
+### Decisiones arquitectónicas basadas en atributos de calidad
+
+| **Atributo de Calidad** | **Decisión Tomada** | **Resultado Esperado** |
+|--------------------------|---------------------|------------------------|
+| **Escalabilidad** | Desacoplamiento en microservicios independientes y uso de **Eureka** para el descubrimiento automático. | Permite escalar horizontalmente servicios de alta demanda (como Matchmaking o Videos) sin afectar al resto del sistema. |
+| **Mantenibilidad** | Diseño modular estricto guiado por **DDD** (*Database per Service*). | Cambios y actualizaciones localizadas en un solo dominio sin riesgo de romper otros servicios. |
+| **Disponibilidad** | Integración de contenedores Docker con monitoreo de estado (Healthchecks) y orquestación. | Alta disponibilidad ante fallos; si un servicio cae, no arrastra a todo el sistema. |
+| **Seguridad** | Emisión de tokens en **IAM Service** y validación de rutas seguras interceptadas en el **API Gateway**. | Acceso seguro, denegando peticiones no autorizadas antes de que lleguen a la lógica de negocio. |
+
+---
+<div align="center">
+    <img src="./assets/chapter4/Components/Containers-dark.png" alt="Diagrama de Contenedores BodyMatch AI">
+</div>
+
+
 ##### 5.2.2.6 Software Deployment Evidence for Sprint Review
 ##### 5.2.2.7 Team Collaboration Insights during Sprint
 ##### 5.2.2.8 Kanban Board
