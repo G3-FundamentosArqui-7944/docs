@@ -3107,6 +3107,7 @@ Una vez finalizado el despliegue de los contenedores, se procedió a validar la 
 
 ### **4. Resultado Final**
 El despliegue del Sprint 2 cumplió satisfactoriamente con los criterios técnicos requerides. El ecosistema contenerizado demostró ser funcional y cohesivo, permitiendo a la aplicación móvil en Flutter interactuar con el backend sin problemas, consolidando así el desacoplamiento de la plataforma BodyMatch AI.
+ 
 
 ##### 5.2.2.7 Team Collaboration Insights during Sprint
 ##### 5.2.2.8 Kanban Board
