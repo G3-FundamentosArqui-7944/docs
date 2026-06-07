@@ -3063,8 +3063,51 @@ Durante el proceso de diseño y transición hacia microservicios en el Sprint 2,
     <img src="./assets/chapter4/Components/Containers-dark.png" alt="Diagrama de Contenedores BodyMatch AI">
 </div>
 
-
 ##### 5.2.2.6 Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2, el enfoque del equipo fue la transición de una arquitectura monolítica hacia un ecosistema de microservicios. Debido a la complejidad de orquestar múltiples bases de datos y dominios, el despliegue de **BodyMatch AI** se realizó mediante un enfoque de **contenerización local (Docker Host)**. Esto garantizó el aislamiento de los componentes y la orquestación automatizada previo a una futura migración a la nube.
+
+A continuación, se detallan los pasos arquitectónicos y las evidencias técnicas de nuestro proceso de deployment.
+
+---
+
+### **1. Configuración de la Infraestructura y Orquestación**
+
+Se utilizó **Docker Compose** como herramienta principal de orquestación. Para centralizar este proceso, se creó el repositorio `infrastructure`, el cual contiene el archivo `docker-compose.yml` que define y aprovisiona toda la topología de red.
+
+* **Host de Ejecución:** Entorno utilizando Docker Engine, levantando contenedores individuales para cada Bounded Context extraído.
+* **Persistencia de Datos:** Se levantó el contenedor `bodymatch-postgres`, el cual ejecutó automáticamente el script `01-create-databases.sql` aislando las bases de datos para cada dominio (`matchmaking_db`, `training_db`, `membership_db`, etc.).
+* **Red Privada:** Se configuró la red interna puente `infrastructure_bodymatch-net` para asegurar que el `api-gateway` y el `discovery-server` se comuniquen de forma segura con los microservicios sin exponer puertos innecesarios.
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_docker_running.png" alt="Contenedores orquestados con Docker Compose" width="75%">
+  <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
+</div>
+
+---
+
+### **2. Construcción de Imágenes y Despliegue**
+
+Para mantener la independencia de cada servicio (`matchmaking-service`, `training-service`, `iam-service`, etc.), se definió un `Dockerfile` multietapa en la raíz de cada repositorio, utilizando **Eclipse Temurin Java 21** como base.
+
+El proceso de despliegue consistió en la ejecución del siguiente comando desde la carpeta de infraestructura:
+```bash
+docker compose up -d --build
+```
+Este comando automatizó:
+- La descarga de dependencias y compilación del código fuente.
+- La construcción de las imágenes Docker mediante los Dockerfiles individuales.
+- El levantamiento en segundo plano de todos los servicios, respetando el orden de dependencias.
+
+### **3. Validación del Despliegue y Service Discovery**
+Una vez finalizado el despliegue de los contenedores, se procedió a validar la integridad de la arquitectura distribuida:
+
+- Se accedió al panel de control de Spring Eureka (http://localhost:8761), confirmando que todas las instancias se registraron exitosamente y adquirieron el estado UP.
+- Se validó el API Gateway (http://localhost:8080), comprobando la unificación de contratos a través de Swagger UI y verificando que el enrutamiento de tráfico hacia los microservicios operara de manera correcta.
+
+### **4. Resultado Final**
+El despliegue del Sprint 2 cumplió satisfactoriamente con los criterios técnicos requerides. El ecosistema contenerizado demostró ser funcional y cohesivo, permitiendo a la aplicación móvil en Flutter interactuar con el backend sin problemas, consolidando así el desacoplamiento de la plataforma BodyMatch AI.
+
 ##### 5.2.2.7 Team Collaboration Insights during Sprint
 ##### 5.2.2.8 Kanban Board
 
