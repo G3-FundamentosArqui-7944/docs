@@ -2943,23 +2943,31 @@ A continuación, se presenta la evidencia del desarrollo mediante el registro de
 
 ##### 5.2.2.3 Testing Suite Evidence for Sprint Review
 
-Durante el Sprint 2 se extendió la estrategia de pruebas utilizando BDD para validar la comunicación entre microservicios y el cumplimiento funcional.
+En esta sección se explica y presenta el conjunto de aproximación a Integration Tests y Acceptance Tests para los Web Services desarrollados en el Sprint 2. Se ha utilizado el enfoque **BDD (Behavior Driven Development)**, implementando los escenarios de prueba a través de archivos `.feature` escritos en lenguaje **Gherkin**. Estos tests aseguran que el comportamiento de los microservicios cumpla con los criterios de aceptación definidos.
 
-Se implementaron pruebas para:
+#### 1. Relación de Tests Diseñados y User Stories
 
-- Reserva de sesiones.
-- Gestión de disponibilidad.
-- Registro de métricas.
-- Procesamiento nutricional.
-- Recomendaciones automáticas.
-- Integración Gateway → Microservice.
+A continuación, se listan los archivos `.feature` desarrollados en este Sprint y se explica su relación con las User Stories correspondientes:
 
-| Repository | Branch | Commit Message |
-|---|---|---|
-| docs | feature/testing-sprint-2 | test: add session booking scenarios |
-| docs | feature/testing-sprint-2 | test: add nutrition recognition tests |
-| docs | feature/testing-sprint-2 | test: validate training endpoints |
-| docs | feature/testing-sprint-2 | test: validate gateway routing |
+* **`US08-Reserva de sesión.feature`**: Relacionado con la **US08**, valida el flujo de agendamiento de sesiones, asegurando que el sistema controle la disponibilidad de los coaches y evite conflictos o superposiciones de horarios.
+* **`US09–Chat con coach.feature`**: Relacionado con la **US09**, garantiza la correcta validación del envío de mensajes, la respuesta en tiempo real y la persistencia del historial de la conversación.
+* **`US15-Registro de métricas físicas.feature`**: Relacionado con la **US15**, verifica que el registro de medidas corporales funcione correctamente y se guarde manteniendo el histórico sin sobrescribir datos pasados.
+* **`US16-Visualización de progreso.feature`**: Relacionado con la **US16**, comprueba que el sistema procese adecuadamente los datos históricos del usuario para la generación de gráficos de evolución.
+* **`US18-Alertas de cumplimiento de rutina.feature`**: Relacionado con la **US18**, evalúa la lógica de negocio encargada de disparar las notificaciones y recordatorios para evitar el sedentarismo del usuario.
+* **`US19-Gestión clientes.feature`**: Relacionado con la **US19**, valida que los entrenadores puedan acceder de forma correcta a su lista de clientes y revisar el progreso detallado de cada uno.
+
+
+#### 2. Repositorio de Control de Versiones y Commits
+
+Toda la suite de pruebas BDD elaborada para este Sprint se encuentra alojada en el siguiente repositorio de GitHub:
+
+* **Ruta del Repositorio de Testing:** `https://github.com/G3-FundamentosArqui-7944/testing`
+
+A continuación, se presenta la tabla de evidencia con los commits relacionados con la implementación de estos tests durante el Sprint 2:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/testing` | `main` | `da628ef` | `Docs: add feature sprint 2` | Creación y actualización de archivos `.feature` para US08, US09, US15, US16, US18 y US19, correspondientes a las pruebas BDD del Sprint 2. | 06/06/2026 |
 
 
 
