@@ -69,6 +69,13 @@
 
 ---
 
+
+
+
+<img src="assets/chapter5/insights.png" alt ="">
+
+
+
 ## Registro de Versiones del Informe
 
 | Versión | Fecha      | Autor                           | Descripción                                                                                              | Commit  |
@@ -2066,16 +2073,12 @@ Esta suite agrupa los escenarios de prueba funcionales, unitarios y de integraci
 
 | Código del Test | Nombre del Archivo .feature | Componente / Microservicio | User Story Relacionada (ID) |
 |:---|:---|:---|:---|
-| **TS-IAM-01** | `auth_register_athlete.feature` | IAM Microservice | US01: Registro de usuario |
-| **TS-IAM-02** | `auth_register_coach.feature` | IAM Microservice | US01: Registro de usuario (rol Coach) |
-| **TS-IAM-03** | `auth_login.feature` | IAM Microservice | US02: Inicio de sesión |
-| **TS-IAM-04** | `auth_logout.feature` | IAM Microservice | US04: Cierre de sesión |
-| **TS-IAM-05** | `auth_password_recovery.feature` | IAM Microservice | US03: Recuperación de contraseña |
-| **TS-MM-06** | `athlete_profile_creation.feature` | Matchmaking Monolith | US05: Configuración de perfil |
-| **TS-MM-07** | `coach_profile_search.feature` | Matchmaking Monolith | US06: Búsqueda de coaches |
-| **TS-MM-08** | `session_booking.feature` | Matchmaking Monolith | US08: Reserva de sesión |
-| **TS-VID-09** | `video_upload.feature` | Videos Microservice | US11: Subir video del ejercicio |
-| **TS-VID-10** | `video_ai_feedback.feature` | Videos Microservice | US12: Feedback automático con IA |
+| **TS-IAM-01** | `US01-Registro de usuario.feature` | IAM Bounded Context | US01: Registro de usuario |
+| **TS-IAM-02** | `US02 - Inicio de sesión.feature` | IAM Bounded Context | US02: Inicio de sesión |
+| **TS-IAM-03** | `US04-Cierre de sesión.feature` | IAM Bounded Context | US04: Cierre de sesión |
+| **TS-VID-01** | `US11-Subir video del ejercicio.feature` | Videos Bounded Context | US11: Subir video del ejercicio |
+| **TS-VID-02** | `US12-Feedback automático con IA.feature` | Videos Bounded Context | US12: Feedback automático con IA |
+| **TS-VID-03** | `TS03-Endpoints Video.feature` | Videos Bounded Context | TS03: Disponibilidad de endpoints Video (Technical Story) |
 
 
 ### 5.1.2	Pattern Based Backend Application(s)  
@@ -2840,6 +2843,19 @@ Capturas del Despliegue
 ##### 5.2.1.7	Team Collaboration Insights during Sprint
 
 
+Durante el desarrollo del Sprint, el equipo de **BodyMatch AI** adoptó un enfoque de trabajo altamente colaborativo, apoyándose en metodologías ágiles y herramientas de control de versiones para garantizar la entrega continua de valor y la calidad del código. La colaboración cruzada entre los miembros del equipo fue fundamental para alinear la arquitectura técnica con los requerimientos del negocio (Domain-Driven Design).
+
+A continuación, se detallan los pilares de nuestra colaboración:
+
+* **Gestión Ágil y Transparencia:** Utilizamos un tablero Kanban estructurado para el seguimiento diario de las tareas (User Stories y Technical Stories). Esto nos permitió visualizar cuellos de botella, asignar responsabilidades equitativas y mantener el progreso del Sprint actualizado en tiempo real.
+* **Estrategia de Ramificación (GitHub Flow):** Implementamos un flujo de trabajo basado en ramas de características (`feature branches`). Cada miembro del equipo (Pablo, Anyelo, Piero, Marcia y Jorge) trabajó en ramas aisladas (ej. `feat/geronimo`) para evitar conflictos directos en el código fuente.
+* **Code Reviews y Pull Requests:** Ningún código fue fusionado a la rama principal (`develop` o `main`) sin antes pasar por una revisión de código. Esta práctica nos ayudó a asegurar que se respetaran los patrones de diseño (como *Strategy* y *Factory*), se validaran los escenarios BDD y se mantuviera una alta mantenibilidad.
+* **Comunicación Continua:** Las reuniones de sincronización (Daily Stand-ups) fueron vitales para resolver dudas técnicas, especialmente durante la integración de servicios externos como Gemini AI, Stripe y la configuración de Spring Security.
+
+**Estadísticas de Colaboración en el Repositorio (GitHub Insights):**
+La siguiente imagen evidencia la participación activa del equipo, mostrando el flujo de *commits*, resolución de *Pull Requests* y la distribución del esfuerzo durante el ciclo de vida del Sprint.
+
+<img src="assets/chapter5/insights.png" alt ="">
 
 ##### 5.2.1.8	Kanban Board 
 
