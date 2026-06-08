@@ -2,7 +2,6 @@
   <strong>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</strong>
 </p>
 
-</p>
 
  <p align="center"> <img src = "https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img> 
  </p>
@@ -68,6 +67,13 @@
 </p>
 
 ---
+
+
+
+
+<img src="assets/chapter5/insights.png" alt ="">
+
+
 
 ## Registro de Versiones del Informe
 
@@ -2066,16 +2072,12 @@ Esta suite agrupa los escenarios de prueba funcionales, unitarios y de integraci
 
 | Código del Test | Nombre del Archivo .feature | Componente / Microservicio | User Story Relacionada (ID) |
 |:---|:---|:---|:---|
-| **TS-IAM-01** | `auth_register_athlete.feature` | IAM Microservice | US01: Registro de usuario |
-| **TS-IAM-02** | `auth_register_coach.feature` | IAM Microservice | US01: Registro de usuario (rol Coach) |
-| **TS-IAM-03** | `auth_login.feature` | IAM Microservice | US02: Inicio de sesión |
-| **TS-IAM-04** | `auth_logout.feature` | IAM Microservice | US04: Cierre de sesión |
-| **TS-IAM-05** | `auth_password_recovery.feature` | IAM Microservice | US03: Recuperación de contraseña |
-| **TS-MM-06** | `athlete_profile_creation.feature` | Matchmaking Monolith | US05: Configuración de perfil |
-| **TS-MM-07** | `coach_profile_search.feature` | Matchmaking Monolith | US06: Búsqueda de coaches |
-| **TS-MM-08** | `session_booking.feature` | Matchmaking Monolith | US08: Reserva de sesión |
-| **TS-VID-09** | `video_upload.feature` | Videos Microservice | US11: Subir video del ejercicio |
-| **TS-VID-10** | `video_ai_feedback.feature` | Videos Microservice | US12: Feedback automático con IA |
+| **TS-IAM-01** | `US01-Registro de usuario.feature` | IAM Bounded Context | US01: Registro de usuario |
+| **TS-IAM-02** | `US02 - Inicio de sesión.feature` | IAM Bounded Context | US02: Inicio de sesión |
+| **TS-IAM-03** | `US04-Cierre de sesión.feature` | IAM Bounded Context | US04: Cierre de sesión |
+| **TS-VID-01** | `US11-Subir video del ejercicio.feature` | Videos Bounded Context | US11: Subir video del ejercicio |
+| **TS-VID-02** | `US12-Feedback automático con IA.feature` | Videos Bounded Context | US12: Feedback automático con IA |
+| **TS-VID-03** | `TS03-Endpoints Video.feature` | Videos Bounded Context | TS03: Disponibilidad de endpoints Video (Technical Story) |
 
 
 ### 5.1.2	Pattern Based Backend Application(s)  
@@ -2840,12 +2842,341 @@ Capturas del Despliegue
 ##### 5.2.1.7	Team Collaboration Insights during Sprint
 
 
+Durante el desarrollo del Sprint, el equipo de **BodyMatch AI** adoptó un enfoque de trabajo altamente colaborativo, apoyándose en metodologías ágiles y herramientas de control de versiones para garantizar la entrega continua de valor y la calidad del código. La colaboración cruzada entre los miembros del equipo fue fundamental para alinear la arquitectura técnica con los requerimientos del negocio (Domain-Driven Design).
+
+A continuación, se detallan los pilares de nuestra colaboración:
+
+* **Gestión Ágil y Transparencia:** Utilizamos un tablero Kanban estructurado para el seguimiento diario de las tareas (User Stories y Technical Stories). Esto nos permitió visualizar cuellos de botella, asignar responsabilidades equitativas y mantener el progreso del Sprint actualizado en tiempo real.
+* **Estrategia de Ramificación (GitHub Flow):** Implementamos un flujo de trabajo basado en ramas de características (`feature branches`). Cada miembro del equipo (Pablo, Anyelo, Piero, Marcia y Jorge) trabajó en ramas aisladas (ej. `feat/geronimo`) para evitar conflictos directos en el código fuente.
+* **Code Reviews y Pull Requests:** Ningún código fue fusionado a la rama principal (`develop` o `main`) sin antes pasar por una revisión de código. Esta práctica nos ayudó a asegurar que se respetaran los patrones de diseño (como *Strategy* y *Factory*), se validaran los escenarios BDD y se mantuviera una alta mantenibilidad.
+* **Comunicación Continua:** Las reuniones de sincronización (Daily Stand-ups) fueron vitales para resolver dudas técnicas, especialmente durante la integración de servicios externos como Gemini AI, Stripe y la configuración de Spring Security.
+
+**Estadísticas de Colaboración en el Repositorio (GitHub Insights):**
+La siguiente imagen evidencia la participación activa del equipo, mostrando el flujo de *commits*, resolución de *Pull Requests* y la distribución del esfuerzo durante el ciclo de vida del Sprint.
+
+<img src="assets/chapter5/insights.png" alt ="">
 
 ##### 5.2.1.8	Kanban Board 
 
 <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/kanban-sprint1.png" alt =""> 
  
  Link: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
+
+### 5.2.2	Sprint 2
+##### 5.2.2.1	Sprint Backlog 2
+
+### Sprint Planning Background
+
+| **Sprint 2** | **Sprint 2 BodyMatch AI** |
+|---|---|
+| **Date** | 28/05/2026 |
+| **Time** | 06:00 PM |
+| **Location** | Servidor de Discord del Equipo |
+| **Prepared By** | Pablo Geronimo |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara |
+| **Sprint 2 Review Summary** | Durante este Sprint se completó la transición total hacia una arquitectura basada en microservicios. Se desacoplaron e implementaron los Bounded Contexts restantes: Matchmaking, Training y Membership. Asimismo, se integraron los servicios mediante API Gateway y Service Discovery garantizando comunicación distribuida y despliegue independiente. |
+| **Sprint 2 Retrospective Summary** | El equipo mejoró la coordinación entre desarrollo backend y frontend móvil. Se redujeron dependencias entre módulos mediante contratos OpenAPI y se identificó como mejora futura fortalecer observabilidad y monitoreo distribuido. |
+| **Sprint Goal & User Stories** | Completar la migración del backend a microservicios y habilitar funcionalidades avanzadas para entrenamiento, reservas y seguimiento del progreso físico. |
+| **Sprint 2 Goal** | Implementar y desplegar todos los bounded contexts como microservicios independientes e integrar completamente la aplicación móvil con el nuevo ecosistema distribuido. |
+| **Sprint 2 Velocity** | 9 User Stories / Technical Stories completadas |
+| **Sum of Story Points** | 44 Story Points |
+
+### Sprint Backlog
+
+En este Sprint se completó la evolución arquitectónica de BodyMatch AI hacia un ecosistema totalmente desacoplado basado en microservicios.
+
+Se implementaron los siguientes Bounded Contexts:
+
+- Matchmaking Service
+- Training Service
+- Membership Service
+
+Además, se fortaleció la integración con:
+
+- API Gateway
+- Service Discovery
+- Bases de datos independientes por servicio
+- Documentación OpenAPI
+
+---
+
+### Descomposición de Tareas del Sprint
+
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| US08 | Reserva de sesión | T01 | UI Reserva de Sesión | Diseñar la pantalla móvil para selección de coach, fecha y horario. | 4h | Pablo Geronimo | Done |
+| | | T02 | API Session Booking | Implementar endpoint para creación y gestión de reservas. | 5h | Pablo Geronimo | Done |
+| | | T03 | Validación de Disponibilidad | Implementar control de conflictos y bloqueo de horarios. | 3h | Pablo Geronimo | Done |
+| US09 | Chat con coach | T01 | UI Chat Tiempo Real | Desarrollar interfaz de conversación entre usuario y coach. | 3h | Jorge Guevara | Done |
+| | | T02 | Servicio de Mensajería | Implementar comunicación en tiempo real mediante WebSocket. | 5h | Jorge Guevara | Done |
+| | | T03 | Persistencia de Conversaciones | Guardar historial de mensajes por sesión. | 3h | Jorge Guevara | Done |
+| US15 | Registro métricas | T01 | UI Registro de Métricas | Crear formulario para captura de métricas físicas. | 2h | Marcia Melgarejo | Done |
+| | | T02 | Migración Training Service | Extraer lógica del monolito hacia microservicio Training. | 4h | Marcia Melgarejo | Done |
+| | | T03 | Endpoint Registro Métricas | Implementar endpoint POST para almacenamiento histórico. | 3h | Marcia Melgarejo | Done |
+| US16 | Visualización progreso | T01 | Diseño Dashboard Progreso | Crear interfaz de gráficos evolutivos. | 2h | Anyelo Alejos | Done |
+| | | T02 | Integración de Datos Históricos | Conectar gráficos con Training Service. | 3h | Anyelo Alejos | Done |
+| | | T03 | Filtros Temporales | Implementar visualización por períodos. | 2h | Anyelo Alejos | Done |
+| US18 | Alertas rutina | T01 | Configuración Notificaciones | Crear preferencias de recordatorios. | 2h | Jorge Guevara | Done |
+| | | T02 | Motor de Alertas | Implementar envío automático de notificaciones. | 4h | Jorge Guevara | Done |
+| | | T03 | Integración Mobile Push | Configurar recepción en aplicación móvil. | 3h | Jorge Guevara | Done |
+| US19 | Gestión clientes | T01 | Dashboard Coach | Implementar listado de clientes registrados. | 3h | Pablo Geronimo | Done |
+| | | T02 | Vista Detalle Cliente | Mostrar progreso y sesiones del atleta. | 3h | Pablo Geronimo | Done |
+| | | T03 | Integración Matchmaking | Consumir datos desde Matchmaking Service. | 2h | Pablo Geronimo | Done |
+| US20 | Disponibilidad | T01 | Configuración Agenda | Crear interfaz de horarios del coach. | 3h | Marcia Melgarejo | Done |
+| | | T02 | Endpoint Disponibilidad | Implementar API para publicación de horarios. | 3h | Marcia Melgarejo | Done |
+| | | T03 | Validación Reservas | Sincronizar horarios con reservas existentes. | 2h | Marcia Melgarejo | Done |
+| TS02 | Endpoints Matchmaking | T01 | Diseño Contratos REST | Definir endpoints y modelos de intercambio. | 2h | Pablo Geronimo | Done |
+| | | T02 | Implementación Controladores | Crear APIs del microservicio Matchmaking. | 4h | Pablo Geronimo | Done |
+| | | T03 | Integración Gateway | Registrar rutas y balanceo de solicitudes. | 3h | Pablo Geronimo | Done |
+| TS04 | Endpoint Perfil Atleta | T01 | Migración Perfil Training | Extraer endpoint del monolito. | 3h | Marcia Melgarejo | Done |
+| | | T02 | Implementación Query Endpoint | Crear recuperación de métricas por atleta. | 2h | Marcia Melgarejo | Done |
+| | | T03 | Documentación OpenAPI | Generar documentación Swagger del servicio. | 2h | Marcia Melgarejo | Done |
+
+
+
+##### 5.2.2.2 Development Evidence for Sprint Review
+
+Durante el Sprint 2 de BodyMatch AI, el equipo de desarrollo enfocó sus esfuerzos técnicos en consolidar la arquitectura distribuida, completando la extracción total de los Bounded Contexts restantes que aún residían en el monolito inicial. Esta transición permitió aislar completamente las reglas de negocio y garantizar la escalabilidad independiente de cada módulo.
+
+Los principales avances en la implementación orientada a microservicios durante este Sprint incluyen:
+- **Implementación  de Matchmaking:** Extracción completa como microservicio independiente para gestionar perfiles de coaches, búsquedas filtradas y reserva de sesiones.
+- **Implementación de Training Service:** Desarrollo del microservicio encargado de registrar métricas físicas, el historial de entrenamientos y visualizar el progreso del usuario.
+- **Implementación de Membership Service:** Creación del servicio para la gestión de suscripciones, planes y control de acceso a características Premium.
+- **Configuración del API Gateway:** Actualización del enrutador principal para orquestar y dirigir el tráfico de manera segura hacia los nuevos microservicios desplegados.
+
+A continuación, se presenta la evidencia del desarrollo mediante el registro de los commits más representativos en los repositorios de los microservicios implementados:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/matchmaking-service` | `feature/coach-search-booking` | `e737927` | `feat: implement coach search and booking endpoints` | Desarrollo de endpoints REST para la búsqueda filtrada de entrenadores y el motor de reserva de sesiones sin conflictos de agenda. | 27/05/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/metrics-tracking` | `3ff7d70` | `feat: implement progress chart endpoints` | Creación de endpoints para la consulta de evolución física e historial de entrenamientos por rangos de fecha. | 30/05/2026 |
+| `G3-FundamentosArqui-7944/membership-service` | `feature/subscription-plans` | `99d54e7` | `feat: implement subscription plans management` | Desarrollo de la gestión de planes básico y premium, incluyendo asignación de límites de funcionalidad por rol. | 01/06/2026 |
+| `G3-FundamentosArqui-7944/membership-service` | `feature/subscription-plans` | `99d54e7` | `feat: integrate payment validation webhook` | Integración de endpoints para recibir y procesar webhooks de confirmación de pagos de servicios externos. | 02/06/2026 |
+| `G3-FundamentosArqui-7944/api-gateway` | `feature/sprint2-routing` | `ace8998` | `feat: configure routing for new microservices` | Actualización de rutas en Spring Cloud Gateway para enrutar tráfico hacia matchmaking, training y membership services. | 03/06/2026 |
+
+
+##### 5.2.2.3 Testing Suite Evidence for Sprint Review
+
+En esta sección se explica y presenta el conjunto de aproximación a Integration Tests y Acceptance Tests para los Web Services desarrollados en el Sprint 2. Se ha utilizado el enfoque **BDD (Behavior Driven Development)**, implementando los escenarios de prueba a través de archivos `.feature` escritos en lenguaje **Gherkin**. Estos tests aseguran que el comportamiento de los microservicios cumpla con los criterios de aceptación definidos.
+
+#### 1. Relación de Tests Diseñados y User Stories
+
+A continuación, se listan los archivos `.feature` desarrollados en este Sprint y se explica su relación con las User Stories correspondientes:
+
+* **`US08-Reserva de sesión.feature`**: Relacionado con la **US08**, valida el flujo de agendamiento de sesiones, asegurando que el sistema controle la disponibilidad de los coaches y evite conflictos o superposiciones de horarios.
+* **`US09–Chat con coach.feature`**: Relacionado con la **US09**, garantiza la correcta validación del envío de mensajes, la respuesta en tiempo real y la persistencia del historial de la conversación.
+* **`US15-Registro de métricas físicas.feature`**: Relacionado con la **US15**, verifica que el registro de medidas corporales funcione correctamente y se guarde manteniendo el histórico sin sobrescribir datos pasados.
+* **`US16-Visualización de progreso.feature`**: Relacionado con la **US16**, comprueba que el sistema procese adecuadamente los datos históricos del usuario para la generación de gráficos de evolución.
+* **`US18-Alertas de cumplimiento de rutina.feature`**: Relacionado con la **US18**, evalúa la lógica de negocio encargada de disparar las notificaciones y recordatorios para evitar el sedentarismo del usuario.
+* **`US19-Gestión clientes.feature`**: Relacionado con la **US19**, valida que los entrenadores puedan acceder de forma correcta a su lista de clientes y revisar el progreso detallado de cada uno.
+
+
+#### 2. Repositorio de Control de Versiones y Commits
+
+Toda la suite de pruebas BDD elaborada para este Sprint se encuentra alojada en el siguiente repositorio de GitHub:
+
+* **Ruta del Repositorio de Testing:** `https://github.com/G3-FundamentosArqui-7944/testing`
+
+A continuación, se presenta la tabla de evidencia con los commits relacionados con la implementación de estos tests durante el Sprint 2:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|---|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/testing` | `main` | `da628ef` | `Docs: add feature sprint 2` | Creación y actualización de archivos `.feature` para US08, US09, US15, US16, US18 y US19, correspondientes a las pruebas BDD del Sprint 2. | 06/06/2026 |
+
+
+##### 5.2.2.4 Execution Evidence for Sprint Review
+
+Durante el Sprint 2, la ejecución se centró en probar el correcto funcionamiento de los nuevos microservicios desacoplados (Matchmaking, Training y Membership), garantizando su orquestación en el backend y su consumo efectivo a través de la aplicación móvil (Frontend).
+
+**1. Evidencia de Ejecución en Backend y Contenedores**
+En primer lugar, se configuró y levantó la infraestructura utilizando Docker Compose. Esto garantizó que el ecosistema distribuido estuviera operativo, con cada base de datos PostgreSQL y su respectivo microservicio en ejecución.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_docker_running.png" alt="Contenedores Docker de BodyMatch en ejecución">
+</div>
+
+Posteriormente, se validó el patrón de **Service Discovery**. Todos los microservicios lograron registrarse exitosamente en el servidor de Spring Eureka, permitiendo que el API Gateway enrute las peticiones dinámicamente.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_eureka_dashboard.png" alt="Dashboard de Eureka con servicios registrados">
+</div>
+
+Finalmente, validamos las reglas de negocio y la conexión a las bases de datos simulando peticiones HTTP centralizadas mediante Swagger UI. Se ejecutaron pruebas sobre los Bounded Contexts de Matchmaking (búsqueda de coaches) y Training (obtención de métricas), obteniendo respuestas exitosas (`200 OK`) con la estructura JSON esperada.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_postman_matchmaking.png" alt="Ejecución de búsqueda de Coaches en Swagger/Gateway">
+    <br><br>
+    <img src="./assets/chapter5/sprint2_swagger_training.png" alt="Ejecución de consulta de métricas en Swagger">
+</div>
+
+**2. Evidencia de Integración en Frontend (Mobile)**
+Una vez verificado el ecosistema backend, se procedió a validar que la aplicación móvil desarrollada en Flutter consumiera correctamente estos nuevos endpoints. La interfaz logró renderizar exitosamente los datos provenientes del API Gateway para las historias de usuario del Sprint 2.
+
+<div align="center">
+    <img src="./assets/chapter5/sprint2_mobile_search.png" alt="Vista móvil: Explorador de Coaches" width="30%">
+    <img src="./assets/chapter5/sprint2_mobile_booking.png" alt="Vista móvil: Reserva de Sesión" width="30%">
+    <img src="./assets/chapter5/sprint2_mobile_metrics.png" alt="Vista móvil: Gráficos de Progreso" width="30%">
+</div>
+
+##### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
+
+El sistema **BodyMatch AI** fue diseñado bajo una **arquitectura de microservicios**, siguiendo los principios de **Domain-Driven Design (DDD)** y la metodología **Attribute-Driven Design (ADD)**.  
+Este enfoque nos permitió estructurar la arquitectura en función de los **atributos de calidad** críticos definidos para nuestra plataforma: **escalabilidad, mantenibilidad, disponibilidad y seguridad**.
+
+Además, se implementaron componentes clave del ecosistema **Spring Cloud**, como **Eureka Server** y **Spring Cloud Gateway**, los cuales garantizan el descubrimiento dinámico de los servicios y el enrutamiento centralizado de las solicitudes HTTP que provienen de nuestra aplicación móvil en Flutter.
+
+---
+
+### Aplicación de la metodología ADD
+
+Durante el proceso de diseño y transición hacia microservicios en el Sprint 2, se siguieron las etapas propuestas por la metodología **ADD**:
+
+#### **1. Definición de los objetivos de calidad**
+- Se identificaron los atributos críticos: **escalabilidad** (para soportar múltiples atletas buscando coaches simultáneamente), **independencia de despliegue**, **resiliencia** y **seguridad**.
+- Estos atributos guiaron las principales decisiones arquitectónicas, influyendo directamente en la extracción de los contextos del monolito y la adopción de **Eureka** y **Spring Cloud Gateway** para lograr un entorno distribuido estable.
+
+#### **2. Identificación de drivers arquitectónicos**
+- Se analizaron los **requisitos funcionales principales** (emparejamiento de coaches y atletas, gestión de métricas físicas, análisis de video) y los **requisitos no funcionales** (rendimiento en búsquedas, disponibilidad del sistema de reservas, consistencia de datos).
+- Se priorizaron decisiones que fomentaran la **modularidad**, la **autonomía de despliegue** y la **comunicación desacoplada** entre los microservicios, evitando cuellos de botella.
+
+#### **3. Descomposición en módulos y asignación de responsabilidades**
+- Se definieron **Bounded Contexts** según DDD, donde cada microservicio (Matchmaking, Training, IAM, etc.) representa un dominio independiente con su propio esquema de base de datos en PostgreSQL, su API REST y su propia lógica de negocio.
+- La **alta cohesión** dentro de cada módulo y el **bajo acoplamiento** entre ellos se lograron delegando el registro y descubrimiento a **Eureka** y utilizando el **Gateway** como único punto de entrada público.
+
+#### **4. Evaluación y refinamiento iterativo**
+- Se validó la arquitectura mediante la ejecución orquestada conectando todos los microservicios a través de **Eureka Server**.
+- Se configuró **Spring Cloud Gateway** (`application.yml`) para enrutar las solicitudes externas hacia los servicios internos mediante balanceo de carga (`lb://nombre-servicio`), garantizando la protección de los endpoints.
+- Se refinaron las configuraciones de **Docker Compose** para asegurar el correcto aprovisionamiento de la infraestructura, inicializando automáticamente las bases de datos de cada dominio.
+
+---
+
+### Microservicios implementados
+
+| **Microservicio** | **Descripción** | **Responsabilidad Principal** |
+|--------------------|-----------------|-------------------------------|
+| **IAM Service** | Autenticación y autorización basada en JWT. | Gestión de credenciales, roles (Atleta/Coach) y validación de tokens. |
+| **Matchmaking Service** | Motor de emparejamiento y reservas. | Búsqueda de coaches por filtros, gestión de disponibilidad y reserva de sesiones. |
+| **Training Service** | Seguimiento del progreso físico. | Registro de métricas, peso, porcentaje de grasa y evolución del atleta. |
+| **Membership Service** | Gestión de suscripciones. | Control de planes activos, validación de pagos y estado de membresías. |
+| **Videos Service** | Gestión de análisis biomecánico. | Almacenamiento y procesamiento de videos de rutinas para feedback. |
+| **Discovery Server (Eureka)** | Descubrimiento de servicios. | Registro dinámico y localización automática de las instancias de microservicios. |
+| **API Gateway** | Puerta de enlace API centralizada. | Enrutamiento, balanceo de carga, control de acceso (CORS) y gestión del tráfico entrante desde la app móvil. |
+
+---
+
+### Decisiones arquitectónicas basadas en atributos de calidad
+
+| **Atributo de Calidad** | **Decisión Tomada** | **Resultado Esperado** |
+|--------------------------|---------------------|------------------------|
+| **Escalabilidad** | Desacoplamiento en microservicios independientes y uso de **Eureka** para el descubrimiento automático. | Permite escalar horizontalmente servicios de alta demanda (como Matchmaking o Videos) sin afectar al resto del sistema. |
+| **Mantenibilidad** | Diseño modular estricto guiado por **DDD** (*Database per Service*). | Cambios y actualizaciones localizadas en un solo dominio sin riesgo de romper otros servicios. |
+| **Disponibilidad** | Integración de contenedores Docker con monitoreo de estado (Healthchecks) y orquestación. | Alta disponibilidad ante fallos; si un servicio cae, no arrastra a todo el sistema. |
+| **Seguridad** | Emisión de tokens en **IAM Service** y validación de rutas seguras interceptadas en el **API Gateway**. | Acceso seguro, denegando peticiones no autorizadas antes de que lleguen a la lógica de negocio. |
+
+---
+<div align="center">
+    <img src="./assets/chapter4/Components/Containers-dark.png" alt="Diagrama de Contenedores BodyMatch AI">
+</div>
+
+##### 5.2.2.6 Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2, el enfoque del equipo fue la transición de una arquitectura monolítica hacia un ecosistema de microservicios. Debido a la complejidad de orquestar múltiples bases de datos y dominios, el despliegue de **BodyMatch AI** se realizó mediante un enfoque de **contenerización local (Docker Host)**. Esto garantizó el aislamiento de los componentes y la orquestación automatizada previo a una futura migración a la nube.
+
+A continuación, se detallan los pasos arquitectónicos y las evidencias técnicas de nuestro proceso de deployment.
+
+---
+
+### **1. Configuración de la Infraestructura y Orquestación**
+
+Se utilizó **Docker Compose** como herramienta principal de orquestación. Para centralizar este proceso, se creó el repositorio `infrastructure`, el cual contiene el archivo `docker-compose.yml` que define y aprovisiona toda la topología de red.
+
+* **Host de Ejecución:** Entorno utilizando Docker Engine, levantando contenedores individuales para cada Bounded Context extraído.
+* **Persistencia de Datos:** Se levantó el contenedor `bodymatch-postgres`, el cual ejecutó automáticamente el script `01-create-databases.sql` aislando las bases de datos para cada dominio (`matchmaking_db`, `training_db`, `membership_db`, etc.).
+* **Red Privada:** Se configuró la red interna puente `infrastructure_bodymatch-net` para asegurar que el `api-gateway` y el `discovery-server` se comuniquen de forma segura con los microservicios sin exponer puertos innecesarios.
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_docker_running.png" alt="Contenedores orquestados con Docker Compose" width="75%">
+  <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
+</div>
+
+---
+
+### **2. Construcción de Imágenes y Despliegue**
+
+Para mantener la independencia de cada servicio (`matchmaking-service`, `training-service`, `iam-service`, etc.), se definió un `Dockerfile` multietapa en la raíz de cada repositorio, utilizando **Eclipse Temurin Java 21** como base.
+
+El proceso de despliegue consistió en la ejecución del siguiente comando desde la carpeta de infraestructura:
+```bash
+docker compose up -d --build
+```
+Este comando automatizó:
+- La descarga de dependencias y compilación del código fuente.
+- La construcción de las imágenes Docker mediante los Dockerfiles individuales.
+- El levantamiento en segundo plano de todos los servicios, respetando el orden de dependencias.
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_terminal_build.png" alt="" width="75%">
+  <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
+</div>
+
+### **3. Validación del Despliegue y Service Discovery**
+Una vez finalizado el despliegue de los contenedores, se procedió a validar la integridad de la arquitectura distribuida:
+
+- Se accedió al panel de control de Spring Eureka (http://localhost:8761), confirmando que todas las instancias se registraron exitosamente y adquirieron el estado UP.
+- Se validó el API Gateway (http://localhost:8080), comprobando la unificación de contratos a través de Swagger UI y verificando que el enrutamiento de tráfico hacia los microservicios operara de manera correcta.
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_eureka_dashboard.png" alt="" width="75%">
+  <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
+</div>
+
+### **4. Resultado Final**
+El despliegue del Sprint 2 cumplió satisfactoriamente con los criterios técnicos requerides. El ecosistema contenerizado demostró ser funcional y cohesivo, permitiendo a la aplicación móvil en Flutter interactuar con el backend sin problemas, consolidando así el desacoplamiento de la plataforma BodyMatch AI.
+
+
+##### 5.2.2.7 Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, la colaboración del equipo se centró en la transición hacia la arquitectura de microservicios y la integración con la aplicación móvil. La comunicación fue constante mediante sesiones diarias de sincronización y el uso de herramientas de gestión de proyectos, permitiendo la asignación eficiente de tareas entre los desarrolladores de los distintos Bounded Contexts.
+
+La colaboración efectiva fue clave para asegurar el cumplimiento de las historias de usuario y garantizar que el desacoplamiento de servicios (Matchmaking, Training, Membership, etc.) mantuviera la integridad de nuestra lógica de negocio.
+
+Las actividades realizadas durante el Sprint incluyeron:
+
+- Desarrollo paralelo de microservicios independientes.
+- Implementación y revisión de contratos OpenAPI.
+- Integración continua mediante Pull Requests.
+- Validación funcional utilizando Postman y Swagger.
+- Elaboración de pruebas BDD mediante archivos `.feature`.
+- Sincronización entre API Gateway y servicios registrados.
+
+Todos los integrantes participaron activamente en tareas de implementación y validación de Web Services según el alcance definido para el Sprint.
+
+### Distribución de participación del equipo
+
+| Integrante | Principales contribuciones |
+|---|---|
+| Pablo Geronimo | Implementación de Matchmaking Service, reservas, disponibilidad e integración distribuida. |
+| Marcia Melgarejo | Implementación de Training Service, registro de métricas y migración de endpoints. |
+| Jorge Guevara | Implementación de comunicación entre usuario y coach, sistema de alertas y pruebas funcionales. |
+| Anyelo Alejos | Integración móvil, visualización de progreso y soporte de interfaces conectadas a servicios. |
+
+- **Evidencias de colaboración y gestión:**
+
+    <div align="center">
+      <img src="./assets/chapter5/sprint2_team_kanban.png" alt="Evidencias de colaboración - Gestión de tareas en tablero">
+    </div>
+
+##### 5.2.2.8 Kanban Board
+
+Para la gestión eficiente del Sprint 2, el equipo utilizó un tablero Kanban en **Trello**. Esta herramienta visual nos permitió gestionar el ciclo de vida del desarrollo de software (SDLC) de cada uno de los microservicios, asegurando que la transición del monolito hacia una arquitectura desacoplada se realizara bajo un control estricto de calidad.
+
+El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se controló desde la asignación inicial (*To Do*) hasta la validación de despliegue local y orquestación con Docker (*Done*).
+
+<div align="center">
+  <img src="./assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 2 - BodyMatch AI">
+  <p><em>Estado final del tablero Kanban al cierre del Sprint 2: Implementación de Microservicios, API Gateway y vistas móviles.</em></p>
+</div>
+
 
 ## Conclusiones
 
@@ -2866,6 +3197,13 @@ Capturas del Despliegue
 
 * **Mantenibilidad:** La aplicación de los principios SOLID y Domain-Driven Design (DDD) permitió definir 6 Bounded Contexts con fronteras explícitas, reduciendo la complejidad técnica y facilitando la integración de nuevos módulos de nutrición en futuros sprints.
 
+
+### Avance 4: Implementación, Integración y Validación del Ecosistema de Microservicios
+* La transición hacia una arquitectura basada en microservicios se completó exitosamente mediante la extracción de los Bounded Contexts restantes y su integración dentro de un ecosistema distribuido. Esta evolución permitió mejorar la escalabilidad, independencia de despliegue y mantenibilidad de BodyMatch AI.
+* La incorporación de componentes como API Gateway, Service Discovery (Eureka) y bases de datos independientes por servicio permitió consolidar una arquitectura desacoplada, facilitando la comunicación entre servicios y reduciendo dependencias directas entre módulos.
+* La implementación y validación de contratos OpenAPI, junto con el uso de herramientas como Swagger y Postman, contribuyó a garantizar consistencia funcional entre los servicios desarrollados y mejorar el proceso de integración continua.
+* La aplicación del enfoque BDD mediante archivos `.feature` permitió verificar el cumplimiento de criterios de aceptación asociados a las User Stories del Sprint, fortaleciendo la calidad del software y asegurando que el comportamiento del sistema responda a los requerimientos definidos.
+
 ---
 
 ## Recomendaciones
@@ -2883,6 +3221,12 @@ Capturas del Despliegue
 ### TP1: Despliegue y Arquitectura 
 * Se recomienda consolidar la migración progresiva hacia microservicios implementando un API Gateway robusto (ej. Spring Cloud Gateway) que centralice de forma eficiente el enrutamiento hacia los servicios de IAM, Videos y el Monolito Core.
 * Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
+
+### Avance 4: Evolución Arquitectónica y Consolidación Técnica
+
+* Se recomienda incorporar un proceso formal de monitoreo y observabilidad distribuida mediante herramientas como métricas centralizadas, trazabilidad y monitoreo de servicios para facilitar la detección temprana de fallos dentro del ecosistema de microservicios.
+* Se sugiere fortalecer las estrategias de resiliencia entre servicios mediante mecanismos como tolerancia a fallos, reintentos controlados y circuit breakers para mejorar la disponibilidad del sistema ante interrupciones parciales.
+* Se recomienda mantener la organización por Bounded Contexts y continuar aplicando principios de Domain-Driven Design (DDD) para facilitar futuras extensiones funcionales del sistema sin afectar la estabilidad de los servicios existentes.
 
  Anexos
  
