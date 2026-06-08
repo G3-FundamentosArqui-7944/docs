@@ -97,9 +97,14 @@
 | TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus        | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.              | 5e23b4b |
 | TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus        | Actualización del student outcome para la entrega del TB2.                                               | 5537ea6 |
 | TP      | 14/05/2026 | Pablo Antonio Geronimo Quispe   | Unificación y mejora arquitectónica del Diagrama de Clases UML y diagramas de componentes (C4 Model).    | bd6b6e5 |
-| TP      | 15/05/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 1 Backlog y evidencias de ejecución del frontend móvil.                         | (agregar hash) |
-| TP      | 15/05/2026 | Jorge Enrique Guevara Tejada    | Validación de endpoints REST mediante Postman e integración de pruebas de la API RESTful.                | (agregar hash) |
-| TP      | 15/05/2026 | Anyelo Bill Alejos Jesus        | Despliegue de Landing Page en GitHub Pages y estructuración de matriz de trazabilidad de microservicios. | (agregar hash) |
+| TP      | 15/05/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 1 Backlog y evidencias de ejecución del frontend móvil.                         | c9f7f75 |
+| TP      | 15/05/2026 | Jorge Enrique Guevara Tejada    | Validación de endpoints REST mediante Postman e integración de pruebas de la API RESTful.                | 903aea4 |
+| TP      | 15/05/2026 | Anyelo Bill Alejos Jesus        | Despliegue de Landing Page en GitHub Pages y estructuración de matriz de trazabilidad de microservicios. | 390f827 |
+| TB3     | 06/06/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 2 Backlog y evidencias de ejecución del frontend móvil .                         | 75a226b |
+| TB3     | 06/06/2026 | Jorge Enrique Guevara Tejada   |Desacoplamiento del backend monolito modular a microservicios                         | 90488b0 |
+| TB3     | 06/06/2026 | Anyelo Bill Alejos Jesus  | Documentación del Sprint 2 Backlog y  evidencias del docker y kanba board                        | c63b0fc |
+| TB3     | 04/06/2026 | Pablo Antonio geronimo Quispe  | Finalizacion del levantamiento de correciones                      | 97add48 |
+
 
 ## Contenido
 
