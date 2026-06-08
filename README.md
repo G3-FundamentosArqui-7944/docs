@@ -3,9 +3,8 @@
 </p>
 
 
-<p align="center">
-  <img src="./assets/upclogo.png" alt="UPC Logo" width="200"/>
-</p>
+ <p align="center"> <img src = "https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img> 
+ </p>
 
 <p align="center">
   Ingeniería de Software <br>
@@ -98,9 +97,14 @@
 | TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus        | Creación de historias técnicas y redacción de descripciones para diagramas de arquitectura.              | 5e23b4b |
 | TB2     | 02/05/2026 | Anyelo Bill Alejos Jesus        | Actualización del student outcome para la entrega del TB2.                                               | 5537ea6 |
 | TP      | 14/05/2026 | Pablo Antonio Geronimo Quispe   | Unificación y mejora arquitectónica del Diagrama de Clases UML y diagramas de componentes (C4 Model).    | bd6b6e5 |
-| TP      | 15/05/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 1 Backlog y evidencias de ejecución del frontend móvil.                         | (agregar hash) |
-| TP      | 15/05/2026 | Jorge Enrique Guevara Tejada    | Validación de endpoints REST mediante Postman e integración de pruebas de la API RESTful.                | (agregar hash) |
-| TP      | 15/05/2026 | Anyelo Bill Alejos Jesus        | Despliegue de Landing Page en GitHub Pages y estructuración de matriz de trazabilidad de microservicios. | (agregar hash) |
+| TP      | 15/05/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 1 Backlog y evidencias de ejecución del frontend móvil.                         | c9f7f75 |
+| TP      | 15/05/2026 | Jorge Enrique Guevara Tejada    | Validación de endpoints REST mediante Postman e integración de pruebas de la API RESTful.                | 903aea4 |
+| TP      | 15/05/2026 | Anyelo Bill Alejos Jesus        | Despliegue de Landing Page en GitHub Pages y estructuración de matriz de trazabilidad de microservicios. | 390f827 |
+| TB3     | 06/06/2026 | Marcia Victoria Melgarejo Gomez | Documentación del Sprint 2 Backlog y evidencias de ejecución del frontend móvil .                         | 75a226b |
+| TB3     | 06/06/2026 | Jorge Enrique Guevara Tejada   |Desacoplamiento del backend monolito modular a microservicios                         | 90488b0 |
+| TB3     | 06/06/2026 | Anyelo Bill Alejos Jesus  | Documentación del Sprint 2 Backlog y  evidencias del docker y kanba board                        | c63b0fc |
+| TB3     | 04/06/2026 | Pablo Antonio geronimo Quispe  | Finalizacion del levantamiento de correciones                      | 97add48 |
+
 
 ## Contenido
 
@@ -204,8 +208,8 @@ ABET - EAC - Student Outcome 7 Criterio: La capacidad de adquirir y aplicar nuev
  
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio** <br>**TB1:** Apliqué la metodología Scrum para estructurar el Product Backlog con 41 User Stories, lo que permitió organizar el equipo en sprints de dos semanas con entregables verificables.<br>**TB2:** Diseñé el capítulo de arquitectura aplicando el método ADD v3, definiendo 5 Quality Attribute Scenarios con métricas concretas (ej. latencia P95 < 800 ms) y 10 drivers arquitectónicos priorizados por impacto.<br>**TP1:** Implementé la documentación interactiva del API Gateway con SpringDoc OpenAPI 3.0, logrando que el 100% de los 24 endpoints del Sprint 1 queden documentados en Swagger UI con contratos de entrada y salida verificables. <br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué el patrón CQRS y los principios DDD para estructurar el diagrama de clases con 6 bounded contexts y 12 entidades de dominio, asegurando que cada clase tuviera una única responsabilidad según el principio SRP.<br>**TB2:** Elaboré el diagrama de clases UML final con 12 entidades, aplicando los patrones Factory Method, Strategy y Repository documentados en la sección 4.1.6, lo que permitió que el evaluador trazara cada patrón a su clase concreta.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Apliqué el proceso Lean UX elaborando el Lean UX Canvas con 6 hipótesis verificables y métricas de éxito (ej. retención > 70% a los 3 meses), estructurando la propuesta de valor del producto.<br>**TB2:** Desarrollé la iteración ADD 1 definiendo 7 decisiones de diseño (DD-001 a DD-007) con justificación, consecuencias y referencia a los drivers que satisfacen.<br>**TP1:** Validé 12 endpoints REST del microservicio IAM y Videos mediante colecciones de Postman, documentando los request/response de cada verbo HTTP (GET, POST, PUT, DELETE) con datos de muestra reales. <br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué la técnica de Requirements Elicitation realizando 6 entrevistas estructuradas (3 por segmento) con guión de 10 preguntas abiertas, sintetizando los hallazgos en User Personas elaboradas con UXPressia.<br>**TB2:** Investigué el concepto de Technical Stories y redacté 4 TS (TS01–TS04) con criterios de aceptación Given-When-Then, además de describir los 8 diagramas de componentes C4 Nivel 3 con párrafo interpretativo por figura.<br>**TP1:** Desplegué la Landing Page en GitHub Pages configurando el pipeline de publicación estática, y estructuré la matriz de trazabilidad de 24 endpoints relacionándolos con sus User Stories correspondientes.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Redacté 41 User Stories con estructura "Como… quiero… para…" y criterios de aceptación Given-When-Then para los 8 Epics del proyecto, asegurando que cada historia tuviera mínimo 2 escenarios de prueba.<br>**TB2:** Apliqué el método ADD documentando el Architectural Design Backlog de la iteración 1 con 7 drivers priorizados y el tablero Kanban de 3 columnas (To Do / In Progress / Done) para gestionar las decisiones arquitectónicas.<br>**TP1:** Documenté el Sprint 1 Backlog descomponiendo 20 User Stories en 26 tareas técnicas de máximo 8 horas, y registré las evidencias de ejecución del frontend móvil con capturas de las 5 pantallas implementadas. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos en metodologías de investigación de usuarios (entrevistas, User Personas, Lean UX) y organización ágil (Scrum, Product Backlog), generando artefactos verificables que sirvieron como base para las decisiones de diseño de los capítulos posteriores.<br><br>**TB2:** El equipo consolidó conocimientos avanzados en arquitectura de software mediante el método ADD v3, traduciendo los drivers del negocio en 7 decisiones de diseño documentadas, 5 Quality Attribute Scenarios con métricas concretas y 6 bounded contexts con patrones de diseño trazables al código.<br><br>**TP1:** La aplicación de conocimientos de despliegue (GitHub Pages, Docker Compose), documentación de APIs (Swagger/OpenAPI) y gestión de sprints (Sprint Backlog con tareas técnicas) permitió entregar el primer incremento funcional de BodyMatch AI con evidencia verificable de implementación, testing y despliegue en producción. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Identifiqué que la coordinación de un equipo de 5 personas requería conocimientos de liderazgo técnico que no tenía, por lo que estudié técnicas de facilitación de ceremonias Scrum (planning, retrospectiva) para mejorar la eficacia del equipo.<br>**TB2:** Reconocí que diseñar arquitecturas basadas en atributos de calidad requiere dominar el método ADD v3 más allá del contenido del curso, por lo que estudié el libro "Designing Software Architectures" del SEI para completar la iteración ADD 1 con rigor metodológico.<br>**TP1:** Comprendí que el despliegue de microservicios con Spring Cloud Gateway y Eureka requiere conocimientos de redes y configuración de Docker que debí adquirir de forma autónoma consultando la documentación oficial de Spring Cloud.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la necesidad de aprender notación UML avanzada para representar correctamente las relaciones de agregación, composición y dependencia entre las entidades del sistema.<br>**TB2:** Detecté que los patrones de diseño GoF requieren comprensión profunda de los principios SOLID para aplicarse correctamente, por lo que revisé casos de uso concretos de cada patrón antes de incluirlos en el diagrama de clases.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí que validar hipótesis de negocio requiere conocimientos de diseño de entrevistas cualitativas, por lo que aprendí las técnicas de preguntas abiertas y no directivas para evitar sesgo en las respuestas.<br>**TB2:** Reconocí que documentar decisiones arquitectónicas de forma rigurosa (con consecuencias y alternativas descartadas) es una habilidad diferenciadora en el rol de arquitecto de software.<br>**TP1:** Entendí que el testing de APIs requiere dominar herramientas como Postman Collections y la generación de datos de muestra realistas para que las pruebas sean representativas del comportamiento real del sistema.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que el levantamiento de requisitos mediante entrevistas es una habilidad que requiere práctica continua, y que la calidad de los User Personas depende directamente de la profundidad del análisis de los datos cualitativos obtenidos.<br>**TB2:** Identifiqué que la documentación de arquitectura (diagramas C4, decisiones de diseño) debe ser lo suficientemente clara para que un nuevo miembro del equipo pueda entender el sistema sin necesidad de explicación adicional, lo que requiere un estándar de redacción técnica que desarrollé durante esta entrega.<br>**TP1:** Advertí que el ecosistema Cloud y las herramientas de CI/CD evolucionan rápidamente, por lo que dominar los fundamentos de infraestructura como código (IaC) y automatización de despliegues es una habilidad crítica para mi desarrollo profesional.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué que escribir criterios de aceptación verificables (Given-When-Then) requiere pensar como tester antes de como desarrolladora, una perspectiva que desarrollé estudiando las convenciones de Gherkin y BDD.<br>**TB2:** Reconocí que gestionar un backlog arquitectónico con el método ADD es más complejo que un Product Backlog estándar, ya que cada ítem debe justificarse por su impacto en un atributo de calidad medible.<br>**TP1:** Comprendí que documentar un Sprint de forma rigurosa (con evidencias de desarrollo, testing y despliegue) es una habilidad profesional indispensable para la auditoría de proyectos de software en entornos empresariales. | **TB1:** El equipo reconoció que el desarrollo de un producto de software de calidad exige aprendizaje multidisciplinario más allá del contenido del curso, incluyendo técnicas de investigación de usuarios, diseño UX y gestión ágil de proyectos.<br><br>**TB2:** La aplicación del método ADD v3 evidenció que la arquitectura de software requiere actualización constante del conocimiento técnico, especialmente en patrones de diseño, atributos de calidad y herramientas de modelado, habilidades que el equipo desarrolló de forma autónoma durante esta entrega.<br><br>**TP1:** La transición hacia microservicios confirmó que el ingeniero de software moderno debe mantener un ciclo continuo de aprendizaje en herramientas de despliegue, documentación de APIs y testing automatizado, ya que estas tecnologías evolucionan con rapidez y son requisito en el mercado laboral actual. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software** | **Geronimo Quispe, Pablo Antonio** <br>**TB1:** Apliqué la metodología Scrum para estructurar el Product Backlog con 41 User Stories, lo que permitió organizar el equipo en sprints de dos semanas con entregables verificables.<br>**TB2:** Diseñé el capítulo de arquitectura aplicando el método ADD v3, definiendo 5 Quality Attribute Scenarios con métricas concretas (ej. latencia P95 < 800 ms) y 10 drivers arquitectónicos priorizados por impacto.<br>**TP1:** Implementé la documentación interactiva del API Gateway con SpringDoc OpenAPI 3.0, logrando que el 100% de los 24 endpoints del Sprint 1 queden documentados en Swagger UI con contratos de entrada y salida verificables.<br>**TB3:** Lideré el desarrollo del backend del monolito, ejecutando la refactorización de código y el levantamiento de correcciones de entregas anteriores para asegurar la estabilidad del sistema en la recta final. <br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Investigué el patrón CQRS y los principios DDD para estructurar el diagrama de clases con 6 bounded contexts y 12 entidades de dominio, asegurando que cada clase tuviera una única responsabilidad según el principio SRP.<br>**TB2:** Elaboré el diagrama de clases UML final con 12 entidades, aplicando los patrones Factory Method, Strategy y Repository documentados en la sección 4.1.6, lo que permitió que el evaluador trazara cada patrón a su clase concreta.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Apliqué el proceso Lean UX elaborando el Lean UX Canvas con 6 hipótesis verificables y métricas de éxito (ej. retención > 70% a los 3 meses), estructurando la propuesta de valor del producto.<br>**TB2:** Desarrollé la iteración ADD 1 definiendo 7 decisiones de diseño (DD-001 a DD-007) con justificación, consecuencias y referencia a los drivers que satisfacen.<br>**TP1:** Validé 12 endpoints REST del microservicio IAM y Videos mediante colecciones de Postman, documentando los request/response de cada verbo HTTP (GET, POST, PUT, DELETE) con datos de muestra reales.<br>**TB3:** Ejecuté el desarrollo progresivo de la arquitectura de microservicios y la lógica de negocio en el backend, garantizando la correcta comunicación inter-servicios y el cumplimiento de los contratos API. <br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Apliqué la técnica de Requirements Elicitation realizando 6 entrevistas estructuradas (3 por segmento) con guión de 10 preguntas abiertas, sintetizando los hallazgos en User Personas elaboradas con UXPressia.<br>**TB2:** Investigué el concepto de Technical Stories y redacté 4 TS (TS01–TS04) con criterios de aceptación Given-When-Then, además de describir los 8 diagramas de componentes C4 Nivel 3 con párrafo interpretativo por figura.<br>**TP1:** Desplegué la Landing Page en GitHub Pages configurando el pipeline de publicación estática, y estructuré la matriz de trazabilidad de 24 endpoints relacionándolos con sus User Stories correspondientes.<br>**TB3:** Gestioné la planificación del Sprint 3 estructurando el Sprint Backlog 3, y consolidé las evidencias del Sprint Review, abarcando las pruebas funcionales (Testing Suite Evidence), desarrollo y ejecución del incremento de software.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Redacté 41 User Stories con estructura "Como… quiero… para…" y criterios de aceptación Given-When-Then para los 8 Epics del proyecto, asegurando que cada historia tuviera mínimo 2 escenarios de prueba.<br>**TB2:** Apliqué el método ADD documentando el Architectural Design Backlog de la iteración 1 con 7 drivers priorizados y el tablero Kanban de 3 columnas (To Do / In Progress / Done) para gestionar las decisiones arquitectónicas.<br>**TP1:** Documenté el Sprint 1 Backlog descomponiendo 20 User Stories en 26 tareas técnicas de máximo 8 horas, y registré las evidencias de ejecución del frontend móvil con capturas de las 5 pantallas implementadas.<br>**TB3:** Sistematicé la documentación técnica del Sprint 3 mediante las evidencias de despliegue (Software Deployment) y microservicios. Además, documenté los *Insights* de colaboración del equipo y actualicé el tablero Kanban para asegurar el flujo de valor ágil. | **TB1:** El equipo demostró capacidad para adquirir y aplicar conocimientos en metodologías de investigación de usuarios (entrevistas, User Personas, Lean UX) y organización ágil (Scrum, Product Backlog), generando artefactos verificables que sirvieron como base para las decisiones de diseño de los capítulos posteriores.<br><br>**TB2:** El equipo consolidó conocimientos avanzados en arquitectura de software mediante el método ADD v3, traduciendo los drivers del negocio en 7 decisiones de diseño documentadas, 5 Quality Attribute Scenarios con métricas concretas y 6 bounded contexts con patrones de diseño trazables al código.<br><br>**TP1:** La aplicación de conocimientos de despliegue (GitHub Pages, Docker Compose), documentación de APIs (Swagger/OpenAPI) y gestión de sprints (Sprint Backlog con tareas técnicas) permitió entregar el primer incremento funcional de BodyMatch AI con evidencia verificable de implementación, testing y despliegue en producción.<br><br>**TB3:** El equipo consolidó sus competencias técnicas en la implementación final del sistema, aplicando conocimientos avanzados de refactorización, despliegue de microservicios y control de calidad ágil, logrando entregar un Sprint 3 funcional, exhaustivamente probado y listo para el Sprint Review. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software** | **Geronimo Quispe, Pablo Antonio**<br>**TB1:** Identifiqué que la coordinación de un equipo de 5 personas requería conocimientos de liderazgo técnico que no tenía, por lo que estudié técnicas de facilitación de ceremonias Scrum (planning, retrospectiva) para mejorar la eficacia del equipo.<br>**TB2:** Reconocí que diseñar arquitecturas basadas en atributos de calidad requiere dominar el método ADD v3 más allá del contenido del curso, por lo que estudié el libro "Designing Software Architectures" del SEI para completar la iteración ADD 1 con rigor metodológico.<br>**TP1:** Comprendí que el despliegue de microservicios con Spring Cloud Gateway y Eureka requiere conocimientos de redes y configuración de Docker que debí adquirir de forma autónoma consultando la documentación oficial de Spring Cloud.<br>**TB3:** Comprendí que el levantamiento de correcciones técnicas y la optimización de un monolito requieren habilidades avanzadas en refactorización y resolución de deuda técnica, por lo que reforcé mis conocimientos en principios de *Clean Code*.<br><br>**Tenorio Medina, Piero Francesco**<br>**TB1:** Reconocí la necesidad de aprender notación UML avanzada para representar correctamente las relaciones de agregación, composición y dependencia entre las entidades del sistema.<br>**TB2:** Detecté que los patrones de diseño GoF requieren comprensión profunda de los principios SOLID para aplicarse correctamente, por lo que revisé casos de uso concretos de cada patrón antes de incluirlos en el diagrama de clases.<br><br>**Guevara Tejada, Jorge Enrique**<br>**TB1:** Comprendí que validar hipótesis de negocio requiere conocimientos de diseño de entrevistas cualitativas, por lo que aprendí las técnicas de preguntas abiertas y no directivas para evitar sesgo en las respuestas.<br>**TB2:** Reconocí que documentar decisiones arquitectónicas de forma rigurosa (con consecuencias y alternativas descartadas) es una habilidad diferenciadora en el rol de arquitecto de software.<br>**TP1:** Entendí que el testing de APIs requiere dominar herramientas como Postman Collections y la generación de datos de muestra realistas para que las pruebas sean representativas del comportamiento real del sistema.<br>**TB3:** Identifiqué que la transición y desarrollo asíncrono de microservicios exige un manejo riguroso de la tolerancia a fallos, lo que me motivó a investigar de manera independiente sobre patrones de resiliencia en arquitecturas distribuidas.<br><br>**Alejos Jesus, Anyelo Bill**<br>**TB1:** Comprendí que el levantamiento de requisitos mediante entrevistas es una habilidad que requiere práctica continua, y que la calidad de los User Personas depende directamente de la profundidad del análisis de los datos cualitativos obtenidos.<br>**TB2:** Identifiqué que la documentación de arquitectura (diagramas C4, decisiones de diseño) debe ser lo suficientemente clara para que un nuevo miembro del equipo pueda entender el sistema sin necesidad de explicación adicional, lo que requiere un estándar de redacción técnica que desarrollé durante esta entrega.<br>**TP1:** Advertí que el ecosistema Cloud y las herramientas de CI/CD evolucionan rápidamente, por lo que dominar los fundamentos de infraestructura como código (IaC) y automatización de despliegues es una habilidad crítica para mi desarrollo profesional.<br>**TB3:** Comprendí que documentar integralmente las pruebas y evidencias de un Sprint Review exige manejar estándares de QA (Quality Assurance) más formales, por lo que tuve que investigar métodos para estructurar la *Testing Suite* de manera comprensible y profesional.<br><br>**Melgarejo Gomez, Marcia Victoria**<br>**TB1:** Identifiqué que escribir criterios de aceptación verificables (Given-When-Then) requiere pensar como tester antes de como desarrolladora, una perspectiva que desarrollé estudiando las convenciones de Gherkin y BDD.<br>**TB2:** Reconocí que gestionar un backlog arquitectónico con el método ADD es más complejo que un Product Backlog estándar, ya que cada ítem debe justificarse por su impacto en un atributo de calidad medible.<br>**TP1:** Comprendí que documentar un Sprint de forma rigurosa (con evidencias de desarrollo, testing y despliegue) es una habilidad profesional indispensable para la auditoría de proyectos de software en entornos empresariales.<br>**TB3:** Comprendí que mantener la cohesión del equipo y monitorear el flujo de trabajo en etapas críticas de entrega requiere habilidades de *agile management* avanzadas, por lo que amplié mis conocimientos sobre la generación de *Insights* colaborativos y métricas en tableros Kanban. | **TB1:** El equipo reconoció que el desarrollo de un producto de software de calidad exige aprendizaje multidisciplinario más allá del contenido del curso, incluyendo técnicas de investigación de usuarios, diseño UX y gestión ágil de proyectos.<br><br>**TB2:** La aplicación del método ADD v3 evidenció que la arquitectura de software requiere actualización constante del conocimiento técnico, especialmente en patrones de diseño, atributos de calidad y herramientas de modelado, habilidades que el equipo desarrolló de forma autónoma durante esta entrega.<br><br>**TP1:** La transición hacia microservicios confirmó que el ingeniero de software moderno debe mantener un ciclo continuo de aprendizaje en herramientas de despliegue, documentación de APIs y testing automatizado, ya que estas tecnologías evolucionan con rapidez y son requisito en el mercado laboral actual.<br><br>**TB3:** La ejecución final del proyecto le demostró al equipo que la entrega continua de valor empresarial demanda un aprendizaje ininterrumpido en áreas como la gestión de calidad (QA), devops, resolución de deuda técnica y mantenimiento de arquitecturas escalables. |
 
 ## Capítulo I: Introducción
 
@@ -250,11 +254,11 @@ Operamos bajo una ética de datos clara. La información de progreso y salud de 
 
 | Foto | Miembros del equipo | Código de Estudiante | Descripción |
 | :---: | :--- | :--- | :--- |
-| ![alt text](assets/pablophoto.png) | Pablo Antonio Geronimo Quispe | U202314304 | Soy Pablo, estudiante de Ingeniería de Software en el 7mo ciclo. Me caracterizo por ser una persona responsable, disciplinada y comprometida con las actividades que asumo. Tengo experiencia en trabajo en equipo y conocimientos en bases de datos, lo cual aporta al desarrollo de proyectos. Además, cuento con conocimientos en Java y JavaScript, permitiéndome contribuir tanto en backend como frontend. |
-| ![alt text](assets/pierophoto.png) | Piero Francesco Tenorio Medina | U202318731 | Soy estudiante de Ingeniería de Software en la UPC. Me considero una persona comprometida, responsable y proactiva en el trabajo en equipo. Tengo experiencia en desarrollo de interfaces web con HTML, CSS y JavaScript, lo que me permite aportar en soluciones visuales y funcionales. Busco seguir aprendiendo y mejorar mis habilidades para contribuir al éxito del proyecto. |
-| ![alt text](assets/marciaphoto.png) | Marcia Victoria Melgarejo Gomez | U20231C505 | Soy Marcia Melgarejo, estudiante de Ingeniería de Software en cuarto ciclo. Me apasiona la tecnología y su impacto en la sociedad. Me caracterizo por ser curiosa, persistente y colaborativa. Mi objetivo es seguir desarrollando mis habilidades en programación para resolver problemas de manera eficiente. |
-| ![alt text](assets/everkoephoto.png) | Anyelo Bill Alejos Jesus | U20231D149 | Soy Anyelo Alejos, estudiante de Ingeniería de Software en séptimo ciclo. Tengo conocimientos en C++ y Python, lo que me permite desarrollar soluciones de manera eficiente. Me considero una persona responsable, comprometida y con iniciativa, enfocada en aportar al logro de los objetivos del equipo. |
-| ![alt text](assets/jorgephoto.png) | Jorge Enrique Guevara Tejada | U202316057 | Soy un estudiante responsable y comprometido con el trabajo en equipo. Me esfuerzo constantemente por mejorar mis habilidades y superar desafíos académicos. Busco no solo un buen rendimiento, sino también aportar de manera significativa al éxito del equipo en cada proyecto. |
+| ![alt text](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/pablophoto.png) | Pablo Antonio Geronimo Quispe | U202314304 | Soy Pablo, estudiante de Ingeniería de Software en el 7mo ciclo. Me caracterizo por ser una persona responsable, disciplinada y comprometida con las actividades que asumo. Tengo experiencia en trabajo en equipo y conocimientos en bases de datos, lo cual aporta al desarrollo de proyectos. Además, cuento con conocimientos en Java y JavaScript, permitiéndome contribuir tanto en backend como frontend. |
+| ![alt text](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/pierophoto.png) | Piero Francesco Tenorio Medina | U202318731 | Soy estudiante de Ingeniería de Software en la UPC. Me considero una persona comprometida, responsable y proactiva en el trabajo en equipo. Tengo experiencia en desarrollo de interfaces web con HTML, CSS y JavaScript, lo que me permite aportar en soluciones visuales y funcionales. Busco seguir aprendiendo y mejorar mis habilidades para contribuir al éxito del proyecto. |
+| ![alt text](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/marciaphoto.png) | Marcia Victoria Melgarejo Gomez | U20231C505 | Soy Marcia Melgarejo, estudiante de Ingeniería de Software en cuarto ciclo. Me apasiona la tecnología y su impacto en la sociedad. Me caracterizo por ser curiosa, persistente y colaborativa. Mi objetivo es seguir desarrollando mis habilidades en programación para resolver problemas de manera eficiente. |
+| ![alt text](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/everkoephoto.png) | Anyelo Bill Alejos Jesus | U20231D149 | Soy Anyelo Alejos, estudiante de Ingeniería de Software en séptimo ciclo. Tengo conocimientos en C++ y Python, lo que me permite desarrollar soluciones de manera eficiente. Me considero una persona responsable, comprometida y con iniciativa, enfocada en aportar al logro de los objetivos del equipo. |
+| ![alt text](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/jorgephoto.png) | Jorge Enrique Guevara Tejada | U202316057 | Soy un estudiante responsable y comprometido con el trabajo en equipo. Me esfuerzo constantemente por mejorar mis habilidades y superar desafíos académicos. Busco no solo un buen rendimiento, sino también aportar de manera significativa al éxito del equipo en cada proyecto. |
 
 ### 1.2. Solution Profile
 BodyMatch AI es una aplicación móvil que ofrece un ecosistema integral de entrenamiento personalizado, conectando a usuarios con entrenadores especializados mediante una plataforma digital inteligente.
@@ -433,7 +437,7 @@ Creemos que, si incorporamos herramientas de seguimiento del progreso físico (c
 ##### 1.2.2.4. Lean UX Canvas.
 
 <p align="center">
-    <img src="assets/leanuxcanvaphoto.png" alt="Lean-UX-Canvas"/>
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/leanuxcanvaphoto.png" alt="Lean-UX-Canvas"/>
 </p>
 
 Link: 
@@ -570,7 +574,7 @@ Esta brecha constituye la ventaja competitiva central de BodyMatch AI: el ecosis
 **Segmento 1: Jóvenes Adultos interesados en el fitness**
 **Entrevista 1**
 
- <img src="./assets/interview1.png" alt="interview1" />
+ <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/interview1.png" alt="interview1" />
 
 Stefanny Paucar es una estudiante de 18 años residente de Villa María que busca mejorar su estilo de vida a través de la actividad física. Considera que el ejercicio es fundamental para desarrollar hábitos saludables, aunque actualmente entrena de forma empírica en casa siguiendo videos de YouTube y saliendo a correr con sus mascotas.
 Su principal dificultad radica en la incertidumbre sobre su técnica; menciona sentir miedo a lesionarse y dudas constantes al intentar imitar movimientos de internet sin supervisión. Aunque no ha utilizado aplicaciones de fitness anteriormente, se muestra muy interesada en una herramienta tecnológica que le brinde autonomía.
@@ -589,7 +593,7 @@ Stephanie destaca que la función de análisis de video por inteligencia artific
 
 **Entrevista 2**
 
- <img src="./assets/interview2.png" alt="interview2" />
+ <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/interview2.png" alt="interview2" />
 Alexander Moreno es un joven de 20 años con una trayectoria destacada en el Powerlifting desde 2025. Para él, la actividad física es el pilar de su estilo de vida, enfocándose en la sobrecarga progresiva y el método Heavy Duty (alto peso e intensidad). A pesar de su experiencia, admite que persisten dudas sobre la técnica correcta para evitar lesiones, las cuales suele resolver consultando a compañeros o buscando en su celular.
 Aunque ha utilizado herramientas como Fitia y smartwatches, su experiencia previa con apps de entrenamiento ha sido negativa debido al exceso de anuncios y la falta de claridad en las instrucciones. Alexander valora positivamente la propuesta de BodyMatch AI, señalando que el análisis de video por inteligencia artificial sería una herramienta de gran utilidad para sus sesiones de entrenamiento en solitario.
 Finalmente, manifiesta su disposición a pagar por una suscripción premium, siempre que el precio sea adecuado y facilite el acceso directo a información de coaches certificados, lo cual considera fundamental para seguir optimizando su progreso en fuerza y masa muscular.
@@ -607,7 +611,7 @@ Finalmente, manifiesta su disposición a pagar por una suscripción premium, sie
 **Entrevista 3**
 
 
- <img src="./assets/interview3.png" alt="interview3" />
+ <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/interview3.png" alt="interview3" />
 
 Adrián Yañez es un joven deportista que entrena en el gimnasio entre 4 a 5 veces por semana, viendo el ejercicio como una herramienta clave para su salud mental y liberación de estrés. Aunque utiliza YouTube y smartwatches para monitorear sus calorías, siente que sus rutinas actuales carecen de un control de progreso formal y de una personalización real que se adapte a su nivel.  
 El punto crítico en la experiencia de Adrián es la inseguridad al realizar ejercicios complejos como el peso muerto o las sentadillas; admite que el miedo a lesionarse limita su progreso, llevándolo incluso a evitar ciertos movimientos. Critica las aplicaciones actuales por ser "muy genéricas" y por no ofrecer retroalimentación en tiempo real sobre la ejecución física.  
@@ -628,7 +632,7 @@ Adrián afirma que la propuesta de BodyMatch AI de corregir la postura mediante 
 **Entrevista 1**
 
 
- <img src="./assets/interview4.png" alt="interview4" />
+ <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/interview4.png" alt="interview4" />
 
 Antonio Guevara es un entrenador que considera la actividad física como un pilar fundamental tanto en su vida personal como profesional. Actualmente gestiona sus asesorías de forma manual mediante Excel y WhatsApp, lo que le genera dificultades en la centralización de la información y una falta de constancia en el seguimiento debido al tiempo que consume la revisión de mensajes dispersos. Identifica la corrección técnica remota como su mayor desafío, destacando la imposibilidad de brindar feedback en tiempo real y el riesgo de lesiones que esto conlleva para sus clientes.  
 Para la captación de clientes, depende de su constancia en redes sociales y recomendaciones boca a boca, pero reconoce la falta de un canal estructurado. Considera que la inteligencia artificial sería un complemento ideal para automatizar correcciones básicas y escalar su servicio sin sacrificar la calidad de la atención. Antonio busca una plataforma integral que centralice la gestión, los pagos y las métricas de rendimiento, y ve en BodyMatch AI una oportunidad clave para diferenciarse tecnológicamente e impulsar su crecimiento profesional.
@@ -646,7 +650,7 @@ Para la captación de clientes, depende de su constancia en redes sociales y rec
 **Entrevista 2**
 
 
- <img src="./assets/interview5.png" alt="interview5" />
+ <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/interview5.png" alt="interview5" />
 
 Adrian es un entrenador de 25 años que enfoca sus asesorías de manera personalizada, adaptando las rutinas según los objetivos y las posibles lesiones de cada cliente. Actualmente, dedica entre dos a tres horas de su jornada laboral a tareas administrativas y de revisión, un tiempo que considera significativo. Su mayor desafío en la asesoría remota no es solo la técnica, sino la gestión de las expectativas de los clientes, quienes suelen buscar resultados inmediatos y descuidan pilares básicos como la alimentación y el descanso, responsabilizando erróneamente al coach.  
 Para captar clientes, Adrian combina el uso de WhatsApp e Instagram con una estrategia basada en la fidelización y el "boca a boca", priorizando la construcción de una relación de amistad con sus alumnos. Considera que, aunque internet está saturado de información, su valor diferencial reside en la corrección técnica específica que un video genérico no puede ofrecer. Adrian ve con muy buenos ojos la implementación de la Inteligencia Artificial como un apoyo motivador y técnico, y señala que funcionalidades como los pagos directos (sin capturas de pantalla) y una lista de control de actividad de los alumnos serían herramientas clave para facilitar su trabajo. Se muestra interesado en BodyMatch AI por la facilidad que le brindaría para comunicarse y llegar de forma más eficiente a sus clientes.
@@ -665,7 +669,7 @@ Para captar clientes, Adrian combina el uso de WhatsApp e Instagram con una estr
 
 
 
-<img src="./assets/interview6.png" alt="interview6" />
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/interview6.png" alt="interview6" />
 
 Diego seminario es un preparador de culturismo de 26 años para quien la disciplina y la excelencia física son la base de su identidad. Aunque utiliza herramientas digitales para el registro de cargas, enfrenta una carga administrativa abrumadora al supervisar manualmente a más de 50 atletas mediante videos recibidos por redes sociales. Su principal conflicto es la falta de inmediatez. El retraso de hasta 48 horas en el feedback técnico es un "bache peligroso" que compromete el progreso y la seguridad de sus alumnos de alto rendimiento.  
 Javier identifica la inteligencia artificial como el "siguiente nivel" de la industria, especialmente para garantizar la conexión mente-músculo y los ángulos de ejecución correctos sin necesidad de su presencia física constante. Para el BodyMatch AI representa la oportunidad de posicionarse como un coach premium, permitiéndole delegar la supervisión técnica básica para enfocarse en tareas de mayor valor como la estrategia nutricional y los ajustes finos de la preparación competitiva. Además, subraya la importancia de contar con herramientas visuales de progresión de cargas para validar la efectividad de sus asesorías.
@@ -779,7 +783,7 @@ Para la creación de los User Persona de cada segmento, se tomaron como base las
  
 #### Segmento 1: Jóvenes Adultos interesados en el fitness
  
-![User Persona Stephanie Paukar](assets/usperson.png)
+![User Persona Stephanie Paukar](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/usperson.png)
  
 **Descripción interpretativa:** Stephanie Paukar, 20 años, estudiante de la UNMSM en Villa María del Triunfo, representa al usuario que entrena de forma autodidacta con recursos gratuitos de internet. Sus tres objetivos principales —cambio estético seguro, aprender técnica correcta sin gimnasio costoso y entrenar con confianza— emergen directamente de las entrevistas, donde el 100% de los participantes manifestó miedo a lesionarse y frustración por la falta de retroalimentación en tiempo real. Su cita representativa, *"Me da miedo imitar un video de YouTube y terminar lesionada por no saber si me estoy moviendo bien"*, sintetiza el pain point central que BodyMatch AI resuelve mediante el análisis de video con IA. Sus canales digitales (TikTok, Instagram, YouTube) confirman que la estrategia de adquisición mediante contenido en redes sociales es la más efectiva para este segmento.
  
@@ -787,7 +791,7 @@ Para la creación de los User Persona de cada segmento, se tomaron como base las
  
 #### Segmento 2: Entrenadores Personales (Coaches)
  
-![User Persona Antonio Guevara](assets/usperson2.png)
+![User Persona Antonio Guevara](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/usperson2.png)
  
 **Descripción interpretativa:** Antonio Guevara, 25 años, Personal Trainer independiente en Lima, representa al coach que ha logrado construir una cartera de clientes online pero cuyo crecimiento está estancado por la carga operativa manual. Sus tres objetivos —centralizar la gestión en una herramienta, automatizar el feedback técnico y profesionalizar su marca— reflejan los hallazgos de las entrevistas, donde el 100% de los coaches señaló la dispersión de información entre Excel, WhatsApp y Google Drive como su principal freno al crecimiento. Su cita, *"Si logro automatizar las correcciones básicas, puedo escalar mi negocio sin perder la calidad de mi asesoría"*, articula exactamente la propuesta de valor que BodyMatch AI ofrece al segmento de coaches: delegar la supervisión técnica rutinaria a la IA para enfocarse en la planificación de alto valor.
 
@@ -825,7 +829,7 @@ El proceso de elaboración de los Empathy Maps partió de la revisión sistemát
  
 #### Segmento 1: Jóvenes Adultos interesados en el fitness
  
-![Empathy Map Segmento 1](assets/empathy1.png)
+![Empathy Map Segmento 1](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/empathy1.png)
  
 **Análisis interpretativo:** El Empathy Map de Stephanie revela una tensión central entre su alto nivel de motivación intrínseca para mejorar físicamente y la parálisis técnica que le genera no tener retroalimentación confiable. En la dimensión "Piensa y Siente", la **inseguridad** y el **miedo** a lesionarse son las emociones dominantes, confirmadas por las tres entrevistas del segmento. En "Qué Ve", la exposición a contenido de TikTok de ejercicios complejos sin corrección y a publicidad de gimnasios costosos refuerza su sensación de que una técnica correcta es inalcanzable sin dinero. En "Qué Dice y Hace", el patrón de detenerse cuando siente una molestia extraña y buscar en Google valida la necesidad de una retroalimentación más inmediata y confiable. Sus principales **frustraciones** —falta de feedback inmediato, presupuesto limitado y sensación de estancamiento— se convierten en las oportunidades de diseño que BodyMatch AI materializa en el análisis de video con IA y el modelo freemium.
  
@@ -833,7 +837,7 @@ El proceso de elaboración de los Empathy Maps partió de la revisión sistemát
  
 #### Segmento 2: Entrenadores Personales (Coaches)
  
-![Empathy Map Segmento 2](assets/empathy2.png)
+![Empathy Map Segmento 2](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/empathy2.png)
  
 **Análisis interpretativo:** El Empathy Map de Antonio evidencia que su principal frustración no es la falta de habilidades técnicas como coach, sino la ineficiencia operativa que le impide escalar. En "Qué Piensa y Siente", la **ansiedad** por la carga de revisión de videos y la **frustración** ante clientes que hacen mal un ejercicio toda la semana reflejan el costo real de la ausencia de retroalimentación técnica automatizada. En "Qué Ve", los chats de WhatsApp saturados de videos y las hojas de Excel como herramientas de seguimiento son símbolo del caos administrativo que el 100% de los coaches entrevistados reportó. En "Qué Dice y Hace", el tiempo dedicado a editar videos explicativos y a "perseguir" a clientes para cobros mensuales confirma que las tareas de menor valor consumen la mayor parte de su jornada. Sus **motivaciones** —optimizar el tiempo, escalar la cartera y posicionarse como coach tecnológico— definen exactamente las funcionalidades que deben priorizarse en el Bounded Context de Matchmaking y la integración de IA del microservicio de Videos.
 
@@ -846,7 +850,7 @@ El proceso de elaboración de los As-Is Scenario Maps incluyó las siguientes et
  
 #### Segmento 1: Jóvenes adultos interesados en el fitness
  
-![As-Is Scenario Map — Segmento 1](assets/as1.png)
+![As-Is Scenario Map — Segmento 1](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/as1.png)
  
 **Análisis de pain points identificados:**
  
@@ -860,7 +864,7 @@ El journey actual de Stephanie atraviesa cuatro fases críticas:
 
 #### Segmento 2: Entrenadores Personales (Coaches)
  
-![As-Is Scenario Map — Segmento 2](assets/as2.png)
+![As-Is Scenario Map — Segmento 2](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/as2.png)
  
 **Análisis de pain points identificados:**
  
@@ -998,13 +1002,13 @@ A continuación se presenta el Impact Map de **BodyMatch AI**:
 **Segmento Objetivo 1: Jóvenes adultos interesados en el fitness**
 
 <p align="center">
-  <img src="assets/impact1.png" alt="Impact Map Atletas" width="80%" />
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/impact1.png" alt="Impact Map Atletas" width="80%" />
 </p>
 
 **Segmento Objetivo 2: Entrenadores Personales (Coaches)**
 
 <p align="center">
-  <img src="assets/impact2.png" alt="Impact Map Coaches" width="80%" />
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/impact2.png" alt="Impact Map Coaches" width="80%" />
 </p>
 
 ### 3.3. Product Backlog.
@@ -1163,7 +1167,7 @@ Para garantizar una arquitectura escalable y robusta, el sistema se integra con 
 
 
 
-<img src="assets/chapter4/Components/SystemContext.png" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/SystemContext.png" alt ="">
 
 Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuarios (Atleta, Coach y Administrador) y con servicios externos esenciales como Stripe para pagos, Outlook para correos y Cloud Storage para el almacenamiento de videos. Define los límites del sistema y su conexión con el ecosistema tecnológico exterior.
 
@@ -1173,7 +1177,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **C4 Model - Nivel 2: Diagrama de Contenedores**
 
 <p align="center">
-  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
   <br>
   <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
 </p>
@@ -1185,7 +1189,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **IAM Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/IAMBC.png" alt="IAM BC">
   <br>
   <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
 </p>
@@ -1195,7 +1199,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Membership and Payments Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
   <br>
   <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
 </p>
@@ -1205,7 +1209,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Video Management Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Video Management BC.png" alt="Video BC">
   <br>
   <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
 </p>
@@ -1215,7 +1219,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Matchmaking with Users Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
   <br>
   <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
 </p>
@@ -1225,7 +1229,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Training Tracker Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
   <br>
   <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
 </p>
@@ -1235,7 +1239,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Nutrition Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
   <br>
   <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
 </p>
@@ -1245,7 +1249,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagramas de Actividades**
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
   <br>
   <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
 </p>
@@ -1253,7 +1257,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama describe el flujo de registro de un nuevo usuario (Atleta o Coach) en el Bounded Context de Identidad y Acceso (IAM). El actor principal es el usuario no autenticado. El flujo inicia cuando el usuario ingresa sus datos (correo, contraseña y rol) y el sistema valida el formato y la unicidad del correo. En el flujo alternativo de datos inválidos, el sistema muestra un error de validación y permite reintentar. En el flujo principal exitoso, la contraseña es hasheada con BCrypt, se crea la cuenta con estado PENDIENTE y se genera un token de verificación que se envía al correo. El flujo de excepción cubre el caso de token expirado, donde el sistema muestra un error de verificación. Solo cuando el token es válido y no ha expirado, la cuenta transiciona a ACTIVO, se crea el perfil base (Atleta o Coach) y el usuario queda listo para iniciar sesión. Este flujo es el punto de entrada de toda la arquitectura y materializa directamente los criterios de aceptación de US01 (Registro de usuario).
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
   <br>
   <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
 </p>
@@ -1261,7 +1265,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama modela el ciclo completo de autenticación y gestión de sesión de un usuario registrado. El actor principal es el usuario autenticado. El flujo inicia con el ingreso de credenciales (email y contraseña); si estas son inválidas, el sistema muestra un error genérico de autenticación sin especificar qué campo es incorrecto (por seguridad). En el flujo principal exitoso, el sistema valida el rol del usuario mediante RBAC (ROLE_USER o ROLE_COACH) y genera un par de tokens JWT: un Access Token con expiración de 15 minutos y un Refresh Token con expiración de 7 días, cuyo identificador se almacena en base de datos para permitir la revocación. El flujo alternativo crítico ocurre cuando el Access Token expira: si el Refresh Token sigue siendo válido, el sistema realiza una rotación automática generando un nuevo par de tokens e invalidando los anteriores; si el Refresh Token también expiró, se fuerza el cierre de sesión. El flujo de logout invalida ambos tokens en el servidor. Este flujo satisface los criterios de aceptación de US02 (Inicio de sesión) y US04 (Cierre de sesión) y es la base de seguridad transversal definida en QAS-02.
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
   <br>
   <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el Patrón Strategy (ver sección 4.1.6).</em>
 </p>
@@ -1269,7 +1273,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama ilustra el flujo de procesamiento de pagos del Bounded Context de Membership & Payments, implementando el Patrón Strategy para la selección del método de pago (ver sección 4.1.6 — `PaymentGatewayStrategy`). El actor principal es el Atleta que selecciona un plan de suscripción. El flujo inicia con la creación de una transacción local con estado INICIADA, tras lo cual se invoca la estrategia específica de pasarela externa (Stripe). Dentro del subproceso de Stripe, se solicita un Session ID, se muestra el Checkout y se espera la respuesta del pago. El flujo tiene tres ramas: (1) pago exitoso, donde Stripe envía un webhook de confirmación que el sistema valida criptográficamente antes de actualizar la transacción a COMPLETADA y notificar al servicio de autenticación para actualizar el rol del usuario a Premium; (2) firma de webhook inválida, donde el sistema registra el intento de fraude; (3) pago cancelado, donde la transacción se marca como CANCELADA. Este flujo materializa los criterios de aceptación de US22 (Monetización de servicios) y la decisión de diseño DD-007 (patrón Gateway para integraciones externas).
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadai.png" alt="Actividad IA">
   <br>
   <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
 </p>
@@ -1277,7 +1281,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama describe el flujo asíncrono de análisis de ejercicios del Bounded Context de Video Management, que constituye la funcionalidad diferenciadora central de BodyMatch AI. El actor principal es el sistema (worker de procesamiento en segundo plano). El flujo inicia cuando un video es recibido: se guardan sus metadatos en la base de datos con estado PROCESANDO y se encola en Azure Service Bus para procesamiento asíncrono, lo que garantiza que el hilo HTTP principal no quede bloqueado (satisfaciendo QAS-01: respuesta HTTP < 10 s). El flujo alternativo maneja la espera cuando no hay recursos de GPU disponibles. En el flujo principal, se extraen frames del video mediante Azure Batch, se aplica el modelo de Pose Estimation con Gemini AI y se compara la postura detectada con el patrón de referencia mediante el Patrón Strategy (sección 4.1.6). Si el análisis es exitoso, se generan métricas y feedback biomecánico que se guardan en la base de datos con estado COMPLETADO y se notifica al usuario. En el flujo de excepción, si el análisis falla, se registra el error y el video transiciona al estado FALLIDO, habilitando el mecanismo de reintentos automáticos descrito en el Diagrama de Estados correspondiente (Fig. 4.13). Este flujo materializa los criterios de aceptación de US12 (Feedback automático con IA).
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
   <br>
   <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
 </p>
@@ -1287,7 +1291,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagramas de Estados**
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadoai.png" alt="Estado Video">
   <br>
   <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal FALLIDO_PERMANENTE).</em>
 </p>
@@ -1295,7 +1299,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama representa el ciclo de vida completo de un video de ejercicio dentro del Bounded Context de Video Management. El video inicia en el estado **RECIBIDO** al ser subido exitosamente por el atleta. Tras el registro en la base de datos, transiciona a **EN_COLA** donde espera la asignación de un worker de IA. Una vez asignado, entra en el estado compuesto **PROCESANDO**, que contiene dos subestados secuenciales: **ANALIZANDO_POSTURA** (aplicación del modelo Gemini AI) y **GENERANDO_FEEDBACK** (construcción del reporte biomecánico). Si el análisis concluye exitosamente, el video transiciona a **COMPLETADO** y, cuando el usuario visualiza el feedback, pasa a **REVISADO**. Transcurridos 30 días, el video se **ARCHIVA** automáticamente para gestionar el almacenamiento. En el flujo de excepción, si ocurre un error técnico o el video está corrupto, transiciona a **FALLIDO**. Desde este estado, el sistema aplica hasta 3 reintentos automáticos regresando a EN_COLA. Si los reintentos se agotan (N ≥ 3), el video alcanza el estado terminal **FALLIDO_PERMANENTE**, que fue añadido explícitamente en respuesta a la observación del evaluador de TB2 sobre la ausencia de estado terminal tras los reintentos. Este diseño satisface la táctica de disponibilidad definida en la sección 4.1.7 y los criterios de aceptación de US12.
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
   <br>
   <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
 </p>
@@ -1303,7 +1307,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama modela el ciclo de vida de una transacción de pago en el Bounded Context de Membership & Payments. La transacción inicia en el estado **INICIADA** cuando el usuario selecciona un plan. Al ser redirigido a la pasarela de Stripe, transiciona a **PENDIENTE**, estado en el que permanece mientras el usuario interactúa con el checkout externo. Desde PENDIENTE, la transacción puede derivar en cuatro estados distintos: (1) **COMPLETADA**, al recibir el webhook `checkout.session.completed` de Stripe con firma válida; (2) **FALLIDA**, al recibir el webhook `payment_failed`; (3) **CANCELADA**, cuando el usuario abandona el checkout sin completar el pago; (4) **REEMBOLSADA**, cuando se aprueba una solicitud de devolución desde COMPLETADA. El estado FALLIDA permite reintentos de pago que devuelven la transacción a PENDIENTE. Todos los estados terminales (COMPLETADA, CANCELADA y REEMBOLSADA) confluyen en el estado final del diagrama. Este diseño garantiza la trazabilidad de cada centavo procesado y soporta los criterios de aceptación de US22 (Monetización) y la integración con Stripe definida en DD-007.
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
   <br>
   <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
 </p>
@@ -1311,7 +1315,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama representa el ciclo de vida completo de una cuenta de usuario dentro del Bounded Context IAM. Una cuenta recién creada inicia en el estado **PENDIENTE_VERIFICACION**, en espera de que el usuario confirme su correo electrónico. Si el token de verificación expira o la cuenta es purgada por el sistema, transiciona al estado terminal sin necesidad de pasar por ACTIVO. Cuando el email es verificado exitosamente, la cuenta transiciona al estado compuesto **ACTIVO**, que contiene el subestado **Operativo** desde el cual el usuario puede interactuar con todas las funcionalidades de la plataforma. Desde el estado Operativo, la cuenta puede derivar en dos estados: (1) **RESET_PASSWORD_PENDIENTE**, cuando el usuario solicita recuperación de contraseña (transicionando de vuelta a Operativo al actualizar o cancelar); (2) **SUSPENDIDO**, en caso de múltiples intentos fallidos de login o por acción administrativa (con posibilidad de desbloqueo por tiempo cumplido). El evento de eliminación de cuenta por parte del usuario conduce directamente al estado terminal. Este diseño soporta los criterios de aceptación de US01, US02, US03 y US04 y la táctica de seguridad RBAC definida en QAS-02.
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
   <br>
   <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
 </p>
@@ -1319,7 +1323,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Descripción:** Este diagrama modela el ciclo de vida de una sesión de entrenamiento reservada entre un Atleta y un Coach dentro del Bounded Context de Matchmaking. La sesión inicia en el estado **SOLICITADA** cuando el Atleta envía una petición de reserva. Desde este estado puede derivar inmediatamente en **RECHAZADA** si el Coach declina la solicitud o no tiene cupo disponible. Si el Coach aprueba, la sesión transiciona a **ACEPTADA** y, tras confirmar la fecha y hora, pasa a **PROGRAMADA**. Este es el estado de mayor relevancia operativa: desde PROGRAMADA, la sesión puede **CANCELARSE** (por cualquiera de las dos partes) o **REALIZARSE** exitosamente al concluir la sesión. Tanto RECHAZADA como CANCELADA y REALIZADA son estados terminales que confluyen en el estado final del diagrama. El punto crítico de concurrencia está en la transición SOLICITADA → ACEPTADA, donde el mecanismo de bloqueo optimista (`@Version` en la entidad Session) garantiza que dos atletas no puedan reservar el mismo horario simultáneamente, satisfaciendo QAS-03 (disponibilidad bajo carga) y los criterios de aceptación de US08 (Reserva de sesión).
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
   <br>
   <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
 </p>
@@ -1328,7 +1332,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagrama de Clases**
 
 <p align="center">
-  <img src="./assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/DiagramClass.png" alt="Class Diagram BodyMatch AI">
   <br>
   <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
 </p>
@@ -1340,7 +1344,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **C4 Model - Nivel 2: Diagrama de Contenedores**
 
 <p align="center">
-  <img src="assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Containers-dark.png" alt="Container Diagram">
   <br>
   <em>Figura 4.1 — Diagrama de Contenedores: Arquitectura lógica distribuida de BodyMatch AI.</em>
 </p>
@@ -1352,7 +1356,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **IAM Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/IAMBC.png" alt="IAM BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/IAMBC.png" alt="IAM BC">
   <br>
   <em>Figura 4.2 — Diagrama de Componentes: Estructura del Bounded Context de Identidad y Acceso (IAM).</em>
 </p>
@@ -1362,7 +1366,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Membership and Payments Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Membership and Payments BC.png" alt="Payments BC">
   <br>
   <em>Figura 4.3 — Diagrama de Componentes: Gestión de Suscripciones y Pagos (ver sección 4.1.6 — Strategy Pattern).</em>
 </p>
@@ -1372,7 +1376,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Video Management Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Video Management BC.png" alt="Video BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Video Management BC.png" alt="Video BC">
   <br>
   <em>Figura 4.4 — Diagrama de Componentes: Orquestación y Gestión de Video.</em>
 </p>
@@ -1382,7 +1386,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Matchmaking with Users Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Matchmaking with Users.png" alt="Matchmaking BC">
   <br>
   <em>Figura 4.5 — Diagrama de Componentes: Gestión de conexiones entre Atletas y Coaches.</em>
 </p>
@@ -1392,7 +1396,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Training Tracker Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/TrainingTracker BC.png" alt="Training BC">
   <br>
   <em>Figura 4.6 — Diagrama de Componentes: Seguimiento de Métricas y Desempeño Físico.</em>
 </p>
@@ -1402,7 +1406,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 * **Nutrition Bounded Context**
 
 <p align="center">
-  <img src="./assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Nutrition BC.png" alt="Nutrition BC">
   <br>
   <em>Figura 4.7 — Diagrama de Componentes: Análisis Nutricional mediante IA.</em>
 </p>
@@ -1412,31 +1416,31 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagramas de Actividades**
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadiam.png" alt="Actividad Registro">
   <br>
   <em>Figura 4.8 — Diagrama de Actividades: Proceso de Registro de Usuario en el IAM.</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadiam_login.png" alt="Actividad Login">
   <br>
   <em>Figura 4.9 — Diagrama de Actividades: Autenticación (Login/Logout) y Gestión de Tokens JWT.</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadpayment.png" alt="Actividad Pagos">
   <br>
   <em>Figura 4.10 — Diagrama de Actividades: Procesamiento de transacciones financieras utilizando el <b>Patrón Strategy (ver sección 4.1.6)</b>.</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadai.png" alt="Actividad IA">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadai.png" alt="Actividad IA">
   <br>
   <em>Figura 4.11 — Diagrama de Actividades: Flujo de Análisis Biomecánico de video mediante IA.</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/actividadtracking.png" alt="Actividad Tracking">
   <br>
   <em>Figura 4.12 — Diagrama de Actividades: Registro y monitoreo de progreso del atleta.</em>
 </p>
@@ -1444,31 +1448,31 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagramas de Estados**
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadoai.png" alt="Estado Video">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadoai.png" alt="Estado Video">
   <br>
   <em>Figura 4.13 — Diagrama de Estados: Ciclo de vida del Análisis de Video (incluye estado terminal <b>FALLIDO_PERMANENTE</b>).</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadopayment.png" alt="Estado Pagos">
   <br>
   <em>Figura 4.14 — Diagrama de Estados: Transiciones y flujos del sistema de pagos y membresías.</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadoiam.png" alt="Estado Usuario">
   <br>
   <em>Figura 4.15 — Diagrama de Estados: Ciclo de vida de la cuenta de usuario (Identity & Access Management).</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadomatchmaking.png" alt="Estado Sesiones">
   <br>
   <em>Figura 4.16 — Diagrama de Estados: Gestión de emparejamiento (Matchmaking) y reserva de sesiones entre Atleta y Coach.</em>
 </p>
 
 <p align="center">
-  <img src="assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/estadotracking.png" alt="Estado Tracking">
   <br>
   <em>Figura 4.17 — Diagrama de Estados: Registro y persistencia de métricas de desempeño físico.</em>
 </p>
@@ -1476,7 +1480,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 **Diagrama de Clases**
 
 <p align="center">
-  <img src="./assets/chapter5/BodyMatch_AI_Class_Diagram.svg" alt="Class Diagram BodyMatch AI">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/BodyMatch_AI_Class_Diagram.svg" alt="Class Diagram BodyMatch AI">
   <br>
   <em>Figura 4.18 — Diagrama de Clases: Estructura estática de BodyMatch AI y relaciones de dominio.</em>
 </p>
@@ -1487,7 +1491,7 @@ Descripcion: Este diagrama muestra cómo BodyMatch AI interactúa con sus usuari
 
 
 <p align="center">
-  <img src="./assets/chapter4/Base_de_Datos_BodyMatch.jpg" alt="data base diagram BodyMatch AI">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Base_de_Datos_BodyMatch.jpg" alt="data base diagram BodyMatch AI">
 </p>
 
 **Descripción:** El modelo relacional asegura la persistencia y la integridad de la lógica de negocio en PostgreSQL. La estructura está normalizada para soportar los módulos de usuarios, entrenamientos y nutrición, siguiendo una estrategia de esquemas por contexto para facilitar la escalabilidad y una futura migración a microservicios independientes.
@@ -1517,7 +1521,7 @@ estados inválidos.
 | **Clases en BodyMatch AI** | `User.create(String email, String passwordHash, Role role)` en el Bounded Context **IAM**; `ExerciseVideo.register(UUID athleteId, String blobUrl, String exerciseType)` en **Video Management**. |
 | **Atributo de calidad** | Mantenibilidad — QAS-05 (incorporar nuevo proveedor de pagos sin modificar lógica existente). |
 
-<img src="assets/chapter4/user.png" alt="user">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/user.png" alt="user">
 
 ---
 
@@ -1537,7 +1541,7 @@ las responsabilidades en tiempo de ejecución.
 | **Interfaz** | `PaymentGatewayStrategy` con implementaciones `StripePaymentGateway` en **Membership & Payments**; `HashingService` con implementación `BCryptHashingService` en **IAM**; `TokenService` con implementación `JwtTokenService` en **IAM**. |
 | **Atributo de calidad** | Mantenibilidad — QAS-05: la incorporación de un nuevo gateway requiere únicamente implementar la interfaz `PaymentGatewayStrategy`, sin tocar ninguna otra clase. |
 
-![Menbership.jpeg](assets/chapter4/Menbership.jpeg)
+![Menbership.jpeg](https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Menbership.jpeg)
 
 ---
 
@@ -1579,7 +1583,7 @@ entre componentes del sistema.
 | **Clases en BodyMatch AI** | `IamContextFacade` — expone métodos como `getAthleteProfile(UUID userId)` que **Matchmaking** y **Training Tracker** consumen sin conocer las entidades internas de IAM; `MatchmakingContextFacade` — usada por **Training Tracker** para consultar sesiones programadas. |
 | **Atributo de calidad** | Mantenibilidad — los cambios internos en el IAM no afectan a los contextos que lo consumen a través de la fachada. |
 
-<img src="assets/chapter4/context.png" alt="context">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/context.png" alt="context">
 ---
 
 ##### 4.1.6.4 Patrones Empresariales
@@ -1643,7 +1647,7 @@ transacciones.
 | **Clases en BodyMatch AI** | `GeminiAIGateway` — encapsula las llamadas a la API de Gemini para el análisis de video y de imágenes de alimentos; `StripeGateway` — encapsula las llamadas a la API de Stripe para el procesamiento de pagos; `AzureBlobStorageGateway` — gestiona la subida y recuperación de videos. Adicionalmente, `IamContextFacade` actúa como Gateway interno para el acceso cross-context. |
 | **Atributo de calidad** | Mantenibilidad — QAS-05 y AC-04: la abstracción detrás del Gateway permite sustituir Gemini AI sin afectar la lógica de Video Management. |
 
-<img src="assets/chapter4/gemini.png" alt="iam">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/gemini.png" alt="iam">
 
 ---
 
@@ -1674,7 +1678,7 @@ cómo se estructuran y comunican sus grandes componentes.
 | **Estructura en BodyMatch AI** | Cada bounded context está organizado en cuatro capas: **`domain`** (entidades, value objects, interfaces de repositorio); **`application`** (command services, query services, comandos, eventos); **`infrastructure`** (implementaciones de repositorio JPA, gateways externos); **`interfaces`** (REST controllers, resources/DTOs, assemblers). |
 | **Atributo de calidad** | Mantenibilidad — AC-06: el esquema por bounded context en PostgreSQL y la separación por capas facilitan la migración futura a microservicios independientes. |
 
-<img src="assets/chapter4/D_iam.png" alt="iam">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/D_iam.png" alt="iam">
 
 ---
 
@@ -1687,7 +1691,7 @@ cómo se estructuran y comunican sus grandes componentes.
 | **Implementación en BodyMatch AI** | **Model:** clases Dart que representan las respuestas de la API (ej. `UserModel`, `ExerciseVideoModel`, `CoachProfileModel`). **View:** Widgets de Flutter que renderizan la UI (ej. `LoginScreen`, `VideoUploadScreen`, `AnalysisFeedbackScreen`). **Controller:** clases que coordinan la comunicación entre la vista y el repositorio de datos, gestionando el estado con Provider o Riverpod (ej. `AuthController`, `VideoController`). Los repositorios del cliente consumen los endpoints REST documentados en la sección 5.2.1.5. |
 | **Atributo de calidad** | Mantenibilidad y Usabilidad — los cambios en el diseño visual no afectan la lógica de consumo de la API, y viceversa. |
 
-<img src="assets/chapter4/MVC.png" alt="MVC">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/MVC.png" alt="MVC">
 
 ---
 
@@ -2042,7 +2046,7 @@ Los diagramas producidos se presentan en la sección 4.1.4 (Figuras 4.1–4.19).
 - Estrategia de observabilidad con logging estructurado y alertas en Azure Monitor
 
 
-<img src="assets/chapter4/Tablero-kanban.png" alt="talbero">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Tablero-kanban.png" alt="talbero">
 
 [Trello](https://trello.com/invite/b/69f68ed89e83454dc557a6ee/ATTI407be57622995866497746a5e4df78825982D29B/tablero-kanban-bodymatch-ai)
 
@@ -2670,17 +2674,17 @@ A través de esta landing, los visitantes pueden visualizar claramente la propue
 
 *Evidencia Visual Landing Page:*  
 
-<img src="assets/chapter5/swagger_prueba_landing.png" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba_landing.png" alt ="">
 
 **2. Evidencia en Frontend App (Mobile)**
 
 Se desarrollaron las pantallas núcleo de la aplicación móvil, garantizando una experiencia fluida para el Atleta al momento de interactuar con la IA y gestionar su perfil.
 
-<img src="assets/chapter5/evidence_deployment_mobile.jpg" alt ="">
-<img src="assets/chapter5/evidence_deployment_mobile2.jpg" alt ="">
-<img src="assets/chapter5/evidence_deployment_mobile3.jpg" alt ="">
-<img src="assets/chapter5/evidence_deployment_mobile4.jpg" alt ="">  
-<img src="assets/chapter5/evidence_deployment_mobile5.jpg" alt ="">    
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_mobile.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_mobile2.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_mobile3.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_mobile4.jpg" alt ="">  
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_mobile5.jpg" alt ="">    
 
 
 **3. Evidencia en Web Services (Backend Híbrido)**
@@ -2691,10 +2695,10 @@ Para comprobar la correcta ejecución del backend, se realizaron pruebas de inte
 
 A continuación, se presentan las capturas de pantalla de las principales interacciones ejecutadas comprobando la conexión y las respuestas de la base de datos:
 
-<img src="assets/chapter5/swagger1.jpg" alt ="">
-<img src="assets/chapter5/swagger2.jpg" alt ="">
-<img src="assets/chapter5/swagger3.jpg" alt ="">
-<img src="assets/chapter5/swagger4.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger1.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger2.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger3.jpg" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger4.jpg" alt ="">
 
 
 
@@ -2802,17 +2806,17 @@ Adicionalmente, se presentan las capturas en imágenes de la interacción con la
 
 **Registro de usuario**:   
 
-<img src="assets/chapter5/swagger_prueba1.png" alt ="">  
-<img src="assets/chapter5/swagger_prueba2.png" alt =""> 
- <img src="assets/chapter5/swagger_prueba8.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba1.png" alt ="">  
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba2.png" alt =""> 
+ <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba8.png" alt =""> 
 
 **Registro y análisis de video:**  
 
-<img src="assets/chapter5/swagger_prueba3.png" alt =""> 
-<img src="assets/chapter5/swagger_prueba4.png" alt =""> 
-<img src="assets/chapter5/swagger_prueba5.png" alt =""> 
-<img src="assets/chapter5/swagger_prueba6.png" alt ="">
-<img src="assets/chapter5/swagger_prueba7.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba3.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba4.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba5.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba6.png" alt ="">
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/swagger_prueba7.png" alt =""> 
 
 
 
@@ -2835,9 +2839,9 @@ Dado que la Landing Page está construida con tecnologías web estáticas, se op
 
 Capturas del Despliegue
 
-<img src="assets/chapter5/evidence_deployment_landing.jpg" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_landing.jpg" alt =""> 
 
-<img src="assets/chapter5/evidence_deployment_landing2.jpg.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/evidence_deployment_landing2.jpg.png" alt =""> 
 
 
 ##### 5.2.1.7	Team Collaboration Insights during Sprint
@@ -2859,7 +2863,7 @@ La siguiente imagen evidencia la participación activa del equipo, mostrando el 
 
 ##### 5.2.1.8	Kanban Board 
 
-<img src="assets/chapter5/kanban-sprint1.png" alt =""> 
+<img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/kanban-sprint1.png" alt =""> 
  
  Link: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 
@@ -3223,7 +3227,7 @@ El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se cont
 * Se recomienda consolidar la migración progresiva hacia microservicios implementando un API Gateway robusto (ej. Spring Cloud Gateway) que centralice de forma eficiente el enrutamiento hacia los servicios de IAM, Videos y el Monolito Core.
 * Es prioritario automatizar el despliegue del backend mediante pipelines de integración y entrega continua (CI/CD) utilizando GitHub Actions hacia un proveedor Cloud (como Render o Azure) para el próximo Sprint, replicando el éxito obtenido con el despliegue de la Landing Page en GitHub Pages.
 
-### Avance 4: Evolución Arquitectónica y Consolidación Técnica
+### Avance 3: Evolución Arquitectónica y Consolidación Técnica
 
 * Se recomienda incorporar un proceso formal de monitoreo y observabilidad distribuida mediante herramientas como métricas centralizadas, trazabilidad y monitoreo de servicios para facilitar la detección temprana de fallos dentro del ecosistema de microservicios.
 * Se sugiere fortalecer las estrategias de resiliencia entre servicios mediante mecanismos como tolerancia a fallos, reintentos controlados y circuit breakers para mejorar la disponibilidad del sistema ante interrupciones parciales.
