@@ -2997,30 +2997,30 @@ Durante el Sprint 2, la ejecución se centró en probar el correcto funcionamien
 En primer lugar, se configuró y levantó la infraestructura utilizando Docker Compose. Esto garantizó que el ecosistema distribuido estuviera operativo, con cada base de datos PostgreSQL y su respectivo microservicio en ejecución.
 
 <div align="center">
-    <img src="./assets/chapter5/sprint2_docker_running.png" alt="Contenedores Docker de BodyMatch en ejecución">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_docker_running.png" alt="Contenedores Docker de BodyMatch en ejecución">
 </div>
 
 Posteriormente, se validó el patrón de **Service Discovery**. Todos los microservicios lograron registrarse exitosamente en el servidor de Spring Eureka, permitiendo que el API Gateway enrute las peticiones dinámicamente.
 
 <div align="center">
-    <img src="./assets/chapter5/sprint2_eureka_dashboard.png" alt="Dashboard de Eureka con servicios registrados">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_eureka_dashboard.png" alt="Dashboard de Eureka con servicios registrados">
 </div>
 
 Finalmente, validamos las reglas de negocio y la conexión a las bases de datos simulando peticiones HTTP centralizadas mediante Swagger UI. Se ejecutaron pruebas sobre los Bounded Contexts de Matchmaking (búsqueda de coaches) y Training (obtención de métricas), obteniendo respuestas exitosas (`200 OK`) con la estructura JSON esperada.
 
 <div align="center">
-    <img src="./assets/chapter5/sprint2_postman_matchmaking.png" alt="Ejecución de búsqueda de Coaches en Swagger/Gateway">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_postman_matchmaking.png" alt="Ejecución de búsqueda de Coaches en Swagger/Gateway">
     <br><br>
-    <img src="./assets/chapter5/sprint2_swagger_training.png" alt="Ejecución de consulta de métricas en Swagger">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_swagger_training.png" alt="Ejecución de consulta de métricas en Swagger">
 </div>
 
 **2. Evidencia de Integración en Frontend (Mobile)**
 Una vez verificado el ecosistema backend, se procedió a validar que la aplicación móvil desarrollada en Flutter consumiera correctamente estos nuevos endpoints. La interfaz logró renderizar exitosamente los datos provenientes del API Gateway para las historias de usuario del Sprint 2.
 
 <div align="center">
-    <img src="./assets/chapter5/sprint2_mobile_search.png" alt="Vista móvil: Explorador de Coaches" width="30%">
-    <img src="./assets/chapter5/sprint2_mobile_booking.png" alt="Vista móvil: Reserva de Sesión" width="30%">
-    <img src="./assets/chapter5/sprint2_mobile_metrics.png" alt="Vista móvil: Gráficos de Progreso" width="30%">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_mobile_search.png" alt="Vista móvil: Explorador de Coaches" width="30%">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_mobile_booking.png" alt="Vista móvil: Reserva de Sesión" width="30%">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_mobile_metrics.png" alt="Vista móvil: Gráficos de Progreso" width="30%">
 </div>
 
 ##### 5.2.2.5 Microservices Documentation Evidence for Sprint Review
@@ -3080,7 +3080,7 @@ Durante el proceso de diseño y transición hacia microservicios en el Sprint 2,
 
 ---
 <div align="center">
-    <img src="./assets/chapter4/Components/Containers-dark.png" alt="Diagrama de Contenedores BodyMatch AI">
+    <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter4/Components/Containers-dark.png" alt="Diagrama de Contenedores BodyMatch AI">
 </div>
 
 ##### 5.2.2.6 Software Deployment Evidence for Sprint Review
@@ -3100,7 +3100,7 @@ Se utilizó **Docker Compose** como herramienta principal de orquestación. Para
 * **Red Privada:** Se configuró la red interna puente `infrastructure_bodymatch-net` para asegurar que el `api-gateway` y el `discovery-server` se comuniquen de forma segura con los microservicios sin exponer puertos innecesarios.
 
 <div align="center">
-  <img src="./assets/chapter5/sprint2_docker_running.png" alt="Contenedores orquestados con Docker Compose" width="75%">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_docker_running.png" alt="Contenedores orquestados con Docker Compose" width="75%">
   <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
 </div>
 
@@ -3120,7 +3120,7 @@ Este comando automatizó:
 - El levantamiento en segundo plano de todos los servicios, respetando el orden de dependencias.
 
 <div align="center">
-  <img src="./assets/chapter5/sprint2_terminal_build.png" alt="" width="75%">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_terminal_build.png" alt="" width="75%">
   <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
 </div>
 
@@ -3131,7 +3131,7 @@ Una vez finalizado el despliegue de los contenedores, se procedió a validar la 
 - Se validó el API Gateway (http://localhost:8080), comprobando la unificación de contratos a través de Swagger UI y verificando que el enrutamiento de tráfico hacia los microservicios operara de manera correcta.
 
 <div align="center">
-  <img src="./assets/chapter5/sprint2_eureka_dashboard.png" alt="" width="75%">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_eureka_dashboard.png" alt="" width="75%">
   <p><em>Despliegue exitoso de la infraestructura y bases de datos en contenedores</em></p>
 </div>
 
@@ -3168,7 +3168,7 @@ Todos los integrantes participaron activamente en tareas de implementación y va
 - **Evidencias de colaboración y gestión:**
 
     <div align="center">
-      <img src="./assets/chapter5/sprint2_team_kanban.png" alt="Evidencias de colaboración - Gestión de tareas en tablero">
+      <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_team_kanban.png" alt="Evidencias de colaboración - Gestión de tareas en tablero">
     </div>
 
 ##### 5.2.2.8 Kanban Board
@@ -3178,7 +3178,7 @@ Para la gestión eficiente del Sprint 2, el equipo utilizó un tablero Kanban en
 El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se controló desde la asignación inicial (*To Do*) hasta la validación de despliegue local y orquestación con Docker (*Done*).
 
 <div align="center">
-  <img src="./assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 2 - BodyMatch AI">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 2 - BodyMatch AI">
   <p><em>Estado final del tablero Kanban al cierre del Sprint 2: Implementación de Microservicios, API Gateway y vistas móviles.</em></p>
 </div>
 
@@ -3203,7 +3203,7 @@ El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se cont
 * **Mantenibilidad:** La aplicación de los principios SOLID y Domain-Driven Design (DDD) permitió definir 6 Bounded Contexts con fronteras explícitas, reduciendo la complejidad técnica y facilitando la integración de nuevos módulos de nutrición en futuros sprints.
 
 
-### Avance 4: Implementación, Integración y Validación del Ecosistema de Microservicios
+### Avance 3: Implementación, Integración y Validación del Ecosistema de Microservicios
 * La transición hacia una arquitectura basada en microservicios se completó exitosamente mediante la extracción de los Bounded Contexts restantes y su integración dentro de un ecosistema distribuido. Esta evolución permitió mejorar la escalabilidad, independencia de despliegue y mantenibilidad de BodyMatch AI.
 * La incorporación de componentes como API Gateway, Service Discovery (Eureka) y bases de datos independientes por servicio permitió consolidar una arquitectura desacoplada, facilitando la comunicación entre servicios y reduciendo dependencias directas entre módulos.
 * La implementación y validación de contratos OpenAPI, junto con el uso de herramientas como Swagger y Postman, contribuyó a garantizar consistencia funcional entre los servicios desarrollados y mejorar el proceso de integración continua.
