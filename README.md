@@ -3181,6 +3181,31 @@ El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se cont
   <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 2 - BodyMatch AI">
   <p><em>Estado final del tablero Kanban al cierre del Sprint 2: Implementación de Microservicios, API Gateway y vistas móviles.</em></p>
 </div>
+### 5.2.3	Sprint 3
+##### 5.2.3.1	Sprint Backlog 3
+
+
+##### 5.2.3.2 Development Evidence for Sprint Review
+
+
+
+##### 5.2.3.4 Execution Evidence for Sprint Review
+
+
+##### 5.2.3.5 Microservices Documentation Evidence for Sprint Review
+
+
+
+##### 5.2.3.6 Software Deployment Evidence for Sprint Review
+
+
+
+##### 5.2.3.7 Team Collaboration Insights during Sprint
+
+
+
+##### 5.2.3.8 Kanban Board
+
 
 
 ## Conclusiones
@@ -3233,7 +3258,10 @@ El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se cont
 * Se sugiere fortalecer las estrategias de resiliencia entre servicios mediante mecanismos como tolerancia a fallos, reintentos controlados y circuit breakers para mejorar la disponibilidad del sistema ante interrupciones parciales.
 * Se recomienda mantener la organización por Bounded Contexts y continuar aplicando principios de Domain-Driven Design (DDD) para facilitar futuras extensiones funcionales del sistema sin afectar la estabilidad de los servicios existentes.
 
- Anexos
+
+### Avance 4: Evolución Arquitectónica y Consolidación Técnica
+
+
  
 Diagramas de clase en LucidChart: [Clases](https://drive.google.com/drive/folders/18gKosPLKw5JEdsYvDsNrNM94UUt8h8Jq?usp=sharing)
 
