@@ -3181,18 +3181,620 @@ El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se cont
   <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 2 - BodyMatch AI">
   <p><em>Estado final del tablero Kanban al cierre del Sprint 2: Implementación de Microservicios, API Gateway y vistas móviles.</em></p>
 </div>
+
+
 ### 5.2.3	Sprint 3
 ##### 5.2.3.1	Sprint Backlog 3
 
 
-##### 5.2.3.2 Development Evidence for Sprint Review
+##### 5.2.3.3 Testing Suite Evidence for Sprint Review
 
+Durante el Sprint 3, el esfuerzo de validación se concentró en los Bounded Contexts de **Nutrition** y **Training** (métricas avanzadas y analíticas), que representan la funcionalidad diferenciadora restante de BodyMatch AI. Al igual que en los sprints anteriores, se adoptó el enfoque **BDD (Behavior Driven Development)** con archivos `.feature` en lenguaje Gherkin.
+
+Con los tests de este Sprint, el sistema alcanza cobertura BDD sobre los seis microservicios principales, superando el 65% del alcance funcional establecido en el Product Backlog.
+
+**Relación de Tests Diseñados para el Sprint 3**
+
+| Código del Test | Archivo `.feature` | Microservicio | User Story |
+|:---|:---|:---|:---|
+| **TS-NUT-01** | `US23-Subir imagen comida.feature` | Nutrition Service | US23: Subir imagen de alimentos |
+| **TS-NUT-02** | `US24-Reconocimiento de alimentos con IA.feature` | Nutrition Service | US24: Reconocimiento de alimentos con IA |
+| **TS-NUT-03** | `US25-Calculo nutricional.feature` | Nutrition Service | US25: Cálculo de valores nutricionales |
+| **TS-NUT-04** | `US27-Edicion manual de alimentos.feature` | Nutrition Service | US27: Edición manual de alimentos detectados |
+| **TS-NUT-05** | `US28-Historial de comidas.feature` | Nutrition Service | US28: Registro en historial de comidas |
+| **TS-NUT-06** | `US29-Consumo diario.feature` | Nutrition Service | US29: Seguimiento diario de consumo nutricional |
+| **TS-TRN-01** | `US21-Seguimiento cliente.feature` | Training Service | US21: Seguimiento de progreso del cliente |
+| **TS-TRN-02** | `TS04-Endpoint perfil atleta.feature` | Training Service | TS04: Endpoint de perfil de atleta (analytics) |
+
+**Repositorio y Commits**
+
+| Repositorio | Branch | Commit Id | Mensaje | Fecha |
+|:---|:---|:---|:---|:---|
+| `G3-FundamentosArqui-7944/docs` | `main` | *(sprint 3 commit)* | `test: add BDD feature files for Nutrition and Training Sprint 3` | 24/06/2026 |
 
 
 ##### 5.2.3.4 Execution Evidence for Sprint Review
 
+Durante el Sprint 3, la ejecución se centró en validar el funcionamiento de los Bounded Contexts de **Nutrition** y **Training**, que representan las últimas piezas funcionales del ecosistema de microservicios de BodyMatch AI. La verificación se realizó en tres frentes: infraestructura orquestada con Docker Compose, validación de endpoints mediante Swagger UI y Postman, e integración con la aplicación móvil.
 
-##### 5.2.3.5 Microservices Documentation Evidence for Sprint Review
+
+ **Evidencia de Infraestructura — Contenedores Docker**
+
+Con los microservicios de Nutrition (puerto 8084) y Training (puerto 8085) sumados al ecosistema, el stack completo de BodyMatch AI quedó operativo. Se ejecutó el comando:
+
+```bash
+docker compose up -d --build
+```
+
+Todos los contenedores levantaron correctamente respetando el orden de dependencias definido en `docker-compose.yml`: primero PostgreSQL con sus seis bases de datos independientes, luego el Discovery Server (Eureka), y finalmente los seis microservicios junto al API Gateway.
+
+**Contenedores activos al cierre del Sprint 3:**
+
+| Contenedor | Imagen | Puerto | Estado |
+|:---|:---|:---:|:---:|
+| `bodymatch-postgres` | postgres:15 | 5433 | Up (healthy) |
+| `bodymatch-discovery` | discovery-server | 8761 | Up (healthy) |
+| `bodymatch-gateway` | api-gateway | 8080 | Up |
+| `bodymatch-iam` | iam-service | 8081 | Up |
+| `bodymatch-matchmaking` | matchmaking-service | 8082 | Up |
+| `bodymatch-membership` | membership-service | 8083 | Up |
+| `bodymatch-nutrition` | nutrition-service | 8084 | Up |
+| `bodymatch-training` | training-service | 8085 | Up |
+| `bodymatch-videos` | videos-service | 8086 | Up |
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_docker_running.png" alt="Docker Running">
+  <br>
+  <em>Figura 5.21 — Contenedores Docker ejecutándose correctamente durante el Sprint 3.</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_eureka_full.png" alt="Eureka Services">
+  <br>
+  <em>Figura 5.22 — Registro exitoso de todos los microservicios en Eureka Server.</em>
+</p>
+
+**Evidencia de Ejecución en Web Services — Nutrition Service**
+
+**Análisis de imagen de alimentos con Gemini AI**
+
+Se validó el flujo completo de análisis nutricional subiendo una fotografía de un plato de comida al endpoint `POST /api/v1/nutrition/analyses`. El sistema procesó la imagen mediante `GeminiNutritionAnalyzer`, identificó los alimentos presentes y calculó automáticamente los macronutrientes totales.
+
+**Petición ejecutada en Postman (multipart/form-data):**
+- Campo `userId`: `1`
+- Campo `file`: imagen JPEG del plato
+
+**Respuesta obtenida (201 Created):**
+```json
+{
+  "id": 8,
+  "userId": 1,
+  "imageStorageUrl": "http://localhost:8084/storage/bodymatch-nutrition/nutrition/1/...",
+  "summary": "Plato balanceado con proteína magra, carbohidratos complejos y vegetales.",
+  "totalMacros": {
+    "calories": 482.00,
+    "proteinGrams": 50.80,
+    "carbohydratesGrams": 51.50,
+    "fatGrams": 5.80,
+    "fiberGrams": 0.60
+  },
+  "status": "COMPLETED",
+  "aiModelVersion": "gemini-2.5-flash",
+  "analyzedAt": "2026-06-06T13:05:22Z",
+  "detectedFoods": [
+    {
+      "id": 15,
+      "foodName": "Pechuga de pollo a la plancha",
+      "portionGrams": 150.00,
+      "macros": {
+        "calories": 248.00,
+        "proteinGrams": 46.50,
+        "carbohydratesGrams": 0.00,
+        "fatGrams": 5.40,
+        "fiberGrams": 0.00
+      },
+      "confidence": 0.920
+    },
+    {
+      "id": 16,
+      "foodName": "Arroz blanco cocido",
+      "portionGrams": 180.00,
+      "macros": {
+        "calories": 234.00,
+        "proteinGrams": 4.30,
+        "carbohydratesGrams": 51.50,
+        "fatGrams": 0.40,
+        "fiberGrams": 0.60
+      },
+      "confidence": 0.880
+    }
+  ]
+}
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_swagger_nutrition_analysis.png" alt="Nutrition Analysis">
+  <br>
+  <em>Figura 5.23 — Resultado del análisis nutricional generado mediante Gemini AI desde Swagger UI.</em>
+</p>
+
+ **Registro manual de comida y resumen diario**
+
+Se validó el registro de una comida con macros conocidos por el usuario y la consulta del resumen diario de macronutrientes.
+
+**Petición POST `/api/v1/nutrition/meals` — Response (201 Created):**
+```json
+{
+  "id": 12,
+  "userId": 1,
+  "mealType": "LUNCH",
+  "description": "Arroz con pollo a la plancha",
+  "macros": {
+    "calories": 482.00,
+    "proteinGrams": 50.80,
+    "carbohydratesGrams": 51.50,
+    "fatGrams": 5.80,
+    "fiberGrams": 0.60
+  },
+  "consumedAt": "2026-06-06T13:00:00Z",
+  "sourceAnalysisId": null
+}
+```
+
+**Petición GET `/api/v1/nutrition/meals/user/1/daily-summary` — Response (200 OK):**
+```json
+{
+  "calories": 1450.00,
+  "proteinGrams": 132.50,
+  "carbohydratesGrams": 180.30,
+  "fatGrams": 38.20,
+  "fiberGrams": 12.40
+}
+```
+
+
+
+ **Creación y consulta de plan nutricional**
+
+Se verificó la creación de un plan nutricional con objetivos diarios de macros y su recuperación como plan activo del usuario.
+
+**Petición POST `/api/v1/nutrition/plans` — Response (201 Created):**
+```json
+{
+  "id": 3,
+  "userId": 1,
+  "name": "Plan de volumen - Junio 2026",
+  "description": "Plan orientado a ganancia de masa muscular con superávit calórico controlado.",
+  "dailyTargets": {
+    "calories": 2800.00,
+    "proteinGrams": 180.00,
+    "carbohydratesGrams": 320.00,
+    "fatGrams": 80.00,
+    "fiberGrams": 35.00
+  },
+  "startDate": "2026-06-01T00:00:00Z",
+  "endDate": "2026-06-30T23:59:59Z",
+  "active": true
+}
+```
+
+
+**Evidencia de Ejecución en Web Services — Training Service**
+
+**Registro de métricas físicas**
+
+Se validó el registro de métricas corporales del atleta a través del endpoint de Training Service, cubriendo los tipos de métrica definidos en el enum `MetricType`.
+
+**Petición POST `/api/v1/training-metrics/metrics` — Response (201 Created):**
+```json
+{
+  "id": 24,
+  "userId": 1,
+  "metricType": "BODY_WEIGHT_KG",
+  "value": 78.50,
+  "unit": "kg",
+  "recordedAt": "2026-06-06T08:00:00Z"
+}
+```
+
+**Petición GET `/api/v1/training-metrics/metrics/user/1?type=BODY_WEIGHT_KG` — Response (200 OK):**
+```json
+[
+  {
+    "id": 24,
+    "userId": 1,
+    "metricType": "BODY_WEIGHT_KG",
+    "value": 78.50,
+    "unit": "kg",
+    "recordedAt": "2026-06-06T08:00:00Z"
+  },
+  {
+    "id": 19,
+    "userId": 1,
+    "metricType": "BODY_WEIGHT_KG",
+    "value": 79.20,
+    "unit": "kg",
+    "recordedAt": "2026-05-30T08:00:00Z"
+  }
+]
+```
+
+**Analíticas de entrenamiento**
+
+Se ejecutó la consulta de analíticas consolidadas del atleta, verificando que el sistema calcule correctamente el volumen total, la tasa de completitud y el promedio por sesión sobre el historial de `WorkoutSession`.
+
+**Petición GET `/api/v1/training-metrics/analytics/user/1` — Response (200 OK):**
+```json
+{
+  "totalWorkouts": 18,
+  "completedWorkouts": 15,
+  "abandonedWorkouts": 2,
+  "totalExerciseExecutions": 87,
+  "totalVolume": 124850,
+  "averageVolumePerSession": 6936.11,
+  "completionRate": 0.83
+}
+```
+
+ **Registro de hito de progreso**
+
+Se validó el registro de un hito de progreso personal del atleta, funcionalidad que permite al coach documentar logros relevantes dentro del seguimiento del cliente.
+
+**Petición POST `/api/v1/training-metrics/progress` — Response (201 Created):**
+```json
+{
+  "id": 7,
+  "userId": 1,
+  "milestone": "Primera sentadilla con 100 kg",
+  "description": "El atleta logró su primer 1RM de sentadilla con barra completa a 100 kg con técnica correcta.",
+  "achievedAt": "2026-06-05T17:30:00Z"
+}
+```
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_swagger_training_metrics.png" alt="Training Metrics">
+  <br>
+  <em>Figura 5.24 — Registro y consulta de métricas físicas desde el Training Service.</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_swagger_training_analytics.png" alt="Training Analytics">
+  <br>
+  <em>Figura 5.25 — Analíticas de entrenamiento calculadas a partir del historial de sesiones.</em>
+</p>
+
+ **Evidencia de Integración en Frontend Mobile**
+
+La aplicación móvil desarrollada en Flutter consumió exitosamente los nuevos endpoints del Sprint 3 a través del API Gateway. Las vistas implementadas y validadas durante este Sprint son:
+
+| Vista | Descripción | Endpoint consumido |
+|:---|:---|:---|
+| Análisis de comida con IA | El usuario fotografía su plato y recibe el desglose automático de macros | `POST /api/v1/nutrition/analyses` |
+| Registro manual de comida | Formulario para ingresar macros conocidos con selector de tipo de comida | `POST /api/v1/nutrition/meals` |
+| Resumen diario de nutrición | Dashboard con calorías y macros del día vs objetivos del plan activo | `GET /api/v1/nutrition/meals/user/{userId}/daily-summary` |
+| Registro de métricas físicas | Formulario para peso, porcentaje de grasa y otras medidas corporales | `POST /api/v1/training-metrics/metrics` |
+| Historial de progreso | Gráficos de evolución de métricas a lo largo del tiempo | `GET /api/v1/training-metrics/metrics/user/{userId}` |
+
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_mobile_nutrition.png" alt="Mobile Nutrition">
+  <br>
+  <em>Figura 5.26 — Pantalla móvil para análisis nutricional y registro de comidas.</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_mobile_metrics.png" alt="Mobile Metrics">
+  <br>
+  <em>Figura 5.27 — Registro de métricas físicas desde la aplicación móvil.</em>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_mobile_progress.png" alt="Mobile Progress">
+  <br>
+  <em>Figura 5.28 — Visualización de progreso y evolución del usuario.</em>
+</p>
+
+**Validación del Ecosistema Completo vía Swagger Consolidado**
+
+Con el API Gateway actualizando las rutas hacia los seis microservicios, se verificó que la interfaz Swagger consolidada en `http://localhost:8080/swagger-ui.html` expone correctamente todos los servicios en su menú desplegable:
+
+- IAM Service → `/v3/api-docs/iam`
+- Matchmaking Service → `/v3/api-docs/matchmaking`
+- Membership Service → `/v3/api-docs/membership`
+- Nutrition Service → `/v3/api-docs/nutrition`
+- Training Service → `/v3/api-docs/training`
+- Videos Service → `/v3/api-docs/videos`
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_swagger_consolidated.png" alt="Swagger Consolidated">
+  <br>
+  <em>Figura 5.29 — Swagger UI consolidado mostrando los seis microservicios expuestos mediante el API Gateway.</em>
+</p>
+
+#### 5.2.3.5 Microservices Documentation Evidence for Sprint Review
+
+Al cierre del Sprint 3, BodyMatch AI cuenta con un ecosistema de microservicios completamente implementado y documentado mediante **OpenAPI 3.0 (SpringDoc)**. Cada servicio expone su especificación en `/v3/api-docs` y el API Gateway las agrega en una interfaz Swagger consolidada accesible en `http://localhost:8080/swagger-ui.html`, con un selector desplegable para los seis servicios.
+
+
+#### Arquitectura Final del Ecosistema de Microservicios
+
+| Microservicio | Puerto | Base de Datos | Endpoints raíz |
+|:---|:---:|:---|:---|
+| IAM Service | 8081 | `iam_db` | `/api/v1/authentication/**`, `/api/v1/users/**`, `/api/v1/roles/**` |
+| Matchmaking Service | 8082 | `matchmaking_db` | `/api/v1/athletes/**`, `/api/v1/coaches/**`, `/api/v1/connection-requests/**`, `/api/v1/training-sessions/**` |
+| Membership Service | 8083 | `membership_db` | `/api/v1/membership-plans/**`, `/api/v1/subscriptions/**`, `/api/v1/payments/**` |
+| Nutrition Service | 8084 | `nutrition_db` | `/api/v1/nutrition/meals/**`, `/api/v1/nutrition/plans/**`, `/api/v1/nutrition/analyses/**` |
+| Training Service | 8085 | `training_db` | `/api/v1/workout-sessions/**`, `/api/v1/training-metrics/**` |
+| Videos Service | 8086 | `videos_db` | `/api/v1/exercise-videos/**` |
+
+
+
+#### Catálogo Consolidado de Endpoints por Microservicio
+
+##### IAM Service
+
+| Acción | Verbo | Endpoint | Response |
+|:---|:---:|:---|:---:|
+| Registro de atleta | POST | `/api/v1/authentication/sign-up/athlete` | 201 |
+| Registro de coach | POST | `/api/v1/authentication/sign-up/coach` | 201 |
+| Registro genérico | POST | `/api/v1/authentication/sign-up` | 201 |
+| Inicio de sesión | POST | `/api/v1/authentication/sign-in` | 200 |
+| Renovar token | POST | `/api/v1/authentication/refresh-token` | 200 |
+| Cierre de sesión | POST | `/api/v1/authentication/sign-out` | 204 |
+| Validar token | POST | `/api/v1/authentication/validate-token` | 200 |
+| Obtener todos los usuarios | GET | `/api/v1/users` | 200 |
+| Obtener usuario por ID | GET | `/api/v1/users/{userId}` | 200 |
+| Obtener usuario por email | GET | `/api/v1/users/by-email/{email}` | 200 |
+| Usuario autenticado actual | GET | `/api/v1/users/me` | 200 |
+| Asignar roles | PUT | `/api/v1/users/{userId}/roles` | 200 |
+| Listar roles | GET | `/api/v1/roles` | 200 |
+
+##### Matchmaking Service
+
+| Acción | Verbo | Endpoint | Response |
+|:---|:---:|:---|:---:|
+| Crear perfil de atleta | POST | `/api/v1/athletes` | 201 |
+| Obtener perfil de atleta | GET | `/api/v1/athletes/{userId}` | 200 |
+| Crear perfil de coach | POST | `/api/v1/coaches` | 201 |
+| Obtener perfil de coach | GET | `/api/v1/coaches/{userId}` | 200 |
+| Buscar coaches con filtros | GET | `/api/v1/coaches/search` | 200 |
+| Recomendaciones de coaches | GET | `/api/v1/coaches/recommendations/{athleteId}` | 200 |
+| Agregar disponibilidad horaria | POST | `/api/v1/coaches/{coachId}/availability` | 200 |
+| Crear solicitud de conexión | POST | `/api/v1/connection-requests` | 201 |
+| Responder solicitud de conexión | PUT | `/api/v1/connection-requests/{requestId}` | 200 |
+| Solicitudes del atleta | GET | `/api/v1/connection-requests/athlete/{athleteId}` | 200 |
+| Solicitudes del coach | GET | `/api/v1/connection-requests/coach/{coachId}` | 200 |
+| Clientes aprobados del coach | GET | `/api/v1/connection-requests/coach/{coachId}/clients` | 200 |
+| Programar sesión de entrenamiento | POST | `/api/v1/training-sessions` | 201 |
+| Completar sesión | PUT | `/api/v1/training-sessions/{sessionId}/complete` | 200 |
+| Cancelar sesión | DELETE | `/api/v1/training-sessions/{sessionId}` | 200 |
+| Sesiones del atleta | GET | `/api/v1/training-sessions/athlete/{athleteId}` | 200 |
+| Sesiones del coach | GET | `/api/v1/training-sessions/coach/{coachId}` | 200 |
+
+##### Nutrition Service
+
+| Acción | Verbo | Endpoint | Response |
+|:---|:---:|:---|:---:|
+| Analizar imagen de alimentos con IA | POST | `/api/v1/nutrition/analyses` | 201 |
+| Obtener análisis por ID | GET | `/api/v1/nutrition/analyses/{analysisId}` | 200 |
+| Historial de análisis del usuario | GET | `/api/v1/nutrition/analyses/user/{userId}` | 200 |
+| Registrar comida manualmente | POST | `/api/v1/nutrition/meals` | 201 |
+| Historial de comidas del usuario | GET | `/api/v1/nutrition/meals/user/{userId}` | 200 |
+| Resumen de macros diarios | GET | `/api/v1/nutrition/meals/user/{userId}/daily-summary` | 200 |
+| Crear plan nutricional | POST | `/api/v1/nutrition/plans` | 201 |
+| Plan activo del usuario | GET | `/api/v1/nutrition/plans/user/{userId}/active` | 200 |
+| Desactivar plan nutricional | DELETE | `/api/v1/nutrition/plans/{planId}` | 200 |
+
+##### Training Service
+
+| Acción | Verbo | Endpoint | Response |
+|:---|:---:|:---|:---:|
+| Iniciar sesión de entrenamiento | POST | `/api/v1/workout-sessions` | 201 |
+| Agregar ejercicio a la sesión | POST | `/api/v1/workout-sessions/{sessionId}/exercises` | 200 |
+| Completar sesión de entrenamiento | PUT | `/api/v1/workout-sessions/{sessionId}/complete` | 200 |
+| Obtener sesión por ID | GET | `/api/v1/workout-sessions/{sessionId}` | 200 |
+| Sesiones del usuario | GET | `/api/v1/workout-sessions/user/{userId}` | 200 |
+| Registrar métrica física | POST | `/api/v1/training-metrics/metrics` | 201 |
+| Métricas del usuario (con filtro opcional por tipo) | GET | `/api/v1/training-metrics/metrics/user/{userId}` | 200 |
+| Registrar hito de progreso | POST | `/api/v1/training-metrics/progress` | 201 |
+| Historial de hitos del usuario | GET | `/api/v1/training-metrics/progress/user/{userId}` | 200 |
+| Analíticas de entrenamiento (con rango de fechas) | GET | `/api/v1/training-metrics/analytics/user/{userId}` | 200 |
+
+##### Videos Service
+
+| Acción | Verbo | Endpoint | Response |
+|:---|:---:|:---|:---:|
+| Subir video de ejercicio | POST | `/api/v1/exercise-videos` | 201 |
+| Analizar video con Gemini AI | POST | `/api/v1/exercise-videos/{videoId}/analyze` | 200 |
+| Obtener video por ID | GET | `/api/v1/exercise-videos/{videoId}` | 200 |
+| Videos del usuario | GET | `/api/v1/exercise-videos/user/{userId}` | 200 |
+| Videos analizados del usuario | GET | `/api/v1/exercise-videos/user/{userId}/analyzed` | 200 |
+| Eliminar video | DELETE | `/api/v1/exercise-videos/{videoId}` | 204 |
+
+
+
+ **Ejemplos de Request/Response para Sprint 3**
+
+##### A. POST — Registrar comida manualmente
+
+**Endpoint:** `POST /api/v1/nutrition/meals`
+
+**Request (Body):**
+```json
+{
+  "userId": 1,
+  "mealType": "LUNCH",
+  "description": "Arroz con pollo a la plancha",
+  "macros": {
+    "calories": 482,
+    "proteinGrams": 50.8,
+    "carbohydratesGrams": 51.5,
+    "fatGrams": 5.8,
+    "fiberGrams": 0.6
+  },
+  "consumedAt": "2026-06-06T13:00:00Z",
+  "sourceAnalysisId": null
+}
+```
+
+**Response (201 Created):**
+```json
+{
+  "id": 12,
+  "userId": 1,
+  "mealType": "LUNCH",
+  "description": "Arroz con pollo a la plancha",
+  "macros": {
+    "calories": 482,
+    "proteinGrams": 50.8,
+    "carbohydratesGrams": 51.5,
+    "fatGrams": 5.8,
+    "fiberGrams": 0.6
+  },
+  "consumedAt": "2026-06-06T13:00:00Z",
+  "sourceAnalysisId": null
+}
+```
+
+##### B. GET — Resumen diario de macros
+
+**Endpoint:** `GET /api/v1/nutrition/meals/user/1/daily-summary?date=2026-06-06`
+
+**Response (200 OK):**
+```json
+{
+  "calories": 1450.00,
+  "proteinGrams": 132.50,
+  "carbohydratesGrams": 180.30,
+  "fatGrams": 38.20,
+  "fiberGrams": 12.40
+}
+```
+
+##### C. POST — Analizar imagen de alimentos con IA
+
+**Endpoint:** `POST /api/v1/nutrition/analyses` (multipart/form-data)
+
+**Parámetros:** `userId=1`, `file=<imagen.jpg>`
+
+**Response (201 Created):**
+```json
+{
+  "id": 8,
+  "userId": 1,
+  "imageStorageUrl": "http://localhost:8084/storage/bodymatch-nutrition/nutrition/1/...",
+  "summary": "Plato balanceado con proteína magra, carbohidratos complejos y vegetales.",
+  "totalMacros": {
+    "calories": 482.00,
+    "proteinGrams": 50.80,
+    "carbohydratesGrams": 51.50,
+    "fatGrams": 5.80,
+    "fiberGrams": 0.60
+  },
+  "status": "COMPLETED",
+  "failureReason": null,
+  "aiModelVersion": "gemini-2.5-flash",
+  "analyzedAt": "2026-06-06T13:05:22Z",
+  "detectedFoods": [
+    {
+      "id": 15,
+      "foodName": "Pechuga de pollo a la plancha",
+      "portionGrams": 150.00,
+      "macros": {
+        "calories": 248.00,
+        "proteinGrams": 46.50,
+        "carbohydratesGrams": 0.00,
+        "fatGrams": 5.40,
+        "fiberGrams": 0.00
+      },
+      "confidence": 0.920
+    },
+    {
+      "id": 16,
+      "foodName": "Arroz blanco cocido",
+      "portionGrams": 180.00,
+      "macros": {
+        "calories": 234.00,
+        "proteinGrams": 4.30,
+        "carbohydratesGrams": 51.50,
+        "fatGrams": 0.40,
+        "fiberGrams": 0.60
+      },
+      "confidence": 0.880
+    }
+  ]
+}
+```
+
+##### D. GET — Analíticas de entrenamiento
+
+**Endpoint:** `GET /api/v1/training-metrics/analytics/user/1`
+
+**Response (200 OK):**
+```json
+{
+  "totalWorkouts": 18,
+  "completedWorkouts": 15,
+  "abandonedWorkouts": 2,
+  "totalExerciseExecutions": 87,
+  "totalVolume": 124850,
+  "averageVolumePerSession": 6936.11,
+  "completionRate": 0.83
+}
+```
+
+##### E. POST — Registrar métrica física
+
+**Endpoint:** `POST /api/v1/training-metrics/metrics`
+
+**Request (Body):**
+```json
+{
+  "userId": 1,
+  "metricType": "BODY_WEIGHT_KG",
+  "value": 78.5,
+  "unit": "kg",
+  "recordedAt": "2026-06-06T08:00:00Z"
+}
+```
+
+**Response (201 Created):**
+```json
+{
+  "id": 24,
+  "userId": 1,
+  "metricType": "BODY_WEIGHT_KG",
+  "value": 78.5,
+  "unit": "kg",
+  "recordedAt": "2026-06-06T08:00:00Z"
+}
+```
+
+---
+
+***Matriz de Trazabilidad Sprint 3 — User Stories vs Endpoints***
+
+| US ID | Título | Endpoint(s) | Microservicio | Estado |
+|:---|:---|:---|:---|:---:|
+| US23 | Subir imagen de alimentos | `POST /api/v1/nutrition/analyses` | Nutrition | Implementado |
+| US24 | Reconocimiento de alimentos con IA | `GET /api/v1/nutrition/analyses/{id}` | Nutrition | Implementado |
+| US25 | Cálculo nutricional | `GET /api/v1/nutrition/analyses/user/{userId}` | Nutrition | Implementado |
+| US27 | Edición manual de alimentos | `POST /api/v1/nutrition/meals` | Nutrition | Implementado |
+| US28 | Historial de comidas | `GET /api/v1/nutrition/meals/user/{userId}` | Nutrition | Implementado |
+| US29 | Consumo diario | `GET /api/v1/nutrition/meals/user/{userId}/daily-summary` | Nutrition | Implementado |
+| US21 | Seguimiento cliente | `GET /api/v1/training-metrics/metrics/user/{userId}` | Training | Implementado |
+| TS04 | Endpoint perfil atleta | `GET /api/v1/training-metrics/analytics/user/{userId}` | Training | Implementado |
+
+
+ **Repositorio de Control de Versiones**
+
+| Repositorio | Branch | Commit Id | Mensaje | Fecha |
+|:---|:---|:---|:---|:---|
+| `G3-FundamentosArqui-7944/nutrition-service` | `main` | *(sprint 3 commit)* | `feat: implement nutrition analysis and meal logging endpoints` | 24/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `main` | *(sprint 3 commit)* | `feat: implement performance metrics and analytics endpoints` | 24/06/2026 |
+| `G3-FundamentosArqui-7944/docs` | `main` | *(sprint 3 commit)* | `test: add BDD feature files for Nutrition and Training Sprint 3` | 24/06/2026 |
 
 
 
