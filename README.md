@@ -3186,6 +3186,116 @@ El flujo de trabajo se dividió estratégicamente por Bounded Contexts y se cont
 ### 5.2.3	Sprint 3
 ##### 5.2.3.1	Sprint Backlog 3
 
+### Sprint Planning Background
+ 
+| **Sprint 3** | **Sprint 3 BodyMatch AI** |
+|---|---|
+| **Date** | 02/06/2026 |
+| **Time** | 06:00 PM |
+| **Location** | Servidor de Discord del Equipo |
+| **Prepared By** | Pablo Geronimo |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara |
+| **Sprint 3 Review Summary** | Durante este Sprint se completó la implementación de los Bounded Contexts de Nutrition y Training como microservicios independientes, cerrando el ecosistema distribuido de BodyMatch AI. Se integró el análisis de imágenes de alimentos mediante Gemini AI, el registro de métricas físicas, las analíticas de entrenamiento y los planes nutricionales personalizados. |
+| **Sprint 3 Retrospective Summary** | El equipo consolidó el proceso de integración con IA y logró mantener la coherencia de la arquitectura distribuida. Se identificó como mejora la necesidad de fortalecer la observabilidad del sistema mediante logging estructurado para facilitar el diagnóstico en producción. |
+| **Sprint Goal & User Stories** | Completar el ecosistema BodyMatch AI implementando el Nutrition Service con análisis de IA y el Training Service con métricas avanzadas y analíticas de rendimiento. |
+| **Sprint 3 Goal** | Implementar y desplegar los Bounded Contexts de Nutrition y Training como microservicios independientes, integrando el análisis de alimentos con Gemini AI y las métricas físicas del atleta. |
+| **Sprint 3 Velocity** | 8 User Stories / Technical Stories completadas |
+| **Sum of Story Points** | 38 Story Points |
+ 
+
+ 
+### Sprint Backlog
+ 
+En este Sprint se completó la cobertura funcional de BodyMatch AI implementando los dos Bounded Contexts restantes:
+ 
+- **Nutrition Service:** análisis de imágenes de alimentos con IA, registro manual de comidas, planes nutricionales y resumen diario de macros.
+- **Training Service:** registro de métricas físicas, seguimiento de sesiones de entrenamiento, hitos de progreso y analíticas avanzadas de rendimiento.
+
+### Descomposición de Tareas del Sprint
+ 
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| **US23** | Subir imagen de alimentos | T01 | UI Cámara Nutricional | Integrar selector de imágenes en la app móvil para captura de platos. | 4h | Anyelo Alejos | Done |
+| | | T02 | Endpoint Análisis Imagen | Implementar `POST /api/v1/nutrition/analyses` con recepción multipart. | 5h | Pablo Geronimo | Done |
+| | | T03 | Almacenamiento Local | Configurar `LocalCloudStorageService` para persistencia de imágenes. | 3h | Pablo Geronimo | Done |
+| **US24** | Reconocimiento de alimentos con IA | T01 | Integración Gemini AI | Implementar `GeminiNutritionAnalyzer` con prompt estructurado para detección de alimentos. | 8h | Pablo Geronimo | Done |
+| | | T02 | Parser de Respuesta IA | Desarrollar lógica de parseo JSON para extraer `detectedFoods` y calcular macros totales. | 5h | Jorge Guevara | Done |
+| | | T03 | Modo Stub sin API Key | Configurar respuesta de stub cuando `GEMINI_API_KEY` no está disponible. | 2h | Jorge Guevara | Done |
+| **US25** | Cálculo nutricional | T01 | Value Object MacroSummary | Implementar `MacroSummary` con operación de suma para agregación de macros. | 3h | Marcia Melgarejo | Done |
+| | | T02 | UI Detalle Macros | Maquetar pantalla móvil con desglose visual de calorías, proteínas, carbos y grasas. | 4h | Anyelo Alejos | Done |
+| **US27** | Edición manual de alimentos | T01 | Endpoint Log Meal | Implementar `POST /api/v1/nutrition/meals` con validación de descripción y tipo de comida. | 4h | Marcia Melgarejo | Done |
+| | | T02 | UI Formulario Comida | Crear vista móvil con campos de macros editables y selector de tipo de comida. | 3h | Anyelo Alejos | Done |
+| **US28** | Historial de comidas | T01 | Endpoint Historial | Implementar `GET /api/v1/nutrition/meals/user/{userId}` con filtros opcionales por fecha. | 3h | Marcia Melgarejo | Done |
+| | | T02 | UI Historial Comidas | Listar comidas del día en la app móvil con íconos por tipo de comida. | 3h | Anyelo Alejos | Done |
+| **US29** | Consumo diario | T01 | Endpoint Resumen Diario | Implementar `GET /api/v1/nutrition/meals/user/{userId}/daily-summary` con cálculo de totales por día. | 4h | Marcia Melgarejo | Done |
+| | | T02 | UI Dashboard Nutrición | Crear dashboard con barra de progreso de macros vs objetivos del plan activo. | 5h | Anyelo Alejos | Done |
+| **US21** | Seguimiento cliente (coach) | T01 | Endpoint Métricas por Usuario | Implementar `GET /api/v1/training-metrics/metrics/user/{userId}` con filtro por tipo. | 4h | Jorge Guevara | Done |
+| | | T02 | Endpoint Analytics | Implementar `GET /api/v1/training-metrics/analytics/user/{userId}` con cálculo de completionRate y volumen. | 5h | Jorge Guevara | Done |
+| | | T03 | UI Progreso Coach | Adaptar la vista del coach para mostrar gráficos de evolución de sus clientes. | 4h | Anyelo Alejos | Done |
+| **TS04** | Endpoint Perfil Atleta | T01 | Endpoint Registro Métricas | Implementar `POST /api/v1/training-metrics/metrics` con validación de `MetricType`. | 3h | Jorge Guevara | Done |
+| | | T02 | Endpoint Hitos Progreso | Implementar `POST /api/v1/training-metrics/progress` y `GET /api/v1/training-metrics/progress/user/{userId}`. | 3h | Jorge Guevara | Done |
+| | | T03 | Documentación OpenAPI | Anotar todos los controladores de Training con `@Tag` y `@Operation` para Swagger. | 2h | Marcia Melgarejo | Done |
+
+
+
+
+#### 5.2.3.2 Development Evidence for Sprint Review
+
+
+Durante el Sprint 3, el desarrollo se concentró en la implementación completa de los microservicios de **Nutrition** y **Training**, completando así el ecosistema distribuido de BodyMatch AI. Ambos servicios siguieron los mismos principios arquitectónicos aplicados en los sprints anteriores: Domain-Driven Design, patrón Repository, CQRS implícito (servicios separados de comando y consulta) y patrón Gateway para la integración con servicios externos como Gemini AI e IAM.
+ 
+Los principales avances técnicos implementados durante este Sprint fueron:
+ 
+- **`GeminiNutritionAnalyzer`:** Implementación del analizador de imágenes de alimentos que invoca `GeminiHttpClient` con un prompt estructurado para obtener el desglose de macronutrientes en formato JSON estricto, con soporte de modo stub cuando la API key no está configurada.
+- **`NutritionAnalysisService`:** Orquestación del flujo completo: subida de imagen al storage local, llamada a la IA, parseo de resultados, agregación de macros en el Value Object `MacroSummary` y persistencia del análisis junto a sus `FoodDetection`.
+- **`MealRecordService`:** Servicio de registro manual de comidas con cálculo del resumen diario por rango de fechas UTC.
+- **`NutritionPlanService`:** Gestión de planes nutricionales con desactivación automática del plan anterior al crear uno nuevo.
+- **`PerformanceMetricService`:** Registro de métricas físicas tipadas (`MetricType`) con unidad por defecto según el tipo y cálculo de analíticas de entrenamiento sobre el historial de `WorkoutSession`.
+- **`WorkoutSessionService`:** Servicio de sesiones de entrenamiento con soporte para múltiples ejercicios (`ExerciseExecution`) y el Value Object embebido `Weight`.
+
+
+### Evidencia de Desarrollo por Repositorio
+ 
+| Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
+|---|---|---|---|---|
+| `G3-FundamentosArqui-7944/nutrition-service` | `feature/nutrition-ai-analysis` | `a3f1d82` | `feat: implement GeminiNutritionAnalyzer with food detection` | 02/06/2026 |
+| `G3-FundamentosArqui-7944/nutrition-service` | `feature/nutrition-ai-analysis` | `b7c4e19` | `feat: implement NutritionAnalysisService with cloud storage integration` | 03/06/2026 |
+| `G3-FundamentosArqui-7944/nutrition-service` | `feature/meal-logging` | `c9d2f44` | `feat: implement MealRecordService with daily macro summary` | 03/06/2026 |
+| `G3-FundamentosArqui-7944/nutrition-service` | `feature/meal-logging` | `d1e8a67` | `feat: implement NutritionPlanService with auto-deactivation` | 04/06/2026 |
+| `G3-FundamentosArqui-7944/nutrition-service` | `feature/nutrition-db` | `e4f7b93` | `feat: add Flyway migration V1__init.sql for nutrition schema` | 04/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/performance-metrics` | `f6a3c28` | `feat: implement PerformanceMetricService with MetricType enum` | 04/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/performance-metrics` | `g8b5d51` | `feat: implement training analytics with completionRate calculation` | 05/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/workout-sessions` | `h2c9e74` | `feat: implement WorkoutSessionService with exercise execution tracking` | 05/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/workout-sessions` | `i4d1f97` | `feat: add Weight value object and volume calculation logic` | 05/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `feature/training-db` | `j6e3a20` | `feat: add Flyway migration V1__init.sql for training schema` | 06/06/2026 |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/nutrition-views` | `k8f5c43` | `feat: implement food image capture and nutrition analysis views` | 05/06/2026 |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/nutrition-views` | `l1a7d66` | `feat: implement daily macro dashboard with plan progress bars` | 06/06/2026 |
+| `G3-FundamentosArqui-7944/mobileapp-frontend` | `feature/training-views` | `m3b9e89` | `feat: implement physical metrics registration and progress charts` | 06/06/2026 |
+| `G3-FundamentosArqui-7944/docs` | `main` | `n5c2f12` | `test: add BDD feature files for Sprint 3 Nutrition and Training` | 06/06/2026 |
+ 
+
+### Repositorios Utilizados Durante el Sprint
+ 
+| Componente | Repositorio |
+|---|---|
+| Nutrition Microservice | `https://github.com/G3-FundamentosArqui-7944/nutrition-service` |
+| Training Microservice | `https://github.com/G3-FundamentosArqui-7944/training-service` |
+| Mobile Frontend | `https://github.com/G3-FundamentosArqui-7944/mobileapp-frontend` |
+| Documentación y Tests | `https://github.com/G3-FundamentosArqui-7944/docs` |
+ 
+
+ 
+### Tecnologías Utilizadas
+ 
+| Componente | Tecnologías |
+|---|---|
+| Nutrition Microservice | Spring Boot 3.4, Spring Data JPA, Flyway, Gemini AI API, LocalCloudStorageService |
+| Training Microservice | Spring Boot 3.4, Spring Data JPA, Flyway, Spring Cloud OpenFeign |
+| Persistencia | PostgreSQL (`nutrition_db`, `training_db`) |
+| Contenedores | Docker / Docker Compose |
+| Documentación API | SpringDoc OpenAPI 3.0 / Swagger UI |
+| Mobile Client | Flutter (Android) |
+ 
 
 ##### 5.2.3.3 Testing Suite Evidence for Sprint Review
 
@@ -3800,15 +3910,135 @@ Al cierre del Sprint 3, BodyMatch AI cuenta con un ecosistema de microservicios 
 
 ##### 5.2.3.6 Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 3, las actividades de despliegue se centraron en incorporar los microservicios de **Nutrition** (puerto 8084) y **Training** (puerto 8085) al ecosistema Docker Compose existente, completando así el stack completo de BodyMatch AI con los nueve contenedores en ejecución coordinada.
+ 
+### 1. Actualización del docker-compose.yml
+ 
+Los servicios `nutrition-service` y `training-service` fueron incorporados al archivo `docker-compose.yml` del repositorio de infraestructura, siguiendo el mismo patrón de los servicios anteriores: construcción desde Dockerfile multietapa con Eclipse Temurin 21, variables de entorno para la URL de PostgreSQL y Eureka, y dependencia sobre los health checks de `postgres` y `discovery-server`.
+ 
+**Fragmento de configuración desplegado:**
+ 
+```yaml
+nutrition-service:
+  build: ../nutrition-service
+  container_name: bodymatch-nutrition
+  ports:
+    - "8084:8084"
+  environment:
+    SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/nutrition_db
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-server:8761/eureka/
+    GEMINI_API_KEY: ${GEMINI_API_KEY:-changeme}
+  depends_on:
+    postgres:
+      condition: service_healthy
+    discovery-server:
+      condition: service_healthy
+  networks:
+    - bodymatch-net
+ 
+training-service:
+  build: ../training-service
+  container_name: bodymatch-training
+  ports:
+    - "8085:8085"
+  environment:
+    SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/training_db
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://discovery-server:8761/eureka/
+  depends_on:
+    postgres:
+      condition: service_healthy
+      discovery-server:
+        condition: service_healthy
+  networks:
+    - bodymatch-net
+```
+ 
+### 2. Proceso de Despliegue
+ 
+El proceso de despliegue ejecutado en este Sprint siguió los mismos pasos establecidos en Sprints anteriores:
+ 
+```bash
+# Desde la raíz del repositorio de infraestructura
+docker compose up -d --build
+```
+ 
+Al finalizar el build, se verificó que todos los contenedores estuvieran en estado `Up` mediante:
+ 
+```bash
+docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+```
+ 
+### 3. Validación de Bases de Datos
+ 
+Las bases de datos `nutrition_db` y `training_db` ya habían sido creadas en el Sprint 1 mediante el script `postgres-init/01-create-databases.sql`. En este Sprint, las migraciones de Flyway (`V1__init.sql`) de cada microservicio crearon automáticamente las tablas correspondientes al arrancar los contenedores por primera vez:
+ 
+**Tablas creadas por Nutrition Service:**
+- `meal_records`, `nutrition_plans`, `nutrition_analyses`, `food_detections`
+**Tablas creadas por Training Service:**
+- `workout_sessions`, `exercise_executions`, `performance_metrics`, `progress_records`
+### 4. Resultado Final del Despliegue
+ 
+| Contenedor | Puerto | Estado | Registro en Eureka |
+|:---|:---:|:---:|:---:|
+| `bodymatch-postgres` | 5433 | Up (healthy) | — |
+| `bodymatch-discovery` | 8761 | Up (healthy) | — |
+| `bodymatch-gateway` | 8080 | Up | Sí |
+| `bodymatch-iam` | 8081 | Up | Sí |
+| `bodymatch-matchmaking` | 8082 | Up | Sí |
+| `bodymatch-membership` | 8083 | Up | Sí |
+| `bodymatch-nutrition` | 8084 | Up | Sí |
+| `bodymatch-training` | 8085 | Up | Sí |
+| `bodymatch-videos` | 8086 | Up | Sí |
+ 
 
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_eureka_full.png" alt=" eureka Sprint 3 - BodyMatch AI">
+  <p><em> Dashboard de Eureka con los seis servicios registrados y la salida del terminal .</em></p>
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint3_docker_all.png" alt=" docker Sprint 3 - BodyMatch AI">
+  <p><em> salida del terminal con los contenedores activos</em></p>
+</div>
 
 ##### 5.2.3.7 Team Collaboration Insights during Sprint
+
+Durante el Sprint 3, la colaboración del equipo se orientó a completar el ecosistema de microservicios de BodyMatch AI, cerrando los Bounded Contexts de Nutrition y Training. La distribución del trabajo mantuvo el esquema establecido en sprints anteriores, con cada integrante responsable de un dominio funcional específico.
+ 
+Los pilares de colaboración durante este Sprint fueron:
+ 
+- **Integración con IA:** La implementación de `GeminiNutritionAnalyzer` requirió coordinación estrecha entre el desarrollador del servicio y el equipo mobile para alinear el formato de respuesta con la vista de análisis de alimentos.
+- **Revisiones de Pull Request:** Cada rama `feature/` fue revisada antes de fusionarse a `main`, con énfasis en verificar la correcta implementación del Value Object `MacroSummary` y la lógica de agregación de macros.
+- **Pruebas de integración cross-servicio:** Se validó que el Training Service consultara correctamente al IAM Service vía OpenFeign para verificar la existencia del usuario antes de registrar métricas.
+- **Kanban actualizado diariamente:** El tablero de Trello reflejó en tiempo real el avance de las tareas, permitiendo identificar y desbloquear dependencias entre el backend y el frontend móvil.
+
+
+### Distribución de Participación del Equipo
+
+ 
+| Integrante | Principales contribuciones en Sprint 3 |
+|---|---|
+| Pablo Geronimo | Implementación del Nutrition Service: `GeminiNutritionAnalyzer`, `NutritionAnalysisService`, configuración Docker. |
+| Jorge Guevara | Implementación del Training Service: `PerformanceMetricService`, analytics, `WorkoutSessionService`. |
+| Marcia Melgarejo | `MealRecordService`, `NutritionPlanService`, endpoints de resumen diario y documentación OpenAPI de ambos servicios. |
+| Anyelo Alejos | Integración mobile: vistas de análisis de alimentos, dashboard de nutrición, gráficos de progreso y registro de métricas. |
 
 
 
 ##### 5.2.3.8 Kanban Board
 
+Para la gestión del Sprint 3, el equipo utilizó el tablero Kanban en **Trello**, manteniendo el flujo de trabajo en cuatro columnas: *Backlog → To Do → In Progress → Done*. Las User Stories del Sprint se descompusieron en tareas técnicas de máximo 8 horas, asignadas individualmente para facilitar el seguimiento diario.
+ 
+Al cierre del Sprint, todas las User Stories comprometidas (US21, US23–US29, TS04) alcanzaron el estado **Done**, completando el Product Backlog definido para esta entrega.
+ 
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/chapter5/sprint2_kanban_board.png" alt="Tablero Kanban del Sprint 3 - BodyMatch AI">
+  <p><em>Estado final del tablero Kanban al cierre del Sprint 3: Implementación de Microservicios adicionales , API Gateway y vistas móviles.</em></p>
+</div>
+
+> **Link del tablero:** https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 
 ## Conclusiones
 
@@ -3836,7 +4066,15 @@ Al cierre del Sprint 3, BodyMatch AI cuenta con un ecosistema de microservicios 
 * La implementación y validación de contratos OpenAPI, junto con el uso de herramientas como Swagger y Postman, contribuyó a garantizar consistencia funcional entre los servicios desarrollados y mejorar el proceso de integración continua.
 * La aplicación del enfoque BDD mediante archivos `.feature` permitió verificar el cumplimiento de criterios de aceptación asociados a las User Stories del Sprint, fortaleciendo la calidad del software y asegurando que el comportamiento del sistema responda a los requerimientos definidos.
 
----
+
+### Avance 4: TB4: Consolidación del Ecosistema de Microservicios y Entrega Final
+
+La entrega final de BodyMatch AI representa la culminación de un proceso iterativo de cuatro sprints en los que el equipo evolucionó desde un prototipo monolítico hacia un ecosistema completamente distribuido compuesto por seis microservicios independientes. Durante el TB4, se completó la implementación de los Bounded Contexts de Nutrition y Training, se alcanzó cobertura BDD sobre el 100% de los microservicios desarrollados y se consolidó la documentación técnica del sistema bajo el estándar OpenAPI 3.0, expuesto de forma centralizada a través del API Gateway.
+ 
+La integración de la inteligencia artificial de Google Gemini en dos dominios funcionales —análisis biomecánico de ejercicios en el Videos Service y reconocimiento de alimentos en el Nutrition Service— validó la viabilidad técnica de la propuesta diferenciadora de BodyMatch AI: combinar retroalimentación automatizada con acompañamiento profesional de coaches certificados.
+ 
+La aplicación consistente de Domain-Driven Design, el patrón Gateway para aislar dependencias externas y la estrategia de pruebas BDD con Gherkin permitió que el equipo entregara un sistema cohesivo, documentado y con fronteras de dominio claras, sentando las bases para una futura migración hacia una arquitectura completamente cloud-native.
+
 
 ## Recomendaciones
 
@@ -3861,7 +4099,9 @@ Al cierre del Sprint 3, BodyMatch AI cuenta con un ecosistema de microservicios 
 * Se recomienda mantener la organización por Bounded Contexts y continuar aplicando principios de Domain-Driven Design (DDD) para facilitar futuras extensiones funcionales del sistema sin afectar la estabilidad de los servicios existentes.
 
 
-### Avance 4: Evolución Arquitectónica y Consolidación Técnica
+### Avance 4: TB4: Consolidación del Ecosistema de Microservicios y Entrega Final
+ 
+Para las siguientes fases de evolución del producto, se recomienda priorizar la implementación de un mecanismo de observabilidad distribuida que centralice los logs estructurados de los seis microservicios en una herramienta de monitoreo como Azure Monitor o ELK Stack, dado que la ausencia de trazabilidad cross-service es el principal riesgo operativo identificado durante el Sprint 3. Asimismo, se sugiere activar la integración real con Stripe en el Membership Service —actualmente en configuración de stub— para habilitar el modelo de monetización de coaches en un entorno de producción real. Finalmente, la evolución del sistema hacia contenedores orquestados con Kubernetes permitiría escalar horizontalmente los servicios de mayor demanda, en particular Videos Service y Nutrition Service, sin afectar la disponibilidad del ecosistema completo.
 
 
  
