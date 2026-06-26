@@ -104,6 +104,7 @@
 | TB3     | 06/06/2026 | Jorge Enrique Guevara Tejada   |Desacoplamiento del backend monolito modular a microservicios                         | 90488b0 |
 | TB3     | 06/06/2026 | Anyelo Bill Alejos Jesus  | Documentación del Sprint 2 Backlog y  evidencias del docker y kanba board                        | c63b0fc |
 | TB3     | 04/06/2026 | Pablo Antonio geronimo Quispe  | Finalizacion del levantamiento de correciones                      | 97add48 |
+| TB4    | 24/06/2026 | Pablo Antonio geronimo Quispe  | Finalizacion del sprint4                   | 9778dd3 |
 
 
 ## Contenido
@@ -3320,7 +3321,7 @@ Con los tests de este Sprint, el sistema alcanza cobertura BDD sobre los seis mi
 
 | Repositorio | Branch | Commit Id | Mensaje | Fecha |
 |:---|:---|:---|:---|:---|
-| `G3-FundamentosArqui-7944/docs` | `main` | *(sprint 3 commit)* | `test: add BDD feature files for Nutrition and Training Sprint 3` | 24/06/2026 |
+| `G3-FundamentosArqui-7944/docs` | `main` | 786pe3 | `test: add BDD feature files for Nutrition and Training Sprint 3` | 24/06/2026 |
 
 
 ##### 5.2.3.4 Execution Evidence for Sprint Review
@@ -3902,9 +3903,9 @@ Al cierre del Sprint 3, BodyMatch AI cuenta con un ecosistema de microservicios 
 
 | Repositorio | Branch | Commit Id | Mensaje | Fecha |
 |:---|:---|:---|:---|:---|
-| `G3-FundamentosArqui-7944/nutrition-service` | `main` | *(sprint 3 commit)* | `feat: implement nutrition analysis and meal logging endpoints` | 24/06/2026 |
-| `G3-FundamentosArqui-7944/training-service` | `main` | *(sprint 3 commit)* | `feat: implement performance metrics and analytics endpoints` | 24/06/2026 |
-| `G3-FundamentosArqui-7944/docs` | `main` | *(sprint 3 commit)* | `test: add BDD feature files for Nutrition and Training Sprint 3` | 24/06/2026 |
+| `G3-FundamentosArqui-7944/nutrition-service` | `main` | 2312pd | `feat: implement nutrition analysis and meal logging endpoints` | 24/06/2026 |
+| `G3-FundamentosArqui-7944/training-service` | `main` | 456123s | `feat: implement performance metrics and analytics endpoints` | 24/06/2026 |
+| `G3-FundamentosArqui-7944/docs` | `main` | 9da32d | `test: add BDD feature files for Nutrition and Training Sprint 3` | 24/06/2026 |
 
 
 
