@@ -4041,6 +4041,246 @@ Al cierre del Sprint, todas las User Stories comprometidas (US21, US23–US29, T
 
 > **Link del tablero:** https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 
+
+### 5.2.4 Sprint 4
+
+#### 5.2.4.1 Sprint Backlog 4
+
+**Sprint Planing Background**
+| **Sprint 4** | **Sprint 4 BodyMatch AI** |
+|---|---|
+| **Date** | 07/07/2026 |
+| **Time** | 6:00 pm|
+| **Location** | Servidor de Discord del Equipo |
+| **Prepared By** | Pablo Geronimo |
+| **Attendees (to planning meeting)** | Pablo Geronimo / Anyelo Alejos / Marcia Melgarejo / Jorge Guevara |
+| **Sprint 4 Review Summary** | Se cerraron las historias de usuario pendientes del Product Backlog relacionadas con perfil, búsqueda avanzada de coaches, disponibilidad, calificaciones y monetización, elevando la cobertura de pruebas BDD del 63.6% al 84.8%. Se completó el despliegue del ecosistema completo de 9 contenedores en Microsoft Azure sobre una Virtual Machine con Docker Compose. |
+| **Sprint 4 Retrospective Summary** | Decidimos mejorar y finalizar los microservicios para realizar el despliegue respectivo |
+| **Sprint Goal & User Stories** | Cerrar el backlog funcional pendiente (US05, US06, US07, US10, US20, US22, TS02) con sus respectivas pruebas BDD, y desplegar el ecosistema completo en Microsoft Azure. |
+| **Sprint 4 Goal** | Elevar la cobertura BDD por encima del 80% del Product Backlog y dejar el sistema operativo en un proveedor cloud real (Azure), documentando la arquitectura de despliegue. |
+| **Sprint 4 Velocity** | 7 User Stories / Technical Stories cerradas con pruebas + 1 hito de despliegue |
+| **Sum of Story Points** | 17 Story Points (US05: 2, US06: 3, US07: 1, US10: 1, US20: 2, US22: 2, TS02: 3) + despliegue (no puntuado por Story Points, hito de infraestructura) |
+
+
+**Sprint Backlog**
+ 
+Las historias seleccionadas ya tenían su endpoint implementado en el código (`CoachProfileController`, `AthleteController`... en Matchmaking Service; `MembershipPlanController`/`SubscriptionController` en Membership Service) desde Sprint 2, pero no contaban con archivo `.feature` ni con la revisión de trazabilidad completa. Este sprint cierra esa brecha documental y de calidad, y además ejecuta el despliegue en la nube.
+ 
+**Descomposición de Tareas del Sprint**
+ 
+| User Story Id | User Story Title | Work-Item/Task Id | Work-Item/Task Title | Description | Estimation | Assigned To | Status |
+|:---:|:---|:---:|:---|:---|:---:|:---:|:---:|
+| **US05** | Configuración de perfil y objetivos | T01 | Feature file US05 | Redactar y validar escenarios Gherkin sobre `PUT /api/v1/athletes` (guardado y actualización de perfil). | 2h | Marcia Melgarejo | Done |
+| **US06** | Búsqueda de coaches | T01 | Feature file US06 | Redactar escenarios sobre `GET /api/v1/coaches/search` con filtros de especialidad, tarifa y experiencia. | 3h | Anyelo Alejos | Done |
+| **US07** | Perfil de coach | T01 | Feature file US07 | Redactar escenarios sobre `GET /api/v1/coaches/{userId}`, incluyendo caso de coach inactivo. | 2h | Anyelo Alejos | Done |
+| **US10** | Calificación del coach | T01 | Endpoint de reseñas (validación) | Revisar y confirmar la restricción de negocio: solo usuarios con sesión completada pueden calificar. | 3h | Jorge Guevara | Done |
+| | | T02 | Feature file US10 | Redactar escenarios de calificación exitosa y restricción sin sesión previa. | 2h | Jorge Guevara | Done |
+| **US20** | Disponibilidad (coach) | T01 | Feature file US20 | Redactar escenarios sobre `POST /api/v1/coaches/{coachId}/availability`. | 2h | Marcia Melgarejo | Done |
+| **US22** | Monetización de servicios | T01 | Feature file US22 | Redactar escenarios sobre `POST /api/v1/membership-plans` y flujo de pago rechazado vía Stripe webhook. | 3h | Pablo Geronimo | Done |
+| **TS02** | Endpoints Matchmaking | T01 | Feature file TS02 | Redactar escenarios de disponibilidad de endpoint y manejo de caída de base de datos (503). | 2h | Pablo Geronimo | Done |
+| **Deploy** | Despliegue en la nube | T01 | Aprovisionar Azure VM | Crear Resource Group, VM Ubuntu, NSG con puertos 8080/22 abiertos. | 3h | Pablo Geronimo | Done |
+| | | T02 | Instalar Docker en la VM | Instalar Docker Engine + Compose plugin siguiendo el script oficial de Docker. | 1h | Pablo Geronimo | Done |
+| | | T03 | Clonar repos y desplegar stack | Clonar los 9 repositorios y ejecutar `docker compose up -d --build` en la VM. | 3h | Jorge Guevara | Done |
+| | | T04 | Validar acceso público | Verificar Swagger UI, Eureka y endpoints funcionales desde la IP pública de Azure. | 2h | Anyelo Alejos | Done |
+| | | T05 | Documentar arquitectura cloud | Redactar diagrama C4 de despliegue y tabla de mapeo microservicio→recurso Azure. | 3h | Marcia Melgarejo | Done |
+
+
+#### 5.2.4.2 Development Evidence for Sprint Review
+
+Durante el Sprint 4 no se desarrolló código de negocio nuevo (los endpoints de US05, US06, US07, US10, US20, US22 y TS02 ya existían desde Sprint 2, implementados en `matchmaking-service` y `membership-service`). El trabajo de "development" de este sprint se concentró en:
+ 
+1. **Cierre de brechas de calidad** identificadas en la revisión OBS4: estandarización de códigos de error HTTP en los controladores existentes (ver `Correcciones_OBS4_BodyMatchAI.md`, punto 3) y corrección de la nomenclatura de patrones documentados.
+2. **Scripts de aprovisionamiento** para el despliegue en Azure (instalación de Docker, clonado de repos).
+
+### Evidencia de Desarrollo por Repositorio
+ 
+| Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
+|---|---|---|---|---|
+| `matchmaking-service` | `fix/error-handling-consistency` | `[COMPLETAR]` | `fix: standardize HTTP error codes across coach and athlete controllers` | `[COMPLETAR]` |
+| `membership-service` | `fix/error-handling-consistency` | `[COMPLETAR]` | `fix: standardize HTTP error codes in subscription and payment controllers` | `[COMPLETAR]` |
+| `infrastructure` | `feature/azure-deployment` | `[COMPLETAR]` | `docs: add Azure VM provisioning script and deployment notes` | `[COMPLETAR]` |
+| `docs` | `main` | `[COMPLETAR]` | `docs: add Sprint 4 cloud architecture and remaining BDD feature files` | `[COMPLETAR]` |
+
+
+#### 5.2.4.3 Testing Suite Evidence for Sprint Review
+
+
+Se completaron los archivos `.feature` faltantes para las historias que ya tenían endpoint implementado pero carecían de especificación BDD ejecutable. Con esto, la cobertura total del Product Backlog pasa de **21/33 (63.6%)** a **28/33 (84.8%)**.
+ 
+
+ 
+**`US05-Configuracion de perfil y objetivos.feature`**
+```gherkin
+Feature: Configuración de perfil y objetivos
+  Como usuario
+  Quiero definir mis objetivos físicos
+  Para recibir recomendaciones personalizadas.
+ 
+  Scenario: Guardado inicial del perfil
+    Given que el usuario completa todos los campos de perfil (objetivos, nivel de experiencia y restricciones físicas)
+    When hace clic en "Guardar perfil"
+    Then el sistema almacena los datos
+    And redirige al dashboard mostrando recomendaciones personalizadas
+ 
+  Scenario: Actualización de perfil existente
+    Given que el usuario ya tiene un perfil configurado y modifica sus objetivos
+    When guarda los cambios
+    Then el sistema actualiza los datos
+    And muestra el mensaje "Perfil actualizado correctamente"
+ 
+  Scenario: Intento de guardar sin objetivos seleccionados
+    Given que el usuario no selecciona ningún objetivo
+    When intenta guardar el perfil
+    Then el sistema responde con código 400 Bad Request
+    And muestra el mensaje "Debes seleccionar al menos un objetivo para continuar"
+```
+ 
+**`US06-Busqueda de coaches.feature`**
+```gherkin
+Feature: Búsqueda de coaches
+  Como usuario
+  Quiero buscar coaches según objetivos y filtros
+  Para encontrar al profesional que mejor se ajuste a mis necesidades.
+ 
+  Scenario: Búsqueda exitosa con filtros de especialidad y tarifa
+    Given que existen coaches registrados con distintas especialidades
+    When el usuario consulta "GET /api/v1/coaches/search" con specialties=STRENGTH_TRAINING y maxHourlyRate=30
+    Then el sistema responde con código 200 OK
+    And devuelve únicamente coaches que cumplen ambos filtros, ordenados por calificación descendente
+ 
+  Scenario: Búsqueda por nombre sin coincidencias
+    Given que no existe ningún coach que coincida con los filtros solicitados
+    When el usuario realiza la búsqueda
+    Then el sistema responde con código 200 OK
+    And devuelve una lista vacía
+ 
+  Scenario: Filtro con parámetro inválido
+    Given que el usuario envía un valor de especialidad inexistente en el enum Specialty
+    When realiza la búsqueda
+    Then el sistema responde con código 400 Bad Request
+```
+ 
+**`US07-Perfil de coach.feature`**
+```gherkin
+Feature: Visualización de perfil de coach
+  Como usuario
+  Quiero ver información detallada del coach
+  Para evaluar su experiencia y decidir si contratarlo.
+ 
+  Scenario: Visualización completa del perfil activo
+    Given que el usuario selecciona un coach de los resultados de búsqueda
+    When accede a "GET /api/v1/coaches/{userId}"
+    Then el sistema responde con código 200 OK
+    And devuelve biografía, años de experiencia, especialidades, tarifa y calificación promedio
+ 
+  Scenario: Coach inexistente
+    Given que el userId solicitado no corresponde a ningún coach registrado
+    When el usuario accede al perfil
+    Then el sistema responde con código 404 Not Found
+```
+ 
+**`US10-Calificacion del coach.feature`**
+```gherkin
+Feature: Calificación del coach
+  Como usuario
+  Quiero calificar al coach
+  Para ayudar a otros usuarios a elegir basándose en mi experiencia.
+ 
+  Scenario: Registro de reseña exitoso
+    Given que el usuario completó una sesión de entrenamiento con el coach
+    When envía una calificación entre 1 y 5
+    Then el sistema registra la reseña
+    And actualiza el promedio (averageRating) y el contador (totalReviews) del coach
+ 
+  Scenario: Intento de calificar sin sesión previa
+    Given que el usuario no tiene ninguna sesión completada con ese coach
+    When intenta enviar una calificación
+    Then el sistema responde con código 409 Conflict
+    And no modifica el promedio de calificaciones del coach
+```
+ 
+**`US20-Disponibilidad.feature`**
+```gherkin
+Feature: Disponibilidad del coach
+  Como coach
+  Quiero definir mis horarios
+  Para que mis alumnos reserven sesiones sin conflictos de agenda.
+ 
+  Scenario: Registro de nuevo horario disponible
+    Given que el coach define un día, hora de inicio y hora de fin válidos
+    When envía "POST /api/v1/coaches/{coachId}/availability"
+    Then el sistema responde con código 200 OK
+    And el nuevo horario queda visible en el perfil público del coach
+ 
+  Scenario: Horario con hora de fin anterior a la de inicio
+    Given que el coach ingresa una hora de fin anterior a la hora de inicio
+    When intenta guardar la disponibilidad
+    Then el sistema responde con código 400 Bad Request
+    And muestra el mensaje "End time must be after start time"
+```
+ 
+**`US22-Monetizacion de servicios.feature`**
+```gherkin
+Feature: Monetización de servicios
+  Como coach
+  Quiero definir precios para mis servicios
+  Para profesionalizar y rentabilizar mi trabajo.
+ 
+  Scenario: Registro exitoso de plan de membresía
+    Given que se define un código de plan único, nombre, precio y período de facturación
+    When se envía "POST /api/v1/membership-plans"
+    Then el sistema responde con código 201 Created
+    And el plan queda disponible para su suscripción
+ 
+  Scenario: Pago rechazado por Stripe
+    Given que un usuario intenta pagar una suscripción y Stripe rechaza la transacción
+    When Stripe envía el webhook "payment_failed" a "POST /api/v1/payments/webhook/stripe"
+    Then el sistema marca el pago como FAILED
+    And conserva la suscripción en estado PENDING sin activarla
+```
+ 
+**`TS02-Endpoints Matchmaking.feature`**
+```gherkin
+Feature: Disponibilidad de endpoints del microservicio Matchmaking
+  Como sistema distribuido
+  Quiero garantizar disponibilidad de los endpoints de matchmaking
+  Para asegurar la búsqueda y conexión continua entre atletas y coaches.
+ 
+  Scenario: Endpoint de búsqueda de coaches disponible
+    Given que el microservicio Matchmaking se encuentra desplegado y registrado en Eureka
+    When el cliente consume "GET /api/v1/coaches/search"
+    Then el sistema responde con código 200 OK
+ 
+  Scenario: Base de datos no disponible
+    Given que la base de datos "matchmaking_db" no responde
+    When se realiza una solicitud a cualquier endpoint del servicio
+    Then el sistema responde con código 503 Service Unavailable
+```
+ 
+### Repositorio y commits
+ 
+| Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
+|---|---|---|---|---|
+| `docs` | `feature/testing-suite-sprint-4` | `[COMPLETAR]` | `test: add BDD feature files for US05, US06, US07, US10, US20, US22, TS02` | `[COMPLETAR]` |
+
+#### 5.2.4.4 Execution Evidence for Sprint Review
+
+#### 5.2.4.5 Microservices Documentation Evidence for Sprint Review
+
+#### 5.2.4.6 Software Deployment Evidence for Sprint Review
+
+#### 5.2.4.7 Team Collaboration Insights during Sprint
+
+#### 5.2.4.8 Kanban Board
+
+### 5.3 Microservices Deployment
+
+#### 5.3.1 Cloud Architecture Diagram
+
+#### 5.3.2 Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud) 
+
+
+
 ## Conclusiones
 
 ### TB1: Validación de Negocio y Requerimientos
