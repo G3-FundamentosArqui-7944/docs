@@ -4380,6 +4380,16 @@ Los pilares de colaboración durante este Sprint fueron:
 
 #### 5.2.4.8 Kanban Board
 
+Para la gestión del Sprint 4, el equipo utilizó el tablero Kanban en Trello, manteniendo el flujo de trabajo en cuatro columnas: **To Do → In Progress → In Review → Done**. Las User Stories comprometidas se centraron en cerrar el Product Backlog funcional pendiente (US05, US06, US07, US10, US20, US22, TS02) con sus respectivas pruebas BDD, además del hito de despliegue del ecosistema completo en Microsoft Azure.
+
+Al cierre del Sprint, todas las User Stories comprometidas (US05, US06, US07, US10, US20, US22, TS02) alcanzaron el estado Done, junto con el hito de despliegue en Azure, elevando la cobertura de pruebas BDD del Product Backlog de 63.6% a 84.8%.
+
+Estado final del tablero Kanban al cierre del Sprint 4: 8 tarjetas en To Do, 5 en In Progress, 11 en In Review y 34 en Done, evidenciando el avance acumulado del proyecto con el backend base (Docker Compose, Discovery Server/Eureka, Spring Cloud Gateway) y los Bounded Contexts de Matchmaking, Training e IAM ya completados, y las integraciones de IA (Gemini en Videos Service) y conexión Flutter–API Gateway en revisión o progreso.
+
+
+![sprint2_kanban_board.png](assets/chapter5/sprint2_kanban_board.png)
+
+Link del tablero: https://trello.com/b/FLmi4ZnQ/bodymatch-ai-sprint-backlog
 ### 5.3 Microservices Deployment
 
 El despliegue de la arquitectura de microservicios de BodyMatch AI se fundamenta en la contenerización y orquestación de servicios para garantizar escalabilidad, aislamiento y portabilidad. La solución se compone de un ecosistema híbrido donde el frontend móvil (desarrollado en Flutter) se comunica a través de internet con un backend basado en microservicios RESTful.
