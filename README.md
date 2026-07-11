@@ -1,54 +1,89 @@
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="220"/>
-</p>
+<div style="page-break-after: always;">
+
+<br><br><br>
 
 <p align="center">
-  <strong>UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS</strong>
-</p>
-
-<p align="center">
-  <strong>Ingeniería de Software</strong><br>
-  <strong>2026-10</strong><br>
-  <strong>1ASI0657-2610-7944 | Fundamentos de Arquitectura de Software</strong><br>
-  <strong>NRC: 7944</strong><br>
-  <strong>Profesor: Abel Nehemias Rosales Caururu</strong>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="140"/>
 </p>
 
 <br>
+
+<p align="center">
+  <strong>Universidad Peruana de Ciencias Aplicadas</strong>
+</p>
+
+<p align="center">
+  <strong>Ingeniería de Software</strong>
+</p>
+
+<p align="center">
+  <strong>1ASI0657 &nbsp; Fundamentos de Arquitectura de Software</strong><br>
+  <strong>2026-10</strong>
+</p>
+
+<p align="center">
+  <strong>NRC: 7944</strong>
+</p>
+
+<p align="center">
+  <strong>Profesor: &nbsp; Abel Nehemias Rosales Caururu</strong>
+</p>
+
+<br><br>
 
 <p align="center">
   <strong>TRABAJO FINAL</strong>
 </p>
 
 <p align="center">
-  <strong>Startup:</strong> BodyMatch<br>
-  <strong>Nombre del Producto:</strong> BodyMatch AI
+  <strong>Nombre del Producto</strong> : BodyMatch AI
 </p>
 
 <br>
 
 <p align="center">
-  <strong>Integrantes</strong>
+  <strong>Integrantes:</strong>
 </p>
 
-| Alumno | Código |
-|--------|---------|
-| Pablo Antonio Geronimo Quispe | U202313433 |
-| Anyelo Bill Alejos Jesus | U20231D149 |
-| Piero Francesco Tenorio Medina | U202318731 |
-| Marcia Victoria Melgarejo Gomez | U20231C505 |
-| Jorge Enrique Guevara Tejada | U202316057 |
+<table align="center">
+  <thead>
+    <tr>
+      <th>Alumno</th>
+      <th>Código</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Geronimo Quispe, Pablo Antonio</td>
+      <td>U202313433</td>
+    </tr>
+    <tr>
+      <td>Alejos Jesus, Anyelo Bill</td>
+      <td>U20231D149</td>
+    </tr>
+    <tr>
+      <td>Tenorio Medina, Piero Francesco</td>
+      <td>U202318731</td>
+    </tr>
+    <tr>
+      <td>Melgarejo Gomez, Marcia Victoria</td>
+      <td>U20231C505</td>
+    </tr>
+    <tr>
+      <td>Guevara Tejada, Jorge Enrique</td>
+      <td>U202316057</td>
+    </tr>
+  </tbody>
+</table>
 
-<br>
-
-<p align="center">
-<strong>Abril, 2026</strong>
-</p>
+<br><br><br>
 
 <p align="center">
 <strong>Repositorio del Proyecto</strong><br>
 https://github.com/G3-FundamentosArqui-7944/docs
 </p>
+
+</div>
 
 
 
