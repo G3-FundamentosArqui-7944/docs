@@ -4247,11 +4247,126 @@ Feature: Disponibilidad de endpoints del microservicio Matchmaking
 
 #### 5.2.4.4 Execution Evidence for Sprint Review
 
+Con el objetivo de validar el funcionamiento end-to-end de BodyMatch AI en condiciones reales, se ejecutó la aplicación móvil sobre un dispositivo físico conectado al ecosistema de microservicios desplegado, verificando que el backend respondiera correctamente ante flujos reales de usuario, incluyendo los módulos que integran inteligencia artificial (Google Gemini).
+
+**Entorno de prueba**
+
+| Parámetro | Detalle |
+|---|---|
+| **Dispositivo** | Honor/Huawei CRT-LX3 |
+| **Sistema Operativo** | Android 14 (API 34) |
+| **Tipo de dispositivo** | Físico (no emulador) |
+| **Conexión inicial** | USB, mediante `adb` |
+| **Conexión de prueba** | Internet, mediante túnel público (ngrok) |
+| **Panel de inspección de tráfico** | `http://127.0.0.1:4040` (mientras ngrok se encuentra activo) |
+
+**Flujos verificados con datos reales (respuesta `200 OK`)**
+
+| # | Flujo | Descripción | Resultado esperado |
+|---|---|---|---|
+| 1 | **Login** | Ingreso con credenciales existentes en la base de datos. | El `iam-service` emite un token JWT válido. |
+| 2 | **Análisis de video por IA** | Subida de un video de ejercicio (probado hasta 76 MB). | Google Gemini genera feedback técnico real (ej. corrección de postura en press banca). |
+| 3 | **Análisis nutricional por IA** | Captura de una foto de comida. | Gemini detecta los alimentos y calcula macronutrientes reales; la comida se registra y se suma a las calorías del día. |
+| 4 | **Disponibilidad semanal del coach** | El coach agrega horarios desde su Agenda. | La disponibilidad queda visible correctamente en su propia Agenda. |
+| 5 | **Cambio de idioma** | Cambio entre inglés y español desde el módulo de Perfil. | La preferencia de idioma persiste entre reinicios de la aplicación. |
+
+**1. Login**
+
+`[COMPLETAR]` — no se cuenta con captura del flujo de login; agregar aquí.
+
+**2. Análisis de video por IA**
+
+Selección del origen del video, registro de detalles del ejercicio y resultado del análisis (estados `ANALYZED` / `FAILED`) generado por Gemini.
+
+![execution-video-fuente.jpeg](assets/execution-video-fuente.jpeg)
+
+![execution-video-detalles.jpeg](assets/execution-video-detalles.jpeg)
+
+![execution-video-resultado.jpeg](assets/execution-video-resultado.jpeg)
+
+**3. Análisis nutricional por IA**
+
+Resultado del análisis con detección de alimentos, macros (935 kcal · P 59g · C 90g · G 36g), registro como comida y suma a las calorías del día.
+
+![execution-nutricion-resultado.jpeg](assets/execution-nutricion-resultado.jpeg)
+
+![execution-nutricion-log.jpeg](assets/execution-nutricion-log.jpeg)
+
+![execution-nutricion-dia.jpeg](assets/execution-nutricion-dia.jpeg)
+
+**4. Disponibilidad semanal del coach**
+
+Agregado de un nuevo horario disponible (Monday 8:00 AM - 9:00 AM) y visualización en la Agenda del coach (Tuesday 08:00-09:00).
+
+![execution-agenda-nueva.jpeg](assets/execution-agenda-nueva.jpeg)
+
+![execution-agenda-nueva.jpeg](assets/execution-agenda-nueva.jpeg)
+
+**5. Cambio de idioma**
+
+![execution-perfil-idioma.jpeg](assets/execution-perfil-idioma.jpeg)
+
 #### 5.2.4.5 Microservices Documentation Evidence for Sprint Review
+
+Swagger consolidado (los 8 servicios documentados en un solo lugar): [https://untoasted-slimy-caress.ngrok-free.dev/swagger-ui.html](https://untoasted-slimy-caress.ngrok-free.dev/swagger-ui.html) — dropdown para cambiar entre servicios.
+
+**Arquitectura de microservicios**
+
+| Servicio | Puerto | Responsabilidad |
+|---|---|---|
+| `discovery-server` | 8761 | Registro y descubrimiento de servicios (Eureka) |
+| `api-gateway` | 8080 | Punto de entrada único, enrutamiento por path a cada servicio |
+| `iam-service` | 8081 | Autenticación, usuarios, roles, JWT |
+| `matchmaking-service` | 8082 | Perfiles de atleta/coach, búsqueda, solicitudes de conexión, sesiones |
+| `membership-service` | 8083 | Planes, suscripciones, pagos (Stripe) |
+| `nutrition-service` | 8084 | Análisis nutricional por IA (Gemini), comidas, planes |
+| `training-service` | 8085 | Sesiones de entrenamiento, métricas de rendimiento |
+| `videos-service` | 8086 | Análisis técnico de ejercicio por IA (Gemini) sobre video |
+
+**Endpoints principales por servicio (documentados en Swagger)**
+
+| Servicio | Recursos expuestos |
+|---|---|
+| `iam-service` | `/authentication/sign-up/{athlete,coach}`, `/sign-in`, `/refresh-token`, `/signout`; `/users`; `/roles` |
+| `matchmaking-service` | `/athletes`, `/coaches` (+ búsqueda y recomendación), `/connection-requests`, `/training-sessions` |
+| `membership-service` | `/membership-plans`, `/subscriptions`, `/payments` |
+| `nutrition-service` | `/nutrition/analyses`, `/nutrition/meals`, `/nutrition/plans` |
+| `training-service` | `/workout-sessions`, `/training-metrics` |
+| `videos-service` | `/exercise-videos` (subida, análisis, consulta) |
+
 
 #### 5.2.4.6 Software Deployment Evidence for Sprint Review
 
+**Frontend — Firebase App Distribution**
+
+| Parámetro | Detalle |
+|---|---|
+| **Proyecto Firebase** | `bodymatch-ai` |
+| **App ID Android** | `1:995659088813:android:271aca9dc109c8fb2d9724` |
+| **Package** | `com.bodymatch.bodymatchai_flutter` |
+| **Release** | 1.0.0 (1), distribuido a testers registrados por correo |
+| **Consola** | [https://console.firebase.google.com/project/bodymatch-ai/appdistribution](https://console.firebase.google.com/project/bodymatch-ai/appdistribution) |
+
+**Backend — Docker Compose + túnel público**
+
+| Parámetro | Detalle |
+|---|---|
+| **Orquestación** | 9 contenedores (Postgres + 8 microservicios) vía `docker-compose.yml`, red interna `bodymatch-net` |
+| **Exposición pública** | Túnel HTTPS hacia el `api-gateway` (puerto 8080) |
+| **URL pública del backend** | [https://untoasted-slimy-caress.ngrok-free.dev](https://untoasted-slimy-caress.ngrok-free.dev) |
+
+**Control de versiones — cambios integrados a `develop`**
+
+| Repository | Commit Id | Commit Message |
+|---|---|---|
+| `mobileapp-frontend` | `86b3ce8` | i18n completo (EN/ES) + fixes de UI/UX |
+| `matchmaking-service` | `2682e6b` | Ajuste de validación de membresía para pruebas |
+| `videos-service` | `fd6ca56` | Fix de condición de carrera en análisis de video |
+| `nutrition-service` | `8427660` | Fix de columna de descripción de comida |
+
+
 #### 5.2.4.7 Team Collaboration Insights during Sprint
+
 
 #### 5.2.4.8 Kanban Board
 
