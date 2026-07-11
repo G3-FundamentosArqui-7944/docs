@@ -4275,10 +4275,37 @@ Feature: Disponibilidad de endpoints del microservicio Matchmaking
 
 ### 5.3 Microservices Deployment
 
+El despliegue de la arquitectura de microservicios de BodyMatch AI se fundamenta en la contenerización y orquestación de servicios para garantizar escalabilidad, aislamiento y portabilidad. La solución se compone de un ecosistema híbrido donde el frontend móvil (desarrollado en Flutter) se comunica a través de internet con un backend basado en microservicios RESTful.
+
+El ecosistema backend está empaquetado utilizando Docker y orquestado mediante docker-compose.yml, integrando un total de 9 contenedores principales en una red virtual dedicada denominada bodymatch-net. Estos contenedores incluyen los servicios de soporte (discovery-server, api-gateway), los servicios de negocio (iam-service, matchmaking-service, membership-service, nutrition-service, training-service, videos-service) y la capa de persistencia con PostgreSQL. Para el entorno de producción, este modelo de contenedores está diseñado para trasladarse a un proveedor de nube (Cloud Provider) para asegurar alta disponibilidad.
+
 #### 5.3.1 Cloud Architecture Diagram
 
-#### 5.3.2 Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud) 
+En esta sección se presenta el diagrama de arquitectura de despliegue en la nube, el cual ilustra cómo los componentes lógicos de BodyMatch AI se mapean en la infraestructura física y virtual del proveedor Cloud. El diagrama detalla la interacción entre el dispositivo cliente (aplicación móvil distribuida vía Firebase), el punto de entrada público, la red privada virtual (VPC) que aloja el clúster de contenedores y los servicios externos de Inteligencia Artificial y pasarelas de pago.
 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/G3-FundamentosArqui-7944/docs/main/assets/deployment_diagram.png" alt="Mobile Metrics">
+  <br>
+  <em>Deployment-diagram</em>
+</p>
+
+
+
+#### 5.3.2 Cloud Architecture Deployment 
+
+Para el despliegue en la nube, la infraestructura de BodyMatch AI se apoya en servicios administrados para soportar la carga de trabajo de manera eficiente. A continuación, se detalla la configuración proyectada utilizando Amazon Web Services (AWS) como proveedor principal:
+
+
+- Frontend Deployment & Distribution: La aplicación móvil Android (com.bodymatch.bodymatchai_flutter) es empaquetada y distribuida a los testers registrados a través de la consola de Firebase App Distribution.
+
+- Network & Security Layer: Todos los microservicios se despliegan dentro de una red privada virtual (VPC) para evitar exposición directa a internet. Un Application Load Balancer (ALB) recibe el tráfico HTTPS externo y lo redirige exclusivamente al contenedor del api-gateway expuesto en el puerto 8080.
+
+- Microservices Compute Layer: Se provee un clúster mediante AWS EC2 o AWS ECS encargado de ejecutar los contenedores que orquestan la red interna bodymatch-net. En esta capa residen los servicios de enrutamiento y descubrimiento (discovery-server y api-gateway) junto con los 6 servicios core del negocio.
+
+- Data Persistence Layer: La capa de base de datos se delega a un servicio administrado como Amazon RDS for PostgreSQL para garantizar backups automáticos y tolerancia a fallos.
+
+- External Integrations: El sistema consume APIs de terceros mediante peticiones HTTP(S) salientes; específicamente Gemini AI para el procesamiento de imágenes y feedback técnico en nutrition-service y videos-service, y Stripe consumido por membership-service para la gestión de pagos.
 
 
 ## Conclusiones
@@ -4316,6 +4343,15 @@ La integración de la inteligencia artificial de Google Gemini en dos dominios f
  
 La aplicación consistente de Domain-Driven Design, el patrón Gateway para aislar dependencias externas y la estrategia de pruebas BDD con Gherkin permitió que el equipo entregara un sistema cohesivo, documentado y con fronteras de dominio claras, sentando las bases para una futura migración hacia una arquitectura completamente cloud-native.
 
+### TF1: Despliegue Integral y Validación del Sistema 
+Despliegue End-to-End Exitoso: Se logró concretar el despliegue funcional de la solución completa, distribuyendo la aplicación móvil (Frontend en Flutter) mediante Firebase App Distribution a dispositivos físicos, y conectándola exitosamente con el ecosistema de microservicios (Backend) orquestado mediante Docker Compose y expuesto a través de un túnel HTTPS seguro.
+
+Validación de la Arquitectura Distribuida: La integración final demostró la solidez de las decisiones arquitectónicas previas. El enrutamiento a través del API Gateway y el Service Discovery (Eureka) permitió que el cliente móvil consumiera los seis Bounded Contexts sin acoplamiento directo, validando la independencia y cohesión de cada microservicio.
+
+Materialización de la Propuesta de Valor: Las pruebas de integración demostraron el funcionamiento fluido de las capacidades core del negocio apoyadas en inteligencia artificial. El consumo de la API de Google Gemini para el análisis técnico de videos y reconocimiento de macros nutricionales respondió correctamente en tiempo real, validando el diferencial del Solution Profile definido desde el inicio del proyecto.
+
+Consistencia de Datos e Internacionalización: Se comprobó la correcta persistencia y aislamiento de los datos en la base de datos relacional (PostgreSQL), así como la correcta persistencia de las configuraciones del usuario, evidenciado por el soporte completo de internacionalización (i18n) entre inglés y español que se mantiene activo entre reinicios de la aplicación.
+
 
 ## Recomendaciones
 
@@ -4343,6 +4379,13 @@ La aplicación consistente de Domain-Driven Design, el patrón Gateway para aisl
 ### Avance 4: TB4: Consolidación del Ecosistema de Microservicios y Entrega Final
  
 Para las siguientes fases de evolución del producto, se recomienda priorizar la implementación de un mecanismo de observabilidad distribuida que centralice los logs estructurados de los seis microservicios en una herramienta de monitoreo como Azure Monitor o ELK Stack, dado que la ausencia de trazabilidad cross-service es el principal riesgo operativo identificado durante el Sprint 3. Asimismo, se sugiere activar la integración real con Stripe en el Membership Service —actualmente en configuración de stub— para habilitar el modelo de monetización de coaches en un entorno de producción real. Finalmente, la evolución del sistema hacia contenedores orquestados con Kubernetes permitiría escalar horizontalmente los servicios de mayor demanda, en particular Videos Service y Nutrition Service, sin afectar la disponibilidad del ecosistema completo.
+
+### TF1: Escalabilidad, Operación Continua y Entorno Cloud Real
+Migración hacia Infraestructura Cloud Nativa: Dado que el despliegue actual del backend se apoya en una orquestación local expuesta vía túneles públicos (ngrok), se recomienda migrar el clúster de contenedores Docker hacia un servicio de nube administrado (como AWS ECS, Amazon EKS o Azure Kubernetes Service) utilizando un Application Load Balancer (ALB) real para garantizar alta disponibilidad en un entorno de producción masivo.
+
+Implementación de Pipelines CI/CD: Se sugiere automatizar todo el ciclo de entrega continuo. Para el frontend, configurar GitHub Actions para compilar y distribuir nuevas versiones a Firebase automáticamente; y para el backend, automatizar la creación de imágenes Docker y su despliegue en la nube tras cada merge a la rama principal.
+
+Observabilidad y Monitoreo Distribuido: Al operar una arquitectura de 8+ contenedores (incluyendo soporte y bases de datos), es crítico implementar una capa de observabilidad. Se recomienda integrar un stack como ELK (Elasticsearch, Logstash, Kibana) o Prometheus/Grafana para rastrear las peticiones de red y monitorear la latencia, especialmente en los servicios que consumen APIs externas pesadas como Gemini o Stripe.
 
 
  
